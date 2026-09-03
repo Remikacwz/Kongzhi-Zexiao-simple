@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>专业面试100题 | 考研复试全攻略</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+<link rel="stylesheet" href="../theme-global.css?v=20260818">
+<link rel="stylesheet" href="../mobile-function-shell.css?v=20260818">
+</head>
+<body>
+  <!-- 导航 -->
+  <nav class="main-nav">
+    <a class="nav-brand" href="index.html">考研复试<span class="brand-accent">全攻略</span></a>
+  <ul class="nav-links"></ul>
+      <div class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+</nav>
+  <div class="mobile-nav">
+    <a href="index.html">复试首页</a>
+    <a href="01-timeline.html">时间线</a>
+    <a href="02-competitiveness.html">竞争力</a>
+    <a href="03-written-exam.html">笔试</a>
+    <a href="04-interview.html">面试</a>
+    <a href="05-interview-questions.html">问题</a>
+    <a href="06-mentor.html">导师</a>
+    <a href="07-projects.html">项目</a>
+    <a href="08-project-packaging.html">简历</a>
+    <a href="09-professional-questions.html">100题</a>
+    <a href="10-tiaoji.html">调剂</a>
+  </div>
+
+  <!-- 正文 -->
+  <main class="section">
+  <div class="container">
+    <div class="card page-hero">
+      <div class="card-title"><span class="icon">💡</span>使用说明</div>
+      <p>点击题目可展开/收起答案。题库改编自《26宝典C：万人教育控制复试面试宝典》，聚焦控制类考研复试高频专业题，覆盖自动控制、现代控制、过程控制、单片机、计算机控制、传感器、电机、电力电子、PLC、C语言等方向。建议先思考再对照答案。</p>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <div class="card-title"><span class="icon">🎯</span>控制专业高频 100 题</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px;">
+        <select id="subjectSel" style="flex:1;min-width:160px;padding:9px 12px;border:1px solid #d1d5db;border-radius:10px;font-size:14px;background:#fff;">
+          <option value="">全部科目</option>
+        </select>
+        <input id="searchInput" type="search" placeholder="搜索题目/答案关键词" style="flex:2;min-width:200px;padding:9px 12px;border:1px solid #d1d5db;border-radius:10px;font-size:14px;"/>
+      </div>
+      <div id="countInfo" style="font-size:13px;color:#6b7280;margin-bottom:8px;"></div>
+      <div id="qaContainer" class="qa-list"></div>
+    </div>
+
+    <div class="pagination">
+      <a href="08-project-packaging.html">← 项目包装与简历</a>
+      <a href="10-tiaoji.html">调剂全攻略 →</a>
+    </div>
+  </div>
+</main>
+
+<script src="面试题库.data.js"></script>
+<script>
+(function () {
+  var DATA = window.INTERVIEW_QUESTIONS || { subjects: [] };
+  // 优先从控制相关科目选取，凑满 100 题
+  var preferred = [
+    '自动控制理论', '现代控制理论', '过程控制', '计算机控制系统', '单片机',
+    '传感器与检测技术', '电力拖动技术（运动控制）', '信号与系统', '电路原理',
+    '模拟电子技术', '数字逻辑电路', '微机原理', 'C语言', '电气控制与 PLC',
+    '电力电子技术', '电机学', '数字信号处理', '模式识别', '英语面试'
+  ];
+  var selected = [];
+  var per = Math.ceil(100 / preferred.length);
+  preferred.forEach(function (name) {
+    var subj = DATA.subjects.find(function (s) { return s.name === name; });
+    if (!subj) return;
+    subj.chapters.forEach(function (ch) {
+      ch.questions.forEach(function (item) {
+        if (selected.length >= 100) return;
+        if ((item.q + item.a).indexOf('香农') >= 0) return;
+        selected.push({ subject: subj.name, chapter: ch.name, q: item.q, a: item.a });
+      });
+    });
+  });
+  // 若不足 100 再补其他科目
+  if (selected.length < 100) {
+    DATA.subjects.forEach(function (subj) {
+      if (selected.length >= 100) return;
+      if (preferred.indexOf(subj.name) >= 0) return;
+      subj.chapters.forEach(function (ch) {
+        ch.questions.forEach(function (item) {
+          if (selected.length >= 100) return;
+          if ((item.q + item.a).indexOf('香农') >= 0) return;
+          selected.push({ subject: subj.name, chapter: ch.name, q: item.q, a: item.a });
+        });
+      });
+    });
+  }
+
+  var subjectSel = document.getElementById('subjectSel');
+  var searchInput = document.getElementById('searchInput');
+  var countInfo = document.getElementById('countInfo');
+  var container = document.getElementById('qaContainer');
+
+  var subjects = [];
+  selected.forEach(function (item) {
+    if (subjects.indexOf(item.subject) < 0) subjects.push(item.subject);
+  });
+  subjects.forEach(function (name) {
+    var opt = document.createElement('option');
+    opt.value = name;
+    opt.textContent = name;
+    subjectSel.appendChild(opt);
+  });
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function render() {
+    var subject = subjectSel.value;
+    var q = searchInput.value.trim().toLowerCase();
+    var items = selected.filter(function (item) {
+      if (subject && item.subject !== subject) return false;
+      if (q && (item.q + '\n' + item.a).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+    countInfo.textContent = '共 ' + items.length + ' 题';
+    if (!items.length) {
+      container.innerHTML = '<div style="text-align:center;color:#9ca3af;padding:30px 0;">没有匹配的题目</div>';
+      return;
+    }
+    var html = '';
+    items.forEach(function (item, idx) {
+      html += '<div class="qa-item"><div class="qa-question" onclick="toggleQa(this)">' +
+        esc(item.q) +
+        '<span class="arrow">▼</span></div><div class="qa-answer"><p><strong>' + esc(item.subject) +
+        (item.chapter ? ' · ' + esc(item.chapter) : '') + '</strong></p><p>' + esc(item.a) + '</p></div></div>';
+    });
+    container.innerHTML = html;
+  }
+
+  window.toggleQa = function (el) {
+    var answer = el.nextElementSibling;
+    if (answer) {
+      var show = answer.style.display !== 'block';
+      answer.style.display = show ? 'block' : 'none';
+      var arrow = el.querySelector('.arrow');
+      if (arrow) arrow.textContent = show ? '▲' : '▼';
+    }
+  };
+
+  subjectSel.addEventListener('change', render);
+  searchInput.addEventListener('input', render);
+  render();
+})();
+</script>
+
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="01-timeline.html">复试时间线</a>
+        <a href="02-competitiveness.html">竞争力评估</a>
+        <a href="03-written-exam.html">笔试准备</a>
+        <a href="04-interview.html">面试全流程</a>
+        <a href="05-interview-questions.html">面试问题</a>
+        <a href="06-mentor.html">导师选择</a>
+        <a href="07-projects.html">核心项目</a>
+        <a href="08-project-packaging.html">项目包装</a>
+        <a href="09-professional-questions.html">专业100题</a>
+        <a href="10-tiaoji.html">调剂攻略</a>
+      </div>
+      <p>内容由 <a href="https://space.bilibili.com/589801594?spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer">@控制考研阿祖</a> 整理制作 | 仅供考研学习交流使用</p>
+      <p style="margin-top:6px; font-size: .75rem; color: #9499a0;">本站信息基于公开资料整理，具体政策请以教育部及目标院校官方发布为准</p>
+    </div>
+  </footer>
+
+
+<script src="assets/nav.js?v=20260815-fux"></script>
+<script src="../nav-data.js"></script>
+<script src="../mobile-function-shell.js" data-root=".."></script>
+</body>
+</html>

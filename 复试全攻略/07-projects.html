@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10个控制类核心项目 | 考研复试全攻略</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+<link rel="stylesheet" href="../theme-global.css?v=20260818">
+<link rel="stylesheet" href="../mobile-function-shell.css?v=20260818">
+</head>
+<body>
+<nav class="main-nav">
+  <a href="index.html" class="nav-brand">考研复试<span class="brand-accent">全攻略</span></a>
+  <ul class="nav-links"></ul>
+  <div class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('open')"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav">
+  <a href="index.html">复试首页</a>
+  <a href="01-timeline.html">时间线</a>
+  <a href="02-competitiveness.html">竞争力</a>
+  <a href="03-written-exam.html">笔试</a>
+  <a href="04-interview.html">面试</a>
+  <a href="05-interview-questions.html">问题</a>
+  <a href="06-mentor.html">导师</a>
+  <a href="07-projects.html">项目</a>
+  <a href="08-project-packaging.html">简历</a>
+  <a href="09-professional-questions.html">100题</a>
+  <a href="10-tiaoji.html">调剂</a>
+</div>
+
+</div><main class="section">
+  <div class="container">
+    <div class="card page-hero">
+      <div class="card-title"><span class="icon">🤖</span>控制类核心项目库</div>
+      <p>精选 10 个控制/机器人方向项目，覆盖运动控制、机器人、过程控制、嵌入式视觉、PLC 与工业自动化。每个项目包含核心技术栈、适用方向、包装亮点、项目简介、关键技术点和面试问答，建议根据报考方向挑选 1-2 个深挖。</p>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px;">
+        <input id="projectSearch" type="search" placeholder="搜索项目/技术栈/关键词，如：PID、机器人、PLC" style="flex:1;min-width:220px;padding:10px 12px;border:1px solid #d1d5db;border-radius:10px;font-size:14px;background:#fff;"/>
+        <span id="projectCount" style="align-self:center;font-size:13px;color:#6b7280;"></span>
+      </div>
+      <div id="projectList"></div>
+    </div>
+
+    <div class="pagination">
+      <a href="06-mentor.html">← 导师选择联系</a>
+      <a href="08-project-packaging.html">项目包装与简历 →</a>
+    </div>
+  </div>
+</main>
+
+<script>
+window.CONTROL_PROJECTS = [
+  {
+    "title": "直流电机 PID 调速系统（STM32）",
+    "stack": ["STM32", "PWM", "编码器", "PID", "电机驱动"],
+    "directions": ["运动控制", "电机控制", "嵌入式"],
+    "highlights": "体现闭环控制、编码器测速与 PID 参数整定能力。",
+    "intro": "基于 STM32 的直流电机闭环调速系统，通过编码器测量实际转速，PID 调节 PWM 占空比，实现负载变化下的稳速控制。",
+    "points": [
+      {"name": "编码器测速", "desc": "M法/T法测速，脉冲计数换算转速"},
+      {"name": "PWM 调速", "desc": "通过占空比控制电机平均电压"},
+      {"name": "PID 控制", "desc": "位置式/增量式，比例、积分、微分三项调节"},
+      {"name": "参数整定", "desc": "试凑法、临界比例度法/Ziegler-Nichols 法"}
+    ],
+    "qa": [
+      {"q": "为什么用编码器反馈而不是开环控制？", "a": "开环 PWM 调速受负载和电源电压影响，实际转速会偏离期望。编码器构成闭环后能实时修正，提高稳态精度和抗扰能力。"},
+      {"q": "增量式 PID 和位置式 PID 的区别？", "a": "位置式输出全量控制量，需要累计偏差，可能积分饱和；增量式只输出控制量增量，只需最近三次偏差，无积分饱和，工程上更常用。"},
+      {"q": "如何整定 PID 参数？", "a": "先只加 P，从小到大直到响应较快且不振荡；再加 I 消除静差；最后加 D 抑制超调。也可用临界比例度法：只调 P 到等幅振荡，记录临界增益和周期计算参数。"}
+    ]
+  },
+  {
+    "title": "两轮自平衡小车（STM32 + MPU6050）",
+    "stack": ["STM32", "MPU6050", "互补滤波", "串级PID", "直流电机"],
+    "directions": ["机器人控制", "姿态控制", "嵌入式"],
+    "highlights": "展示传感器融合、串级 PID 与系统调试能力。",
+    "intro": "基于 STM32 和 MPU6050 的两轮自平衡小车，通过姿态解算得到倾角，直立环+速度环双闭环 PID 控制电机，使小车保持动态平衡。",
+    "points": [
+      {"name": "姿态解算", "desc": "加速度计+陀螺仪互补滤波/卡尔曼滤波"},
+      {"name": "直立环", "desc": "角度 PD 控制，保持车身直立"},
+      {"name": "速度环", "desc": "速度 PI 控制，抑制小车前后漂移"},
+      {"name": "电机控制", "desc": "PWM 驱动、死区补偿、正反转"}
+    ],
+    "qa": [
+      {"q": "为什么用双环 PID？", "a": "单角度环只能让车不倒，但会持续向一个方向加速漂移；速度环根据车速反向调节，使小车在保持直立的同时不漂移，属于串级控制。"},
+      {"q": "互补滤波的原理？", "a": "陀螺仪高频准确但会积分漂移，加速度计低频准确但噪声大；互补滤波用高通滤陀螺仪、低通滤加速度计再相加，得到稳定姿态角。"},
+      {"q": "小车抖动怎么调？", "a": "降低直立环 P 或增加 D；检查机械重心是否过高、编码器/电机响应是否及时；可加低通滤波和死区。"}
+    ]
+  },
+  {
+    "title": "MATLAB/Simulink 倒立摆控制仿真",
+    "stack": ["MATLAB", "Simulink", "状态空间", "LQR", "PID"],
+    "directions": ["控制理论", "智能控制", "系统仿真"],
+    "highlights": "体现数学建模、控制器设计与仿真验证能力。",
+    "intro": "建立直线一级倒立摆的动力学模型，在 Simulink 中实现状态空间仿真，设计 LQR 或 PID 控制器，验证系统的稳定性、快速性与抗扰性。",
+    "points": [
+      {"name": "建模", "desc": "拉格朗日方程建立小车-摆杆动力学模型"},
+      {"name": "状态空间", "desc": "状态变量选择、能控性/能观性分析"},
+      {"name": "LQR", "desc": "通过 Q/R 权矩阵优化状态反馈增益"},
+      {"name": "仿真验证", "desc": "阶跃响应、抗扰、参数扰动分析"}
+    ],
+    "qa": [
+      {"q": "倒立摆为什么能稳定？", "a": "通过反馈控制实时给小车施加加速度，使摆杆始终被推向竖直平衡点；闭环系统的极点配置在左半平面即可稳定。"},
+      {"q": "LQR 和 PID 怎么选？", "a": "LQR 需要精确状态空间模型，可同时优化多个状态，适合多变量；PID 简单、不依赖精确模型，但参数需要试凑，适合单回路。"},
+      {"q": "仿真发散可能是什么原因？", "a": "模型符号或单位错误、控制器增益过大、采样时间过长、初始角度超出线性化范围。"}
+    ]
+  },
+  {
+    "title": "PLC 传送带分拣控制系统",
+    "stack": ["西门子S7-200 SMART", "三菱FX", "传感器", "气缸", "触摸屏"],
+    "directions": ["过程控制", "电气控制", "工业自动化"],
+    "highlights": "体现工业现场逻辑控制、电气设计与安全互锁能力。",
+    "intro": "基于 PLC 的传送带分拣系统，通过光电/颜色传感器识别物料，控制气缸推杆将不同物料分拣到对应料道，触摸屏显示产量与报警。",
+    "points": [
+      {"name": "PLC 编程", "desc": "梯形图/SCL，定时器、计数器、状态机"},
+      {"name": "I/O 分配", "desc": "输入传感器、输出电磁阀/电机/指示灯"},
+      {"name": "传感器选型", "desc": "光电、颜色、接近开关，NPN/PNP 匹配"},
+      {"name": "安全设计", "desc": "急停、互锁、报警复位、机械防护"}
+    ],
+    "qa": [
+      {"q": "PLC 扫描周期是什么？", "a": "PLC 按“输入采样→程序执行→输出刷新”循环工作，一个循环称为扫描周期；扫描周期影响控制响应速度，一般几毫秒到几十毫秒。"},
+      {"q": "如何保证分拣系统安全？", "a": "设置急停回路、气缸两端限位互锁、光幕/安全继电器、程序里加故障报警与停机逻辑。"},
+      {"q": "传感器 NPN 和 PNP 怎么选？", "a": "根据 PLC 输入模块类型选择，NPN 输出低电平、PNP 输出高电平；接错会导致无信号或烧输入点。"}
+    ]
+  },
+  {
+    "title": "ROS 移动机器人 SLAM 与自主导航",
+    "stack": ["ROS", "Gmapping/Cartographer", "move_base", "激光雷达", "AMCL"],
+    "directions": ["机器人控制", "智能控制", "系统集成"],
+    "highlights": "体现机器人系统集成、SLAM 算法与导航栈落地能力。",
+    "intro": "基于 ROS 的差分轮移动机器人，使用激光雷达完成 Gmapping/Cartographer 建图，AMCL 定位，move_base 实现目标点自主导航与动态避障。",
+    "points": [
+      {"name": "TF 坐标变换", "desc": "odom→base_link→laser 等坐标树管理"},
+      {"name": "SLAM", "desc": "粒子滤波 RBPF / 图优化 Cartographer"},
+      {"name": "定位", "desc": "AMCL 粒子滤波、里程计+IMU+激光融合"},
+      {"name": "导航", "desc": "全局规划、局部规划（DWA/TEB）、代价地图"}
+    ],
+    "qa": [
+      {"q": "SLAM 的基本原理？", "a": "机器人边移动边根据传感器观测同时估计自身位姿和环境地图，常用粒子滤波（Gmapping）或图优化（Cartographer）求解。"},
+      {"q": "ROS 导航栈由哪些部分组成？", "a": "move_base 包含全局规划器、局部规划器、代价地图和 AMCL 定位；输入目标点，输出速度指令。"},
+      {"q": "定位漂移如何改善？", "a": "增加回环检测、融合轮式里程计+IMU+激光、调整 AMCL 粒子数和更新频率，或改用 Cartographer 纯定位模式。"}
+    ]
+  },
+  {
+    "title": "四旋翼无人机姿态控制（STM32）",
+    "stack": ["STM32", "MPU9250", "串级PID", "PWM", "遥控器"],
+    "directions": ["飞行控制", "机器人控制", "嵌入式"],
+    "highlights": "展示实时控制、传感器融合和飞控调试能力。",
+    "intro": "基于 STM32 的四旋翼飞控，完成姿态解算（Mahony 互补滤波），使用角速度内环+角度外环串级 PID 控制四个电机输出，实现自稳飞行。",
+    "points": [
+      {"name": "姿态解算", "desc": "陀螺仪+加速度计+磁力计，Mahony/卡尔曼滤波"},
+      {"name": "串级 PID", "desc": "内环角速度、外环角度，提高抗扰和响应"},
+      {"name": "电机混控", "desc": "根据俯仰/横滚/偏航力矩分配四路 PWM"},
+      {"name": "调试", "desc": "地面站、遥控器通道、油门补偿、限幅"}
+    ],
+    "qa": [
+      {"q": "为什么四旋翼用串级 PID？", "a": "角速度内环响应快、能抑制扰动，角度外环控制姿态；串级结构比单环更稳定，抗风性更好。"},
+      {"q": "如何调试飞控？", "a": "先调内环角速度（P 小→大，D 抑制振荡），再调外环角度；参数过大高频抖动，过小回正慢、漂移。"},
+      {"q": "电机混控怎么理解？", "a": "俯仰差动控制前后电机，横滚差动控制左右电机，偏航差动控制对角线电机；四路 PWM 由期望力矩反解。"}
+    ]
+  },
+  {
+    "title": "智能循迹避障小车（51/STM32）",
+    "stack": ["51/STM32", "红外/超声波", "PID", "PWM", "L298N"],
+    "directions": ["嵌入式", "运动控制", "机器人"],
+    "highlights": "体现传感器应用、路径跟踪与基础闭环控制。",
+    "intro": "实现智能小车循迹、避障与手动遥控功能；红外循迹模块检测黑线，超声波避障，PID 差速控制转向，蓝牙/串口控制。",
+    "points": [
+      {"name": "循迹", "desc": "多路红外传感器判断偏移量，PID 纠偏"},
+      {"name": "避障", "desc": "超声波测距，阈值触发转向/停车"},
+      {"name": "驱动", "desc": "L298N 电机驱动，PWM 调速"},
+      {"name": "通信", "desc": "蓝牙/串口遥控与调试"}
+    ],
+    "qa": [
+      {"q": "循迹 PID 怎么设计？", "a": "根据传感器位置得到偏差，PID 输出差速值；中间压线偏差为 0，偏离越远修正越大。"},
+      {"q": "超声波和红外怎么配合？", "a": "红外测近距、响应快适合循迹；超声波测距远、不受光干扰适合避障；两者互补。"},
+      {"q": "小车走不直怎么处理？", "a": "检查轮胎/电机一致性，加编码器测速闭环，PID 输出加死区防止抖动。"}
+    ]
+  },
+  {
+    "title": "MATLAB 过程控制系统仿真（液位/温度 PID）",
+    "stack": ["MATLAB/Simulink", "PID", "过程建模", "阶跃响应", "抗积分饱和"],
+    "directions": ["过程控制", "智能控制", "系统仿真"],
+    "highlights": "体现过程对象建模、PID 整定与抗饱和设计能力。",
+    "intro": "对典型一阶惯性+纯滞后液位/温度对象建模，在 Simulink 中设计 PID 控制器，验证设定值跟踪、抗扰和鲁棒性，并实现抗积分饱和。",
+    "points": [
+      {"name": "对象建模", "desc": "一阶惯性+纯滞后模型，阶跃响应辨识"},
+      {"name": "PID 整定", "desc": "Ziegler-Nichols 法、衰减曲线法"},
+      {"name": "仿真", "desc": "设定值阶跃、负载扰动、参数摄动"},
+      {"name": "工程改进", "desc": "抗积分饱和、微分先行、Smith 预估"}
+    ],
+    "qa": [
+      {"q": "过程控制对象有什么特点？", "a": "大惯性、大滞后、参数随时间慢变，常规 PID 需要保守整定，滞后严重时需 Smith 预估或预测控制。"},
+      {"q": "纯滞后对系统的影响？", "a": "滞后会降低相位裕度、使系统更容易振荡；控制增益需减小，或用纯滞后补偿器改善稳定性。"},
+      {"q": "什么是抗积分饱和？", "a": "执行器输出达到上下限时，积分项继续累积会导致超调和恢复慢；工程上在饱和时冻结积分或对积分输出限幅。"}
+    ]
+  },
+  {
+    "title": "STM32 + OpenMV 视觉机械臂抓取",
+    "stack": ["STM32", "OpenMV", "串口", "机械臂逆解", "视觉定位"],
+    "directions": ["机器人控制", "智能控制", "嵌入式视觉"],
+    "highlights": "体现视觉-控制融合、通信协议与机械臂运动学能力。",
+    "intro": "OpenMV 摄像头识别目标颜色/形状并计算坐标，通过串口发送给 STM32，STM32 控制舵机机械臂完成抓取与搬运。",
+    "points": [
+      {"name": "视觉识别", "desc": "阈值分割、色块/形状识别、坐标提取"},
+      {"name": "坐标转换", "desc": "像素坐标→机械臂基座坐标，标定"},
+      {"name": "机械臂", "desc": "逆运动学求解关节角，舵机控制"},
+      {"name": "通信", "desc": "串口帧协议、帧头帧尾、校验、超时"}
+    ],
+    "qa": [
+      {"q": "视觉定位误差来源有哪些？", "a": "镜头畸变、光照变化、标定误差、机械臂关节间隙；可通过相机标定、固定光源和滤波减小。"},
+      {"q": "机械臂逆解怎么实现？", "a": "已知末端位姿求各关节角，可用几何法/解析法；多解时按能量最小或避障选最优解。"},
+      {"q": "串口通信如何保证可靠？", "a": "定义帧头+长度+数据+校验，接收超时重发，波特率一致，必要时加应答机制。"}
+    ]
+  },
+  {
+    "title": "组态王/MCGS 液位监控系统",
+    "stack": ["MCGS/组态王", "PLC", "液位传感器", "变频器", "PID"],
+    "directions": ["过程控制", "工业自动化", "电气控制"],
+    "highlights": "体现上位机组态、下位机联调与过程监控能力。",
+    "intro": "基于 PLC 和组态软件构建液位监控系统，PLC 实现 PID 液位控制，组态画面完成实时数据、报警、趋势曲线和远程设定。",
+    "points": [
+      {"name": "组态画面", "desc": "流程图、仪表、趋势曲线、报警窗口"},
+      {"name": "通信", "desc": "Modbus/OPC 与 PLC 数据交换"},
+      {"name": "控制回路", "desc": "PLC 内 PID，变频器调节水泵/阀门"},
+      {"name": "工程调试", "desc": "量程转换、上下限报警、手自动切换"}
+    ],
+    "qa": [
+      {"q": "组态软件在系统中起什么作用？", "a": "人机交互、数据监控、报警记录、历史趋势；核心控制一般仍由 PLC 完成，保证实时性和可靠性。"},
+      {"q": "组态软件如何与 PLC 通信？", "a": "常用 Modbus RTU/TCP 或 OPC，配置设备地址、寄存器映射、扫描周期和数据类型即可。"},
+      {"q": "PID 放在组态里还是 PLC？", "a": "一般放 PLC，因为 PLC 扫描周期短、实时性高；组态只做设定值下发和数据显示。"}
+    ]
+  }
+];
+
+(function () {
+  var PROJECTS = window.CONTROL_PROJECTS;
+  var searchInput = document.getElementById('projectSearch');
+  var countEl = document.getElementById('projectCount');
+  var listEl = document.getElementById('projectList');
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function render() {
+    var q = searchInput.value.trim().toLowerCase();
+    var items = PROJECTS.filter(function (prj) {
+      if (!q) return true;
+      var hay = (prj.title + ' ' + prj.stack.join(' ') + ' ' + prj.directions.join(' ') + ' ' + prj.intro).toLowerCase();
+      return hay.indexOf(q) >= 0;
+    });
+    countEl.textContent = '共 ' + items.length + ' 个项目';
+    if (!items.length) {
+      listEl.innerHTML = '<div style="text-align:center;color:#9ca3af;padding:40px 0;">没有匹配的项目</div>';
+      return;
+    }
+    var html = '';
+    items.forEach(function (prj, idx) {
+      html += '<div class="card" style="margin-bottom:20px;">';
+      html += '<div class="card-title"><span class="icon">🤖</span>' + esc(prj.title) + '</div>';
+      html += '<p style="margin-top:8px;"><strong>核心技术栈：</strong>' + prj.stack.map(esc).join('、') + '</p>';
+      html += '<p><strong>适用方向：</strong>' + prj.directions.map(esc).join('、') + '</p>';
+      html += '<div class="tip-box success" style="margin-top:8px;"><strong>包装亮点：</strong>' + esc(prj.highlights) + '</div>';
+      html += '<p style="margin-top:8px;"><strong>项目简介：</strong>' + esc(prj.intro) + '</p>';
+      html += '<p><strong>关键技术点：</strong></p><ul>';
+      prj.points.forEach(function (pt) {
+        html += '<li><strong>' + esc(pt.name) + '：</strong>' + esc(pt.desc) + '</li>';
+      });
+      html += '</ul>';
+      html += '<p><strong>面试问答：</strong></p><div class="qa-list">';
+      prj.qa.forEach(function (qa) {
+        html += '<div class="qa-item"><div class="qa-question" onclick="toggleProjectQa(this)">' + esc(qa.q) + '<span class="arrow">▼</span></div><div class="qa-answer"><p>' + esc(qa.a) + '</p></div></div>';
+      });
+      html += '</div></div>';
+    });
+    listEl.innerHTML = html;
+  }
+
+  window.toggleProjectQa = function (el) {
+    var answer = el.nextElementSibling;
+    if (answer) {
+      var show = answer.style.display !== 'block';
+      answer.style.display = show ? 'block' : 'none';
+      var arrow = el.querySelector('.arrow');
+      if (arrow) arrow.textContent = show ? '▲' : '▼';
+    }
+  };
+
+  searchInput.addEventListener('input', render);
+  render();
+})();
+</script>
+
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="01-timeline.html">复试时间线</a>
+        <a href="02-competitiveness.html">竞争力评估</a>
+        <a href="03-written-exam.html">笔试准备</a>
+        <a href="04-interview.html">面试全流程</a>
+        <a href="05-interview-questions.html">面试问题</a>
+        <a href="06-mentor.html">导师选择</a>
+        <a href="07-projects.html">核心项目</a>
+        <a href="08-project-packaging.html">项目包装</a>
+        <a href="09-professional-questions.html">专业100题</a>
+        <a href="10-tiaoji.html">调剂攻略</a>
+      </div>
+      <p>内容由 <a href="https://space.bilibili.com/589801594?spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer">@控制考研阿祖</a> 整理制作 | 仅供考研学习交流使用</p>
+      <p style="margin-top:6px; font-size: .75rem; color: #9499a0;">本站信息基于公开资料整理，具体政策请以教育部及目标院校官方发布为准</p>
+    </div>
+  </footer>
+<script src="assets/nav.js?v=20260815-fux"></script>
+<script src="../nav-data.js"></script>
+<script src="../mobile-function-shell.js" data-root=".."></script>
+</body>
+</html>

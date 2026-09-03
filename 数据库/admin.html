@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>择校内容后台</title>
+  <link rel="icon" type="image/png" href="../assets/wanren-education-logo.png">
+  <link rel="stylesheet" href="../vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="admin.css?v=20260829">
+</head>
+<body>
+  <main id="loginView" class="login-view">
+    <section class="login-card" aria-labelledby="loginTitle">
+      <a class="brand brand--login" href="../index.html"><span class="brand__mark brand__mark--image"><img src="../assets/wanren-education-logo.png" alt="万人教育"></span><span>择校内容后台</span></a>
+      <p class="eyebrow">School Content Studio</p>
+      <h1 id="loginTitle">管理公开页内容</h1>
+      <p class="login-lead">登录后可维护院校详情模块与真题备考资料，并控制公开页展示。</p>
+      <form id="loginForm" class="login-form">
+        <label>用户名<input id="loginUsername" name="username" autocomplete="username" value="admin" required></label>
+        <label>密码<input id="loginPassword" name="password" type="password" autocomplete="current-password" required></label>
+        <button class="button button--primary button--wide" type="submit"><i class="fa-solid fa-arrow-right-to-bracket"></i>登录后台</button>
+      </form>
+      <p id="loginMessage" class="form-message" role="status"></p>
+      <div class="local-tip"><i class="fa-solid fa-shield-halved"></i><span>本地首次使用默认密码为 <b>admin123</b>。上线前请通过环境变量 <code>KAOYAN_ADMIN_PASSWORD</code> 修改。</span></div>
+    </section>
+  </main>
+
+  <div id="adminApp" class="admin-shell" hidden>
+    <aside class="sidebar">
+      <a class="brand" href="../index.html"><span class="brand__mark brand__mark--image"><img src="../assets/wanren-education-logo.png" alt="万人教育"></span><span>择校内容后台<small>School Content Studio</small></span></a>
+      <nav class="sidebar-nav" aria-label="后台导航">
+        <button data-view="overview"><i class="fa-solid fa-chart-line"></i>总览</button>
+        <button data-view="schools"><i class="fa-solid fa-building-columns"></i>院校管理</button>
+        <button class="is-active" data-view="modules"><i class="fa-solid fa-layer-group"></i>内容模块</button>
+        <button data-view="media"><i class="fa-solid fa-photo-film"></i>媒体资源</button>
+        <button data-view="history"><i class="fa-solid fa-clock-rotate-left"></i>发布记录</button>
+        <button data-view="import"><i class="fa-solid fa-file-arrow-up"></i>数据导入</button>
+      </nav>
+      <div class="sidebar-user">
+        <span class="avatar"><i class="fa-solid fa-user"></i></span>
+        <span><b id="adminDisplayName">内容管理员</b><small id="adminRole">管理员</small></span>
+      </div>
+    </aside>
+
+    <section class="workspace">
+      <header class="topbar">
+        <button id="sidebarToggle" class="icon-button topbar__menu" type="button" aria-label="展开导航"><i class="fa-solid fa-bars"></i></button>
+        <span>内容管理 <i class="fa-solid fa-chevron-right"></i> <b id="contentBreadcrumb">院校详情页</b></span>
+        <button id="logoutBtn" class="text-button" type="button"><i class="fa-solid fa-right-from-bracket"></i>安全退出</button>
+      </header>
+
+      <div id="modulesView" class="view-panel">
+        <header class="page-heading">
+          <div><p id="moduleEyebrow" class="eyebrow">School detail operations</p><h1>内容模块配置</h1><p id="moduleDescription">按院校维护视频、群二维码、图片和链接，并控制发布状态。</p></div>
+          <div class="page-actions">
+            <label class="school-select"><span>配置页面</span><select id="contentScope"><option value="school">院校详情模块</option><option value="exam">真题备考区</option></select></label>
+            <label id="schoolSelectLabel" class="school-select"><span>当前院校</span><select id="schoolSelect"></select></label>
+            <a id="publicPreviewLink" class="button button--secondary" href="#" target="_blank"><i class="fa-regular fa-eye"></i>查看公开页</a>
+            <button id="publishBtn" class="button button--primary" type="button"><i class="fa-solid fa-cloud-arrow-up"></i>发布更改</button>
+          </div>
+        </header>
+
+        <div class="content-studio">
+          <section class="module-column panel-card">
+            <header class="panel-card__header"><div><h2>页面模块</h2><p>拖动卡片调整公开页顺序</p></div><span id="moduleCount" class="status-pill">0 个模块</span></header>
+            <div id="moduleList" class="module-list"></div>
+            <button id="addModuleBtn" class="add-module" type="button"><i class="fa-solid fa-plus"></i>添加模块</button>
+            <div id="moduleTypeMenu" class="module-type-menu" hidden>
+              <button data-add-type="video"><i class="fa-solid fa-circle-play"></i><span>视频<small>自动获取标题与封面</small></span></button>
+              <button class="scope-school-only" data-add-type="qr_group"><i class="fa-solid fa-qrcode"></i><span>群二维码<small>支持有效期与入群说明</small></span></button>
+              <button data-add-type="image"><i class="fa-regular fa-image"></i><span>图片<small>海报或院校通知</small></span></button>
+              <button data-add-type="link"><i class="fa-solid fa-link"></i><span>链接<small>学院官网或招生信息</small></span></button>
+            </div>
+            <p class="module-hint"><i class="fa-solid fa-grip-vertical"></i>排序保存后会同步影响公开页。</p>
+          </section>
+
+          <section class="editor-column panel-card">
+            <header class="panel-card__header"><div><h2 id="editorTitle">选择一个模块开始编辑</h2><p id="editorSubtitle">更改会自动保存为当前状态</p></div><span id="saveStatus" class="status-pill status-pill--success">已保存</span></header>
+            <form id="moduleForm" class="module-form" hidden>
+              <div class="form-grid">
+                <label>模块类型<select id="fieldType"><option value="video">视频</option><option value="qr_group">群二维码</option><option value="image">图片</option><option value="link">链接</option><option value="rich_text">公告</option></select></label>
+                <label>展示状态<select id="fieldStatus"><option value="draft">草稿</option><option value="published">已发布</option><option value="archived">已归档</option></select></label>
+              </div>
+              <label>模块标题<input id="fieldTitle" maxlength="160" required></label>
+              <label>摘要<textarea id="fieldDescription" rows="3" maxlength="1000"></textarea></label>
+
+              <div id="videoFields" class="type-fields">
+                <label>视频链接<div class="input-action"><input id="fieldLink" type="url" placeholder="粘贴 B 站、YouTube、腾讯视频等链接"><button id="fetchVideoBtn" class="button button--secondary" type="button"><i class="fa-solid fa-wand-magic-sparkles"></i>获取信息</button></div></label>
+                <p id="videoFetchStatus" class="inline-status"></p>
+              </div>
+              <div id="examVideoListFields" class="type-fields" hidden>
+                <label>真题讲解视频列表<div class="bulk-video-input"><textarea id="fieldVideoList" rows="6" placeholder="每行粘贴一个 B 站视频链接"></textarea><button id="fetchVideoListBtn" class="button button--secondary" type="button"><i class="fa-solid fa-list-check"></i>批量获取</button></div></label>
+                <p id="videoListFetchStatus" class="inline-status">每行一个链接；公开页会按这里的顺序显示可跳转视频列表。</p>
+              </div>
+              <div id="linkFields" class="type-fields"><label>目标链接<input id="fieldLinkGeneric" type="text" inputmode="url" placeholder="https://"></label></div>
+
+              <div id="coverFields" class="cover-editor">
+                <div class="field-heading"><span id="coverLabel">视频封面</span><small>支持 PNG、JPEG、WebP，最大 5MB</small></div>
+                <div id="coverPreview" class="cover-preview"><i class="fa-regular fa-image"></i><span>暂无封面</span></div>
+                <div class="cover-actions"><button id="uploadCoverBtn" class="button button--secondary" type="button"><i class="fa-solid fa-upload"></i>上传替换</button><input id="coverInput" type="file" accept="image/png,image/jpeg,image/webp" hidden><button id="clearCoverBtn" class="text-button" type="button">移除封面</button></div>
+              </div>
+
+              <div id="qrFields" class="type-fields form-grid">
+                <label>二维码有效期<input id="fieldExpiresAt" type="date"></label>
+                <label>按钮文案<input id="fieldCta" maxlength="30" placeholder="扫码加入"></label>
+              </div>
+              <div id="defaultCtaField" class="type-fields"><label>按钮文案<input id="fieldCtaDefault" maxlength="30" placeholder="查看详情"></label></div>
+              <div class="form-grid">
+                <label>定时发布<input id="fieldPublishAt" type="datetime-local"></label>
+                <label>定时下线<input id="fieldUnpublishAt" type="datetime-local"></label>
+              </div>
+              <div class="editor-actions"><button id="deleteModuleBtn" class="button button--danger" type="button"><i class="fa-regular fa-trash-can"></i>删除模块</button><span id="editorMessage" class="form-message" role="status"></span></div>
+            </form>
+            <div id="editorEmpty" class="empty-editor"><i class="fa-solid fa-layer-group"></i><h3>从左侧选择模块</h3><p>也可以添加一个新模块，开始配置公开页内容。</p></div>
+          </section>
+
+          <aside class="preview-column panel-card">
+            <header class="panel-card__header"><div><h2>公开页预览</h2><p>当前模块的桌面卡片效果</p></div><span class="status-pill">实时</span></header>
+            <div id="livePreview" class="live-preview"></div>
+            <div id="publishCheck" class="publish-check"><h3><i class="fa-solid fa-circle-check"></i>发布检查</h3><ul><li>选择模块后开始检查</li></ul></div>
+            <div class="module-rules"><h3>模块规则</h3><p>公开页只展示已发布内容</p><p>视频封面允许手动覆盖</p><p>二维码可设置失效日期</p><p>所有变更进入审计记录</p></div>
+          </aside>
+        </div>
+      </div>
+
+      <div id="placeholderView" class="view-panel placeholder-view" hidden>
+        <i class="fa-solid fa-screwdriver-wrench"></i><h1 id="placeholderTitle">功能建设中</h1><p>本次本地实现聚焦内容模块的完整运营闭环。</p>
+      </div>
+
+      <div id="importView" class="view-panel import-view" hidden>
+        <header class="page-heading"><div><p class="eyebrow">Database maintenance</p><h1>录取数据导入</h1><p>上传最新版 Excel，刷新本地录取数据库。</p></div></header>
+        <section class="import-card panel-card">
+          <div class="database-summary"><div><b id="sumSchools">—</b><span>院校</span></div><div><b id="sumMajors">—</b><span>专业方向</span></div><div><b id="sumRecords">—</b><span>录取记录</span></div></div>
+          <label id="fileBox" class="file-box"><i class="fa-solid fa-file-excel"></i><strong>选择或拖入 .xlsx 文件</strong><span id="fileName">导入会覆盖当前录取数据表</span><input id="fileInput" type="file" accept=".xlsx" hidden></label>
+          <label>兼容令牌（设置了 KAOYAN_ADMIN_TOKEN 时填写）<input id="adminToken" type="password" autocomplete="off"></label>
+          <button id="importBtn" class="button button--primary button--wide" disabled><i class="fa-solid fa-file-arrow-up"></i>导入数据库</button>
+          <p id="importResult" class="form-message" role="status"></p>
+        </section>
+      </div>
+    </section>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="admin.js?v=20260829"></script>
+</body>
+</html>

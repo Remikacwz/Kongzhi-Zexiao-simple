@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>控制考研上岸经验贴 - 考研必知常识</title>
+  <meta name="description" content="收录47所院校2026考研控制类上岸经验贴126篇，覆盖自动控制原理/电路/控制原理等专业课，含双非、跨考、二战、在职上岸真实经验">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .exp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .exp-card {
+      background: #fff;
+      border-radius: 6px;
+      padding: 22px;
+      border: 1px solid #e3e5e7;
+      transition: transform .2s, box-shadow .2s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: 3px solid #e63946;
+      position: relative;
+    }
+    .exp-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 16px rgba(0,0,0,.06);
+    }
+    .exp-card-year {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: .7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .exp-card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #e63946;
+      margin-bottom: 12px;
+      line-height: 1.5;
+      padding-right: 50px;
+    }
+    .exp-card-tags {
+      margin-bottom: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .exp-card-tags .tag {
+      font-size: .75rem;
+      padding: 3px 10px;
+      border-radius: 6px;
+    }
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 16px;
+      background: #fff;
+      border-radius: 6px;
+      border: 1px solid #e3e5e7;
+    }
+    .filter-bar select, .filter-bar input {
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #e3e5e7;
+      font-size: .9rem;
+      background: #fff;
+    }
+    .filter-bar select:not(#school-select) { display: none; }
+    .filter-bar input[type="text"] {
+      flex: 1;
+      min-width: 200px;
+    }
+    .school-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .school-tag {
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: .85rem;
+      font-weight: 500;
+      background: #f1f2f3;
+      color: #61666d;
+      cursor: pointer;
+      transition: all .2s;
+      border: none;
+    }
+    .school-tag:hover { background: #e3e5e7; }
+    .school-tag.active { background: #e63946; color: #fff; }
+    .school-tags { display: none; }
+    
+    .tag-orange { background: #fff3e0; color: #ff8f1f; }
+    .tag-green { background: #e8f5e9; color: #00b8a9; }
+    .tag-blue { background: #e8f4ff; color: #00aeec; }
+    .tag-pink { background: #fdf0f0; color: #e63946; }
+    .tag-red { background: #fdf0f0; color: #e53935; }
+    .tag-cyan { background: #e0f7fa; color: #00bcd4; }
+    
+    @media (max-width: 768px) {
+      .filter-bar { flex-direction: column; align-items: stretch; }
+      .filter-bar input { width: 100%; }
+    }
+  </style>
+
+<link rel="stylesheet" href="../mobile-function-shell.css?v=20260818">
+<link rel="stylesheet" href="../theme-global.css?v=20260818">
+</head>
+<body>
+<main class="page-content">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> / <span>上岸经验贴</span>
+      </div>
+      
+      <h1 class="section-title" style="margin-bottom:20px;"><span class="icon"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="round" style="vertical-align:-0.15em;flex-shrink:0;"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg></span> 上岸经验贴</h1>
+      
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <input type="text" id="search-input" placeholder="🔍 搜索学校...">
+          <select id="school-select">
+            <option value="">全部学校</option>
+          </select>
+        <select id="filter-year">
+          <option value="">全部年份</option>
+          <option value="26考研">26考研</option>
+        </select>
+        <select id="filter-level">
+          <option value="">全部层级</option>
+          <option value="985">985</option>
+          <option value="211">211</option>
+          <option value="双非">双非</option>
+        </select>
+        <select id="filter-category">
+          <option value="">全部专业课</option>
+          <option value="自动控制原理">自动控制原理</option>
+          <option value="自动控制理论">自动控制理论</option>
+          <option value="控制原理">控制原理</option>
+          <option value="控制工程基础">控制工程基础</option>
+          <option value="电路">电路</option>
+          <option value="其他">其他</option>
+        </select>
+        <select id="filter-score">
+          <option value="">全部分数</option>
+          <option value="420+">总分 420+</option>
+          <option value="400-419">总分 400–419</option>
+          <option value="380-399">总分 380–399</option>
+          <option value="<380">总分 380 以下</option>
+        </select>
+      </div>
+      
+      <!-- School Tags -->
+      <div class="school-tags" id="school-tags">
+        <button class="school-tag active" data-school="">全部院校</button>
+        <button class="school-tag" data-school="上海交通大学">上海交通大学</button>
+        <button class="school-tag" data-school="上海大学">上海大学</button>
+        <button class="school-tag" data-school="上海电力大学">上海电力大学</button>
+        <button class="school-tag" data-school="东北大学">东北大学</button>
+        <button class="school-tag" data-school="东南大学">东南大学</button>
+        <button class="school-tag" data-school="中国石油大学">中国石油大学</button>
+        <button class="school-tag" data-school="中国矿业大学">中国矿业大学</button>
+        <button class="school-tag" data-school="中国科学技术大学">中国科学技术大学</button>
+        <button class="school-tag" data-school="中国科学院大学">中国科学院大学</button>
+        <button class="school-tag" data-school="中国计量大学">中国计量大学</button>
+        <button class="school-tag" data-school="北京工业大学">北京工业大学</button>
+        <button class="school-tag" data-school="北京科技大学">北京科技大学</button>
+        <button class="school-tag" data-school="北京航空航天大学">北京航空航天大学</button>
+        <button class="school-tag" data-school="华东理工大学">华东理工大学</button>
+        <button class="school-tag" data-school="华中科技大学">华中科技大学</button>
+        <button class="school-tag" data-school="华北电力大学">华北电力大学</button>
+        <button class="school-tag" data-school="南京信息工程大学">南京信息工程大学</button>
+        <button class="school-tag" data-school="南京工业大学">南京工业大学</button>
+        <button class="school-tag" data-school="南京理工大学">南京理工大学</button>
+        <button class="school-tag" data-school="南京航空航天大学">南京航空航天大学</button>
+        <button class="school-tag" data-school="南京邮电大学">南京邮电大学</button>
+        <button class="school-tag" data-school="南昌大学">南昌大学</button>
+        <button class="school-tag" data-school="厦门大学">厦门大学</button>
+        <button class="school-tag" data-school="同济大学">同济大学</button>
+        <button class="school-tag" data-school="哈尔滨工业大学">哈尔滨工业大学</button>
+        <button class="school-tag" data-school="哈尔滨工业大学（深圳）">哈尔滨工业大学（深圳）</button>
+        <button class="school-tag" data-school="哈尔滨工程大学">哈尔滨工程大学</button>
+        <button class="school-tag" data-school="大连海事大学">大连海事大学</button>
+        <button class="school-tag" data-school="大连理工大学">大连理工大学</button>
+        <button class="school-tag" data-school="天津工业大学">天津工业大学</button>
+        <button class="school-tag" data-school="太原理工大学">太原理工大学</button>
+        <button class="school-tag" data-school="杭州电子科技大学">杭州电子科技大学</button>
+        <button class="school-tag" data-school="武汉理工大学">武汉理工大学</button>
+        <button class="school-tag" data-school="江南大学">江南大学</button>
+        <button class="school-tag" data-school="河北工业大学">河北工业大学</button>
+        <button class="school-tag" data-school="河海大学">河海大学</button>
+        <button class="school-tag" data-school="浙江大学">浙江大学</button>
+        <button class="school-tag" data-school="海南大学">海南大学</button>
+        <button class="school-tag" data-school="燕山大学">燕山大学</button>
+        <button class="school-tag" data-school="电子科技大学">电子科技大学</button>
+        <button class="school-tag" data-school="福州大学">福州大学</button>
+        <button class="school-tag" data-school="苏州大学">苏州大学</button>
+        <button class="school-tag" data-school="郑州大学">郑州大学</button>
+        <button class="school-tag" data-school="重庆大学">重庆大学</button>
+        <button class="school-tag" data-school="重庆邮电大学">重庆邮电大学</button>
+        <button class="school-tag" data-school="青岛大学">青岛大学</button>
+      </div>
+<!-- Experience Grid -->
+      <div class="exp-grid" id="exp-grid"></div>
+      
+      <!-- Pagination or load more could go here -->
+      <div id="no-results" style="text-align:center; padding: 60px 20px; display:none;">
+  <div style="font-size:3rem; margin-bottom:12px;"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="round" style="vertical-align:-0.15em;flex-shrink:0;"><path d="M9 9h.01"/><path d="M15 9h.01"/><path d="M8 13a4 4 0 0 0 8 0"/><circle cx="12" cy="12" r="10"/></svg></div>
+  <div style="font-size:1.1rem; color:#18191c; font-weight:600; margin-bottom:8px;">没有找到符合条件的经验贴</div>
+  <div style="font-size:.9rem; color:#9499a0;">试试调整筛选条件，或者清除搜索关键词</div>
+</div>
+    </div>
+  </main>
+  <!-- Back to Top -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="01-basics.html">基础常识</a>
+        <a href="02-timeline.html">备考时间线</a>
+        <a href="03-public-courses.html">公共课备考</a>
+        <a href="04-major.html">专业课备考</a>
+        <a href="05-school-selection.html">考研择校</a>
+        <a href="06-mindset-career.html">心态与就业</a>
+        <a href="07-faq.html">常见问题</a>
+        <a href="08-methods.html">学习方法</a>
+        <a href="experience.html">上岸经验贴</a>
+      </div>
+      <p>内容由 <a href="https://space.bilibili.com/589801594?spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer">@控制考研阿祖</a> 整理制作 | 仅供考研学习交流使用</p>
+      <p style="margin-top:6px; font-size: .75rem; color: #9499a0;">本站信息基于公开资料整理，具体政策请以教育部及目标院校官方发布为准</p>
+    </div>
+  </footer>
+<script src="posts-data.js"></script>
+<script>
+// POSTS 已抽取至共享数据文件（全站共享数据源）
+
+
+// 校徽文件名：分校区剥后缀用校本部徽章；无校区简称帖默认主校区徽章
+function schoolBadgeName(s) {
+  var base = String(s || '').replace(/[（(][^）)]*[）)]/g, '');
+  if (base.indexOf('某') === 0) return '';
+  if (base === '中国石油大学') return '中国石油大学(华东)';
+  if (base === '中国地质大学') return '中国地质大学(武汉)';
+  return base;
+}
+
+function renderPosts(posts) {
+  const container = document.getElementById('exp-grid');
+  const noResults = document.getElementById('no-results');
+  container.innerHTML = '';
+  if (posts.length === 0) {
+    noResults.style.display = 'block';
+    return;
+  }
+  noResults.style.display = 'none';
+  
+  const yearStyle = {
+    '25考研': 'background:#fdf0f0;color:#e63946;',
+    '24考研': 'background:#e8f4ff;color:#00aeec;',
+    '26考研': 'background:#fff3e0;color:#ff8f1f;',
+  };
+  
+  const levelClass = {
+    '985': 'tag-red',
+    '211': 'tag-blue',
+    '双非': 'tag-green',
+  };
+  
+  posts.forEach(p => {
+    const yearBadge = '<span class="exp-card-year" style="' + (yearStyle[p.year]||yearStyle["25考研"]) + '">' + p.year + '</span>';
+    const levelTag = '<span class="tag ' + (levelClass[p.level]||'tag-green') + '">' + p.level + '</span>';
+    const catTag = '<span class="tag">' + p.category + '</span>';
+    const scoreTag = p.total ? '<span class="tag tag-pink">总分' + p.total + '</span>' : '';
+    const subTag = p.subjectScore ? '<span class="tag tag-orange">专业课' + p.subjectScore + '</span>' : '';
+    const ugTag = p.undergrad ? '<span class="tag tag-cyan">本科' + p.undergrad + '</span>' : '';
+    
+    const card = document.createElement('a');
+    card.href = 'experience/' + p.id + '.html';
+    card.className = 'exp-card';
+    card.innerHTML = yearBadge +
+      '<div class="exp-card-title">' + p.title + '</div>' +
+      '<div class="exp-card-tags">' + levelTag + catTag + scoreTag + subTag + ugTag + '</div>' +
+      '<div style="margin-top:auto; font-size:.8rem; color:#9499a0; display:flex; align-items:center; gap:5px;">' +
+        (function(){ var bn = schoolBadgeName(p.school); return bn ? '<img src="../专业课选择/images/校徽/' + bn + '.jpg" onerror="this.style.display=\'none\'" alt="" style="width:18px;height:18px;border-radius:50%;object-fit:cover;flex-shrink:0;">' : ''; })() +
+        '<span>' + (p.author ? '@' + p.author + ' · ' : '') + p.school + (p.code ? ' ' + p.code : '') + '</span></div>';
+    container.appendChild(card);
+  });
+}
+
+function getConditionFilters() {
+  const search = document.getElementById('search-input').value.toLowerCase();
+  return { search };
+}
+
+function applyFilters(opts) {
+  const { search, school } = opts;
+  return POSTS.filter(p => {
+    if (school && p.school !== school) return false;
+    if (search) {
+      const text = (p.school + (p.schoolShort || '') + (p.code || '')).toLowerCase();
+      if (!text.includes(search)) return false;
+    }
+    return true;
+  });
+}
+
+// 根据当前搜索条件（仅学校），动态更新院校标签云
+function updateSchoolTags() {
+  const { search } = getConditionFilters();
+  const filtered = applyFilters({ search, school: '' });
+  const schools = [...new Set(filtered.map(p => p.school))].filter(s => s !== '某985').sort((a, b) => a.localeCompare(b, 'zh-CN'));
+  const select = document.getElementById('school-select');
+  if (!select) return;
+  const current = select.value;
+  select.innerHTML = '<option value="">全部学校</option>' + schools.map(s => '<option value="' + s + '">' + s + '</option>').join('');
+  select.value = current || '';
+}
+
+// 搜索变化时：更新标签云 + 渲染卡片
+function onConditionChange() {
+  updateSchoolTags();
+  const { search } = getConditionFilters();
+  const filtered = applyFilters({ search, school: '' });
+  renderPosts(filtered);
+}
+
+// 院校标签点击时：只渲染卡片（不更新标签云）
+function onSchoolClick(school) {
+  const { search } = getConditionFilters();
+  const filtered = applyFilters({ search, school });
+  renderPosts(filtered);
+}
+
+// 事件绑定：仅保留学校搜索框
+['search-input'].forEach(id => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.addEventListener('input', onConditionChange);
+});
+
+// 事件绑定：学校下拉框
+document.getElementById('school-select').addEventListener('change', function(e) {
+  onSchoolClick(e.target.value || '');
+});
+
+// 初始渲染
+updateSchoolTags();
+renderPosts(POSTS);
+</script>
+<script src="../nav-data.js"></script>
+<script src="../mobile-function-shell.js" data-root=".."></script>
+</body>
+</html>
+

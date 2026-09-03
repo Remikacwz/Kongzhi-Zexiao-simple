@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>江汉大学 - 控制类考研院校详情</title>
+<script src="../vendor/chart-4.5.1.umd.min.js"></script>
+<style>
+body{font-family:'Noto Sans SC',system-ui,sans-serif;background:#f8f8f6;color:#17191d;margin:0;padding:0;line-height:1.6}
+.wrap{max-width:1100px;margin:0 auto;padding:20px}
+header{background:linear-gradient(135deg,#a92122,#a92122);color:#fff;padding:28px 20px;text-align:center}
+header h1{margin:0 0 6px;font-size:1.8rem}
+.meta{font-size:13px;opacity:.9}
+.intro{max-width:900px;margin:14px auto 0;font-size:14px;background:rgba(255,255,255,.12);padding:10px 14px;border-radius:10px}
+h2{border-left:4px solid #a92122;padding-left:10px;margin-top:28px;font-size:1.2rem}
+.card{background:#fff;border-radius:12px;padding:16px;margin:12px 0;box-shadow:0 4px 12px rgba(169,33,34,.2)}
+.card h3{margin:0 0 8px;font-size:1.05rem;color:#a92122}
+.stat{font-size:14px;margin:4px 0}
+.score{font-size:13px;color:#555;margin:4px 0 10px}
+.subavg{font-size:14px;font-weight:600;color:#a92122;margin:6px 0;padding:6px 10px;background:#f8f8f6;border-radius:6px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0}
+th,td{border:1px solid #e5e7eb;padding:6px 8px;text-align:left}
+th{background:#f8f8f6;white-space:nowrap}
+footer{text-align:center;color:#999;font-size:12px;padding:20px}
+@media(max-width:768px){.wrap{padding:12px}.card{overflow-x:auto;-webkit-overflow-scrolling:touch}table{font-size:12px}}
+</style>
+
+
+
+
+<style id="school-detail-mobile">
+/* school-detail-mobile */
+@media (max-width: 768px) {
+  .wrap { padding: 12px; }
+  .card { overflow: hidden !important; padding: 14px !important; border-radius: 14px !important; box-shadow: 0 2px 8px rgba(26,26,46,.06) !important; border: 1px solid #ececec !important; }
+  table, tbody, tr, td { display: block !important; width: 100% !important; min-width: 0 !important; max-width: 100% !important; box-sizing: border-box !important; }
+  thead { display: none !important; }
+  table { border: none !important; }
+  tbody tr { background: #fff !important; border: 1px solid #ececec !important; border-radius: 12px !important; padding: 10px 12px !important; margin-bottom: 10px !important; box-shadow: 0 1px 4px rgba(0,0,0,.04) !important; }
+  td { display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; gap: 2px 10px !important; padding: 4px 0 !important; border: none !important; font-size: 12px !important; text-align: left !important; overflow-wrap: break-word !important; word-break: break-word !important; }
+  td::before { content: attr(data-label); font-weight: 700; color: #6a6a7a; flex-shrink: 0; padding-right: 8px; }
+  td:first-child { font-weight: 800 !important; color: #17191d !important; background: transparent !important; }
+  .card.collapsed > *:not(h3) { display: none !important; }
+  .stat { font-size: 13px !important; }
+  .score { font-size: 12px !important; }
+  .subavg { font-size: 13px !important; }
+  .subavg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; margin-top: 6px; }
+  .subavg-item { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 5px 10px; background: #fff; border: 1px solid #f0ece6; border-radius: 8px; font-size: 12px; }
+  .subavg-item span { color: #6a6a7a; font-weight: 600; }
+  .subavg-item b { color: #a92122; font-weight: 800; }
+}
+</style>
+
+
+
+<link rel="stylesheet" href="../mobile-function-shell.css?v=20260818">
+<link rel="stylesheet" href="../vendor/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="../school-content.css?v=20260828">
+</head>
+<body>
+<a class="back" href="../index.html" style="display:inline-flex;align-items:center;gap:6px;margin:16px 0 0 20px;padding:8px 16px;background:#fff;border:1px solid #e3e5e7;border-radius:8px;color:#3e4146;font-size:.85rem;text-decoration:none;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:all .2s;">← 返回择校首页</a>
+<header>
+  <h1>江汉大学</h1>
+  <div class="meta">双非 · 其他 · 控制类考研</div>
+  <div class="intro">江汉大学位于湖北省武汉经济技术开发区美丽的三角湖畔，是一所省市共建、以市为主的综合性大学。办学历史悠久，学科门类齐全。2018年，学校入选湖北省“双一流”建设“国内一流学科建设高校”。</div>
+</header>
+<div style="max-width:1100px;margin:14px auto 0;padding:0 20px;font-size:13px;color:#6a6a7a;display:flex;gap:14px;flex-wrap:wrap;"><a href="../就业相关/院校就业去向/schools/江汉大学.html" style="color:#a92122;text-decoration:none;">该校就业去向</a><a href="../专业课选择/考研专业课院校查询.html" style="color:#a92122;text-decoration:none;">专业课院校查询</a></div>
+<div class="wrap">
+  <h2>一、学院与专业</h2>
+  <div class="card">
+    <table><thead><tr><th>学院</th><th>专业代码</th><th>专业名称</th><th>招生计划</th><th>26实际录取</th><th>较25变化</th><th>初试科目</th><th>备注</th></tr></thead>
+    <tbody></tbody></table>
+  </div>
+  <h2>二、26考研复试分数线</h2>
+  <div class="card">
+    <table><thead><tr><th>学院</th><th>学科</th><th>政治</th><th>英语</th><th>业务课一</th><th>业务课二</th><th>总分</th></tr></thead>
+    <tbody></tbody></table>
+  </div>
+  <h2>三、历年招生人数</h2>
+  <div class="card"><p>暂无历年招生数据</p></div>
+  <h2>四、26考研录取情况分析</h2>
+  
+<div class="card">
+  <h3>三、26考研智能制造学院0854 电子信息录取情况分析</h3>
+  <p class="stat">进复试 <b>52</b> 人 · 实际录取 <b>42</b> 人 · 复录比 <b>1.24</b></p>
+  <p class="score">复试初试：最高 390.0 / 最低 266.0 / 平均 319.0　|　录取初试：最高 390.0 / 最低 269.0 / 平均 323.1　|　专业课均分 113.4 · 数学均分 87.4</p>
+  <p class="subavg">各科均分：政治 56.4 · 英语 62.1 · 数学 87.4 · 专业课 113.4</p>
+  <table><thead><tr><th>分数段</th><th>复试人数</th><th>录取人数</th><th>录取率</th><th>政治</th><th>英语</th><th>数学</th><th>专业课</th><th>总分均分</th><th>备注</th></tr></thead><tbody><tr><td>386-390</td><td>1</td><td>1</td><td>100%</td><td>60</td><td>78</td><td>129</td><td>123</td><td>390</td><td></td></tr><tr><td>376-385</td><td>1</td><td>1</td><td>100%</td><td>60</td><td>77</td><td>110</td><td>131</td><td>378</td><td></td></tr><tr><td>366-375</td><td>2</td><td>2</td><td>100%</td><td>55.5</td><td>58.5</td><td>115</td><td>139</td><td>368</td><td></td></tr><tr><td>346-355</td><td>3</td><td>3</td><td>100%</td><td>59</td><td>61.7</td><td>106</td><td>121</td><td>347.7</td><td></td></tr><tr><td>336-345</td><td>7</td><td>7</td><td>100%</td><td>55.6</td><td>61.6</td><td>98.7</td><td>125.7</td><td>341.6</td><td></td></tr><tr><td>326-335</td><td>3</td><td>3</td><td>100%</td><td>56.7</td><td>70.7</td><td>95</td><td>110</td><td>332.3</td><td></td></tr><tr><td>316-325</td><td>3</td><td>2</td><td>67%</td><td>51</td><td>61.3</td><td>91.3</td><td>116.7</td><td>321.5</td><td></td></tr><tr><td>306-315</td><td>12</td><td>8</td><td>67%</td><td>56.8</td><td>62.5</td><td>82.4</td><td>108.1</td><td>310.4</td><td></td></tr><tr><td>296-305</td><td>8</td><td>4</td><td>50%</td><td>56.8</td><td>63.1</td><td>72.3</td><td>107.6</td><td>299.5</td><td></td></tr><tr><td>286-295</td><td>1</td><td>1</td><td>100%</td><td>56</td><td>72</td><td>78</td><td>82</td><td>288</td><td></td></tr><tr><td>276-285</td><td>2</td><td>2</td><td>100%</td><td>56.5</td><td>60</td><td>80.5</td><td>83.5</td><td>280.5</td><td></td></tr></tbody></table>
+  <div style="height:220px;"><canvas id="chart-0"></canvas></div>
+  </div>
+<script>
+try {
+  var ctx = document.getElementById('chart-0');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["386-390", "376-385", "366-375", "346-355", "336-345", "326-335", "316-325", "306-315", "296-305", "286-295", "276-285"],
+      datasets: [
+        { label: '复试人数', data: ["1", "1", "2", "3", "7", "3", "3", "12", "8", "1", "2"], backgroundColor: 'rgba(122,142,168,0.82)', borderRadius: { topLeft: 5, topRight: 5, bottomLeft: 0, bottomRight: 0 }, maxBarThickness: 22 },
+        { label: '录取人数', data: ["1", "1", "2", "3", "7", "3", "2", "8", "4", "1", "2"], backgroundColor: 'rgba(169,33,34,0.82)', borderRadius: { topLeft: 5, topRight: 5, bottomLeft: 0, bottomRight: 0 }, maxBarThickness: 22 }
+      ]
+    },
+    options: { responsive: true, maintainAspectRatio: false,
+animation: { duration: 550, easing: 'easeOutQuart' },
+scales: {
+  x: { grid: { display: false }, ticks: { font: { size: 10, family: "'Noto Sans SC', system-ui, sans-serif" }, color: '#777a80', maxRotation: 0 } },
+  y: { beginAtZero: true, grid: { color: 'rgba(23,25,29,0.06)', drawBorder: false }, ticks: { font: { size: 10 }, color: '#777a80', precision: 0 } }
+}, plugins: { legend: { position: 'top', labels: { font: { size: 11, family: "'Noto Sans SC', system-ui, sans-serif" }, color: '#6a6a7a', usePointStyle: true, pointStyle: 'circle', boxWidth: 8, boxHeight: 8 } } } }
+  });
+} catch(e) { console.error(e); }
+</script>
+
+<div class="card">
+  <h3>四、26考研光电材料与技术学院0854 电子信息录取情况分析</h3>
+  <p class="stat">进复试 <b>52</b> 人 · 实际录取 <b>42</b> 人 · 复录比 <b>1.24</b></p>
+  <p class="score">复试初试：最高 390.0 / 最低 266.0 / 平均 319.0　|　录取初试：最高 390.0 / 最低 269.0 / 平均 323.1　|　专业课均分 113.4 · 数学均分 87.4</p>
+  <p class="subavg">各科均分：政治 56.4 · 英语 62.1 · 数学 87.4 · 专业课 113.4</p>
+  <table><thead><tr><th>分数段</th><th>复试人数</th><th>录取人数</th><th>录取率</th><th>政治</th><th>英语</th><th>数学</th><th>专业课</th><th>总分均分</th><th>备注</th></tr></thead><tbody><tr><td>355-361</td><td>1</td><td>1</td><td>100%</td><td>63</td><td>67</td><td>97</td><td>134</td><td>361</td><td></td></tr><tr><td>325-334</td><td>2</td><td>2</td><td>100%</td><td>56.5</td><td>52.5</td><td>105</td><td>114.5</td><td>328.5</td><td></td></tr><tr><td>315-324</td><td>2</td><td>2</td><td>100%</td><td>57.5</td><td>58</td><td>76.5</td><td>123.5</td><td>315.5</td><td></td></tr></tbody></table>
+  <div style="height:220px;"><canvas id="chart-1"></canvas></div>
+  </div>
+<script>
+try {
+  var ctx = document.getElementById('chart-1');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["355-361", "325-334", "315-324"],
+      datasets: [
+        { label: '复试人数', data: ["1", "2", "2"], backgroundColor: 'rgba(122,142,168,0.82)', borderRadius: { topLeft: 5, topRight: 5, bottomLeft: 0, bottomRight: 0 }, maxBarThickness: 22 },
+        { label: '录取人数', data: ["1", "2", "2"], backgroundColor: 'rgba(169,33,34,0.82)', borderRadius: { topLeft: 5, topRight: 5, bottomLeft: 0, bottomRight: 0 }, maxBarThickness: 22 }
+      ]
+    },
+    options: { responsive: true, maintainAspectRatio: false,
+animation: { duration: 550, easing: 'easeOutQuart' },
+scales: {
+  x: { grid: { display: false }, ticks: { font: { size: 10, family: "'Noto Sans SC', system-ui, sans-serif" }, color: '#777a80', maxRotation: 0 } },
+  y: { beginAtZero: true, grid: { color: 'rgba(23,25,29,0.06)', drawBorder: false }, ticks: { font: { size: 10 }, color: '#777a80', precision: 0 } }
+}, plugins: { legend: { position: 'top', labels: { font: { size: 11, family: "'Noto Sans SC', system-ui, sans-serif" }, color: '#6a6a7a', usePointStyle: true, pointStyle: 'circle', boxWidth: 8, boxHeight: 8 } } } }
+  });
+} catch(e) { console.error(e); }
+</script>
+  <footer>数据来源：《27考研择校宝典_版8》（控制类）· 仅供参考，最终以院校官方为准</footer>
+</div>
+
+
+<script id="school-detail-mobile-js">
+/* school-detail-mobile-js */
+(function(){
+  function enhanceTables(){
+    document.querySelectorAll('table').forEach(function(table){
+      var headers = [];
+      var thead = table.querySelector('thead');
+      if(thead){
+        headers = Array.from(thead.querySelectorAll('th')).map(function(th){ return th.textContent.trim(); });
+      }
+      table.querySelectorAll('tbody tr').forEach(function(tr){
+        Array.from(tr.children).forEach(function(td, i){
+          if(headers[i]) td.setAttribute('data-label', headers[i]);
+        });
+      });
+    });
+  }
+  function enhanceSubavg(){
+    if(window.innerWidth > 768) return;
+    document.querySelectorAll('.subavg').forEach(function(el){
+      if(el.dataset.subavgDone) return;
+      el.dataset.subavgDone = '1';
+      var text = el.textContent.trim();
+      var m = text.match(/各科均分[：:]\s*(.*)/);
+      if(!m) return;
+      var parts = m[1].split(/[·•]/).map(function(s){ return s.trim(); }).filter(Boolean);
+      if(parts.length < 2) return;
+      var html = '<div class="subavg-grid">';
+      parts.forEach(function(p){
+        var mm = p.match(/^(.+?)\s+([\d.]+)$/);
+        if(mm){
+          html += '<div class="subavg-item"><span>' + mm[1].trim() + '</span><b>' + mm[2] + '</b></div>';
+        } else {
+          html += '<div class="subavg-item"><span>' + p + '</span></div>';
+        }
+      });
+      html += '</div>';
+      el.innerHTML = html;
+    });
+  }
+  function enhanceCollapse(){
+    if(window.innerWidth > 768) return;
+    document.querySelectorAll('.card h3').forEach(function(h3){
+      if(h3.dataset.collapseBound) return;
+      h3.dataset.collapseBound = '1';
+      h3.style.cursor = 'pointer';
+      h3.style.userSelect = 'none';
+      if(!h3.querySelector('.collapse-indicator')){
+        var span = document.createElement('span');
+        span.className = 'collapse-indicator';
+        span.style.cssText = 'float:right;font-size:12px;color:#a92122;margin-left:8px;';
+        span.textContent = ' ▾';
+        h3.appendChild(span);
+      }
+      h3.addEventListener('click', function(){
+        var card = h3.closest('.card');
+        if(!card) return;
+        card.classList.toggle('collapsed');
+        var indicator = h3.querySelector('.collapse-indicator');
+        if(indicator) indicator.textContent = card.classList.contains('collapsed') ? ' ▸' : ' ▾';
+      });
+    });
+  }
+  function init(){ enhanceTables(); enhanceSubavg(); enhanceCollapse(); }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+</script>
+
+<script src="../nav-data.js"></script>
+<script src="../mobile-function-shell.js" data-root=".."></script>
+<script src="../school-content.js?v=20260828"></script>
+</body>
+</html>

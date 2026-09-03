@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>27控制类考研改考院校大汇总</title>
+<meta name="description" content="27控制类考研改考院校汇总，及时了解专业课改考动态。">
+<meta name="keywords" content="控制考研,自动化考研,择校,考研院校,院校对比,考研数据,985,211">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC","Helvetica Neue",Arial,sans-serif;background:#f8f8f6;color:#17191d;line-height:1.6}
+
+.header{background:#fff;padding:30px 0 20px;text-align:center;border-bottom:1px solid #deded8}
+.header h1{font-size:1.8rem;font-weight:700;color:#17191d;margin-bottom:6px}
+.header .subtitle{font-size:13px;color:#777a80}
+
+.container{width:85%;max-width:1400px;margin:0 auto;padding:0 0 60px}
+@media(max-width:768px){.container{width:95%}}
+
+.controls{background:#fff;padding:16px 24px;margin:16px 0;border-radius:8px;box-shadow:0 1px 4px rgba(26, 26, 46, 0.06);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.filter-group{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filter-label{font-size:13px;color:#3e4146;font-weight:600}
+.filter-btn{padding:6px 16px;border:1px solid #17191d;background:#fff;border-radius:4px;color:#3e4146;font-size:13px;cursor:pointer;transition:all .2s;font-family:inherit}
+.filter-btn:hover{border-color:#a92122;color:#a92122}
+.filter-btn.active{background:#a92122;border-color:#a92122;color:#fff}
+.search-box{position:relative;min-width:240px}
+.search-box input{width:100%;padding:8px 12px 8px 32px;border:1px solid #17191d;border-radius:4px;font-size:13px;font-family:inherit;outline:none;transition:all .2s}
+.search-box input:focus{border-color:#a92122;box-shadow:0 0 0 2px rgba(139, 21, 56, 0.1)}
+.search-box input::placeholder{color:#9a9da3}
+.search-box svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:14px;height:14px;color:#9a9da3;pointer-events:none}
+.result-count{font-size:13px;color:#777a80}
+
+.table-wrap{overflow-x:auto;background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(26, 26, 46, 0.06)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+thead th{background:#f1f0eb;color:#3e4146;font-weight:600;padding:14px 16px;text-align:left;font-size:13px;white-space:nowrap;border-bottom:2px solid #deded8}
+tbody tr{border-bottom:1px solid #E8DFC8;transition:background .15s}
+tbody tr:hover{background:#f1f0eb}
+tbody td{padding:14px 16px;vertical-align:top}
+
+.date-cell{font-size:13px;color:#3e4146;font-weight:500;white-space:nowrap}
+
+.level-tag{display:inline-block;padding:4px 10px;border-radius:4px;font-size:12px;font-weight:700;white-space:nowrap;color:#fff}
+.level-985{background:#a92122}
+.level-211{background:#c0392b}
+.level-四邮四电{background:#9C6B2F}
+.level-普通院校,.level-普通本科{background:#2d6e4e}
+.level-双非{background:#2d6e4e}
+
+.school-name{font-weight:700;color:#a92122;font-size:14.5px}
+.school-name:hover{color:#c0392b}
+
+.college-text{font-size:12.5px;color:#777a80;margin-top:4px;line-height:1.5}
+
+.major-text{color:#17191d;font-size:13.5px;font-weight:500}
+
+.before-text{color:#9a9da3;font-size:13.5px;text-decoration:line-through;text-decoration-color:#a92122;text-decoration-thickness:2px;line-height:1.5}
+
+.after-text{color:#a92122;font-size:13.5px;font-weight:700;line-height:1.5}
+.after-text.stop{color:#a92122;background:#f1f0eb;padding:3px 10px;border-radius:4px;display:inline-block;border:1px solid rgba(139,21,56,0.25)}
+.after-text.s408{color:#2d6e4e;background:#E8F3E8;padding:3px 10px;border-radius:4px;display:inline-block;border:1px solid #C8E0C8}
+
+.public-tag{display:inline-flex;align-items:center;gap:3px;padding:3px 8px;background:#E8EEF8;color:#1e3a5f;border-radius:4px;font-size:11px;font-weight:600;border:1px solid #C8D5EC;margin-bottom:4px}
+
+.note-text{font-size:12px;color:#9C6B2F;background:#FBEED9;padding:4px 10px;border-radius:4px;margin-top:6px;display:inline-block;border:1px solid #E8D5B0;line-height:1.5}
+
+.source-link{color:#1e3a5f;font-size:12.5px;text-decoration:none;word-break:break-all;line-height:1.5;display:block;margin-top:2px}
+.source-link:hover{color:#1e3a5f;text-decoration:underline}
+
+.empty{text-align:center;padding:60px 20px;color:#777a80}
+.empty-icon{font-size:48px;margin-bottom:12px}.empty-icon svg{width:46px;height:46px;display:block;margin:0 auto;color:#c9ccd1;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:square;stroke-linejoin:round}
+
+  /* 改考信息卡片（手机端使用） */
+  .card-list{display:grid;gap:12px;margin-top:12px}
+  .gk-card{background:#fff;border-radius:14px;padding:16px;box-shadow:0 2px 8px rgba(26,26,46,.06);border:1px solid #ececec}
+  .gk-card__head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+  .gk-card__date{font-size:12px;color:#777a80;white-space:nowrap}
+  .gk-card__school{display:block;font-size:17px;font-weight:800;color:#a92122;text-decoration:none;margin-bottom:2px}
+  .gk-card__college{font-size:12.5px;color:#777a80;margin-bottom:6px}
+  .gk-card__major{font-size:13.5px;font-weight:600;color:#17191d;margin-bottom:10px;line-height:1.5}
+  .gk-card__change{background:#f8f6f2;border-radius:10px;padding:10px 12px;margin-bottom:8px}
+  .gk-card__label{display:block;font-size:11px;color:#9a9da3;font-weight:700;margin-bottom:4px}
+  .gk-card__change .after-text{margin-top:2px}
+  .gk-card__note{font-size:12px;color:#9C6B2F;background:#FBEED9;padding:6px 10px;border-radius:8px;margin-bottom:8px;line-height:1.5}
+  .gk-card__source{display:inline-block;font-size:12.5px;color:#1e3a5f;text-decoration:none;font-weight:600}
+  .gk-card__source:hover{text-decoration:underline}
+
+.footer{text-align:center;padding:30px;color:#777a80;font-size:12.5px;line-height:1.8}
+
+@media(max-width:768px){
+  .header h1{font-size:1.4rem}
+  .controls{padding:12px;flex-direction:column;align-items:stretch}
+  .search-box{min-width:auto}
+  table{font-size:12px}
+  tbody td{padding:10px 12px}
+  thead th{padding:10px 12px}
+  .table-wrap{display:none}
+  .card-list{display:grid !important}
+}
+</style>
+
+
+<style id="entry-responsive-adapt">
+html{overflow-x:hidden}
+body{min-width:0;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img,svg,canvas,video{max-width:100%}
+a,button,input{touch-action:manipulation}
+:focus-visible{outline:2px solid #a92122;outline-offset:2px}
+.table-wrap{-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.table-wrap table{min-width:980px}
+.back-to-home{top:calc(16px + env(safe-area-inset-top,0px))!important;left:calc(16px + env(safe-area-inset-left,0px))!important}
+@media (hover:none){.filter-btn:hover,.school-name:hover{transform:none;text-decoration:none}}
+@media (max-width:900px){
+  .header{padding:72px 16px 18px}
+  .header h1{font-size:clamp(1.2rem,5.6vw,1.55rem);line-height:1.35}
+  .container{width:100%;padding:0 max(10px,env(safe-area-inset-right)) 42px max(10px,env(safe-area-inset-left))}
+  .controls{margin:12px 0;padding:12px;border-radius:12px}
+  .filter-group{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;scrollbar-width:none}
+  .filter-group::-webkit-scrollbar{display:none}
+  .filter-label,.filter-btn{flex:0 0 auto}
+  .filter-btn{min-height:40px;padding:7px 14px}
+  .controls > div[style]{width:100%;display:flex!important;flex-direction:column;align-items:stretch!important;gap:8px!important}
+  .search-box{width:100%}
+  .search-box input{min-height:44px;font-size:16px}
+}
+</style>
+
+<link rel="stylesheet" href="mobile-function-shell.css?v=20260818">
+<link rel="stylesheet" href="theme-global.css?v=20260818">
+</head>
+<body>
+
+<a href="index.html" class="back-to-home" style="position:fixed;top:16px;left:16px;z-index:1000;padding:10px 18px;background:linear-gradient(135deg,#a92122 0%,#c0392b 100%);color:#fff;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;box-shadow:0 2px 8px rgba(139, 21, 56, 0.2);transition:transform .2s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">← 返回首页</a>
+
+<div class="header">
+  <h1>📋 27控制类考研改考院校大汇总</h1>
+  <p class="subtitle">数据来源：各校官方通知 | 持续更新中</p>
+</div>
+
+<div class="container">
+  <div class="controls">
+    <div class="filter-group">
+        <span class="filter-label">层次：</span>
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="985">985</button>
+        <button class="filter-btn" data-filter="211">211</button>
+        <button class="filter-btn" data-filter="双非">双非</button>
+      </div>
+    <div class="filter-group">
+        <span class="filter-label">类型：</span>
+        <button class="filter-btn type-btn active" data-type="all">全部</button>
+        <button class="filter-btn type-btn" data-type="verified">已核实</button>
+        <button class="filter-btn type-btn" data-type="pending">待确认</button>
+      </div>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="searchInput" placeholder="搜索学校、专业或科目...">
+      </div>
+      <span class="result-count" id="resultCount"></span>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th style="width:80px">发布日期</th>
+          <th style="width:60px">层次</th>
+          <th style="width:100px">改考学校</th>
+          <th style="min-width:140px">学院名称</th>
+          <th style="min-width:160px">改考专业</th>
+          <th style="min-width:200px">改动信息</th>
+          <th style="min-width:200px">信息来源</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <div class="empty" id="emptyState" style="display:none;">
+      <div class="empty-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.4 16.4 4.6 4.6"/><path d="M8.4 11h5.2"/></svg></div>
+      <p>未找到匹配的改考信息</p>
+    </div>
+  </div>
+
+    <div id="cardList" class="card-list" style="display:none;"></div>
+    <div class="empty" id="cardEmptyState" style="display:none;">
+      <div class="empty-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.4 16.4 4.6 4.6"/><path d="M8.4 11h5.2"/></svg></div>
+      <p>未找到匹配的改考信息</p>
+    </div>
+
+  <div class="footer">
+    <p>数据整理：@控制考研阿祖 | 信息来源：各校研究生院官网公告</p>
+    <p>仅供参考，请以各校官方最新通知为准</p>
+  </div>
+</div>
+
+<script>
+const examData=[{"level":"双非","school":"河南大学","college":"人工智能学院","major":"控制工程(085406)专硕/控制科学与工程学硕","before":"","after":"初试由《自动控制原理、信号与系统》调整为仅考《自动控制理论》(849)；学硕专硕统一考849","date":"2026.7.18","source":"http://ai.henu.edu.cn/info/1085/17512.htm","note":"河南大学人工智能学院官方“考试科目变更通知”，已核实"},{"level":"211","school":"长安大学","college":"电子与控制工程学院","major":"交通运输工程、交通运输；卓越工程师学院：交通运输（智慧交通控制）","before":"","after":"由813计算机系统及控制技术调整为812自动控制理论","date":"2026.1.5","source":"https://yzb.chd.edu.cn/2025/0715/c2769a253860/page.htm","note":"长安大学研究生招生办公室官方“关于调整2026年部分学科专业硕士研究生招生考试初试科目的公告”，明确813计算机系统及控制技术→812自动控制理论，已核实"},{"level":"985","school":"吉林大学","college":"通信工程学院","major":"所有硕士招生专业","before":"","after":"2027年起初试专业课统一改为“模拟与数字电子技术”，原812自动控制原理退出初试","date":"2026.5.10","source":"https://dce.jlu.edu.cn/info/1032/11314.htm","note":"吉林大学通信工程学院官方“硕士研究生招生考试科目变更的通知”，已核实"},{"level":"985","school":"重庆大学","college":"自动化学院","major":"电子信息（专硕）","before":"","after":"26考研首年改考844自动控制原理二","date":"2026.8.14","source":"https://yz.cqu.edu.cn/sszyml/2026/13.html","note":"重庆大学研究生招生信息网“自动化学院2026年硕士招生专业目录”，844自动控制原理二已列入；未检索到单独变更公告页"},{"level":"211","school":"华北电力大学(保定)","college":"自动化系","major":"控制科学与工程、控制工程","before":"","after":"专业课由819自动控制理论改为841自动控制理论","date":"2026.6.25","source":"https://zdh.ncepu.edu.cn/tzgg1/41bf4d3bde454052a0e91807ccac9530.htm","note":"华电自动化系官方2026年调整公告；注意该页考试科目写为820自动控制理论，与文章所述819→841不一致，建议以官方目录/大纲为准"},{"level":"双非","school":"江苏科技大学","college":"自动化学院","major":"控制科学与工程(学硕)、控制工程(专硕)、低空技术与工程(学硕)、仪器仪表工程(专硕)","before":"","after":"26年学硕/专硕专业课均由电路基础改为808自动控制原理","date":"2026.6.23","source":"https://yjsb.just.edu.cn/2025/0728/c7124a365228/page.htm","note":"江苏科技大学研究生院官方“2026年硕士研究生初试自命题科目调整说明”，正文列出自动化学院调整链接（原学院页已失效），未直接列出808明细"},{"level":"985","school":"哈尔滨工业大学","college":"航天学院","major":"082500航空宇航科学与技术(学硕)、085500机械(专硕)","before":"","after":"初试专业课改为807航空宇航控制原理；807仅考自动控制原理前六章，不再考理论力学","date":"2026.8.9","source":"http://sa.hit.edu.cn/_t856/2026/0731/c6582a398910/page.htm","note":"哈工大航天学院官方“2027年硕士研究生招生考试考试科目调整的公告”，已核实"},{"level":"985","school":"北京航空航天大学","college":"无人系统研究院","major":"085410人工智能(专硕)","before":"","after":"2027年初试第四单元考试科目调整为833控制工程综合","date":"2026.7.17","source":"https://wrj.buaa.edu.cn/info/1178/3057.htm","note":"北航无人系统研究院官方“2027年硕士研究生初试第四单元考试科目公告”，已核实"}];
+
+function parseDate(d){const [y,m,day]=d.split('.');return parseInt(y,10)*10000+parseInt(m,10)*100+parseInt(day||'0',10);}
+examData.sort((a,b)=>parseDate(b.date)-parseDate(a.date));
+
+function getLevelClass(l){return'level-'+l.replace(/[（）]/g,'')}
+function getLevelShort(l){if(l==='普通院校'||l==='普通本科')return'普通';return l}
+
+function getAfterClass(after){
+  if(!after)return'';
+  if(after.includes('停止招生'))return'stop';
+  if(after.includes('408'))return's408';
+  return'';
+}
+
+function isPublicChange(before,after){
+  const p=/数一|数二|英一|英二|数学一|数学二|英语一|英语二/;
+  return p.test(before)||p.test(after);
+}
+
+function renderTable(data){
+  const tbody=document.getElementById('tableBody');
+  const empty=document.getElementById('emptyState');
+  const cardEmpty=document.getElementById('cardEmptyState');
+  const countEl=document.getElementById('resultCount');
+  if(data.length===0){
+    tbody.innerHTML='';
+    empty.style.display='block';
+    if(cardEmpty) cardEmpty.style.display='block';
+    countEl.textContent='';
+    renderCards([]);
+    return;
+  }
+  empty.style.display='none';
+  if(cardEmpty) cardEmpty.style.display='none';
+  countEl.textContent='共 '+data.length+' 条';
+  
+  var prevSchool='';
+  var schoolBefore='';
+  var schoolAfter='';
+  var schoolDate='';
+  var schoolLevel='';
+  
+  tbody.innerHTML=data.map(function(r,i){
+    var levelCls=getLevelClass(r.level);
+    var levelShort=getLevelShort(r.level);
+    var afterCls=getAfterClass(r.after);
+    
+    var isNewSchool=r.school!==prevSchool;
+    if(isNewSchool){
+      prevSchool=r.school;
+      schoolBefore=r.before||'';
+      schoolAfter=r.after||'';
+      schoolDate=r.date||'';
+      schoolLevel=r.level||'';
+    }
+    
+    var beforeVal=r.before||schoolBefore||'—';
+    var afterVal=r.after||schoolAfter||'—';
+    var dateVal=r.date||schoolDate||'待确认';
+    var levelVal=r.level||schoolLevel;
+    var levelCls2=getLevelClass(levelVal);
+    var levelShort2=getLevelShort(levelVal);
+    
+    var sourceUrl=r.source||'';
+    var collegeDisplay=r.college||'—';
+    var majorDisplay=r.major||'—';
+    var publicTag=isPublicChange(r.before,r.after)?'<div class="public-tag">🎓 公共课改考</div>':'';
+    
+    return '<tr>'+
+      '<td class="date-cell">'+dateVal+'</td>'+
+      '<td><span class="level-tag '+levelCls2+'">'+levelShort2+'</span></td>'+
+      '<td><a href="index.html?school='+encodeURIComponent(r.school)+'&from='+encodeURIComponent('改考院校.html')+'" class="school-name" style="text-decoration:none;cursor:pointer;" title="点击跳转到'+r.school+'详情">'+r.school+'</a></td>'+
+      '<td><div class="college-text">'+collegeDisplay+'</div></td>'+
+      '<td><div class="major-text">'+majorDisplay+'</div></td>'+
+      '<td>'+publicTag+'<div class="after-text '+afterCls+'">'+afterVal+'</div>'+(r.note?'<div class="note-text">💡 '+r.note+'</div>':'')+'</td>'+
+      '<td>'+(sourceUrl?'<a href="'+sourceUrl+'" target="_blank" class="source-link">🔗 戳我到院校官网</a>':'<span style="font-size:12px;color:#9a9da3">暂无链接</span>')+'</td>'+
+    '</tr>';
+  }).join('');
+  renderCards(data);
+}
+
+function renderCards(data){
+  const list=document.getElementById('cardList');
+  const cardEmpty=document.getElementById('cardEmptyState');
+  if(!list) return;
+  if(data.length===0){
+    list.innerHTML='';
+    if(cardEmpty) cardEmpty.style.display='block';
+    return;
+  }
+  if(cardEmpty) cardEmpty.style.display='none';
+  list.innerHTML=data.map(function(r){
+    var levelCls=getLevelClass(r.level);
+    var levelShort=getLevelShort(r.level);
+    var afterCls=getAfterClass(r.after);
+    var publicTag=isPublicChange(r.before,r.after)?'<div class="public-tag">🎓 公共课改考</div>':'';
+    var sourceUrl=r.source||'';
+    var beforeHtml=r.before?'<div class="before-text" style="font-size:12px;">改前：'+r.before+'</div>':'';
+    return '<div class="gk-card">'+
+      '<div class="gk-card__head"><span class="level-tag '+levelCls+'">'+levelShort+'</span><span class="gk-card__date">'+(r.date||'待确认')+'</span></div>'+
+      '<a class="gk-card__school" href="index.html?school='+encodeURIComponent(r.school)+'&from='+encodeURIComponent('改考院校.html')+'">'+r.school+'</a>'+
+      '<div class="gk-card__college">'+(r.college||'—')+'</div>'+
+      '<div class="gk-card__major">'+(r.major||'—')+'</div>'+
+      '<div class="gk-card__change"><span class="gk-card__label">改动信息</span>'+beforeHtml+publicTag+'<div class="after-text '+afterCls+'">'+(r.after||'—')+'</div></div>'+
+      (r.note?'<div class="gk-card__note">💡 '+r.note+'</div>':'')+
+      (sourceUrl?'<a class="gk-card__source" href="'+sourceUrl+'" target="_blank">🔗 戳我到院校官网</a>':'<span style="font-size:12px;color:#9a9da3">暂无链接</span>')+
+    '</div>';
+  }).join('');
+}
+
+var currentFilter='all';
+var currentType='all';
+var searchQuery='';
+
+function filterData(){
+  var filtered=examData;
+  if(currentFilter!=='all'){
+    filtered=filtered.filter(function(d){return d.level===currentFilter;});
+  }
+  if(currentType==='verified'){
+    filtered=filtered.filter(function(d){return (d.note||'').indexOf('已核实')>=0;});
+  }else if(currentType==='pending'){
+    filtered=filtered.filter(function(d){return (d.note||'').indexOf('已核实')<0;});
+  }
+  if(searchQuery){
+    var q=searchQuery.toLowerCase();
+    filtered=filtered.filter(function(d){
+      return d.school.toLowerCase().includes(q)||
+        (d.major&&d.major.toLowerCase().includes(q))||
+        (d.before&&d.before.toLowerCase().includes(q))||
+        (d.after&&d.after.toLowerCase().includes(q))||
+        (d.college&&d.college.toLowerCase().includes(q));
+    });
+  }
+  renderTable(filtered);
+}
+
+document.querySelectorAll('.filter-btn:not(.type-btn)').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.filter-btn:not(.type-btn)').forEach(function(b){b.classList.remove('active');});
+    btn.classList.add('active');
+    currentFilter=btn.dataset.filter;
+    filterData();
+  });
+});
+
+document.querySelectorAll('.type-btn').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.type-btn').forEach(function(b){b.classList.remove('active');});
+    btn.classList.add('active');
+    currentType=btn.dataset.type;
+    filterData();
+  });
+});
+
+document.getElementById('searchInput').addEventListener('input',function(e){
+  searchQuery=e.target.value.trim();
+  filterData();
+});
+
+renderTable(examData);
+</script>
+
+
+<script id="entry-a11y-adapt-js">
+(function(){
+  function enhanceClickableKeyboard(){
+    document.querySelectorAll('[onclick]:not(button):not(a):not(input):not(select):not(textarea)').forEach(function(el){
+      if(!el.hasAttribute('tabindex')) el.setAttribute('tabindex','0');
+      if(!el.hasAttribute('role')) el.setAttribute('role','button');
+      if(el.dataset.keyEnhanced === '1') return;
+      el.dataset.keyEnhanced = '1';
+      el.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' '){
+          e.preventDefault();
+          el.click();
+        }
+      });
+    });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', enhanceClickableKeyboard);
+  }else{
+    enhanceClickableKeyboard();
+  }
+})();
+</script>
+
+<script src="nav-data.js"></script>
+<script src="mobile-function-shell.js" data-root="."></script>
+</body>
+</html>
+
