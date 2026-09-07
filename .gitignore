@@ -1,0 +1,46 @@
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 临时文件
+_tmp_*
+
+# 历史备份(日期命名, 由git版本管理替代)
+_backup_*/
+
+# 单文件备份(.bak_*后缀, 由git版本管理替代)
+*.bak_*
+
+# Windows 系统文件
+Thumbs.db
+Desktop.ini
+
+# 日志
+*.log
+
+# 环境变量与本地密钥（示例文件保留）
+.env
+.env.*
+!.env.example
+!*.env.example
+
+# SQLite 运行时临时文件
+*.db-wal
+*.db-shm
+*.db-journal
+
+# 本地工具/工作区文件
+.dsh/
+
+# 本地备份目录
+backups/
+
+# 后台导入生成的带时间戳原始文件（原始 Excel 除外）
+数据库/raw/20*.xlsx
+
+# 视觉回归临时产物
+design-output/
+design-qa.md
+
+# 后台运行期新增上传文件由服务器单独备份；仓库内首批素材会强制纳入首次提交
+uploads/content/*

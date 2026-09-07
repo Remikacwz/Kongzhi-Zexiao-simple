@@ -1,0 +1,245 @@
+# 控制考研择校与复试网站
+
+面向控制类考研的一站式信息站：院校录取数据、专业课查询、就业信息、复试全攻略、面试题库。
+
+- **技术栈**：纯静态 HTML + 原生 JS + ECharts/Chart.js/Tailwind；本地开发用 Python 标准库 `serve.py`；数据层支持 SQLite / MySQL（可切换）
+- **运行环境**：Windows / Linux 均可，Python 3.9+
+- **离线可用**：第三方库已本地化在 `vendor/`，断网可访问
+
+---
+
+## 快速启动
+
+```bash
+python serve.py 8767
+```
+
+浏览器打开 `http://127.0.0.1:8767`。
+
+- 首页：`index.html`
+- 专业课院校查询：`专业课选择/考研专业课院校查询.html`
+- 复试全攻略：`复试全攻略/index.html`
+- 复试面试题库：`复试全攻略/面试题库.html`
+- 院校内容后台：`数据库/admin.html`
+- 手机端实时预览：`移动端实时预览.html`
+
+改动 HTML/CSS/JS 后无需重启，浏览器 `Ctrl+F5` 强刷即可。
+
+---
+
+## 近期更新
+
+- 常识科普全面控制化：修正数学一/数学二口径、统一 28 考研时间线、补全公共课备考内容
+- 择校指南与 FAQ 清理通信/电子旧内容，改为控制向
+- 常识科普移动端补充底部导航，移除旧返回顶部和悬浮返回首页
+- 常识科普表格移动端改为卡片式堆叠，取消横向滑动条
+- 末流211 vs 强双非等对比改为整齐卡片布局，并统一主题浅红风格
+- 生源地图 Top10 改文字列表、筛选改下拉、生源列表两列展示
+- 全站移动端顶部导航、滚动条样式统一
+
+## 生产环境 API
+
+```bash
+# 生产推荐：FastAPI + Uvicorn
+export KAOYAN_ADMIN_USER="content-admin"
+export KAOYAN_ADMIN_PASSWORD="请替换为强密码"
+export KAOYAN_ADMIN_TOKEN="请替换为另一个强随机值"
+export KAOYAN_COOKIE_SECURE="1"
+uvicorn api_app:app --host 127.0.0.1 --port 8000 --workers 1
+```
+
+- `api_app.py` 提供 `/api/*` 查询接口和 `POST /api/admin/import-admission` 后台导入接口
+- 静态文件交给 Nginx，API 反向代理到 `127.0.0.1:8000`
+- 云端通过 `KAOYAN_SQLITE_PATH`、`KAOYAN_UPLOAD_DIR`、`KAOYAN_RAW_DIR` 把运行数据放在 Git 仓库外
+- 详细部署见 `docs/部署.md`
+
+---
+
+## 站点结构
+
+| 目录/文件 | 说明 |
+|---|---|
+| `index.html` / `index.js` / `kaoyan_data.js` | 首页与择校主数据 |
+| `专业课选择/` | 专业课院校查询、资料与课程 |
+| `复试全攻略/` | 复试时间线、笔试、面试、导师、项目、调剂、面试题库 |
+| `就业相关/` | 就业去向、校招信息、就业分析 |
+| `考研常识科普/` | 考研常识（控制向内容）、公共课备考、上岸经验贴 |
+| `数据库/` | SQLite 数据库、API、导入脚本、后台管理页 |
+| `tools/` | 备份脚本 |
+| `tests/` | 自动化测试 |
+| `docs/部署.md` | 服务器部署指南 |
+
+---
+
+## 数据与数据库
+
+### 主要数据
+
+| 数据 | 来源 | 数量 |
+|---|---|---|
+| 院校录取数据 | `27考研择校宝典_录取数据表_0815.xlsx` | 530 条 / 133 校 / 152 专业 |
+| 专业课科目/参考书 | 从查询页提取 | 7 门 / 146 条 / 461 本书 |
+| 经验贴 | `考研常识科普/posts-data.js` | 126 条 |
+| 校招岗位 | `就业相关/job-listing` | 136 条 |
+| 资料课程 | `专业课选择/资料和课程.html` | 8 个分类 |
+| 复试面试题库 | 桌面《26宝典C：万人教育控制复试面试宝典.docx》 | 1485 题 |
+
+### SQLite 数据库
+
+文件：`数据库/admission.db`
+
+表：`schools`、`majors`、`admissions`、`subject_meta`、`exam_subjects`、`reference_books`、`experience_posts`、`job_posts`、`course_resources`
+
+### API 接口
+
+由 `数据库/api.py` 提供，`serve.py` 挂载：
+
+| 接口 | 说明 |
+|---|---|
+| `/api/summary` | 统计数据（学校/专业/记录/省份/科目数） |
+| `/api/schools?q=` | 院校列表（含省份/层次/校徽） |
+| `/api/majors?school=&code=` | 专业方向 |
+| `/api/admissions?school=&major_code=&year=&page=&page_size=` | 录取数据分页 |
+| `/api/subjects` | 专业课科目 |
+| `/api/exam-subjects?school=` | 学校-专业课 |
+| `/api/books?school=` | 参考书目 |
+| `/api/posts` | 经验贴（筛选/搜索/分页） |
+| `/api/jobs` | 校招岗位（筛选/搜索/分页） |
+| `/api/resources` | 资料课程画廊 |
+
+### 数据源切换
+
+`数据库/config.json`：
+
+```json
+{
+  "db_type": "sqlite",
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "",
+    "database": "kaoyan_admission",
+    "charset": "utf8mb4"
+  }
+}
+```
+
+- 本地开发保持 `sqlite`
+- 服务器可通过 `KAOYAN_DB_TYPE` 与 `KAOYAN_DB_*` 环境变量切换 MySQL，表结构见 `数据库/schema_mysql.sql`
+- 院校/真题内容后台目前始终写入 SQLite 的 `数据库/admission.db`；即使查询数据使用 MySQL，也要备份该文件
+
+### 数据导入
+
+```bash
+# SQLite（本地开发）
+python 数据库/import_admission.py
+python 数据库/import_subjects.py
+python 数据库/import_content.py
+
+# MySQL（服务器，读取 数据库/config.json 的 mysql 配置）
+python 数据库/import_admission.py --mysql
+python 数据库/import_subjects.py --mysql
+python 数据库/import_content.py --mysql
+```
+
+后台页面 `数据库/admin.html` 除了上传 Excel，还可以按院校维护视频、群二维码、图片与链接模块。录取查询可选 SQLite/MySQL，内容后台仍使用 SQLite。
+
+### 院校内容后台
+
+本地地址：`http://127.0.0.1:8767/数据库/admin.html`
+
+- 本地首次登录：用户名 `admin`，密码 `admin123`
+- 生产环境必须设置 `KAOYAN_ADMIN_USER`、`KAOYAN_ADMIN_PASSWORD`；服务启动时会覆盖已有默认管理员凭据
+- 支持视频链接元数据与封面抓取；抓取失败时可以手动上传封面
+- 支持群二维码、普通图片、链接和公告模块
+- 内容可保存为草稿、拖拽排序、设置发布时间，并单独发布或下线
+- 公开院校页只读取已发布且仍在有效期内的内容
+
+```powershell
+$env:KAOYAN_ADMIN_USER="content-admin"
+$env:KAOYAN_ADMIN_PASSWORD="请替换为强密码"
+python serve.py 8767
+```
+
+相关公开接口：
+
+| 接口 | 说明 |
+|---|---|
+| `GET /api/school-content?school=院校名` | 获取院校已发布内容 |
+| `GET /api/schools/{id或院校名}/content-modules` | 获取院校已发布内容 |
+| `/api/admin/*` | 登录后的模块管理、图片上传与视频封面读取 |
+
+---
+
+## 后台导入与鉴权
+
+- 本地 `serve.py` 未设置 Token 时，仅本机回环可访问导入接口
+- 生产 `api_app.py` 未设置 Token 时会禁用导入接口；设置后必须携带请求头 `X-Admin-Token`
+
+```bash
+# Windows PowerShell
+$env:KAOYAN_ADMIN_TOKEN="你的强密码"
+python serve.py 8767
+```
+
+---
+
+## 测试
+
+```bash
+python tests/test_api.py
+python tests/test_server_auth.py
+python tests/test_content_admin.py
+python tests/test_mobile_pages.py
+```
+
+- `test_api.py`：API 函数直连测试
+- `test_server_auth.py`：后台导入鉴权测试
+- `test_content_admin.py`：登录、模块增删改发、排序、上传与公开状态测试
+- `test_mobile_pages.py`：390px 手机端溢出回归（需 playwright）
+
+手机端测试首次准备：
+
+```bash
+python -m pip install -r requirements-dev.txt
+python -m playwright install chromium
+```
+
+---
+
+## 备份
+
+```bash
+python tools/backup.py
+```
+
+默认生成 `backups/kaoyan-backup-时间戳.zip`，包含数据库、CSV、原始 Excel/JSON、配置与表结构。
+
+---
+
+## 部署
+
+见 `docs/部署.md`，包含：
+
+- 环境要求
+- MySQL 建库建表与数据导入
+- FastAPI/Uvicorn + Nginx + HTTPS
+- systemd 守护
+- 备份与常见问题
+
+---
+
+## Git 工作流
+
+- 分支：`main`
+- 提交信息用中文，说明本次改动
+- 每次完成一个功能后：
+
+```bash
+git add -A
+git commit -m "本次改动说明"
+git push origin main
+```
+
+- `.gitignore` 已排除：`__pycache__/`、`backups/`、`.dsh/`、`数据库/raw/20*.xlsx` 等

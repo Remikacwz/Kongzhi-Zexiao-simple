@@ -1,0 +1,111 @@
+# 院校录取数据库
+
+数据源：`raw/27考研择校宝典_录取数据表_0815.xlsx`（132 所高校 / 155 个专业方向 / 531 条记录）
+
+## 文件说明
+- `schema_mysql.sql`：MySQL 8 建表语句（线上用）
+- `import_admission.py`：录取数据导入脚本（本地 SQLite / 线上 MySQL）
+- `import_subjects.py`：专业课科目/参考书导入脚本（从 raw/subjects_books_raw.json），并回填 `schools.province/tier/logo_url`
+- `import_content.py`：内容数据导入脚本（从 raw/content_raw.json：经验贴 / 校招岗位 / 资料课程）
+- `config.json`：数据源切换配置（sqlite / mysql），部署 MySQL 时改这里
+- `api.py`：查询 API（无第三方依赖，供 serve.py 或 Flask/FastAPI 调用）
+- `admission.db`：SQLite 数据库（导入后生成）
+- `schools.csv` / `majors.csv` / `admissions.csv`：导出的扁平数据
+
+## 查询 API
+根目录 `python serve.py 8767` 已内置以下接口：
+
+| 接口 | 参数 | 说明 |
+|---|---|---|
+| `/api/summary` | 无 | 统计摘要（学校/专业/记录数 + Top5 学校） |
+| `/api/schools` | `q` 校名模糊搜索 | 院校列表 |
+| `/api/majors` | `school`、`code` | 专业方向列表 |
+| `/api/admissions` | `school`、`major_code`、`year`、`page`、`page_size` | 录取数据（分页） |
+| `/api/subjects` | 无 | 专业课科目（homeSubjects 结构，7 门） |
+| `/api/exam-subjects` | `school` | 学校-专业课扁平列表 |
+| `/api/books` | `school` | 初试参考书目 |
+| `/api/posts` | `school`、`category`、`q`、`page`、`page_size` | 考研经验贴（分页） |
+| `/api/jobs` | `q`、`type`、`industry`、`location`、`grade`、`page`、`page_size` | 校招岗位（分页） |
+| `/api/resources` | 无 | 资料/课程画廊分类 |
+
+示例：
+```bash
+curl "http://127.0.0.1:8767/api/admissions?school=清华大学&major_code=085400&page=1&page_size=10"
+```
+
+返回格式：`{"code":0,"data":{"items":[...],"page":1,"page_size":10,"total":...,"total_pages":...}}`
+
+## 数据源切换（SQLite / MySQL）
+
+`api.py` 默认读取 `config.json`：
+
+```json
+{
+  "db_type": "sqlite",
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "",
+    "database": "kaoyan_admission",
+    "charset": "utf8mb4"
+  }
+}
+```
+
+- 本地开发：保持 `"db_type": "sqlite"`。
+- 服务器部署：改为 `"db_type": "mysql"`，填好 MySQL 连接信息，并 `pip install pymysql`。
+- MySQL 表结构见 `schema_mysql.sql`，数据导入用 `python import_admission.py --mysql --host ...`。
+
+## 管理接口鉴权
+
+`POST /api/admin/import-admission` 默认只允许本机回环访问（127.0.0.1 / ::1 / localhost）。
+上线前设置环境变量 `KAOYAN_ADMIN_TOKEN`，后台导入页会带 `X-Admin-Token` 请求头：
+
+```bash
+# Windows PowerShell
+$env:KAOYAN_ADMIN_TOKEN="你的强密码"
+python serve.py 8767
+```
+
+设置 Token 后，非本机或 Token 错误的请求会返回 401。
+
+## 本地使用
+```bash
+cd 数据库
+python import_admission.py
+```
+生成 `admission.db` 和三个 CSV。
+
+## 上线 MySQL
+1. 先执行 `schema_mysql.sql` 建库建表
+2. `pip install pymysql openpyxl`
+3. 导入：
+```bash
+python import_admission.py --mysql --host 127.0.0.1 --port 3306 --user root --password xxx --database kaoyan_admission
+```
+
+## 后台导入页面
+本地启动 `python serve.py 8767` 后，打开：
+
+```
+http://127.0.0.1:8767/数据库/admin.html
+```
+
+选择最新版 `27考研择校宝典_录取数据表_XXXX.xlsx` 上传即可重建 SQLite 数据库并刷新 CSV。
+
+> 导入接口为 `POST /api/admin/import-admission`（接收 JSON：`{"filename":"xxx.xlsx","base64":"..."}`）。
+> 上线服务器时请给该接口加登录鉴权，不要直接暴露到公网。
+
+## 核心表
+- `schools`：院校（含 province 省份、tier 层次、logo_url 校徽）
+- `majors`：专业方向
+- `admissions`：录取数据（year 区分年份）
+- `subject_meta` / `exam_subjects`：专业课科目与学校-科目关系
+- `reference_books`：初试参考书目
+- `experience_posts` / `job_posts` / `course_resources`：经验贴 / 校招岗位 / 资料课程
+
+## 后续更新
+- 每年新数据：新增 `year` 记录，不覆盖旧年份
+- 用管理后台或 Excel 导入更新
+- 建议每行保留 `source_file` 和 `created_at`，方便追溯
