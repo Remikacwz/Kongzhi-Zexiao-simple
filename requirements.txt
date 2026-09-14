@@ -1,0 +1,5 @@
+# 服务器部署所需依赖
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pymysql>=1.1
+openpyxl>=3.1
