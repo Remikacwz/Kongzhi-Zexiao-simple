@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国科学技术大学 845 控制原理 2025 年真题思维导图</title>
+<meta name="description" content="中国科学技术大学 2025 年 845 控制原理 考研真题思维导图：共 6 个大题，逐题思路、考点与易错整理。第1题（一、储罐液位对象的建模与线性化）；第2题（二、含右半平面极点的奈奎斯特判据）；第3题（三、含纯滞后的 PID 控制器整定）；第4题（四、状态响应与输出的极值）；第5题（五、参数对能控能观与稳定性的影响及观测器设计）；第6题（六、最小实现与能观性的证明）">
+<link rel="canonical" href="http://127.0.0.1:8768/真题思维导图/x/985/zhongguokexuejishu/2025/845/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中国科学技术大学 845 控制原理 2025 年真题思维导图">
+<meta property="og:description" content="中国科学技术大学 2025 年 845 控制原理 考研真题思维导图：共 6 个大题，逐题思路、考点与易错整理。第1题（一、储罐液位对象的建模与线性化）；第2题（二、含右半平面极点的奈奎斯特判据）；第3题（三、含纯滞后的 PID 控制器整定）；第4题（四、状态响应与输出的极值）；第5题（五、参数对能控能观与稳定性的影响及观测器设计）；第6题（六、最小实现与能观性的证明）">
+<meta name="theme-color" content="#1f4e79">
+<link rel="stylesheet" href="../../../../../assets/kg.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "中国科学技术大学 845 控制原理 2025 年真题思维导图", "inLanguage": "zh-CN", "about": ["PID 控制器与参数整定", "含纯延迟环节的系统稳定性", "奈奎斯特判据", "李雅普诺夫稳定性分析", "根轨迹的绘制法则", "状态观测器设计", "状态转移矩阵", "由传递函数写状态空间表达式", "能控性与能观性", "被控对象的动态特性"], "educationalLevel": "985 院校", "url": "http://127.0.0.1:8768/真题思维导图/x/985/zhongguokexuejishu/2025/845/"}</script>
+</head>
+<body class="page-set">
+<header class="site-head"><div class="inner"><a class="parent-home" href="../../../../../../index.html"><span class="arr">←</span><span class="ptxt">择校首页</span></a><a class="brand" href="../../../../../"><span class="full">控制考研真题思维导图</span><span class="short">真题思维导图</span></a><button class="sbtn" id="kg-search-btn" type="button" aria-label="搜索"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button><nav class="crumbs"><a href="../../../../../x/985/">985 院校</a><span class="sep">›</span><a href="../../../../../x/985/zhongguokexuejishu/">中国科学技术大学</a><span class="sep">›</span><span>2025 年</span></nav><nav class="levelnav" aria-label="层级导航"><a class="lv home" href="../../../../../">首页</a><a class="lv" href="../../../../../x/985/zhongguokexuejishu/">← 中国科学技术大学</a><a class="lv" href="#q1">第 1 题 →</a></nav><input class="head-inp" id="site-q" type="search" placeholder="搜学校 / 代码 / 年份" aria-label="搜索"></div></header>
+<main class="wrap">
+<div class="titlebar"><img class="hlogo" src="../../../../../assets/logo/zhongguokexuejishu.jpg" alt="中国科学技术大学校徽" width="52" height="52"><h1>中国科学技术大学 845 控制原理 2025 年真题思维导图</h1><div class="actions"><button class="btn" data-mode="outline">大纲</button><button class="btn on" data-mode="map">导图</button><button class="btn" id="btn-full">全屏</button></div></div>
+<div class="tagrow"><span class="badge t985">985 院校</span><span class="badge">共 6 题</span></div>
+<p class="sub muted tiny" style="margin:8px 0 0">难度：难　6 题 150 分；前半是过程对象建模、奈奎斯特围线、PID 整定（含 Z-N 与 λ 整定），后半连续三题考状态空间：状态响应、参数对能控能观与稳定性的影响、最小实现与能观性证明</p>
+<div class="qtabs" id="qtabs"><button class="qt on" data-q="all">整卷</button><button class="qt" data-q="1">1</button><button class="qt" data-q="2">2</button><button class="qt" data-q="3">3</button><button class="qt" data-q="4">4</button><button class="qt" data-q="5">5</button><button class="qt" data-q="6">6</button></div>
+<div class="cols"><div class="mainpane">
+<div class="mapwrap" id="mapwrap">
+<div class="maptools">
+<button class="btn on" data-depth="1">板块</button>
+<button class="btn" data-depth="2">考点</button>
+<button class="btn" data-depth="99">全部</button>
+<button class="btn" data-zoom="in" title="放大">＋</button>
+<button class="btn" data-zoom="out" title="缩小">－</button>
+<button class="btn" data-fit="1">适应</button>
+<button class="btn" id="btn-exitfs" hidden>退出全屏</button>
+<input id="map-q" type="search" placeholder="图内搜索">
+</div>
+<svg id="svg"><g id="g"></g></svg>
+<div class="map-foot">点击节点展开/折叠　·　滚轮缩放　·　拖拽平移</div>
+</div>
+<section class="content" id="content">
+<article class="qcard" id="q1" data-q="1">
+<h2><span class="no">1</span><span>一、储罐液位对象的建模与线性化</span><a class="anchorlink" data-q="1" href="#q1" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由质量守恒列非线性方程，在平衡点线性化得增量方程与传递函数，再算指定频率处的幅值与相位</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/md_04/">非线性模型的线性化</a>
+<span class="tiny muted">建模与机电系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>建立以入口流量为输入、液位为输出的非线性微分方程并在平衡点线性化</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>列质量守恒时把液体当作不可压缩介质：进流量减出流量等于罐内质量的变化率</li>
+<li><b>关键一步：</b>出口流量＝出口流速×截面积×密度</li>
+<li><b>关键一步：</b>出口流速用托里拆利关系与液位高度挂钩，这是非线性来源</li>
+<li><b>关键一步：</b>在平衡点处把非线性项按一阶泰勒展开，用平衡关系把常数项消掉，剩下的就是增量方程</li>
+<li><b>中间结果：</b>非线性方程：罐内质量的变化率等于入口与出口质量流量之差</li>
+<li><b>中间结果：</b>线性化时间常数由出口流量对液位的偏导除以截面积决定</li>
+<li><b>中间结果：</b>罐越细高、出口越大，时间常数越小</li>
+<li><b>卡点：</b>漏掉出口流量对液位的偏导这一项，把对象当成纯积分环节；或线性化时没在平衡点消常数项</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>在工作点附近作泰勒展开并忽略高阶项</li><li>线性化模型只在小偏差范围内有效</li><li>必须先求出平衡工作点</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由静态方程求平衡工作点</li><li>在工作点处求偏导得到增量系数</li><li>写出以增量表示的线性化方程</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>建立以入口流量为输入、液位为输出的非线性微分方程并在平衡点线性化</li><li>对非线性微分方程在平衡点处线性化</li><li>写出小偏差线性化模型的传递函数</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>未先求平衡点就直接展开</li><li>把增量符号去掉后与原始变量混用</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\Delta y=\left.\frac{\partial f}{\partial x}\right|_{x_0}\Delta x"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/pc_02/">被控对象的动态特性</a>
+<span class="tiny muted">过程控制与检测仪表</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>写出液位对象的传递函数并说明是自衡还是非自衡</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>线性化后的增量方程是一阶常微分方程，写成标准形式即可直接读出一阶环节的增益与时间常数</li>
+<li><b>关键一步：</b>增益量纲是液位除以质量流量，不要漏写单位</li>
+<li><b>关键一步：</b>平衡点的取值要先由稳态关系算出出口流速，才能代进线性化系数</li>
+<li><b>中间结果：</b>由稳态数据自检：出口流速＝入口质量流量/(密度×出口截面积)</li>
+<li><b>中间结果：</b>该值应与托里拆利公式给出的结果吻合</li>
+<li><b>卡点：</b>液位对象是自衡对象，出口流量随液位升高而增大，会自行重新平衡，不能按非自衡对象写</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>用放大系数 K、时间常数 T、纯滞后 τ 三个参数描述对象</li><li>自衡对象受扰动后能自行重新平衡，非自衡对象不能</li><li>多容对象由多个一阶环节串联而成，容量滞后大</li><li>纯滞后只使响应推迟，不改变最终稳态值</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由阶跃响应曲线读出放大系数、时间常数与纯滞后时间</li><li>判断对象是否自衡、是否多容</li><li>写出对象的传递函数</li><li>用终值定理求稳态值</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>写出液位对象的传递函数并说明是自衡还是非自衡</li><li>由响应曲线写出对象传递函数</li><li>求阶跃输入下的稳态值并说明与哪些因素有关</li><li>判断对象是否具有纯滞后</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把纯滞后当成时间常数一起处理</li><li>放大系数的量纲与单位漏写</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="W_0(s)=\frac{K}{Ts+1}e^{-\tau s}"></div><div class="formula" data-tex="K=\frac{\Delta y}{\Delta x}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/fd_01/">频率特性的物理意义与求法</a>
+<span class="tiny muted">频域分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>计算指定频率下频率特性的幅值与相位</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>一阶环节的幅频是直流增益除以根号下「一加转折频率比的平方」，相频是负的反正切</li>
+<li><b>关键一步：</b>先算时间常数与频率的乘积 τω</li>
+<li><b>关键一步：</b>若远小于 1，幅值近似为直流增益、相位接近零</li>
+<li><b>中间结果：</b>本题时间常数约 0.045 s、转速频率 0.022 rad/s</li>
+<li><b>中间结果：</b>两者乘积约千分之一，幅值近似直流增益、相位近零</li>
+<li><b>卡点：</b>把频率特性的幅值当成增益直接填，忘记它是频率的函数；或角度与弧度混用</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>频率特性是传递函数中令 s=jω 得到的复变函数</li><li>幅频特性表示各频率正弦输入下的幅值放大倍数</li><li>相频特性表示输出相对输入的相位差</li><li>频率特性可用幅相曲线、Bode 图或尼柯尔斯图表示</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由传递函数令 s=jω 得到 G(jω)</li><li>分别求出幅值 |G(jω)| 与相角 ∠G(jω)</li><li>按需要绘制幅相曲线或对数频率特性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>计算指定频率下频率特性的幅值与相位</li><li>求给定传递函数的幅频与相频表达式</li><li>计算某频率处的幅值与相角</li><li>说明频率特性的物理含义</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>求幅值时忘记把分母复数取模后再相除</li><li>相角累加时漏掉积分环节的 -90°</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(j\omega)=G(s)\big|_{s=j\omega}=|G(j\omega)|e^{j\varphi(\omega)}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q2" data-q="2">
+<h2><span class="no">2</span><span>二、含右半平面极点的奈奎斯特判据</span><a class="anchorlink" data-q="2" href="#q2" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">开环在小右半平面有极点，画围线时不能只看曲线本身；引入速度反馈后零极点分布改变，需重新推导稳定条件</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/st_04/">奈奎斯特判据</a>
+<span class="tiny muted">稳定性分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>绘制奈奎斯特围线并用判据判断闭环稳定性</li>
+<li>引入速度反馈后推导闭环稳定的条件</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>开环有右半平面极点，必须先数出 P</li>
+<li><b>关键一步：</b>再用 Z=N+P 判稳，不能沿用「不包围就稳定」</li>
+<li><b>关键一步：</b>奈奎斯特围线要绕开虚轴上的极点（若开环含积分环节），绕行方向决定补画的圆弧走向</li>
+<li><b>关键一步：</b>引入速度反馈后会多出一个零点，零极点分布与前一小问不同，P 可能改变，必须重新数一遍</li>
+<li><b>中间结果：</b>稳定条件的形式通常是「增益小于某个临界值」这类不等式，由曲线与负实轴交点位置给出</li>
+<li><b>卡点：</b>不数 P 就下结论；或加了速度反馈后仍沿用第一问的围线与 P 值</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>闭环稳定 ⇔ Z=N+P，其中 Z 为右半平面闭环极点数</li><li>P 为开环右半平面极点数，须先数清楚</li><li>N 为开环幅相曲线绕 (-1,j0) 点的净包围圈数</li><li>逆时针包围为正，顺时针为负</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>先求开环极点，数出右半平面个数 P</li><li>绘制开环幅相特性曲线（或利用 Bode 图判稳）</li><li>数出曲线对 (-1,j0) 点的包围圈数 N</li><li>由 Z=N+P 判断闭环稳定性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>绘制奈奎斯特围线并用判据判断闭环稳定性</li><li><span class="ownmark">本卷考过</span>引入速度反馈后推导闭环稳定的条件</li><li>由开环幅相曲线判断闭环稳定性</li><li>求使闭环稳定的开环增益范围</li><li>判断补画虚轴绕行后曲线的包围情况</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>开环含有积分环节时未补画无穷大半径圆弧</li><li>把包围圈数的正负号定义搞反</li><li>没有先数开环右半平面极点数 P</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="Z=N+P"></div><div class="formula" data-tex="N=N_+-N_-"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q3" data-q="3">
+<h2><span class="no">3</span><span>三、含纯滞后的 PID 控制器整定</span><a class="anchorlink" data-q="3" href="#q3" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">对象 20/[s(s+2)]·e^{−τs}：先用根轨迹看纯 P 的稳定性，再由临界振荡条件反求 τ 与 kp，最后用 Z-N 与 λ 两种方法整定</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_02/">根轨迹的绘制法则</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用根轨迹法分析纯比例控制器下闭环系统的稳定性</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>无滞后时特征方程是二阶，两根实部恒为负</li>
+<li><b>关键一步：</b>故加大比例增益只会从过阻尼变欠阻尼，不会失稳</li>
+<li><b>关键一步：</b>判断二阶系统的稳定性只需看特征方程两个系数是否同号，不必画完整根轨迹</li>
+<li><b>关键一步：</b>这一步的结论正好解释了为什么必须引入纯滞后才可能出现等幅振荡</li>
+<li><b>中间结果：</b>τ=0 时闭环特征方程为 s²+2s+20k_p=0</li>
+<li><b>中间结果：</b>两根为 s=−1±√(1−20k_p)，实部恒为 −1</li>
+<li><b>中间结果：</b>20k_p&lt;1 为两个负实根，20k_p&gt;1 为左半平面共轭复根</li>
+<li><b>卡点：</b>以为加大增益一定会失稳，套用三阶及以上系统才有的临界增益结论</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>起于开环极点、终于开环零点（无穷远零点），分支数等于极点数 n</li><li>实轴上某段右侧的零极点总数为奇数时，该段属于根轨迹</li><li>渐近线条数为 n-m，交点在实轴上，与实轴夹角等分 360°</li><li>根轨迹关于实轴对称</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>标出全部开环零极点并判断实轴上的根轨迹段</li><li>计算渐近线交点与夹角</li><li>求出分离点、出射角、与虚轴交点</li><li>按对称性连接各段并标出对应 K 值</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用根轨迹法分析纯比例控制器下闭环系统的稳定性</li><li>按法则绘制根轨迹草图</li><li>指出渐近线条数与夹角</li><li>判断某段实轴是否属于根轨迹</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>实轴段判据中的零极点个数算错</li><li>渐近线夹角公式中的 2k+1 写成 2k</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\sigma_a=\frac{\sum p_j-\sum z_i}{n-m}"></div><div class="formula" data-tex="\varphi_a=\frac{(2k+1)180^\circ}{n-m}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/st_05/">含纯延迟环节的系统稳定性</a>
+<span class="tiny muted">稳定性分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由临界振荡的周期反求纯滞后时间与临界比例增益</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>等幅振荡意味着闭环极点在虚轴上，把 s=jω 代入特征方程</li>
+<li><b>关键一步：</b>振荡周期先换成角频率，再由相角条件解出滞后时间</li>
+<li><b>关键一步：</b>幅值条件定出临界比例增益，它是后面 Z-N 整定的基准</li>
+<li><b>中间结果：</b>周期与角频率是倒数乘 2π 的关系；相角条件是「对象相角加上滞后相角等于 −180°」</li>
+<li><b>卡点：</b>周期与角频率的换算写反；或算滞后时间时把角度与弧度混用</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>延迟环节 e^{-τs} 的幅值为 1、相位为 -τω，只恶化相位</li><li>延迟会显著缩小稳定域，τ 越大越难稳定</li><li>频域判据需用相位裕度扣除延迟引起的附加滞后</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出含延迟的开环传递函数</li><li>分别求幅值与相位表达式</li><li>在相频特性中扣除 τω 的滞后量</li><li>按稳定裕度或奈氏判据求临界 τ 或临界 K</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由临界振荡的周期反求纯滞后时间与临界比例增益</li><li>求使系统稳定的最大延迟时间</li><li>求含延迟系统的临界开环增益</li><li>分析延迟对稳定裕度的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把延迟环节当成惯性环节处理</li><li>相位计算时忘记角度与弧度换算</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(s)=G_0(s)e^{-\tau s},\quad \angle G=-\tau\omega+\angle G_0"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/cr_07/">PID 控制器与参数整定</a>
+<span class="tiny muted">系统校正</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用齐格勒-尼科尔斯法整定 P、PI、PID 参数</li>
+<li>用 λ 整定法整定 PD 控制器</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>Z-N 闭环整定以临界增益与临界周期为基准，P、PI、PID 三组公式的比例系数不同</li>
+<li><b>关键一步：</b>积分时间、微分时间算出后还要换算成控制器里的积分增益、微分增益，不要直接填时间</li>
+<li><b>关键一步：</b>λ 整定法要让闭环等效成一阶惯性环节</li>
+<li><b>关键一步：</b>λ 由过渡过程时间反推，误差带 2% 时约取四倍 λ</li>
+<li><b>中间结果：</b>λ 整定误差带不同系数不同：2% 约 4λ、5% 约 3λ</li>
+<li><b>中间结果：</b>选错系数会让设计结果差三成以上</li>
+<li><b>卡点：</b>把积分时间当积分增益；或把 λ 与闭环等效时间常数搞混，没有由过渡过程时间先定 λ</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>比例项提高快速性但存在稳态误差</li><li>积分项消除稳态误差但降低稳定性、增大超调</li><li>微分项提供超前相位改善动态性能但对噪声敏感</li><li>PD 相当于超前校正，PI 相当于滞后校正</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>按误差类型选择需要引入的环节</li><li>先调比例再调积分最后调微分</li><li>用稳定裕度或性能指标校验并微调</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用齐格勒-尼科尔斯法整定 P、PI、PID 参数</li><li><span class="ownmark">本卷考过</span>用 λ 整定法整定 PD 控制器</li><li>设计 PID 控制器满足给定指标</li><li>分析各参数变化对系统性能的影响</li><li>说明微分项对噪声的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 PI 的相位影响说成超前</li><li>积分增益过大导致系统振荡甚至不稳定</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G_c(s)=K_p+\frac{K_i}{s}+K_ds"></div><div class="formula" data-tex="G_c(s)=K_p\left(1+\frac{1}{T_is}+T_ds\right)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q4" data-q="4">
+<h2><span class="no">4</span><span>四、状态响应与输出的极值</span><a class="anchorlink" data-q="4" href="#q4" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">二阶系统有两个相等特征值，状态转移矩阵含 t 项；求状态响应后再回答输出在整个运行期间有无最大最小值</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_03/">状态转移矩阵</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求给定初始状态与阶跃输入下的状态响应表达式</li>
+<li>判断输出是否存在最大值与最小值</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先求特征值；两个特征值相等时不能只写对角阵</li>
+<li><b>关键一步：</b>状态转移矩阵要含「指数×单位阵＋(A−λI)×t」的形式</li>
+<li><b>关键一步：</b>状态响应分零输入与零状态两部分：零输入项由状态转移矩阵乘初态得到，零状态项由卷积积分得到</li>
+<li><b>关键一步：</b>输出是否单调或是否有极值，要看输出表达式对时间的导数符号，而不是只看状态变量</li>
+<li><b>中间结果：</b>本题两个特征值都是 −2，状态转移矩阵里会出现 t 与指数相乘的项</li>
+<li><b>中间结果：</b>初态取负值时零输入项与零状态项反向抵消，输出可能只有单调变化的一段</li>
+<li><b>卡点：</b>特征值相等时仍套互异公式，会丢掉带 t 的项</li>
+<li><b>卡点：</b>问极值时不能只说单调，要判断最大值是否可达</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态转移矩阵 e^{At} 描述零输入下状态随时间的演化</li><li>可从 (sI-A)^{-1} 求拉氏反变换得到</li><li>满足 e^{A\cdot0}=I 且可逆</li><li>含输入时用卷积积分写出全响应</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>计算 (sI-A)^{-1}</li><li>求拉氏反变换得到 e^{At}</li><li>代入全响应公式求状态与输出</li><li>用初值条件校验结果</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求给定初始状态与阶跃输入下的状态响应表达式</li><li><span class="ownmark">本卷考过</span>判断输出是否存在最大值与最小值</li><li>求状态转移矩阵</li><li>求给定初始条件下的状态与输出响应</li><li>用性质验证转移矩阵是否正确</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>矩阵求逆时忘记检查行列式是否为零</li><li>卷积积分中变量代换写错</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="e^{At}=L^{-1}\left[(sI-A)^{-1}\right]"></div><div class="formula" data-tex="x(t)=e^{At}x(0)+\int_0^t e^{A(t-\tau)}Bu(\tau)\,d\tau"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q5" data-q="5">
+<h2><span class="no">5</span><span>五、参数对能控能观与稳定性的影响及观测器设计</span><a class="anchorlink" data-q="5" href="#q5" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">含参数 a 的二阶系统，逐项讨论能控性、能观性、BIBO 稳定性、李雅普诺夫稳定与渐近稳定，再设计最小维观测器</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_04/">能控性与能观性</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>分析参数对系统能控性与能观性的影响</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>二阶系统只需构造能控性矩阵与能观性矩阵，行列式为零的那个参数值就是失去能控或能观的分界点</li>
+<li><b>关键一步：</b>能控与能观的分界点通常不重合，要分别列出来，不能只算一个</li>
+<li><b>关键一步：</b>判断时把含参数的表达式写成 a 的一次式，解出使行列式为零的 a 即可</li>
+<li><b>中间结果：</b>能控性矩阵与能观性矩阵都在 a 取某个特定值时降秩，两处的 a 值不同</li>
+<li><b>卡点：</b>只验一个矩阵就下结论；或把秩判据里的矩阵构造顺序写错，维数对不上</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>能控性指能否用输入在有限时间内把任意初始状态驱动到原点</li><li>能观性指能否由输出在有限时间内确定初始状态</li><li>用能控性矩阵与能观性矩阵的秩判断</li><li>能控性与能观性经非奇异线性变换保持不变</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>构造能控性矩阵并求秩</li><li>构造能观性矩阵并求秩</li><li>与系统阶数 n 比较得出结论</li><li>不可控或不可观时进一步做结构分解</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>分析参数对系统能控性与能观性的影响</li><li>判断系统的能控性与能观性</li><li>求使系统能观的参数取值</li><li>对不可控系统进行结构分解</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只算到 A^{n-2}B 就下结论</li><li>把能控性判据与能观性判据的矩阵构造搞混</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}B&amp;AB&amp;\cdots&amp;A^{n-1}B\end{bmatrix}=n"></div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}C\\CA\\\vdots\\CA^{n-1}\end{bmatrix}=n"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_07/">李雅普诺夫稳定性分析</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>分析参数对 BIBO 稳定性、李雅普诺夫稳定性与渐近稳定性的影响</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>三种稳定性要从不同角度看</li>
+<li><b>关键一步：</b>BIBO 看传函极点，李雅普诺夫看状态矩阵 A 的特征值</li>
+<li><b>关键一步：</b>两者出现分歧的地方正是发生零极点对消的时候，此时传递函数的阶数低于状态维数</li>
+<li><b>关键一步：</b>渐近稳定比李雅普诺夫稳定更严</li>
+<li><b>关键一步：</b>要求特征值全在左半平面；虚轴简单极点只是临界稳定</li>
+<li><b>中间结果：</b>BIBO 稳定的参数范围通常多含虚轴端点</li>
+<li><b>中间结果：</b>因为虚轴简单极点对应的响应仍有界</li>
+<li><b>卡点：</b>别把 BIBO 稳定与李雅普诺夫稳定当一回事</li>
+<li><b>卡点：</b>判断 BIBO 时不能忽略零极点对消</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>第一法通过线性化系统的特征值判断原系统的局部稳定性</li><li>第二法用李雅普诺夫函数直接判断稳定性，无需解方程</li><li>李雅普诺夫函数正定且其导数为负定则渐近稳定</li><li>线性定常系统中李雅普诺夫方程有正定解等价于系统稳定</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>选取或构造李雅普诺夫函数</li><li>沿系统轨迹求其对时间的导数</li><li>判断函数与导数的正负定性</li><li>据此得出稳定性结论</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>分析参数对 BIBO 稳定性、李雅普诺夫稳定性与渐近稳定性的影响</li><li>用李雅普诺夫方程判断系统稳定性</li><li>构造李雅普诺夫函数证明渐近稳定</li><li>分析非线性系统的稳定性范围</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>李雅普诺夫方程中 P、Q 的角色混用</li><li>只判断 V 正定就下结论而未检查导数</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="A^TP+PA=-Q,\quad Q=Q^T&gt;0"></div><div class="formula" data-tex="V(x)=x^TPx&gt;0,\quad \dot{V}(x)&lt;0"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_06/">状态观测器设计</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>在状态不可直接量测时设计最小维状态观测器</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先算最小维数：等于状态维数减去输出维数，本题因此是一维观测器而不是全维观测器</li>
+<li><b>关键一步：</b>把原系统变换成能观标准型，观测器的特征值配置在新坐标下做，再变回原坐标</li>
+<li><b>关键一步：</b>观测器极点按题目要求都配置到同一个位置，误差动态矩阵的特征多项式与期望多项式逐项比对求增益</li>
+<li><b>中间结果：</b>一维观测器只有一个增益，只需让误差特征方程的一次项系数与常数项分别对上即可</li>
+<li><b>卡点：</b>维数算成全维；或变换矩阵没取对，把状态反馈增益的公式套到观测器上</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态观测器用输出与输入重构状态，前提是系统能观</li><li>极点配置法与龙伯格观测器是两种常用形式</li><li>观测器误差动态由 A-LC 的特征值决定</li><li>观测器极点通常取得比系统极点快若干倍</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>验证系统能观性</li><li>写出观测器方程并求误差动态矩阵</li><li>按期望特征多项式比较系数求出 L</li><li>校验观测器收敛速度是否合适</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>在状态不可直接量测时设计最小维状态观测器</li><li>设计全维状态观测器</li><li>由期望观测器极点求反馈增益阵 L</li><li>分析观测器与状态反馈组合后的系统极点</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把观测器增益阵写成了状态反馈增益阵的形式</li><li>忽略观测器极点过快会放大噪声</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{\hat{x}}=A\hat{x}+Bu+L(y-C\hat{x})"></div><div class="formula" data-tex="\det\left(sI-A+LC\right)=\prod_{i=1}^{n}(s-\lambda_i^{*})"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q6" data-q="6">
+<h2><span class="no">6</span><span>六、最小实现与能观性的证明</span><a class="anchorlink" data-q="6" href="#q6" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">两道理论证明：最小实现之间互相等价；能控的系统一定可以配出使系统能观的输出矩阵</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_02/">由传递函数写状态空间表达式</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>证明同一传递函数的两个最小实现必相互等价</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>最小实现的定义是三要素：能控、能观、维数最低，两个实现维数相同是证明的起点</li>
+<li><b>关键一步：</b>证明的关键是构造两实现之间的线性变换矩阵，用能控性矩阵与能观性矩阵的满秩性说明该矩阵可逆</li>
+<li><b>关键一步：</b>等价性只要求相似变换存在，不需要两个实现的具体形式相同</li>
+<li><b>中间结果：</b>变换矩阵常取「实现一的能控阵乘实现二的能观阵的逆」</li>
+<li><b>中间结果：</b>这两个矩阵都满秩才能保证变换可逆</li>
+<li><b>卡点：</b>只说明维数相同就当成等价；或证明中用到能控性、能观性却不说明为什么可以用</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>同一传递函数可对应无穷多个状态空间实现</li><li>常用能控标准型、能观标准型与对角标准型</li><li>能控标准型的 A 阵为友矩阵形式</li><li>最小实现要求系统既能控又能观</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>把传递函数化为真分式，分离直接项 D</li><li>按标准型规则写出 A、B、C、D</li><li>必要时用线性变换换成其他标准型</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>证明同一传递函数的两个最小实现必相互等价</li><li>由传递函数写出能控标准型</li><li>由传递函数写出能观标准型</li><li>判断给定的实现是否为最小实现</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>真分式化分时直接项 D 处理错误</li><li>友矩阵中系数符号写反</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="A=\begin{bmatrix}0&amp;1&amp;\cdots&amp;0\\\vdots&amp;&amp;\ddots&amp;\vdots\\0&amp;0&amp;\cdots&amp;1\\-a_0&amp;-a_1&amp;\cdots&amp;-a_{n-1}\end{bmatrix},\quad B=\begin{bmatrix}0\\\vdots\\0\\1\end{bmatrix}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_04/">能控性与能观性</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>证明能控的系统总能构造出使系统能观的输出矩阵</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>能控保证存在非奇异变换把系统化成能控标准型，在标准型下输出矩阵可以逐项选取</li>
+<li><b>关键一步：</b>能观性要求能观性矩阵满秩，在能控标准型下它的行列式是输出矩阵各分量的组合</li>
+<li><b>关键一步：</b>把输出矩阵的分量取成使该行列式非零的值即可，构造性证明只需要举出一组取值</li>
+<li><b>中间结果：</b>能控标准型下能观性矩阵的行列式通常就等于某个分量的倍数，取该分量非零即可</li>
+<li><b>卡点：</b>只做一般性论述不给出具体构造；或忘记说明变换不改变能控性与能观性</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>能控性指能否用输入在有限时间内把任意初始状态驱动到原点</li><li>能观性指能否由输出在有限时间内确定初始状态</li><li>用能控性矩阵与能观性矩阵的秩判断</li><li>能控性与能观性经非奇异线性变换保持不变</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>构造能控性矩阵并求秩</li><li>构造能观性矩阵并求秩</li><li>与系统阶数 n 比较得出结论</li><li>不可控或不可观时进一步做结构分解</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>证明能控的系统总能构造出使系统能观的输出矩阵</li><li>判断系统的能控性与能观性</li><li>求使系统能观的参数取值</li><li>对不可控系统进行结构分解</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只算到 A^{n-2}B 就下结论</li><li>把能控性判据与能观性判据的矩阵构造搞混</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}B&amp;AB&amp;\cdots&amp;A^{n-1}B\end{bmatrix}=n"></div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}C\\CA\\\vdots\\CA^{n-1}\end{bmatrix}=n"></div></div></details>
+</div>
+</article>
+</section></div><aside class="side">
+<div class="card"><h3>本卷考点</h3><div class="kplist"><a class="kplink" href="../../../../../k/md_04/" title="考点编号 md_04"><span class="ktag">建模与机电系统</span><span>非线性模型的线性化</span></a><a class="kplink" href="../../../../../k/pc_02/" title="考点编号 pc_02"><span class="ktag">过程控制与检测仪表</span><span>被控对象的动态特性</span></a><a class="kplink" href="../../../../../k/fd_01/" title="考点编号 fd_01"><span class="ktag">频域分析</span><span>频率特性的物理意义与求法</span></a><a class="kplink" href="../../../../../k/st_04/" title="考点编号 st_04"><span class="ktag">稳定性分析</span><span>奈奎斯特判据</span></a><a class="kplink" href="../../../../../k/rl_02/" title="考点编号 rl_02"><span class="ktag">根轨迹法</span><span>根轨迹的绘制法则</span></a><a class="kplink" href="../../../../../k/st_05/" title="考点编号 st_05"><span class="ktag">稳定性分析</span><span>含纯延迟环节的系统稳定性</span></a><a class="kplink" href="../../../../../k/cr_07/" title="考点编号 cr_07"><span class="ktag">系统校正</span><span>PID 控制器与参数整定</span></a><a class="kplink" href="../../../../../k/sp_03/" title="考点编号 sp_03"><span class="ktag">状态空间分析</span><span>状态转移矩阵</span></a><a class="kplink" href="../../../../../k/sp_04/" title="考点编号 sp_04"><span class="ktag">状态空间分析</span><span>能控性与能观性</span></a><a class="kplink" href="../../../../../k/sp_07/" title="考点编号 sp_07"><span class="ktag">状态空间分析</span><span>李雅普诺夫稳定性分析</span></a><a class="kplink" href="../../../../../k/sp_06/" title="考点编号 sp_06"><span class="ktag">状态空间分析</span><span>状态观测器设计</span></a><a class="kplink" href="../../../../../k/sp_02/" title="考点编号 sp_02"><span class="ktag">状态空间分析</span><span>由传递函数写状态空间表达式</span></a></div></div>
+<div class="card"><h3>中国科学技术大学 其它年份</h3><div class="navlist"><a class="yearchip" href="../../2015/845/">2015 <span class="n">7题</span></a><a class="yearchip" href="../../2016/845/">2016 <span class="n">7题</span></a><a class="yearchip" href="../../2017/845/">2017 <span class="n">7题</span></a><a class="yearchip" href="../../2018/845/">2018 <span class="n">7题</span></a><a class="yearchip" href="../../2019/845/">2019 <span class="n">7题</span></a><a class="yearchip" href="../../2020/845/">2020 <span class="n">7题</span></a><a class="yearchip" href="../../2021/845/">2021 <span class="n">7题</span></a><a class="yearchip" href="../../2022/845/">2022 <span class="n">7题</span></a><a class="yearchip" href="../../2023/845/">2023 <span class="n">6题</span></a><a class="yearchip" href="../../2024/845/">2024 <span class="n">6题</span></a></div></div>
+<div class="card"><h3>上下年份</h3><div class="navlist"><a class="yearchip" href="../../2024/845/">← 2024</a></div></div>
+</aside></div>
+</main>
+<footer class="site-foot"><div class="inner"><span>导图内容为本站原创整理，欢迎交流指正</span></div></footer>
+<script type="application/json" id="kg-data">{"base":"../../../../../","key":"中国科学技术大学_845_2025","full":{"label":"中国科学技术大学 845","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：6 题 150 分；前半是过程对象建模、奈奎斯特围线、PID 整定（含 Z-N 与 λ 整定），后半连续三题考状态空间：状态响应、参数对能控能观与稳定性的影响、最小实现与能观性证明　重点：储罐液位对象的线性化建模、含右半平面极点的奈奎斯特判据、…","type":"warn"},{"label":"一、储罐液位对象的建模与线性化　〔第1题〕","type":"block","children":[{"label":"由质量守恒列非线性方程，在平衡点线性化得增量方程与传递函数，再算指定频率处的幅值与相位","type":"idea"},{"label":"非线性模型的线性化","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"列质量守恒时把液体当作不可压缩介质：进流量减出流量等于罐内质量的变化率","type":"k1"},{"label":"出口流量＝出口流速×截面积×密度","type":"k1"},{"label":"出口流速用托里拆利关系与液位高度挂钩，这是非线性来源","type":"k1"},{"label":"在平衡点处把非线性项按一阶泰勒展开，用平衡关系把常数项消掉，剩下的就是增量方程","type":"k1"},{"label":"非线性方程：罐内质量的变化率等于入口与出口质量流量之差","type":"k2"},{"label":"线性化时间常数由出口流量对液位的偏导除以截面积决定","type":"k2"},{"label":"罐越细高、出口越大，时间常数越小","type":"k2"},{"label":"漏掉出口流量对液位的偏导这一项，把对象当成纯积分环节；或线性化时没在平衡点消常数项","type":"k3"}]},{"label":"在工作点附近作泰勒展开并忽略高阶项","type":"yd"},{"label":"线性化模型只在小偏差范围内有效","type":"yd"},{"label":"必须先求出平衡工作点","type":"yd"},{"label":"由静态方程求平衡工作点","type":"bz"},{"label":"在工作点处求偏导得到增量系数","type":"bz"},{"label":"写出以增量表示的线性化方程","type":"bz"},{"label":"\\Delta y=\\left.\\frac{\\partial f}{\\partial x}\\right|_{x_0}\\Delta x","type":"fm","tex":"\\Delta y=\\left.\\frac{\\partial f}{\\partial x}\\right|_{x_0}\\Delta x"},{"label":"建立以入口流量为输入、液位为输出的非线性微分方程并在平衡点线性化","type":"kf","own":true},{"label":"对非线性微分方程在平衡点处线性化","type":"kf","own":false},{"label":"写出小偏差线性化模型的传递函数","type":"kf","own":false},{"label":"未先求平衡点就直接展开","type":"er","own":false},{"label":"把增量符号去掉后与原始变量混用","type":"er","own":false}]},{"label":"被控对象的动态特性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"线性化后的增量方程是一阶常微分方程，写成标准形式即可直接读出一阶环节的增益与时间常数","type":"k1"},{"label":"增益量纲是液位除以质量流量，不要漏写单位","type":"k1"},{"label":"平衡点的取值要先由稳态关系算出出口流速，才能代进线性化系数","type":"k1"},{"label":"由稳态数据自检：出口流速＝入口质量流量/(密度×出口截面积)","type":"k2"},{"label":"该值应与托里拆利公式给出的结果吻合","type":"k2"},{"label":"液位对象是自衡对象，出口流量随液位升高而增大，会自行重新平衡，不能按非自衡对象写","type":"k3"}]},{"label":"用放大系数 K、时间常数 T、纯滞后 τ 三个参数描述对象","type":"yd"},{"label":"自衡对象受扰动后能自行重新平衡，非自衡对象不能","type":"yd"},{"label":"多容对象由多个一阶环节串联而成，容量滞后大","type":"yd"},{"label":"纯滞后只使响应推迟，不改变最终稳态值","type":"yd"},{"label":"由阶跃响应曲线读出放大系数、时间常数与纯滞后时间","type":"bz"},{"label":"判断对象是否自衡、是否多容","type":"bz"},{"label":"写出对象的传递函数","type":"bz"},{"label":"用终值定理求稳态值","type":"bz"},{"label":"W_0(s)=\\frac{K}{Ts+1}e^{-\\tau s}","type":"fm","tex":"W_0(s)=\\frac{K}{Ts+1}e^{-\\tau s}"},{"label":"K=\\frac{\\Delta y}{\\Delta x}","type":"fm","tex":"K=\\frac{\\Delta y}{\\Delta x}"},{"label":"写出液位对象的传递函数并说明是自衡还是非自衡","type":"kf","own":true},{"label":"由响应曲线写出对象传递函数","type":"kf","own":false},{"label":"求阶跃输入下的稳态值并说明与哪些因素有关","type":"kf","own":false},{"label":"判断对象是否具有纯滞后","type":"kf","own":false},{"label":"把纯滞后当成时间常数一起处理","type":"er","own":false},{"label":"放大系数的量纲与单位漏写","type":"er","own":false}]},{"label":"频率特性的物理意义与求法","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"一阶环节的幅频是直流增益除以根号下「一加转折频率比的平方」，相频是负的反正切","type":"k1"},{"label":"先算时间常数与频率的乘积 τω","type":"k1"},{"label":"若远小于 1，幅值近似为直流增益、相位接近零","type":"k1"},{"label":"本题时间常数约 0.045 s、转速频率 0.022 rad/s","type":"k2"},{"label":"两者乘积约千分之一，幅值近似直流增益、相位近零","type":"k2"},{"label":"把频率特性的幅值当成增益直接填，忘记它是频率的函数；或角度与弧度混用","type":"k3"}]},{"label":"频率特性是传递函数中令 s=jω 得到的复变函数","type":"yd"},{"label":"幅频特性表示各频率正弦输入下的幅值放大倍数","type":"yd"},{"label":"相频特性表示输出相对输入的相位差","type":"yd"},{"label":"频率特性可用幅相曲线、Bode 图或尼柯尔斯图表示","type":"yd"},{"label":"由传递函数令 s=jω 得到 G(jω)","type":"bz"},{"label":"分别求出幅值 |G(jω)| 与相角 ∠G(jω)","type":"bz"},{"label":"按需要绘制幅相曲线或对数频率特性","type":"bz"},{"label":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}","type":"fm","tex":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}"},{"label":"计算指定频率下频率特性的幅值与相位","type":"kf","own":true},{"label":"求给定传递函数的幅频与相频表达式","type":"kf","own":false},{"label":"计算某频率处的幅值与相角","type":"kf","own":false},{"label":"说明频率特性的物理含义","type":"kf","own":false},{"label":"求幅值时忘记把分母复数取模后再相除","type":"er","own":false},{"label":"相角累加时漏掉积分环节的 -90°","type":"er","own":false}]}]},{"label":"二、含右半平面极点的奈奎斯特判据　〔第2题〕","type":"block","children":[{"label":"开环在小右半平面有极点，画围线时不能只看曲线本身；引入速度反馈后零极点分布改变，需重新推导稳定条件","type":"idea"},{"label":"奈奎斯特判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"开环有右半平面极点，必须先数出 P","type":"k1"},{"label":"再用 Z=N+P 判稳，不能沿用「不包围就稳定」","type":"k1"},{"label":"奈奎斯特围线要绕开虚轴上的极点（若开环含积分环节），绕行方向决定补画的圆弧走向","type":"k1"},{"label":"引入速度反馈后会多出一个零点，零极点分布与前一小问不同，P 可能改变，必须重新数一遍","type":"k1"},{"label":"稳定条件的形式通常是「增益小于某个临界值」这类不等式，由曲线与负实轴交点位置给出","type":"k2"},{"label":"不数 P 就下结论；或加了速度反馈后仍沿用第一问的围线与 P 值","type":"k3"}]},{"label":"闭环稳定 ⇔ Z=N+P，其中 Z 为右半平面闭环极点数","type":"yd"},{"label":"P 为开环右半平面极点数，须先数清楚","type":"yd"},{"label":"N 为开环幅相曲线绕 (-1,j0) 点的净包围圈数","type":"yd"},{"label":"逆时针包围为正，顺时针为负","type":"yd"},{"label":"先求开环极点，数出右半平面个数 P","type":"bz"},{"label":"绘制开环幅相特性曲线（或利用 Bode 图判稳）","type":"bz"},{"label":"数出曲线对 (-1,j0) 点的包围圈数 N","type":"bz"},{"label":"由 Z=N+P 判断闭环稳定性","type":"bz"},{"label":"Z=N+P","type":"fm","tex":"Z=N+P"},{"label":"N=N_+-N_-","type":"fm","tex":"N=N_+-N_-"},{"label":"绘制奈奎斯特围线并用判据判断闭环稳定性","type":"kf","own":true},{"label":"引入速度反馈后推导闭环稳定的条件","type":"kf","own":true},{"label":"由开环幅相曲线判断闭环稳定性","type":"kf","own":false},{"label":"求使闭环稳定的开环增益范围","type":"kf","own":false},{"label":"判断补画虚轴绕行后曲线的包围情况","type":"kf","own":false},{"label":"开环含有积分环节时未补画无穷大半径圆弧","type":"er","own":false},{"label":"把包围圈数的正负号定义搞反","type":"er","own":false},{"label":"没有先数开环右半平面极点数 P","type":"er","own":false}]}]},{"label":"三、含纯滞后的 PID 控制器整定　〔第3题〕","type":"block","children":[{"label":"对象 20/[s(s+2)]·e^{−τs}：先用根轨迹看纯 P 的稳定性，再由临界振荡条件反求 τ 与 kp，最后用 Z-N 与 λ 两种方法整定","type":"idea"},{"label":"根轨迹的绘制法则","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"无滞后时特征方程是二阶，两根实部恒为负","type":"k1"},{"label":"故加大比例增益只会从过阻尼变欠阻尼，不会失稳","type":"k1"},{"label":"判断二阶系统的稳定性只需看特征方程两个系数是否同号，不必画完整根轨迹","type":"k1"},{"label":"这一步的结论正好解释了为什么必须引入纯滞后才可能出现等幅振荡","type":"k1"},{"label":"τ=0 时闭环特征方程为 s²+2s+20k_p=0","type":"k2"},{"label":"两根为 s=−1±√(1−20k_p)，实部恒为 −1","type":"k2"},{"label":"20k_p<1 为两个负实根，20k_p>1 为左半平面共轭复根","type":"k2"},{"label":"以为加大增益一定会失稳，套用三阶及以上系统才有的临界增益结论","type":"k3"}]},{"label":"起于开环极点、终于开环零点（无穷远零点），分支数等于极点数 n","type":"yd"},{"label":"实轴上某段右侧的零极点总数为奇数时，该段属于根轨迹","type":"yd"},{"label":"渐近线条数为 n-m，交点在实轴上，与实轴夹角等分 360°","type":"yd"},{"label":"根轨迹关于实轴对称","type":"yd"},{"label":"标出全部开环零极点并判断实轴上的根轨迹段","type":"bz"},{"label":"计算渐近线交点与夹角","type":"bz"},{"label":"求出分离点、出射角、与虚轴交点","type":"bz"},{"label":"按对称性连接各段并标出对应 K 值","type":"bz"},{"label":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}","type":"fm","tex":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}"},{"label":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}","type":"fm","tex":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}"},{"label":"用根轨迹法分析纯比例控制器下闭环系统的稳定性","type":"kf","own":true},{"label":"按法则绘制根轨迹草图","type":"kf","own":false},{"label":"指出渐近线条数与夹角","type":"kf","own":false},{"label":"判断某段实轴是否属于根轨迹","type":"kf","own":false},{"label":"实轴段判据中的零极点个数算错","type":"er","own":false},{"label":"渐近线夹角公式中的 2k+1 写成 2k","type":"er","own":false}]},{"label":"含纯延迟环节的系统稳定性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"等幅振荡意味着闭环极点在虚轴上，把 s=jω 代入特征方程","type":"k1"},{"label":"振荡周期先换成角频率，再由相角条件解出滞后时间","type":"k1"},{"label":"幅值条件定出临界比例增益，它是后面 Z-N 整定的基准","type":"k1"},{"label":"周期与角频率是倒数乘 2π 的关系；相角条件是「对象相角加上滞后相角等于 −180°」","type":"k2"},{"label":"周期与角频率的换算写反；或算滞后时间时把角度与弧度混用","type":"k3"}]},{"label":"延迟环节 e^{-τs} 的幅值为 1、相位为 -τω，只恶化相位","type":"yd"},{"label":"延迟会显著缩小稳定域，τ 越大越难稳定","type":"yd"},{"label":"频域判据需用相位裕度扣除延迟引起的附加滞后","type":"yd"},{"label":"写出含延迟的开环传递函数","type":"bz"},{"label":"分别求幅值与相位表达式","type":"bz"},{"label":"在相频特性中扣除 τω 的滞后量","type":"bz"},{"label":"按稳定裕度或奈氏判据求临界 τ 或临界 K","type":"bz"},{"label":"G(s)=G_0(s)e^{-\\tau s},\\quad \\angle G=-\\tau\\omega+\\angle G_0","type":"fm","tex":"G(s)=G_0(s)e^{-\\tau s},\\quad \\angle G=-\\tau\\omega+\\angle G_0"},{"label":"由临界振荡的周期反求纯滞后时间与临界比例增益","type":"kf","own":true},{"label":"求使系统稳定的最大延迟时间","type":"kf","own":false},{"label":"求含延迟系统的临界开环增益","type":"kf","own":false},{"label":"分析延迟对稳定裕度的影响","type":"kf","own":false},{"label":"把延迟环节当成惯性环节处理","type":"er","own":false},{"label":"相位计算时忘记角度与弧度换算","type":"er","own":false}]},{"label":"PID 控制器与参数整定","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"Z-N 闭环整定以临界增益与临界周期为基准，P、PI、PID 三组公式的比例系数不同","type":"k1"},{"label":"积分时间、微分时间算出后还要换算成控制器里的积分增益、微分增益，不要直接填时间","type":"k1"},{"label":"λ 整定法要让闭环等效成一阶惯性环节","type":"k1"},{"label":"λ 由过渡过程时间反推，误差带 2% 时约取四倍 λ","type":"k1"},{"label":"λ 整定误差带不同系数不同：2% 约 4λ、5% 约 3λ","type":"k2"},{"label":"选错系数会让设计结果差三成以上","type":"k2"},{"label":"把积分时间当积分增益；或把 λ 与闭环等效时间常数搞混，没有由过渡过程时间先定 λ","type":"k3"}]},{"label":"比例项提高快速性但存在稳态误差","type":"yd"},{"label":"积分项消除稳态误差但降低稳定性、增大超调","type":"yd"},{"label":"微分项提供超前相位改善动态性能但对噪声敏感","type":"yd"},{"label":"PD 相当于超前校正，PI 相当于滞后校正","type":"yd"},{"label":"按误差类型选择需要引入的环节","type":"bz"},{"label":"先调比例再调积分最后调微分","type":"bz"},{"label":"用稳定裕度或性能指标校验并微调","type":"bz"},{"label":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds","type":"fm","tex":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds"},{"label":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)","type":"fm","tex":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)"},{"label":"用齐格勒-尼科尔斯法整定 P、PI、PID 参数","type":"kf","own":true},{"label":"用 λ 整定法整定 PD 控制器","type":"kf","own":true},{"label":"设计 PID 控制器满足给定指标","type":"kf","own":false},{"label":"分析各参数变化对系统性能的影响","type":"kf","own":false},{"label":"说明微分项对噪声的影响","type":"kf","own":false},{"label":"把 PI 的相位影响说成超前","type":"er","own":false},{"label":"积分增益过大导致系统振荡甚至不稳定","type":"er","own":false}]}]},{"label":"四、状态响应与输出的极值　〔第4题〕","type":"block","children":[{"label":"二阶系统有两个相等特征值，状态转移矩阵含 t 项；求状态响应后再回答输出在整个运行期间有无最大最小值","type":"idea"},{"label":"状态转移矩阵","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先求特征值；两个特征值相等时不能只写对角阵","type":"k1"},{"label":"状态转移矩阵要含「指数×单位阵＋(A−λI)×t」的形式","type":"k1"},{"label":"状态响应分零输入与零状态两部分：零输入项由状态转移矩阵乘初态得到，零状态项由卷积积分得到","type":"k1"},{"label":"输出是否单调或是否有极值，要看输出表达式对时间的导数符号，而不是只看状态变量","type":"k1"},{"label":"本题两个特征值都是 −2，状态转移矩阵里会出现 t 与指数相乘的项","type":"k2"},{"label":"初态取负值时零输入项与零状态项反向抵消，输出可能只有单调变化的一段","type":"k2"},{"label":"特征值相等时仍套互异公式，会丢掉带 t 的项","type":"k3"},{"label":"问极值时不能只说单调，要判断最大值是否可达","type":"k3"}]},{"label":"状态转移矩阵 e^{At} 描述零输入下状态随时间的演化","type":"yd"},{"label":"可从 (sI-A)^{-1} 求拉氏反变换得到","type":"yd"},{"label":"满足 e^{A\\cdot0}=I 且可逆","type":"yd"},{"label":"含输入时用卷积积分写出全响应","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"求拉氏反变换得到 e^{At}","type":"bz"},{"label":"代入全响应公式求状态与输出","type":"bz"},{"label":"用初值条件校验结果","type":"bz"},{"label":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]","type":"fm","tex":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]"},{"label":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau","type":"fm","tex":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau"},{"label":"求给定初始状态与阶跃输入下的状态响应表达式","type":"kf","own":true},{"label":"判断输出是否存在最大值与最小值","type":"kf","own":true},{"label":"求状态转移矩阵","type":"kf","own":false},{"label":"求给定初始条件下的状态与输出响应","type":"kf","own":false},{"label":"用性质验证转移矩阵是否正确","type":"kf","own":false},{"label":"矩阵求逆时忘记检查行列式是否为零","type":"er","own":false},{"label":"卷积积分中变量代换写错","type":"er","own":false}]}]},{"label":"五、参数对能控能观与稳定性的影响及观测器设计　〔第5题〕","type":"block","children":[{"label":"含参数 a 的二阶系统，逐项讨论能控性、能观性、BIBO 稳定性、李雅普诺夫稳定与渐近稳定，再设计最小维观测器","type":"idea"},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"二阶系统只需构造能控性矩阵与能观性矩阵，行列式为零的那个参数值就是失去能控或能观的分界点","type":"k1"},{"label":"能控与能观的分界点通常不重合，要分别列出来，不能只算一个","type":"k1"},{"label":"判断时把含参数的表达式写成 a 的一次式，解出使行列式为零的 a 即可","type":"k1"},{"label":"能控性矩阵与能观性矩阵都在 a 取某个特定值时降秩，两处的 a 值不同","type":"k2"},{"label":"只验一个矩阵就下结论；或把秩判据里的矩阵构造顺序写错，维数对不上","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"分析参数对系统能控性与能观性的影响","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]},{"label":"李雅普诺夫稳定性分析","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"三种稳定性要从不同角度看","type":"k1"},{"label":"BIBO 看传函极点，李雅普诺夫看状态矩阵 A 的特征值","type":"k1"},{"label":"两者出现分歧的地方正是发生零极点对消的时候，此时传递函数的阶数低于状态维数","type":"k1"},{"label":"渐近稳定比李雅普诺夫稳定更严","type":"k1"},{"label":"要求特征值全在左半平面；虚轴简单极点只是临界稳定","type":"k1"},{"label":"BIBO 稳定的参数范围通常多含虚轴端点","type":"k2"},{"label":"因为虚轴简单极点对应的响应仍有界","type":"k2"},{"label":"别把 BIBO 稳定与李雅普诺夫稳定当一回事","type":"k3"},{"label":"判断 BIBO 时不能忽略零极点对消","type":"k3"}]},{"label":"第一法通过线性化系统的特征值判断原系统的局部稳定性","type":"yd"},{"label":"第二法用李雅普诺夫函数直接判断稳定性，无需解方程","type":"yd"},{"label":"李雅普诺夫函数正定且其导数为负定则渐近稳定","type":"yd"},{"label":"线性定常系统中李雅普诺夫方程有正定解等价于系统稳定","type":"yd"},{"label":"选取或构造李雅普诺夫函数","type":"bz"},{"label":"沿系统轨迹求其对时间的导数","type":"bz"},{"label":"判断函数与导数的正负定性","type":"bz"},{"label":"据此得出稳定性结论","type":"bz"},{"label":"A^TP+PA=-Q,\\quad Q=Q^T>0","type":"fm","tex":"A^TP+PA=-Q,\\quad Q=Q^T>0"},{"label":"V(x)=x^TPx>0,\\quad \\dot{V}(x)<0","type":"fm","tex":"V(x)=x^TPx>0,\\quad \\dot{V}(x)<0"},{"label":"分析参数对 BIBO 稳定性、李雅普诺夫稳定性与渐近稳定性的影响","type":"kf","own":true},{"label":"用李雅普诺夫方程判断系统稳定性","type":"kf","own":false},{"label":"构造李雅普诺夫函数证明渐近稳定","type":"kf","own":false},{"label":"分析非线性系统的稳定性范围","type":"kf","own":false},{"label":"李雅普诺夫方程中 P、Q 的角色混用","type":"er","own":false},{"label":"只判断 V 正定就下结论而未检查导数","type":"er","own":false}]},{"label":"状态观测器设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先算最小维数：等于状态维数减去输出维数，本题因此是一维观测器而不是全维观测器","type":"k1"},{"label":"把原系统变换成能观标准型，观测器的特征值配置在新坐标下做，再变回原坐标","type":"k1"},{"label":"观测器极点按题目要求都配置到同一个位置，误差动态矩阵的特征多项式与期望多项式逐项比对求增益","type":"k1"},{"label":"一维观测器只有一个增益，只需让误差特征方程的一次项系数与常数项分别对上即可","type":"k2"},{"label":"维数算成全维；或变换矩阵没取对，把状态反馈增益的公式套到观测器上","type":"k3"}]},{"label":"状态观测器用输出与输入重构状态，前提是系统能观","type":"yd"},{"label":"极点配置法与龙伯格观测器是两种常用形式","type":"yd"},{"label":"观测器误差动态由 A-LC 的特征值决定","type":"yd"},{"label":"观测器极点通常取得比系统极点快若干倍","type":"yd"},{"label":"验证系统能观性","type":"bz"},{"label":"写出观测器方程并求误差动态矩阵","type":"bz"},{"label":"按期望特征多项式比较系数求出 L","type":"bz"},{"label":"校验观测器收敛速度是否合适","type":"bz"},{"label":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})","type":"fm","tex":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})"},{"label":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})","type":"fm","tex":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})"},{"label":"在状态不可直接量测时设计最小维状态观测器","type":"kf","own":true},{"label":"设计全维状态观测器","type":"kf","own":false},{"label":"由期望观测器极点求反馈增益阵 L","type":"kf","own":false},{"label":"分析观测器与状态反馈组合后的系统极点","type":"kf","own":false},{"label":"把观测器增益阵写成了状态反馈增益阵的形式","type":"er","own":false},{"label":"忽略观测器极点过快会放大噪声","type":"er","own":false}]}]},{"label":"六、最小实现与能观性的证明　〔第6题〕","type":"block","children":[{"label":"两道理论证明：最小实现之间互相等价；能控的系统一定可以配出使系统能观的输出矩阵","type":"idea"},{"label":"由传递函数写状态空间表达式","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"最小实现的定义是三要素：能控、能观、维数最低，两个实现维数相同是证明的起点","type":"k1"},{"label":"证明的关键是构造两实现之间的线性变换矩阵，用能控性矩阵与能观性矩阵的满秩性说明该矩阵可逆","type":"k1"},{"label":"等价性只要求相似变换存在，不需要两个实现的具体形式相同","type":"k1"},{"label":"变换矩阵常取「实现一的能控阵乘实现二的能观阵的逆」","type":"k2"},{"label":"这两个矩阵都满秩才能保证变换可逆","type":"k2"},{"label":"只说明维数相同就当成等价；或证明中用到能控性、能观性却不说明为什么可以用","type":"k3"}]},{"label":"同一传递函数可对应无穷多个状态空间实现","type":"yd"},{"label":"常用能控标准型、能观标准型与对角标准型","type":"yd"},{"label":"能控标准型的 A 阵为友矩阵形式","type":"yd"},{"label":"最小实现要求系统既能控又能观","type":"yd"},{"label":"把传递函数化为真分式，分离直接项 D","type":"bz"},{"label":"按标准型规则写出 A、B、C、D","type":"bz"},{"label":"必要时用线性变换换成其他标准型","type":"bz"},{"label":"A=\\begin{bmatrix}0&1&\\cdots&0\\\\\\vdots&&\\ddots&\\vdots\\\\0&0&\\cdots&1\\\\-a_0&-a_1&\\cdots&-a_{n-1}\\end{bmatrix},\\quad B=\\begin{bmatrix}0\\\\\\vdots\\\\0\\\\1\\end{bmatrix}","type":"fm","tex":"A=\\begin{bmatrix}0&1&\\cdots&0\\\\\\vdots&&\\ddots&\\vdots\\\\0&0&\\cdots&1\\\\-a_0&-a_1&\\cdots&-a_{n-1}\\end{bmatrix},\\quad B=\\begin{bmatrix}0\\\\\\vdots\\\\0\\\\1\\end{bmatrix}"},{"label":"证明同一传递函数的两个最小实现必相互等价","type":"kf","own":true},{"label":"由传递函数写出能控标准型","type":"kf","own":false},{"label":"由传递函数写出能观标准型","type":"kf","own":false},{"label":"判断给定的实现是否为最小实现","type":"kf","own":false},{"label":"真分式化分时直接项 D 处理错误","type":"er","own":false},{"label":"友矩阵中系数符号写反","type":"er","own":false}]},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"能控保证存在非奇异变换把系统化成能控标准型，在标准型下输出矩阵可以逐项选取","type":"k1"},{"label":"能观性要求能观性矩阵满秩，在能控标准型下它的行列式是输出矩阵各分量的组合","type":"k1"},{"label":"把输出矩阵的分量取成使该行列式非零的值即可，构造性证明只需要举出一组取值","type":"k1"},{"label":"能控标准型下能观性矩阵的行列式通常就等于某个分量的倍数，取该分量非零即可","type":"k2"},{"label":"只做一般性论述不给出具体构造；或忘记说明变换不改变能控性与能观性","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"证明能控的系统总能构造出使系统能观的输出矩阵","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]}]}]},"qs":[{"no":"1","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：6 题 150 分；前半是过程对象建模、奈奎斯特围线、PID 整定（含 Z-N 与 λ 整定），后半连续三题考状态空间：状态响应、参数对能控能观与稳定性的影响、最小实现与能观性证明　重点：储罐液位对象的线性化建模、含右半平面极点的奈奎斯特判据、Z-N 与 λ 整定法、状态转移矩阵与输出极值、观测器设计、最小实现与能观性证明","type":"warn"},{"label":"一、储罐液位对象的建模与线性化　〔第1题〕","type":"block","children":[{"label":"由质量守恒列非线性方程，在平衡点线性化得增量方程与传递函数，再算指定频率处的幅值与相位","type":"idea"},{"label":"非线性模型的线性化","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"列质量守恒时把液体当作不可压缩介质：进流量减出流量等于罐内质量的变化率","type":"k1"},{"label":"出口流量＝出口流速×截面积×密度","type":"k1"},{"label":"出口流速用托里拆利关系与液位高度挂钩，这是非线性来源","type":"k1"},{"label":"在平衡点处把非线性项按一阶泰勒展开，用平衡关系把常数项消掉，剩下的就是增量方程","type":"k1"},{"label":"非线性方程：罐内质量的变化率等于入口与出口质量流量之差","type":"k2"},{"label":"线性化时间常数由出口流量对液位的偏导除以截面积决定","type":"k2"},{"label":"罐越细高、出口越大，时间常数越小","type":"k2"},{"label":"漏掉出口流量对液位的偏导这一项，把对象当成纯积分环节；或线性化时没在平衡点消常数项","type":"k3"}]},{"label":"在工作点附近作泰勒展开并忽略高阶项","type":"yd"},{"label":"线性化模型只在小偏差范围内有效","type":"yd"},{"label":"必须先求出平衡工作点","type":"yd"},{"label":"由静态方程求平衡工作点","type":"bz"},{"label":"在工作点处求偏导得到增量系数","type":"bz"},{"label":"写出以增量表示的线性化方程","type":"bz"},{"label":"\\Delta y=\\left.\\frac{\\partial f}{\\partial x}\\right|_{x_0}\\Delta x","type":"fm","tex":"\\Delta y=\\left.\\frac{\\partial f}{\\partial x}\\right|_{x_0}\\Delta x"},{"label":"建立以入口流量为输入、液位为输出的非线性微分方程并在平衡点线性化","type":"kf","own":true},{"label":"对非线性微分方程在平衡点处线性化","type":"kf","own":false},{"label":"写出小偏差线性化模型的传递函数","type":"kf","own":false},{"label":"未先求平衡点就直接展开","type":"er","own":false},{"label":"把增量符号去掉后与原始变量混用","type":"er","own":false}]},{"label":"被控对象的动态特性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"线性化后的增量方程是一阶常微分方程，写成标准形式即可直接读出一阶环节的增益与时间常数","type":"k1"},{"label":"增益量纲是液位除以质量流量，不要漏写单位","type":"k1"},{"label":"平衡点的取值要先由稳态关系算出出口流速，才能代进线性化系数","type":"k1"},{"label":"由稳态数据自检：出口流速＝入口质量流量/(密度×出口截面积)","type":"k2"},{"label":"该值应与托里拆利公式给出的结果吻合","type":"k2"},{"label":"液位对象是自衡对象，出口流量随液位升高而增大，会自行重新平衡，不能按非自衡对象写","type":"k3"}]},{"label":"用放大系数 K、时间常数 T、纯滞后 τ 三个参数描述对象","type":"yd"},{"label":"自衡对象受扰动后能自行重新平衡，非自衡对象不能","type":"yd"},{"label":"多容对象由多个一阶环节串联而成，容量滞后大","type":"yd"},{"label":"纯滞后只使响应推迟，不改变最终稳态值","type":"yd"},{"label":"由阶跃响应曲线读出放大系数、时间常数与纯滞后时间","type":"bz"},{"label":"判断对象是否自衡、是否多容","type":"bz"},{"label":"写出对象的传递函数","type":"bz"},{"label":"用终值定理求稳态值","type":"bz"},{"label":"W_0(s)=\\frac{K}{Ts+1}e^{-\\tau s}","type":"fm","tex":"W_0(s)=\\frac{K}{Ts+1}e^{-\\tau s}"},{"label":"K=\\frac{\\Delta y}{\\Delta x}","type":"fm","tex":"K=\\frac{\\Delta y}{\\Delta x}"},{"label":"写出液位对象的传递函数并说明是自衡还是非自衡","type":"kf","own":true},{"label":"由响应曲线写出对象传递函数","type":"kf","own":false},{"label":"求阶跃输入下的稳态值并说明与哪些因素有关","type":"kf","own":false},{"label":"判断对象是否具有纯滞后","type":"kf","own":false},{"label":"把纯滞后当成时间常数一起处理","type":"er","own":false},{"label":"放大系数的量纲与单位漏写","type":"er","own":false}]},{"label":"频率特性的物理意义与求法","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"一阶环节的幅频是直流增益除以根号下「一加转折频率比的平方」，相频是负的反正切","type":"k1"},{"label":"先算时间常数与频率的乘积 τω","type":"k1"},{"label":"若远小于 1，幅值近似为直流增益、相位接近零","type":"k1"},{"label":"本题时间常数约 0.045 s、转速频率 0.022 rad/s","type":"k2"},{"label":"两者乘积约千分之一，幅值近似直流增益、相位近零","type":"k2"},{"label":"把频率特性的幅值当成增益直接填，忘记它是频率的函数；或角度与弧度混用","type":"k3"}]},{"label":"频率特性是传递函数中令 s=jω 得到的复变函数","type":"yd"},{"label":"幅频特性表示各频率正弦输入下的幅值放大倍数","type":"yd"},{"label":"相频特性表示输出相对输入的相位差","type":"yd"},{"label":"频率特性可用幅相曲线、Bode 图或尼柯尔斯图表示","type":"yd"},{"label":"由传递函数令 s=jω 得到 G(jω)","type":"bz"},{"label":"分别求出幅值 |G(jω)| 与相角 ∠G(jω)","type":"bz"},{"label":"按需要绘制幅相曲线或对数频率特性","type":"bz"},{"label":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}","type":"fm","tex":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}"},{"label":"计算指定频率下频率特性的幅值与相位","type":"kf","own":true},{"label":"求给定传递函数的幅频与相频表达式","type":"kf","own":false},{"label":"计算某频率处的幅值与相角","type":"kf","own":false},{"label":"说明频率特性的物理含义","type":"kf","own":false},{"label":"求幅值时忘记把分母复数取模后再相除","type":"er","own":false},{"label":"相角累加时漏掉积分环节的 -90°","type":"er","own":false}]}]}]}},{"no":"2","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：6 题 150 分；前半是过程对象建模、奈奎斯特围线、PID 整定（含 Z-N 与 λ 整定），后半连续三题考状态空间：状态响应、参数对能控能观与稳定性的影响、最小实现与能观性证明　重点：储罐液位对象的线性化建模、含右半平面极点的奈奎斯特判据、Z-N 与 λ 整定法、状态转移矩阵与输出极值、观测器设计、最小实现与能观性证明","type":"warn"},{"label":"二、含右半平面极点的奈奎斯特判据　〔第2题〕","type":"block","children":[{"label":"开环在小右半平面有极点，画围线时不能只看曲线本身；引入速度反馈后零极点分布改变，需重新推导稳定条件","type":"idea"},{"label":"奈奎斯特判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"开环有右半平面极点，必须先数出 P","type":"k1"},{"label":"再用 Z=N+P 判稳，不能沿用「不包围就稳定」","type":"k1"},{"label":"奈奎斯特围线要绕开虚轴上的极点（若开环含积分环节），绕行方向决定补画的圆弧走向","type":"k1"},{"label":"引入速度反馈后会多出一个零点，零极点分布与前一小问不同，P 可能改变，必须重新数一遍","type":"k1"},{"label":"稳定条件的形式通常是「增益小于某个临界值」这类不等式，由曲线与负实轴交点位置给出","type":"k2"},{"label":"不数 P 就下结论；或加了速度反馈后仍沿用第一问的围线与 P 值","type":"k3"}]},{"label":"闭环稳定 ⇔ Z=N+P，其中 Z 为右半平面闭环极点数","type":"yd"},{"label":"P 为开环右半平面极点数，须先数清楚","type":"yd"},{"label":"N 为开环幅相曲线绕 (-1,j0) 点的净包围圈数","type":"yd"},{"label":"逆时针包围为正，顺时针为负","type":"yd"},{"label":"先求开环极点，数出右半平面个数 P","type":"bz"},{"label":"绘制开环幅相特性曲线（或利用 Bode 图判稳）","type":"bz"},{"label":"数出曲线对 (-1,j0) 点的包围圈数 N","type":"bz"},{"label":"由 Z=N+P 判断闭环稳定性","type":"bz"},{"label":"Z=N+P","type":"fm","tex":"Z=N+P"},{"label":"N=N_+-N_-","type":"fm","tex":"N=N_+-N_-"},{"label":"绘制奈奎斯特围线并用判据判断闭环稳定性","type":"kf","own":true},{"label":"引入速度反馈后推导闭环稳定的条件","type":"kf","own":true},{"label":"由开环幅相曲线判断闭环稳定性","type":"kf","own":false},{"label":"求使闭环稳定的开环增益范围","type":"kf","own":false},{"label":"判断补画虚轴绕行后曲线的包围情况","type":"kf","own":false},{"label":"开环含有积分环节时未补画无穷大半径圆弧","type":"er","own":false},{"label":"把包围圈数的正负号定义搞反","type":"er","own":false},{"label":"没有先数开环右半平面极点数 P","type":"er","own":false}]}]}]}},{"no":"3","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：6 题 150 分；前半是过程对象建模、奈奎斯特围线、PID 整定（含 Z-N 与 λ 整定），后半连续三题考状态空间：状态响应、参数对能控能观与稳定性的影响、最小实现与能观性证明　重点：储罐液位对象的线性化建模、含右半平面极点的奈奎斯特判据、Z-N 与 λ 整定法、状态转移矩阵与输出极值、观测器设计、最小实现与能观性证明","type":"warn"},{"label":"三、含纯滞后的 PID 控制器整定　〔第3题〕","type":"block","children":[{"label":"对象 20/[s(s+2)]·e^{−τs}：先用根轨迹看纯 P 的稳定性，再由临界振荡条件反求 τ 与 kp，最后用 Z-N 与 λ 两种方法整定","type":"idea"},{"label":"根轨迹的绘制法则","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"无滞后时特征方程是二阶，两根实部恒为负","type":"k1"},{"label":"故加大比例增益只会从过阻尼变欠阻尼，不会失稳","type":"k1"},{"label":"判断二阶系统的稳定性只需看特征方程两个系数是否同号，不必画完整根轨迹","type":"k1"},{"label":"这一步的结论正好解释了为什么必须引入纯滞后才可能出现等幅振荡","type":"k1"},{"label":"τ=0 时闭环特征方程为 s²+2s+20k_p=0","type":"k2"},{"label":"两根为 s=−1±√(1−20k_p)，实部恒为 −1","type":"k2"},{"label":"20k_p<1 为两个负实根，20k_p>1 为左半平面共轭复根","type":"k2"},{"label":"以为加大增益一定会失稳，套用三阶及以上系统才有的临界增益结论","type":"k3"}]},{"label":"起于开环极点、终于开环零点（无穷远零点），分支数等于极点数 n","type":"yd"},{"label":"实轴上某段右侧的零极点总数为奇数时，该段属于根轨迹","type":"yd"},{"label":"渐近线条数为 n-m，交点在实轴上，与实轴夹角等分 360°","type":"yd"},{"label":"根轨迹关于实轴对称","type":"yd"},{"label":"标出全部开环零极点并判断实轴上的根轨迹段","type":"bz"},{"label":"计算渐近线交点与夹角","type":"bz"},{"label":"求出分离点、出射角、与虚轴交点","type":"bz"},{"label":"按对称性连接各段并标出对应 K 值","type":"bz"},{"label":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}","type":"fm","tex":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}"},{"label":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}","type":"fm","tex":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}"},{"label":"用根轨迹法分析纯比例控制器下闭环系统的稳定性","type":"kf","own":true},{"label":"按法则绘制根轨迹草图","type":"kf","own":false},{"label":"指出渐近线条数与夹角","type":"kf","own":false},{"label":"判断某段实轴是否属于根轨迹","type":"kf","own":false},{"label":"实轴段判据中的零极点个数算错","type":"er","own":false},{"label":"渐近线夹角公式中的 2k+1 写成 2k","type":"er","own":false}]},{"label":"含纯延迟环节的系统稳定性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"等幅振荡意味着闭环极点在虚轴上，把 s=jω 代入特征方程","type":"k1"},{"label":"振荡周期先换成角频率，再由相角条件解出滞后时间","type":"k1"},{"label":"幅值条件定出临界比例增益，它是后面 Z-N 整定的基准","type":"k1"},{"label":"周期与角频率是倒数乘 2π 的关系；相角条件是「对象相角加上滞后相角等于 −180°」","type":"k2"},{"label":"周期与角频率的换算写反；或算滞后时间时把角度与弧度混用","type":"k3"}]},{"label":"延迟环节 e^{-τs} 的幅值为 1、相位为 -τω，只恶化相位","type":"yd"},{"label":"延迟会显著缩小稳定域，τ 越大越难稳定","type":"yd"},{"label":"频域判据需用相位裕度扣除延迟引起的附加滞后","type":"yd"},{"label":"写出含延迟的开环传递函数","type":"bz"},{"label":"分别求幅值与相位表达式","type":"bz"},{"label":"在相频特性中扣除 τω 的滞后量","type":"bz"},{"label":"按稳定裕度或奈氏判据求临界 τ 或临界 K","type":"bz"},{"label":"G(s)=G_0(s)e^{-\\tau s},\\quad \\angle G=-\\tau\\omega+\\angle G_0","type":"fm","tex":"G(s)=G_0(s)e^{-\\tau s},\\quad \\angle G=-\\tau\\omega+\\angle G_0"},{"label":"由临界振荡的周期反求纯滞后时间与临界比例增益","type":"kf","own":true},{"label":"求使系统稳定的最大延迟时间","type":"kf","own":false},{"label":"求含延迟系统的临界开环增益","type":"kf","own":false},{"label":"分析延迟对稳定裕度的影响","type":"kf","own":false},{"label":"把延迟环节当成惯性环节处理","type":"er","own":false},{"label":"相位计算时忘记角度与弧度换算","type":"er","own":false}]},{"label":"PID 控制器与参数整定","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"Z-N 闭环整定以临界增益与临界周期为基准，P、PI、PID 三组公式的比例系数不同","type":"k1"},{"label":"积分时间、微分时间算出后还要换算成控制器里的积分增益、微分增益，不要直接填时间","type":"k1"},{"label":"λ 整定法要让闭环等效成一阶惯性环节","type":"k1"},{"label":"λ 由过渡过程时间反推，误差带 2% 时约取四倍 λ","type":"k1"},{"label":"λ 整定误差带不同系数不同：2% 约 4λ、5% 约 3λ","type":"k2"},{"label":"选错系数会让设计结果差三成以上","type":"k2"},{"label":"把积分时间当积分增益；或把 λ 与闭环等效时间常数搞混，没有由过渡过程时间先定 λ","type":"k3"}]},{"label":"比例项提高快速性但存在稳态误差","type":"yd"},{"label":"积分项消除稳态误差但降低稳定性、增大超调","type":"yd"},{"label":"微分项提供超前相位改善动态性能但对噪声敏感","type":"yd"},{"label":"PD 相当于超前校正，PI 相当于滞后校正","type":"yd"},{"label":"按误差类型选择需要引入的环节","type":"bz"},{"label":"先调比例再调积分最后调微分","type":"bz"},{"label":"用稳定裕度或性能指标校验并微调","type":"bz"},{"label":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds","type":"fm","tex":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds"},{"label":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)","type":"fm","tex":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)"},{"label":"用齐格勒-尼科尔斯法整定 P、PI、PID 参数","type":"kf","own":true},{"label":"用 λ 整定法整定 PD 控制器","type":"kf","own":true},{"label":"设计 PID 控制器满足给定指标","type":"kf","own":false},{"label":"分析各参数变化对系统性能的影响","type":"kf","own":false},{"label":"说明微分项对噪声的影响","type":"kf","own":false},{"label":"把 PI 的相位影响说成超前","type":"er","own":false},{"label":"积分增益过大导致系统振荡甚至不稳定","type":"er","own":false}]}]}]}},{"no":"4","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：6 题 150 分；前半是过程对象建模、奈奎斯特围线、PID 整定（含 Z-N 与 λ 整定），后半连续三题考状态空间：状态响应、参数对能控能观与稳定性的影响、最小实现与能观性证明　重点：储罐液位对象的线性化建模、含右半平面极点的奈奎斯特判据、Z-N 与 λ 整定法、状态转移矩阵与输出极值、观测器设计、最小实现与能观性证明","type":"warn"},{"label":"四、状态响应与输出的极值　〔第4题〕","type":"block","children":[{"label":"二阶系统有两个相等特征值，状态转移矩阵含 t 项；求状态响应后再回答输出在整个运行期间有无最大最小值","type":"idea"},{"label":"状态转移矩阵","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先求特征值；两个特征值相等时不能只写对角阵","type":"k1"},{"label":"状态转移矩阵要含「指数×单位阵＋(A−λI)×t」的形式","type":"k1"},{"label":"状态响应分零输入与零状态两部分：零输入项由状态转移矩阵乘初态得到，零状态项由卷积积分得到","type":"k1"},{"label":"输出是否单调或是否有极值，要看输出表达式对时间的导数符号，而不是只看状态变量","type":"k1"},{"label":"本题两个特征值都是 −2，状态转移矩阵里会出现 t 与指数相乘的项","type":"k2"},{"label":"初态取负值时零输入项与零状态项反向抵消，输出可能只有单调变化的一段","type":"k2"},{"label":"特征值相等时仍套互异公式，会丢掉带 t 的项","type":"k3"},{"label":"问极值时不能只说单调，要判断最大值是否可达","type":"k3"}]},{"label":"状态转移矩阵 e^{At} 描述零输入下状态随时间的演化","type":"yd"},{"label":"可从 (sI-A)^{-1} 求拉氏反变换得到","type":"yd"},{"label":"满足 e^{A\\cdot0}=I 且可逆","type":"yd"},{"label":"含输入时用卷积积分写出全响应","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"求拉氏反变换得到 e^{At}","type":"bz"},{"label":"代入全响应公式求状态与输出","type":"bz"},{"label":"用初值条件校验结果","type":"bz"},{"label":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]","type":"fm","tex":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]"},{"label":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau","type":"fm","tex":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau"},{"label":"求给定初始状态与阶跃输入下的状态响应表达式","type":"kf","own":true},{"label":"判断输出是否存在最大值与最小值","type":"kf","own":true},{"label":"求状态转移矩阵","type":"kf","own":false},{"label":"求给定初始条件下的状态与输出响应","type":"kf","own":false},{"label":"用性质验证转移矩阵是否正确","type":"kf","own":false},{"label":"矩阵求逆时忘记检查行列式是否为零","type":"er","own":false},{"label":"卷积积分中变量代换写错","type":"er","own":false}]}]}]}},{"no":"5","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：6 题 150 分；前半是过程对象建模、奈奎斯特围线、PID 整定（含 Z-N 与 λ 整定），后半连续三题考状态空间：状态响应、参数对能控能观与稳定性的影响、最小实现与能观性证明　重点：储罐液位对象的线性化建模、含右半平面极点的奈奎斯特判据、Z-N 与 λ 整定法、状态转移矩阵与输出极值、观测器设计、最小实现与能观性证明","type":"warn"},{"label":"五、参数对能控能观与稳定性的影响及观测器设计　〔第5题〕","type":"block","children":[{"label":"含参数 a 的二阶系统，逐项讨论能控性、能观性、BIBO 稳定性、李雅普诺夫稳定与渐近稳定，再设计最小维观测器","type":"idea"},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"二阶系统只需构造能控性矩阵与能观性矩阵，行列式为零的那个参数值就是失去能控或能观的分界点","type":"k1"},{"label":"能控与能观的分界点通常不重合，要分别列出来，不能只算一个","type":"k1"},{"label":"判断时把含参数的表达式写成 a 的一次式，解出使行列式为零的 a 即可","type":"k1"},{"label":"能控性矩阵与能观性矩阵都在 a 取某个特定值时降秩，两处的 a 值不同","type":"k2"},{"label":"只验一个矩阵就下结论；或把秩判据里的矩阵构造顺序写错，维数对不上","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"分析参数对系统能控性与能观性的影响","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]},{"label":"李雅普诺夫稳定性分析","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"三种稳定性要从不同角度看","type":"k1"},{"label":"BIBO 看传函极点，李雅普诺夫看状态矩阵 A 的特征值","type":"k1"},{"label":"两者出现分歧的地方正是发生零极点对消的时候，此时传递函数的阶数低于状态维数","type":"k1"},{"label":"渐近稳定比李雅普诺夫稳定更严","type":"k1"},{"label":"要求特征值全在左半平面；虚轴简单极点只是临界稳定","type":"k1"},{"label":"BIBO 稳定的参数范围通常多含虚轴端点","type":"k2"},{"label":"因为虚轴简单极点对应的响应仍有界","type":"k2"},{"label":"别把 BIBO 稳定与李雅普诺夫稳定当一回事","type":"k3"},{"label":"判断 BIBO 时不能忽略零极点对消","type":"k3"}]},{"label":"第一法通过线性化系统的特征值判断原系统的局部稳定性","type":"yd"},{"label":"第二法用李雅普诺夫函数直接判断稳定性，无需解方程","type":"yd"},{"label":"李雅普诺夫函数正定且其导数为负定则渐近稳定","type":"yd"},{"label":"线性定常系统中李雅普诺夫方程有正定解等价于系统稳定","type":"yd"},{"label":"选取或构造李雅普诺夫函数","type":"bz"},{"label":"沿系统轨迹求其对时间的导数","type":"bz"},{"label":"判断函数与导数的正负定性","type":"bz"},{"label":"据此得出稳定性结论","type":"bz"},{"label":"A^TP+PA=-Q,\\quad Q=Q^T>0","type":"fm","tex":"A^TP+PA=-Q,\\quad Q=Q^T>0"},{"label":"V(x)=x^TPx>0,\\quad \\dot{V}(x)<0","type":"fm","tex":"V(x)=x^TPx>0,\\quad \\dot{V}(x)<0"},{"label":"分析参数对 BIBO 稳定性、李雅普诺夫稳定性与渐近稳定性的影响","type":"kf","own":true},{"label":"用李雅普诺夫方程判断系统稳定性","type":"kf","own":false},{"label":"构造李雅普诺夫函数证明渐近稳定","type":"kf","own":false},{"label":"分析非线性系统的稳定性范围","type":"kf","own":false},{"label":"李雅普诺夫方程中 P、Q 的角色混用","type":"er","own":false},{"label":"只判断 V 正定就下结论而未检查导数","type":"er","own":false}]},{"label":"状态观测器设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先算最小维数：等于状态维数减去输出维数，本题因此是一维观测器而不是全维观测器","type":"k1"},{"label":"把原系统变换成能观标准型，观测器的特征值配置在新坐标下做，再变回原坐标","type":"k1"},{"label":"观测器极点按题目要求都配置到同一个位置，误差动态矩阵的特征多项式与期望多项式逐项比对求增益","type":"k1"},{"label":"一维观测器只有一个增益，只需让误差特征方程的一次项系数与常数项分别对上即可","type":"k2"},{"label":"维数算成全维；或变换矩阵没取对，把状态反馈增益的公式套到观测器上","type":"k3"}]},{"label":"状态观测器用输出与输入重构状态，前提是系统能观","type":"yd"},{"label":"极点配置法与龙伯格观测器是两种常用形式","type":"yd"},{"label":"观测器误差动态由 A-LC 的特征值决定","type":"yd"},{"label":"观测器极点通常取得比系统极点快若干倍","type":"yd"},{"label":"验证系统能观性","type":"bz"},{"label":"写出观测器方程并求误差动态矩阵","type":"bz"},{"label":"按期望特征多项式比较系数求出 L","type":"bz"},{"label":"校验观测器收敛速度是否合适","type":"bz"},{"label":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})","type":"fm","tex":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})"},{"label":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})","type":"fm","tex":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})"},{"label":"在状态不可直接量测时设计最小维状态观测器","type":"kf","own":true},{"label":"设计全维状态观测器","type":"kf","own":false},{"label":"由期望观测器极点求反馈增益阵 L","type":"kf","own":false},{"label":"分析观测器与状态反馈组合后的系统极点","type":"kf","own":false},{"label":"把观测器增益阵写成了状态反馈增益阵的形式","type":"er","own":false},{"label":"忽略观测器极点过快会放大噪声","type":"er","own":false}]}]}]}},{"no":"6","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：6 题 150 分；前半是过程对象建模、奈奎斯特围线、PID 整定（含 Z-N 与 λ 整定），后半连续三题考状态空间：状态响应、参数对能控能观与稳定性的影响、最小实现与能观性证明　重点：储罐液位对象的线性化建模、含右半平面极点的奈奎斯特判据、Z-N 与 λ 整定法、状态转移矩阵与输出极值、观测器设计、最小实现与能观性证明","type":"warn"},{"label":"六、最小实现与能观性的证明　〔第6题〕","type":"block","children":[{"label":"两道理论证明：最小实现之间互相等价；能控的系统一定可以配出使系统能观的输出矩阵","type":"idea"},{"label":"由传递函数写状态空间表达式","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"最小实现的定义是三要素：能控、能观、维数最低，两个实现维数相同是证明的起点","type":"k1"},{"label":"证明的关键是构造两实现之间的线性变换矩阵，用能控性矩阵与能观性矩阵的满秩性说明该矩阵可逆","type":"k1"},{"label":"等价性只要求相似变换存在，不需要两个实现的具体形式相同","type":"k1"},{"label":"变换矩阵常取「实现一的能控阵乘实现二的能观阵的逆」","type":"k2"},{"label":"这两个矩阵都满秩才能保证变换可逆","type":"k2"},{"label":"只说明维数相同就当成等价；或证明中用到能控性、能观性却不说明为什么可以用","type":"k3"}]},{"label":"同一传递函数可对应无穷多个状态空间实现","type":"yd"},{"label":"常用能控标准型、能观标准型与对角标准型","type":"yd"},{"label":"能控标准型的 A 阵为友矩阵形式","type":"yd"},{"label":"最小实现要求系统既能控又能观","type":"yd"},{"label":"把传递函数化为真分式，分离直接项 D","type":"bz"},{"label":"按标准型规则写出 A、B、C、D","type":"bz"},{"label":"必要时用线性变换换成其他标准型","type":"bz"},{"label":"A=\\begin{bmatrix}0&1&\\cdots&0\\\\\\vdots&&\\ddots&\\vdots\\\\0&0&\\cdots&1\\\\-a_0&-a_1&\\cdots&-a_{n-1}\\end{bmatrix},\\quad B=\\begin{bmatrix}0\\\\\\vdots\\\\0\\\\1\\end{bmatrix}","type":"fm","tex":"A=\\begin{bmatrix}0&1&\\cdots&0\\\\\\vdots&&\\ddots&\\vdots\\\\0&0&\\cdots&1\\\\-a_0&-a_1&\\cdots&-a_{n-1}\\end{bmatrix},\\quad B=\\begin{bmatrix}0\\\\\\vdots\\\\0\\\\1\\end{bmatrix}"},{"label":"证明同一传递函数的两个最小实现必相互等价","type":"kf","own":true},{"label":"由传递函数写出能控标准型","type":"kf","own":false},{"label":"由传递函数写出能观标准型","type":"kf","own":false},{"label":"判断给定的实现是否为最小实现","type":"kf","own":false},{"label":"真分式化分时直接项 D 处理错误","type":"er","own":false},{"label":"友矩阵中系数符号写反","type":"er","own":false}]},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"能控保证存在非奇异变换把系统化成能控标准型，在标准型下输出矩阵可以逐项选取","type":"k1"},{"label":"能观性要求能观性矩阵满秩，在能控标准型下它的行列式是输出矩阵各分量的组合","type":"k1"},{"label":"把输出矩阵的分量取成使该行列式非零的值即可，构造性证明只需要举出一组取值","type":"k1"},{"label":"能控标准型下能观性矩阵的行列式通常就等于某个分量的倍数，取该分量非零即可","type":"k2"},{"label":"只做一般性论述不给出具体构造；或忘记说明变换不改变能控性与能观性","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"证明能控的系统总能构造出使系统能观的输出矩阵","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]}]}]}}]}</script>
+<script src="../../../../../assets/d3.min.js"></script>
+<script src="../../../../../assets/kg.js"></script>
+</body></html>

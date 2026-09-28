@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>南京师范大学 857 控制原理 2025 年真题思维导图</title>
+<meta name="description" content="南京师范大学 2025 年 857 控制原理 考研真题思维导图：共 17 个大题，逐题思路、考点与易错整理。第1题（校正装置类型判断）；第2题（二阶反馈系统稳定性）；第3题（传递函数的决定因素）；第4题（典型输入信号）；第5题（系统的外部描述）；第6题（幅频与相频特性）">
+<link rel="canonical" href="http://127.0.0.1:8768/真题思维导图/x/211/nanjingshifan/2025/857/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="南京师范大学 857 控制原理 2025 年真题思维导图">
+<meta property="og:description" content="南京师范大学 2025 年 857 控制原理 考研真题思维导图：共 17 个大题，逐题思路、考点与易错整理。第1题（校正装置类型判断）；第2题（二阶反馈系统稳定性）；第3题（传递函数的决定因素）；第4题（典型输入信号）；第5题（系统的外部描述）；第6题（幅频与相频特性）">
+<meta name="theme-color" content="#1f4e79">
+<link rel="stylesheet" href="../../../../../assets/kg.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "南京师范大学 857 控制原理 2025 年真题思维导图", "inLanguage": "zh-CN", "about": ["与虚轴的交点及临界参数", "传递函数的定义与基本性质", "典型输入下的稳态误差计算", "典型输入信号", "典型非线性特性及其影响", "劳斯判据", "反馈校正与复合控制", "多输入与扰动作用下的传递函数", "描述函数法基础", "根轨迹的基本概念与幅相条件"], "educationalLevel": "211 院校", "url": "http://127.0.0.1:8768/真题思维导图/x/211/nanjingshifan/2025/857/"}</script>
+</head>
+<body class="page-set">
+<header class="site-head"><div class="inner"><a class="parent-home" href="../../../../../../index.html"><span class="arr">←</span><span class="ptxt">择校首页</span></a><a class="brand" href="../../../../../"><span class="full">控制考研真题思维导图</span><span class="short">真题思维导图</span></a><button class="sbtn" id="kg-search-btn" type="button" aria-label="搜索"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button><nav class="crumbs"><a href="../../../../../x/211/">211 院校</a><span class="sep">›</span><a href="../../../../../x/211/nanjingshifan/">南京师范大学</a><span class="sep">›</span><span>2025 年</span></nav><nav class="levelnav" aria-label="层级导航"><a class="lv home" href="../../../../../">首页</a><a class="lv" href="../../../../../x/211/nanjingshifan/">← 南京师范大学</a><a class="lv" href="#q1">第 1 题 →</a></nav><input class="head-inp" id="site-q" type="search" placeholder="搜学校 / 代码 / 年份" aria-label="搜索"></div></header>
+<main class="wrap">
+<div class="titlebar"><img class="hlogo" src="../../../../../assets/logo/nanjingshifan.jpg" alt="南京师范大学校徽" width="52" height="52"><h1>南京师范大学 857 控制原理 2025 年真题思维导图</h1><div class="actions"><button class="btn" data-mode="outline">大纲</button><button class="btn on" data-mode="map">导图</button><button class="btn" id="btn-full">全屏</button></div></div>
+<div class="tagrow"><span class="badge t211">211 院校</span><span class="badge">共 17 题</span></div>
+<p class="sub muted tiny" style="margin:8px 0 0">难度：中等偏易　题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题</p>
+<div class="qtabs" id="qtabs"><button class="qt on" data-q="all">整卷</button><button class="qt" data-q="1">1</button><button class="qt" data-q="2">2</button><button class="qt" data-q="3">3</button><button class="qt" data-q="4">4</button><button class="qt" data-q="5">5</button><button class="qt" data-q="6">6</button><button class="qt" data-q="7">7</button><button class="qt" data-q="8">8</button><button class="qt" data-q="9">9</button><button class="qt" data-q="10">10</button><button class="qt" data-q="11">11</button><button class="qt" data-q="12">12</button><button class="qt" data-q="13">13</button><button class="qt" data-q="14">14</button><button class="qt" data-q="15">15</button><button class="qt" data-q="16">16</button><button class="qt" data-q="17">17</button></div>
+<div class="cols"><div class="mainpane">
+<div class="mapwrap" id="mapwrap">
+<div class="maptools">
+<button class="btn on" data-depth="1">板块</button>
+<button class="btn" data-depth="2">考点</button>
+<button class="btn" data-depth="99">全部</button>
+<button class="btn" data-zoom="in" title="放大">＋</button>
+<button class="btn" data-zoom="out" title="缩小">－</button>
+<button class="btn" data-fit="1">适应</button>
+<button class="btn" id="btn-exitfs" hidden>退出全屏</button>
+<input id="map-q" type="search" placeholder="图内搜索">
+</div>
+<svg id="svg"><g id="g"></g></svg>
+<div class="map-foot">点击节点展开/折叠　·　滚轮缩放　·　拖拽平移</div>
+</div>
+<section class="content" id="content">
+<article class="qcard" id="q1" data-q="1">
+<h2><span class="no">1</span><span>校正装置类型判断</span><a class="anchorlink" data-q="1" href="#q1" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由传递函数形式比较网络高频与低频增益，判断属于超前还是滞后校正</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/cr_03/">滞后校正</a>
+<span class="tiny muted">系统校正</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由传递函数形式判断校正网络的类型</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>比较网络高频增益与低频增益的大小关系</li>
+<li><b>中间结果：</b>相频是两段反正切之差，其正负由参数与一的大小定</li>
+<li><b>卡点：</b>参数与一的大小关系决定超前或滞后，别只看结构</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>滞后校正利用高频段幅值衰减提高相角裕度</li><li>会使截止频率降低，响应变慢</li><li>转折频率要远低于新的截止频率以免引入过多相位滞后</li><li>可同时提高低频增益改善稳态精度</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定满足相角裕度要求的新截止频率</li><li>由未校正系统在该频率处的幅值确定衰减量</li><li>由衰减量求滞后网络的参数 β</li><li>取转折频率低于新截止频率一个数量级，写出传递函数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由传递函数形式判断校正网络的类型</li><li>设计串联滞后校正装置</li><li>比较超前与滞后校正的效果差异</li><li>分析滞后校正对响应速度的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>把滞后网络的两个转折频率顺序写反</li><li>把滞后网络的两个转折频率顺序写反</li><li>转折频率取得过高导致相位滞后抵消了增益改善</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G_c(s)=\frac{Ts+1}{\beta Ts+1},\quad \beta&gt;1"></div><div class="formula" data-tex="\frac{1}{T}=(0.1\sim0.2)\omega_c&#x27;"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q2" data-q="2">
+<h2><span class="no">2</span><span>二阶反馈系统稳定性</span><a class="anchorlink" data-q="2" href="#q2" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">写出含参数a、k的闭环特征式，用劳斯判据讨论参数取值与闭环稳定性的关系</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/st_01/">劳斯判据</a>
+<span class="tiny muted">稳定性分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>讨论参数a、k取值与闭环稳定性的关系</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先写闭环特征式再列劳斯表</li>
+<li><b>中间结果：</b>首列各元素全部大于零是对应的稳定条件</li>
+<li><b>卡点：</b>两个参数要联立判断，不能只盯其中一个</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>特征方程各项系数全为正只是必要条件，不充分</li><li>劳斯表首列元素全部同号 ⇔ 系统稳定</li><li>首列符号变化次数等于右半平面闭环极点数</li><li>首列出现 0 时需用 ε 法或乘辅助多项式处理</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出闭环特征方程并整理成降幂排列</li><li>若某次幂系数缺项，该项补零</li><li>列劳斯表：前两行为系数，之后各行按交叉相减</li><li>检查首列符号：全同号则稳定，有变号则数出个数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>讨论参数a、k取值与闭环稳定性的关系</li><li>判断给定系统的稳定性</li><li>指出右半平面闭环极点的个数</li><li>求使系统稳定的参数范围</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>系数有缺项时不补零就直接套用判据</li><li>系数有缺项时不补零，直接套用判据</li><li>首列出现 0 后仍按常规继续算，未用 ε 法</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="1+G(s)H(s)=0"></div><div class="formula" data-tex="a_ns^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0=0"></div><div class="formula" data-tex="b_1=\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q3" data-q="3">
+<h2><span class="no">3</span><span>传递函数的决定因素</span><a class="anchorlink" data-q="3" href="#q3" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">回到传递函数定义，明确其只由系统本身的结构与参数决定</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/tf_01/">传递函数的定义与基本性质</a>
+<span class="tiny muted">传递函数</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>说明传递函数由系统的哪些因素决定</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>由传递函数定义出发看其与输入和初值是否有关</li>
+<li><b>中间结果：</b>传递函数只描述系统自身的固有特性</li>
+<li><b>卡点：</b>传递函数与输入信号形式和初始条件无关</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>定义：零初始条件下，输出与输入的拉氏变换之比 G(s)=C(s)/R(s)</li><li>只由系统结构与参数决定，与输入形式无关</li><li>分母为特征多项式，其根是极点；分子的根是零点</li><li>工程可实现系统必为真分式（分子阶数 ≤ 分母阶数）</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>对微分方程两边取拉氏变换，初始条件全部置零</li><li>把输出项移到左边、输入项移到右边</li><li>整理成 C(s)/R(s) 的降幂形式</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>说明传递函数由系统的哪些因素决定</li><li>由微分方程直接写出传递函数</li><li>指出系统的阶数、极点个数与零点个数</li><li>判断给定分式能否作为实际系统的传递函数</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>忽略零初始条件这一前提</li><li>忽略“零初始条件”这一前提，把初始值带进变换结果</li><li>分子分母系数按升幂抄写导致顺序颠倒</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(s)=\frac{C(s)}{R(s)}=\frac{b_m s^m+\cdots+b_1 s+b_0}{a_n s^n+\cdots+a_1 s+a_0}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q4" data-q="4">
+<h2><span class="no">4</span><span>典型输入信号</span><a class="anchorlink" data-q="4" href="#q4" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">按单位抛物线的标准定义写出其时间表达式并对应到拉氏变换</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/bc_02/">典型输入信号</a>
+<span class="tiny muted">基本概念与信号</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>写出单位抛物线输入信号的数学表达式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>按阶跃、斜坡、抛物线的阶次递推记忆</li>
+<li><b>中间结果：</b>单位抛物线是斜坡信号对时间的积分</li>
+<li><b>卡点：</b>单位二字的系数容易漏，注意与t平方区分</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>常用典型输入有冲激、阶跃、斜坡、抛物线（加速度）与正弦五类</li><li>阶跃信号用于考查快速性与稳定性，斜坡与抛物线用于考查稳态精度</li><li>正弦信号用于频域分析，冲激响应就是系统的传递函数</li><li>各典型信号的拉氏变换是分析全响应的起点</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>按题意写出输入信号的时域表达式</li><li>对输入取拉氏变换得到该信号的复域形式</li><li>由输入类型判断考查的是动态性能还是稳态精度</li><li>把输入代入误差或响应公式计算</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>写出单位抛物线输入信号的数学表达式</li><li>写出典型输入信号的拉氏变换</li><li>说明某一典型输入信号用于考查哪类性能</li><li>由输入类型判断稳态误差是否为有限值</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>把斜坡与抛物线信号的阶次写错</li><li>把斜坡与抛物线信号的阶次写错</li><li>阶跃的拉氏变换漏掉系数（幅度不为 1 时）</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="L\left[\delta(t)\right]=1"></div><div class="formula" data-tex="L\left[1(t)\right]=\frac{1}{s},\quad L\left[t\right]=\frac{1}{s^{2}}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q5" data-q="5">
+<h2><span class="no">5</span><span>系统的外部描述</span><a class="anchorlink" data-q="5" href="#q5" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">区分输入输出模型与状态空间模型，判断微分方程描述属于哪一类</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/tf_01/">传递函数的定义与基本性质</a>
+<span class="tiny muted">传递函数</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>区分输入输出描述与状态空间描述</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>由模型是否显含系统内部状态变量判断描述类型</li>
+<li><b>中间结果：</b>输入输出微分方程对应外部描述</li>
+<li><b>卡点：</b>状态空间表达式对应内部描述</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>定义：零初始条件下，输出与输入的拉氏变换之比 G(s)=C(s)/R(s)</li><li>只由系统结构与参数决定，与输入形式无关</li><li>分母为特征多项式，其根是极点；分子的根是零点</li><li>工程可实现系统必为真分式（分子阶数 ≤ 分母阶数）</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>对微分方程两边取拉氏变换，初始条件全部置零</li><li>把输出项移到左边、输入项移到右边</li><li>整理成 C(s)/R(s) 的降幂形式</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>区分输入输出描述与状态空间描述</li><li>由微分方程直接写出传递函数</li><li>指出系统的阶数、极点个数与零点个数</li><li>判断给定分式能否作为实际系统的传递函数</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>把外部描述与内部描述搞反</li><li>忽略“零初始条件”这一前提，把初始值带进变换结果</li><li>分子分母系数按升幂抄写导致顺序颠倒</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(s)=\frac{C(s)}{R(s)}=\frac{b_m s^m+\cdots+b_1 s+b_0}{a_n s^n+\cdots+a_1 s+a_0}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q6" data-q="6">
+<h2><span class="no">6</span><span>幅频与相频特性</span><a class="anchorlink" data-q="6" href="#q6" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">令s取纯虚数，分别对复数取模与取相角得到幅频和相频表达式</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/fd_01/">频率特性的物理意义与求法</a>
+<span class="tiny muted">频域分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由传递函数求幅频特性与相频特性表达式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把s换成纯虚数后对分子分母分别取模</li>
+<li><b>中间结果：</b>分母的模为各环节模的乘积</li>
+<li><b>卡点：</b>分母含正实部极点，幅角要按象限正确取值</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>频率特性是传递函数中令 s=jω 得到的复变函数</li><li>幅频特性表示各频率正弦输入下的幅值放大倍数</li><li>相频特性表示输出相对输入的相位差</li><li>频率特性可用幅相曲线、Bode 图或尼柯尔斯图表示</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由传递函数令 s=jω 得到 G(jω)</li><li>分别求出幅值 |G(jω)| 与相角 ∠G(jω)</li><li>按需要绘制幅相曲线或对数频率特性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由传递函数求幅频特性与相频特性表达式</li><li>求给定传递函数的幅频与相频表达式</li><li>计算某频率处的幅值与相角</li><li>说明频率特性的物理含义</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>相角累加时漏掉积分环节的负九十度</li><li>求幅值时忘记把分母复数取模后再相除</li><li>相角累加时漏掉积分环节的 -90°</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(j\omega)=G(s)\big|_{s=j\omega}=|G(j\omega)|e^{j\varphi(\omega)}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q7" data-q="7">
+<h2><span class="no">7</span><span>系统型别与开环放大倍数</span><a class="anchorlink" data-q="7" href="#q7" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">把传函化为尾一标准型，数积分环节个数定型别，再读低频增益</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ss_02/">系统型别与静态误差系数</a>
+<span class="tiny muted">稳态误差</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由开环传函确定系统型别与开环放大倍数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>化尾一标准型后数分母中s的幂次</li>
+<li><b>中间结果：</b>积分环节个数即系统型别</li>
+<li><b>卡点：</b>放大倍数要按尾一标准型读，勿直接抄常数项</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>型别 v 由开环传递函数中积分环节的个数决定</li><li>0 型有位置误差、Ⅰ型有速度误差、Ⅱ型有加速度误差</li><li>静态误差系数只与开环传递函数有关</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>把开环传递函数写成分式，数出 s 的幂次即型别</li><li>按型别选择对应的静态误差系数公式</li><li>代入求值</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由开环传函确定系统型别与开环放大倍数</li><li>判断系统型别</li><li>求静态位置、速度、加速度误差系数</li><li>分析增加积分环节对精度的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>数错积分环节个数导致型别判错</li><li>把开环增益与静态误差系数混为一谈</li><li>数错积分环节个数导致型别判错</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="K_p=\lim_{s\to0}G(s)H(s)"></div><div class="formula" data-tex="K_v=\lim_{s\to0}sG(s)H(s)"></div><div class="formula" data-tex="K_a=\lim_{s\to0}s^2G(s)H(s)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q8" data-q="8">
+<h2><span class="no">8</span><span>性能分析指标</span><a class="anchorlink" data-q="8" href="#q8" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">把系统性能分析指标按稳定性、快速性与准确性归类</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/bc_01/">自动控制系统的基本组成与控制方式</a>
+<span class="tiny muted">基本概念与信号</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>写出衡量系统性能的主要指标</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>按稳定性、准确性与快速性三条基本要求归纳</li>
+<li><b>中间结果：</b>稳定看是否收敛，准确看稳态误差，快速看动态过程</li>
+<li><b>卡点：</b>题目只让写指标类别，不必展开各指标计算式</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>闭环系统按给定、比较、放大、执行、对象、检测六个环节串联成环</li><li>按有无反馈分为开环、闭环与复合控制；按给定信号分为恒值、随动与程序控制</li><li>检测变送元件把被控量转换成可比较的信号，是反馈通道的入口</li><li>控制系统的基本要求是稳、准、快三条</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>从工艺或物理描述里找出被控量与操纵量</li><li>逐个指认给定、比较、控制、执行、对象与检测六个环节对应的实物</li><li>按信号流向把环节串成闭环方框图</li><li>说明系统靠什么维持被控量等于给定量</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>写出衡量系统性能的主要指标</li><li>指出系统的被控对象、被控量与操纵量</li><li>说明检测变送元件在闭环系统中的作用</li><li>画出给定系统的闭环方框图并说明工作过程</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>只答稳定性一项，漏掉准确性与快速性</li><li>把被控量与操纵量搞反</li><li>只画方框图而不指认环节，或反之，漏答一半</li></ul></div></details>
+</div>
+</article>
+<article class="qcard" id="q9" data-q="9">
+<h2><span class="no">9</span><span>正弦输入下的稳态响应与误差</span><a class="anchorlink" data-q="9" href="#q9" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">写出闭环与误差传函，令s取纯虚数代入正弦频率求幅值与相角，得到稳态输出与稳态误差</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/fd_01/">频率特性的物理意义与求法</a>
+<span class="tiny muted">频域分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求正弦输入下系统的稳态输出</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>令s取纯虚数并代入给定的角频率</li>
+<li><b>中间结果：</b>稳态输出幅值为闭环幅频在该频率处的值</li>
+<li><b>卡点：</b>稳态输出相位由闭环相频在该频率处的值给出</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>频率特性是传递函数中令 s=jω 得到的复变函数</li><li>幅频特性表示各频率正弦输入下的幅值放大倍数</li><li>相频特性表示输出相对输入的相位差</li><li>频率特性可用幅相曲线、Bode 图或尼柯尔斯图表示</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由传递函数令 s=jω 得到 G(jω)</li><li>分别求出幅值 |G(jω)| 与相角 ∠G(jω)</li><li>按需要绘制幅相曲线或对数频率特性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求正弦输入下系统的稳态输出</li><li>求给定传递函数的幅频与相频表达式</li><li>计算某频率处的幅值与相角</li><li>说明频率特性的物理含义</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>求幅值时忘记把分母复数取模再相除</li><li>求幅值时忘记把分母复数取模后再相除</li><li>相角累加时漏掉积分环节的 -90°</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(j\omega)=G(s)\big|_{s=j\omega}=|G(j\omega)|e^{j\varphi(\omega)}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ss_01/">误差定义与误差传递函数</a>
+<span class="tiny muted">稳态误差</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由误差传函求正弦输入下的稳态误差</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先写误差传函再令s取纯虚数求幅相</li>
+<li><b>中间结果：</b>误差的稳态分量也是同频率正弦量</li>
+<li><b>卡点：</b>误差定义要用题给的误差等于参考减输出</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>误差有两种定义：输入端 E(s)=R(s)-C(s) 与 E(s)=R(s)-B(s)，须看清题意</li><li>误差传递函数由结构决定</li><li>单位反馈时两种定义等价</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>按题意确定误差取在输入端还是反馈端</li><li>由结构图写出误差传递函数</li><li>乘输入后取 s→0 的极限</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由误差传函求正弦输入下的稳态误差</li><li>写出误差传递函数</li><li>说明不同误差定义对结果的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>非单位反馈时两种误差定义混用</li><li>非单位反馈时两种误差定义混用导致结果差一个 H(s)</li><li>忘记先判断系统是否稳定</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="E(s)=\frac{1}{1+G(s)H(s)}R(s)"></div><div class="formula" data-tex="E(s)=R(s)-C(s)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q10" data-q="10">
+<h2><span class="no">10</span><span>根轨迹方程的两个条件</span><a class="anchorlink" data-q="10" href="#q10" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由根轨迹方程的复数等式拆出幅值条件与相角条件</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_01/">根轨迹的基本概念与幅相条件</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>说明根轨迹方程对应的两个条件</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>将根轨迹方程的复数等式分成模与相角两个部分</li>
+<li><b>中间结果：</b>幅值条件定增益，相角条件定轨迹形状</li>
+<li><b>卡点：</b>正反馈系统才用零度的相角条件</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>根轨迹是开环某一参数由 0 变到无穷时闭环极点在 s 平面上的移动轨迹</li><li>同时满足相角条件与幅值条件的 s 才是根轨迹上的点</li><li>相角条件决定根轨迹的形状，幅值条件决定对应的参数值</li><li>常规根轨迹以开环增益 K 为可变参数</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出以 K 为参变量的闭环特征方程</li><li>整理成 1+KG₀(s)=0 的标准形式</li><li>用相角条件判断某点是否在根轨迹上</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>说明根轨迹方程对应的两个条件</li><li>判断给定点是否在根轨迹上</li><li>由幅值条件求该点对应的 K</li><li>说明相角条件与幅值条件各自的作用</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>把相角条件的一百八十度写成零度</li><li>把相角条件的 180° 写成 0°（正反馈时才用 0°）</li><li>用幅值条件判点，搞混两个条件的用途</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="1+KG_0(s)=0"></div><div class="formula" data-tex="\sum\angle(s-z_i)-\sum\angle(s-p_j)=180^\circ+360^\circ l"></div><div class="formula" data-tex="\frac{\prod|s-p_j|}{\prod|s-z_i|}=K"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q11" data-q="11">
+<h2><span class="no">11</span><span>闭环反馈控制的作用</span><a class="anchorlink" data-q="11" href="#q11" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">从扰动使被控量偏离给定值的角度说明采用闭环反馈控制的原因</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/bc_01/">自动控制系统的基本组成与控制方式</a>
+<span class="tiny muted">基本概念与信号</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>说明采用闭环反馈控制的原因</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>从扰动作用下被控量偏离给定值切入</li>
+<li><b>中间结果：</b>偏差经检测与反馈后产生控制作用</li>
+<li><b>卡点：</b>开环系统对扰动没有自动修正能力</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>闭环系统按给定、比较、放大、执行、对象、检测六个环节串联成环</li><li>按有无反馈分为开环、闭环与复合控制；按给定信号分为恒值、随动与程序控制</li><li>检测变送元件把被控量转换成可比较的信号，是反馈通道的入口</li><li>控制系统的基本要求是稳、准、快三条</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>从工艺或物理描述里找出被控量与操纵量</li><li>逐个指认给定、比较、控制、执行、对象与检测六个环节对应的实物</li><li>按信号流向把环节串成闭环方框图</li><li>说明系统靠什么维持被控量等于给定量</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>说明采用闭环反馈控制的原因</li><li>指出系统的被控对象、被控量与操纵量</li><li>说明检测变送元件在闭环系统中的作用</li><li>画出给定系统的闭环方框图并说明工作过程</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>把被控量与操纵量搞反</li><li>把被控量与操纵量搞反</li><li>只画方框图而不指认环节，或反之，漏答一半</li></ul></div></details>
+</div>
+</article>
+<article class="qcard" id="q12" data-q="12">
+<h2><span class="no">12</span><span>分段信号的拉氏变换</span><a class="anchorlink" data-q="12" href="#q12" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">按时间区间分段，用阶跃函数的时移把各段写成统一表达式再求拉氏变换</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/bc_02/">典型输入信号</a>
+<span class="tiny muted">基本概念与信号</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求分段定义信号的拉氏变换</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>用单位阶跃与延迟阶跃把分段函数写成统一表达式</li>
+<li><b>中间结果：</b>各段表达式乘上对应的延迟因子后求和</li>
+<li><b>卡点：</b>分段点处函数值跳变要靠阶跃项补齐</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>常用典型输入有冲激、阶跃、斜坡、抛物线（加速度）与正弦五类</li><li>阶跃信号用于考查快速性与稳定性，斜坡与抛物线用于考查稳态精度</li><li>正弦信号用于频域分析，冲激响应就是系统的传递函数</li><li>各典型信号的拉氏变换是分析全响应的起点</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>按题意写出输入信号的时域表达式</li><li>对输入取拉氏变换得到该信号的复域形式</li><li>由输入类型判断考查的是动态性能还是稳态精度</li><li>把输入代入误差或响应公式计算</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求分段定义信号的拉氏变换</li><li>写出典型输入信号的拉氏变换</li><li>说明某一典型输入信号用于考查哪类性能</li><li>由输入类型判断稳态误差是否为有限值</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>阶跃的拉氏变换漏掉幅度系数</li><li>把斜坡与抛物线信号的阶次写错</li><li>阶跃的拉氏变换漏掉系数（幅度不为 1 时）</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="L\left[\delta(t)\right]=1"></div><div class="formula" data-tex="L\left[1(t)\right]=\frac{1}{s},\quad L\left[t\right]=\frac{1}{s^{2}}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q13" data-q="13">
+<h2><span class="no">13</span><span>电路网络传递函数建模</span><a class="anchorlink" data-q="13" href="#q13" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">对含运算放大器与RC的网络列节点电流方程，用虚短虚断消去中间变量求输入输出传函</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/md_02/">电路网络与有源网络建模</a>
+<span class="tiny muted">建模与机电系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由电路网络求输入输出传递函数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>在节点处列电流方程并利用虚短虚断消元</li>
+<li><b>中间结果：</b>电容用复阻抗表示后网络化为代数方程</li>
+<li><b>卡点：</b>图一为原卷电路图，需回原卷核对元件连接</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>无源网络用复阻抗分压或节点法</li><li>含运放的网络使用虚短与虚断两个条件</li><li>有源滤波器与 RC 网络是常见载体</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>画出复阻抗等效电路</li><li>用分压公式或节点电流方程列写关系</li><li>整理为输出与输入的比值</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由电路网络求输入输出传递函数</li><li>RC 网络或有源滤波器求传递函数</li><li>求运算电路的输出表达式</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>含运放时忽略虚短虚断导致方程数不足</li><li>含运放时忽略虚短虚断导致方程数不足</li><li>把反相输入的负号漏掉</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\frac{U_o(s)}{U_i(s)}=-\frac{Z_f(s)}{Z_i(s)}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q14" data-q="14">
+<h2><span class="no">14</span><span>多输入系统的梅森公式</span><a class="anchorlink" data-q="14" href="#q14" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">分别对参考输入与扰动输入用梅森公式求两个传函，再按叠加原理写出总输出</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/tf_04/">梅森增益公式与信号流图</a>
+<span class="tiny muted">传递函数</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由结构图用梅森公式求多输入系统的传递函数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>分别数参考通道与扰动通道的前向通路和回路</li>
+<li><b>中间结果：</b>两个通道共用同一个特征式</li>
+<li><b>卡点：</b>图二为原卷结构图，需回原卷核对支路与节点</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>信号流图适合处理多回路、比较点复杂系统</li><li>特征式 Δ=1-ΣL+ΣLL-ΣLLL+…</li><li>每条前向通路的余子式要剔除与它接触的回路</li><li>不接触回路才会计入高阶乘积项</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由结构图改画信号流图，标出各节点</li><li>找出全部单独回路，求特征式 Δ</li><li>找出全部前向通路 P_k</li><li>对每条通路求余子式 Δ_k</li><li>代入公式求总传输</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由结构图用梅森公式求多输入系统的传递函数</li><li>由信号流图求 C(s)/R(s)</li><li>结构图先用梅森公式化简再作性能分析</li><li>判断某条回路是否与给定前向通路接触</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>余子式中未剔除与前向通路接触的回路</li><li>不接触回路找漏或重复计数</li><li>余子式中未剔除与通路接触的回路</li><li>把前向通路的增益写成了回路增益</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="P=\frac{1}{\Delta}\sum_k P_k\Delta_k"></div><div class="formula" data-tex="\Delta=1-\sum L_a+\sum L_aL_b-\sum L_aL_bL_c+\cdots"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/bd_04/">多输入与扰动作用下的传递函数</a>
+<span class="tiny muted">结构图与方框图</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求多输入作用下的总输出表达式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先分别求各输入到输出的传函再用叠加原理相加</li>
+<li><b>中间结果：</b>总输出为两通道传函乘各自输入之和</li>
+<li><b>卡点：</b>叠加原理只对线性系统成立</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>线性系统可用叠加原理，每次只保留一个输入</li><li>求扰动的传递函数时令参考输入为零</li><li>扰动误差与输入误差分别计算后再叠加</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>令 R(s)=0，求扰动到输出的传递函数</li><li>令 N(s)=0，求输入到输出的传递函数</li><li>按题目要求叠加或单独分析</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求多输入作用下的总输出表达式</li><li>求扰动引起的输出或误差</li><li>分析满足扰动不变性的补偿条件</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>求扰动传函时没有把参考输入置零</li><li>两个输入同时存在时直接叠加却未验证系统的线性性</li><li>求扰动传函时没有把参考输入置零</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\frac{C(s)}{N(s)}=\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q15" data-q="15">
+<h2><span class="no">15</span><span>复合控制与不变性条件</span><a class="anchorlink" data-q="15" href="#q15" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">写出前馈补偿后的闭环与误差传函，用终值定理求稳态误差，再令误差为零得不变性条件</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/cr_06/">反馈校正与复合控制</a>
+<span class="tiny muted">系统校正</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求前馈补偿器实现给定信号不变性的条件</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把前馈通道并入闭环传函后写误差传函</li>
+<li><b>中间结果：</b>令误差传函的分子为零即得不变性条件</li>
+<li><b>卡点：</b>图三为原卷结构图，需回原卷核对前馈接入点</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>反馈校正可改变被包围环节的特性，抑制参数波动</li><li>局部反馈能降低时间常数、提高响应速度</li><li>复合控制通过前馈补偿实现给定或扰动不变性</li><li>前馈不改变闭环稳定性，可与反馈叠加使用</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定被包围的环节与反馈通道传递函数</li><li>写出等效后的传递函数</li><li>按不变性原理列写前馈补偿器条件</li><li>求解补偿器并校验可实现性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求前馈补偿器实现给定信号不变性的条件</li><li>设计反馈校正装置改善被包围环节</li><li>求前馈补偿器实现不变性</li><li>分析复合控制对稳态误差的作用</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>前馈补偿器求出含高阶微分不可实现却直接采用</li><li>前馈补偿器求出的表达式含高阶微分，不可实现却直接采用</li><li>忽略反馈校正可能引起的高频噪声放大</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G_{等效}=\frac{G_1(s)}{1+G_1(s)H_c(s)}"></div><div class="formula" data-tex="G_r(s)=\frac{1}{G_1(s)}\ (\text{完全不变性条件})"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ss_03/">典型输入下的稳态误差计算</a>
+<span class="tiny muted">稳态误差</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由终值定理求复合控制系统的稳态误差</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先判稳再由误差传函乘输入变换取s趋于零的极限</li>
+<li><b>中间结果：</b>斜坡输入下稳态误差与不变性参数成比例</li>
+<li><b>卡点：</b>误差为零要同时满足参数匹配或输入为常值之一</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>稳态误差由系统型别与输入类型共同决定</li><li>0 型对阶跃有差、Ⅰ型对斜坡有差、Ⅱ型对加速度有差</li><li>低型别系统对高阶输入的误差为无穷大</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>判断系统型别并联立稳定性检查</li><li>写出输入信号的拉氏变换</li><li>用终值定理求 e_ss，或直接查表</li><li>必要时按叠加原理分别计算各分量</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由终值定理求复合控制系统的稳态误差</li><li>求给定输入下的稳态误差</li><li>由稳态误差要求反求开环增益</li><li>比较不同型别系统的跟踪能力</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>未判稳就使用终值定理</li><li>未判稳就使用终值定理</li><li>输入为组合信号时漏掉某一分量</li><li>Ⅰ型系统求阶跃误差时误代入速度误差公式</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="e_{ss}=\lim_{s\to0}sE(s)"></div><div class="formula" data-tex="e_{ss}=\frac{R_0}{1+K_p},\quad e_{ss}=\frac{v_0}{K_v},\quad e_{ss}=\frac{a_0}{K_a}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q16" data-q="16">
+<h2><span class="no">16</span><span>根轨迹绘制与阻尼比参数</span><a class="anchorlink" data-q="16" href="#q16" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">定开环极点与实轴段、渐近线和虚轴交点后画根轨迹，再由阻尼比条件用相角条件定闭环极点、用幅值条件反求增益</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_02/">根轨迹的绘制法则</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>画三阶系统根轨迹并求渐近线与分离点</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>由开环极点定实轴段与渐近线交点</li>
+<li><b>中间结果：</b>三个开环极点对应三条轨迹分支</li>
+<li><b>卡点：</b>源文第16题的参数a疑漏印，答案按极点含0、负2、负7求解</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>起于开环极点、终于开环零点（无穷远零点），分支数等于极点数 n</li><li>实轴上某段右侧的零极点总数为奇数时，该段属于根轨迹</li><li>渐近线条数为 n-m，交点在实轴上，与实轴夹角等分 360°</li><li>根轨迹关于实轴对称</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>标出全部开环零极点并判断实轴上的根轨迹段</li><li>计算渐近线交点与夹角</li><li>求出分离点、出射角、与虚轴交点</li><li>按对称性连接各段并标出对应 K 值</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>画三阶系统根轨迹并求渐近线与分离点</li><li>按法则绘制根轨迹草图</li><li>指出渐近线条数与夹角</li><li>判断某段实轴是否属于根轨迹</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>实轴段判据中的零极点个数算错</li><li>实轴段判据中的零极点个数算错</li><li>渐近线夹角公式中的 2k+1 写成 2k</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\sigma_a=\frac{\sum p_j-\sum z_i}{n-m}"></div><div class="formula" data-tex="\varphi_a=\frac{(2k+1)180^\circ}{n-m}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_05/">与虚轴的交点及临界参数</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求根轨迹与虚轴交点及稳定时的增益范围</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>令闭环特征式取纯虚数后拆成实部与虚部</li>
+<li><b>中间结果：</b>虚部方程定振荡频率、实部方程定临界增益</li>
+<li><b>卡点：</b>稳定增益区间由虚轴交点对应的临界增益划定</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>根轨迹与虚轴的交点对应系统临界稳定</li><li>可用劳斯判据令首列为零，或令 s=jω 代入特征方程求解</li><li>交点处的 K 是使系统稳定的临界增益</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>把 s=jω 代入闭环特征方程</li><li>令实部与虚部分别为零，得到两个方程</li><li>联立解出 ω 与 K</li><li>结合实轴段信息确定根轨迹穿越方向</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求根轨迹与虚轴交点及稳定时的增益范围</li><li>求根轨迹与虚轴的交点及临界增益</li><li>确定系统稳定时 K 的取值范围</li><li>判断根轨迹穿越虚轴的方向</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>只代一个频率就下结论而漏掉另一组交点</li><li>只代一个 ω 就下结论，漏掉另一组交点</li><li>得到 K 后没有回到原题核对参数定义</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="1+KG_0(j\omega)=0"></div><div class="formula" data-tex="\operatorname{Re}[\cdot]=0,\quad \operatorname{Im}[\cdot]=0"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_07/">由根轨迹分析性能与确定参数</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由阻尼比条件求满足要求的开环增益</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>由等阻尼线与轨迹的交点定出闭环极点位置</li>
+<li><b>中间结果：</b>闭环极点确定后再用幅值条件反求增益</li>
+<li><b>卡点：</b>阻尼比零点七零七对应与负实轴夹角四十五度的等阻尼线</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>闭环极点位置直接决定 ξ、ωn 与动态指标</li><li>等阻尼线是从原点出发的射线，等 ωn 线是以原点为心的圆</li><li>给定阻尼比要求时，极点落在等阻尼线上</li><li>增益增大一般使系统响应加快但振荡加剧</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>在 s 平面上画出等阻尼线或等 ωn 圆</li><li>求其与根轨迹的交点</li><li>由幅值条件求出交点对应的参数</li><li>由极点位置估算动态性能</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由阻尼比条件求满足要求的开环增益</li><li>求满足给定阻尼比的参数值</li><li>由闭环极点位置估算超调量与调节时间</li><li>分析提高增益对性能的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>把等阻尼线画成了垂直线</li><li>把等阻尼线画成了垂直线</li><li>由极点位置估指标时忽略零点的作用</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\xi=\cos\beta,\quad \omega_n=|s|"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q17" data-q="17">
+<h2><span class="no">17</span><span>非线性系统不产生自振的条件</span><a class="anchorlink" data-q="17" href="#q17" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">写出死区继电特性的描述函数与负倒描述函数，画线性部分幅相曲线，令两曲线不相交即得参数条件</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/nl_02/">描述函数法基础</a>
+<span class="tiny muted">非线性系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求死区继电特性的描述函数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>按描述函数定义积分求非线性环节的基波分量</li>
+<li><b>中间结果：</b>描述函数是振幅与死区参数的函数</li>
+<li><b>卡点：</b>图四为原卷非线性系统图，需回原卷核对环节位置</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>描述函数是非线性环节在正弦输入下的等效复放大倍数</li><li>描述函数是输入幅值的函数，与频率无关</li><li>只适用于非线性环节输入近似为正弦、线性部分具有低通滤波特性的系统</li><li>描述函数法用来判断自振的存在与参数</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出非线性环节在正弦输入下的输出表达式</li><li>取输出的一次谐波分量求基波幅值与相位</li><li>按定义求描述函数 N(A)</li><li>与线性部分特性联立判断自振</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求死区继电特性的描述函数</li><li>求饱和、死区、继电特性等典型非线性的描述函数</li><li>说明描述函数法的适用条件</li><li>指出描述函数与频率特性的区别</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>忽略一次谐波近似带来的适用条件</li><li>把描述函数当成频率的函数</li><li>忽略一次谐波近似带来的误差条件</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="N(A)=\frac{Y_1}{A}e^{j\varphi_1}"></div><div class="formula" data-tex="N(A)=\frac{1}{\pi A}\int_0^{2\pi}y(t)\sin\omega t\,d(\omega t)"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/nl_03/">用描述函数法分析自振</a>
+<span class="tiny muted">非线性系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由负倒描述函数与幅相曲线判断是否自振</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把负倒描述函数与线性部分幅相曲线画在同一复平面</li>
+<li><b>中间结果：</b>两曲线无交点即不产生自激振荡</li>
+<li><b>卡点：</b>若有交点还要按振幅增大方向判别其稳定性</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>自振条件为 G(jω)N(A)=-1，即线性部分特性与负倒描述函数曲线相交</li><li>交点给出自振频率 ω 与自振幅值 A</li><li>负倒描述函数曲线上幅值增大的方向决定自振是否稳定</li><li>交点处两条曲线的走向关系决定极限环稳定性</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>求线性部分的频率特性 G(jω)</li><li>求非线性环节的负倒描述函数 -1/N(A) 并确定 A 的增大方向</li><li>在同一复平面上画两条曲线并求交点</li><li>由交点处的走向判断自振是否存在且稳定，读出 ω 与 A</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由负倒描述函数与幅相曲线判断是否自振</li><li>判断系统是否产生自持振荡</li><li>求自振频率与自振幅值</li><li>分析参数变化对自振的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>未标注振幅的增大方向就判断稳定性</li><li>画的是 N(A) 而不是负倒描述函数 -1/N(A)</li><li>未标注 A 的增大方向就判断稳定性</li><li>把交点频率当成截止频率</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(j\omega)N(A)=-1"></div><div class="formula" data-tex="G(j\omega)=-\frac{1}{N(A)}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/nl_05/">典型非线性特性及其影响</a>
+<span class="tiny muted">非线性系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>分析死区继电特性对自振的影响</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>由描述函数的极值点确定负倒描述函数的取值范围</li>
+<li><b>中间结果：</b>负倒描述函数在极值点之后随振幅反向变化</li>
+<li><b>卡点：</b>临界条件对应两曲线恰好相切</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>饱和特性降低等效增益，可能引起系统不稳定或自振</li><li>死区特性使小信号时增益为零，产生稳态误差</li><li>间隙特性引起相位滞后，导致波形畸变与自振</li><li>继电特性使系统出现持续振荡并可能产生颤振</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>识别非线性环节类型</li><li>写出其描述函数或分段数学表达式</li><li>分析其对等效增益与稳定性的影响</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>分析死区继电特性对自振的影响</li><li>分析饱和或死区对系统性能的影响</li><li>求典型非线性的描述函数表达式</li><li>说明间隙为何容易引起自振</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>忽略死区在原点附近造成的小信号失效</li><li>认为饱和总是使系统更稳定</li><li>忽略死区在原点附近造成的小信号失效</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="N(A)=\frac{2K}{\pi}\left(\arcsin\frac{a}{A}+\frac{a}{A}\sqrt{1-\left(\frac{a}{A}\right)^2}\right)\ (\text{饱和})"></div></div></details>
+</div>
+</article>
+</section></div><aside class="side">
+<div class="card"><h3>本卷考点</h3><div class="kplist"><a class="kplink" href="../../../../../k/cr_03/" title="考点编号 cr_03"><span class="ktag">系统校正</span><span>滞后校正</span></a><a class="kplink" href="../../../../../k/st_01/" title="考点编号 st_01"><span class="ktag">稳定性分析</span><span>劳斯判据</span></a><a class="kplink" href="../../../../../k/tf_01/" title="考点编号 tf_01"><span class="ktag">传递函数</span><span>传递函数的定义与基本性质</span></a><a class="kplink" href="../../../../../k/bc_02/" title="考点编号 bc_02"><span class="ktag">基本概念与信号</span><span>典型输入信号</span></a><a class="kplink" href="../../../../../k/fd_01/" title="考点编号 fd_01"><span class="ktag">频域分析</span><span>频率特性的物理意义与求法</span></a><a class="kplink" href="../../../../../k/ss_02/" title="考点编号 ss_02"><span class="ktag">稳态误差</span><span>系统型别与静态误差系数</span></a><a class="kplink" href="../../../../../k/bc_01/" title="考点编号 bc_01"><span class="ktag">基本概念与信号</span><span>自动控制系统的基本组成与控制方式</span></a><a class="kplink" href="../../../../../k/ss_01/" title="考点编号 ss_01"><span class="ktag">稳态误差</span><span>误差定义与误差传递函数</span></a><a class="kplink" href="../../../../../k/rl_01/" title="考点编号 rl_01"><span class="ktag">根轨迹法</span><span>根轨迹的基本概念与幅相条件</span></a><a class="kplink" href="../../../../../k/md_02/" title="考点编号 md_02"><span class="ktag">建模与机电系统</span><span>电路网络与有源网络建模</span></a><a class="kplink" href="../../../../../k/tf_04/" title="考点编号 tf_04"><span class="ktag">传递函数</span><span>梅森增益公式与信号流图</span></a><a class="kplink" href="../../../../../k/bd_04/" title="考点编号 bd_04"><span class="ktag">结构图与方框图</span><span>多输入与扰动作用下的传递函数</span></a><a class="kplink" href="../../../../../k/cr_06/" title="考点编号 cr_06"><span class="ktag">系统校正</span><span>反馈校正与复合控制</span></a><a class="kplink" href="../../../../../k/ss_03/" title="考点编号 ss_03"><span class="ktag">稳态误差</span><span>典型输入下的稳态误差计算</span></a><a class="kplink" href="../../../../../k/rl_02/" title="考点编号 rl_02"><span class="ktag">根轨迹法</span><span>根轨迹的绘制法则</span></a><a class="kplink" href="../../../../../k/rl_05/" title="考点编号 rl_05"><span class="ktag">根轨迹法</span><span>与虚轴的交点及临界参数</span></a><a class="kplink" href="../../../../../k/rl_07/" title="考点编号 rl_07"><span class="ktag">根轨迹法</span><span>由根轨迹分析性能与确定参数</span></a><a class="kplink" href="../../../../../k/nl_02/" title="考点编号 nl_02"><span class="ktag">非线性系统</span><span>描述函数法基础</span></a><a class="kplink" href="../../../../../k/nl_03/" title="考点编号 nl_03"><span class="ktag">非线性系统</span><span>用描述函数法分析自振</span></a><a class="kplink" href="../../../../../k/nl_05/" title="考点编号 nl_05"><span class="ktag">非线性系统</span><span>典型非线性特性及其影响</span></a></div></div>
+</aside></div>
+</main>
+<footer class="site-foot"><div class="inner"><span>导图内容为本站原创整理，欢迎交流指正</span></div></footer>
+<script type="application/json" id="kg-data">{"base":"../../../../../","key":"南京师范大学_857_2025","full":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"校正装置类型判断　〔第1题〕","type":"block","children":[{"label":"由传递函数形式比较网络高频与低频增益，判断属于超前还是滞后校正","type":"idea"},{"label":"滞后校正","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"比较网络高频增益与低频增益的大小关系","type":"k1"},{"label":"相频是两段反正切之差，其正负由参数与一的大小定","type":"k2"},{"label":"参数与一的大小关系决定超前或滞后，别只看结构","type":"k3"}]},{"label":"滞后校正利用高频段幅值衰减提高相角裕度","type":"yd"},{"label":"会使截止频率降低，响应变慢","type":"yd"},{"label":"转折频率要远低于新的截止频率以免引入过多相位滞后","type":"yd"},{"label":"可同时提高低频增益改善稳态精度","type":"yd"},{"label":"确定满足相角裕度要求的新截止频率","type":"bz"},{"label":"由未校正系统在该频率处的幅值确定衰减量","type":"bz"},{"label":"由衰减量求滞后网络的参数 β","type":"bz"},{"label":"取转折频率低于新截止频率一个数量级，写出传递函数","type":"bz"},{"label":"G_c(s)=\\frac{Ts+1}{\\beta Ts+1},\\quad \\beta>1","type":"fm","tex":"G_c(s)=\\frac{Ts+1}{\\beta Ts+1},\\quad \\beta>1"},{"label":"\\frac{1}{T}=(0.1\\sim0.2)\\omega_c'","type":"fm","tex":"\\frac{1}{T}=(0.1\\sim0.2)\\omega_c'"},{"label":"由传递函数形式判断校正网络的类型","type":"kf","own":true},{"label":"设计串联滞后校正装置","type":"kf","own":false},{"label":"比较超前与滞后校正的效果差异","type":"kf","own":false},{"label":"分析滞后校正对响应速度的影响","type":"kf","own":false},{"label":"把滞后网络的两个转折频率顺序写反","type":"er","own":true},{"label":"把滞后网络的两个转折频率顺序写反","type":"er","own":false},{"label":"转折频率取得过高导致相位滞后抵消了增益改善","type":"er","own":false}]}]},{"label":"二阶反馈系统稳定性　〔第2题〕","type":"block","children":[{"label":"写出含参数a、k的闭环特征式，用劳斯判据讨论参数取值与闭环稳定性的关系","type":"idea"},{"label":"劳斯判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先写闭环特征式再列劳斯表","type":"k1"},{"label":"首列各元素全部大于零是对应的稳定条件","type":"k2"},{"label":"两个参数要联立判断，不能只盯其中一个","type":"k3"}]},{"label":"特征方程各项系数全为正只是必要条件，不充分","type":"yd"},{"label":"劳斯表首列元素全部同号 ⇔ 系统稳定","type":"yd"},{"label":"首列符号变化次数等于右半平面闭环极点数","type":"yd"},{"label":"首列出现 0 时需用 ε 法或乘辅助多项式处理","type":"yd"},{"label":"写出闭环特征方程并整理成降幂排列","type":"bz"},{"label":"若某次幂系数缺项，该项补零","type":"bz"},{"label":"列劳斯表：前两行为系数，之后各行按交叉相减","type":"bz"},{"label":"检查首列符号：全同号则稳定，有变号则数出个数","type":"bz"},{"label":"1+G(s)H(s)=0","type":"fm","tex":"1+G(s)H(s)=0"},{"label":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0","type":"fm","tex":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0"},{"label":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}","type":"fm","tex":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"},{"label":"讨论参数a、k取值与闭环稳定性的关系","type":"kf","own":true},{"label":"判断给定系统的稳定性","type":"kf","own":false},{"label":"指出右半平面闭环极点的个数","type":"kf","own":false},{"label":"求使系统稳定的参数范围","type":"kf","own":false},{"label":"系数有缺项时不补零就直接套用判据","type":"er","own":true},{"label":"系数有缺项时不补零，直接套用判据","type":"er","own":false},{"label":"首列出现 0 后仍按常规继续算，未用 ε 法","type":"er","own":false}]}]},{"label":"传递函数的决定因素　〔第3题〕","type":"block","children":[{"label":"回到传递函数定义，明确其只由系统本身的结构与参数决定","type":"idea"},{"label":"传递函数的定义与基本性质","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由传递函数定义出发看其与输入和初值是否有关","type":"k1"},{"label":"传递函数只描述系统自身的固有特性","type":"k2"},{"label":"传递函数与输入信号形式和初始条件无关","type":"k3"}]},{"label":"定义：零初始条件下，输出与输入的拉氏变换之比 G(s)=C(s)/R(s)","type":"yd"},{"label":"只由系统结构与参数决定，与输入形式无关","type":"yd"},{"label":"分母为特征多项式，其根是极点；分子的根是零点","type":"yd"},{"label":"工程可实现系统必为真分式（分子阶数 ≤ 分母阶数）","type":"yd"},{"label":"对微分方程两边取拉氏变换，初始条件全部置零","type":"bz"},{"label":"把输出项移到左边、输入项移到右边","type":"bz"},{"label":"整理成 C(s)/R(s) 的降幂形式","type":"bz"},{"label":"G(s)=\\frac{C(s)}{R(s)}=\\frac{b_m s^m+\\cdots+b_1 s+b_0}{a_n s^n+\\cdots+a_1 s+a_0}","type":"fm","tex":"G(s)=\\frac{C(s)}{R(s)}=\\frac{b_m s^m+\\cdots+b_1 s+b_0}{a_n s^n+\\cdots+a_1 s+a_0}"},{"label":"说明传递函数由系统的哪些因素决定","type":"kf","own":true},{"label":"由微分方程直接写出传递函数","type":"kf","own":false},{"label":"指出系统的阶数、极点个数与零点个数","type":"kf","own":false},{"label":"判断给定分式能否作为实际系统的传递函数","type":"kf","own":false},{"label":"忽略零初始条件这一前提","type":"er","own":true},{"label":"忽略“零初始条件”这一前提，把初始值带进变换结果","type":"er","own":false},{"label":"分子分母系数按升幂抄写导致顺序颠倒","type":"er","own":false}]}]},{"label":"典型输入信号　〔第4题〕","type":"block","children":[{"label":"按单位抛物线的标准定义写出其时间表达式并对应到拉氏变换","type":"idea"},{"label":"典型输入信号","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"按阶跃、斜坡、抛物线的阶次递推记忆","type":"k1"},{"label":"单位抛物线是斜坡信号对时间的积分","type":"k2"},{"label":"单位二字的系数容易漏，注意与t平方区分","type":"k3"}]},{"label":"常用典型输入有冲激、阶跃、斜坡、抛物线（加速度）与正弦五类","type":"yd"},{"label":"阶跃信号用于考查快速性与稳定性，斜坡与抛物线用于考查稳态精度","type":"yd"},{"label":"正弦信号用于频域分析，冲激响应就是系统的传递函数","type":"yd"},{"label":"各典型信号的拉氏变换是分析全响应的起点","type":"yd"},{"label":"按题意写出输入信号的时域表达式","type":"bz"},{"label":"对输入取拉氏变换得到该信号的复域形式","type":"bz"},{"label":"由输入类型判断考查的是动态性能还是稳态精度","type":"bz"},{"label":"把输入代入误差或响应公式计算","type":"bz"},{"label":"L\\left[\\delta(t)\\right]=1","type":"fm","tex":"L\\left[\\delta(t)\\right]=1"},{"label":"L\\left[1(t)\\right]=\\frac{1}{s},\\quad L\\left[t\\right]=\\frac{1}{s^{2}}","type":"fm","tex":"L\\left[1(t)\\right]=\\frac{1}{s},\\quad L\\left[t\\right]=\\frac{1}{s^{2}}"},{"label":"写出单位抛物线输入信号的数学表达式","type":"kf","own":true},{"label":"写出典型输入信号的拉氏变换","type":"kf","own":false},{"label":"说明某一典型输入信号用于考查哪类性能","type":"kf","own":false},{"label":"由输入类型判断稳态误差是否为有限值","type":"kf","own":false},{"label":"把斜坡与抛物线信号的阶次写错","type":"er","own":true},{"label":"把斜坡与抛物线信号的阶次写错","type":"er","own":false},{"label":"阶跃的拉氏变换漏掉系数（幅度不为 1 时）","type":"er","own":false}]}]},{"label":"系统的外部描述　〔第5题〕","type":"block","children":[{"label":"区分输入输出模型与状态空间模型，判断微分方程描述属于哪一类","type":"idea"},{"label":"传递函数的定义与基本性质","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由模型是否显含系统内部状态变量判断描述类型","type":"k1"},{"label":"输入输出微分方程对应外部描述","type":"k2"},{"label":"状态空间表达式对应内部描述","type":"k3"}]},{"label":"定义：零初始条件下，输出与输入的拉氏变换之比 G(s)=C(s)/R(s)","type":"yd"},{"label":"只由系统结构与参数决定，与输入形式无关","type":"yd"},{"label":"分母为特征多项式，其根是极点；分子的根是零点","type":"yd"},{"label":"工程可实现系统必为真分式（分子阶数 ≤ 分母阶数）","type":"yd"},{"label":"对微分方程两边取拉氏变换，初始条件全部置零","type":"bz"},{"label":"把输出项移到左边、输入项移到右边","type":"bz"},{"label":"整理成 C(s)/R(s) 的降幂形式","type":"bz"},{"label":"G(s)=\\frac{C(s)}{R(s)}=\\frac{b_m s^m+\\cdots+b_1 s+b_0}{a_n s^n+\\cdots+a_1 s+a_0}","type":"fm","tex":"G(s)=\\frac{C(s)}{R(s)}=\\frac{b_m s^m+\\cdots+b_1 s+b_0}{a_n s^n+\\cdots+a_1 s+a_0}"},{"label":"区分输入输出描述与状态空间描述","type":"kf","own":true},{"label":"由微分方程直接写出传递函数","type":"kf","own":false},{"label":"指出系统的阶数、极点个数与零点个数","type":"kf","own":false},{"label":"判断给定分式能否作为实际系统的传递函数","type":"kf","own":false},{"label":"把外部描述与内部描述搞反","type":"er","own":true},{"label":"忽略“零初始条件”这一前提，把初始值带进变换结果","type":"er","own":false},{"label":"分子分母系数按升幂抄写导致顺序颠倒","type":"er","own":false}]}]},{"label":"幅频与相频特性　〔第6题〕","type":"block","children":[{"label":"令s取纯虚数，分别对复数取模与取相角得到幅频和相频表达式","type":"idea"},{"label":"频率特性的物理意义与求法","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把s换成纯虚数后对分子分母分别取模","type":"k1"},{"label":"分母的模为各环节模的乘积","type":"k2"},{"label":"分母含正实部极点，幅角要按象限正确取值","type":"k3"}]},{"label":"频率特性是传递函数中令 s=jω 得到的复变函数","type":"yd"},{"label":"幅频特性表示各频率正弦输入下的幅值放大倍数","type":"yd"},{"label":"相频特性表示输出相对输入的相位差","type":"yd"},{"label":"频率特性可用幅相曲线、Bode 图或尼柯尔斯图表示","type":"yd"},{"label":"由传递函数令 s=jω 得到 G(jω)","type":"bz"},{"label":"分别求出幅值 |G(jω)| 与相角 ∠G(jω)","type":"bz"},{"label":"按需要绘制幅相曲线或对数频率特性","type":"bz"},{"label":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}","type":"fm","tex":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}"},{"label":"由传递函数求幅频特性与相频特性表达式","type":"kf","own":true},{"label":"求给定传递函数的幅频与相频表达式","type":"kf","own":false},{"label":"计算某频率处的幅值与相角","type":"kf","own":false},{"label":"说明频率特性的物理含义","type":"kf","own":false},{"label":"相角累加时漏掉积分环节的负九十度","type":"er","own":true},{"label":"求幅值时忘记把分母复数取模后再相除","type":"er","own":false},{"label":"相角累加时漏掉积分环节的 -90°","type":"er","own":false}]}]},{"label":"系统型别与开环放大倍数　〔第7题〕","type":"block","children":[{"label":"把传函化为尾一标准型，数积分环节个数定型别，再读低频增益","type":"idea"},{"label":"系统型别与静态误差系数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"化尾一标准型后数分母中s的幂次","type":"k1"},{"label":"积分环节个数即系统型别","type":"k2"},{"label":"放大倍数要按尾一标准型读，勿直接抄常数项","type":"k3"}]},{"label":"型别 v 由开环传递函数中积分环节的个数决定","type":"yd"},{"label":"0 型有位置误差、Ⅰ型有速度误差、Ⅱ型有加速度误差","type":"yd"},{"label":"静态误差系数只与开环传递函数有关","type":"yd"},{"label":"把开环传递函数写成分式，数出 s 的幂次即型别","type":"bz"},{"label":"按型别选择对应的静态误差系数公式","type":"bz"},{"label":"代入求值","type":"bz"},{"label":"K_p=\\lim_{s\\to0}G(s)H(s)","type":"fm","tex":"K_p=\\lim_{s\\to0}G(s)H(s)"},{"label":"K_v=\\lim_{s\\to0}sG(s)H(s)","type":"fm","tex":"K_v=\\lim_{s\\to0}sG(s)H(s)"},{"label":"K_a=\\lim_{s\\to0}s^2G(s)H(s)","type":"fm","tex":"K_a=\\lim_{s\\to0}s^2G(s)H(s)"},{"label":"由开环传函确定系统型别与开环放大倍数","type":"kf","own":true},{"label":"判断系统型别","type":"kf","own":false},{"label":"求静态位置、速度、加速度误差系数","type":"kf","own":false},{"label":"分析增加积分环节对精度的影响","type":"kf","own":false},{"label":"数错积分环节个数导致型别判错","type":"er","own":true},{"label":"把开环增益与静态误差系数混为一谈","type":"er","own":false},{"label":"数错积分环节个数导致型别判错","type":"er","own":false}]}]},{"label":"性能分析指标　〔第8题〕","type":"block","children":[{"label":"把系统性能分析指标按稳定性、快速性与准确性归类","type":"idea"},{"label":"自动控制系统的基本组成与控制方式","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"按稳定性、准确性与快速性三条基本要求归纳","type":"k1"},{"label":"稳定看是否收敛，准确看稳态误差，快速看动态过程","type":"k2"},{"label":"题目只让写指标类别，不必展开各指标计算式","type":"k3"}]},{"label":"闭环系统按给定、比较、放大、执行、对象、检测六个环节串联成环","type":"yd"},{"label":"按有无反馈分为开环、闭环与复合控制；按给定信号分为恒值、随动与程序控制","type":"yd"},{"label":"检测变送元件把被控量转换成可比较的信号，是反馈通道的入口","type":"yd"},{"label":"控制系统的基本要求是稳、准、快三条","type":"yd"},{"label":"从工艺或物理描述里找出被控量与操纵量","type":"bz"},{"label":"逐个指认给定、比较、控制、执行、对象与检测六个环节对应的实物","type":"bz"},{"label":"按信号流向把环节串成闭环方框图","type":"bz"},{"label":"说明系统靠什么维持被控量等于给定量","type":"bz"},{"label":"写出衡量系统性能的主要指标","type":"kf","own":true},{"label":"指出系统的被控对象、被控量与操纵量","type":"kf","own":false},{"label":"说明检测变送元件在闭环系统中的作用","type":"kf","own":false},{"label":"画出给定系统的闭环方框图并说明工作过程","type":"kf","own":false},{"label":"只答稳定性一项，漏掉准确性与快速性","type":"er","own":true},{"label":"把被控量与操纵量搞反","type":"er","own":false},{"label":"只画方框图而不指认环节，或反之，漏答一半","type":"er","own":false}]}]},{"label":"正弦输入下的稳态响应与误差　〔第9题〕","type":"block","children":[{"label":"写出闭环与误差传函，令s取纯虚数代入正弦频率求幅值与相角，得到稳态输出与稳态误差","type":"idea"},{"label":"频率特性的物理意义与求法","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"令s取纯虚数并代入给定的角频率","type":"k1"},{"label":"稳态输出幅值为闭环幅频在该频率处的值","type":"k2"},{"label":"稳态输出相位由闭环相频在该频率处的值给出","type":"k3"}]},{"label":"频率特性是传递函数中令 s=jω 得到的复变函数","type":"yd"},{"label":"幅频特性表示各频率正弦输入下的幅值放大倍数","type":"yd"},{"label":"相频特性表示输出相对输入的相位差","type":"yd"},{"label":"频率特性可用幅相曲线、Bode 图或尼柯尔斯图表示","type":"yd"},{"label":"由传递函数令 s=jω 得到 G(jω)","type":"bz"},{"label":"分别求出幅值 |G(jω)| 与相角 ∠G(jω)","type":"bz"},{"label":"按需要绘制幅相曲线或对数频率特性","type":"bz"},{"label":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}","type":"fm","tex":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}"},{"label":"求正弦输入下系统的稳态输出","type":"kf","own":true},{"label":"求给定传递函数的幅频与相频表达式","type":"kf","own":false},{"label":"计算某频率处的幅值与相角","type":"kf","own":false},{"label":"说明频率特性的物理含义","type":"kf","own":false},{"label":"求幅值时忘记把分母复数取模再相除","type":"er","own":true},{"label":"求幅值时忘记把分母复数取模后再相除","type":"er","own":false},{"label":"相角累加时漏掉积分环节的 -90°","type":"er","own":false}]},{"label":"误差定义与误差传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先写误差传函再令s取纯虚数求幅相","type":"k1"},{"label":"误差的稳态分量也是同频率正弦量","type":"k2"},{"label":"误差定义要用题给的误差等于参考减输出","type":"k3"}]},{"label":"误差有两种定义：输入端 E(s)=R(s)-C(s) 与 E(s)=R(s)-B(s)，须看清题意","type":"yd"},{"label":"误差传递函数由结构决定","type":"yd"},{"label":"单位反馈时两种定义等价","type":"yd"},{"label":"按题意确定误差取在输入端还是反馈端","type":"bz"},{"label":"由结构图写出误差传递函数","type":"bz"},{"label":"乘输入后取 s→0 的极限","type":"bz"},{"label":"E(s)=\\frac{1}{1+G(s)H(s)}R(s)","type":"fm","tex":"E(s)=\\frac{1}{1+G(s)H(s)}R(s)"},{"label":"E(s)=R(s)-C(s)","type":"fm","tex":"E(s)=R(s)-C(s)"},{"label":"由误差传函求正弦输入下的稳态误差","type":"kf","own":true},{"label":"写出误差传递函数","type":"kf","own":false},{"label":"说明不同误差定义对结果的影响","type":"kf","own":false},{"label":"非单位反馈时两种误差定义混用","type":"er","own":true},{"label":"非单位反馈时两种误差定义混用导致结果差一个 H(s)","type":"er","own":false},{"label":"忘记先判断系统是否稳定","type":"er","own":false}]}]},{"label":"根轨迹方程的两个条件　〔第10题〕","type":"block","children":[{"label":"由根轨迹方程的复数等式拆出幅值条件与相角条件","type":"idea"},{"label":"根轨迹的基本概念与幅相条件","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"将根轨迹方程的复数等式分成模与相角两个部分","type":"k1"},{"label":"幅值条件定增益，相角条件定轨迹形状","type":"k2"},{"label":"正反馈系统才用零度的相角条件","type":"k3"}]},{"label":"根轨迹是开环某一参数由 0 变到无穷时闭环极点在 s 平面上的移动轨迹","type":"yd"},{"label":"同时满足相角条件与幅值条件的 s 才是根轨迹上的点","type":"yd"},{"label":"相角条件决定根轨迹的形状，幅值条件决定对应的参数值","type":"yd"},{"label":"常规根轨迹以开环增益 K 为可变参数","type":"yd"},{"label":"写出以 K 为参变量的闭环特征方程","type":"bz"},{"label":"整理成 1+KG₀(s)=0 的标准形式","type":"bz"},{"label":"用相角条件判断某点是否在根轨迹上","type":"bz"},{"label":"1+KG_0(s)=0","type":"fm","tex":"1+KG_0(s)=0"},{"label":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=180^\\circ+360^\\circ l","type":"fm","tex":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=180^\\circ+360^\\circ l"},{"label":"\\frac{\\prod|s-p_j|}{\\prod|s-z_i|}=K","type":"fm","tex":"\\frac{\\prod|s-p_j|}{\\prod|s-z_i|}=K"},{"label":"说明根轨迹方程对应的两个条件","type":"kf","own":true},{"label":"判断给定点是否在根轨迹上","type":"kf","own":false},{"label":"由幅值条件求该点对应的 K","type":"kf","own":false},{"label":"说明相角条件与幅值条件各自的作用","type":"kf","own":false},{"label":"把相角条件的一百八十度写成零度","type":"er","own":true},{"label":"把相角条件的 180° 写成 0°（正反馈时才用 0°）","type":"er","own":false},{"label":"用幅值条件判点，搞混两个条件的用途","type":"er","own":false}]}]},{"label":"闭环反馈控制的作用　〔第11题〕","type":"block","children":[{"label":"从扰动使被控量偏离给定值的角度说明采用闭环反馈控制的原因","type":"idea"},{"label":"自动控制系统的基本组成与控制方式","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"从扰动作用下被控量偏离给定值切入","type":"k1"},{"label":"偏差经检测与反馈后产生控制作用","type":"k2"},{"label":"开环系统对扰动没有自动修正能力","type":"k3"}]},{"label":"闭环系统按给定、比较、放大、执行、对象、检测六个环节串联成环","type":"yd"},{"label":"按有无反馈分为开环、闭环与复合控制；按给定信号分为恒值、随动与程序控制","type":"yd"},{"label":"检测变送元件把被控量转换成可比较的信号，是反馈通道的入口","type":"yd"},{"label":"控制系统的基本要求是稳、准、快三条","type":"yd"},{"label":"从工艺或物理描述里找出被控量与操纵量","type":"bz"},{"label":"逐个指认给定、比较、控制、执行、对象与检测六个环节对应的实物","type":"bz"},{"label":"按信号流向把环节串成闭环方框图","type":"bz"},{"label":"说明系统靠什么维持被控量等于给定量","type":"bz"},{"label":"说明采用闭环反馈控制的原因","type":"kf","own":true},{"label":"指出系统的被控对象、被控量与操纵量","type":"kf","own":false},{"label":"说明检测变送元件在闭环系统中的作用","type":"kf","own":false},{"label":"画出给定系统的闭环方框图并说明工作过程","type":"kf","own":false},{"label":"把被控量与操纵量搞反","type":"er","own":true},{"label":"把被控量与操纵量搞反","type":"er","own":false},{"label":"只画方框图而不指认环节，或反之，漏答一半","type":"er","own":false}]}]},{"label":"分段信号的拉氏变换　〔第12题〕","type":"block","children":[{"label":"按时间区间分段，用阶跃函数的时移把各段写成统一表达式再求拉氏变换","type":"idea"},{"label":"典型输入信号","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"用单位阶跃与延迟阶跃把分段函数写成统一表达式","type":"k1"},{"label":"各段表达式乘上对应的延迟因子后求和","type":"k2"},{"label":"分段点处函数值跳变要靠阶跃项补齐","type":"k3"}]},{"label":"常用典型输入有冲激、阶跃、斜坡、抛物线（加速度）与正弦五类","type":"yd"},{"label":"阶跃信号用于考查快速性与稳定性，斜坡与抛物线用于考查稳态精度","type":"yd"},{"label":"正弦信号用于频域分析，冲激响应就是系统的传递函数","type":"yd"},{"label":"各典型信号的拉氏变换是分析全响应的起点","type":"yd"},{"label":"按题意写出输入信号的时域表达式","type":"bz"},{"label":"对输入取拉氏变换得到该信号的复域形式","type":"bz"},{"label":"由输入类型判断考查的是动态性能还是稳态精度","type":"bz"},{"label":"把输入代入误差或响应公式计算","type":"bz"},{"label":"L\\left[\\delta(t)\\right]=1","type":"fm","tex":"L\\left[\\delta(t)\\right]=1"},{"label":"L\\left[1(t)\\right]=\\frac{1}{s},\\quad L\\left[t\\right]=\\frac{1}{s^{2}}","type":"fm","tex":"L\\left[1(t)\\right]=\\frac{1}{s},\\quad L\\left[t\\right]=\\frac{1}{s^{2}}"},{"label":"求分段定义信号的拉氏变换","type":"kf","own":true},{"label":"写出典型输入信号的拉氏变换","type":"kf","own":false},{"label":"说明某一典型输入信号用于考查哪类性能","type":"kf","own":false},{"label":"由输入类型判断稳态误差是否为有限值","type":"kf","own":false},{"label":"阶跃的拉氏变换漏掉幅度系数","type":"er","own":true},{"label":"把斜坡与抛物线信号的阶次写错","type":"er","own":false},{"label":"阶跃的拉氏变换漏掉系数（幅度不为 1 时）","type":"er","own":false}]}]},{"label":"电路网络传递函数建模　〔第13题〕","type":"block","children":[{"label":"对含运算放大器与RC的网络列节点电流方程，用虚短虚断消去中间变量求输入输出传函","type":"idea"},{"label":"电路网络与有源网络建模","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"在节点处列电流方程并利用虚短虚断消元","type":"k1"},{"label":"电容用复阻抗表示后网络化为代数方程","type":"k2"},{"label":"图一为原卷电路图，需回原卷核对元件连接","type":"k3"}]},{"label":"无源网络用复阻抗分压或节点法","type":"yd"},{"label":"含运放的网络使用虚短与虚断两个条件","type":"yd"},{"label":"有源滤波器与 RC 网络是常见载体","type":"yd"},{"label":"画出复阻抗等效电路","type":"bz"},{"label":"用分压公式或节点电流方程列写关系","type":"bz"},{"label":"整理为输出与输入的比值","type":"bz"},{"label":"\\frac{U_o(s)}{U_i(s)}=-\\frac{Z_f(s)}{Z_i(s)}","type":"fm","tex":"\\frac{U_o(s)}{U_i(s)}=-\\frac{Z_f(s)}{Z_i(s)}"},{"label":"由电路网络求输入输出传递函数","type":"kf","own":true},{"label":"RC 网络或有源滤波器求传递函数","type":"kf","own":false},{"label":"求运算电路的输出表达式","type":"kf","own":false},{"label":"含运放时忽略虚短虚断导致方程数不足","type":"er","own":true},{"label":"含运放时忽略虚短虚断导致方程数不足","type":"er","own":false},{"label":"把反相输入的负号漏掉","type":"er","own":false}]}]},{"label":"多输入系统的梅森公式　〔第14题〕","type":"block","children":[{"label":"分别对参考输入与扰动输入用梅森公式求两个传函，再按叠加原理写出总输出","type":"idea"},{"label":"梅森增益公式与信号流图","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"分别数参考通道与扰动通道的前向通路和回路","type":"k1"},{"label":"两个通道共用同一个特征式","type":"k2"},{"label":"图二为原卷结构图，需回原卷核对支路与节点","type":"k3"}]},{"label":"信号流图适合处理多回路、比较点复杂系统","type":"yd"},{"label":"特征式 Δ=1-ΣL+ΣLL-ΣLLL+…","type":"yd"},{"label":"每条前向通路的余子式要剔除与它接触的回路","type":"yd"},{"label":"不接触回路才会计入高阶乘积项","type":"yd"},{"label":"由结构图改画信号流图，标出各节点","type":"bz"},{"label":"找出全部单独回路，求特征式 Δ","type":"bz"},{"label":"找出全部前向通路 P_k","type":"bz"},{"label":"对每条通路求余子式 Δ_k","type":"bz"},{"label":"代入公式求总传输","type":"bz"},{"label":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k","type":"fm","tex":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k"},{"label":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots","type":"fm","tex":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots"},{"label":"由结构图用梅森公式求多输入系统的传递函数","type":"kf","own":true},{"label":"由信号流图求 C(s)/R(s)","type":"kf","own":false},{"label":"结构图先用梅森公式化简再作性能分析","type":"kf","own":false},{"label":"判断某条回路是否与给定前向通路接触","type":"kf","own":false},{"label":"余子式中未剔除与前向通路接触的回路","type":"er","own":true},{"label":"不接触回路找漏或重复计数","type":"er","own":false},{"label":"余子式中未剔除与通路接触的回路","type":"er","own":false},{"label":"把前向通路的增益写成了回路增益","type":"er","own":false}]},{"label":"多输入与扰动作用下的传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先分别求各输入到输出的传函再用叠加原理相加","type":"k1"},{"label":"总输出为两通道传函乘各自输入之和","type":"k2"},{"label":"叠加原理只对线性系统成立","type":"k3"}]},{"label":"线性系统可用叠加原理，每次只保留一个输入","type":"yd"},{"label":"求扰动的传递函数时令参考输入为零","type":"yd"},{"label":"扰动误差与输入误差分别计算后再叠加","type":"yd"},{"label":"令 R(s)=0，求扰动到输出的传递函数","type":"bz"},{"label":"令 N(s)=0，求输入到输出的传递函数","type":"bz"},{"label":"按题目要求叠加或单独分析","type":"bz"},{"label":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}","type":"fm","tex":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}"},{"label":"求多输入作用下的总输出表达式","type":"kf","own":true},{"label":"求扰动引起的输出或误差","type":"kf","own":false},{"label":"分析满足扰动不变性的补偿条件","type":"kf","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":true},{"label":"两个输入同时存在时直接叠加却未验证系统的线性性","type":"er","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":false}]}]},{"label":"复合控制与不变性条件　〔第15题〕","type":"block","children":[{"label":"写出前馈补偿后的闭环与误差传函，用终值定理求稳态误差，再令误差为零得不变性条件","type":"idea"},{"label":"反馈校正与复合控制","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把前馈通道并入闭环传函后写误差传函","type":"k1"},{"label":"令误差传函的分子为零即得不变性条件","type":"k2"},{"label":"图三为原卷结构图，需回原卷核对前馈接入点","type":"k3"}]},{"label":"反馈校正可改变被包围环节的特性，抑制参数波动","type":"yd"},{"label":"局部反馈能降低时间常数、提高响应速度","type":"yd"},{"label":"复合控制通过前馈补偿实现给定或扰动不变性","type":"yd"},{"label":"前馈不改变闭环稳定性，可与反馈叠加使用","type":"yd"},{"label":"确定被包围的环节与反馈通道传递函数","type":"bz"},{"label":"写出等效后的传递函数","type":"bz"},{"label":"按不变性原理列写前馈补偿器条件","type":"bz"},{"label":"求解补偿器并校验可实现性","type":"bz"},{"label":"G_{等效}=\\frac{G_1(s)}{1+G_1(s)H_c(s)}","type":"fm","tex":"G_{等效}=\\frac{G_1(s)}{1+G_1(s)H_c(s)}"},{"label":"G_r(s)=\\frac{1}{G_1(s)}\\ (\\text{完全不变性条件})","type":"fm","tex":"G_r(s)=\\frac{1}{G_1(s)}\\ (\\text{完全不变性条件})"},{"label":"求前馈补偿器实现给定信号不变性的条件","type":"kf","own":true},{"label":"设计反馈校正装置改善被包围环节","type":"kf","own":false},{"label":"求前馈补偿器实现不变性","type":"kf","own":false},{"label":"分析复合控制对稳态误差的作用","type":"kf","own":false},{"label":"前馈补偿器求出含高阶微分不可实现却直接采用","type":"er","own":true},{"label":"前馈补偿器求出的表达式含高阶微分，不可实现却直接采用","type":"er","own":false},{"label":"忽略反馈校正可能引起的高频噪声放大","type":"er","own":false}]},{"label":"典型输入下的稳态误差计算","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先判稳再由误差传函乘输入变换取s趋于零的极限","type":"k1"},{"label":"斜坡输入下稳态误差与不变性参数成比例","type":"k2"},{"label":"误差为零要同时满足参数匹配或输入为常值之一","type":"k3"}]},{"label":"稳态误差由系统型别与输入类型共同决定","type":"yd"},{"label":"0 型对阶跃有差、Ⅰ型对斜坡有差、Ⅱ型对加速度有差","type":"yd"},{"label":"低型别系统对高阶输入的误差为无穷大","type":"yd"},{"label":"判断系统型别并联立稳定性检查","type":"bz"},{"label":"写出输入信号的拉氏变换","type":"bz"},{"label":"用终值定理求 e_ss，或直接查表","type":"bz"},{"label":"必要时按叠加原理分别计算各分量","type":"bz"},{"label":"e_{ss}=\\lim_{s\\to0}sE(s)","type":"fm","tex":"e_{ss}=\\lim_{s\\to0}sE(s)"},{"label":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}","type":"fm","tex":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}"},{"label":"由终值定理求复合控制系统的稳态误差","type":"kf","own":true},{"label":"求给定输入下的稳态误差","type":"kf","own":false},{"label":"由稳态误差要求反求开环增益","type":"kf","own":false},{"label":"比较不同型别系统的跟踪能力","type":"kf","own":false},{"label":"未判稳就使用终值定理","type":"er","own":true},{"label":"未判稳就使用终值定理","type":"er","own":false},{"label":"输入为组合信号时漏掉某一分量","type":"er","own":false},{"label":"Ⅰ型系统求阶跃误差时误代入速度误差公式","type":"er","own":false}]}]},{"label":"根轨迹绘制与阻尼比参数　〔第16题〕","type":"block","children":[{"label":"定开环极点与实轴段、渐近线和虚轴交点后画根轨迹，再由阻尼比条件用相角条件定闭环极点、用幅值条件反求增益","type":"idea"},{"label":"根轨迹的绘制法则","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由开环极点定实轴段与渐近线交点","type":"k1"},{"label":"三个开环极点对应三条轨迹分支","type":"k2"},{"label":"源文第16题的参数a疑漏印，答案按极点含0、负2、负7求解","type":"k3"}]},{"label":"起于开环极点、终于开环零点（无穷远零点），分支数等于极点数 n","type":"yd"},{"label":"实轴上某段右侧的零极点总数为奇数时，该段属于根轨迹","type":"yd"},{"label":"渐近线条数为 n-m，交点在实轴上，与实轴夹角等分 360°","type":"yd"},{"label":"根轨迹关于实轴对称","type":"yd"},{"label":"标出全部开环零极点并判断实轴上的根轨迹段","type":"bz"},{"label":"计算渐近线交点与夹角","type":"bz"},{"label":"求出分离点、出射角、与虚轴交点","type":"bz"},{"label":"按对称性连接各段并标出对应 K 值","type":"bz"},{"label":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}","type":"fm","tex":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}"},{"label":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}","type":"fm","tex":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}"},{"label":"画三阶系统根轨迹并求渐近线与分离点","type":"kf","own":true},{"label":"按法则绘制根轨迹草图","type":"kf","own":false},{"label":"指出渐近线条数与夹角","type":"kf","own":false},{"label":"判断某段实轴是否属于根轨迹","type":"kf","own":false},{"label":"实轴段判据中的零极点个数算错","type":"er","own":true},{"label":"实轴段判据中的零极点个数算错","type":"er","own":false},{"label":"渐近线夹角公式中的 2k+1 写成 2k","type":"er","own":false}]},{"label":"与虚轴的交点及临界参数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"令闭环特征式取纯虚数后拆成实部与虚部","type":"k1"},{"label":"虚部方程定振荡频率、实部方程定临界增益","type":"k2"},{"label":"稳定增益区间由虚轴交点对应的临界增益划定","type":"k3"}]},{"label":"根轨迹与虚轴的交点对应系统临界稳定","type":"yd"},{"label":"可用劳斯判据令首列为零，或令 s=jω 代入特征方程求解","type":"yd"},{"label":"交点处的 K 是使系统稳定的临界增益","type":"yd"},{"label":"把 s=jω 代入闭环特征方程","type":"bz"},{"label":"令实部与虚部分别为零，得到两个方程","type":"bz"},{"label":"联立解出 ω 与 K","type":"bz"},{"label":"结合实轴段信息确定根轨迹穿越方向","type":"bz"},{"label":"1+KG_0(j\\omega)=0","type":"fm","tex":"1+KG_0(j\\omega)=0"},{"label":"\\operatorname{Re}[\\cdot]=0,\\quad \\operatorname{Im}[\\cdot]=0","type":"fm","tex":"\\operatorname{Re}[\\cdot]=0,\\quad \\operatorname{Im}[\\cdot]=0"},{"label":"求根轨迹与虚轴交点及稳定时的增益范围","type":"kf","own":true},{"label":"求根轨迹与虚轴的交点及临界增益","type":"kf","own":false},{"label":"确定系统稳定时 K 的取值范围","type":"kf","own":false},{"label":"判断根轨迹穿越虚轴的方向","type":"kf","own":false},{"label":"只代一个频率就下结论而漏掉另一组交点","type":"er","own":true},{"label":"只代一个 ω 就下结论，漏掉另一组交点","type":"er","own":false},{"label":"得到 K 后没有回到原题核对参数定义","type":"er","own":false}]},{"label":"由根轨迹分析性能与确定参数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由等阻尼线与轨迹的交点定出闭环极点位置","type":"k1"},{"label":"闭环极点确定后再用幅值条件反求增益","type":"k2"},{"label":"阻尼比零点七零七对应与负实轴夹角四十五度的等阻尼线","type":"k3"}]},{"label":"闭环极点位置直接决定 ξ、ωn 与动态指标","type":"yd"},{"label":"等阻尼线是从原点出发的射线，等 ωn 线是以原点为心的圆","type":"yd"},{"label":"给定阻尼比要求时，极点落在等阻尼线上","type":"yd"},{"label":"增益增大一般使系统响应加快但振荡加剧","type":"yd"},{"label":"在 s 平面上画出等阻尼线或等 ωn 圆","type":"bz"},{"label":"求其与根轨迹的交点","type":"bz"},{"label":"由幅值条件求出交点对应的参数","type":"bz"},{"label":"由极点位置估算动态性能","type":"bz"},{"label":"\\xi=\\cos\\beta,\\quad \\omega_n=|s|","type":"fm","tex":"\\xi=\\cos\\beta,\\quad \\omega_n=|s|"},{"label":"由阻尼比条件求满足要求的开环增益","type":"kf","own":true},{"label":"求满足给定阻尼比的参数值","type":"kf","own":false},{"label":"由闭环极点位置估算超调量与调节时间","type":"kf","own":false},{"label":"分析提高增益对性能的影响","type":"kf","own":false},{"label":"把等阻尼线画成了垂直线","type":"er","own":true},{"label":"把等阻尼线画成了垂直线","type":"er","own":false},{"label":"由极点位置估指标时忽略零点的作用","type":"er","own":false}]}]},{"label":"非线性系统不产生自振的条件　〔第17题〕","type":"block","children":[{"label":"写出死区继电特性的描述函数与负倒描述函数，画线性部分幅相曲线，令两曲线不相交即得参数条件","type":"idea"},{"label":"描述函数法基础","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"按描述函数定义积分求非线性环节的基波分量","type":"k1"},{"label":"描述函数是振幅与死区参数的函数","type":"k2"},{"label":"图四为原卷非线性系统图，需回原卷核对环节位置","type":"k3"}]},{"label":"描述函数是非线性环节在正弦输入下的等效复放大倍数","type":"yd"},{"label":"描述函数是输入幅值的函数，与频率无关","type":"yd"},{"label":"只适用于非线性环节输入近似为正弦、线性部分具有低通滤波特性的系统","type":"yd"},{"label":"描述函数法用来判断自振的存在与参数","type":"yd"},{"label":"写出非线性环节在正弦输入下的输出表达式","type":"bz"},{"label":"取输出的一次谐波分量求基波幅值与相位","type":"bz"},{"label":"按定义求描述函数 N(A)","type":"bz"},{"label":"与线性部分特性联立判断自振","type":"bz"},{"label":"N(A)=\\frac{Y_1}{A}e^{j\\varphi_1}","type":"fm","tex":"N(A)=\\frac{Y_1}{A}e^{j\\varphi_1}"},{"label":"N(A)=\\frac{1}{\\pi A}\\int_0^{2\\pi}y(t)\\sin\\omega t\\,d(\\omega t)","type":"fm","tex":"N(A)=\\frac{1}{\\pi A}\\int_0^{2\\pi}y(t)\\sin\\omega t\\,d(\\omega t)"},{"label":"求死区继电特性的描述函数","type":"kf","own":true},{"label":"求饱和、死区、继电特性等典型非线性的描述函数","type":"kf","own":false},{"label":"说明描述函数法的适用条件","type":"kf","own":false},{"label":"指出描述函数与频率特性的区别","type":"kf","own":false},{"label":"忽略一次谐波近似带来的适用条件","type":"er","own":true},{"label":"把描述函数当成频率的函数","type":"er","own":false},{"label":"忽略一次谐波近似带来的误差条件","type":"er","own":false}]},{"label":"用描述函数法分析自振","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把负倒描述函数与线性部分幅相曲线画在同一复平面","type":"k1"},{"label":"两曲线无交点即不产生自激振荡","type":"k2"},{"label":"若有交点还要按振幅增大方向判别其稳定性","type":"k3"}]},{"label":"自振条件为 G(jω)N(A)=-1，即线性部分特性与负倒描述函数曲线相交","type":"yd"},{"label":"交点给出自振频率 ω 与自振幅值 A","type":"yd"},{"label":"负倒描述函数曲线上幅值增大的方向决定自振是否稳定","type":"yd"},{"label":"交点处两条曲线的走向关系决定极限环稳定性","type":"yd"},{"label":"求线性部分的频率特性 G(jω)","type":"bz"},{"label":"求非线性环节的负倒描述函数 -1/N(A) 并确定 A 的增大方向","type":"bz"},{"label":"在同一复平面上画两条曲线并求交点","type":"bz"},{"label":"由交点处的走向判断自振是否存在且稳定，读出 ω 与 A","type":"bz"},{"label":"G(j\\omega)N(A)=-1","type":"fm","tex":"G(j\\omega)N(A)=-1"},{"label":"G(j\\omega)=-\\frac{1}{N(A)}","type":"fm","tex":"G(j\\omega)=-\\frac{1}{N(A)}"},{"label":"由负倒描述函数与幅相曲线判断是否自振","type":"kf","own":true},{"label":"判断系统是否产生自持振荡","type":"kf","own":false},{"label":"求自振频率与自振幅值","type":"kf","own":false},{"label":"分析参数变化对自振的影响","type":"kf","own":false},{"label":"未标注振幅的增大方向就判断稳定性","type":"er","own":true},{"label":"画的是 N(A) 而不是负倒描述函数 -1/N(A)","type":"er","own":false},{"label":"未标注 A 的增大方向就判断稳定性","type":"er","own":false},{"label":"把交点频率当成截止频率","type":"er","own":false}]},{"label":"典型非线性特性及其影响","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由描述函数的极值点确定负倒描述函数的取值范围","type":"k1"},{"label":"负倒描述函数在极值点之后随振幅反向变化","type":"k2"},{"label":"临界条件对应两曲线恰好相切","type":"k3"}]},{"label":"饱和特性降低等效增益，可能引起系统不稳定或自振","type":"yd"},{"label":"死区特性使小信号时增益为零，产生稳态误差","type":"yd"},{"label":"间隙特性引起相位滞后，导致波形畸变与自振","type":"yd"},{"label":"继电特性使系统出现持续振荡并可能产生颤振","type":"yd"},{"label":"识别非线性环节类型","type":"bz"},{"label":"写出其描述函数或分段数学表达式","type":"bz"},{"label":"分析其对等效增益与稳定性的影响","type":"bz"},{"label":"N(A)=\\frac{2K}{\\pi}\\left(\\arcsin\\frac{a}{A}+\\frac{a}{A}\\sqrt{1-\\left(\\frac{a}{A}\\right)^2}\\right)\\ (\\text{饱和})","type":"fm","tex":"N(A)=\\frac{2K}{\\pi}\\left(\\arcsin\\frac{a}{A}+\\frac{a}{A}\\sqrt{1-\\left(\\frac{a}{A}\\right)^2}\\right)\\ (\\text{饱和})"},{"label":"分析死区继电特性对自振的影响","type":"kf","own":true},{"label":"分析饱和或死区对系统性能的影响","type":"kf","own":false},{"label":"求典型非线性的描述函数表达式","type":"kf","own":false},{"label":"说明间隙为何容易引起自振","type":"kf","own":false},{"label":"忽略死区在原点附近造成的小信号失效","type":"er","own":true},{"label":"认为饱和总是使系统更稳定","type":"er","own":false},{"label":"忽略死区在原点附近造成的小信号失效","type":"er","own":false}]}]}]},"qs":[{"no":"1","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"校正装置类型判断　〔第1题〕","type":"block","children":[{"label":"由传递函数形式比较网络高频与低频增益，判断属于超前还是滞后校正","type":"idea"},{"label":"滞后校正","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"比较网络高频增益与低频增益的大小关系","type":"k1"},{"label":"相频是两段反正切之差，其正负由参数与一的大小定","type":"k2"},{"label":"参数与一的大小关系决定超前或滞后，别只看结构","type":"k3"}]},{"label":"滞后校正利用高频段幅值衰减提高相角裕度","type":"yd"},{"label":"会使截止频率降低，响应变慢","type":"yd"},{"label":"转折频率要远低于新的截止频率以免引入过多相位滞后","type":"yd"},{"label":"可同时提高低频增益改善稳态精度","type":"yd"},{"label":"确定满足相角裕度要求的新截止频率","type":"bz"},{"label":"由未校正系统在该频率处的幅值确定衰减量","type":"bz"},{"label":"由衰减量求滞后网络的参数 β","type":"bz"},{"label":"取转折频率低于新截止频率一个数量级，写出传递函数","type":"bz"},{"label":"G_c(s)=\\frac{Ts+1}{\\beta Ts+1},\\quad \\beta>1","type":"fm","tex":"G_c(s)=\\frac{Ts+1}{\\beta Ts+1},\\quad \\beta>1"},{"label":"\\frac{1}{T}=(0.1\\sim0.2)\\omega_c'","type":"fm","tex":"\\frac{1}{T}=(0.1\\sim0.2)\\omega_c'"},{"label":"由传递函数形式判断校正网络的类型","type":"kf","own":true},{"label":"设计串联滞后校正装置","type":"kf","own":false},{"label":"比较超前与滞后校正的效果差异","type":"kf","own":false},{"label":"分析滞后校正对响应速度的影响","type":"kf","own":false},{"label":"把滞后网络的两个转折频率顺序写反","type":"er","own":true},{"label":"把滞后网络的两个转折频率顺序写反","type":"er","own":false},{"label":"转折频率取得过高导致相位滞后抵消了增益改善","type":"er","own":false}]}]}]}},{"no":"2","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"二阶反馈系统稳定性　〔第2题〕","type":"block","children":[{"label":"写出含参数a、k的闭环特征式，用劳斯判据讨论参数取值与闭环稳定性的关系","type":"idea"},{"label":"劳斯判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先写闭环特征式再列劳斯表","type":"k1"},{"label":"首列各元素全部大于零是对应的稳定条件","type":"k2"},{"label":"两个参数要联立判断，不能只盯其中一个","type":"k3"}]},{"label":"特征方程各项系数全为正只是必要条件，不充分","type":"yd"},{"label":"劳斯表首列元素全部同号 ⇔ 系统稳定","type":"yd"},{"label":"首列符号变化次数等于右半平面闭环极点数","type":"yd"},{"label":"首列出现 0 时需用 ε 法或乘辅助多项式处理","type":"yd"},{"label":"写出闭环特征方程并整理成降幂排列","type":"bz"},{"label":"若某次幂系数缺项，该项补零","type":"bz"},{"label":"列劳斯表：前两行为系数，之后各行按交叉相减","type":"bz"},{"label":"检查首列符号：全同号则稳定，有变号则数出个数","type":"bz"},{"label":"1+G(s)H(s)=0","type":"fm","tex":"1+G(s)H(s)=0"},{"label":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0","type":"fm","tex":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0"},{"label":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}","type":"fm","tex":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"},{"label":"讨论参数a、k取值与闭环稳定性的关系","type":"kf","own":true},{"label":"判断给定系统的稳定性","type":"kf","own":false},{"label":"指出右半平面闭环极点的个数","type":"kf","own":false},{"label":"求使系统稳定的参数范围","type":"kf","own":false},{"label":"系数有缺项时不补零就直接套用判据","type":"er","own":true},{"label":"系数有缺项时不补零，直接套用判据","type":"er","own":false},{"label":"首列出现 0 后仍按常规继续算，未用 ε 法","type":"er","own":false}]}]}]}},{"no":"3","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"传递函数的决定因素　〔第3题〕","type":"block","children":[{"label":"回到传递函数定义，明确其只由系统本身的结构与参数决定","type":"idea"},{"label":"传递函数的定义与基本性质","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由传递函数定义出发看其与输入和初值是否有关","type":"k1"},{"label":"传递函数只描述系统自身的固有特性","type":"k2"},{"label":"传递函数与输入信号形式和初始条件无关","type":"k3"}]},{"label":"定义：零初始条件下，输出与输入的拉氏变换之比 G(s)=C(s)/R(s)","type":"yd"},{"label":"只由系统结构与参数决定，与输入形式无关","type":"yd"},{"label":"分母为特征多项式，其根是极点；分子的根是零点","type":"yd"},{"label":"工程可实现系统必为真分式（分子阶数 ≤ 分母阶数）","type":"yd"},{"label":"对微分方程两边取拉氏变换，初始条件全部置零","type":"bz"},{"label":"把输出项移到左边、输入项移到右边","type":"bz"},{"label":"整理成 C(s)/R(s) 的降幂形式","type":"bz"},{"label":"G(s)=\\frac{C(s)}{R(s)}=\\frac{b_m s^m+\\cdots+b_1 s+b_0}{a_n s^n+\\cdots+a_1 s+a_0}","type":"fm","tex":"G(s)=\\frac{C(s)}{R(s)}=\\frac{b_m s^m+\\cdots+b_1 s+b_0}{a_n s^n+\\cdots+a_1 s+a_0}"},{"label":"说明传递函数由系统的哪些因素决定","type":"kf","own":true},{"label":"由微分方程直接写出传递函数","type":"kf","own":false},{"label":"指出系统的阶数、极点个数与零点个数","type":"kf","own":false},{"label":"判断给定分式能否作为实际系统的传递函数","type":"kf","own":false},{"label":"忽略零初始条件这一前提","type":"er","own":true},{"label":"忽略“零初始条件”这一前提，把初始值带进变换结果","type":"er","own":false},{"label":"分子分母系数按升幂抄写导致顺序颠倒","type":"er","own":false}]}]}]}},{"no":"4","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"典型输入信号　〔第4题〕","type":"block","children":[{"label":"按单位抛物线的标准定义写出其时间表达式并对应到拉氏变换","type":"idea"},{"label":"典型输入信号","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"按阶跃、斜坡、抛物线的阶次递推记忆","type":"k1"},{"label":"单位抛物线是斜坡信号对时间的积分","type":"k2"},{"label":"单位二字的系数容易漏，注意与t平方区分","type":"k3"}]},{"label":"常用典型输入有冲激、阶跃、斜坡、抛物线（加速度）与正弦五类","type":"yd"},{"label":"阶跃信号用于考查快速性与稳定性，斜坡与抛物线用于考查稳态精度","type":"yd"},{"label":"正弦信号用于频域分析，冲激响应就是系统的传递函数","type":"yd"},{"label":"各典型信号的拉氏变换是分析全响应的起点","type":"yd"},{"label":"按题意写出输入信号的时域表达式","type":"bz"},{"label":"对输入取拉氏变换得到该信号的复域形式","type":"bz"},{"label":"由输入类型判断考查的是动态性能还是稳态精度","type":"bz"},{"label":"把输入代入误差或响应公式计算","type":"bz"},{"label":"L\\left[\\delta(t)\\right]=1","type":"fm","tex":"L\\left[\\delta(t)\\right]=1"},{"label":"L\\left[1(t)\\right]=\\frac{1}{s},\\quad L\\left[t\\right]=\\frac{1}{s^{2}}","type":"fm","tex":"L\\left[1(t)\\right]=\\frac{1}{s},\\quad L\\left[t\\right]=\\frac{1}{s^{2}}"},{"label":"写出单位抛物线输入信号的数学表达式","type":"kf","own":true},{"label":"写出典型输入信号的拉氏变换","type":"kf","own":false},{"label":"说明某一典型输入信号用于考查哪类性能","type":"kf","own":false},{"label":"由输入类型判断稳态误差是否为有限值","type":"kf","own":false},{"label":"把斜坡与抛物线信号的阶次写错","type":"er","own":true},{"label":"把斜坡与抛物线信号的阶次写错","type":"er","own":false},{"label":"阶跃的拉氏变换漏掉系数（幅度不为 1 时）","type":"er","own":false}]}]}]}},{"no":"5","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"系统的外部描述　〔第5题〕","type":"block","children":[{"label":"区分输入输出模型与状态空间模型，判断微分方程描述属于哪一类","type":"idea"},{"label":"传递函数的定义与基本性质","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由模型是否显含系统内部状态变量判断描述类型","type":"k1"},{"label":"输入输出微分方程对应外部描述","type":"k2"},{"label":"状态空间表达式对应内部描述","type":"k3"}]},{"label":"定义：零初始条件下，输出与输入的拉氏变换之比 G(s)=C(s)/R(s)","type":"yd"},{"label":"只由系统结构与参数决定，与输入形式无关","type":"yd"},{"label":"分母为特征多项式，其根是极点；分子的根是零点","type":"yd"},{"label":"工程可实现系统必为真分式（分子阶数 ≤ 分母阶数）","type":"yd"},{"label":"对微分方程两边取拉氏变换，初始条件全部置零","type":"bz"},{"label":"把输出项移到左边、输入项移到右边","type":"bz"},{"label":"整理成 C(s)/R(s) 的降幂形式","type":"bz"},{"label":"G(s)=\\frac{C(s)}{R(s)}=\\frac{b_m s^m+\\cdots+b_1 s+b_0}{a_n s^n+\\cdots+a_1 s+a_0}","type":"fm","tex":"G(s)=\\frac{C(s)}{R(s)}=\\frac{b_m s^m+\\cdots+b_1 s+b_0}{a_n s^n+\\cdots+a_1 s+a_0}"},{"label":"区分输入输出描述与状态空间描述","type":"kf","own":true},{"label":"由微分方程直接写出传递函数","type":"kf","own":false},{"label":"指出系统的阶数、极点个数与零点个数","type":"kf","own":false},{"label":"判断给定分式能否作为实际系统的传递函数","type":"kf","own":false},{"label":"把外部描述与内部描述搞反","type":"er","own":true},{"label":"忽略“零初始条件”这一前提，把初始值带进变换结果","type":"er","own":false},{"label":"分子分母系数按升幂抄写导致顺序颠倒","type":"er","own":false}]}]}]}},{"no":"6","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"幅频与相频特性　〔第6题〕","type":"block","children":[{"label":"令s取纯虚数，分别对复数取模与取相角得到幅频和相频表达式","type":"idea"},{"label":"频率特性的物理意义与求法","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把s换成纯虚数后对分子分母分别取模","type":"k1"},{"label":"分母的模为各环节模的乘积","type":"k2"},{"label":"分母含正实部极点，幅角要按象限正确取值","type":"k3"}]},{"label":"频率特性是传递函数中令 s=jω 得到的复变函数","type":"yd"},{"label":"幅频特性表示各频率正弦输入下的幅值放大倍数","type":"yd"},{"label":"相频特性表示输出相对输入的相位差","type":"yd"},{"label":"频率特性可用幅相曲线、Bode 图或尼柯尔斯图表示","type":"yd"},{"label":"由传递函数令 s=jω 得到 G(jω)","type":"bz"},{"label":"分别求出幅值 |G(jω)| 与相角 ∠G(jω)","type":"bz"},{"label":"按需要绘制幅相曲线或对数频率特性","type":"bz"},{"label":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}","type":"fm","tex":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}"},{"label":"由传递函数求幅频特性与相频特性表达式","type":"kf","own":true},{"label":"求给定传递函数的幅频与相频表达式","type":"kf","own":false},{"label":"计算某频率处的幅值与相角","type":"kf","own":false},{"label":"说明频率特性的物理含义","type":"kf","own":false},{"label":"相角累加时漏掉积分环节的负九十度","type":"er","own":true},{"label":"求幅值时忘记把分母复数取模后再相除","type":"er","own":false},{"label":"相角累加时漏掉积分环节的 -90°","type":"er","own":false}]}]}]}},{"no":"7","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"系统型别与开环放大倍数　〔第7题〕","type":"block","children":[{"label":"把传函化为尾一标准型，数积分环节个数定型别，再读低频增益","type":"idea"},{"label":"系统型别与静态误差系数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"化尾一标准型后数分母中s的幂次","type":"k1"},{"label":"积分环节个数即系统型别","type":"k2"},{"label":"放大倍数要按尾一标准型读，勿直接抄常数项","type":"k3"}]},{"label":"型别 v 由开环传递函数中积分环节的个数决定","type":"yd"},{"label":"0 型有位置误差、Ⅰ型有速度误差、Ⅱ型有加速度误差","type":"yd"},{"label":"静态误差系数只与开环传递函数有关","type":"yd"},{"label":"把开环传递函数写成分式，数出 s 的幂次即型别","type":"bz"},{"label":"按型别选择对应的静态误差系数公式","type":"bz"},{"label":"代入求值","type":"bz"},{"label":"K_p=\\lim_{s\\to0}G(s)H(s)","type":"fm","tex":"K_p=\\lim_{s\\to0}G(s)H(s)"},{"label":"K_v=\\lim_{s\\to0}sG(s)H(s)","type":"fm","tex":"K_v=\\lim_{s\\to0}sG(s)H(s)"},{"label":"K_a=\\lim_{s\\to0}s^2G(s)H(s)","type":"fm","tex":"K_a=\\lim_{s\\to0}s^2G(s)H(s)"},{"label":"由开环传函确定系统型别与开环放大倍数","type":"kf","own":true},{"label":"判断系统型别","type":"kf","own":false},{"label":"求静态位置、速度、加速度误差系数","type":"kf","own":false},{"label":"分析增加积分环节对精度的影响","type":"kf","own":false},{"label":"数错积分环节个数导致型别判错","type":"er","own":true},{"label":"把开环增益与静态误差系数混为一谈","type":"er","own":false},{"label":"数错积分环节个数导致型别判错","type":"er","own":false}]}]}]}},{"no":"8","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"性能分析指标　〔第8题〕","type":"block","children":[{"label":"把系统性能分析指标按稳定性、快速性与准确性归类","type":"idea"},{"label":"自动控制系统的基本组成与控制方式","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"按稳定性、准确性与快速性三条基本要求归纳","type":"k1"},{"label":"稳定看是否收敛，准确看稳态误差，快速看动态过程","type":"k2"},{"label":"题目只让写指标类别，不必展开各指标计算式","type":"k3"}]},{"label":"闭环系统按给定、比较、放大、执行、对象、检测六个环节串联成环","type":"yd"},{"label":"按有无反馈分为开环、闭环与复合控制；按给定信号分为恒值、随动与程序控制","type":"yd"},{"label":"检测变送元件把被控量转换成可比较的信号，是反馈通道的入口","type":"yd"},{"label":"控制系统的基本要求是稳、准、快三条","type":"yd"},{"label":"从工艺或物理描述里找出被控量与操纵量","type":"bz"},{"label":"逐个指认给定、比较、控制、执行、对象与检测六个环节对应的实物","type":"bz"},{"label":"按信号流向把环节串成闭环方框图","type":"bz"},{"label":"说明系统靠什么维持被控量等于给定量","type":"bz"},{"label":"写出衡量系统性能的主要指标","type":"kf","own":true},{"label":"指出系统的被控对象、被控量与操纵量","type":"kf","own":false},{"label":"说明检测变送元件在闭环系统中的作用","type":"kf","own":false},{"label":"画出给定系统的闭环方框图并说明工作过程","type":"kf","own":false},{"label":"只答稳定性一项，漏掉准确性与快速性","type":"er","own":true},{"label":"把被控量与操纵量搞反","type":"er","own":false},{"label":"只画方框图而不指认环节，或反之，漏答一半","type":"er","own":false}]}]}]}},{"no":"9","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"正弦输入下的稳态响应与误差　〔第9题〕","type":"block","children":[{"label":"写出闭环与误差传函，令s取纯虚数代入正弦频率求幅值与相角，得到稳态输出与稳态误差","type":"idea"},{"label":"频率特性的物理意义与求法","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"令s取纯虚数并代入给定的角频率","type":"k1"},{"label":"稳态输出幅值为闭环幅频在该频率处的值","type":"k2"},{"label":"稳态输出相位由闭环相频在该频率处的值给出","type":"k3"}]},{"label":"频率特性是传递函数中令 s=jω 得到的复变函数","type":"yd"},{"label":"幅频特性表示各频率正弦输入下的幅值放大倍数","type":"yd"},{"label":"相频特性表示输出相对输入的相位差","type":"yd"},{"label":"频率特性可用幅相曲线、Bode 图或尼柯尔斯图表示","type":"yd"},{"label":"由传递函数令 s=jω 得到 G(jω)","type":"bz"},{"label":"分别求出幅值 |G(jω)| 与相角 ∠G(jω)","type":"bz"},{"label":"按需要绘制幅相曲线或对数频率特性","type":"bz"},{"label":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}","type":"fm","tex":"G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}"},{"label":"求正弦输入下系统的稳态输出","type":"kf","own":true},{"label":"求给定传递函数的幅频与相频表达式","type":"kf","own":false},{"label":"计算某频率处的幅值与相角","type":"kf","own":false},{"label":"说明频率特性的物理含义","type":"kf","own":false},{"label":"求幅值时忘记把分母复数取模再相除","type":"er","own":true},{"label":"求幅值时忘记把分母复数取模后再相除","type":"er","own":false},{"label":"相角累加时漏掉积分环节的 -90°","type":"er","own":false}]},{"label":"误差定义与误差传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先写误差传函再令s取纯虚数求幅相","type":"k1"},{"label":"误差的稳态分量也是同频率正弦量","type":"k2"},{"label":"误差定义要用题给的误差等于参考减输出","type":"k3"}]},{"label":"误差有两种定义：输入端 E(s)=R(s)-C(s) 与 E(s)=R(s)-B(s)，须看清题意","type":"yd"},{"label":"误差传递函数由结构决定","type":"yd"},{"label":"单位反馈时两种定义等价","type":"yd"},{"label":"按题意确定误差取在输入端还是反馈端","type":"bz"},{"label":"由结构图写出误差传递函数","type":"bz"},{"label":"乘输入后取 s→0 的极限","type":"bz"},{"label":"E(s)=\\frac{1}{1+G(s)H(s)}R(s)","type":"fm","tex":"E(s)=\\frac{1}{1+G(s)H(s)}R(s)"},{"label":"E(s)=R(s)-C(s)","type":"fm","tex":"E(s)=R(s)-C(s)"},{"label":"由误差传函求正弦输入下的稳态误差","type":"kf","own":true},{"label":"写出误差传递函数","type":"kf","own":false},{"label":"说明不同误差定义对结果的影响","type":"kf","own":false},{"label":"非单位反馈时两种误差定义混用","type":"er","own":true},{"label":"非单位反馈时两种误差定义混用导致结果差一个 H(s)","type":"er","own":false},{"label":"忘记先判断系统是否稳定","type":"er","own":false}]}]}]}},{"no":"10","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"根轨迹方程的两个条件　〔第10题〕","type":"block","children":[{"label":"由根轨迹方程的复数等式拆出幅值条件与相角条件","type":"idea"},{"label":"根轨迹的基本概念与幅相条件","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"将根轨迹方程的复数等式分成模与相角两个部分","type":"k1"},{"label":"幅值条件定增益，相角条件定轨迹形状","type":"k2"},{"label":"正反馈系统才用零度的相角条件","type":"k3"}]},{"label":"根轨迹是开环某一参数由 0 变到无穷时闭环极点在 s 平面上的移动轨迹","type":"yd"},{"label":"同时满足相角条件与幅值条件的 s 才是根轨迹上的点","type":"yd"},{"label":"相角条件决定根轨迹的形状，幅值条件决定对应的参数值","type":"yd"},{"label":"常规根轨迹以开环增益 K 为可变参数","type":"yd"},{"label":"写出以 K 为参变量的闭环特征方程","type":"bz"},{"label":"整理成 1+KG₀(s)=0 的标准形式","type":"bz"},{"label":"用相角条件判断某点是否在根轨迹上","type":"bz"},{"label":"1+KG_0(s)=0","type":"fm","tex":"1+KG_0(s)=0"},{"label":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=180^\\circ+360^\\circ l","type":"fm","tex":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=180^\\circ+360^\\circ l"},{"label":"\\frac{\\prod|s-p_j|}{\\prod|s-z_i|}=K","type":"fm","tex":"\\frac{\\prod|s-p_j|}{\\prod|s-z_i|}=K"},{"label":"说明根轨迹方程对应的两个条件","type":"kf","own":true},{"label":"判断给定点是否在根轨迹上","type":"kf","own":false},{"label":"由幅值条件求该点对应的 K","type":"kf","own":false},{"label":"说明相角条件与幅值条件各自的作用","type":"kf","own":false},{"label":"把相角条件的一百八十度写成零度","type":"er","own":true},{"label":"把相角条件的 180° 写成 0°（正反馈时才用 0°）","type":"er","own":false},{"label":"用幅值条件判点，搞混两个条件的用途","type":"er","own":false}]}]}]}},{"no":"11","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"闭环反馈控制的作用　〔第11题〕","type":"block","children":[{"label":"从扰动使被控量偏离给定值的角度说明采用闭环反馈控制的原因","type":"idea"},{"label":"自动控制系统的基本组成与控制方式","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"从扰动作用下被控量偏离给定值切入","type":"k1"},{"label":"偏差经检测与反馈后产生控制作用","type":"k2"},{"label":"开环系统对扰动没有自动修正能力","type":"k3"}]},{"label":"闭环系统按给定、比较、放大、执行、对象、检测六个环节串联成环","type":"yd"},{"label":"按有无反馈分为开环、闭环与复合控制；按给定信号分为恒值、随动与程序控制","type":"yd"},{"label":"检测变送元件把被控量转换成可比较的信号，是反馈通道的入口","type":"yd"},{"label":"控制系统的基本要求是稳、准、快三条","type":"yd"},{"label":"从工艺或物理描述里找出被控量与操纵量","type":"bz"},{"label":"逐个指认给定、比较、控制、执行、对象与检测六个环节对应的实物","type":"bz"},{"label":"按信号流向把环节串成闭环方框图","type":"bz"},{"label":"说明系统靠什么维持被控量等于给定量","type":"bz"},{"label":"说明采用闭环反馈控制的原因","type":"kf","own":true},{"label":"指出系统的被控对象、被控量与操纵量","type":"kf","own":false},{"label":"说明检测变送元件在闭环系统中的作用","type":"kf","own":false},{"label":"画出给定系统的闭环方框图并说明工作过程","type":"kf","own":false},{"label":"把被控量与操纵量搞反","type":"er","own":true},{"label":"把被控量与操纵量搞反","type":"er","own":false},{"label":"只画方框图而不指认环节，或反之，漏答一半","type":"er","own":false}]}]}]}},{"no":"12","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"分段信号的拉氏变换　〔第12题〕","type":"block","children":[{"label":"按时间区间分段，用阶跃函数的时移把各段写成统一表达式再求拉氏变换","type":"idea"},{"label":"典型输入信号","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"用单位阶跃与延迟阶跃把分段函数写成统一表达式","type":"k1"},{"label":"各段表达式乘上对应的延迟因子后求和","type":"k2"},{"label":"分段点处函数值跳变要靠阶跃项补齐","type":"k3"}]},{"label":"常用典型输入有冲激、阶跃、斜坡、抛物线（加速度）与正弦五类","type":"yd"},{"label":"阶跃信号用于考查快速性与稳定性，斜坡与抛物线用于考查稳态精度","type":"yd"},{"label":"正弦信号用于频域分析，冲激响应就是系统的传递函数","type":"yd"},{"label":"各典型信号的拉氏变换是分析全响应的起点","type":"yd"},{"label":"按题意写出输入信号的时域表达式","type":"bz"},{"label":"对输入取拉氏变换得到该信号的复域形式","type":"bz"},{"label":"由输入类型判断考查的是动态性能还是稳态精度","type":"bz"},{"label":"把输入代入误差或响应公式计算","type":"bz"},{"label":"L\\left[\\delta(t)\\right]=1","type":"fm","tex":"L\\left[\\delta(t)\\right]=1"},{"label":"L\\left[1(t)\\right]=\\frac{1}{s},\\quad L\\left[t\\right]=\\frac{1}{s^{2}}","type":"fm","tex":"L\\left[1(t)\\right]=\\frac{1}{s},\\quad L\\left[t\\right]=\\frac{1}{s^{2}}"},{"label":"求分段定义信号的拉氏变换","type":"kf","own":true},{"label":"写出典型输入信号的拉氏变换","type":"kf","own":false},{"label":"说明某一典型输入信号用于考查哪类性能","type":"kf","own":false},{"label":"由输入类型判断稳态误差是否为有限值","type":"kf","own":false},{"label":"阶跃的拉氏变换漏掉幅度系数","type":"er","own":true},{"label":"把斜坡与抛物线信号的阶次写错","type":"er","own":false},{"label":"阶跃的拉氏变换漏掉系数（幅度不为 1 时）","type":"er","own":false}]}]}]}},{"no":"13","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"电路网络传递函数建模　〔第13题〕","type":"block","children":[{"label":"对含运算放大器与RC的网络列节点电流方程，用虚短虚断消去中间变量求输入输出传函","type":"idea"},{"label":"电路网络与有源网络建模","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"在节点处列电流方程并利用虚短虚断消元","type":"k1"},{"label":"电容用复阻抗表示后网络化为代数方程","type":"k2"},{"label":"图一为原卷电路图，需回原卷核对元件连接","type":"k3"}]},{"label":"无源网络用复阻抗分压或节点法","type":"yd"},{"label":"含运放的网络使用虚短与虚断两个条件","type":"yd"},{"label":"有源滤波器与 RC 网络是常见载体","type":"yd"},{"label":"画出复阻抗等效电路","type":"bz"},{"label":"用分压公式或节点电流方程列写关系","type":"bz"},{"label":"整理为输出与输入的比值","type":"bz"},{"label":"\\frac{U_o(s)}{U_i(s)}=-\\frac{Z_f(s)}{Z_i(s)}","type":"fm","tex":"\\frac{U_o(s)}{U_i(s)}=-\\frac{Z_f(s)}{Z_i(s)}"},{"label":"由电路网络求输入输出传递函数","type":"kf","own":true},{"label":"RC 网络或有源滤波器求传递函数","type":"kf","own":false},{"label":"求运算电路的输出表达式","type":"kf","own":false},{"label":"含运放时忽略虚短虚断导致方程数不足","type":"er","own":true},{"label":"含运放时忽略虚短虚断导致方程数不足","type":"er","own":false},{"label":"把反相输入的负号漏掉","type":"er","own":false}]}]}]}},{"no":"14","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"多输入系统的梅森公式　〔第14题〕","type":"block","children":[{"label":"分别对参考输入与扰动输入用梅森公式求两个传函，再按叠加原理写出总输出","type":"idea"},{"label":"梅森增益公式与信号流图","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"分别数参考通道与扰动通道的前向通路和回路","type":"k1"},{"label":"两个通道共用同一个特征式","type":"k2"},{"label":"图二为原卷结构图，需回原卷核对支路与节点","type":"k3"}]},{"label":"信号流图适合处理多回路、比较点复杂系统","type":"yd"},{"label":"特征式 Δ=1-ΣL+ΣLL-ΣLLL+…","type":"yd"},{"label":"每条前向通路的余子式要剔除与它接触的回路","type":"yd"},{"label":"不接触回路才会计入高阶乘积项","type":"yd"},{"label":"由结构图改画信号流图，标出各节点","type":"bz"},{"label":"找出全部单独回路，求特征式 Δ","type":"bz"},{"label":"找出全部前向通路 P_k","type":"bz"},{"label":"对每条通路求余子式 Δ_k","type":"bz"},{"label":"代入公式求总传输","type":"bz"},{"label":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k","type":"fm","tex":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k"},{"label":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots","type":"fm","tex":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots"},{"label":"由结构图用梅森公式求多输入系统的传递函数","type":"kf","own":true},{"label":"由信号流图求 C(s)/R(s)","type":"kf","own":false},{"label":"结构图先用梅森公式化简再作性能分析","type":"kf","own":false},{"label":"判断某条回路是否与给定前向通路接触","type":"kf","own":false},{"label":"余子式中未剔除与前向通路接触的回路","type":"er","own":true},{"label":"不接触回路找漏或重复计数","type":"er","own":false},{"label":"余子式中未剔除与通路接触的回路","type":"er","own":false},{"label":"把前向通路的增益写成了回路增益","type":"er","own":false}]},{"label":"多输入与扰动作用下的传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先分别求各输入到输出的传函再用叠加原理相加","type":"k1"},{"label":"总输出为两通道传函乘各自输入之和","type":"k2"},{"label":"叠加原理只对线性系统成立","type":"k3"}]},{"label":"线性系统可用叠加原理，每次只保留一个输入","type":"yd"},{"label":"求扰动的传递函数时令参考输入为零","type":"yd"},{"label":"扰动误差与输入误差分别计算后再叠加","type":"yd"},{"label":"令 R(s)=0，求扰动到输出的传递函数","type":"bz"},{"label":"令 N(s)=0，求输入到输出的传递函数","type":"bz"},{"label":"按题目要求叠加或单独分析","type":"bz"},{"label":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}","type":"fm","tex":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}"},{"label":"求多输入作用下的总输出表达式","type":"kf","own":true},{"label":"求扰动引起的输出或误差","type":"kf","own":false},{"label":"分析满足扰动不变性的补偿条件","type":"kf","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":true},{"label":"两个输入同时存在时直接叠加却未验证系统的线性性","type":"er","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":false}]}]}]}},{"no":"15","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"复合控制与不变性条件　〔第15题〕","type":"block","children":[{"label":"写出前馈补偿后的闭环与误差传函，用终值定理求稳态误差，再令误差为零得不变性条件","type":"idea"},{"label":"反馈校正与复合控制","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把前馈通道并入闭环传函后写误差传函","type":"k1"},{"label":"令误差传函的分子为零即得不变性条件","type":"k2"},{"label":"图三为原卷结构图，需回原卷核对前馈接入点","type":"k3"}]},{"label":"反馈校正可改变被包围环节的特性，抑制参数波动","type":"yd"},{"label":"局部反馈能降低时间常数、提高响应速度","type":"yd"},{"label":"复合控制通过前馈补偿实现给定或扰动不变性","type":"yd"},{"label":"前馈不改变闭环稳定性，可与反馈叠加使用","type":"yd"},{"label":"确定被包围的环节与反馈通道传递函数","type":"bz"},{"label":"写出等效后的传递函数","type":"bz"},{"label":"按不变性原理列写前馈补偿器条件","type":"bz"},{"label":"求解补偿器并校验可实现性","type":"bz"},{"label":"G_{等效}=\\frac{G_1(s)}{1+G_1(s)H_c(s)}","type":"fm","tex":"G_{等效}=\\frac{G_1(s)}{1+G_1(s)H_c(s)}"},{"label":"G_r(s)=\\frac{1}{G_1(s)}\\ (\\text{完全不变性条件})","type":"fm","tex":"G_r(s)=\\frac{1}{G_1(s)}\\ (\\text{完全不变性条件})"},{"label":"求前馈补偿器实现给定信号不变性的条件","type":"kf","own":true},{"label":"设计反馈校正装置改善被包围环节","type":"kf","own":false},{"label":"求前馈补偿器实现不变性","type":"kf","own":false},{"label":"分析复合控制对稳态误差的作用","type":"kf","own":false},{"label":"前馈补偿器求出含高阶微分不可实现却直接采用","type":"er","own":true},{"label":"前馈补偿器求出的表达式含高阶微分，不可实现却直接采用","type":"er","own":false},{"label":"忽略反馈校正可能引起的高频噪声放大","type":"er","own":false}]},{"label":"典型输入下的稳态误差计算","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先判稳再由误差传函乘输入变换取s趋于零的极限","type":"k1"},{"label":"斜坡输入下稳态误差与不变性参数成比例","type":"k2"},{"label":"误差为零要同时满足参数匹配或输入为常值之一","type":"k3"}]},{"label":"稳态误差由系统型别与输入类型共同决定","type":"yd"},{"label":"0 型对阶跃有差、Ⅰ型对斜坡有差、Ⅱ型对加速度有差","type":"yd"},{"label":"低型别系统对高阶输入的误差为无穷大","type":"yd"},{"label":"判断系统型别并联立稳定性检查","type":"bz"},{"label":"写出输入信号的拉氏变换","type":"bz"},{"label":"用终值定理求 e_ss，或直接查表","type":"bz"},{"label":"必要时按叠加原理分别计算各分量","type":"bz"},{"label":"e_{ss}=\\lim_{s\\to0}sE(s)","type":"fm","tex":"e_{ss}=\\lim_{s\\to0}sE(s)"},{"label":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}","type":"fm","tex":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}"},{"label":"由终值定理求复合控制系统的稳态误差","type":"kf","own":true},{"label":"求给定输入下的稳态误差","type":"kf","own":false},{"label":"由稳态误差要求反求开环增益","type":"kf","own":false},{"label":"比较不同型别系统的跟踪能力","type":"kf","own":false},{"label":"未判稳就使用终值定理","type":"er","own":true},{"label":"未判稳就使用终值定理","type":"er","own":false},{"label":"输入为组合信号时漏掉某一分量","type":"er","own":false},{"label":"Ⅰ型系统求阶跃误差时误代入速度误差公式","type":"er","own":false}]}]}]}},{"no":"16","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"根轨迹绘制与阻尼比参数　〔第16题〕","type":"block","children":[{"label":"定开环极点与实轴段、渐近线和虚轴交点后画根轨迹，再由阻尼比条件用相角条件定闭环极点、用幅值条件反求增益","type":"idea"},{"label":"根轨迹的绘制法则","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由开环极点定实轴段与渐近线交点","type":"k1"},{"label":"三个开环极点对应三条轨迹分支","type":"k2"},{"label":"源文第16题的参数a疑漏印，答案按极点含0、负2、负7求解","type":"k3"}]},{"label":"起于开环极点、终于开环零点（无穷远零点），分支数等于极点数 n","type":"yd"},{"label":"实轴上某段右侧的零极点总数为奇数时，该段属于根轨迹","type":"yd"},{"label":"渐近线条数为 n-m，交点在实轴上，与实轴夹角等分 360°","type":"yd"},{"label":"根轨迹关于实轴对称","type":"yd"},{"label":"标出全部开环零极点并判断实轴上的根轨迹段","type":"bz"},{"label":"计算渐近线交点与夹角","type":"bz"},{"label":"求出分离点、出射角、与虚轴交点","type":"bz"},{"label":"按对称性连接各段并标出对应 K 值","type":"bz"},{"label":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}","type":"fm","tex":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}"},{"label":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}","type":"fm","tex":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}"},{"label":"画三阶系统根轨迹并求渐近线与分离点","type":"kf","own":true},{"label":"按法则绘制根轨迹草图","type":"kf","own":false},{"label":"指出渐近线条数与夹角","type":"kf","own":false},{"label":"判断某段实轴是否属于根轨迹","type":"kf","own":false},{"label":"实轴段判据中的零极点个数算错","type":"er","own":true},{"label":"实轴段判据中的零极点个数算错","type":"er","own":false},{"label":"渐近线夹角公式中的 2k+1 写成 2k","type":"er","own":false}]},{"label":"与虚轴的交点及临界参数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"令闭环特征式取纯虚数后拆成实部与虚部","type":"k1"},{"label":"虚部方程定振荡频率、实部方程定临界增益","type":"k2"},{"label":"稳定增益区间由虚轴交点对应的临界增益划定","type":"k3"}]},{"label":"根轨迹与虚轴的交点对应系统临界稳定","type":"yd"},{"label":"可用劳斯判据令首列为零，或令 s=jω 代入特征方程求解","type":"yd"},{"label":"交点处的 K 是使系统稳定的临界增益","type":"yd"},{"label":"把 s=jω 代入闭环特征方程","type":"bz"},{"label":"令实部与虚部分别为零，得到两个方程","type":"bz"},{"label":"联立解出 ω 与 K","type":"bz"},{"label":"结合实轴段信息确定根轨迹穿越方向","type":"bz"},{"label":"1+KG_0(j\\omega)=0","type":"fm","tex":"1+KG_0(j\\omega)=0"},{"label":"\\operatorname{Re}[\\cdot]=0,\\quad \\operatorname{Im}[\\cdot]=0","type":"fm","tex":"\\operatorname{Re}[\\cdot]=0,\\quad \\operatorname{Im}[\\cdot]=0"},{"label":"求根轨迹与虚轴交点及稳定时的增益范围","type":"kf","own":true},{"label":"求根轨迹与虚轴的交点及临界增益","type":"kf","own":false},{"label":"确定系统稳定时 K 的取值范围","type":"kf","own":false},{"label":"判断根轨迹穿越虚轴的方向","type":"kf","own":false},{"label":"只代一个频率就下结论而漏掉另一组交点","type":"er","own":true},{"label":"只代一个 ω 就下结论，漏掉另一组交点","type":"er","own":false},{"label":"得到 K 后没有回到原题核对参数定义","type":"er","own":false}]},{"label":"由根轨迹分析性能与确定参数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由等阻尼线与轨迹的交点定出闭环极点位置","type":"k1"},{"label":"闭环极点确定后再用幅值条件反求增益","type":"k2"},{"label":"阻尼比零点七零七对应与负实轴夹角四十五度的等阻尼线","type":"k3"}]},{"label":"闭环极点位置直接决定 ξ、ωn 与动态指标","type":"yd"},{"label":"等阻尼线是从原点出发的射线，等 ωn 线是以原点为心的圆","type":"yd"},{"label":"给定阻尼比要求时，极点落在等阻尼线上","type":"yd"},{"label":"增益增大一般使系统响应加快但振荡加剧","type":"yd"},{"label":"在 s 平面上画出等阻尼线或等 ωn 圆","type":"bz"},{"label":"求其与根轨迹的交点","type":"bz"},{"label":"由幅值条件求出交点对应的参数","type":"bz"},{"label":"由极点位置估算动态性能","type":"bz"},{"label":"\\xi=\\cos\\beta,\\quad \\omega_n=|s|","type":"fm","tex":"\\xi=\\cos\\beta,\\quad \\omega_n=|s|"},{"label":"由阻尼比条件求满足要求的开环增益","type":"kf","own":true},{"label":"求满足给定阻尼比的参数值","type":"kf","own":false},{"label":"由闭环极点位置估算超调量与调节时间","type":"kf","own":false},{"label":"分析提高增益对性能的影响","type":"kf","own":false},{"label":"把等阻尼线画成了垂直线","type":"er","own":true},{"label":"把等阻尼线画成了垂直线","type":"er","own":false},{"label":"由极点位置估指标时忽略零点的作用","type":"er","own":false}]}]}]}},{"no":"17","tree":{"label":"南京师范大学 857","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：中等偏易　特点：题量大、以基本概念与简单计算为主（五道选择、多道填空简答），后段才有梅森公式、正弦稳态、复合控制、根轨迹与非线性自振等计算题　重点：基本概念与典型信号、梅森公式与多输入系统、稳态误差与复合控制、根轨迹绘制与参数确定、非线性描述函数法","type":"warn"},{"label":"非线性系统不产生自振的条件　〔第17题〕","type":"block","children":[{"label":"写出死区继电特性的描述函数与负倒描述函数，画线性部分幅相曲线，令两曲线不相交即得参数条件","type":"idea"},{"label":"描述函数法基础","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"按描述函数定义积分求非线性环节的基波分量","type":"k1"},{"label":"描述函数是振幅与死区参数的函数","type":"k2"},{"label":"图四为原卷非线性系统图，需回原卷核对环节位置","type":"k3"}]},{"label":"描述函数是非线性环节在正弦输入下的等效复放大倍数","type":"yd"},{"label":"描述函数是输入幅值的函数，与频率无关","type":"yd"},{"label":"只适用于非线性环节输入近似为正弦、线性部分具有低通滤波特性的系统","type":"yd"},{"label":"描述函数法用来判断自振的存在与参数","type":"yd"},{"label":"写出非线性环节在正弦输入下的输出表达式","type":"bz"},{"label":"取输出的一次谐波分量求基波幅值与相位","type":"bz"},{"label":"按定义求描述函数 N(A)","type":"bz"},{"label":"与线性部分特性联立判断自振","type":"bz"},{"label":"N(A)=\\frac{Y_1}{A}e^{j\\varphi_1}","type":"fm","tex":"N(A)=\\frac{Y_1}{A}e^{j\\varphi_1}"},{"label":"N(A)=\\frac{1}{\\pi A}\\int_0^{2\\pi}y(t)\\sin\\omega t\\,d(\\omega t)","type":"fm","tex":"N(A)=\\frac{1}{\\pi A}\\int_0^{2\\pi}y(t)\\sin\\omega t\\,d(\\omega t)"},{"label":"求死区继电特性的描述函数","type":"kf","own":true},{"label":"求饱和、死区、继电特性等典型非线性的描述函数","type":"kf","own":false},{"label":"说明描述函数法的适用条件","type":"kf","own":false},{"label":"指出描述函数与频率特性的区别","type":"kf","own":false},{"label":"忽略一次谐波近似带来的适用条件","type":"er","own":true},{"label":"把描述函数当成频率的函数","type":"er","own":false},{"label":"忽略一次谐波近似带来的误差条件","type":"er","own":false}]},{"label":"用描述函数法分析自振","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把负倒描述函数与线性部分幅相曲线画在同一复平面","type":"k1"},{"label":"两曲线无交点即不产生自激振荡","type":"k2"},{"label":"若有交点还要按振幅增大方向判别其稳定性","type":"k3"}]},{"label":"自振条件为 G(jω)N(A)=-1，即线性部分特性与负倒描述函数曲线相交","type":"yd"},{"label":"交点给出自振频率 ω 与自振幅值 A","type":"yd"},{"label":"负倒描述函数曲线上幅值增大的方向决定自振是否稳定","type":"yd"},{"label":"交点处两条曲线的走向关系决定极限环稳定性","type":"yd"},{"label":"求线性部分的频率特性 G(jω)","type":"bz"},{"label":"求非线性环节的负倒描述函数 -1/N(A) 并确定 A 的增大方向","type":"bz"},{"label":"在同一复平面上画两条曲线并求交点","type":"bz"},{"label":"由交点处的走向判断自振是否存在且稳定，读出 ω 与 A","type":"bz"},{"label":"G(j\\omega)N(A)=-1","type":"fm","tex":"G(j\\omega)N(A)=-1"},{"label":"G(j\\omega)=-\\frac{1}{N(A)}","type":"fm","tex":"G(j\\omega)=-\\frac{1}{N(A)}"},{"label":"由负倒描述函数与幅相曲线判断是否自振","type":"kf","own":true},{"label":"判断系统是否产生自持振荡","type":"kf","own":false},{"label":"求自振频率与自振幅值","type":"kf","own":false},{"label":"分析参数变化对自振的影响","type":"kf","own":false},{"label":"未标注振幅的增大方向就判断稳定性","type":"er","own":true},{"label":"画的是 N(A) 而不是负倒描述函数 -1/N(A)","type":"er","own":false},{"label":"未标注 A 的增大方向就判断稳定性","type":"er","own":false},{"label":"把交点频率当成截止频率","type":"er","own":false}]},{"label":"典型非线性特性及其影响","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由描述函数的极值点确定负倒描述函数的取值范围","type":"k1"},{"label":"负倒描述函数在极值点之后随振幅反向变化","type":"k2"},{"label":"临界条件对应两曲线恰好相切","type":"k3"}]},{"label":"饱和特性降低等效增益，可能引起系统不稳定或自振","type":"yd"},{"label":"死区特性使小信号时增益为零，产生稳态误差","type":"yd"},{"label":"间隙特性引起相位滞后，导致波形畸变与自振","type":"yd"},{"label":"继电特性使系统出现持续振荡并可能产生颤振","type":"yd"},{"label":"识别非线性环节类型","type":"bz"},{"label":"写出其描述函数或分段数学表达式","type":"bz"},{"label":"分析其对等效增益与稳定性的影响","type":"bz"},{"label":"N(A)=\\frac{2K}{\\pi}\\left(\\arcsin\\frac{a}{A}+\\frac{a}{A}\\sqrt{1-\\left(\\frac{a}{A}\\right)^2}\\right)\\ (\\text{饱和})","type":"fm","tex":"N(A)=\\frac{2K}{\\pi}\\left(\\arcsin\\frac{a}{A}+\\frac{a}{A}\\sqrt{1-\\left(\\frac{a}{A}\\right)^2}\\right)\\ (\\text{饱和})"},{"label":"分析死区继电特性对自振的影响","type":"kf","own":true},{"label":"分析饱和或死区对系统性能的影响","type":"kf","own":false},{"label":"求典型非线性的描述函数表达式","type":"kf","own":false},{"label":"说明间隙为何容易引起自振","type":"kf","own":false},{"label":"忽略死区在原点附近造成的小信号失效","type":"er","own":true},{"label":"认为饱和总是使系统更稳定","type":"er","own":false},{"label":"忽略死区在原点附近造成的小信号失效","type":"er","own":false}]}]}]}}]}</script>
+<script src="../../../../../assets/d3.min.js"></script>
+<script src="../../../../../assets/kg.js"></script>
+</body></html>

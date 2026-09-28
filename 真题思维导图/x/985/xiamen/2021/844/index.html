@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>厦门大学 844 自动控制理论（含现控） 2021 年真题思维导图</title>
+<meta name="description" content="厦门大学 2021 年 844 自动控制理论（含现控） 考研真题思维导图：共 9 个大题，逐题思路、考点与易错整理。第1题（一、频域稳定裕度与串联超前校正）；第2题（二、测速反馈校正与速度输入稳态误差）；第3题（三、两输入两输出系统的结构图与传递函数矩阵）；第4题（四、由状态空间矩阵求两输出传递函数）；第5题（五、机械与电路网络的传递函数及相似性）；第6题（六、电路网络的状态空间表达式）">
+<link rel="canonical" href="http://127.0.0.1:8768/真题思维导图/x/985/xiamen/2021/844/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="厦门大学 844 自动控制理论（含现控） 2021 年真题思维导图">
+<meta property="og:description" content="厦门大学 2021 年 844 自动控制理论（含现控） 考研真题思维导图：共 9 个大题，逐题思路、考点与易错整理。第1题（一、频域稳定裕度与串联超前校正）；第2题（二、测速反馈校正与速度输入稳态误差）；第3题（三、两输入两输出系统的结构图与传递函数矩阵）；第4题（四、由状态空间矩阵求两输出传递函数）；第5题（五、机械与电路网络的传递函数及相似性）；第6题（六、电路网络的状态空间表达式）">
+<meta name="theme-color" content="#1f4e79">
+<link rel="stylesheet" href="../../../../../assets/kg.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "厦门大学 844 自动控制理论（含现控） 2021 年真题思维导图", "inLanguage": "zh-CN", "about": ["PID 控制器与参数整定", "串级控制系统", "二阶系统标准形式与阻尼比", "典型输入下的稳态误差计算", "单回路控制系统", "反馈校正与复合控制", "多回路系统的逐层化简", "机械系统建模", "状态空间与传递函数的关系", "状态空间表达式的建立"], "educationalLevel": "985 院校", "url": "http://127.0.0.1:8768/真题思维导图/x/985/xiamen/2021/844/"}</script>
+</head>
+<body class="page-set">
+<header class="site-head"><div class="inner"><a class="parent-home" href="../../../../../../index.html"><span class="arr">←</span><span class="ptxt">择校首页</span></a><a class="brand" href="../../../../../"><span class="full">控制考研真题思维导图</span><span class="short">真题思维导图</span></a><button class="sbtn" id="kg-search-btn" type="button" aria-label="搜索"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button><nav class="crumbs"><a href="../../../../../x/985/">985 院校</a><span class="sep">›</span><a href="../../../../../x/985/xiamen/">厦门大学</a><span class="sep">›</span><span>2021 年</span></nav><nav class="levelnav" aria-label="层级导航"><a class="lv home" href="../../../../../">首页</a><a class="lv" href="../../../../../x/985/xiamen/">← 厦门大学</a><a class="lv" href="#q1">第 1 题 →</a></nav><input class="head-inp" id="site-q" type="search" placeholder="搜学校 / 代码 / 年份" aria-label="搜索"></div></header>
+<main class="wrap">
+<div class="titlebar"><img class="hlogo" src="../../../../../assets/logo/xiamen.jpg" alt="厦门大学校徽" width="52" height="52"><h1>厦门大学 844 自动控制理论（含现控） 2021 年真题思维导图</h1><div class="actions"><button class="btn" data-mode="outline">大纲</button><button class="btn on" data-mode="map">导图</button><button class="btn" id="btn-full">全屏</button></div></div>
+<div class="tagrow"><span class="badge t985">985 院校</span><span class="badge">共 9 题</span></div>
+<p class="sub muted tiny" style="margin:8px 0 0">难度：中等偏难　9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多</p>
+<div class="qtabs" id="qtabs"><button class="qt on" data-q="all">整卷</button><button class="qt" data-q="1">1</button><button class="qt" data-q="2">2</button><button class="qt" data-q="3">3</button><button class="qt" data-q="4">4</button><button class="qt" data-q="5">5</button><button class="qt" data-q="6">6</button><button class="qt" data-q="7">7</button><button class="qt" data-q="8">8</button><button class="qt" data-q="9">9</button></div>
+<div class="cols"><div class="mainpane">
+<div class="mapwrap" id="mapwrap">
+<div class="maptools">
+<button class="btn on" data-depth="1">板块</button>
+<button class="btn" data-depth="2">考点</button>
+<button class="btn" data-depth="99">全部</button>
+<button class="btn" data-zoom="in" title="放大">＋</button>
+<button class="btn" data-zoom="out" title="缩小">－</button>
+<button class="btn" data-fit="1">适应</button>
+<button class="btn" id="btn-exitfs" hidden>退出全屏</button>
+<input id="map-q" type="search" placeholder="图内搜索">
+</div>
+<svg id="svg"><g id="g"></g></svg>
+<div class="map-foot">点击节点展开/折叠　·　滚轮缩放　·　拖拽平移</div>
+</div>
+<section class="content" id="content">
+<article class="qcard" id="q1" data-q="1">
+<h2><span class="no">1</span><span>一、频域稳定裕度与串联超前校正</span><a class="anchorlink" data-q="1" href="#q1" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由开环传函画Bode图求剪切频率、相角裕度与幅值裕度，再按目标相角裕度用超前校正公式定参数</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/fd_05/">稳定裕度</a>
+<span class="tiny muted">频域分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由开环传函求剪切频率与相角、幅值裕度</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先求开环幅频为1处的剪切频率与相频为-180度的频率</li>
+<li><b>关键一步：</b>相角裕度按180度加剪切频率处相角求，幅值裕度取该处幅值倒数</li>
+<li><b>中间结果：</b>校正前相角裕度低于要求的50度，需用超前环节补相角</li>
+<li><b>卡点：</b>题面传函被OCR打乱，两源比对后按K除以s(0.5s+1)读</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)</li><li>幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝</li><li>γ&gt;0 且 Kg&gt;1 时闭环稳定（最小相位系统）</li><li>γ 主要影响超调，ωc 主要影响响应速度</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由幅频特性求 |G|=1 对应的穿越频率 ωc</li><li>由相频特性求 ∠G=-180° 对应的频率 ωg</li><li>分别代入公式求相角裕度与幅值裕度</li><li>由裕度符号判断稳定性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由开环传函求剪切频率与相角、幅值裕度</li><li>求系统的相角裕度与幅值裕度</li><li>由裕度要求反求开环增益</li><li>分析增益变化对裕度的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 ωc 与 ωg 两个频率用反</li><li>幅值裕度取倒数未取，导致结论反了</li><li>非最小相位系统仍用同一判据</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\gamma=180^\circ+\angle G(j\omega_c)"></div><div class="formula" data-tex="K_g=-20\lg|G(j\omega_g)|\ \text{dB}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/cr_02/">超前校正</a>
+<span class="tiny muted">系统校正</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>按目标相角裕度设计串联超前校正装置并求参数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>由目标裕度减原裕度再加5到10度补偿角得最大超前角</li>
+<li><b>关键一步：</b>令最大超前角频率等于新剪切频率，反求a与T</li>
+<li><b>中间结果：</b>超前环节两转折频率为aT分之一与T分之一</li>
+<li><b>卡点：</b>剪切频率右移带来附加相角损失，补偿角偏小会不达标</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>超前校正利用相位超前特性提高相角裕度</li><li>会使截止频率提高，响应加快</li><li>最大超前角出现在两个转折频率的几何中点</li><li>最大超前角不超过 60°，否则噪声放大明显</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由未校正系统的相角裕度差额确定所需最大超前角</li><li>由最大超前角公式求 α</li><li>由 α 与目标截止频率求两个转折频率</li><li>写出校正装置传递函数并校验</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>按目标相角裕度设计串联超前校正装置并求参数</li><li>设计串联超前校正装置</li><li>计算校正后的相角裕度与截止频率</li><li>分析超前校正的局限性</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>计算补偿角时忽略截止频率变化带来的附加相角损失</li><li>α 的取值与超前角公式方向取反</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G_c(s)=\frac{\alpha Ts+1}{Ts+1},\quad \alpha&gt;1"></div><div class="formula" data-tex="\varphi_m=\arcsin\frac{\alpha-1}{\alpha+1}"></div><div class="formula" data-tex="\omega_m=\frac{1}{T\sqrt{\alpha}}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q2" data-q="2">
+<h2><span class="no">2</span><span>二、测速反馈校正与速度输入稳态误差</span><a class="anchorlink" data-q="2" href="#q2" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由测速反馈结构写闭环特征方程，对照典型二阶形式定参数，再用终值定理分别求校正前后的速度误差</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/td_02/">二阶系统标准形式与阻尼比</a>
+<span class="tiny muted">时域响应与动态性能</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由测速反馈结构写闭环特征方程并对照典型二阶形式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>列测速反馈闭环特征方程，一次项系数含反馈参数</li>
+<li><b>关键一步：</b>与标准二阶的2倍阻尼乘自然频率和自然频率平方逐项对照</li>
+<li><b>中间结果：</b>给定阻尼比等于1可先定出反馈参数，再得自然频率</li>
+<li><b>卡点：</b>参数定出后要回代，别把开环增益当闭环增益</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>标准形式由自然频率 ωn 与阻尼比 ξ 两个参数确定</li><li>ξ&gt;1 过阻尼、ξ=1 临界阻尼、0&lt;ξ&lt;1 欠阻尼、ξ=0 无阻尼</li><li>闭环极点位置只由 ξωn 与 ωn√(1-ξ²) 决定</li><li>β=arccos ξ 是极点与负实轴的夹角</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>把闭环传递函数化成标准二阶形式</li><li>比对系数求出 ωn 与 ξ</li><li>写出闭环极点表达式</li><li>按 ξ 的取值判断响应类型</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由测速反馈结构写闭环特征方程并对照典型二阶形式</li><li>由闭环传递函数求 ωn 与 ξ</li><li>判断响应是过阻尼还是欠阻尼</li><li>在 s 平面上标出闭环极点的位置</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>化为标准形式时忘记把 s² 项系数归一化</li><li>把开环增益误当成闭环传递函数的系数</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\Phi(s)=\frac{\omega_n^2}{s^2+2\xi\omega_n s+\omega_n^2}"></div><div class="formula" data-tex="s_{1,2}=-\xi\omega_n\pm j\omega_n\sqrt{1-\xi^2}"></div><div class="formula" data-tex="\beta=\arccos\xi"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/cr_06/">反馈校正与复合控制</a>
+<span class="tiny muted">系统校正</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用测速反馈即速度反馈校正改善系统阻尼</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把速度反馈信号与主反馈在比较点处合成</li>
+<li><b>关键一步：</b>校正后开环分母多出与反馈系数有关的s项</li>
+<li><b>中间结果：</b>测速反馈不提高开环型别，但改变闭环阻尼</li>
+<li><b>卡点：</b>先改变闭环特征方程，须重新判稳后再算误差</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>反馈校正可改变被包围环节的特性，抑制参数波动</li><li>局部反馈能降低时间常数、提高响应速度</li><li>复合控制通过前馈补偿实现给定或扰动不变性</li><li>前馈不改变闭环稳定性，可与反馈叠加使用</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定被包围的环节与反馈通道传递函数</li><li>写出等效后的传递函数</li><li>按不变性原理列写前馈补偿器条件</li><li>求解补偿器并校验可实现性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用测速反馈即速度反馈校正改善系统阻尼</li><li>设计反馈校正装置改善被包围环节</li><li>求前馈补偿器实现不变性</li><li>分析复合控制对稳态误差的作用</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>前馈补偿器求出的表达式含高阶微分，不可实现却直接采用</li><li>忽略反馈校正可能引起的高频噪声放大</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G_{等效}=\frac{G_1(s)}{1+G_1(s)H_c(s)}"></div><div class="formula" data-tex="G_r(s)=\frac{1}{G_1(s)}\ (\text{完全不变性条件})"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ss_03/">典型输入下的稳态误差计算</a>
+<span class="tiny muted">稳态误差</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>分别求校正前后单位速度输入下的稳态误差</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先判稳，再求速度误差系数</li>
+<li><b>关键一步：</b>按输入幅值除以速度误差系数得稳态误差</li>
+<li><b>中间结果：</b>校正后速度误差系数变化，稳态误差随之改变</li>
+<li><b>卡点：</b>未判稳直接用终值定理会得到无效结果</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>稳态误差由系统型别与输入类型共同决定</li><li>0 型对阶跃有差、Ⅰ型对斜坡有差、Ⅱ型对加速度有差</li><li>低型别系统对高阶输入的误差为无穷大</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>判断系统型别并联立稳定性检查</li><li>写出输入信号的拉氏变换</li><li>用终值定理求 e_ss，或直接查表</li><li>必要时按叠加原理分别计算各分量</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>分别求校正前后单位速度输入下的稳态误差</li><li>求给定输入下的稳态误差</li><li>由稳态误差要求反求开环增益</li><li>比较不同型别系统的跟踪能力</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>未判稳就使用终值定理</li><li>输入为组合信号时漏掉某一分量</li><li>Ⅰ型系统求阶跃误差时误代入速度误差公式</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="e_{ss}=\lim_{s\to0}sE(s)"></div><div class="formula" data-tex="e_{ss}=\frac{R_0}{1+K_p},\quad e_{ss}=\frac{v_0}{K_v},\quad e_{ss}=\frac{a_0}{K_a}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q3" data-q="3">
+<h2><span class="no">3</span><span>三、两输入两输出系统的结构图与传递函数矩阵</span><a class="anchorlink" data-q="3" href="#q3" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由给定微分方程组画模拟结构图，写成矩阵形式后用传递函数矩阵公式求两路输出</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_01/">状态空间表达式的建立</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由两入两出微分方程组画模拟结构图并写状态空间形式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>每个状态变量对应一个积分器，按系数连线</li>
+<li><b>关键一步：</b>把微分方程整理成状态导数等于Ax加Bu的形式</li>
+<li><b>中间结果：</b>系数矩阵A为2乘2，输入矩阵B也为2乘2</li>
+<li><b>卡点：</b>两输入两输出时B与C都不是列向量，维数别写错</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态方程为一阶微分方程组，输出方程是状态与输入的代数关系</li><li>状态变量的个数等于系统阶数，选取不唯一</li><li>状态空间描述可同时刻画内部状态与外部输出</li><li>可处理多输入多输出系统</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定系统阶数并选取状态变量</li><li>列写各状态变量的一阶微分方程</li><li>写成矩阵形式 x&#x27;=Ax+Bu 与 y=Cx+Du</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由两入两出微分方程组画模拟结构图并写状态空间形式</li><li>由物理系统列写状态空间表达式</li><li>判断状态变量选取是否合理</li><li>写出系统的 A、B、C、D 矩阵</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>状态变量个数与系统阶数不匹配</li><li>输出方程中漏掉直接传递项 D</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{x}=Ax+Bu,\quad y=Cx+Du"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_08/">状态空间与传递函数的关系</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用传递函数矩阵公式求各输出对输入的传函</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>写Y(s)等于C乘sI减A的逆再乘B乘U(s)</li>
+<li><b>关键一步：</b>先求sI减A的行列式与伴随矩阵</li>
+<li><b>中间结果：</b>两路输出共用同一特征多项式作分母</li>
+<li><b>卡点：</b>求逆时伴随矩阵要转置，符号容易错</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>由状态空间求传递函数为 C(sI-A)^{-1}B+D</li><li>传递函数只反映能控能观子系统，含零极点对消</li><li>系统的特征值等于传递函数的极点</li><li>同一传递函数对应的状态空间实现不唯一</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>计算 (sI-A)^{-1}</li><li>按公式求 G(s)=C(sI-A)^{-1}B+D</li><li>与已知传递函数比对，判断是否发生零极点对消</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用传递函数矩阵公式求各输出对输入的传函</li><li>由状态空间表达式求传递函数</li><li>判断状态空间实现是否存在零极点对消</li><li>比较不同实现对应的传递函数是否相同</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>漏掉直接传递项 D</li><li>把特征值个数与传递函数极点数直接等同而不检查对消</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(s)=C(sI-A)^{-1}B+D"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q4" data-q="4">
+<h2><span class="no">4</span><span>四、由状态空间矩阵求两输出传递函数</span><a class="anchorlink" data-q="4" href="#q4" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由给定A、B、C矩阵用传递函数矩阵公式求两路输出传函，再由状态方程画方框图</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_08/">状态空间与传递函数的关系</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由A、B、C矩阵求两路输出对输入的传递函数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先算sI减A的逆，再左乘C右乘B</li>
+<li><b>关键一步：</b>把结果整理成两个有理分式</li>
+<li><b>中间结果：</b>两路输出分母相同，均为二阶特征多项式</li>
+<li><b>卡点：</b>矩阵乘法的左右顺序不能颠倒</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>由状态空间求传递函数为 C(sI-A)^{-1}B+D</li><li>传递函数只反映能控能观子系统，含零极点对消</li><li>系统的特征值等于传递函数的极点</li><li>同一传递函数对应的状态空间实现不唯一</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>计算 (sI-A)^{-1}</li><li>按公式求 G(s)=C(sI-A)^{-1}B+D</li><li>与已知传递函数比对，判断是否发生零极点对消</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由A、B、C矩阵求两路输出对输入的传递函数</li><li>由状态空间表达式求传递函数</li><li>判断状态空间实现是否存在零极点对消</li><li>比较不同实现对应的传递函数是否相同</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>漏掉直接传递项 D</li><li>把特征值个数与传递函数极点数直接等同而不检查对消</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(s)=C(sI-A)^{-1}B+D"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_01/">状态空间表达式的建立</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>按状态方程与输出方程画系统模拟方框图</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>两个积分器串联对应二阶系统</li>
+<li><b>关键一步：</b>按输入矩阵系数把输入接入两个积分器</li>
+<li><b>中间结果：</b>输出由两个状态变量线性组合得到</li>
+<li><b>卡点：</b>输出方程若含直通项D，方框图需另加前向支路</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态方程为一阶微分方程组，输出方程是状态与输入的代数关系</li><li>状态变量的个数等于系统阶数，选取不唯一</li><li>状态空间描述可同时刻画内部状态与外部输出</li><li>可处理多输入多输出系统</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定系统阶数并选取状态变量</li><li>列写各状态变量的一阶微分方程</li><li>写成矩阵形式 x&#x27;=Ax+Bu 与 y=Cx+Du</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>按状态方程与输出方程画系统模拟方框图</li><li>由物理系统列写状态空间表达式</li><li>判断状态变量选取是否合理</li><li>写出系统的 A、B、C、D 矩阵</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>状态变量个数与系统阶数不匹配</li><li>输出方程中漏掉直接传递项 D</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{x}=Ax+Bu,\quad y=Cx+Du"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q5" data-q="5">
+<h2><span class="no">5</span><span>五、机械与电路网络的传递函数及相似性</span><a class="anchorlink" data-q="5" href="#q5" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">分别对弹簧阻尼机械系统与RC网络列方程求传函，对比两式结构证明形式相同</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/md_01/">机械系统建模</a>
+<span class="tiny muted">建模与机电系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>对弹簧阻尼机械系统列力平衡方程求位移传函</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>对各质量块分别列牛顿第二定律方程</li>
+<li><b>关键一步：</b>取拉氏变换消去中间变量</li>
+<li><b>中间结果：</b>所得传函分子分母同为二阶多项式</li>
+<li><b>卡点：</b>机械系统连接未读图，受力方向需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>依据牛顿第二定律或达朗贝尔原理列方程</li><li>三种基本元件：质量 m、粘性阻尼 f、弹簧 k</li><li>同一方向取正，反向取负，逐项列出合力</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>选定正方向并作受力分析</li><li>分别写出质量、阻尼、弹簧对应的力</li><li>按 F=ma 列写运动方程</li><li>取拉氏变换整理成传递函数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>对弹簧阻尼机械系统列力平衡方程求位移传函</li><li>弹簧-质量-阻尼系统求位移对力的传递函数</li><li>两质量块经弹簧阻尼连接的系统建模</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>阻尼力与弹簧力的正负方向取反</li><li>多质量系统漏掉相互作用力的反作用项</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="m\ddot{x}+f\dot{x}+kx=F(t)"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/tf_02/">由电路或机械系统求传递函数</a>
+<span class="tiny muted">传递函数</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用复阻抗法求RC网络输出对输入的传函</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把电容写成1除以Cs，按串并联分压求传函</li>
+<li><b>关键一步：</b>整理成s的二次多项式之比</li>
+<li><b>中间结果：</b>两传函分母的一次项系数差一个交叉阻容项</li>
+<li><b>卡点：</b>令机械量与电学量对应相等即可证两式形式一致</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>电路用复阻抗法：电阻 R、电感 Ls、电容 1/(Cs)</li><li>机械平移系统三种元件：质量 m、阻尼 f、弹簧 k</li><li>先列物理定律方程，再消去中间变量</li><li>列方程的依据：KCL/KVL 或牛顿第二定律</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>画出复阻抗等效电路或受力分析图</li><li>按 KVL/KCL 或牛顿第二定律列出微分方程组</li><li>消去中间变量，得到只含输入输出的方程</li><li>取拉氏变换并整理成 C(s)/R(s)</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用复阻抗法求RC网络输出对输入的传函</li><li>给定 RLC 网络求 U_o(s)/U_i(s)</li><li>弹簧-质量-阻尼系统求位移对力的传递函数</li><li>含运算放大器的有源网络求传递函数</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>复阻抗法把电容阻抗误写成 Cs</li><li>机械系统阻尼力与弹簧力的正负方向取反</li><li>运放电路忘记使用虚短与虚断条件</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="Z_R=R,\quad Z_L=Ls,\quad Z_C=\frac{1}{Cs}"></div><div class="formula" data-tex="m\ddot{x}+f\dot{x}+kx=F(t)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q6" data-q="6">
+<h2><span class="no">6</span><span>六、电路网络的状态空间表达式</span><a class="anchorlink" data-q="6" href="#q6" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">以电感电流与电容电压为状态变量，对电感回路列KVL、对电容节点列KCL，整理成状态方程</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/md_02/">电路网络与有源网络建模</a>
+<span class="tiny muted">建模与机电系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由含电感电容的电路列写电路微分方程</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>电感支路列KVL，电容节点列KCL</li>
+<li><b>关键一步：</b>把非状态变量用状态变量与输入表示</li>
+<li><b>中间结果：</b>状态取两个电感电流与一个电容电压，共三阶</li>
+<li><b>卡点：</b>电路拓扑未读图，支路与节点连接需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>无源网络用复阻抗分压或节点法</li><li>含运放的网络使用虚短与虚断两个条件</li><li>有源滤波器与 RC 网络是常见载体</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>画出复阻抗等效电路</li><li>用分压公式或节点电流方程列写关系</li><li>整理为输出与输入的比值</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由含电感电容的电路列写电路微分方程</li><li>RC 网络或有源滤波器求传递函数</li><li>求运算电路的输出表达式</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>含运放时忽略虚短虚断导致方程数不足</li><li>把反相输入的负号漏掉</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\frac{U_o(s)}{U_i(s)}=-\frac{Z_f(s)}{Z_i(s)}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_01/">状态空间表达式的建立</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>把电路方程整理成状态空间表达式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>状态方程左端只留状态变量的一阶导</li>
+<li><b>关键一步：</b>输出方程用状态变量与输入表示</li>
+<li><b>中间结果：</b>A为3乘3，B为3乘2，C为1乘3</li>
+<li><b>卡点：</b>输出含输入直通项时D不为零，别漏写D</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态方程为一阶微分方程组，输出方程是状态与输入的代数关系</li><li>状态变量的个数等于系统阶数，选取不唯一</li><li>状态空间描述可同时刻画内部状态与外部输出</li><li>可处理多输入多输出系统</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定系统阶数并选取状态变量</li><li>列写各状态变量的一阶微分方程</li><li>写成矩阵形式 x&#x27;=Ax+Bu 与 y=Cx+Du</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>把电路方程整理成状态空间表达式</li><li>由物理系统列写状态空间表达式</li><li>判断状态变量选取是否合理</li><li>写出系统的 A、B、C、D 矩阵</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>状态变量个数与系统阶数不匹配</li><li>输出方程中漏掉直接传递项 D</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{x}=Ax+Bu,\quad y=Cx+Du"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q7" data-q="7">
+<h2><span class="no">7</span><span>七、由结构图求状态空间模型并判能控能观</span><a class="anchorlink" data-q="7" href="#q7" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由结构图选状态变量写状态方程与输出方程，再构造能控性与能观性矩阵，用秩判据判断</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_01/">状态空间表达式的建立</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由系统结构图选取状态变量并写状态空间模型</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>在积分器输出处取状态变量</li>
+<li><b>关键一步：</b>按各比较点与增益关系写状态方程与输出方程</li>
+<li><b>中间结果：</b>状态维数等于结构图中积分器个数</li>
+<li><b>卡点：</b>结构图未读图，回路与增益需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态方程为一阶微分方程组，输出方程是状态与输入的代数关系</li><li>状态变量的个数等于系统阶数，选取不唯一</li><li>状态空间描述可同时刻画内部状态与外部输出</li><li>可处理多输入多输出系统</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定系统阶数并选取状态变量</li><li>列写各状态变量的一阶微分方程</li><li>写成矩阵形式 x&#x27;=Ax+Bu 与 y=Cx+Du</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由系统结构图选取状态变量并写状态空间模型</li><li>由物理系统列写状态空间表达式</li><li>判断状态变量选取是否合理</li><li>写出系统的 A、B、C、D 矩阵</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>状态变量个数与系统阶数不匹配</li><li>输出方程中漏掉直接传递项 D</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{x}=Ax+Bu,\quad y=Cx+Du"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_04/">能控性与能观性</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>构造能控性与能观性矩阵并用秩判据判断</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>由B、AB、A平方B构造能控性矩阵</li>
+<li><b>关键一步：</b>由C、CA、CA平方构造能观性矩阵</li>
+<li><b>中间结果：</b>单入单出时两矩阵均为方阵，看行列式是否为零</li>
+<li><b>卡点：</b>能控性与能观性判据的矩阵构造容易互换</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>能控性指能否用输入在有限时间内把任意初始状态驱动到原点</li><li>能观性指能否由输出在有限时间内确定初始状态</li><li>用能控性矩阵与能观性矩阵的秩判断</li><li>能控性与能观性经非奇异线性变换保持不变</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>构造能控性矩阵并求秩</li><li>构造能观性矩阵并求秩</li><li>与系统阶数 n 比较得出结论</li><li>不可控或不可观时进一步做结构分解</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>构造能控性与能观性矩阵并用秩判据判断</li><li>判断系统的能控性与能观性</li><li>求使系统能观的参数取值</li><li>对不可控系统进行结构分解</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只算到 A^{n-2}B 就下结论</li><li>把能控性判据与能观性判据的矩阵构造搞混</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}B&amp;AB&amp;\cdots&amp;A^{n-1}B\end{bmatrix}=n"></div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}C\\CA\\\vdots\\CA^{n-1}\end{bmatrix}=n"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q8" data-q="8">
+<h2><span class="no">8</span><span>八、由结构图求开环传函与频域指标及阶跃响应</span><a class="anchorlink" data-q="8" href="#q8" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">先由结构图等效化简求开环传函，再求增益穿越频率与相角裕度，最后写闭环传函求单位阶跃响应</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/bd_03/">多回路系统的逐层化简</a>
+<span class="tiny muted">结构图与方框图</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由多回路结构图逐层化简求开环传递函数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先化内环再加外环</li>
+<li><b>关键一步：</b>把前向通路与反馈通路写成标准形式</li>
+<li><b>中间结果：</b>开环传函分母含s的多次幂，说明型别较高</li>
+<li><b>卡点：</b>结构图未读图，比较点与引出点位置需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>从最内层回路开始，逐层向外化简</li><li>每个内环先化成一个等效环节，再参与外层的串并联</li><li>化简顺序错误会导致式子繁琐但仍可得到正确结果</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>标出内环并求其闭环传递函数</li><li>把内环替换为等效环节</li><li>对新的结构图重复上述步骤，直到单回路</li><li>最后求整个系统的闭环传递函数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由多回路结构图逐层化简求开环传递函数</li><li>三环及以上系统求闭环传递函数</li><li>含局部反馈的系统化简</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>化简内环时把外环的信号当成常数处理</li></ul></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/fd_05/">稳定裕度</a>
+<span class="tiny muted">频域分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求增益穿越频率与相角裕度</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>令幅值等于1解增益穿越频率</li>
+<li><b>关键一步：</b>代入相频表达式求相角裕度</li>
+<li><b>中间结果：</b>开环含二阶环节，相角要按频率分段讨论</li>
+<li><b>卡点：</b>分子含二阶环节时相角表达式分段，容易写错</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)</li><li>幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝</li><li>γ&gt;0 且 Kg&gt;1 时闭环稳定（最小相位系统）</li><li>γ 主要影响超调，ωc 主要影响响应速度</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由幅频特性求 |G|=1 对应的穿越频率 ωc</li><li>由相频特性求 ∠G=-180° 对应的频率 ωg</li><li>分别代入公式求相角裕度与幅值裕度</li><li>由裕度符号判断稳定性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求增益穿越频率与相角裕度</li><li>求系统的相角裕度与幅值裕度</li><li>由裕度要求反求开环增益</li><li>分析增益变化对裕度的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 ωc 与 ωg 两个频率用反</li><li>幅值裕度取倒数未取，导致结论反了</li><li>非最小相位系统仍用同一判据</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\gamma=180^\circ+\angle G(j\omega_c)"></div><div class="formula" data-tex="K_g=-20\lg|G(j\omega_g)|\ \text{dB}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/bc_03/">线性微分方程的时域求解与全响应</a>
+<span class="tiny muted">基本概念与信号</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由闭环传函求零初始条件下的单位阶跃响应</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>单位反馈下由开环传函写闭环传函</li>
+<li><b>关键一步：</b>对闭环传函做拉氏反变换得时域响应</li>
+<li><b>中间结果：</b>初状态全为零，所求为单位阶跃下的零状态响应</li>
+<li><b>卡点：</b>先检查闭环稳定性再做时域分析</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>全响应由零输入响应与零状态响应两部分叠加而成</li><li>零输入响应的形式由特征根决定，系数由初始条件定</li><li>零状态响应用卷积或拉氏变换法求，也可查典型输入的响应表</li><li>初值条件要区分零时刻前后的跳变，含输入导数项的方程会在零时刻产生跳变</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出微分方程并取拉氏变换，把初始条件作为等效输入移到等号右端</li><li>分别求零输入解与零状态解，再相加得全响应</li><li>用初始条件定常数，必要时用终值核对稳态值</li><li>检查求得的解在零时刻是否等于给定初值</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由闭环传函求零初始条件下的单位阶跃响应</li><li>由微分方程与初始条件求系统的全响应</li><li>分别求零输入响应与零状态响应</li><li>判断给定初值下响应是否单调或是否有极值</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只求零状态响应而漏掉由初值决定的自由响应</li><li>分子含输入导数时忽略零时刻的跳变，导致初值对不上</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="y(t)=y_{zi}(t)+y_{zs}(t)"></div><div class="formula" data-tex="\left(s^{2}+a_1s+a_0\right)Y(s)=b_1s+b_0+B\left(s\right)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q9" data-q="9">
+<h2><span class="no">9</span><span>九、液位过程的动态特性与控制方案设计</span><a class="anchorlink" data-q="9" href="#q9" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由流量平衡求初始液位与排水微分方程，低精度用单回路PID，高精度用带压力副回路的串级方案</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/pc_02/">被控对象的动态特性</a>
+<span class="tiny muted">过程控制与检测仪表</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由流量平衡方程求液位被控对象的动态特性</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>稳态时流入等于流出，先求初始液位</li>
+<li><b>关键一步：</b>关阀后按流量公式列液位微分方程</li>
+<li><b>中间结果：</b>流量与液位平方根成正比，对象为非线性</li>
+<li><b>卡点：</b>题面流量用根号H、答案段却用H，需回原卷核对</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>用放大系数 K、时间常数 T、纯滞后 τ 三个参数描述对象</li><li>自衡对象受扰动后能自行重新平衡，非自衡对象不能</li><li>多容对象由多个一阶环节串联而成，容量滞后大</li><li>纯滞后只使响应推迟，不改变最终稳态值</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由阶跃响应曲线读出放大系数、时间常数与纯滞后时间</li><li>判断对象是否自衡、是否多容</li><li>写出对象的传递函数</li><li>用终值定理求稳态值</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由流量平衡方程求液位被控对象的动态特性</li><li>由响应曲线写出对象传递函数</li><li>求阶跃输入下的稳态值并说明与哪些因素有关</li><li>判断对象是否具有纯滞后</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把纯滞后当成时间常数一起处理</li><li>放大系数的量纲与单位漏写</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="W_0(s)=\frac{K}{Ts+1}e^{-\tau s}"></div><div class="formula" data-tex="K=\frac{\Delta y}{\Delta x}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/bc_03/">线性微分方程的时域求解与全响应</a>
+<span class="tiny muted">基本概念与信号</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>解排水过程微分方程求液位降到一半所需时间</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把液位微分方程分离变量后积分</li>
+<li><b>关键一步：</b>把初始液位与终了液位代入定时间</li>
+<li><b>中间结果：</b>液位随时间单调下降</li>
+<li><b>卡点：</b>按题面根号H列方程，不要照抄答案段的线性式</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>全响应由零输入响应与零状态响应两部分叠加而成</li><li>零输入响应的形式由特征根决定，系数由初始条件定</li><li>零状态响应用卷积或拉氏变换法求，也可查典型输入的响应表</li><li>初值条件要区分零时刻前后的跳变，含输入导数项的方程会在零时刻产生跳变</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出微分方程并取拉氏变换，把初始条件作为等效输入移到等号右端</li><li>分别求零输入解与零状态解，再相加得全响应</li><li>用初始条件定常数，必要时用终值核对稳态值</li><li>检查求得的解在零时刻是否等于给定初值</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>解排水过程微分方程求液位降到一半所需时间</li><li>由微分方程与初始条件求系统的全响应</li><li>分别求零输入响应与零状态响应</li><li>判断给定初值下响应是否单调或是否有极值</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只求零状态响应而漏掉由初值决定的自由响应</li><li>分子含输入导数时忽略零时刻的跳变，导致初值对不上</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="y(t)=y_{zi}(t)+y_{zs}(t)"></div><div class="formula" data-tex="\left(s^{2}+a_1s+a_0\right)Y(s)=b_1s+b_0+B\left(s\right)"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/cr_07/">PID 控制器与参数整定</a>
+<span class="tiny muted">系统校正</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>写出液位控制系统的PID控制表达式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>按比例、积分、微分三项写PID表达式</li>
+<li><b>关键一步：</b>说明控制量为液体流量</li>
+<li><b>中间结果：</b>被控量为液位高度，执行器为调节阀</li>
+<li><b>卡点：</b>PID各系数含义与符号需与题面一致</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>比例项提高快速性但存在稳态误差</li><li>积分项消除稳态误差但降低稳定性、增大超调</li><li>微分项提供超前相位改善动态性能但对噪声敏感</li><li>PD 相当于超前校正，PI 相当于滞后校正</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>按误差类型选择需要引入的环节</li><li>先调比例再调积分最后调微分</li><li>用稳定裕度或性能指标校验并微调</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>写出液位控制系统的PID控制表达式</li><li>设计 PID 控制器满足给定指标</li><li>分析各参数变化对系统性能的影响</li><li>说明微分项对噪声的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 PI 的相位影响说成超前</li><li>积分增益过大导致系统振荡甚至不稳定</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G_c(s)=K_p+\frac{K_i}{s}+K_ds"></div><div class="formula" data-tex="G_c(s)=K_p\left(1+\frac{1}{T_is}+T_ds\right)"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/pc_03/">单回路控制系统</a>
+<span class="tiny muted">过程控制与检测仪表</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>设计低精度液位单回路控制系统</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>选液位为被控量、流量为操纵量</li>
+<li><b>关键一步：</b>画单回路控制系统原理图与方框图</li>
+<li><b>中间结果：</b>单回路方案结构简单、成本低</li>
+<li><b>卡点：</b>只画方框图不画原理图会漏答</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>只有一个测量变送器、一个控制器、一个执行器的简单反馈系统</li><li>被控量选择要兼顾工艺要求与可测性</li><li>操纵量选择要保证对被控量有足够的灵敏度</li><li>一般能满足大多数常规工艺要求</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定被控量与操纵量</li><li>分析主要扰动及其作用点</li><li>画出单回路控制系统的方框图</li><li>说明控制过程</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>设计低精度液位单回路控制系统</li><li>设计单回路控制系统</li><li>说明为什么选这个量作被控量或操纵量</li><li>分析单回路方案的局限性</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>选了一个对被控量灵敏度很低的操纵量</li><li>忽略主要扰动作用点对操纵量选择的影响</li></ul></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/pc_04/">串级控制系统</a>
+<span class="tiny muted">过程控制与检测仪表</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>设计高精度液位串级控制系统</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>以压力为副变量、液位为主变量构成串级</li>
+<li><b>关键一步：</b>副回路先消除管道内压力扰动</li>
+<li><b>中间结果：</b>串级方案对副环扰动抑制更快、精度更高</li>
+<li><b>卡点：</b>主副变量不能选反，副变量要对扰动灵敏</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>主回路完成主要指标，副回路快速抑制进入副回路的扰动</li><li>副变量应包含尽可能多的剧烈扰动，且对主变量影响要大</li><li>副回路要响应快于主回路，一般取主、副时间常数比大于 3</li><li>可等效为改善了对象特性，提高了抗扰能力与响应速度</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>判断扰动是否需要副回路专门抑制</li><li>确定主变量与副变量</li><li>说明主、副调节器的型式（一般主回路 PI、副回路 P 或 PI）</li><li>画方框图并说明主副回路的信号关系</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>设计高精度液位串级控制系统</li><li>设计串级控制系统并确定主、副变量</li><li>说明副回路的作用与适用场合</li><li>分析串级相比单回路的优越性</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把副变量选成对主变量影响很小的量</li><li>主副回路的时间常数不匹配，出现共振</li></ul></div></details>
+</div>
+</article>
+</section></div><aside class="side">
+<div class="card"><h3>本卷考点</h3><div class="kplist"><a class="kplink" href="../../../../../k/fd_05/" title="考点编号 fd_05"><span class="ktag">频域分析</span><span>稳定裕度</span></a><a class="kplink" href="../../../../../k/cr_02/" title="考点编号 cr_02"><span class="ktag">系统校正</span><span>超前校正</span></a><a class="kplink" href="../../../../../k/td_02/" title="考点编号 td_02"><span class="ktag">时域响应与动态性能</span><span>二阶系统标准形式与阻尼比</span></a><a class="kplink" href="../../../../../k/cr_06/" title="考点编号 cr_06"><span class="ktag">系统校正</span><span>反馈校正与复合控制</span></a><a class="kplink" href="../../../../../k/ss_03/" title="考点编号 ss_03"><span class="ktag">稳态误差</span><span>典型输入下的稳态误差计算</span></a><a class="kplink" href="../../../../../k/sp_01/" title="考点编号 sp_01"><span class="ktag">状态空间分析</span><span>状态空间表达式的建立</span></a><a class="kplink" href="../../../../../k/sp_08/" title="考点编号 sp_08"><span class="ktag">状态空间分析</span><span>状态空间与传递函数的关系</span></a><a class="kplink" href="../../../../../k/md_01/" title="考点编号 md_01"><span class="ktag">建模与机电系统</span><span>机械系统建模</span></a><a class="kplink" href="../../../../../k/tf_02/" title="考点编号 tf_02"><span class="ktag">传递函数</span><span>由电路或机械系统求传递函数</span></a><a class="kplink" href="../../../../../k/md_02/" title="考点编号 md_02"><span class="ktag">建模与机电系统</span><span>电路网络与有源网络建模</span></a><a class="kplink" href="../../../../../k/sp_04/" title="考点编号 sp_04"><span class="ktag">状态空间分析</span><span>能控性与能观性</span></a><a class="kplink" href="../../../../../k/bd_03/" title="考点编号 bd_03"><span class="ktag">结构图与方框图</span><span>多回路系统的逐层化简</span></a><a class="kplink" href="../../../../../k/bc_03/" title="考点编号 bc_03"><span class="ktag">基本概念与信号</span><span>线性微分方程的时域求解与全响应</span></a><a class="kplink" href="../../../../../k/pc_02/" title="考点编号 pc_02"><span class="ktag">过程控制与检测仪表</span><span>被控对象的动态特性</span></a><a class="kplink" href="../../../../../k/cr_07/" title="考点编号 cr_07"><span class="ktag">系统校正</span><span>PID 控制器与参数整定</span></a><a class="kplink" href="../../../../../k/pc_03/" title="考点编号 pc_03"><span class="ktag">过程控制与检测仪表</span><span>单回路控制系统</span></a><a class="kplink" href="../../../../../k/pc_04/" title="考点编号 pc_04"><span class="ktag">过程控制与检测仪表</span><span>串级控制系统</span></a></div></div>
+<div class="card"><h3>厦门大学 其它年份</h3><div class="navlist"><a class="yearchip" href="../../2015/844/">2015 <span class="n">10题</span></a><a class="yearchip" href="../../2016/844/">2016 <span class="n">8题</span></a><a class="yearchip" href="../../2017/844/">2017 <span class="n">11题</span></a><a class="yearchip" href="../../2018/844/">2018 <span class="n">10题</span></a><a class="yearchip" href="../../2019/844/">2019 <span class="n">10题</span></a><a class="yearchip" href="../../2020/844/">2020 <span class="n">10题</span></a><a class="yearchip" href="../../2022/844/">2022 <span class="n">10题</span></a><a class="yearchip" href="../../2023/844/">2023 <span class="n">10题</span></a><a class="yearchip" href="../../2024/844/">2024 <span class="n">10题</span></a><a class="yearchip" href="../../2025/844/">2025 <span class="n">10题</span></a></div></div>
+<div class="card"><h3>上下年份</h3><div class="navlist"><a class="yearchip" href="../../2020/844/">← 2020</a><a class="yearchip" href="../../2022/844/">2022 →</a></div></div>
+</aside></div>
+</main>
+<footer class="site-foot"><div class="inner"><span>导图内容为本站原创整理，欢迎交流指正</span></div></footer>
+<script type="application/json" id="kg-data">{"base":"../../../../../","key":"厦门大学_844_2021","full":{"label":"厦门大学 844","type":"root","sub":"2021 · 自动控制理论（含现控）","children":[{"label":"难度：中等偏难　特点：9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多　重点：剪切频率与相角、幅值裕度、串联超前校正…","type":"warn"},{"label":"一、频域稳定裕度与串联超前校正　〔第1题〕","type":"block","children":[{"label":"由开环传函画Bode图求剪切频率、相角裕度与幅值裕度，再按目标相角裕度用超前校正公式定参数","type":"idea"},{"label":"稳定裕度","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先求开环幅频为1处的剪切频率与相频为-180度的频率","type":"k1"},{"label":"相角裕度按180度加剪切频率处相角求，幅值裕度取该处幅值倒数","type":"k1"},{"label":"校正前相角裕度低于要求的50度，需用超前环节补相角","type":"k2"},{"label":"题面传函被OCR打乱，两源比对后按K除以s(0.5s+1)读","type":"k3"}]},{"label":"相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)","type":"yd"},{"label":"幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝","type":"yd"},{"label":"γ>0 且 Kg>1 时闭环稳定（最小相位系统）","type":"yd"},{"label":"γ 主要影响超调，ωc 主要影响响应速度","type":"yd"},{"label":"由幅频特性求 |G|=1 对应的穿越频率 ωc","type":"bz"},{"label":"由相频特性求 ∠G=-180° 对应的频率 ωg","type":"bz"},{"label":"分别代入公式求相角裕度与幅值裕度","type":"bz"},{"label":"由裕度符号判断稳定性","type":"bz"},{"label":"\\gamma=180^\\circ+\\angle G(j\\omega_c)","type":"fm","tex":"\\gamma=180^\\circ+\\angle G(j\\omega_c)"},{"label":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}","type":"fm","tex":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"},{"label":"由开环传函求剪切频率与相角、幅值裕度","type":"kf","own":true},{"label":"求系统的相角裕度与幅值裕度","type":"kf","own":false},{"label":"由裕度要求反求开环增益","type":"kf","own":false},{"label":"分析增益变化对裕度的影响","type":"kf","own":false},{"label":"把 ωc 与 ωg 两个频率用反","type":"er","own":false},{"label":"幅值裕度取倒数未取，导致结论反了","type":"er","own":false},{"label":"非最小相位系统仍用同一判据","type":"er","own":false}]},{"label":"超前校正","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由目标裕度减原裕度再加5到10度补偿角得最大超前角","type":"k1"},{"label":"令最大超前角频率等于新剪切频率，反求a与T","type":"k1"},{"label":"超前环节两转折频率为aT分之一与T分之一","type":"k2"},{"label":"剪切频率右移带来附加相角损失，补偿角偏小会不达标","type":"k3"}]},{"label":"超前校正利用相位超前特性提高相角裕度","type":"yd"},{"label":"会使截止频率提高，响应加快","type":"yd"},{"label":"最大超前角出现在两个转折频率的几何中点","type":"yd"},{"label":"最大超前角不超过 60°，否则噪声放大明显","type":"yd"},{"label":"由未校正系统的相角裕度差额确定所需最大超前角","type":"bz"},{"label":"由最大超前角公式求 α","type":"bz"},{"label":"由 α 与目标截止频率求两个转折频率","type":"bz"},{"label":"写出校正装置传递函数并校验","type":"bz"},{"label":"G_c(s)=\\frac{\\alpha Ts+1}{Ts+1},\\quad \\alpha>1","type":"fm","tex":"G_c(s)=\\frac{\\alpha Ts+1}{Ts+1},\\quad \\alpha>1"},{"label":"\\varphi_m=\\arcsin\\frac{\\alpha-1}{\\alpha+1}","type":"fm","tex":"\\varphi_m=\\arcsin\\frac{\\alpha-1}{\\alpha+1}"},{"label":"\\omega_m=\\frac{1}{T\\sqrt{\\alpha}}","type":"fm","tex":"\\omega_m=\\frac{1}{T\\sqrt{\\alpha}}"},{"label":"按目标相角裕度设计串联超前校正装置并求参数","type":"kf","own":true},{"label":"设计串联超前校正装置","type":"kf","own":false},{"label":"计算校正后的相角裕度与截止频率","type":"kf","own":false},{"label":"分析超前校正的局限性","type":"kf","own":false},{"label":"计算补偿角时忽略截止频率变化带来的附加相角损失","type":"er","own":false},{"label":"α 的取值与超前角公式方向取反","type":"er","own":false}]}]},{"label":"二、测速反馈校正与速度输入稳态误差　〔第2题〕","type":"block","children":[{"label":"由测速反馈结构写闭环特征方程，对照典型二阶形式定参数，再用终值定理分别求校正前后的速度误差","type":"idea"},{"label":"二阶系统标准形式与阻尼比","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"列测速反馈闭环特征方程，一次项系数含反馈参数","type":"k1"},{"label":"与标准二阶的2倍阻尼乘自然频率和自然频率平方逐项对照","type":"k1"},{"label":"给定阻尼比等于1可先定出反馈参数，再得自然频率","type":"k2"},{"label":"参数定出后要回代，别把开环增益当闭环增益","type":"k3"}]},{"label":"标准形式由自然频率 ωn 与阻尼比 ξ 两个参数确定","type":"yd"},{"label":"ξ>1 过阻尼、ξ=1 临界阻尼、0<ξ<1 欠阻尼、ξ=0 无阻尼","type":"yd"},{"label":"闭环极点位置只由 ξωn 与 ωn√(1-ξ²) 决定","type":"yd"},{"label":"β=arccos ξ 是极点与负实轴的夹角","type":"yd"},{"label":"把闭环传递函数化成标准二阶形式","type":"bz"},{"label":"比对系数求出 ωn 与 ξ","type":"bz"},{"label":"写出闭环极点表达式","type":"bz"},{"label":"按 ξ 的取值判断响应类型","type":"bz"},{"label":"\\Phi(s)=\\frac{\\omega_n^2}{s^2+2\\xi\\omega_n s+\\omega_n^2}","type":"fm","tex":"\\Phi(s)=\\frac{\\omega_n^2}{s^2+2\\xi\\omega_n s+\\omega_n^2}"},{"label":"s_{1,2}=-\\xi\\omega_n\\pm j\\omega_n\\sqrt{1-\\xi^2}","type":"fm","tex":"s_{1,2}=-\\xi\\omega_n\\pm j\\omega_n\\sqrt{1-\\xi^2}"},{"label":"\\beta=\\arccos\\xi","type":"fm","tex":"\\beta=\\arccos\\xi"},{"label":"由测速反馈结构写闭环特征方程并对照典型二阶形式","type":"kf","own":true},{"label":"由闭环传递函数求 ωn 与 ξ","type":"kf","own":false},{"label":"判断响应是过阻尼还是欠阻尼","type":"kf","own":false},{"label":"在 s 平面上标出闭环极点的位置","type":"kf","own":false},{"label":"化为标准形式时忘记把 s² 项系数归一化","type":"er","own":false},{"label":"把开环增益误当成闭环传递函数的系数","type":"er","own":false}]},{"label":"反馈校正与复合控制","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把速度反馈信号与主反馈在比较点处合成","type":"k1"},{"label":"校正后开环分母多出与反馈系数有关的s项","type":"k1"},{"label":"测速反馈不提高开环型别，但改变闭环阻尼","type":"k2"},{"label":"先改变闭环特征方程，须重新判稳后再算误差","type":"k3"}]},{"label":"反馈校正可改变被包围环节的特性，抑制参数波动","type":"yd"},{"label":"局部反馈能降低时间常数、提高响应速度","type":"yd"},{"label":"复合控制通过前馈补偿实现给定或扰动不变性","type":"yd"},{"label":"前馈不改变闭环稳定性，可与反馈叠加使用","type":"yd"},{"label":"确定被包围的环节与反馈通道传递函数","type":"bz"},{"label":"写出等效后的传递函数","type":"bz"},{"label":"按不变性原理列写前馈补偿器条件","type":"bz"},{"label":"求解补偿器并校验可实现性","type":"bz"},{"label":"G_{等效}=\\frac{G_1(s)}{1+G_1(s)H_c(s)}","type":"fm","tex":"G_{等效}=\\frac{G_1(s)}{1+G_1(s)H_c(s)}"},{"label":"G_r(s)=\\frac{1}{G_1(s)}\\ (\\text{完全不变性条件})","type":"fm","tex":"G_r(s)=\\frac{1}{G_1(s)}\\ (\\text{完全不变性条件})"},{"label":"用测速反馈即速度反馈校正改善系统阻尼","type":"kf","own":true},{"label":"设计反馈校正装置改善被包围环节","type":"kf","own":false},{"label":"求前馈补偿器实现不变性","type":"kf","own":false},{"label":"分析复合控制对稳态误差的作用","type":"kf","own":false},{"label":"前馈补偿器求出的表达式含高阶微分，不可实现却直接采用","type":"er","own":false},{"label":"忽略反馈校正可能引起的高频噪声放大","type":"er","own":false}]},{"label":"典型输入下的稳态误差计算","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先判稳，再求速度误差系数","type":"k1"},{"label":"按输入幅值除以速度误差系数得稳态误差","type":"k1"},{"label":"校正后速度误差系数变化，稳态误差随之改变","type":"k2"},{"label":"未判稳直接用终值定理会得到无效结果","type":"k3"}]},{"label":"稳态误差由系统型别与输入类型共同决定","type":"yd"},{"label":"0 型对阶跃有差、Ⅰ型对斜坡有差、Ⅱ型对加速度有差","type":"yd"},{"label":"低型别系统对高阶输入的误差为无穷大","type":"yd"},{"label":"判断系统型别并联立稳定性检查","type":"bz"},{"label":"写出输入信号的拉氏变换","type":"bz"},{"label":"用终值定理求 e_ss，或直接查表","type":"bz"},{"label":"必要时按叠加原理分别计算各分量","type":"bz"},{"label":"e_{ss}=\\lim_{s\\to0}sE(s)","type":"fm","tex":"e_{ss}=\\lim_{s\\to0}sE(s)"},{"label":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}","type":"fm","tex":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}"},{"label":"分别求校正前后单位速度输入下的稳态误差","type":"kf","own":true},{"label":"求给定输入下的稳态误差","type":"kf","own":false},{"label":"由稳态误差要求反求开环增益","type":"kf","own":false},{"label":"比较不同型别系统的跟踪能力","type":"kf","own":false},{"label":"未判稳就使用终值定理","type":"er","own":false},{"label":"输入为组合信号时漏掉某一分量","type":"er","own":false},{"label":"Ⅰ型系统求阶跃误差时误代入速度误差公式","type":"er","own":false}]}]},{"label":"三、两输入两输出系统的结构图与传递函数矩阵　〔第3题〕","type":"block","children":[{"label":"由给定微分方程组画模拟结构图，写成矩阵形式后用传递函数矩阵公式求两路输出","type":"idea"},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"每个状态变量对应一个积分器，按系数连线","type":"k1"},{"label":"把微分方程整理成状态导数等于Ax加Bu的形式","type":"k1"},{"label":"系数矩阵A为2乘2，输入矩阵B也为2乘2","type":"k2"},{"label":"两输入两输出时B与C都不是列向量，维数别写错","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"由两入两出微分方程组画模拟结构图并写状态空间形式","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]},{"label":"状态空间与传递函数的关系","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"写Y(s)等于C乘sI减A的逆再乘B乘U(s)","type":"k1"},{"label":"先求sI减A的行列式与伴随矩阵","type":"k1"},{"label":"两路输出共用同一特征多项式作分母","type":"k2"},{"label":"求逆时伴随矩阵要转置，符号容易错","type":"k3"}]},{"label":"由状态空间求传递函数为 C(sI-A)^{-1}B+D","type":"yd"},{"label":"传递函数只反映能控能观子系统，含零极点对消","type":"yd"},{"label":"系统的特征值等于传递函数的极点","type":"yd"},{"label":"同一传递函数对应的状态空间实现不唯一","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"按公式求 G(s)=C(sI-A)^{-1}B+D","type":"bz"},{"label":"与已知传递函数比对，判断是否发生零极点对消","type":"bz"},{"label":"G(s)=C(sI-A)^{-1}B+D","type":"fm","tex":"G(s)=C(sI-A)^{-1}B+D"},{"label":"用传递函数矩阵公式求各输出对输入的传函","type":"kf","own":true},{"label":"由状态空间表达式求传递函数","type":"kf","own":false},{"label":"判断状态空间实现是否存在零极点对消","type":"kf","own":false},{"label":"比较不同实现对应的传递函数是否相同","type":"kf","own":false},{"label":"漏掉直接传递项 D","type":"er","own":false},{"label":"把特征值个数与传递函数极点数直接等同而不检查对消","type":"er","own":false}]}]},{"label":"四、由状态空间矩阵求两输出传递函数　〔第4题〕","type":"block","children":[{"label":"由给定A、B、C矩阵用传递函数矩阵公式求两路输出传函，再由状态方程画方框图","type":"idea"},{"label":"状态空间与传递函数的关系","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先算sI减A的逆，再左乘C右乘B","type":"k1"},{"label":"把结果整理成两个有理分式","type":"k1"},{"label":"两路输出分母相同，均为二阶特征多项式","type":"k2"},{"label":"矩阵乘法的左右顺序不能颠倒","type":"k3"}]},{"label":"由状态空间求传递函数为 C(sI-A)^{-1}B+D","type":"yd"},{"label":"传递函数只反映能控能观子系统，含零极点对消","type":"yd"},{"label":"系统的特征值等于传递函数的极点","type":"yd"},{"label":"同一传递函数对应的状态空间实现不唯一","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"按公式求 G(s)=C(sI-A)^{-1}B+D","type":"bz"},{"label":"与已知传递函数比对，判断是否发生零极点对消","type":"bz"},{"label":"G(s)=C(sI-A)^{-1}B+D","type":"fm","tex":"G(s)=C(sI-A)^{-1}B+D"},{"label":"由A、B、C矩阵求两路输出对输入的传递函数","type":"kf","own":true},{"label":"由状态空间表达式求传递函数","type":"kf","own":false},{"label":"判断状态空间实现是否存在零极点对消","type":"kf","own":false},{"label":"比较不同实现对应的传递函数是否相同","type":"kf","own":false},{"label":"漏掉直接传递项 D","type":"er","own":false},{"label":"把特征值个数与传递函数极点数直接等同而不检查对消","type":"er","own":false}]},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"两个积分器串联对应二阶系统","type":"k1"},{"label":"按输入矩阵系数把输入接入两个积分器","type":"k1"},{"label":"输出由两个状态变量线性组合得到","type":"k2"},{"label":"输出方程若含直通项D，方框图需另加前向支路","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"按状态方程与输出方程画系统模拟方框图","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]}]},{"label":"五、机械与电路网络的传递函数及相似性　〔第5题〕","type":"block","children":[{"label":"分别对弹簧阻尼机械系统与RC网络列方程求传函，对比两式结构证明形式相同","type":"idea"},{"label":"机械系统建模","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"对各质量块分别列牛顿第二定律方程","type":"k1"},{"label":"取拉氏变换消去中间变量","type":"k1"},{"label":"所得传函分子分母同为二阶多项式","type":"k2"},{"label":"机械系统连接未读图，受力方向需回原卷核对图","type":"k3"}]},{"label":"依据牛顿第二定律或达朗贝尔原理列方程","type":"yd"},{"label":"三种基本元件：质量 m、粘性阻尼 f、弹簧 k","type":"yd"},{"label":"同一方向取正，反向取负，逐项列出合力","type":"yd"},{"label":"选定正方向并作受力分析","type":"bz"},{"label":"分别写出质量、阻尼、弹簧对应的力","type":"bz"},{"label":"按 F=ma 列写运动方程","type":"bz"},{"label":"取拉氏变换整理成传递函数","type":"bz"},{"label":"m\\ddot{x}+f\\dot{x}+kx=F(t)","type":"fm","tex":"m\\ddot{x}+f\\dot{x}+kx=F(t)"},{"label":"对弹簧阻尼机械系统列力平衡方程求位移传函","type":"kf","own":true},{"label":"弹簧-质量-阻尼系统求位移对力的传递函数","type":"kf","own":false},{"label":"两质量块经弹簧阻尼连接的系统建模","type":"kf","own":false},{"label":"阻尼力与弹簧力的正负方向取反","type":"er","own":false},{"label":"多质量系统漏掉相互作用力的反作用项","type":"er","own":false}]},{"label":"由电路或机械系统求传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把电容写成1除以Cs，按串并联分压求传函","type":"k1"},{"label":"整理成s的二次多项式之比","type":"k1"},{"label":"两传函分母的一次项系数差一个交叉阻容项","type":"k2"},{"label":"令机械量与电学量对应相等即可证两式形式一致","type":"k3"}]},{"label":"电路用复阻抗法：电阻 R、电感 Ls、电容 1/(Cs)","type":"yd"},{"label":"机械平移系统三种元件：质量 m、阻尼 f、弹簧 k","type":"yd"},{"label":"先列物理定律方程，再消去中间变量","type":"yd"},{"label":"列方程的依据：KCL/KVL 或牛顿第二定律","type":"yd"},{"label":"画出复阻抗等效电路或受力分析图","type":"bz"},{"label":"按 KVL/KCL 或牛顿第二定律列出微分方程组","type":"bz"},{"label":"消去中间变量，得到只含输入输出的方程","type":"bz"},{"label":"取拉氏变换并整理成 C(s)/R(s)","type":"bz"},{"label":"Z_R=R,\\quad Z_L=Ls,\\quad Z_C=\\frac{1}{Cs}","type":"fm","tex":"Z_R=R,\\quad Z_L=Ls,\\quad Z_C=\\frac{1}{Cs}"},{"label":"m\\ddot{x}+f\\dot{x}+kx=F(t)","type":"fm","tex":"m\\ddot{x}+f\\dot{x}+kx=F(t)"},{"label":"用复阻抗法求RC网络输出对输入的传函","type":"kf","own":true},{"label":"给定 RLC 网络求 U_o(s)/U_i(s)","type":"kf","own":false},{"label":"弹簧-质量-阻尼系统求位移对力的传递函数","type":"kf","own":false},{"label":"含运算放大器的有源网络求传递函数","type":"kf","own":false},{"label":"复阻抗法把电容阻抗误写成 Cs","type":"er","own":false},{"label":"机械系统阻尼力与弹簧力的正负方向取反","type":"er","own":false},{"label":"运放电路忘记使用虚短与虚断条件","type":"er","own":false}]}]},{"label":"六、电路网络的状态空间表达式　〔第6题〕","type":"block","children":[{"label":"以电感电流与电容电压为状态变量，对电感回路列KVL、对电容节点列KCL，整理成状态方程","type":"idea"},{"label":"电路网络与有源网络建模","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"电感支路列KVL，电容节点列KCL","type":"k1"},{"label":"把非状态变量用状态变量与输入表示","type":"k1"},{"label":"状态取两个电感电流与一个电容电压，共三阶","type":"k2"},{"label":"电路拓扑未读图，支路与节点连接需回原卷核对图","type":"k3"}]},{"label":"无源网络用复阻抗分压或节点法","type":"yd"},{"label":"含运放的网络使用虚短与虚断两个条件","type":"yd"},{"label":"有源滤波器与 RC 网络是常见载体","type":"yd"},{"label":"画出复阻抗等效电路","type":"bz"},{"label":"用分压公式或节点电流方程列写关系","type":"bz"},{"label":"整理为输出与输入的比值","type":"bz"},{"label":"\\frac{U_o(s)}{U_i(s)}=-\\frac{Z_f(s)}{Z_i(s)}","type":"fm","tex":"\\frac{U_o(s)}{U_i(s)}=-\\frac{Z_f(s)}{Z_i(s)}"},{"label":"由含电感电容的电路列写电路微分方程","type":"kf","own":true},{"label":"RC 网络或有源滤波器求传递函数","type":"kf","own":false},{"label":"求运算电路的输出表达式","type":"kf","own":false},{"label":"含运放时忽略虚短虚断导致方程数不足","type":"er","own":false},{"label":"把反相输入的负号漏掉","type":"er","own":false}]},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"状态方程左端只留状态变量的一阶导","type":"k1"},{"label":"输出方程用状态变量与输入表示","type":"k1"},{"label":"A为3乘3，B为3乘2，C为1乘3","type":"k2"},{"label":"输出含输入直通项时D不为零，别漏写D","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"把电路方程整理成状态空间表达式","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]}]},{"label":"七、由结构图求状态空间模型并判能控能观　〔第7题〕","type":"block","children":[{"label":"由结构图选状态变量写状态方程与输出方程，再构造能控性与能观性矩阵，用秩判据判断","type":"idea"},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"在积分器输出处取状态变量","type":"k1"},{"label":"按各比较点与增益关系写状态方程与输出方程","type":"k1"},{"label":"状态维数等于结构图中积分器个数","type":"k2"},{"label":"结构图未读图，回路与增益需回原卷核对图","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"由系统结构图选取状态变量并写状态空间模型","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由B、AB、A平方B构造能控性矩阵","type":"k1"},{"label":"由C、CA、CA平方构造能观性矩阵","type":"k1"},{"label":"单入单出时两矩阵均为方阵，看行列式是否为零","type":"k2"},{"label":"能控性与能观性判据的矩阵构造容易互换","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"构造能控性与能观性矩阵并用秩判据判断","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]}]},{"label":"八、由结构图求开环传函与频域指标及阶跃响应　〔第8题〕","type":"block","children":[{"label":"先由结构图等效化简求开环传函，再求增益穿越频率与相角裕度，最后写闭环传函求单位阶跃响应","type":"idea"},{"label":"多回路系统的逐层化简","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先化内环再加外环","type":"k1"},{"label":"把前向通路与反馈通路写成标准形式","type":"k1"},{"label":"开环传函分母含s的多次幂，说明型别较高","type":"k2"},{"label":"结构图未读图，比较点与引出点位置需回原卷核对图","type":"k3"}]},{"label":"从最内层回路开始，逐层向外化简","type":"yd"},{"label":"每个内环先化成一个等效环节，再参与外层的串并联","type":"yd"},{"label":"化简顺序错误会导致式子繁琐但仍可得到正确结果","type":"yd"},{"label":"标出内环并求其闭环传递函数","type":"bz"},{"label":"把内环替换为等效环节","type":"bz"},{"label":"对新的结构图重复上述步骤，直到单回路","type":"bz"},{"label":"最后求整个系统的闭环传递函数","type":"bz"},{"label":"由多回路结构图逐层化简求开环传递函数","type":"kf","own":true},{"label":"三环及以上系统求闭环传递函数","type":"kf","own":false},{"label":"含局部反馈的系统化简","type":"kf","own":false},{"label":"化简内环时把外环的信号当成常数处理","type":"er","own":false}]},{"label":"稳定裕度","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"令幅值等于1解增益穿越频率","type":"k1"},{"label":"代入相频表达式求相角裕度","type":"k1"},{"label":"开环含二阶环节，相角要按频率分段讨论","type":"k2"},{"label":"分子含二阶环节时相角表达式分段，容易写错","type":"k3"}]},{"label":"相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)","type":"yd"},{"label":"幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝","type":"yd"},{"label":"γ>0 且 Kg>1 时闭环稳定（最小相位系统）","type":"yd"},{"label":"γ 主要影响超调，ωc 主要影响响应速度","type":"yd"},{"label":"由幅频特性求 |G|=1 对应的穿越频率 ωc","type":"bz"},{"label":"由相频特性求 ∠G=-180° 对应的频率 ωg","type":"bz"},{"label":"分别代入公式求相角裕度与幅值裕度","type":"bz"},{"label":"由裕度符号判断稳定性","type":"bz"},{"label":"\\gamma=180^\\circ+\\angle G(j\\omega_c)","type":"fm","tex":"\\gamma=180^\\circ+\\angle G(j\\omega_c)"},{"label":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}","type":"fm","tex":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"},{"label":"求增益穿越频率与相角裕度","type":"kf","own":true},{"label":"求系统的相角裕度与幅值裕度","type":"kf","own":false},{"label":"由裕度要求反求开环增益","type":"kf","own":false},{"label":"分析增益变化对裕度的影响","type":"kf","own":false},{"label":"把 ωc 与 ωg 两个频率用反","type":"er","own":false},{"label":"幅值裕度取倒数未取，导致结论反了","type":"er","own":false},{"label":"非最小相位系统仍用同一判据","type":"er","own":false}]},{"label":"线性微分方程的时域求解与全响应","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"单位反馈下由开环传函写闭环传函","type":"k1"},{"label":"对闭环传函做拉氏反变换得时域响应","type":"k1"},{"label":"初状态全为零，所求为单位阶跃下的零状态响应","type":"k2"},{"label":"先检查闭环稳定性再做时域分析","type":"k3"}]},{"label":"全响应由零输入响应与零状态响应两部分叠加而成","type":"yd"},{"label":"零输入响应的形式由特征根决定，系数由初始条件定","type":"yd"},{"label":"零状态响应用卷积或拉氏变换法求，也可查典型输入的响应表","type":"yd"},{"label":"初值条件要区分零时刻前后的跳变，含输入导数项的方程会在零时刻产生跳变","type":"yd"},{"label":"写出微分方程并取拉氏变换，把初始条件作为等效输入移到等号右端","type":"bz"},{"label":"分别求零输入解与零状态解，再相加得全响应","type":"bz"},{"label":"用初始条件定常数，必要时用终值核对稳态值","type":"bz"},{"label":"检查求得的解在零时刻是否等于给定初值","type":"bz"},{"label":"y(t)=y_{zi}(t)+y_{zs}(t)","type":"fm","tex":"y(t)=y_{zi}(t)+y_{zs}(t)"},{"label":"\\left(s^{2}+a_1s+a_0\\right)Y(s)=b_1s+b_0+B\\left(s\\right)","type":"fm","tex":"\\left(s^{2}+a_1s+a_0\\right)Y(s)=b_1s+b_0+B\\left(s\\right)"},{"label":"由闭环传函求零初始条件下的单位阶跃响应","type":"kf","own":true},{"label":"由微分方程与初始条件求系统的全响应","type":"kf","own":false},{"label":"分别求零输入响应与零状态响应","type":"kf","own":false},{"label":"判断给定初值下响应是否单调或是否有极值","type":"kf","own":false},{"label":"只求零状态响应而漏掉由初值决定的自由响应","type":"er","own":false},{"label":"分子含输入导数时忽略零时刻的跳变，导致初值对不上","type":"er","own":false}]}]},{"label":"九、液位过程的动态特性与控制方案设计　〔第9题〕","type":"block","children":[{"label":"由流量平衡求初始液位与排水微分方程，低精度用单回路PID，高精度用带压力副回路的串级方案","type":"idea"},{"label":"被控对象的动态特性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"稳态时流入等于流出，先求初始液位","type":"k1"},{"label":"关阀后按流量公式列液位微分方程","type":"k1"},{"label":"流量与液位平方根成正比，对象为非线性","type":"k2"},{"label":"题面流量用根号H、答案段却用H，需回原卷核对","type":"k3"}]},{"label":"用放大系数 K、时间常数 T、纯滞后 τ 三个参数描述对象","type":"yd"},{"label":"自衡对象受扰动后能自行重新平衡，非自衡对象不能","type":"yd"},{"label":"多容对象由多个一阶环节串联而成，容量滞后大","type":"yd"},{"label":"纯滞后只使响应推迟，不改变最终稳态值","type":"yd"},{"label":"由阶跃响应曲线读出放大系数、时间常数与纯滞后时间","type":"bz"},{"label":"判断对象是否自衡、是否多容","type":"bz"},{"label":"写出对象的传递函数","type":"bz"},{"label":"用终值定理求稳态值","type":"bz"},{"label":"W_0(s)=\\frac{K}{Ts+1}e^{-\\tau s}","type":"fm","tex":"W_0(s)=\\frac{K}{Ts+1}e^{-\\tau s}"},{"label":"K=\\frac{\\Delta y}{\\Delta x}","type":"fm","tex":"K=\\frac{\\Delta y}{\\Delta x}"},{"label":"由流量平衡方程求液位被控对象的动态特性","type":"kf","own":true},{"label":"由响应曲线写出对象传递函数","type":"kf","own":false},{"label":"求阶跃输入下的稳态值并说明与哪些因素有关","type":"kf","own":false},{"label":"判断对象是否具有纯滞后","type":"kf","own":false},{"label":"把纯滞后当成时间常数一起处理","type":"er","own":false},{"label":"放大系数的量纲与单位漏写","type":"er","own":false}]},{"label":"线性微分方程的时域求解与全响应","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把液位微分方程分离变量后积分","type":"k1"},{"label":"把初始液位与终了液位代入定时间","type":"k1"},{"label":"液位随时间单调下降","type":"k2"},{"label":"按题面根号H列方程，不要照抄答案段的线性式","type":"k3"}]},{"label":"全响应由零输入响应与零状态响应两部分叠加而成","type":"yd"},{"label":"零输入响应的形式由特征根决定，系数由初始条件定","type":"yd"},{"label":"零状态响应用卷积或拉氏变换法求，也可查典型输入的响应表","type":"yd"},{"label":"初值条件要区分零时刻前后的跳变，含输入导数项的方程会在零时刻产生跳变","type":"yd"},{"label":"写出微分方程并取拉氏变换，把初始条件作为等效输入移到等号右端","type":"bz"},{"label":"分别求零输入解与零状态解，再相加得全响应","type":"bz"},{"label":"用初始条件定常数，必要时用终值核对稳态值","type":"bz"},{"label":"检查求得的解在零时刻是否等于给定初值","type":"bz"},{"label":"y(t)=y_{zi}(t)+y_{zs}(t)","type":"fm","tex":"y(t)=y_{zi}(t)+y_{zs}(t)"},{"label":"\\left(s^{2}+a_1s+a_0\\right)Y(s)=b_1s+b_0+B\\left(s\\right)","type":"fm","tex":"\\left(s^{2}+a_1s+a_0\\right)Y(s)=b_1s+b_0+B\\left(s\\right)"},{"label":"解排水过程微分方程求液位降到一半所需时间","type":"kf","own":true},{"label":"由微分方程与初始条件求系统的全响应","type":"kf","own":false},{"label":"分别求零输入响应与零状态响应","type":"kf","own":false},{"label":"判断给定初值下响应是否单调或是否有极值","type":"kf","own":false},{"label":"只求零状态响应而漏掉由初值决定的自由响应","type":"er","own":false},{"label":"分子含输入导数时忽略零时刻的跳变，导致初值对不上","type":"er","own":false}]},{"label":"PID 控制器与参数整定","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"按比例、积分、微分三项写PID表达式","type":"k1"},{"label":"说明控制量为液体流量","type":"k1"},{"label":"被控量为液位高度，执行器为调节阀","type":"k2"},{"label":"PID各系数含义与符号需与题面一致","type":"k3"}]},{"label":"比例项提高快速性但存在稳态误差","type":"yd"},{"label":"积分项消除稳态误差但降低稳定性、增大超调","type":"yd"},{"label":"微分项提供超前相位改善动态性能但对噪声敏感","type":"yd"},{"label":"PD 相当于超前校正，PI 相当于滞后校正","type":"yd"},{"label":"按误差类型选择需要引入的环节","type":"bz"},{"label":"先调比例再调积分最后调微分","type":"bz"},{"label":"用稳定裕度或性能指标校验并微调","type":"bz"},{"label":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds","type":"fm","tex":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds"},{"label":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)","type":"fm","tex":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)"},{"label":"写出液位控制系统的PID控制表达式","type":"kf","own":true},{"label":"设计 PID 控制器满足给定指标","type":"kf","own":false},{"label":"分析各参数变化对系统性能的影响","type":"kf","own":false},{"label":"说明微分项对噪声的影响","type":"kf","own":false},{"label":"把 PI 的相位影响说成超前","type":"er","own":false},{"label":"积分增益过大导致系统振荡甚至不稳定","type":"er","own":false}]},{"label":"单回路控制系统","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"选液位为被控量、流量为操纵量","type":"k1"},{"label":"画单回路控制系统原理图与方框图","type":"k1"},{"label":"单回路方案结构简单、成本低","type":"k2"},{"label":"只画方框图不画原理图会漏答","type":"k3"}]},{"label":"只有一个测量变送器、一个控制器、一个执行器的简单反馈系统","type":"yd"},{"label":"被控量选择要兼顾工艺要求与可测性","type":"yd"},{"label":"操纵量选择要保证对被控量有足够的灵敏度","type":"yd"},{"label":"一般能满足大多数常规工艺要求","type":"yd"},{"label":"确定被控量与操纵量","type":"bz"},{"label":"分析主要扰动及其作用点","type":"bz"},{"label":"画出单回路控制系统的方框图","type":"bz"},{"label":"说明控制过程","type":"bz"},{"label":"设计低精度液位单回路控制系统","type":"kf","own":true},{"label":"设计单回路控制系统","type":"kf","own":false},{"label":"说明为什么选这个量作被控量或操纵量","type":"kf","own":false},{"label":"分析单回路方案的局限性","type":"kf","own":false},{"label":"选了一个对被控量灵敏度很低的操纵量","type":"er","own":false},{"label":"忽略主要扰动作用点对操纵量选择的影响","type":"er","own":false}]},{"label":"串级控制系统","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"以压力为副变量、液位为主变量构成串级","type":"k1"},{"label":"副回路先消除管道内压力扰动","type":"k1"},{"label":"串级方案对副环扰动抑制更快、精度更高","type":"k2"},{"label":"主副变量不能选反，副变量要对扰动灵敏","type":"k3"}]},{"label":"主回路完成主要指标，副回路快速抑制进入副回路的扰动","type":"yd"},{"label":"副变量应包含尽可能多的剧烈扰动，且对主变量影响要大","type":"yd"},{"label":"副回路要响应快于主回路，一般取主、副时间常数比大于 3","type":"yd"},{"label":"可等效为改善了对象特性，提高了抗扰能力与响应速度","type":"yd"},{"label":"判断扰动是否需要副回路专门抑制","type":"bz"},{"label":"确定主变量与副变量","type":"bz"},{"label":"说明主、副调节器的型式（一般主回路 PI、副回路 P 或 PI）","type":"bz"},{"label":"画方框图并说明主副回路的信号关系","type":"bz"},{"label":"设计高精度液位串级控制系统","type":"kf","own":true},{"label":"设计串级控制系统并确定主、副变量","type":"kf","own":false},{"label":"说明副回路的作用与适用场合","type":"kf","own":false},{"label":"分析串级相比单回路的优越性","type":"kf","own":false},{"label":"把副变量选成对主变量影响很小的量","type":"er","own":false},{"label":"主副回路的时间常数不匹配，出现共振","type":"er","own":false}]}]}]},"qs":[{"no":"1","tree":{"label":"厦门大学 844","type":"root","sub":"2021 · 自动控制理论（含现控）","children":[{"label":"难度：中等偏难　特点：9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多　重点：剪切频率与相角、幅值裕度、串联超前校正装置设计、测速反馈校正与速度输入稳态误差、状态空间表达式与传递函数矩阵互求、机械与电路网络的传递函数、能控性与能观性秩判据、液位过程的PID与串级控制方案","type":"warn"},{"label":"一、频域稳定裕度与串联超前校正　〔第1题〕","type":"block","children":[{"label":"由开环传函画Bode图求剪切频率、相角裕度与幅值裕度，再按目标相角裕度用超前校正公式定参数","type":"idea"},{"label":"稳定裕度","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先求开环幅频为1处的剪切频率与相频为-180度的频率","type":"k1"},{"label":"相角裕度按180度加剪切频率处相角求，幅值裕度取该处幅值倒数","type":"k1"},{"label":"校正前相角裕度低于要求的50度，需用超前环节补相角","type":"k2"},{"label":"题面传函被OCR打乱，两源比对后按K除以s(0.5s+1)读","type":"k3"}]},{"label":"相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)","type":"yd"},{"label":"幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝","type":"yd"},{"label":"γ>0 且 Kg>1 时闭环稳定（最小相位系统）","type":"yd"},{"label":"γ 主要影响超调，ωc 主要影响响应速度","type":"yd"},{"label":"由幅频特性求 |G|=1 对应的穿越频率 ωc","type":"bz"},{"label":"由相频特性求 ∠G=-180° 对应的频率 ωg","type":"bz"},{"label":"分别代入公式求相角裕度与幅值裕度","type":"bz"},{"label":"由裕度符号判断稳定性","type":"bz"},{"label":"\\gamma=180^\\circ+\\angle G(j\\omega_c)","type":"fm","tex":"\\gamma=180^\\circ+\\angle G(j\\omega_c)"},{"label":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}","type":"fm","tex":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"},{"label":"由开环传函求剪切频率与相角、幅值裕度","type":"kf","own":true},{"label":"求系统的相角裕度与幅值裕度","type":"kf","own":false},{"label":"由裕度要求反求开环增益","type":"kf","own":false},{"label":"分析增益变化对裕度的影响","type":"kf","own":false},{"label":"把 ωc 与 ωg 两个频率用反","type":"er","own":false},{"label":"幅值裕度取倒数未取，导致结论反了","type":"er","own":false},{"label":"非最小相位系统仍用同一判据","type":"er","own":false}]},{"label":"超前校正","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由目标裕度减原裕度再加5到10度补偿角得最大超前角","type":"k1"},{"label":"令最大超前角频率等于新剪切频率，反求a与T","type":"k1"},{"label":"超前环节两转折频率为aT分之一与T分之一","type":"k2"},{"label":"剪切频率右移带来附加相角损失，补偿角偏小会不达标","type":"k3"}]},{"label":"超前校正利用相位超前特性提高相角裕度","type":"yd"},{"label":"会使截止频率提高，响应加快","type":"yd"},{"label":"最大超前角出现在两个转折频率的几何中点","type":"yd"},{"label":"最大超前角不超过 60°，否则噪声放大明显","type":"yd"},{"label":"由未校正系统的相角裕度差额确定所需最大超前角","type":"bz"},{"label":"由最大超前角公式求 α","type":"bz"},{"label":"由 α 与目标截止频率求两个转折频率","type":"bz"},{"label":"写出校正装置传递函数并校验","type":"bz"},{"label":"G_c(s)=\\frac{\\alpha Ts+1}{Ts+1},\\quad \\alpha>1","type":"fm","tex":"G_c(s)=\\frac{\\alpha Ts+1}{Ts+1},\\quad \\alpha>1"},{"label":"\\varphi_m=\\arcsin\\frac{\\alpha-1}{\\alpha+1}","type":"fm","tex":"\\varphi_m=\\arcsin\\frac{\\alpha-1}{\\alpha+1}"},{"label":"\\omega_m=\\frac{1}{T\\sqrt{\\alpha}}","type":"fm","tex":"\\omega_m=\\frac{1}{T\\sqrt{\\alpha}}"},{"label":"按目标相角裕度设计串联超前校正装置并求参数","type":"kf","own":true},{"label":"设计串联超前校正装置","type":"kf","own":false},{"label":"计算校正后的相角裕度与截止频率","type":"kf","own":false},{"label":"分析超前校正的局限性","type":"kf","own":false},{"label":"计算补偿角时忽略截止频率变化带来的附加相角损失","type":"er","own":false},{"label":"α 的取值与超前角公式方向取反","type":"er","own":false}]}]}]}},{"no":"2","tree":{"label":"厦门大学 844","type":"root","sub":"2021 · 自动控制理论（含现控）","children":[{"label":"难度：中等偏难　特点：9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多　重点：剪切频率与相角、幅值裕度、串联超前校正装置设计、测速反馈校正与速度输入稳态误差、状态空间表达式与传递函数矩阵互求、机械与电路网络的传递函数、能控性与能观性秩判据、液位过程的PID与串级控制方案","type":"warn"},{"label":"二、测速反馈校正与速度输入稳态误差　〔第2题〕","type":"block","children":[{"label":"由测速反馈结构写闭环特征方程，对照典型二阶形式定参数，再用终值定理分别求校正前后的速度误差","type":"idea"},{"label":"二阶系统标准形式与阻尼比","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"列测速反馈闭环特征方程，一次项系数含反馈参数","type":"k1"},{"label":"与标准二阶的2倍阻尼乘自然频率和自然频率平方逐项对照","type":"k1"},{"label":"给定阻尼比等于1可先定出反馈参数，再得自然频率","type":"k2"},{"label":"参数定出后要回代，别把开环增益当闭环增益","type":"k3"}]},{"label":"标准形式由自然频率 ωn 与阻尼比 ξ 两个参数确定","type":"yd"},{"label":"ξ>1 过阻尼、ξ=1 临界阻尼、0<ξ<1 欠阻尼、ξ=0 无阻尼","type":"yd"},{"label":"闭环极点位置只由 ξωn 与 ωn√(1-ξ²) 决定","type":"yd"},{"label":"β=arccos ξ 是极点与负实轴的夹角","type":"yd"},{"label":"把闭环传递函数化成标准二阶形式","type":"bz"},{"label":"比对系数求出 ωn 与 ξ","type":"bz"},{"label":"写出闭环极点表达式","type":"bz"},{"label":"按 ξ 的取值判断响应类型","type":"bz"},{"label":"\\Phi(s)=\\frac{\\omega_n^2}{s^2+2\\xi\\omega_n s+\\omega_n^2}","type":"fm","tex":"\\Phi(s)=\\frac{\\omega_n^2}{s^2+2\\xi\\omega_n s+\\omega_n^2}"},{"label":"s_{1,2}=-\\xi\\omega_n\\pm j\\omega_n\\sqrt{1-\\xi^2}","type":"fm","tex":"s_{1,2}=-\\xi\\omega_n\\pm j\\omega_n\\sqrt{1-\\xi^2}"},{"label":"\\beta=\\arccos\\xi","type":"fm","tex":"\\beta=\\arccos\\xi"},{"label":"由测速反馈结构写闭环特征方程并对照典型二阶形式","type":"kf","own":true},{"label":"由闭环传递函数求 ωn 与 ξ","type":"kf","own":false},{"label":"判断响应是过阻尼还是欠阻尼","type":"kf","own":false},{"label":"在 s 平面上标出闭环极点的位置","type":"kf","own":false},{"label":"化为标准形式时忘记把 s² 项系数归一化","type":"er","own":false},{"label":"把开环增益误当成闭环传递函数的系数","type":"er","own":false}]},{"label":"反馈校正与复合控制","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把速度反馈信号与主反馈在比较点处合成","type":"k1"},{"label":"校正后开环分母多出与反馈系数有关的s项","type":"k1"},{"label":"测速反馈不提高开环型别，但改变闭环阻尼","type":"k2"},{"label":"先改变闭环特征方程，须重新判稳后再算误差","type":"k3"}]},{"label":"反馈校正可改变被包围环节的特性，抑制参数波动","type":"yd"},{"label":"局部反馈能降低时间常数、提高响应速度","type":"yd"},{"label":"复合控制通过前馈补偿实现给定或扰动不变性","type":"yd"},{"label":"前馈不改变闭环稳定性，可与反馈叠加使用","type":"yd"},{"label":"确定被包围的环节与反馈通道传递函数","type":"bz"},{"label":"写出等效后的传递函数","type":"bz"},{"label":"按不变性原理列写前馈补偿器条件","type":"bz"},{"label":"求解补偿器并校验可实现性","type":"bz"},{"label":"G_{等效}=\\frac{G_1(s)}{1+G_1(s)H_c(s)}","type":"fm","tex":"G_{等效}=\\frac{G_1(s)}{1+G_1(s)H_c(s)}"},{"label":"G_r(s)=\\frac{1}{G_1(s)}\\ (\\text{完全不变性条件})","type":"fm","tex":"G_r(s)=\\frac{1}{G_1(s)}\\ (\\text{完全不变性条件})"},{"label":"用测速反馈即速度反馈校正改善系统阻尼","type":"kf","own":true},{"label":"设计反馈校正装置改善被包围环节","type":"kf","own":false},{"label":"求前馈补偿器实现不变性","type":"kf","own":false},{"label":"分析复合控制对稳态误差的作用","type":"kf","own":false},{"label":"前馈补偿器求出的表达式含高阶微分，不可实现却直接采用","type":"er","own":false},{"label":"忽略反馈校正可能引起的高频噪声放大","type":"er","own":false}]},{"label":"典型输入下的稳态误差计算","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先判稳，再求速度误差系数","type":"k1"},{"label":"按输入幅值除以速度误差系数得稳态误差","type":"k1"},{"label":"校正后速度误差系数变化，稳态误差随之改变","type":"k2"},{"label":"未判稳直接用终值定理会得到无效结果","type":"k3"}]},{"label":"稳态误差由系统型别与输入类型共同决定","type":"yd"},{"label":"0 型对阶跃有差、Ⅰ型对斜坡有差、Ⅱ型对加速度有差","type":"yd"},{"label":"低型别系统对高阶输入的误差为无穷大","type":"yd"},{"label":"判断系统型别并联立稳定性检查","type":"bz"},{"label":"写出输入信号的拉氏变换","type":"bz"},{"label":"用终值定理求 e_ss，或直接查表","type":"bz"},{"label":"必要时按叠加原理分别计算各分量","type":"bz"},{"label":"e_{ss}=\\lim_{s\\to0}sE(s)","type":"fm","tex":"e_{ss}=\\lim_{s\\to0}sE(s)"},{"label":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}","type":"fm","tex":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}"},{"label":"分别求校正前后单位速度输入下的稳态误差","type":"kf","own":true},{"label":"求给定输入下的稳态误差","type":"kf","own":false},{"label":"由稳态误差要求反求开环增益","type":"kf","own":false},{"label":"比较不同型别系统的跟踪能力","type":"kf","own":false},{"label":"未判稳就使用终值定理","type":"er","own":false},{"label":"输入为组合信号时漏掉某一分量","type":"er","own":false},{"label":"Ⅰ型系统求阶跃误差时误代入速度误差公式","type":"er","own":false}]}]}]}},{"no":"3","tree":{"label":"厦门大学 844","type":"root","sub":"2021 · 自动控制理论（含现控）","children":[{"label":"难度：中等偏难　特点：9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多　重点：剪切频率与相角、幅值裕度、串联超前校正装置设计、测速反馈校正与速度输入稳态误差、状态空间表达式与传递函数矩阵互求、机械与电路网络的传递函数、能控性与能观性秩判据、液位过程的PID与串级控制方案","type":"warn"},{"label":"三、两输入两输出系统的结构图与传递函数矩阵　〔第3题〕","type":"block","children":[{"label":"由给定微分方程组画模拟结构图，写成矩阵形式后用传递函数矩阵公式求两路输出","type":"idea"},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"每个状态变量对应一个积分器，按系数连线","type":"k1"},{"label":"把微分方程整理成状态导数等于Ax加Bu的形式","type":"k1"},{"label":"系数矩阵A为2乘2，输入矩阵B也为2乘2","type":"k2"},{"label":"两输入两输出时B与C都不是列向量，维数别写错","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"由两入两出微分方程组画模拟结构图并写状态空间形式","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]},{"label":"状态空间与传递函数的关系","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"写Y(s)等于C乘sI减A的逆再乘B乘U(s)","type":"k1"},{"label":"先求sI减A的行列式与伴随矩阵","type":"k1"},{"label":"两路输出共用同一特征多项式作分母","type":"k2"},{"label":"求逆时伴随矩阵要转置，符号容易错","type":"k3"}]},{"label":"由状态空间求传递函数为 C(sI-A)^{-1}B+D","type":"yd"},{"label":"传递函数只反映能控能观子系统，含零极点对消","type":"yd"},{"label":"系统的特征值等于传递函数的极点","type":"yd"},{"label":"同一传递函数对应的状态空间实现不唯一","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"按公式求 G(s)=C(sI-A)^{-1}B+D","type":"bz"},{"label":"与已知传递函数比对，判断是否发生零极点对消","type":"bz"},{"label":"G(s)=C(sI-A)^{-1}B+D","type":"fm","tex":"G(s)=C(sI-A)^{-1}B+D"},{"label":"用传递函数矩阵公式求各输出对输入的传函","type":"kf","own":true},{"label":"由状态空间表达式求传递函数","type":"kf","own":false},{"label":"判断状态空间实现是否存在零极点对消","type":"kf","own":false},{"label":"比较不同实现对应的传递函数是否相同","type":"kf","own":false},{"label":"漏掉直接传递项 D","type":"er","own":false},{"label":"把特征值个数与传递函数极点数直接等同而不检查对消","type":"er","own":false}]}]}]}},{"no":"4","tree":{"label":"厦门大学 844","type":"root","sub":"2021 · 自动控制理论（含现控）","children":[{"label":"难度：中等偏难　特点：9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多　重点：剪切频率与相角、幅值裕度、串联超前校正装置设计、测速反馈校正与速度输入稳态误差、状态空间表达式与传递函数矩阵互求、机械与电路网络的传递函数、能控性与能观性秩判据、液位过程的PID与串级控制方案","type":"warn"},{"label":"四、由状态空间矩阵求两输出传递函数　〔第4题〕","type":"block","children":[{"label":"由给定A、B、C矩阵用传递函数矩阵公式求两路输出传函，再由状态方程画方框图","type":"idea"},{"label":"状态空间与传递函数的关系","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先算sI减A的逆，再左乘C右乘B","type":"k1"},{"label":"把结果整理成两个有理分式","type":"k1"},{"label":"两路输出分母相同，均为二阶特征多项式","type":"k2"},{"label":"矩阵乘法的左右顺序不能颠倒","type":"k3"}]},{"label":"由状态空间求传递函数为 C(sI-A)^{-1}B+D","type":"yd"},{"label":"传递函数只反映能控能观子系统，含零极点对消","type":"yd"},{"label":"系统的特征值等于传递函数的极点","type":"yd"},{"label":"同一传递函数对应的状态空间实现不唯一","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"按公式求 G(s)=C(sI-A)^{-1}B+D","type":"bz"},{"label":"与已知传递函数比对，判断是否发生零极点对消","type":"bz"},{"label":"G(s)=C(sI-A)^{-1}B+D","type":"fm","tex":"G(s)=C(sI-A)^{-1}B+D"},{"label":"由A、B、C矩阵求两路输出对输入的传递函数","type":"kf","own":true},{"label":"由状态空间表达式求传递函数","type":"kf","own":false},{"label":"判断状态空间实现是否存在零极点对消","type":"kf","own":false},{"label":"比较不同实现对应的传递函数是否相同","type":"kf","own":false},{"label":"漏掉直接传递项 D","type":"er","own":false},{"label":"把特征值个数与传递函数极点数直接等同而不检查对消","type":"er","own":false}]},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"两个积分器串联对应二阶系统","type":"k1"},{"label":"按输入矩阵系数把输入接入两个积分器","type":"k1"},{"label":"输出由两个状态变量线性组合得到","type":"k2"},{"label":"输出方程若含直通项D，方框图需另加前向支路","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"按状态方程与输出方程画系统模拟方框图","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]}]}]}},{"no":"5","tree":{"label":"厦门大学 844","type":"root","sub":"2021 · 自动控制理论（含现控）","children":[{"label":"难度：中等偏难　特点：9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多　重点：剪切频率与相角、幅值裕度、串联超前校正装置设计、测速反馈校正与速度输入稳态误差、状态空间表达式与传递函数矩阵互求、机械与电路网络的传递函数、能控性与能观性秩判据、液位过程的PID与串级控制方案","type":"warn"},{"label":"五、机械与电路网络的传递函数及相似性　〔第5题〕","type":"block","children":[{"label":"分别对弹簧阻尼机械系统与RC网络列方程求传函，对比两式结构证明形式相同","type":"idea"},{"label":"机械系统建模","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"对各质量块分别列牛顿第二定律方程","type":"k1"},{"label":"取拉氏变换消去中间变量","type":"k1"},{"label":"所得传函分子分母同为二阶多项式","type":"k2"},{"label":"机械系统连接未读图，受力方向需回原卷核对图","type":"k3"}]},{"label":"依据牛顿第二定律或达朗贝尔原理列方程","type":"yd"},{"label":"三种基本元件：质量 m、粘性阻尼 f、弹簧 k","type":"yd"},{"label":"同一方向取正，反向取负，逐项列出合力","type":"yd"},{"label":"选定正方向并作受力分析","type":"bz"},{"label":"分别写出质量、阻尼、弹簧对应的力","type":"bz"},{"label":"按 F=ma 列写运动方程","type":"bz"},{"label":"取拉氏变换整理成传递函数","type":"bz"},{"label":"m\\ddot{x}+f\\dot{x}+kx=F(t)","type":"fm","tex":"m\\ddot{x}+f\\dot{x}+kx=F(t)"},{"label":"对弹簧阻尼机械系统列力平衡方程求位移传函","type":"kf","own":true},{"label":"弹簧-质量-阻尼系统求位移对力的传递函数","type":"kf","own":false},{"label":"两质量块经弹簧阻尼连接的系统建模","type":"kf","own":false},{"label":"阻尼力与弹簧力的正负方向取反","type":"er","own":false},{"label":"多质量系统漏掉相互作用力的反作用项","type":"er","own":false}]},{"label":"由电路或机械系统求传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把电容写成1除以Cs，按串并联分压求传函","type":"k1"},{"label":"整理成s的二次多项式之比","type":"k1"},{"label":"两传函分母的一次项系数差一个交叉阻容项","type":"k2"},{"label":"令机械量与电学量对应相等即可证两式形式一致","type":"k3"}]},{"label":"电路用复阻抗法：电阻 R、电感 Ls、电容 1/(Cs)","type":"yd"},{"label":"机械平移系统三种元件：质量 m、阻尼 f、弹簧 k","type":"yd"},{"label":"先列物理定律方程，再消去中间变量","type":"yd"},{"label":"列方程的依据：KCL/KVL 或牛顿第二定律","type":"yd"},{"label":"画出复阻抗等效电路或受力分析图","type":"bz"},{"label":"按 KVL/KCL 或牛顿第二定律列出微分方程组","type":"bz"},{"label":"消去中间变量，得到只含输入输出的方程","type":"bz"},{"label":"取拉氏变换并整理成 C(s)/R(s)","type":"bz"},{"label":"Z_R=R,\\quad Z_L=Ls,\\quad Z_C=\\frac{1}{Cs}","type":"fm","tex":"Z_R=R,\\quad Z_L=Ls,\\quad Z_C=\\frac{1}{Cs}"},{"label":"m\\ddot{x}+f\\dot{x}+kx=F(t)","type":"fm","tex":"m\\ddot{x}+f\\dot{x}+kx=F(t)"},{"label":"用复阻抗法求RC网络输出对输入的传函","type":"kf","own":true},{"label":"给定 RLC 网络求 U_o(s)/U_i(s)","type":"kf","own":false},{"label":"弹簧-质量-阻尼系统求位移对力的传递函数","type":"kf","own":false},{"label":"含运算放大器的有源网络求传递函数","type":"kf","own":false},{"label":"复阻抗法把电容阻抗误写成 Cs","type":"er","own":false},{"label":"机械系统阻尼力与弹簧力的正负方向取反","type":"er","own":false},{"label":"运放电路忘记使用虚短与虚断条件","type":"er","own":false}]}]}]}},{"no":"6","tree":{"label":"厦门大学 844","type":"root","sub":"2021 · 自动控制理论（含现控）","children":[{"label":"难度：中等偏难　特点：9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多　重点：剪切频率与相角、幅值裕度、串联超前校正装置设计、测速反馈校正与速度输入稳态误差、状态空间表达式与传递函数矩阵互求、机械与电路网络的传递函数、能控性与能观性秩判据、液位过程的PID与串级控制方案","type":"warn"},{"label":"六、电路网络的状态空间表达式　〔第6题〕","type":"block","children":[{"label":"以电感电流与电容电压为状态变量，对电感回路列KVL、对电容节点列KCL，整理成状态方程","type":"idea"},{"label":"电路网络与有源网络建模","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"电感支路列KVL，电容节点列KCL","type":"k1"},{"label":"把非状态变量用状态变量与输入表示","type":"k1"},{"label":"状态取两个电感电流与一个电容电压，共三阶","type":"k2"},{"label":"电路拓扑未读图，支路与节点连接需回原卷核对图","type":"k3"}]},{"label":"无源网络用复阻抗分压或节点法","type":"yd"},{"label":"含运放的网络使用虚短与虚断两个条件","type":"yd"},{"label":"有源滤波器与 RC 网络是常见载体","type":"yd"},{"label":"画出复阻抗等效电路","type":"bz"},{"label":"用分压公式或节点电流方程列写关系","type":"bz"},{"label":"整理为输出与输入的比值","type":"bz"},{"label":"\\frac{U_o(s)}{U_i(s)}=-\\frac{Z_f(s)}{Z_i(s)}","type":"fm","tex":"\\frac{U_o(s)}{U_i(s)}=-\\frac{Z_f(s)}{Z_i(s)}"},{"label":"由含电感电容的电路列写电路微分方程","type":"kf","own":true},{"label":"RC 网络或有源滤波器求传递函数","type":"kf","own":false},{"label":"求运算电路的输出表达式","type":"kf","own":false},{"label":"含运放时忽略虚短虚断导致方程数不足","type":"er","own":false},{"label":"把反相输入的负号漏掉","type":"er","own":false}]},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"状态方程左端只留状态变量的一阶导","type":"k1"},{"label":"输出方程用状态变量与输入表示","type":"k1"},{"label":"A为3乘3，B为3乘2，C为1乘3","type":"k2"},{"label":"输出含输入直通项时D不为零，别漏写D","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"把电路方程整理成状态空间表达式","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]}]}]}},{"no":"7","tree":{"label":"厦门大学 844","type":"root","sub":"2021 · 自动控制理论（含现控）","children":[{"label":"难度：中等偏难　特点：9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多　重点：剪切频率与相角、幅值裕度、串联超前校正装置设计、测速反馈校正与速度输入稳态误差、状态空间表达式与传递函数矩阵互求、机械与电路网络的传递函数、能控性与能观性秩判据、液位过程的PID与串级控制方案","type":"warn"},{"label":"七、由结构图求状态空间模型并判能控能观　〔第7题〕","type":"block","children":[{"label":"由结构图选状态变量写状态方程与输出方程，再构造能控性与能观性矩阵，用秩判据判断","type":"idea"},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"在积分器输出处取状态变量","type":"k1"},{"label":"按各比较点与增益关系写状态方程与输出方程","type":"k1"},{"label":"状态维数等于结构图中积分器个数","type":"k2"},{"label":"结构图未读图，回路与增益需回原卷核对图","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"由系统结构图选取状态变量并写状态空间模型","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由B、AB、A平方B构造能控性矩阵","type":"k1"},{"label":"由C、CA、CA平方构造能观性矩阵","type":"k1"},{"label":"单入单出时两矩阵均为方阵，看行列式是否为零","type":"k2"},{"label":"能控性与能观性判据的矩阵构造容易互换","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"构造能控性与能观性矩阵并用秩判据判断","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]}]}]}},{"no":"8","tree":{"label":"厦门大学 844","type":"root","sub":"2021 · 自动控制理论（含现控）","children":[{"label":"难度：中等偏难　特点：9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多　重点：剪切频率与相角、幅值裕度、串联超前校正装置设计、测速反馈校正与速度输入稳态误差、状态空间表达式与传递函数矩阵互求、机械与电路网络的传递函数、能控性与能观性秩判据、液位过程的PID与串级控制方案","type":"warn"},{"label":"八、由结构图求开环传函与频域指标及阶跃响应　〔第8题〕","type":"block","children":[{"label":"先由结构图等效化简求开环传函，再求增益穿越频率与相角裕度，最后写闭环传函求单位阶跃响应","type":"idea"},{"label":"多回路系统的逐层化简","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先化内环再加外环","type":"k1"},{"label":"把前向通路与反馈通路写成标准形式","type":"k1"},{"label":"开环传函分母含s的多次幂，说明型别较高","type":"k2"},{"label":"结构图未读图，比较点与引出点位置需回原卷核对图","type":"k3"}]},{"label":"从最内层回路开始，逐层向外化简","type":"yd"},{"label":"每个内环先化成一个等效环节，再参与外层的串并联","type":"yd"},{"label":"化简顺序错误会导致式子繁琐但仍可得到正确结果","type":"yd"},{"label":"标出内环并求其闭环传递函数","type":"bz"},{"label":"把内环替换为等效环节","type":"bz"},{"label":"对新的结构图重复上述步骤，直到单回路","type":"bz"},{"label":"最后求整个系统的闭环传递函数","type":"bz"},{"label":"由多回路结构图逐层化简求开环传递函数","type":"kf","own":true},{"label":"三环及以上系统求闭环传递函数","type":"kf","own":false},{"label":"含局部反馈的系统化简","type":"kf","own":false},{"label":"化简内环时把外环的信号当成常数处理","type":"er","own":false}]},{"label":"稳定裕度","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"令幅值等于1解增益穿越频率","type":"k1"},{"label":"代入相频表达式求相角裕度","type":"k1"},{"label":"开环含二阶环节，相角要按频率分段讨论","type":"k2"},{"label":"分子含二阶环节时相角表达式分段，容易写错","type":"k3"}]},{"label":"相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)","type":"yd"},{"label":"幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝","type":"yd"},{"label":"γ>0 且 Kg>1 时闭环稳定（最小相位系统）","type":"yd"},{"label":"γ 主要影响超调，ωc 主要影响响应速度","type":"yd"},{"label":"由幅频特性求 |G|=1 对应的穿越频率 ωc","type":"bz"},{"label":"由相频特性求 ∠G=-180° 对应的频率 ωg","type":"bz"},{"label":"分别代入公式求相角裕度与幅值裕度","type":"bz"},{"label":"由裕度符号判断稳定性","type":"bz"},{"label":"\\gamma=180^\\circ+\\angle G(j\\omega_c)","type":"fm","tex":"\\gamma=180^\\circ+\\angle G(j\\omega_c)"},{"label":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}","type":"fm","tex":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"},{"label":"求增益穿越频率与相角裕度","type":"kf","own":true},{"label":"求系统的相角裕度与幅值裕度","type":"kf","own":false},{"label":"由裕度要求反求开环增益","type":"kf","own":false},{"label":"分析增益变化对裕度的影响","type":"kf","own":false},{"label":"把 ωc 与 ωg 两个频率用反","type":"er","own":false},{"label":"幅值裕度取倒数未取，导致结论反了","type":"er","own":false},{"label":"非最小相位系统仍用同一判据","type":"er","own":false}]},{"label":"线性微分方程的时域求解与全响应","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"单位反馈下由开环传函写闭环传函","type":"k1"},{"label":"对闭环传函做拉氏反变换得时域响应","type":"k1"},{"label":"初状态全为零，所求为单位阶跃下的零状态响应","type":"k2"},{"label":"先检查闭环稳定性再做时域分析","type":"k3"}]},{"label":"全响应由零输入响应与零状态响应两部分叠加而成","type":"yd"},{"label":"零输入响应的形式由特征根决定，系数由初始条件定","type":"yd"},{"label":"零状态响应用卷积或拉氏变换法求，也可查典型输入的响应表","type":"yd"},{"label":"初值条件要区分零时刻前后的跳变，含输入导数项的方程会在零时刻产生跳变","type":"yd"},{"label":"写出微分方程并取拉氏变换，把初始条件作为等效输入移到等号右端","type":"bz"},{"label":"分别求零输入解与零状态解，再相加得全响应","type":"bz"},{"label":"用初始条件定常数，必要时用终值核对稳态值","type":"bz"},{"label":"检查求得的解在零时刻是否等于给定初值","type":"bz"},{"label":"y(t)=y_{zi}(t)+y_{zs}(t)","type":"fm","tex":"y(t)=y_{zi}(t)+y_{zs}(t)"},{"label":"\\left(s^{2}+a_1s+a_0\\right)Y(s)=b_1s+b_0+B\\left(s\\right)","type":"fm","tex":"\\left(s^{2}+a_1s+a_0\\right)Y(s)=b_1s+b_0+B\\left(s\\right)"},{"label":"由闭环传函求零初始条件下的单位阶跃响应","type":"kf","own":true},{"label":"由微分方程与初始条件求系统的全响应","type":"kf","own":false},{"label":"分别求零输入响应与零状态响应","type":"kf","own":false},{"label":"判断给定初值下响应是否单调或是否有极值","type":"kf","own":false},{"label":"只求零状态响应而漏掉由初值决定的自由响应","type":"er","own":false},{"label":"分子含输入导数时忽略零时刻的跳变，导致初值对不上","type":"er","own":false}]}]}]}},{"no":"9","tree":{"label":"厦门大学 844","type":"root","sub":"2021 · 自动控制理论（含现控）","children":[{"label":"难度：中等偏难　特点：9道大题覆盖经典与现代控制：稳定裕度与超前校正、测速反馈校正与稳态误差、状态空间与传函矩阵、机械与电路网络建模、能控能观、由结构图求频域指标、液位过程控制；全卷未标每题分值，作图题与设计题偏多　重点：剪切频率与相角、幅值裕度、串联超前校正装置设计、测速反馈校正与速度输入稳态误差、状态空间表达式与传递函数矩阵互求、机械与电路网络的传递函数、能控性与能观性秩判据、液位过程的PID与串级控制方案","type":"warn"},{"label":"九、液位过程的动态特性与控制方案设计　〔第9题〕","type":"block","children":[{"label":"由流量平衡求初始液位与排水微分方程，低精度用单回路PID，高精度用带压力副回路的串级方案","type":"idea"},{"label":"被控对象的动态特性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"稳态时流入等于流出，先求初始液位","type":"k1"},{"label":"关阀后按流量公式列液位微分方程","type":"k1"},{"label":"流量与液位平方根成正比，对象为非线性","type":"k2"},{"label":"题面流量用根号H、答案段却用H，需回原卷核对","type":"k3"}]},{"label":"用放大系数 K、时间常数 T、纯滞后 τ 三个参数描述对象","type":"yd"},{"label":"自衡对象受扰动后能自行重新平衡，非自衡对象不能","type":"yd"},{"label":"多容对象由多个一阶环节串联而成，容量滞后大","type":"yd"},{"label":"纯滞后只使响应推迟，不改变最终稳态值","type":"yd"},{"label":"由阶跃响应曲线读出放大系数、时间常数与纯滞后时间","type":"bz"},{"label":"判断对象是否自衡、是否多容","type":"bz"},{"label":"写出对象的传递函数","type":"bz"},{"label":"用终值定理求稳态值","type":"bz"},{"label":"W_0(s)=\\frac{K}{Ts+1}e^{-\\tau s}","type":"fm","tex":"W_0(s)=\\frac{K}{Ts+1}e^{-\\tau s}"},{"label":"K=\\frac{\\Delta y}{\\Delta x}","type":"fm","tex":"K=\\frac{\\Delta y}{\\Delta x}"},{"label":"由流量平衡方程求液位被控对象的动态特性","type":"kf","own":true},{"label":"由响应曲线写出对象传递函数","type":"kf","own":false},{"label":"求阶跃输入下的稳态值并说明与哪些因素有关","type":"kf","own":false},{"label":"判断对象是否具有纯滞后","type":"kf","own":false},{"label":"把纯滞后当成时间常数一起处理","type":"er","own":false},{"label":"放大系数的量纲与单位漏写","type":"er","own":false}]},{"label":"线性微分方程的时域求解与全响应","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把液位微分方程分离变量后积分","type":"k1"},{"label":"把初始液位与终了液位代入定时间","type":"k1"},{"label":"液位随时间单调下降","type":"k2"},{"label":"按题面根号H列方程，不要照抄答案段的线性式","type":"k3"}]},{"label":"全响应由零输入响应与零状态响应两部分叠加而成","type":"yd"},{"label":"零输入响应的形式由特征根决定，系数由初始条件定","type":"yd"},{"label":"零状态响应用卷积或拉氏变换法求，也可查典型输入的响应表","type":"yd"},{"label":"初值条件要区分零时刻前后的跳变，含输入导数项的方程会在零时刻产生跳变","type":"yd"},{"label":"写出微分方程并取拉氏变换，把初始条件作为等效输入移到等号右端","type":"bz"},{"label":"分别求零输入解与零状态解，再相加得全响应","type":"bz"},{"label":"用初始条件定常数，必要时用终值核对稳态值","type":"bz"},{"label":"检查求得的解在零时刻是否等于给定初值","type":"bz"},{"label":"y(t)=y_{zi}(t)+y_{zs}(t)","type":"fm","tex":"y(t)=y_{zi}(t)+y_{zs}(t)"},{"label":"\\left(s^{2}+a_1s+a_0\\right)Y(s)=b_1s+b_0+B\\left(s\\right)","type":"fm","tex":"\\left(s^{2}+a_1s+a_0\\right)Y(s)=b_1s+b_0+B\\left(s\\right)"},{"label":"解排水过程微分方程求液位降到一半所需时间","type":"kf","own":true},{"label":"由微分方程与初始条件求系统的全响应","type":"kf","own":false},{"label":"分别求零输入响应与零状态响应","type":"kf","own":false},{"label":"判断给定初值下响应是否单调或是否有极值","type":"kf","own":false},{"label":"只求零状态响应而漏掉由初值决定的自由响应","type":"er","own":false},{"label":"分子含输入导数时忽略零时刻的跳变，导致初值对不上","type":"er","own":false}]},{"label":"PID 控制器与参数整定","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"按比例、积分、微分三项写PID表达式","type":"k1"},{"label":"说明控制量为液体流量","type":"k1"},{"label":"被控量为液位高度，执行器为调节阀","type":"k2"},{"label":"PID各系数含义与符号需与题面一致","type":"k3"}]},{"label":"比例项提高快速性但存在稳态误差","type":"yd"},{"label":"积分项消除稳态误差但降低稳定性、增大超调","type":"yd"},{"label":"微分项提供超前相位改善动态性能但对噪声敏感","type":"yd"},{"label":"PD 相当于超前校正，PI 相当于滞后校正","type":"yd"},{"label":"按误差类型选择需要引入的环节","type":"bz"},{"label":"先调比例再调积分最后调微分","type":"bz"},{"label":"用稳定裕度或性能指标校验并微调","type":"bz"},{"label":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds","type":"fm","tex":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds"},{"label":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)","type":"fm","tex":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)"},{"label":"写出液位控制系统的PID控制表达式","type":"kf","own":true},{"label":"设计 PID 控制器满足给定指标","type":"kf","own":false},{"label":"分析各参数变化对系统性能的影响","type":"kf","own":false},{"label":"说明微分项对噪声的影响","type":"kf","own":false},{"label":"把 PI 的相位影响说成超前","type":"er","own":false},{"label":"积分增益过大导致系统振荡甚至不稳定","type":"er","own":false}]},{"label":"单回路控制系统","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"选液位为被控量、流量为操纵量","type":"k1"},{"label":"画单回路控制系统原理图与方框图","type":"k1"},{"label":"单回路方案结构简单、成本低","type":"k2"},{"label":"只画方框图不画原理图会漏答","type":"k3"}]},{"label":"只有一个测量变送器、一个控制器、一个执行器的简单反馈系统","type":"yd"},{"label":"被控量选择要兼顾工艺要求与可测性","type":"yd"},{"label":"操纵量选择要保证对被控量有足够的灵敏度","type":"yd"},{"label":"一般能满足大多数常规工艺要求","type":"yd"},{"label":"确定被控量与操纵量","type":"bz"},{"label":"分析主要扰动及其作用点","type":"bz"},{"label":"画出单回路控制系统的方框图","type":"bz"},{"label":"说明控制过程","type":"bz"},{"label":"设计低精度液位单回路控制系统","type":"kf","own":true},{"label":"设计单回路控制系统","type":"kf","own":false},{"label":"说明为什么选这个量作被控量或操纵量","type":"kf","own":false},{"label":"分析单回路方案的局限性","type":"kf","own":false},{"label":"选了一个对被控量灵敏度很低的操纵量","type":"er","own":false},{"label":"忽略主要扰动作用点对操纵量选择的影响","type":"er","own":false}]},{"label":"串级控制系统","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"以压力为副变量、液位为主变量构成串级","type":"k1"},{"label":"副回路先消除管道内压力扰动","type":"k1"},{"label":"串级方案对副环扰动抑制更快、精度更高","type":"k2"},{"label":"主副变量不能选反，副变量要对扰动灵敏","type":"k3"}]},{"label":"主回路完成主要指标，副回路快速抑制进入副回路的扰动","type":"yd"},{"label":"副变量应包含尽可能多的剧烈扰动，且对主变量影响要大","type":"yd"},{"label":"副回路要响应快于主回路，一般取主、副时间常数比大于 3","type":"yd"},{"label":"可等效为改善了对象特性，提高了抗扰能力与响应速度","type":"yd"},{"label":"判断扰动是否需要副回路专门抑制","type":"bz"},{"label":"确定主变量与副变量","type":"bz"},{"label":"说明主、副调节器的型式（一般主回路 PI、副回路 P 或 PI）","type":"bz"},{"label":"画方框图并说明主副回路的信号关系","type":"bz"},{"label":"设计高精度液位串级控制系统","type":"kf","own":true},{"label":"设计串级控制系统并确定主、副变量","type":"kf","own":false},{"label":"说明副回路的作用与适用场合","type":"kf","own":false},{"label":"分析串级相比单回路的优越性","type":"kf","own":false},{"label":"把副变量选成对主变量影响很小的量","type":"er","own":false},{"label":"主副回路的时间常数不匹配，出现共振","type":"er","own":false}]}]}]}}]}</script>
+<script src="../../../../../assets/d3.min.js"></script>
+<script src="../../../../../assets/kg.js"></script>
+</body></html>

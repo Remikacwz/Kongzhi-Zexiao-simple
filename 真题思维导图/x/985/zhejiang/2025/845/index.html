@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>浙江大学 845 自动控制理论（含现控） 2025 年真题思维导图</title>
+<meta name="description" content="浙江大学 2025 年 845 自动控制理论（含现控） 考研真题思维导图：共 10 个大题，逐题思路、考点与易错整理。第1题（一、正弦信号的采样与 z 变换）；第2题（二、参数稳定条件）；第3题（三、由状态空间求传函并定等幅振荡增益）；第4题（四、采样系统的输出序列与终值）；第5题（五、由响应反求模型并离散化）；第6题（六、离散系统极点配置控制器设计）">
+<link rel="canonical" href="http://127.0.0.1:8768/真题思维导图/x/985/zhejiang/2025/845/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浙江大学 845 自动控制理论（含现控） 2025 年真题思维导图">
+<meta property="og:description" content="浙江大学 2025 年 845 自动控制理论（含现控） 考研真题思维导图：共 10 个大题，逐题思路、考点与易错整理。第1题（一、正弦信号的采样与 z 变换）；第2题（二、参数稳定条件）；第3题（三、由状态空间求传函并定等幅振荡增益）；第4题（四、采样系统的输出序列与终值）；第5题（五、由响应反求模型并离散化）；第6题（六、离散系统极点配置控制器设计）">
+<meta name="theme-color" content="#1f4e79">
+<link rel="stylesheet" href="../../../../../assets/kg.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "浙江大学 845 自动控制理论（含现控） 2025 年真题思维导图", "inLanguage": "zh-CN", "about": ["z 变换与 z 反变换", "劳斯判据", "参数稳定域的确定", "数字控制器与最少拍设计", "李雅普诺夫稳定性分析", "状态反馈与极点配置", "状态空间与传递函数的关系", "状态空间表达式的建立", "状态观测器设计", "状态转移矩阵"], "educationalLevel": "985 院校", "url": "http://127.0.0.1:8768/真题思维导图/x/985/zhejiang/2025/845/"}</script>
+</head>
+<body class="page-set">
+<header class="site-head"><div class="inner"><a class="parent-home" href="../../../../../../index.html"><span class="arr">←</span><span class="ptxt">择校首页</span></a><a class="brand" href="../../../../../"><span class="full">控制考研真题思维导图</span><span class="short">真题思维导图</span></a><button class="sbtn" id="kg-search-btn" type="button" aria-label="搜索"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button><nav class="crumbs"><a href="../../../../../x/985/">985 院校</a><span class="sep">›</span><a href="../../../../../x/985/zhejiang/">浙江大学</a><span class="sep">›</span><span>2025 年</span></nav><nav class="levelnav" aria-label="层级导航"><a class="lv home" href="../../../../../">首页</a><a class="lv" href="../../../../../x/985/zhejiang/">← 浙江大学</a><a class="lv" href="#q1">第 1 题 →</a></nav><input class="head-inp" id="site-q" type="search" placeholder="搜学校 / 代码 / 年份" aria-label="搜索"></div></header>
+<main class="wrap">
+<div class="titlebar"><img class="hlogo" src="../../../../../assets/logo/zhejiang.jpg" alt="浙江大学校徽" width="52" height="52"><h1>浙江大学 845 自动控制理论（含现控） 2025 年真题思维导图</h1><div class="actions"><button class="btn" data-mode="outline">大纲</button><button class="btn on" data-mode="map">导图</button><button class="btn" id="btn-full">全屏</button></div></div>
+<div class="tagrow"><span class="badge t985">985 院校</span><span class="badge">共 10 题</span></div>
+<p class="sub muted tiny" style="margin:8px 0 0">难度：难　10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上</p>
+<div class="qtabs" id="qtabs"><button class="qt on" data-q="all">整卷</button><button class="qt" data-q="1">1</button><button class="qt" data-q="2">2</button><button class="qt" data-q="3">3</button><button class="qt" data-q="4">4</button><button class="qt" data-q="5">5</button><button class="qt" data-q="6">6</button><button class="qt" data-q="7">7</button><button class="qt" data-q="8">8</button><button class="qt" data-q="9">9</button><button class="qt" data-q="10">10</button></div>
+<div class="cols"><div class="mainpane">
+<div class="mapwrap" id="mapwrap">
+<div class="maptools">
+<button class="btn on" data-depth="1">板块</button>
+<button class="btn" data-depth="2">考点</button>
+<button class="btn" data-depth="99">全部</button>
+<button class="btn" data-zoom="in" title="放大">＋</button>
+<button class="btn" data-zoom="out" title="缩小">－</button>
+<button class="btn" data-fit="1">适应</button>
+<button class="btn" id="btn-exitfs" hidden>退出全屏</button>
+<input id="map-q" type="search" placeholder="图内搜索">
+</div>
+<svg id="svg"><g id="g"></g></svg>
+<div class="map-foot">点击节点展开/折叠　·　滚轮缩放　·　拖拽平移</div>
+</div>
+<section class="content" id="content">
+<article class="qcard" id="q1" data-q="1">
+<h2><span class="no">1</span><span>一、正弦信号的采样与 z 变换</span><a class="anchorlink" data-q="1" href="#q1" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">求正弦信号的拉氏变换、采样序列、z 变换以及对应的采样函数表达式</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ds_01/">采样过程与香农采样定理</a>
+<span class="tiny muted">离散控制系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>写出给定采样周期下的采样序列与采样函数表达式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把连续时间代入采样时刻的整数倍，得到以采样序号为自变量的序列</li>
+<li><b>关键一步：</b>采样函数是序列与冲激串的乘积，写出来就是把每个采样值乘以对应时刻的冲激</li>
+<li><b>关键一步：</b>采样周期的取值决定序列的书写形式，本题代入后可直接写出含常数角度的正弦序列</li>
+<li><b>中间结果：</b>采样周期与信号的角频率相乘得到序列里每个样点之间的相位增量</li>
+<li><b>卡点：</b>把采样序号与采样时刻混用；或采样函数里漏掉冲激串</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>采样把连续信号变成脉冲序列，采样周期 T 是关键参数</li><li>采样定理要求采样频率不低于信号最高频率的两倍</li><li>采样频率不足会产生频率混叠</li><li>零阶保持器把离散信号恢复为连续信号，并引入半个采样周期的延迟</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定信号最高频率或系统带宽</li><li>按采样定理确定采样频率与采样周期上限</li><li>必要时加入前置滤波器抑制混叠</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>写出给定采样周期下的采样序列与采样函数表达式</li><li>由信号最高频率确定采样周期</li><li>判断给定采样频率是否满足采样定理</li><li>说明零阶保持器的频率特性</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把采样定理写成采样周期不大于信号周期即可</li><li>忽略零阶保持器带来的相位滞后</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\omega_s=\frac{2\pi}{T}\geq 2\omega_{max}"></div><div class="formula" data-tex="G_h(s)=\frac{1-e^{-Ts}}{s}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ds_02/">z 变换与 z 反变换</a>
+<span class="tiny muted">离散控制系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求采样序列的 z 变换</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先写出采样序列的通项，再套用标准正弦与余弦序列的 z 变换公式</li>
+<li><b>关键一步：</b>把指数形式拆成共轭两项相加，可以避免记错公式的分子形式</li>
+<li><b>关键一步：</b>结果的分母是二次的，其根就是 z 平面上的极点，可用极点位置核对收敛域</li>
+<li><b>中间结果：</b>采样周期代入后指数项变成常数，z 变换的分母系数就由这些常数确定</li>
+<li><b>卡点：</b>把连续信号的拉氏变换当成 z 变换；或忘记采样周期与角频率相乘这一步</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>z 变换是离散信号的拉氏变换，令 z=e^{Ts} 得到</li><li>常用函数的 z 变换要熟记</li><li>z 反变换可用部分分式法、幂级数法或留数法</li><li>左半 s 平面映射到 z 平面单位圆内</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>将连续传递函数展开为部分分式</li><li>逐项查表做 z 变换</li><li>需要时做 z 反变换求时间序列</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求采样序列的 z 变换</li><li>求给定函数的 z 变换</li><li>求 z 反变换得到采样序列</li><li>说明 s 平面与 z 平面的映射关系</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 z 变换结果中的 e^{-aT} 写成 e^{-a}</li><li>部分分式分解时漏项导致反变换出错</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="z=e^{Ts}"></div><div class="formula" data-tex="Z\left[\frac{1}{s+a}\right]=\frac{z}{z-e^{-aT}}"></div><div class="formula" data-tex="Z\left[\frac{1}{s}\right]=\frac{z}{z-1}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q2" data-q="2">
+<h2><span class="no">2</span><span>二、参数稳定条件</span><a class="anchorlink" data-q="2" href="#q2" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">含两个增益参数的系统求闭环特征方程，用劳斯或赫尔维茨判据给出稳定条件</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/st_02/">参数稳定域的确定</a>
+<span class="tiny muted">稳定性分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求使闭环系统稳定的参数组合条件</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先按结构图写出闭环特征方程，含参数的项要单独整理出来</li>
+<li><b>关键一步：</b>用劳斯判据令首列各元素大于零，得到一组关于参数的不等式</li>
+<li><b>关键一步：</b>题目问的是两个增益乘积满足的条件，把不等式组化成乘积形式即可</li>
+<li><b>中间结果：</b>本题开环含一个右半平面极点，特征方程的次数与参数出现的位置要写清楚，否则不等式方向容易反</li>
+<li><b>卡点：</b>只列部分首列不等式；或把两个增益的乘积当成单个参数直接判稳</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>稳定条件是一组关于参数的不等式</li><li>区间端点通常对应临界稳定，即根落在虚轴上</li><li>稳定域是不等式组的交集</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由劳斯表首列各元素大于零列出不等式组</li><li>逐个解不等式并取交集</li><li>检查端点是否为临界稳定</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求使闭环系统稳定的参数组合条件</li><li>求使系统稳定的参数上界或下界</li><li>判断某参数取值是否满足稳定要求</li><li>比较不同参数对稳定域大小的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只列出部分首列元素的不等式，漏掉某个约束</li><li>取交集时把端点是否包含搞错</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="b_1&gt;0,\quad c_1&gt;0,\quad \cdots"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q3" data-q="3">
+<h2><span class="no">3</span><span>三、由状态空间求传函并定等幅振荡增益</span><a class="anchorlink" data-q="3" href="#q3" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">四阶状态空间先求传递函数，再令特征多项式含纯虚根求出使零输入响应等幅振荡的增益与频率</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_08/">状态空间与传递函数的关系</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由状态空间表达式求传递函数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>本题系统矩阵是标准型形式，特征多项式可直接由最后一列系数写出</li>
+<li><b>关键一步：</b>输出矩阵只取出最后一个状态，输入矩阵各分量都要参与，逐式代入消元即可得到传函</li>
+<li><b>关键一步：</b>整理出的传函分母就是特征多项式，分子由输入矩阵各分量与结构共同决定</li>
+<li><b>中间结果：</b>消元时从最后一个状态往前代，每一步只用一个方程，可以避免代数出错</li>
+<li><b>卡点：</b>把特征多项式最后一列系数的符号写反；或只取输入矩阵的一个分量而漏掉其余</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>由状态空间求传递函数为 C(sI-A)^{-1}B+D</li><li>传递函数只反映能控能观子系统，含零极点对消</li><li>系统的特征值等于传递函数的极点</li><li>同一传递函数对应的状态空间实现不唯一</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>计算 (sI-A)^{-1}</li><li>按公式求 G(s)=C(sI-A)^{-1}B+D</li><li>与已知传递函数比对，判断是否发生零极点对消</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由状态空间表达式求传递函数</li><li>由状态空间表达式求传递函数</li><li>判断状态空间实现是否存在零极点对消</li><li>比较不同实现对应的传递函数是否相同</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>漏掉直接传递项 D</li><li>把特征值个数与传递函数极点数直接等同而不检查对消</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(s)=C(sI-A)^{-1}B+D"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/st_01/">劳斯判据</a>
+<span class="tiny muted">稳定性分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求使系统零输入响应等幅振荡的参数值与振荡频率</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>零输入响应等幅振荡对应特征方程有纯虚根，也就是特征多项式含一个只带常数项与二次项的因式</li>
+<li><b>关键一步：</b>把特征多项式按这个二次因式与另一个二次因式相乘展开，令各次项系数与原多项式逐项相等</li>
+<li><b>关键一步：</b>由一次项系数与三次项系数先定出振荡频率，再由常数项定出待求增益</li>
+<li><b>中间结果：</b>展开后一次项给出振荡角频率的平方，常数项给出增益与频率平方的乘积关系</li>
+<li><b>卡点：</b>只令特征多项式某项为零而不检验其余项是否配得上；或求出频率后忘记它对应的是角频率还是频率</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>特征方程各项系数全为正只是必要条件，不充分</li><li>劳斯表首列元素全部同号 ⇔ 系统稳定</li><li>首列符号变化次数等于右半平面闭环极点数</li><li>首列出现 0 时需用 ε 法或乘辅助多项式处理</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出闭环特征方程并整理成降幂排列</li><li>若某次幂系数缺项，该项补零</li><li>列劳斯表：前两行为系数，之后各行按交叉相减</li><li>检查首列符号：全同号则稳定，有变号则数出个数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求使系统零输入响应等幅振荡的参数值与振荡频率</li><li>判断给定系统的稳定性</li><li>指出右半平面闭环极点的个数</li><li>求使系统稳定的参数范围</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>系数有缺项时不补零，直接套用判据</li><li>首列出现 0 后仍按常规继续算，未用 ε 法</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="1+G(s)H(s)=0"></div><div class="formula" data-tex="a_ns^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0=0"></div><div class="formula" data-tex="b_1=\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q4" data-q="4">
+<h2><span class="no">4</span><span>四、采样系统的输出序列与终值</span><a class="anchorlink" data-q="4" href="#q4" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">先求输出 z 变换，再在给定各环节传函与单位阶跃输入下算前几个采样点的值并判断稳定性求终值</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ds_03/">脉冲传递函数</a>
+<span class="tiny muted">离散控制系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求采样系统的输出 z 变换表达式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>按采样开关位置决定哪些环节先相乘再取 z 变换，中间没有采样开关的连续环节必须先合并</li>
+<li><b>关键一步：</b>零阶保持器要与后续连续环节合并后再做 z 变换，不能单独变换后相乘</li>
+<li><b>关键一步：</b>输出 z 变换等于闭环脉冲传函乘输入的 z 变换</li>
+<li><b>中间结果：</b>把各环节代入后整理成 z 的有理分式，便于逐项做长除法求序列</li>
+<li><b>卡点：</b>把保持器当成普通环节单独变换；或把开环脉冲传函当成了闭环</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>脉冲传递函数是零初始条件下输出与输入 z 变换之比</li><li>连续环节串联时若中间没有采样开关，不能直接相乘</li><li>闭环脉冲传递函数的写法取决于采样开关的位置</li><li>G(z)=Z[G(s)] 中的保持器要一并计入</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定采样开关位置并画出离散化结构图</li><li>对包含保持器的连续部分整体做 z 变换</li><li>按串并联或反馈等效写出脉冲传递函数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求采样系统的输出 z 变换表达式</li><li>求开环或闭环脉冲传递函数</li><li>比较不同采样开关位置对结果的影响</li><li>由连续传递函数求脉冲传递函数</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把两个无采样开关隔开的连续环节直接相乘</li><li>忘记把零阶保持器计入 G(z)</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(z)=\frac{C(z)}{R(z)}=Z[G_h(s)G_0(s)]"></div><div class="formula" data-tex="\Phi(z)=\frac{G(z)}{1+G(z)H(z)}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ds_06/">离散系统的动态性能与极点分布</a>
+<span class="tiny muted">离散控制系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由输出 z 变换求各采样时刻的输出值</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>求前几个采样点的值可用长除法</li>
+<li><b>关键一步：</b>也可以用部分分式展开后逐项做 z 反变换，再代入采样序号</li>
+<li><b>关键一步：</b>初值可用初值定理核对，本题的第一个采样点应当由结构直接看出</li>
+<li><b>关键一步：</b>把输出 z 变换按 z 的负幂次展开，商的各项系数就是输出序列</li>
+<li><b>中间结果：</b>长除法每除一次得到一个采样值，除到题要求的序号即可停止</li>
+<li><b>卡点：</b>把 z 的负幂次与正幂次展开方向弄反；或忘记把指数项代入数值</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>闭环极点在 z 平面上的位置决定响应形式</li><li>极点越靠近原点衰减越快，越靠近单位圆振荡越强</li><li>极点的幅角决定振荡频率，幅值决定衰减速度</li><li>采样周期增大会使动态性能变差甚至不稳定</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>求闭环脉冲传递函数的极点</li><li>按极点在单位圆内的位置判断响应形式</li><li>由极点的模与幅角估算衰减与振荡频率</li><li>与连续系统指标对应关系相互校验</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由输出 z 变换求各采样时刻的输出值</li><li>由闭环极点分布判断动态性能</li><li>与连续域指标互相换算</li><li>说明采样周期对动态性能的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 z 平面极点当作 s 平面极点直接读阻尼比</li><li>忽略单位圆上极点对应等幅振荡</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="z_i=|z_i|e^{j\angle z_i},\quad \sigma=\frac{\ln|z_i|}{T}"></div><div class="formula" data-tex="\omega=\frac{\angle z_i}{T}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ds_04/">离散系统稳定性分析</a>
+<span class="tiny muted">离散控制系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>判断采样系统稳定性并求单位阶跃下的终值</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先看闭环脉冲传函的极点是否全部落在单位圆内，只有稳定才能用终值定理</li>
+<li><b>关键一步：</b>终值定理的形式是 z 趋于一时一减 z 的负一次方乘以输出的 z 变换，再乘上输入的因子</li>
+<li><b>关键一步：</b>若闭环含 z 等于一的极点，阶跃输入下终值应趋于一个有限值，可用这一点核对结果</li>
+<li><b>中间结果：</b>本题保持器与积分环节串联，开环在 z 等于一处有极点，所以阶跃输入下系统无稳态误差</li>
+<li><b>卡点：</b>未判稳就代终值定理；或把终值定理的因子与输入的 z 变换重复乘了一次</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>闭环脉冲传函的极点全部位于 z 平面单位圆内则稳定</li><li>可直接求解特征根，也可用朱里判据或 w 变换后套劳斯判据</li><li>w 变换把单位圆内映射到左半平面</li><li>采样周期增大会使稳定性变差</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出闭环脉冲传递函数的特征方程</li><li>选择方法：求根、朱里判据或 w 变换后用劳斯判据</li><li>对含参数的系统求使稳定成立的参数范围</li><li>必要时分析采样周期对稳定域的影响</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>判断采样系统稳定性并求单位阶跃下的终值</li><li>判断离散系统是否稳定</li><li>求使系统稳定的采样周期或增益范围</li><li>用 w 变换后套用劳斯判据</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把稳定条件写成实部小于零而不是模小于 1</li><li>w 变换公式记错导致映射关系颠倒</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="|z_i|&lt;1"></div><div class="formula" data-tex="z=\frac{1+w}{1-w}\quad (w\ \text{变换})"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q5" data-q="5">
+<h2><span class="no">5</span><span>五、由响应反求模型并离散化</span><a class="anchorlink" data-q="5" href="#q5" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由零输入响应与零状态响应反求系统矩阵与输入矩阵，再按给定采样周期和零阶保持器求离散化状态方程</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_03/">状态转移矩阵</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由零输入响应与零状态响应反求系统矩阵与输入矩阵</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>零输入响应里出现的指数项直接给出状态转移矩阵的形式，把初值代进去可验证</li>
+<li><b>关键一步：</b>零状态阶跃响应是状态转移矩阵与输入矩阵的卷积，对时间求导可把输入矩阵分离出来</li>
+<li><b>关键一步：</b>两组给出的初值响应互相印证，可用其中一组检验求出的矩阵是否正确</li>
+<li><b>中间结果：</b>本题零输入响应是指数函数乘初值，说明系统矩阵只有一个特征值，状态转移矩阵是该指数乘常矩阵</li>
+<li><b>卡点：</b>把零输入响应里的初值当成系数而不是状态；或求输入矩阵时忘记对时间求导</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态转移矩阵 e^{At} 描述零输入下状态随时间的演化</li><li>可从 (sI-A)^{-1} 求拉氏反变换得到</li><li>满足 e^{A\cdot0}=I 且可逆</li><li>含输入时用卷积积分写出全响应</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>计算 (sI-A)^{-1}</li><li>求拉氏反变换得到 e^{At}</li><li>代入全响应公式求状态与输出</li><li>用初值条件校验结果</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由零输入响应与零状态响应反求系统矩阵与输入矩阵</li><li>求状态转移矩阵</li><li>求给定初始条件下的状态与输出响应</li><li>用性质验证转移矩阵是否正确</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>矩阵求逆时忘记检查行列式是否为零</li><li>卷积积分中变量代换写错</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="e^{At}=L^{-1}\left[(sI-A)^{-1}\right]"></div><div class="formula" data-tex="x(t)=e^{At}x(0)+\int_0^t e^{A(t-\tau)}Bu(\tau)\,d\tau"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ds_08/">连续系统的离散化</a>
+<span class="tiny muted">离散控制系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>按给定采样周期和零阶保持器求连续系统的离散化状态方程</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把采样周期代入状态转移矩阵即得离散状态矩阵</li>
+<li><b>关键一步：</b>离散输入矩阵是状态转移矩阵与输入矩阵乘积在采样周期上的积分，积分要逐项做</li>
+<li><b>关键一步：</b>求出的离散方程再用递推公式算一两个采样点，与连续解在采样时刻的值比对即可确认</li>
+<li><b>中间结果：</b>采样周期取自然对数的整数倍时指数项会变成整数或分数，离散矩阵元素往往很简洁</li>
+<li><b>卡点：</b>把连续状态方程直接照抄成差分方程；或积分上限写错，忘记零阶保持器带来的积分形式</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>离散化状态方程由状态转移矩阵在采样周期处的取值构成</li><li>输入矩阵是状态转移矩阵与输入矩阵乘积在采样周期上的积分</li><li>带零阶保持器时即按上述积分式离散化，输出矩阵不变</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>求连续系统的状态转移矩阵</li><li>把采样周期代入得到离散状态矩阵</li><li>对输入矩阵做积分得到离散输入矩阵</li><li>写出差分形式的离散状态方程并按递推求采样点上的响应</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>按给定采样周期和零阶保持器求连续系统的离散化状态方程</li><li>求连续系统在给定采样周期下的离散化状态方程</li><li>由给出的状态响应反求系统矩阵再离散化</li><li>计算采样点上的状态与输出序列</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把采样周期直接当成时间常数代进连续传函</li><li>积分上限写成采样周期以外的量，或忘记乘输入矩阵</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="x((k+1)T)=Gx(kT)+Hu(kT)"></div><div class="formula" data-tex="G=e^{AT},\quad H=\int_{0}^{T}e^{A	au}B\,d	au"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q6" data-q="6">
+<h2><span class="no">6</span><span>六、离散系统极点配置控制器设计</span><a class="anchorlink" data-q="6" href="#q6" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由受控对象的差分方程求脉冲传函，设计数字控制器使闭环极点落在指定位置</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ds_07/">数字控制器与最少拍设计</a>
+<span class="tiny muted">离散控制系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>设计数字控制器使离散闭环极点位于指定位置</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先把差分方程取 z 变换，在零初始条件下写脉冲传函</li>
+<li><b>关键一步：</b>闭环脉冲传函由前向通道与反馈通道的关系写出，等于控制器乘对象再除以一加两者乘积</li>
+<li><b>关键一步：</b>把期望极点对应的特征多项式写出，与实际闭环特征多项式逐项比较，解出控制器系数</li>
+<li><b>关键一步：</b>分子分母都要化成 z 的负幂次形式</li>
+<li><b>中间结果：</b>本题期望极点为共轭复数，期望特征多项式是二次的，控制器也应按一阶或二阶形式设待定系数</li>
+<li><b>卡点：</b>差分方程取 z 变换时初值处理错误；或控制器设成高阶形式导致待定系数多于方程数</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>最少拍系统指在典型输入下经过有限拍达到无稳态误差</li><li>设计需要满足可实现性与稳定性约束</li><li>最少拍系统的闭环脉冲传递函数由输入类型确定</li><li>最少拍设计通常导致很大的控制量，需加限制</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定输入类型及对应的误差传函形式</li><li>按无稳态误差要求构造闭环脉冲传递函数</li><li>由 D(z)=Φ(z)/[G(z)(1-Φ(z))] 求数字控制器</li><li>检验可实现性、稳定性与控制量大小</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>设计数字控制器使离散闭环极点位于指定位置</li><li>设计最少拍数字控制器</li><li>比较不同输入类型下的最少拍数</li><li>分析最少拍系统存在的问题</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>忽略 D(z) 必须是物理可实现的因果系统</li><li>闭环传函构造时未满足稳定性约束条件</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="D(z)=\frac{\Phi(z)}{G(z)(1-\Phi(z))}"></div><div class="formula" data-tex="\Phi_e(z)=1-\Phi(z)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q7" data-q="7">
+<h2><span class="no">7</span><span>七、对偶系统的能控能观与传函证明</span><a class="anchorlink" data-q="7" href="#q7" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">两系统互为对偶，证明能控性与能观性互换，并讨论传函是否相同</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_04/">能控性与能观性</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>证明互为对偶的两个系统其能控性与能观性互换</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>两个系统的矩阵满足系统矩阵互为转置、输入矩阵与输出矩阵互为转置的关系</li>
+<li><b>关键一步：</b>写出一方的能控性矩阵，取转置后恰好等于另一方的能观性矩阵，秩相等即得结论</li>
+<li><b>关键一步：</b>矩阵秩在转置下不变，这一步是证明的关键，要明确写出来</li>
+<li><b>中间结果：</b>把能控性矩阵的转置写成各项转置相乘的形式，就能与对偶系统的能观性矩阵逐项对上</li>
+<li><b>卡点：</b>只说矩阵形似而不写出转置关系；或把转置顺序写错导致乘积次序不对</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>能控性指能否用输入在有限时间内把任意初始状态驱动到原点</li><li>能观性指能否由输出在有限时间内确定初始状态</li><li>用能控性矩阵与能观性矩阵的秩判断</li><li>能控性与能观性经非奇异线性变换保持不变</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>构造能控性矩阵并求秩</li><li>构造能观性矩阵并求秩</li><li>与系统阶数 n 比较得出结论</li><li>不可控或不可观时进一步做结构分解</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>证明互为对偶的两个系统其能控性与能观性互换</li><li>判断系统的能控性与能观性</li><li>求使系统能观的参数取值</li><li>对不可控系统进行结构分解</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只算到 A^{n-2}B 就下结论</li><li>把能控性判据与能观性判据的矩阵构造搞混</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}B&amp;AB&amp;\cdots&amp;A^{n-1}B\end{bmatrix}=n"></div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}C\\CA\\\vdots\\CA^{n-1}\end{bmatrix}=n"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_08/">状态空间与传递函数的关系</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>判断互为对偶的两个系统是否具有相同传递函数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>单输入单输出系统的传递函数是标量，转置后数值不变，这是判断的出发点</li>
+<li><b>关键一步：</b>把传递函数的矩阵表达式整体转置，注意转置后各矩阵的次序要反过来</li>
+<li><b>关键一步：</b>转置后若恰好变成另一个系统的传递函数表达式，则两者传函相同，否则不同</li>
+<li><b>中间结果：</b>即使传函相同，两个系统的内部状态维数与能控能观结构也可能不同</li>
+<li><b>卡点：</b>把标量转置与矩阵转置混为一谈；或转置时不改变乘积次序</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>由状态空间求传递函数为 C(sI-A)^{-1}B+D</li><li>传递函数只反映能控能观子系统，含零极点对消</li><li>系统的特征值等于传递函数的极点</li><li>同一传递函数对应的状态空间实现不唯一</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>计算 (sI-A)^{-1}</li><li>按公式求 G(s)=C(sI-A)^{-1}B+D</li><li>与已知传递函数比对，判断是否发生零极点对消</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>判断互为对偶的两个系统是否具有相同传递函数</li><li>由状态空间表达式求传递函数</li><li>判断状态空间实现是否存在零极点对消</li><li>比较不同实现对应的传递函数是否相同</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>漏掉直接传递项 D</li><li>把特征值个数与传递函数极点数直接等同而不检查对消</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(s)=C(sI-A)^{-1}B+D"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q8" data-q="8">
+<h2><span class="no">8</span><span>八、由传函形式反推矩阵参数</span><a class="anchorlink" data-q="8" href="#q8" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">对称系统矩阵配转置的输入输出向量，已知传函只剩一个极点，反求矩阵中的待定常数</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_08/">状态空间与传递函数的关系</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由给定的传递函数形式反求状态空间模型中的待定参数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>系统矩阵是对称阵且输入向量与输出向量互为转置时，传函可展开成按特征值分解的几个一阶项之和</li>
+<li><b>关键一步：</b>传函只剩一个极点，说明输入向量只能落在唯一特征方向上</li>
+<li><b>关键一步：</b>按特征向量的定义代入，逐个分量比较即可解出待定参数</li>
+<li><b>关键一步：</b>也就是输入向量是系统矩阵的特征向量</li>
+<li><b>中间结果：</b>输入向量的第三个分量为零</li>
+<li><b>中间结果：</b>再把第一个分量与第二个分量比较，还能顺带定出另一个参数与特征值，可用传函形式核对</li>
+<li><b>中间结果：</b>特征向量方程第三个分量只剩一个待求常数，可直接解出</li>
+<li><b>卡点：</b>直接按传函公式硬算三次行列式而不利用对称性；或把「传函只剩一个极点」误当成系统是一阶系统</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>由状态空间求传递函数为 C(sI-A)^{-1}B+D</li><li>传递函数只反映能控能观子系统，含零极点对消</li><li>系统的特征值等于传递函数的极点</li><li>同一传递函数对应的状态空间实现不唯一</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>计算 (sI-A)^{-1}</li><li>按公式求 G(s)=C(sI-A)^{-1}B+D</li><li>与已知传递函数比对，判断是否发生零极点对消</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由给定的传递函数形式反求状态空间模型中的待定参数</li><li>由状态空间表达式求传递函数</li><li>判断状态空间实现是否存在零极点对消</li><li>比较不同实现对应的传递函数是否相同</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>漏掉直接传递项 D</li><li>把特征值个数与传递函数极点数直接等同而不检查对消</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(s)=C(sI-A)^{-1}B+D"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q9" data-q="9">
+<h2><span class="no">9</span><span>九、观测器与状态反馈</span><a class="anchorlink" data-q="9" href="#q9" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">判断能否配置极点、设计降维观测器，再求带观测器的状态反馈闭环传函</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_05/">状态反馈与极点配置</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>判断能否通过状态反馈任意配置闭环极点并求出反馈矩阵</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>能否任意配置极点由系统是否完全能控决定，构造能控性矩阵求秩后与系统阶数比较</li>
+<li><b>关键一步：</b>能控时把期望极点展开成期望特征多项式，再与带反馈后的闭环特征多项式逐项比较求增益</li>
+<li><b>关键一步：</b>本题源文的输入向量三个分量都印成零，这种情形下系统矩阵的列组合无法张满状态空间，属于不能控</li>
+<li><b>中间结果：</b>输入向量为零向量时，状态方程与输入完全无关，任何状态反馈都改变不了特征多项式</li>
+<li><b>卡点：</b>源文输入向量为全零；若原卷第 3 个分量印的是非零值（常见为 1）</li>
+<li><b>卡点：</b>系统就变成能控、可配置极点，务必回原卷核对这一分量</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控</li><li>状态反馈不改变系统的零点</li><li>极点配置通过比较期望与实际的闭环特征多项式求解 K</li><li>状态反馈可能改变能观性</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>先验证系统能控</li><li>写出希望配置的极点并求期望特征多项式</li><li>求闭环系统特征多项式 det(sI-A+BK)</li><li>比较系数解出反馈增益阵 K</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>判断能否通过状态反馈任意配置闭环极点并求出反馈矩阵</li><li>设计状态反馈使闭环极点位于指定位置</li><li>判断给定极点是否可通过状态反馈配置</li><li>分析状态反馈对系统性能的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>未验证能控性就直接做极点配置</li><li>特征多项式比较系数时符号写反</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="u=-Kx+v"></div><div class="formula" data-tex="\det\left(sI-A+BK\right)=\prod_{i=1}^{n}(s-\lambda_i^*)"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_06/">状态观测器设计</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>设计指定极点的降维状态观测器</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先看能观性：输出矩阵取第一个状态时能观性矩阵是单位阵，系统完全能观，观测器可以设计</li>
+<li><b>关键一步：</b>只测一个状态量时可以用降维观测器，维数等于状态维数减输出维数</li>
+<li><b>关键一步：</b>把观测器误差动态矩阵的特征多项式与期望极点对应的多项式逐项比较，求出观测器增益</li>
+<li><b>中间结果：</b>题目提示状态变换矩阵取单位阵，说明可以直接在原坐标下做增益比较，不必先化能观标准型</li>
+<li><b>卡点：</b>把观测器增益按状态反馈的公式算；或对不可观的部分做配置导致方程无解</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态观测器用输出与输入重构状态，前提是系统能观</li><li>极点配置法与龙伯格观测器是两种常用形式</li><li>观测器误差动态由 A-LC 的特征值决定</li><li>观测器极点通常取得比系统极点快若干倍</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>验证系统能观性</li><li>写出观测器方程并求误差动态矩阵</li><li>按期望特征多项式比较系数求出 L</li><li>校验观测器收敛速度是否合适</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>设计指定极点的降维状态观测器</li><li>设计全维状态观测器</li><li>由期望观测器极点求反馈增益阵 L</li><li>分析观测器与状态反馈组合后的系统极点</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把观测器增益阵写成了状态反馈增益阵的形式</li><li>忽略观测器极点过快会放大噪声</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{\hat{x}}=A\hat{x}+Bu+L(y-C\hat{x})"></div><div class="formula" data-tex="\det\left(sI-A+LC\right)=\prod_{i=1}^{n}(s-\lambda_i^{*})"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_01/">状态空间表达式的建立</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求带观测器的状态反馈闭环系统的传递函数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把状态反馈与观测器联立，得到一个包含状态与估计状态的增广系统</li>
+<li><b>关键一步：</b>求传函时要注意状态反馈只通过输入通道起作用，若输入向量为零则输入到输出之间根本没有通路</li>
+<li><b>关键一步：</b>把增广系统的特征多项式写成状态反馈部分与观测器部分的乘积形式，可用它确认分离原理成立</li>
+<li><b>中间结果：</b>带观测器的状态反馈不改变原状态反馈配置好的极点</li>
+<li><b>中间结果：</b>观测器极点单独决定误差衰减速度，两者互不干扰</li>
+<li><b>卡点：</b>忘记输入向量对传函的影响；或把观测器极点也算进闭环传函的极点里</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态方程为一阶微分方程组，输出方程是状态与输入的代数关系</li><li>状态变量的个数等于系统阶数，选取不唯一</li><li>状态空间描述可同时刻画内部状态与外部输出</li><li>可处理多输入多输出系统</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定系统阶数并选取状态变量</li><li>列写各状态变量的一阶微分方程</li><li>写成矩阵形式 x&#x27;=Ax+Bu 与 y=Cx+Du</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求带观测器的状态反馈闭环系统的传递函数</li><li>由物理系统列写状态空间表达式</li><li>判断状态变量选取是否合理</li><li>写出系统的 A、B、C、D 矩阵</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>状态变量个数与系统阶数不匹配</li><li>输出方程中漏掉直接传递项 D</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{x}=Ax+Bu,\quad y=Cx+Du"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q10" data-q="10">
+<h2><span class="no">10</span><span>十、非线性系统的平衡点与稳定性</span><a class="anchorlink" data-q="10" href="#q10" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">求非线性自治系统的平衡点，再用李雅普诺夫第一法判断各平衡点的稳定性</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_07/">李雅普诺夫稳定性分析</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用李雅普诺夫第一法判断非线性系统各平衡点的稳定性</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>第一法是在平衡点处做线性化，用雅可比矩阵的特征值判断原系统的局部稳定性</li>
+<li><b>关键一步：</b>特征值实部全为负则平衡点渐近稳定，有一个正实部就不稳定</li>
+<li><b>关键一步：</b>本题有两个平衡点，线性化后一个是带负实部的共轭复根</li>
+<li><b>关键一步：</b>出现纯虚根时第一法失效，需换其他方法</li>
+<li><b>关键一步：</b>另一个有一个正实根，两者结论截然不同</li>
+<li><b>中间结果：</b>雅可比矩阵由非线性函数对各状态量求偏导组成，本题只有第二行含状态量的一阶项，结构很简单</li>
+<li><b>卡点：</b>把平衡点整体平移到原点这一步省略导致雅可比算错；或对纯虚根情形仍下渐近稳定的结论</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>第一法通过线性化系统的特征值判断原系统的局部稳定性</li><li>第二法用李雅普诺夫函数直接判断稳定性，无需解方程</li><li>李雅普诺夫函数正定且其导数为负定则渐近稳定</li><li>线性定常系统中李雅普诺夫方程有正定解等价于系统稳定</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>选取或构造李雅普诺夫函数</li><li>沿系统轨迹求其对时间的导数</li><li>判断函数与导数的正负定性</li><li>据此得出稳定性结论</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用李雅普诺夫第一法判断非线性系统各平衡点的稳定性</li><li>用李雅普诺夫方程判断系统稳定性</li><li>构造李雅普诺夫函数证明渐近稳定</li><li>分析非线性系统的稳定性范围</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>李雅普诺夫方程中 P、Q 的角色混用</li><li>只判断 V 正定就下结论而未检查导数</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="A^TP+PA=-Q,\quad Q=Q^T&gt;0"></div><div class="formula" data-tex="V(x)=x^TPx&gt;0,\quad \dot{V}(x)&lt;0"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/nl_01/">非线性系统的特点</a>
+<span class="tiny muted">非线性系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求非线性系统的平衡点</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>平衡点是让所有状态导数同时为零的点，把两个方程联立求解即可</li>
+<li><b>关键一步：</b>本题第一个方程只含第二个状态量，可先解出它的两个取值，再代进第二个方程求第一个状态量</li>
+<li><b>关键一步：</b>平衡点个数可能不止一个，求完要列全，不能只取一组解</li>
+<li><b>中间结果：</b>第一个方程给出第二个状态量的两个相反取值，对应两组平衡点，两组都要继续判稳</li>
+<li><b>卡点：</b>只解出一组平衡点就下结论；或把平衡点与原系统原点混为一谈</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>不满足叠加原理，输出与初始条件、输入幅值都有关</li><li>可能出现自持振荡即极限环</li><li>响应可能对初始条件敏感，出现跳跃谐振</li><li>线性系统的稳定性概念需要推广为局部稳定性</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确认系统含明显非线性环节</li><li>判断该非线性是本质非线性还是可线性化的弱非线性</li><li>按非线性分析方法选择描述函数法或相平面法</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求非线性系统的平衡点</li><li>说明非线性系统与线性系统的本质差别</li><li>指出同步振荡、跳跃谐振等特有现象</li><li>判断某系统应选用哪种分析方法</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把非线性环节线性化后直接沿用线性理论的全部结论</li><li>认为非线性系统一定不稳定</li></ul></div></details>
+</div>
+</article>
+</section></div><aside class="side">
+<div class="card"><h3>本卷考点</h3><div class="kplist"><a class="kplink" href="../../../../../k/ds_01/" title="考点编号 ds_01"><span class="ktag">离散控制系统</span><span>采样过程与香农采样定理</span></a><a class="kplink" href="../../../../../k/ds_02/" title="考点编号 ds_02"><span class="ktag">离散控制系统</span><span>z 变换与 z 反变换</span></a><a class="kplink" href="../../../../../k/st_02/" title="考点编号 st_02"><span class="ktag">稳定性分析</span><span>参数稳定域的确定</span></a><a class="kplink" href="../../../../../k/sp_08/" title="考点编号 sp_08"><span class="ktag">状态空间分析</span><span>状态空间与传递函数的关系</span></a><a class="kplink" href="../../../../../k/st_01/" title="考点编号 st_01"><span class="ktag">稳定性分析</span><span>劳斯判据</span></a><a class="kplink" href="../../../../../k/ds_03/" title="考点编号 ds_03"><span class="ktag">离散控制系统</span><span>脉冲传递函数</span></a><a class="kplink" href="../../../../../k/ds_06/" title="考点编号 ds_06"><span class="ktag">离散控制系统</span><span>离散系统的动态性能与极点分布</span></a><a class="kplink" href="../../../../../k/ds_04/" title="考点编号 ds_04"><span class="ktag">离散控制系统</span><span>离散系统稳定性分析</span></a><a class="kplink" href="../../../../../k/sp_03/" title="考点编号 sp_03"><span class="ktag">状态空间分析</span><span>状态转移矩阵</span></a><a class="kplink" href="../../../../../k/ds_08/" title="考点编号 ds_08"><span class="ktag">离散控制系统</span><span>连续系统的离散化</span></a><a class="kplink" href="../../../../../k/ds_07/" title="考点编号 ds_07"><span class="ktag">离散控制系统</span><span>数字控制器与最少拍设计</span></a><a class="kplink" href="../../../../../k/sp_04/" title="考点编号 sp_04"><span class="ktag">状态空间分析</span><span>能控性与能观性</span></a><a class="kplink" href="../../../../../k/sp_05/" title="考点编号 sp_05"><span class="ktag">状态空间分析</span><span>状态反馈与极点配置</span></a><a class="kplink" href="../../../../../k/sp_06/" title="考点编号 sp_06"><span class="ktag">状态空间分析</span><span>状态观测器设计</span></a><a class="kplink" href="../../../../../k/sp_01/" title="考点编号 sp_01"><span class="ktag">状态空间分析</span><span>状态空间表达式的建立</span></a><a class="kplink" href="../../../../../k/sp_07/" title="考点编号 sp_07"><span class="ktag">状态空间分析</span><span>李雅普诺夫稳定性分析</span></a><a class="kplink" href="../../../../../k/nl_01/" title="考点编号 nl_01"><span class="ktag">非线性系统</span><span>非线性系统的特点</span></a></div></div>
+<div class="card"><h3>浙江大学 其它年份</h3><div class="navlist"><a class="yearchip" href="../../2015/845/">2015 <span class="n">7题</span></a><a class="yearchip" href="../../2016/845/">2016 <span class="n">13题</span></a><a class="yearchip" href="../../2017/845/">2017 <span class="n">9题</span></a><a class="yearchip" href="../../2018/845/">2018 <span class="n">9题</span></a><a class="yearchip" href="../../2019/845/">2019 <span class="n">8题</span></a><a class="yearchip" href="../../2020/845/">2020 <span class="n">10题</span></a><a class="yearchip" href="../../2021/845/">2021 <span class="n">9题</span></a><a class="yearchip" href="../../2022/845/">2022 <span class="n">10题</span></a><a class="yearchip" href="../../2023/845/">2023 <span class="n">11题</span></a><a class="yearchip" href="../../2024/845/">2024 <span class="n">10题</span></a></div></div>
+<div class="card"><h3>上下年份</h3><div class="navlist"><a class="yearchip" href="../../2024/845/">← 2024</a></div></div>
+</aside></div>
+</main>
+<footer class="site-foot"><div class="inner"><span>导图内容为本站原创整理，欢迎交流指正</span></div></footer>
+<script type="application/json" id="kg-data">{"base":"../../../../../","key":"浙江大学_845_2025","full":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现…","type":"warn"},{"label":"一、正弦信号的采样与 z 变换　〔第1题〕","type":"block","children":[{"label":"求正弦信号的拉氏变换、采样序列、z 变换以及对应的采样函数表达式","type":"idea"},{"label":"采样过程与香农采样定理","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把连续时间代入采样时刻的整数倍，得到以采样序号为自变量的序列","type":"k1"},{"label":"采样函数是序列与冲激串的乘积，写出来就是把每个采样值乘以对应时刻的冲激","type":"k1"},{"label":"采样周期的取值决定序列的书写形式，本题代入后可直接写出含常数角度的正弦序列","type":"k1"},{"label":"采样周期与信号的角频率相乘得到序列里每个样点之间的相位增量","type":"k2"},{"label":"把采样序号与采样时刻混用；或采样函数里漏掉冲激串","type":"k3"}]},{"label":"采样把连续信号变成脉冲序列，采样周期 T 是关键参数","type":"yd"},{"label":"采样定理要求采样频率不低于信号最高频率的两倍","type":"yd"},{"label":"采样频率不足会产生频率混叠","type":"yd"},{"label":"零阶保持器把离散信号恢复为连续信号，并引入半个采样周期的延迟","type":"yd"},{"label":"确定信号最高频率或系统带宽","type":"bz"},{"label":"按采样定理确定采样频率与采样周期上限","type":"bz"},{"label":"必要时加入前置滤波器抑制混叠","type":"bz"},{"label":"\\omega_s=\\frac{2\\pi}{T}\\geq 2\\omega_{max}","type":"fm","tex":"\\omega_s=\\frac{2\\pi}{T}\\geq 2\\omega_{max}"},{"label":"G_h(s)=\\frac{1-e^{-Ts}}{s}","type":"fm","tex":"G_h(s)=\\frac{1-e^{-Ts}}{s}"},{"label":"写出给定采样周期下的采样序列与采样函数表达式","type":"kf","own":true},{"label":"由信号最高频率确定采样周期","type":"kf","own":false},{"label":"判断给定采样频率是否满足采样定理","type":"kf","own":false},{"label":"说明零阶保持器的频率特性","type":"kf","own":false},{"label":"把采样定理写成采样周期不大于信号周期即可","type":"er","own":false},{"label":"忽略零阶保持器带来的相位滞后","type":"er","own":false}]},{"label":"z 变换与 z 反变换","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先写出采样序列的通项，再套用标准正弦与余弦序列的 z 变换公式","type":"k1"},{"label":"把指数形式拆成共轭两项相加，可以避免记错公式的分子形式","type":"k1"},{"label":"结果的分母是二次的，其根就是 z 平面上的极点，可用极点位置核对收敛域","type":"k1"},{"label":"采样周期代入后指数项变成常数，z 变换的分母系数就由这些常数确定","type":"k2"},{"label":"把连续信号的拉氏变换当成 z 变换；或忘记采样周期与角频率相乘这一步","type":"k3"}]},{"label":"z 变换是离散信号的拉氏变换，令 z=e^{Ts} 得到","type":"yd"},{"label":"常用函数的 z 变换要熟记","type":"yd"},{"label":"z 反变换可用部分分式法、幂级数法或留数法","type":"yd"},{"label":"左半 s 平面映射到 z 平面单位圆内","type":"yd"},{"label":"将连续传递函数展开为部分分式","type":"bz"},{"label":"逐项查表做 z 变换","type":"bz"},{"label":"需要时做 z 反变换求时间序列","type":"bz"},{"label":"z=e^{Ts}","type":"fm","tex":"z=e^{Ts}"},{"label":"Z\\left[\\frac{1}{s+a}\\right]=\\frac{z}{z-e^{-aT}}","type":"fm","tex":"Z\\left[\\frac{1}{s+a}\\right]=\\frac{z}{z-e^{-aT}}"},{"label":"Z\\left[\\frac{1}{s}\\right]=\\frac{z}{z-1}","type":"fm","tex":"Z\\left[\\frac{1}{s}\\right]=\\frac{z}{z-1}"},{"label":"求采样序列的 z 变换","type":"kf","own":true},{"label":"求给定函数的 z 变换","type":"kf","own":false},{"label":"求 z 反变换得到采样序列","type":"kf","own":false},{"label":"说明 s 平面与 z 平面的映射关系","type":"kf","own":false},{"label":"把 z 变换结果中的 e^{-aT} 写成 e^{-a}","type":"er","own":false},{"label":"部分分式分解时漏项导致反变换出错","type":"er","own":false}]}]},{"label":"二、参数稳定条件　〔第2题〕","type":"block","children":[{"label":"含两个增益参数的系统求闭环特征方程，用劳斯或赫尔维茨判据给出稳定条件","type":"idea"},{"label":"参数稳定域的确定","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先按结构图写出闭环特征方程，含参数的项要单独整理出来","type":"k1"},{"label":"用劳斯判据令首列各元素大于零，得到一组关于参数的不等式","type":"k1"},{"label":"题目问的是两个增益乘积满足的条件，把不等式组化成乘积形式即可","type":"k1"},{"label":"本题开环含一个右半平面极点，特征方程的次数与参数出现的位置要写清楚，否则不等式方向容易反","type":"k2"},{"label":"只列部分首列不等式；或把两个增益的乘积当成单个参数直接判稳","type":"k3"}]},{"label":"稳定条件是一组关于参数的不等式","type":"yd"},{"label":"区间端点通常对应临界稳定，即根落在虚轴上","type":"yd"},{"label":"稳定域是不等式组的交集","type":"yd"},{"label":"由劳斯表首列各元素大于零列出不等式组","type":"bz"},{"label":"逐个解不等式并取交集","type":"bz"},{"label":"检查端点是否为临界稳定","type":"bz"},{"label":"b_1>0,\\quad c_1>0,\\quad \\cdots","type":"fm","tex":"b_1>0,\\quad c_1>0,\\quad \\cdots"},{"label":"求使闭环系统稳定的参数组合条件","type":"kf","own":true},{"label":"求使系统稳定的参数上界或下界","type":"kf","own":false},{"label":"判断某参数取值是否满足稳定要求","type":"kf","own":false},{"label":"比较不同参数对稳定域大小的影响","type":"kf","own":false},{"label":"只列出部分首列元素的不等式，漏掉某个约束","type":"er","own":false},{"label":"取交集时把端点是否包含搞错","type":"er","own":false}]}]},{"label":"三、由状态空间求传函并定等幅振荡增益　〔第3题〕","type":"block","children":[{"label":"四阶状态空间先求传递函数，再令特征多项式含纯虚根求出使零输入响应等幅振荡的增益与频率","type":"idea"},{"label":"状态空间与传递函数的关系","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"本题系统矩阵是标准型形式，特征多项式可直接由最后一列系数写出","type":"k1"},{"label":"输出矩阵只取出最后一个状态，输入矩阵各分量都要参与，逐式代入消元即可得到传函","type":"k1"},{"label":"整理出的传函分母就是特征多项式，分子由输入矩阵各分量与结构共同决定","type":"k1"},{"label":"消元时从最后一个状态往前代，每一步只用一个方程，可以避免代数出错","type":"k2"},{"label":"把特征多项式最后一列系数的符号写反；或只取输入矩阵的一个分量而漏掉其余","type":"k3"}]},{"label":"由状态空间求传递函数为 C(sI-A)^{-1}B+D","type":"yd"},{"label":"传递函数只反映能控能观子系统，含零极点对消","type":"yd"},{"label":"系统的特征值等于传递函数的极点","type":"yd"},{"label":"同一传递函数对应的状态空间实现不唯一","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"按公式求 G(s)=C(sI-A)^{-1}B+D","type":"bz"},{"label":"与已知传递函数比对，判断是否发生零极点对消","type":"bz"},{"label":"G(s)=C(sI-A)^{-1}B+D","type":"fm","tex":"G(s)=C(sI-A)^{-1}B+D"},{"label":"由状态空间表达式求传递函数","type":"kf","own":true},{"label":"由状态空间表达式求传递函数","type":"kf","own":false},{"label":"判断状态空间实现是否存在零极点对消","type":"kf","own":false},{"label":"比较不同实现对应的传递函数是否相同","type":"kf","own":false},{"label":"漏掉直接传递项 D","type":"er","own":false},{"label":"把特征值个数与传递函数极点数直接等同而不检查对消","type":"er","own":false}]},{"label":"劳斯判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"零输入响应等幅振荡对应特征方程有纯虚根，也就是特征多项式含一个只带常数项与二次项的因式","type":"k1"},{"label":"把特征多项式按这个二次因式与另一个二次因式相乘展开，令各次项系数与原多项式逐项相等","type":"k1"},{"label":"由一次项系数与三次项系数先定出振荡频率，再由常数项定出待求增益","type":"k1"},{"label":"展开后一次项给出振荡角频率的平方，常数项给出增益与频率平方的乘积关系","type":"k2"},{"label":"只令特征多项式某项为零而不检验其余项是否配得上；或求出频率后忘记它对应的是角频率还是频率","type":"k3"}]},{"label":"特征方程各项系数全为正只是必要条件，不充分","type":"yd"},{"label":"劳斯表首列元素全部同号 ⇔ 系统稳定","type":"yd"},{"label":"首列符号变化次数等于右半平面闭环极点数","type":"yd"},{"label":"首列出现 0 时需用 ε 法或乘辅助多项式处理","type":"yd"},{"label":"写出闭环特征方程并整理成降幂排列","type":"bz"},{"label":"若某次幂系数缺项，该项补零","type":"bz"},{"label":"列劳斯表：前两行为系数，之后各行按交叉相减","type":"bz"},{"label":"检查首列符号：全同号则稳定，有变号则数出个数","type":"bz"},{"label":"1+G(s)H(s)=0","type":"fm","tex":"1+G(s)H(s)=0"},{"label":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0","type":"fm","tex":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0"},{"label":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}","type":"fm","tex":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"},{"label":"求使系统零输入响应等幅振荡的参数值与振荡频率","type":"kf","own":true},{"label":"判断给定系统的稳定性","type":"kf","own":false},{"label":"指出右半平面闭环极点的个数","type":"kf","own":false},{"label":"求使系统稳定的参数范围","type":"kf","own":false},{"label":"系数有缺项时不补零，直接套用判据","type":"er","own":false},{"label":"首列出现 0 后仍按常规继续算，未用 ε 法","type":"er","own":false}]}]},{"label":"四、采样系统的输出序列与终值　〔第4题〕","type":"block","children":[{"label":"先求输出 z 变换，再在给定各环节传函与单位阶跃输入下算前几个采样点的值并判断稳定性求终值","type":"idea"},{"label":"脉冲传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"按采样开关位置决定哪些环节先相乘再取 z 变换，中间没有采样开关的连续环节必须先合并","type":"k1"},{"label":"零阶保持器要与后续连续环节合并后再做 z 变换，不能单独变换后相乘","type":"k1"},{"label":"输出 z 变换等于闭环脉冲传函乘输入的 z 变换","type":"k1"},{"label":"把各环节代入后整理成 z 的有理分式，便于逐项做长除法求序列","type":"k2"},{"label":"把保持器当成普通环节单独变换；或把开环脉冲传函当成了闭环","type":"k3"}]},{"label":"脉冲传递函数是零初始条件下输出与输入 z 变换之比","type":"yd"},{"label":"连续环节串联时若中间没有采样开关，不能直接相乘","type":"yd"},{"label":"闭环脉冲传递函数的写法取决于采样开关的位置","type":"yd"},{"label":"G(z)=Z[G(s)] 中的保持器要一并计入","type":"yd"},{"label":"确定采样开关位置并画出离散化结构图","type":"bz"},{"label":"对包含保持器的连续部分整体做 z 变换","type":"bz"},{"label":"按串并联或反馈等效写出脉冲传递函数","type":"bz"},{"label":"G(z)=\\frac{C(z)}{R(z)}=Z[G_h(s)G_0(s)]","type":"fm","tex":"G(z)=\\frac{C(z)}{R(z)}=Z[G_h(s)G_0(s)]"},{"label":"\\Phi(z)=\\frac{G(z)}{1+G(z)H(z)}","type":"fm","tex":"\\Phi(z)=\\frac{G(z)}{1+G(z)H(z)}"},{"label":"求采样系统的输出 z 变换表达式","type":"kf","own":true},{"label":"求开环或闭环脉冲传递函数","type":"kf","own":false},{"label":"比较不同采样开关位置对结果的影响","type":"kf","own":false},{"label":"由连续传递函数求脉冲传递函数","type":"kf","own":false},{"label":"把两个无采样开关隔开的连续环节直接相乘","type":"er","own":false},{"label":"忘记把零阶保持器计入 G(z)","type":"er","own":false}]},{"label":"离散系统的动态性能与极点分布","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"求前几个采样点的值可用长除法","type":"k1"},{"label":"也可以用部分分式展开后逐项做 z 反变换，再代入采样序号","type":"k1"},{"label":"初值可用初值定理核对，本题的第一个采样点应当由结构直接看出","type":"k1"},{"label":"把输出 z 变换按 z 的负幂次展开，商的各项系数就是输出序列","type":"k1"},{"label":"长除法每除一次得到一个采样值，除到题要求的序号即可停止","type":"k2"},{"label":"把 z 的负幂次与正幂次展开方向弄反；或忘记把指数项代入数值","type":"k3"}]},{"label":"闭环极点在 z 平面上的位置决定响应形式","type":"yd"},{"label":"极点越靠近原点衰减越快，越靠近单位圆振荡越强","type":"yd"},{"label":"极点的幅角决定振荡频率，幅值决定衰减速度","type":"yd"},{"label":"采样周期增大会使动态性能变差甚至不稳定","type":"yd"},{"label":"求闭环脉冲传递函数的极点","type":"bz"},{"label":"按极点在单位圆内的位置判断响应形式","type":"bz"},{"label":"由极点的模与幅角估算衰减与振荡频率","type":"bz"},{"label":"与连续系统指标对应关系相互校验","type":"bz"},{"label":"z_i=|z_i|e^{j\\angle z_i},\\quad \\sigma=\\frac{\\ln|z_i|}{T}","type":"fm","tex":"z_i=|z_i|e^{j\\angle z_i},\\quad \\sigma=\\frac{\\ln|z_i|}{T}"},{"label":"\\omega=\\frac{\\angle z_i}{T}","type":"fm","tex":"\\omega=\\frac{\\angle z_i}{T}"},{"label":"由输出 z 变换求各采样时刻的输出值","type":"kf","own":true},{"label":"由闭环极点分布判断动态性能","type":"kf","own":false},{"label":"与连续域指标互相换算","type":"kf","own":false},{"label":"说明采样周期对动态性能的影响","type":"kf","own":false},{"label":"把 z 平面极点当作 s 平面极点直接读阻尼比","type":"er","own":false},{"label":"忽略单位圆上极点对应等幅振荡","type":"er","own":false}]},{"label":"离散系统稳定性分析","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先看闭环脉冲传函的极点是否全部落在单位圆内，只有稳定才能用终值定理","type":"k1"},{"label":"终值定理的形式是 z 趋于一时一减 z 的负一次方乘以输出的 z 变换，再乘上输入的因子","type":"k1"},{"label":"若闭环含 z 等于一的极点，阶跃输入下终值应趋于一个有限值，可用这一点核对结果","type":"k1"},{"label":"本题保持器与积分环节串联，开环在 z 等于一处有极点，所以阶跃输入下系统无稳态误差","type":"k2"},{"label":"未判稳就代终值定理；或把终值定理的因子与输入的 z 变换重复乘了一次","type":"k3"}]},{"label":"闭环脉冲传函的极点全部位于 z 平面单位圆内则稳定","type":"yd"},{"label":"可直接求解特征根，也可用朱里判据或 w 变换后套劳斯判据","type":"yd"},{"label":"w 变换把单位圆内映射到左半平面","type":"yd"},{"label":"采样周期增大会使稳定性变差","type":"yd"},{"label":"写出闭环脉冲传递函数的特征方程","type":"bz"},{"label":"选择方法：求根、朱里判据或 w 变换后用劳斯判据","type":"bz"},{"label":"对含参数的系统求使稳定成立的参数范围","type":"bz"},{"label":"必要时分析采样周期对稳定域的影响","type":"bz"},{"label":"|z_i|<1","type":"fm","tex":"|z_i|<1"},{"label":"z=\\frac{1+w}{1-w}\\quad (w\\ \\text{变换})","type":"fm","tex":"z=\\frac{1+w}{1-w}\\quad (w\\ \\text{变换})"},{"label":"判断采样系统稳定性并求单位阶跃下的终值","type":"kf","own":true},{"label":"判断离散系统是否稳定","type":"kf","own":false},{"label":"求使系统稳定的采样周期或增益范围","type":"kf","own":false},{"label":"用 w 变换后套用劳斯判据","type":"kf","own":false},{"label":"把稳定条件写成实部小于零而不是模小于 1","type":"er","own":false},{"label":"w 变换公式记错导致映射关系颠倒","type":"er","own":false}]}]},{"label":"五、由响应反求模型并离散化　〔第5题〕","type":"block","children":[{"label":"由零输入响应与零状态响应反求系统矩阵与输入矩阵，再按给定采样周期和零阶保持器求离散化状态方程","type":"idea"},{"label":"状态转移矩阵","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"零输入响应里出现的指数项直接给出状态转移矩阵的形式，把初值代进去可验证","type":"k1"},{"label":"零状态阶跃响应是状态转移矩阵与输入矩阵的卷积，对时间求导可把输入矩阵分离出来","type":"k1"},{"label":"两组给出的初值响应互相印证，可用其中一组检验求出的矩阵是否正确","type":"k1"},{"label":"本题零输入响应是指数函数乘初值，说明系统矩阵只有一个特征值，状态转移矩阵是该指数乘常矩阵","type":"k2"},{"label":"把零输入响应里的初值当成系数而不是状态；或求输入矩阵时忘记对时间求导","type":"k3"}]},{"label":"状态转移矩阵 e^{At} 描述零输入下状态随时间的演化","type":"yd"},{"label":"可从 (sI-A)^{-1} 求拉氏反变换得到","type":"yd"},{"label":"满足 e^{A\\cdot0}=I 且可逆","type":"yd"},{"label":"含输入时用卷积积分写出全响应","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"求拉氏反变换得到 e^{At}","type":"bz"},{"label":"代入全响应公式求状态与输出","type":"bz"},{"label":"用初值条件校验结果","type":"bz"},{"label":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]","type":"fm","tex":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]"},{"label":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau","type":"fm","tex":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau"},{"label":"由零输入响应与零状态响应反求系统矩阵与输入矩阵","type":"kf","own":true},{"label":"求状态转移矩阵","type":"kf","own":false},{"label":"求给定初始条件下的状态与输出响应","type":"kf","own":false},{"label":"用性质验证转移矩阵是否正确","type":"kf","own":false},{"label":"矩阵求逆时忘记检查行列式是否为零","type":"er","own":false},{"label":"卷积积分中变量代换写错","type":"er","own":false}]},{"label":"连续系统的离散化","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把采样周期代入状态转移矩阵即得离散状态矩阵","type":"k1"},{"label":"离散输入矩阵是状态转移矩阵与输入矩阵乘积在采样周期上的积分，积分要逐项做","type":"k1"},{"label":"求出的离散方程再用递推公式算一两个采样点，与连续解在采样时刻的值比对即可确认","type":"k1"},{"label":"采样周期取自然对数的整数倍时指数项会变成整数或分数，离散矩阵元素往往很简洁","type":"k2"},{"label":"把连续状态方程直接照抄成差分方程；或积分上限写错，忘记零阶保持器带来的积分形式","type":"k3"}]},{"label":"离散化状态方程由状态转移矩阵在采样周期处的取值构成","type":"yd"},{"label":"输入矩阵是状态转移矩阵与输入矩阵乘积在采样周期上的积分","type":"yd"},{"label":"带零阶保持器时即按上述积分式离散化，输出矩阵不变","type":"yd"},{"label":"求连续系统的状态转移矩阵","type":"bz"},{"label":"把采样周期代入得到离散状态矩阵","type":"bz"},{"label":"对输入矩阵做积分得到离散输入矩阵","type":"bz"},{"label":"写出差分形式的离散状态方程并按递推求采样点上的响应","type":"bz"},{"label":"x((k+1)T)=Gx(kT)+Hu(kT)","type":"fm","tex":"x((k+1)T)=Gx(kT)+Hu(kT)"},{"label":"G=e^{AT},\\quad H=\\int_{0}^{T}e^{A\tau}B\\,d\tau","type":"fm","tex":"G=e^{AT},\\quad H=\\int_{0}^{T}e^{A\tau}B\\,d\tau"},{"label":"按给定采样周期和零阶保持器求连续系统的离散化状态方程","type":"kf","own":true},{"label":"求连续系统在给定采样周期下的离散化状态方程","type":"kf","own":false},{"label":"由给出的状态响应反求系统矩阵再离散化","type":"kf","own":false},{"label":"计算采样点上的状态与输出序列","type":"kf","own":false},{"label":"把采样周期直接当成时间常数代进连续传函","type":"er","own":false},{"label":"积分上限写成采样周期以外的量，或忘记乘输入矩阵","type":"er","own":false}]}]},{"label":"六、离散系统极点配置控制器设计　〔第6题〕","type":"block","children":[{"label":"由受控对象的差分方程求脉冲传函，设计数字控制器使闭环极点落在指定位置","type":"idea"},{"label":"数字控制器与最少拍设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先把差分方程取 z 变换，在零初始条件下写脉冲传函","type":"k1"},{"label":"闭环脉冲传函由前向通道与反馈通道的关系写出，等于控制器乘对象再除以一加两者乘积","type":"k1"},{"label":"把期望极点对应的特征多项式写出，与实际闭环特征多项式逐项比较，解出控制器系数","type":"k1"},{"label":"分子分母都要化成 z 的负幂次形式","type":"k1"},{"label":"本题期望极点为共轭复数，期望特征多项式是二次的，控制器也应按一阶或二阶形式设待定系数","type":"k2"},{"label":"差分方程取 z 变换时初值处理错误；或控制器设成高阶形式导致待定系数多于方程数","type":"k3"}]},{"label":"最少拍系统指在典型输入下经过有限拍达到无稳态误差","type":"yd"},{"label":"设计需要满足可实现性与稳定性约束","type":"yd"},{"label":"最少拍系统的闭环脉冲传递函数由输入类型确定","type":"yd"},{"label":"最少拍设计通常导致很大的控制量，需加限制","type":"yd"},{"label":"确定输入类型及对应的误差传函形式","type":"bz"},{"label":"按无稳态误差要求构造闭环脉冲传递函数","type":"bz"},{"label":"由 D(z)=Φ(z)/[G(z)(1-Φ(z))] 求数字控制器","type":"bz"},{"label":"检验可实现性、稳定性与控制量大小","type":"bz"},{"label":"D(z)=\\frac{\\Phi(z)}{G(z)(1-\\Phi(z))}","type":"fm","tex":"D(z)=\\frac{\\Phi(z)}{G(z)(1-\\Phi(z))}"},{"label":"\\Phi_e(z)=1-\\Phi(z)","type":"fm","tex":"\\Phi_e(z)=1-\\Phi(z)"},{"label":"设计数字控制器使离散闭环极点位于指定位置","type":"kf","own":true},{"label":"设计最少拍数字控制器","type":"kf","own":false},{"label":"比较不同输入类型下的最少拍数","type":"kf","own":false},{"label":"分析最少拍系统存在的问题","type":"kf","own":false},{"label":"忽略 D(z) 必须是物理可实现的因果系统","type":"er","own":false},{"label":"闭环传函构造时未满足稳定性约束条件","type":"er","own":false}]}]},{"label":"七、对偶系统的能控能观与传函证明　〔第7题〕","type":"block","children":[{"label":"两系统互为对偶，证明能控性与能观性互换，并讨论传函是否相同","type":"idea"},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"两个系统的矩阵满足系统矩阵互为转置、输入矩阵与输出矩阵互为转置的关系","type":"k1"},{"label":"写出一方的能控性矩阵，取转置后恰好等于另一方的能观性矩阵，秩相等即得结论","type":"k1"},{"label":"矩阵秩在转置下不变，这一步是证明的关键，要明确写出来","type":"k1"},{"label":"把能控性矩阵的转置写成各项转置相乘的形式，就能与对偶系统的能观性矩阵逐项对上","type":"k2"},{"label":"只说矩阵形似而不写出转置关系；或把转置顺序写错导致乘积次序不对","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"证明互为对偶的两个系统其能控性与能观性互换","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]},{"label":"状态空间与传递函数的关系","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"单输入单输出系统的传递函数是标量，转置后数值不变，这是判断的出发点","type":"k1"},{"label":"把传递函数的矩阵表达式整体转置，注意转置后各矩阵的次序要反过来","type":"k1"},{"label":"转置后若恰好变成另一个系统的传递函数表达式，则两者传函相同，否则不同","type":"k1"},{"label":"即使传函相同，两个系统的内部状态维数与能控能观结构也可能不同","type":"k2"},{"label":"把标量转置与矩阵转置混为一谈；或转置时不改变乘积次序","type":"k3"}]},{"label":"由状态空间求传递函数为 C(sI-A)^{-1}B+D","type":"yd"},{"label":"传递函数只反映能控能观子系统，含零极点对消","type":"yd"},{"label":"系统的特征值等于传递函数的极点","type":"yd"},{"label":"同一传递函数对应的状态空间实现不唯一","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"按公式求 G(s)=C(sI-A)^{-1}B+D","type":"bz"},{"label":"与已知传递函数比对，判断是否发生零极点对消","type":"bz"},{"label":"G(s)=C(sI-A)^{-1}B+D","type":"fm","tex":"G(s)=C(sI-A)^{-1}B+D"},{"label":"判断互为对偶的两个系统是否具有相同传递函数","type":"kf","own":true},{"label":"由状态空间表达式求传递函数","type":"kf","own":false},{"label":"判断状态空间实现是否存在零极点对消","type":"kf","own":false},{"label":"比较不同实现对应的传递函数是否相同","type":"kf","own":false},{"label":"漏掉直接传递项 D","type":"er","own":false},{"label":"把特征值个数与传递函数极点数直接等同而不检查对消","type":"er","own":false}]}]},{"label":"八、由传函形式反推矩阵参数　〔第8题〕","type":"block","children":[{"label":"对称系统矩阵配转置的输入输出向量，已知传函只剩一个极点，反求矩阵中的待定常数","type":"idea"},{"label":"状态空间与传递函数的关系","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"系统矩阵是对称阵且输入向量与输出向量互为转置时，传函可展开成按特征值分解的几个一阶项之和","type":"k1"},{"label":"传函只剩一个极点，说明输入向量只能落在唯一特征方向上","type":"k1"},{"label":"按特征向量的定义代入，逐个分量比较即可解出待定参数","type":"k1"},{"label":"也就是输入向量是系统矩阵的特征向量","type":"k1"},{"label":"输入向量的第三个分量为零","type":"k2"},{"label":"再把第一个分量与第二个分量比较，还能顺带定出另一个参数与特征值，可用传函形式核对","type":"k2"},{"label":"特征向量方程第三个分量只剩一个待求常数，可直接解出","type":"k2"},{"label":"直接按传函公式硬算三次行列式而不利用对称性；或把「传函只剩一个极点」误当成系统是一阶系统","type":"k3"}]},{"label":"由状态空间求传递函数为 C(sI-A)^{-1}B+D","type":"yd"},{"label":"传递函数只反映能控能观子系统，含零极点对消","type":"yd"},{"label":"系统的特征值等于传递函数的极点","type":"yd"},{"label":"同一传递函数对应的状态空间实现不唯一","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"按公式求 G(s)=C(sI-A)^{-1}B+D","type":"bz"},{"label":"与已知传递函数比对，判断是否发生零极点对消","type":"bz"},{"label":"G(s)=C(sI-A)^{-1}B+D","type":"fm","tex":"G(s)=C(sI-A)^{-1}B+D"},{"label":"由给定的传递函数形式反求状态空间模型中的待定参数","type":"kf","own":true},{"label":"由状态空间表达式求传递函数","type":"kf","own":false},{"label":"判断状态空间实现是否存在零极点对消","type":"kf","own":false},{"label":"比较不同实现对应的传递函数是否相同","type":"kf","own":false},{"label":"漏掉直接传递项 D","type":"er","own":false},{"label":"把特征值个数与传递函数极点数直接等同而不检查对消","type":"er","own":false}]}]},{"label":"九、观测器与状态反馈　〔第9题〕","type":"block","children":[{"label":"判断能否配置极点、设计降维观测器，再求带观测器的状态反馈闭环传函","type":"idea"},{"label":"状态反馈与极点配置","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"能否任意配置极点由系统是否完全能控决定，构造能控性矩阵求秩后与系统阶数比较","type":"k1"},{"label":"能控时把期望极点展开成期望特征多项式，再与带反馈后的闭环特征多项式逐项比较求增益","type":"k1"},{"label":"本题源文的输入向量三个分量都印成零，这种情形下系统矩阵的列组合无法张满状态空间，属于不能控","type":"k1"},{"label":"输入向量为零向量时，状态方程与输入完全无关，任何状态反馈都改变不了特征多项式","type":"k2"},{"label":"源文输入向量为全零；若原卷第 3 个分量印的是非零值（常见为 1）","type":"k3"},{"label":"系统就变成能控、可配置极点，务必回原卷核对这一分量","type":"k3"}]},{"label":"状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控","type":"yd"},{"label":"状态反馈不改变系统的零点","type":"yd"},{"label":"极点配置通过比较期望与实际的闭环特征多项式求解 K","type":"yd"},{"label":"状态反馈可能改变能观性","type":"yd"},{"label":"先验证系统能控","type":"bz"},{"label":"写出希望配置的极点并求期望特征多项式","type":"bz"},{"label":"求闭环系统特征多项式 det(sI-A+BK)","type":"bz"},{"label":"比较系数解出反馈增益阵 K","type":"bz"},{"label":"u=-Kx+v","type":"fm","tex":"u=-Kx+v"},{"label":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)","type":"fm","tex":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)"},{"label":"判断能否通过状态反馈任意配置闭环极点并求出反馈矩阵","type":"kf","own":true},{"label":"设计状态反馈使闭环极点位于指定位置","type":"kf","own":false},{"label":"判断给定极点是否可通过状态反馈配置","type":"kf","own":false},{"label":"分析状态反馈对系统性能的影响","type":"kf","own":false},{"label":"未验证能控性就直接做极点配置","type":"er","own":false},{"label":"特征多项式比较系数时符号写反","type":"er","own":false}]},{"label":"状态观测器设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先看能观性：输出矩阵取第一个状态时能观性矩阵是单位阵，系统完全能观，观测器可以设计","type":"k1"},{"label":"只测一个状态量时可以用降维观测器，维数等于状态维数减输出维数","type":"k1"},{"label":"把观测器误差动态矩阵的特征多项式与期望极点对应的多项式逐项比较，求出观测器增益","type":"k1"},{"label":"题目提示状态变换矩阵取单位阵，说明可以直接在原坐标下做增益比较，不必先化能观标准型","type":"k2"},{"label":"把观测器增益按状态反馈的公式算；或对不可观的部分做配置导致方程无解","type":"k3"}]},{"label":"状态观测器用输出与输入重构状态，前提是系统能观","type":"yd"},{"label":"极点配置法与龙伯格观测器是两种常用形式","type":"yd"},{"label":"观测器误差动态由 A-LC 的特征值决定","type":"yd"},{"label":"观测器极点通常取得比系统极点快若干倍","type":"yd"},{"label":"验证系统能观性","type":"bz"},{"label":"写出观测器方程并求误差动态矩阵","type":"bz"},{"label":"按期望特征多项式比较系数求出 L","type":"bz"},{"label":"校验观测器收敛速度是否合适","type":"bz"},{"label":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})","type":"fm","tex":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})"},{"label":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})","type":"fm","tex":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})"},{"label":"设计指定极点的降维状态观测器","type":"kf","own":true},{"label":"设计全维状态观测器","type":"kf","own":false},{"label":"由期望观测器极点求反馈增益阵 L","type":"kf","own":false},{"label":"分析观测器与状态反馈组合后的系统极点","type":"kf","own":false},{"label":"把观测器增益阵写成了状态反馈增益阵的形式","type":"er","own":false},{"label":"忽略观测器极点过快会放大噪声","type":"er","own":false}]},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把状态反馈与观测器联立，得到一个包含状态与估计状态的增广系统","type":"k1"},{"label":"求传函时要注意状态反馈只通过输入通道起作用，若输入向量为零则输入到输出之间根本没有通路","type":"k1"},{"label":"把增广系统的特征多项式写成状态反馈部分与观测器部分的乘积形式，可用它确认分离原理成立","type":"k1"},{"label":"带观测器的状态反馈不改变原状态反馈配置好的极点","type":"k2"},{"label":"观测器极点单独决定误差衰减速度，两者互不干扰","type":"k2"},{"label":"忘记输入向量对传函的影响；或把观测器极点也算进闭环传函的极点里","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"求带观测器的状态反馈闭环系统的传递函数","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]}]},{"label":"十、非线性系统的平衡点与稳定性　〔第10题〕","type":"block","children":[{"label":"求非线性自治系统的平衡点，再用李雅普诺夫第一法判断各平衡点的稳定性","type":"idea"},{"label":"李雅普诺夫稳定性分析","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"第一法是在平衡点处做线性化，用雅可比矩阵的特征值判断原系统的局部稳定性","type":"k1"},{"label":"特征值实部全为负则平衡点渐近稳定，有一个正实部就不稳定","type":"k1"},{"label":"本题有两个平衡点，线性化后一个是带负实部的共轭复根","type":"k1"},{"label":"出现纯虚根时第一法失效，需换其他方法","type":"k1"},{"label":"另一个有一个正实根，两者结论截然不同","type":"k1"},{"label":"雅可比矩阵由非线性函数对各状态量求偏导组成，本题只有第二行含状态量的一阶项，结构很简单","type":"k2"},{"label":"把平衡点整体平移到原点这一步省略导致雅可比算错；或对纯虚根情形仍下渐近稳定的结论","type":"k3"}]},{"label":"第一法通过线性化系统的特征值判断原系统的局部稳定性","type":"yd"},{"label":"第二法用李雅普诺夫函数直接判断稳定性，无需解方程","type":"yd"},{"label":"李雅普诺夫函数正定且其导数为负定则渐近稳定","type":"yd"},{"label":"线性定常系统中李雅普诺夫方程有正定解等价于系统稳定","type":"yd"},{"label":"选取或构造李雅普诺夫函数","type":"bz"},{"label":"沿系统轨迹求其对时间的导数","type":"bz"},{"label":"判断函数与导数的正负定性","type":"bz"},{"label":"据此得出稳定性结论","type":"bz"},{"label":"A^TP+PA=-Q,\\quad Q=Q^T>0","type":"fm","tex":"A^TP+PA=-Q,\\quad Q=Q^T>0"},{"label":"V(x)=x^TPx>0,\\quad \\dot{V}(x)<0","type":"fm","tex":"V(x)=x^TPx>0,\\quad \\dot{V}(x)<0"},{"label":"用李雅普诺夫第一法判断非线性系统各平衡点的稳定性","type":"kf","own":true},{"label":"用李雅普诺夫方程判断系统稳定性","type":"kf","own":false},{"label":"构造李雅普诺夫函数证明渐近稳定","type":"kf","own":false},{"label":"分析非线性系统的稳定性范围","type":"kf","own":false},{"label":"李雅普诺夫方程中 P、Q 的角色混用","type":"er","own":false},{"label":"只判断 V 正定就下结论而未检查导数","type":"er","own":false}]},{"label":"非线性系统的特点","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"平衡点是让所有状态导数同时为零的点，把两个方程联立求解即可","type":"k1"},{"label":"本题第一个方程只含第二个状态量，可先解出它的两个取值，再代进第二个方程求第一个状态量","type":"k1"},{"label":"平衡点个数可能不止一个，求完要列全，不能只取一组解","type":"k1"},{"label":"第一个方程给出第二个状态量的两个相反取值，对应两组平衡点，两组都要继续判稳","type":"k2"},{"label":"只解出一组平衡点就下结论；或把平衡点与原系统原点混为一谈","type":"k3"}]},{"label":"不满足叠加原理，输出与初始条件、输入幅值都有关","type":"yd"},{"label":"可能出现自持振荡即极限环","type":"yd"},{"label":"响应可能对初始条件敏感，出现跳跃谐振","type":"yd"},{"label":"线性系统的稳定性概念需要推广为局部稳定性","type":"yd"},{"label":"确认系统含明显非线性环节","type":"bz"},{"label":"判断该非线性是本质非线性还是可线性化的弱非线性","type":"bz"},{"label":"按非线性分析方法选择描述函数法或相平面法","type":"bz"},{"label":"求非线性系统的平衡点","type":"kf","own":true},{"label":"说明非线性系统与线性系统的本质差别","type":"kf","own":false},{"label":"指出同步振荡、跳跃谐振等特有现象","type":"kf","own":false},{"label":"判断某系统应选用哪种分析方法","type":"kf","own":false},{"label":"把非线性环节线性化后直接沿用线性理论的全部结论","type":"er","own":false},{"label":"认为非线性系统一定不稳定","type":"er","own":false}]}]}]},"qs":[{"no":"1","tree":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上　重点：采样序列与 z 变换、状态空间求传函并定等幅振荡、连续系统离散化、对偶原理、由传函反推矩阵参数、李雅普诺夫第一法","type":"warn"},{"label":"一、正弦信号的采样与 z 变换　〔第1题〕","type":"block","children":[{"label":"求正弦信号的拉氏变换、采样序列、z 变换以及对应的采样函数表达式","type":"idea"},{"label":"采样过程与香农采样定理","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把连续时间代入采样时刻的整数倍，得到以采样序号为自变量的序列","type":"k1"},{"label":"采样函数是序列与冲激串的乘积，写出来就是把每个采样值乘以对应时刻的冲激","type":"k1"},{"label":"采样周期的取值决定序列的书写形式，本题代入后可直接写出含常数角度的正弦序列","type":"k1"},{"label":"采样周期与信号的角频率相乘得到序列里每个样点之间的相位增量","type":"k2"},{"label":"把采样序号与采样时刻混用；或采样函数里漏掉冲激串","type":"k3"}]},{"label":"采样把连续信号变成脉冲序列，采样周期 T 是关键参数","type":"yd"},{"label":"采样定理要求采样频率不低于信号最高频率的两倍","type":"yd"},{"label":"采样频率不足会产生频率混叠","type":"yd"},{"label":"零阶保持器把离散信号恢复为连续信号，并引入半个采样周期的延迟","type":"yd"},{"label":"确定信号最高频率或系统带宽","type":"bz"},{"label":"按采样定理确定采样频率与采样周期上限","type":"bz"},{"label":"必要时加入前置滤波器抑制混叠","type":"bz"},{"label":"\\omega_s=\\frac{2\\pi}{T}\\geq 2\\omega_{max}","type":"fm","tex":"\\omega_s=\\frac{2\\pi}{T}\\geq 2\\omega_{max}"},{"label":"G_h(s)=\\frac{1-e^{-Ts}}{s}","type":"fm","tex":"G_h(s)=\\frac{1-e^{-Ts}}{s}"},{"label":"写出给定采样周期下的采样序列与采样函数表达式","type":"kf","own":true},{"label":"由信号最高频率确定采样周期","type":"kf","own":false},{"label":"判断给定采样频率是否满足采样定理","type":"kf","own":false},{"label":"说明零阶保持器的频率特性","type":"kf","own":false},{"label":"把采样定理写成采样周期不大于信号周期即可","type":"er","own":false},{"label":"忽略零阶保持器带来的相位滞后","type":"er","own":false}]},{"label":"z 变换与 z 反变换","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先写出采样序列的通项，再套用标准正弦与余弦序列的 z 变换公式","type":"k1"},{"label":"把指数形式拆成共轭两项相加，可以避免记错公式的分子形式","type":"k1"},{"label":"结果的分母是二次的，其根就是 z 平面上的极点，可用极点位置核对收敛域","type":"k1"},{"label":"采样周期代入后指数项变成常数，z 变换的分母系数就由这些常数确定","type":"k2"},{"label":"把连续信号的拉氏变换当成 z 变换；或忘记采样周期与角频率相乘这一步","type":"k3"}]},{"label":"z 变换是离散信号的拉氏变换，令 z=e^{Ts} 得到","type":"yd"},{"label":"常用函数的 z 变换要熟记","type":"yd"},{"label":"z 反变换可用部分分式法、幂级数法或留数法","type":"yd"},{"label":"左半 s 平面映射到 z 平面单位圆内","type":"yd"},{"label":"将连续传递函数展开为部分分式","type":"bz"},{"label":"逐项查表做 z 变换","type":"bz"},{"label":"需要时做 z 反变换求时间序列","type":"bz"},{"label":"z=e^{Ts}","type":"fm","tex":"z=e^{Ts}"},{"label":"Z\\left[\\frac{1}{s+a}\\right]=\\frac{z}{z-e^{-aT}}","type":"fm","tex":"Z\\left[\\frac{1}{s+a}\\right]=\\frac{z}{z-e^{-aT}}"},{"label":"Z\\left[\\frac{1}{s}\\right]=\\frac{z}{z-1}","type":"fm","tex":"Z\\left[\\frac{1}{s}\\right]=\\frac{z}{z-1}"},{"label":"求采样序列的 z 变换","type":"kf","own":true},{"label":"求给定函数的 z 变换","type":"kf","own":false},{"label":"求 z 反变换得到采样序列","type":"kf","own":false},{"label":"说明 s 平面与 z 平面的映射关系","type":"kf","own":false},{"label":"把 z 变换结果中的 e^{-aT} 写成 e^{-a}","type":"er","own":false},{"label":"部分分式分解时漏项导致反变换出错","type":"er","own":false}]}]}]}},{"no":"2","tree":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上　重点：采样序列与 z 变换、状态空间求传函并定等幅振荡、连续系统离散化、对偶原理、由传函反推矩阵参数、李雅普诺夫第一法","type":"warn"},{"label":"二、参数稳定条件　〔第2题〕","type":"block","children":[{"label":"含两个增益参数的系统求闭环特征方程，用劳斯或赫尔维茨判据给出稳定条件","type":"idea"},{"label":"参数稳定域的确定","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先按结构图写出闭环特征方程，含参数的项要单独整理出来","type":"k1"},{"label":"用劳斯判据令首列各元素大于零，得到一组关于参数的不等式","type":"k1"},{"label":"题目问的是两个增益乘积满足的条件，把不等式组化成乘积形式即可","type":"k1"},{"label":"本题开环含一个右半平面极点，特征方程的次数与参数出现的位置要写清楚，否则不等式方向容易反","type":"k2"},{"label":"只列部分首列不等式；或把两个增益的乘积当成单个参数直接判稳","type":"k3"}]},{"label":"稳定条件是一组关于参数的不等式","type":"yd"},{"label":"区间端点通常对应临界稳定，即根落在虚轴上","type":"yd"},{"label":"稳定域是不等式组的交集","type":"yd"},{"label":"由劳斯表首列各元素大于零列出不等式组","type":"bz"},{"label":"逐个解不等式并取交集","type":"bz"},{"label":"检查端点是否为临界稳定","type":"bz"},{"label":"b_1>0,\\quad c_1>0,\\quad \\cdots","type":"fm","tex":"b_1>0,\\quad c_1>0,\\quad \\cdots"},{"label":"求使闭环系统稳定的参数组合条件","type":"kf","own":true},{"label":"求使系统稳定的参数上界或下界","type":"kf","own":false},{"label":"判断某参数取值是否满足稳定要求","type":"kf","own":false},{"label":"比较不同参数对稳定域大小的影响","type":"kf","own":false},{"label":"只列出部分首列元素的不等式，漏掉某个约束","type":"er","own":false},{"label":"取交集时把端点是否包含搞错","type":"er","own":false}]}]}]}},{"no":"3","tree":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上　重点：采样序列与 z 变换、状态空间求传函并定等幅振荡、连续系统离散化、对偶原理、由传函反推矩阵参数、李雅普诺夫第一法","type":"warn"},{"label":"三、由状态空间求传函并定等幅振荡增益　〔第3题〕","type":"block","children":[{"label":"四阶状态空间先求传递函数，再令特征多项式含纯虚根求出使零输入响应等幅振荡的增益与频率","type":"idea"},{"label":"状态空间与传递函数的关系","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"本题系统矩阵是标准型形式，特征多项式可直接由最后一列系数写出","type":"k1"},{"label":"输出矩阵只取出最后一个状态，输入矩阵各分量都要参与，逐式代入消元即可得到传函","type":"k1"},{"label":"整理出的传函分母就是特征多项式，分子由输入矩阵各分量与结构共同决定","type":"k1"},{"label":"消元时从最后一个状态往前代，每一步只用一个方程，可以避免代数出错","type":"k2"},{"label":"把特征多项式最后一列系数的符号写反；或只取输入矩阵的一个分量而漏掉其余","type":"k3"}]},{"label":"由状态空间求传递函数为 C(sI-A)^{-1}B+D","type":"yd"},{"label":"传递函数只反映能控能观子系统，含零极点对消","type":"yd"},{"label":"系统的特征值等于传递函数的极点","type":"yd"},{"label":"同一传递函数对应的状态空间实现不唯一","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"按公式求 G(s)=C(sI-A)^{-1}B+D","type":"bz"},{"label":"与已知传递函数比对，判断是否发生零极点对消","type":"bz"},{"label":"G(s)=C(sI-A)^{-1}B+D","type":"fm","tex":"G(s)=C(sI-A)^{-1}B+D"},{"label":"由状态空间表达式求传递函数","type":"kf","own":true},{"label":"由状态空间表达式求传递函数","type":"kf","own":false},{"label":"判断状态空间实现是否存在零极点对消","type":"kf","own":false},{"label":"比较不同实现对应的传递函数是否相同","type":"kf","own":false},{"label":"漏掉直接传递项 D","type":"er","own":false},{"label":"把特征值个数与传递函数极点数直接等同而不检查对消","type":"er","own":false}]},{"label":"劳斯判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"零输入响应等幅振荡对应特征方程有纯虚根，也就是特征多项式含一个只带常数项与二次项的因式","type":"k1"},{"label":"把特征多项式按这个二次因式与另一个二次因式相乘展开，令各次项系数与原多项式逐项相等","type":"k1"},{"label":"由一次项系数与三次项系数先定出振荡频率，再由常数项定出待求增益","type":"k1"},{"label":"展开后一次项给出振荡角频率的平方，常数项给出增益与频率平方的乘积关系","type":"k2"},{"label":"只令特征多项式某项为零而不检验其余项是否配得上；或求出频率后忘记它对应的是角频率还是频率","type":"k3"}]},{"label":"特征方程各项系数全为正只是必要条件，不充分","type":"yd"},{"label":"劳斯表首列元素全部同号 ⇔ 系统稳定","type":"yd"},{"label":"首列符号变化次数等于右半平面闭环极点数","type":"yd"},{"label":"首列出现 0 时需用 ε 法或乘辅助多项式处理","type":"yd"},{"label":"写出闭环特征方程并整理成降幂排列","type":"bz"},{"label":"若某次幂系数缺项，该项补零","type":"bz"},{"label":"列劳斯表：前两行为系数，之后各行按交叉相减","type":"bz"},{"label":"检查首列符号：全同号则稳定，有变号则数出个数","type":"bz"},{"label":"1+G(s)H(s)=0","type":"fm","tex":"1+G(s)H(s)=0"},{"label":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0","type":"fm","tex":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0"},{"label":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}","type":"fm","tex":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"},{"label":"求使系统零输入响应等幅振荡的参数值与振荡频率","type":"kf","own":true},{"label":"判断给定系统的稳定性","type":"kf","own":false},{"label":"指出右半平面闭环极点的个数","type":"kf","own":false},{"label":"求使系统稳定的参数范围","type":"kf","own":false},{"label":"系数有缺项时不补零，直接套用判据","type":"er","own":false},{"label":"首列出现 0 后仍按常规继续算，未用 ε 法","type":"er","own":false}]}]}]}},{"no":"4","tree":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上　重点：采样序列与 z 变换、状态空间求传函并定等幅振荡、连续系统离散化、对偶原理、由传函反推矩阵参数、李雅普诺夫第一法","type":"warn"},{"label":"四、采样系统的输出序列与终值　〔第4题〕","type":"block","children":[{"label":"先求输出 z 变换，再在给定各环节传函与单位阶跃输入下算前几个采样点的值并判断稳定性求终值","type":"idea"},{"label":"脉冲传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"按采样开关位置决定哪些环节先相乘再取 z 变换，中间没有采样开关的连续环节必须先合并","type":"k1"},{"label":"零阶保持器要与后续连续环节合并后再做 z 变换，不能单独变换后相乘","type":"k1"},{"label":"输出 z 变换等于闭环脉冲传函乘输入的 z 变换","type":"k1"},{"label":"把各环节代入后整理成 z 的有理分式，便于逐项做长除法求序列","type":"k2"},{"label":"把保持器当成普通环节单独变换；或把开环脉冲传函当成了闭环","type":"k3"}]},{"label":"脉冲传递函数是零初始条件下输出与输入 z 变换之比","type":"yd"},{"label":"连续环节串联时若中间没有采样开关，不能直接相乘","type":"yd"},{"label":"闭环脉冲传递函数的写法取决于采样开关的位置","type":"yd"},{"label":"G(z)=Z[G(s)] 中的保持器要一并计入","type":"yd"},{"label":"确定采样开关位置并画出离散化结构图","type":"bz"},{"label":"对包含保持器的连续部分整体做 z 变换","type":"bz"},{"label":"按串并联或反馈等效写出脉冲传递函数","type":"bz"},{"label":"G(z)=\\frac{C(z)}{R(z)}=Z[G_h(s)G_0(s)]","type":"fm","tex":"G(z)=\\frac{C(z)}{R(z)}=Z[G_h(s)G_0(s)]"},{"label":"\\Phi(z)=\\frac{G(z)}{1+G(z)H(z)}","type":"fm","tex":"\\Phi(z)=\\frac{G(z)}{1+G(z)H(z)}"},{"label":"求采样系统的输出 z 变换表达式","type":"kf","own":true},{"label":"求开环或闭环脉冲传递函数","type":"kf","own":false},{"label":"比较不同采样开关位置对结果的影响","type":"kf","own":false},{"label":"由连续传递函数求脉冲传递函数","type":"kf","own":false},{"label":"把两个无采样开关隔开的连续环节直接相乘","type":"er","own":false},{"label":"忘记把零阶保持器计入 G(z)","type":"er","own":false}]},{"label":"离散系统的动态性能与极点分布","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"求前几个采样点的值可用长除法","type":"k1"},{"label":"也可以用部分分式展开后逐项做 z 反变换，再代入采样序号","type":"k1"},{"label":"初值可用初值定理核对，本题的第一个采样点应当由结构直接看出","type":"k1"},{"label":"把输出 z 变换按 z 的负幂次展开，商的各项系数就是输出序列","type":"k1"},{"label":"长除法每除一次得到一个采样值，除到题要求的序号即可停止","type":"k2"},{"label":"把 z 的负幂次与正幂次展开方向弄反；或忘记把指数项代入数值","type":"k3"}]},{"label":"闭环极点在 z 平面上的位置决定响应形式","type":"yd"},{"label":"极点越靠近原点衰减越快，越靠近单位圆振荡越强","type":"yd"},{"label":"极点的幅角决定振荡频率，幅值决定衰减速度","type":"yd"},{"label":"采样周期增大会使动态性能变差甚至不稳定","type":"yd"},{"label":"求闭环脉冲传递函数的极点","type":"bz"},{"label":"按极点在单位圆内的位置判断响应形式","type":"bz"},{"label":"由极点的模与幅角估算衰减与振荡频率","type":"bz"},{"label":"与连续系统指标对应关系相互校验","type":"bz"},{"label":"z_i=|z_i|e^{j\\angle z_i},\\quad \\sigma=\\frac{\\ln|z_i|}{T}","type":"fm","tex":"z_i=|z_i|e^{j\\angle z_i},\\quad \\sigma=\\frac{\\ln|z_i|}{T}"},{"label":"\\omega=\\frac{\\angle z_i}{T}","type":"fm","tex":"\\omega=\\frac{\\angle z_i}{T}"},{"label":"由输出 z 变换求各采样时刻的输出值","type":"kf","own":true},{"label":"由闭环极点分布判断动态性能","type":"kf","own":false},{"label":"与连续域指标互相换算","type":"kf","own":false},{"label":"说明采样周期对动态性能的影响","type":"kf","own":false},{"label":"把 z 平面极点当作 s 平面极点直接读阻尼比","type":"er","own":false},{"label":"忽略单位圆上极点对应等幅振荡","type":"er","own":false}]},{"label":"离散系统稳定性分析","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先看闭环脉冲传函的极点是否全部落在单位圆内，只有稳定才能用终值定理","type":"k1"},{"label":"终值定理的形式是 z 趋于一时一减 z 的负一次方乘以输出的 z 变换，再乘上输入的因子","type":"k1"},{"label":"若闭环含 z 等于一的极点，阶跃输入下终值应趋于一个有限值，可用这一点核对结果","type":"k1"},{"label":"本题保持器与积分环节串联，开环在 z 等于一处有极点，所以阶跃输入下系统无稳态误差","type":"k2"},{"label":"未判稳就代终值定理；或把终值定理的因子与输入的 z 变换重复乘了一次","type":"k3"}]},{"label":"闭环脉冲传函的极点全部位于 z 平面单位圆内则稳定","type":"yd"},{"label":"可直接求解特征根，也可用朱里判据或 w 变换后套劳斯判据","type":"yd"},{"label":"w 变换把单位圆内映射到左半平面","type":"yd"},{"label":"采样周期增大会使稳定性变差","type":"yd"},{"label":"写出闭环脉冲传递函数的特征方程","type":"bz"},{"label":"选择方法：求根、朱里判据或 w 变换后用劳斯判据","type":"bz"},{"label":"对含参数的系统求使稳定成立的参数范围","type":"bz"},{"label":"必要时分析采样周期对稳定域的影响","type":"bz"},{"label":"|z_i|<1","type":"fm","tex":"|z_i|<1"},{"label":"z=\\frac{1+w}{1-w}\\quad (w\\ \\text{变换})","type":"fm","tex":"z=\\frac{1+w}{1-w}\\quad (w\\ \\text{变换})"},{"label":"判断采样系统稳定性并求单位阶跃下的终值","type":"kf","own":true},{"label":"判断离散系统是否稳定","type":"kf","own":false},{"label":"求使系统稳定的采样周期或增益范围","type":"kf","own":false},{"label":"用 w 变换后套用劳斯判据","type":"kf","own":false},{"label":"把稳定条件写成实部小于零而不是模小于 1","type":"er","own":false},{"label":"w 变换公式记错导致映射关系颠倒","type":"er","own":false}]}]}]}},{"no":"5","tree":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上　重点：采样序列与 z 变换、状态空间求传函并定等幅振荡、连续系统离散化、对偶原理、由传函反推矩阵参数、李雅普诺夫第一法","type":"warn"},{"label":"五、由响应反求模型并离散化　〔第5题〕","type":"block","children":[{"label":"由零输入响应与零状态响应反求系统矩阵与输入矩阵，再按给定采样周期和零阶保持器求离散化状态方程","type":"idea"},{"label":"状态转移矩阵","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"零输入响应里出现的指数项直接给出状态转移矩阵的形式，把初值代进去可验证","type":"k1"},{"label":"零状态阶跃响应是状态转移矩阵与输入矩阵的卷积，对时间求导可把输入矩阵分离出来","type":"k1"},{"label":"两组给出的初值响应互相印证，可用其中一组检验求出的矩阵是否正确","type":"k1"},{"label":"本题零输入响应是指数函数乘初值，说明系统矩阵只有一个特征值，状态转移矩阵是该指数乘常矩阵","type":"k2"},{"label":"把零输入响应里的初值当成系数而不是状态；或求输入矩阵时忘记对时间求导","type":"k3"}]},{"label":"状态转移矩阵 e^{At} 描述零输入下状态随时间的演化","type":"yd"},{"label":"可从 (sI-A)^{-1} 求拉氏反变换得到","type":"yd"},{"label":"满足 e^{A\\cdot0}=I 且可逆","type":"yd"},{"label":"含输入时用卷积积分写出全响应","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"求拉氏反变换得到 e^{At}","type":"bz"},{"label":"代入全响应公式求状态与输出","type":"bz"},{"label":"用初值条件校验结果","type":"bz"},{"label":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]","type":"fm","tex":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]"},{"label":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau","type":"fm","tex":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau"},{"label":"由零输入响应与零状态响应反求系统矩阵与输入矩阵","type":"kf","own":true},{"label":"求状态转移矩阵","type":"kf","own":false},{"label":"求给定初始条件下的状态与输出响应","type":"kf","own":false},{"label":"用性质验证转移矩阵是否正确","type":"kf","own":false},{"label":"矩阵求逆时忘记检查行列式是否为零","type":"er","own":false},{"label":"卷积积分中变量代换写错","type":"er","own":false}]},{"label":"连续系统的离散化","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把采样周期代入状态转移矩阵即得离散状态矩阵","type":"k1"},{"label":"离散输入矩阵是状态转移矩阵与输入矩阵乘积在采样周期上的积分，积分要逐项做","type":"k1"},{"label":"求出的离散方程再用递推公式算一两个采样点，与连续解在采样时刻的值比对即可确认","type":"k1"},{"label":"采样周期取自然对数的整数倍时指数项会变成整数或分数，离散矩阵元素往往很简洁","type":"k2"},{"label":"把连续状态方程直接照抄成差分方程；或积分上限写错，忘记零阶保持器带来的积分形式","type":"k3"}]},{"label":"离散化状态方程由状态转移矩阵在采样周期处的取值构成","type":"yd"},{"label":"输入矩阵是状态转移矩阵与输入矩阵乘积在采样周期上的积分","type":"yd"},{"label":"带零阶保持器时即按上述积分式离散化，输出矩阵不变","type":"yd"},{"label":"求连续系统的状态转移矩阵","type":"bz"},{"label":"把采样周期代入得到离散状态矩阵","type":"bz"},{"label":"对输入矩阵做积分得到离散输入矩阵","type":"bz"},{"label":"写出差分形式的离散状态方程并按递推求采样点上的响应","type":"bz"},{"label":"x((k+1)T)=Gx(kT)+Hu(kT)","type":"fm","tex":"x((k+1)T)=Gx(kT)+Hu(kT)"},{"label":"G=e^{AT},\\quad H=\\int_{0}^{T}e^{A\tau}B\\,d\tau","type":"fm","tex":"G=e^{AT},\\quad H=\\int_{0}^{T}e^{A\tau}B\\,d\tau"},{"label":"按给定采样周期和零阶保持器求连续系统的离散化状态方程","type":"kf","own":true},{"label":"求连续系统在给定采样周期下的离散化状态方程","type":"kf","own":false},{"label":"由给出的状态响应反求系统矩阵再离散化","type":"kf","own":false},{"label":"计算采样点上的状态与输出序列","type":"kf","own":false},{"label":"把采样周期直接当成时间常数代进连续传函","type":"er","own":false},{"label":"积分上限写成采样周期以外的量，或忘记乘输入矩阵","type":"er","own":false}]}]}]}},{"no":"6","tree":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上　重点：采样序列与 z 变换、状态空间求传函并定等幅振荡、连续系统离散化、对偶原理、由传函反推矩阵参数、李雅普诺夫第一法","type":"warn"},{"label":"六、离散系统极点配置控制器设计　〔第6题〕","type":"block","children":[{"label":"由受控对象的差分方程求脉冲传函，设计数字控制器使闭环极点落在指定位置","type":"idea"},{"label":"数字控制器与最少拍设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先把差分方程取 z 变换，在零初始条件下写脉冲传函","type":"k1"},{"label":"闭环脉冲传函由前向通道与反馈通道的关系写出，等于控制器乘对象再除以一加两者乘积","type":"k1"},{"label":"把期望极点对应的特征多项式写出，与实际闭环特征多项式逐项比较，解出控制器系数","type":"k1"},{"label":"分子分母都要化成 z 的负幂次形式","type":"k1"},{"label":"本题期望极点为共轭复数，期望特征多项式是二次的，控制器也应按一阶或二阶形式设待定系数","type":"k2"},{"label":"差分方程取 z 变换时初值处理错误；或控制器设成高阶形式导致待定系数多于方程数","type":"k3"}]},{"label":"最少拍系统指在典型输入下经过有限拍达到无稳态误差","type":"yd"},{"label":"设计需要满足可实现性与稳定性约束","type":"yd"},{"label":"最少拍系统的闭环脉冲传递函数由输入类型确定","type":"yd"},{"label":"最少拍设计通常导致很大的控制量，需加限制","type":"yd"},{"label":"确定输入类型及对应的误差传函形式","type":"bz"},{"label":"按无稳态误差要求构造闭环脉冲传递函数","type":"bz"},{"label":"由 D(z)=Φ(z)/[G(z)(1-Φ(z))] 求数字控制器","type":"bz"},{"label":"检验可实现性、稳定性与控制量大小","type":"bz"},{"label":"D(z)=\\frac{\\Phi(z)}{G(z)(1-\\Phi(z))}","type":"fm","tex":"D(z)=\\frac{\\Phi(z)}{G(z)(1-\\Phi(z))}"},{"label":"\\Phi_e(z)=1-\\Phi(z)","type":"fm","tex":"\\Phi_e(z)=1-\\Phi(z)"},{"label":"设计数字控制器使离散闭环极点位于指定位置","type":"kf","own":true},{"label":"设计最少拍数字控制器","type":"kf","own":false},{"label":"比较不同输入类型下的最少拍数","type":"kf","own":false},{"label":"分析最少拍系统存在的问题","type":"kf","own":false},{"label":"忽略 D(z) 必须是物理可实现的因果系统","type":"er","own":false},{"label":"闭环传函构造时未满足稳定性约束条件","type":"er","own":false}]}]}]}},{"no":"7","tree":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上　重点：采样序列与 z 变换、状态空间求传函并定等幅振荡、连续系统离散化、对偶原理、由传函反推矩阵参数、李雅普诺夫第一法","type":"warn"},{"label":"七、对偶系统的能控能观与传函证明　〔第7题〕","type":"block","children":[{"label":"两系统互为对偶，证明能控性与能观性互换，并讨论传函是否相同","type":"idea"},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"两个系统的矩阵满足系统矩阵互为转置、输入矩阵与输出矩阵互为转置的关系","type":"k1"},{"label":"写出一方的能控性矩阵，取转置后恰好等于另一方的能观性矩阵，秩相等即得结论","type":"k1"},{"label":"矩阵秩在转置下不变，这一步是证明的关键，要明确写出来","type":"k1"},{"label":"把能控性矩阵的转置写成各项转置相乘的形式，就能与对偶系统的能观性矩阵逐项对上","type":"k2"},{"label":"只说矩阵形似而不写出转置关系；或把转置顺序写错导致乘积次序不对","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"证明互为对偶的两个系统其能控性与能观性互换","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]},{"label":"状态空间与传递函数的关系","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"单输入单输出系统的传递函数是标量，转置后数值不变，这是判断的出发点","type":"k1"},{"label":"把传递函数的矩阵表达式整体转置，注意转置后各矩阵的次序要反过来","type":"k1"},{"label":"转置后若恰好变成另一个系统的传递函数表达式，则两者传函相同，否则不同","type":"k1"},{"label":"即使传函相同，两个系统的内部状态维数与能控能观结构也可能不同","type":"k2"},{"label":"把标量转置与矩阵转置混为一谈；或转置时不改变乘积次序","type":"k3"}]},{"label":"由状态空间求传递函数为 C(sI-A)^{-1}B+D","type":"yd"},{"label":"传递函数只反映能控能观子系统，含零极点对消","type":"yd"},{"label":"系统的特征值等于传递函数的极点","type":"yd"},{"label":"同一传递函数对应的状态空间实现不唯一","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"按公式求 G(s)=C(sI-A)^{-1}B+D","type":"bz"},{"label":"与已知传递函数比对，判断是否发生零极点对消","type":"bz"},{"label":"G(s)=C(sI-A)^{-1}B+D","type":"fm","tex":"G(s)=C(sI-A)^{-1}B+D"},{"label":"判断互为对偶的两个系统是否具有相同传递函数","type":"kf","own":true},{"label":"由状态空间表达式求传递函数","type":"kf","own":false},{"label":"判断状态空间实现是否存在零极点对消","type":"kf","own":false},{"label":"比较不同实现对应的传递函数是否相同","type":"kf","own":false},{"label":"漏掉直接传递项 D","type":"er","own":false},{"label":"把特征值个数与传递函数极点数直接等同而不检查对消","type":"er","own":false}]}]}]}},{"no":"8","tree":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上　重点：采样序列与 z 变换、状态空间求传函并定等幅振荡、连续系统离散化、对偶原理、由传函反推矩阵参数、李雅普诺夫第一法","type":"warn"},{"label":"八、由传函形式反推矩阵参数　〔第8题〕","type":"block","children":[{"label":"对称系统矩阵配转置的输入输出向量，已知传函只剩一个极点，反求矩阵中的待定常数","type":"idea"},{"label":"状态空间与传递函数的关系","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"系统矩阵是对称阵且输入向量与输出向量互为转置时，传函可展开成按特征值分解的几个一阶项之和","type":"k1"},{"label":"传函只剩一个极点，说明输入向量只能落在唯一特征方向上","type":"k1"},{"label":"按特征向量的定义代入，逐个分量比较即可解出待定参数","type":"k1"},{"label":"也就是输入向量是系统矩阵的特征向量","type":"k1"},{"label":"输入向量的第三个分量为零","type":"k2"},{"label":"再把第一个分量与第二个分量比较，还能顺带定出另一个参数与特征值，可用传函形式核对","type":"k2"},{"label":"特征向量方程第三个分量只剩一个待求常数，可直接解出","type":"k2"},{"label":"直接按传函公式硬算三次行列式而不利用对称性；或把「传函只剩一个极点」误当成系统是一阶系统","type":"k3"}]},{"label":"由状态空间求传递函数为 C(sI-A)^{-1}B+D","type":"yd"},{"label":"传递函数只反映能控能观子系统，含零极点对消","type":"yd"},{"label":"系统的特征值等于传递函数的极点","type":"yd"},{"label":"同一传递函数对应的状态空间实现不唯一","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"按公式求 G(s)=C(sI-A)^{-1}B+D","type":"bz"},{"label":"与已知传递函数比对，判断是否发生零极点对消","type":"bz"},{"label":"G(s)=C(sI-A)^{-1}B+D","type":"fm","tex":"G(s)=C(sI-A)^{-1}B+D"},{"label":"由给定的传递函数形式反求状态空间模型中的待定参数","type":"kf","own":true},{"label":"由状态空间表达式求传递函数","type":"kf","own":false},{"label":"判断状态空间实现是否存在零极点对消","type":"kf","own":false},{"label":"比较不同实现对应的传递函数是否相同","type":"kf","own":false},{"label":"漏掉直接传递项 D","type":"er","own":false},{"label":"把特征值个数与传递函数极点数直接等同而不检查对消","type":"er","own":false}]}]}]}},{"no":"9","tree":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上　重点：采样序列与 z 变换、状态空间求传函并定等幅振荡、连续系统离散化、对偶原理、由传函反推矩阵参数、李雅普诺夫第一法","type":"warn"},{"label":"九、观测器与状态反馈　〔第9题〕","type":"block","children":[{"label":"判断能否配置极点、设计降维观测器，再求带观测器的状态反馈闭环传函","type":"idea"},{"label":"状态反馈与极点配置","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"能否任意配置极点由系统是否完全能控决定，构造能控性矩阵求秩后与系统阶数比较","type":"k1"},{"label":"能控时把期望极点展开成期望特征多项式，再与带反馈后的闭环特征多项式逐项比较求增益","type":"k1"},{"label":"本题源文的输入向量三个分量都印成零，这种情形下系统矩阵的列组合无法张满状态空间，属于不能控","type":"k1"},{"label":"输入向量为零向量时，状态方程与输入完全无关，任何状态反馈都改变不了特征多项式","type":"k2"},{"label":"源文输入向量为全零；若原卷第 3 个分量印的是非零值（常见为 1）","type":"k3"},{"label":"系统就变成能控、可配置极点，务必回原卷核对这一分量","type":"k3"}]},{"label":"状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控","type":"yd"},{"label":"状态反馈不改变系统的零点","type":"yd"},{"label":"极点配置通过比较期望与实际的闭环特征多项式求解 K","type":"yd"},{"label":"状态反馈可能改变能观性","type":"yd"},{"label":"先验证系统能控","type":"bz"},{"label":"写出希望配置的极点并求期望特征多项式","type":"bz"},{"label":"求闭环系统特征多项式 det(sI-A+BK)","type":"bz"},{"label":"比较系数解出反馈增益阵 K","type":"bz"},{"label":"u=-Kx+v","type":"fm","tex":"u=-Kx+v"},{"label":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)","type":"fm","tex":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)"},{"label":"判断能否通过状态反馈任意配置闭环极点并求出反馈矩阵","type":"kf","own":true},{"label":"设计状态反馈使闭环极点位于指定位置","type":"kf","own":false},{"label":"判断给定极点是否可通过状态反馈配置","type":"kf","own":false},{"label":"分析状态反馈对系统性能的影响","type":"kf","own":false},{"label":"未验证能控性就直接做极点配置","type":"er","own":false},{"label":"特征多项式比较系数时符号写反","type":"er","own":false}]},{"label":"状态观测器设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先看能观性：输出矩阵取第一个状态时能观性矩阵是单位阵，系统完全能观，观测器可以设计","type":"k1"},{"label":"只测一个状态量时可以用降维观测器，维数等于状态维数减输出维数","type":"k1"},{"label":"把观测器误差动态矩阵的特征多项式与期望极点对应的多项式逐项比较，求出观测器增益","type":"k1"},{"label":"题目提示状态变换矩阵取单位阵，说明可以直接在原坐标下做增益比较，不必先化能观标准型","type":"k2"},{"label":"把观测器增益按状态反馈的公式算；或对不可观的部分做配置导致方程无解","type":"k3"}]},{"label":"状态观测器用输出与输入重构状态，前提是系统能观","type":"yd"},{"label":"极点配置法与龙伯格观测器是两种常用形式","type":"yd"},{"label":"观测器误差动态由 A-LC 的特征值决定","type":"yd"},{"label":"观测器极点通常取得比系统极点快若干倍","type":"yd"},{"label":"验证系统能观性","type":"bz"},{"label":"写出观测器方程并求误差动态矩阵","type":"bz"},{"label":"按期望特征多项式比较系数求出 L","type":"bz"},{"label":"校验观测器收敛速度是否合适","type":"bz"},{"label":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})","type":"fm","tex":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})"},{"label":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})","type":"fm","tex":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})"},{"label":"设计指定极点的降维状态观测器","type":"kf","own":true},{"label":"设计全维状态观测器","type":"kf","own":false},{"label":"由期望观测器极点求反馈增益阵 L","type":"kf","own":false},{"label":"分析观测器与状态反馈组合后的系统极点","type":"kf","own":false},{"label":"把观测器增益阵写成了状态反馈增益阵的形式","type":"er","own":false},{"label":"忽略观测器极点过快会放大噪声","type":"er","own":false}]},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把状态反馈与观测器联立，得到一个包含状态与估计状态的增广系统","type":"k1"},{"label":"求传函时要注意状态反馈只通过输入通道起作用，若输入向量为零则输入到输出之间根本没有通路","type":"k1"},{"label":"把增广系统的特征多项式写成状态反馈部分与观测器部分的乘积形式，可用它确认分离原理成立","type":"k1"},{"label":"带观测器的状态反馈不改变原状态反馈配置好的极点","type":"k2"},{"label":"观测器极点单独决定误差衰减速度，两者互不干扰","type":"k2"},{"label":"忘记输入向量对传函的影响；或把观测器极点也算进闭环传函的极点里","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"求带观测器的状态反馈闭环系统的传递函数","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]}]}]}},{"no":"10","tree":{"label":"浙江大学 845","type":"root","sub":"2025 · 自动控制理论（含现控）","children":[{"label":"难度：难　特点：10 题 150 分；正弦信号的采样与 z 变换、参数稳定条件、由状态空间求传函并定等幅振荡增益、采样系统输出序列与终值、由响应反求矩阵再离散化、离散极点配置、对偶原理证明、由传函定矩阵参数、观测器与状态反馈、非线性平衡点稳定性，每一题都踩在现代控制或离散分析上　重点：采样序列与 z 变换、状态空间求传函并定等幅振荡、连续系统离散化、对偶原理、由传函反推矩阵参数、李雅普诺夫第一法","type":"warn"},{"label":"十、非线性系统的平衡点与稳定性　〔第10题〕","type":"block","children":[{"label":"求非线性自治系统的平衡点，再用李雅普诺夫第一法判断各平衡点的稳定性","type":"idea"},{"label":"李雅普诺夫稳定性分析","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"第一法是在平衡点处做线性化，用雅可比矩阵的特征值判断原系统的局部稳定性","type":"k1"},{"label":"特征值实部全为负则平衡点渐近稳定，有一个正实部就不稳定","type":"k1"},{"label":"本题有两个平衡点，线性化后一个是带负实部的共轭复根","type":"k1"},{"label":"出现纯虚根时第一法失效，需换其他方法","type":"k1"},{"label":"另一个有一个正实根，两者结论截然不同","type":"k1"},{"label":"雅可比矩阵由非线性函数对各状态量求偏导组成，本题只有第二行含状态量的一阶项，结构很简单","type":"k2"},{"label":"把平衡点整体平移到原点这一步省略导致雅可比算错；或对纯虚根情形仍下渐近稳定的结论","type":"k3"}]},{"label":"第一法通过线性化系统的特征值判断原系统的局部稳定性","type":"yd"},{"label":"第二法用李雅普诺夫函数直接判断稳定性，无需解方程","type":"yd"},{"label":"李雅普诺夫函数正定且其导数为负定则渐近稳定","type":"yd"},{"label":"线性定常系统中李雅普诺夫方程有正定解等价于系统稳定","type":"yd"},{"label":"选取或构造李雅普诺夫函数","type":"bz"},{"label":"沿系统轨迹求其对时间的导数","type":"bz"},{"label":"判断函数与导数的正负定性","type":"bz"},{"label":"据此得出稳定性结论","type":"bz"},{"label":"A^TP+PA=-Q,\\quad Q=Q^T>0","type":"fm","tex":"A^TP+PA=-Q,\\quad Q=Q^T>0"},{"label":"V(x)=x^TPx>0,\\quad \\dot{V}(x)<0","type":"fm","tex":"V(x)=x^TPx>0,\\quad \\dot{V}(x)<0"},{"label":"用李雅普诺夫第一法判断非线性系统各平衡点的稳定性","type":"kf","own":true},{"label":"用李雅普诺夫方程判断系统稳定性","type":"kf","own":false},{"label":"构造李雅普诺夫函数证明渐近稳定","type":"kf","own":false},{"label":"分析非线性系统的稳定性范围","type":"kf","own":false},{"label":"李雅普诺夫方程中 P、Q 的角色混用","type":"er","own":false},{"label":"只判断 V 正定就下结论而未检查导数","type":"er","own":false}]},{"label":"非线性系统的特点","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"平衡点是让所有状态导数同时为零的点，把两个方程联立求解即可","type":"k1"},{"label":"本题第一个方程只含第二个状态量，可先解出它的两个取值，再代进第二个方程求第一个状态量","type":"k1"},{"label":"平衡点个数可能不止一个，求完要列全，不能只取一组解","type":"k1"},{"label":"第一个方程给出第二个状态量的两个相反取值，对应两组平衡点，两组都要继续判稳","type":"k2"},{"label":"只解出一组平衡点就下结论；或把平衡点与原系统原点混为一谈","type":"k3"}]},{"label":"不满足叠加原理，输出与初始条件、输入幅值都有关","type":"yd"},{"label":"可能出现自持振荡即极限环","type":"yd"},{"label":"响应可能对初始条件敏感，出现跳跃谐振","type":"yd"},{"label":"线性系统的稳定性概念需要推广为局部稳定性","type":"yd"},{"label":"确认系统含明显非线性环节","type":"bz"},{"label":"判断该非线性是本质非线性还是可线性化的弱非线性","type":"bz"},{"label":"按非线性分析方法选择描述函数法或相平面法","type":"bz"},{"label":"求非线性系统的平衡点","type":"kf","own":true},{"label":"说明非线性系统与线性系统的本质差别","type":"kf","own":false},{"label":"指出同步振荡、跳跃谐振等特有现象","type":"kf","own":false},{"label":"判断某系统应选用哪种分析方法","type":"kf","own":false},{"label":"把非线性环节线性化后直接沿用线性理论的全部结论","type":"er","own":false},{"label":"认为非线性系统一定不稳定","type":"er","own":false}]}]}]}}]}</script>
+<script src="../../../../../assets/d3.min.js"></script>
+<script src="../../../../../assets/kg.js"></script>
+</body></html>

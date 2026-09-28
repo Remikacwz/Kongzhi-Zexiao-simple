@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>华中科技大学 832 控制原理 2025 年真题思维导图</title>
+<meta name="description" content="华中科技大学 2025 年 832 控制原理 考研真题思维导图：共 10 个大题，逐题思路、考点与易错整理。第1题（一、信号流图求传递函数）；第2题（二、反馈极性未知时的根轨迹增益范围）；第3题（三、奈氏判据定稳定增益与幅值裕度）；第4题（四、开环对数幅频特性渐近线的绘制）；第5题（五、复合输入下由响应反求系统参数）；第6题（六、保持裕度不变的串联校正设计）">
+<link rel="canonical" href="http://127.0.0.1:8768/真题思维导图/x/985/huazhongkeji/2025/832/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="华中科技大学 832 控制原理 2025 年真题思维导图">
+<meta property="og:description" content="华中科技大学 2025 年 832 控制原理 考研真题思维导图：共 10 个大题，逐题思路、考点与易错整理。第1题（一、信号流图求传递函数）；第2题（二、反馈极性未知时的根轨迹增益范围）；第3题（三、奈氏判据定稳定增益与幅值裕度）；第4题（四、开环对数幅频特性渐近线的绘制）；第5题（五、复合输入下由响应反求系统参数）；第6题（六、保持裕度不变的串联校正设计）">
+<meta name="theme-color" content="#1f4e79">
+<link rel="stylesheet" href="../../../../../assets/kg.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "华中科技大学 832 控制原理 2025 年真题思维导图", "inLanguage": "zh-CN", "about": ["减小稳态误差的措施", "多输入与扰动作用下的传递函数", "奈奎斯特判据", "广义根轨迹与参数根轨迹", "开环对数频率特性的绘制", "扰动作用下的稳态误差", "数字控制器与最少拍设计", "梅森增益公式与信号流图", "滞后校正", "状态反馈与极点配置"], "educationalLevel": "985 院校", "url": "http://127.0.0.1:8768/真题思维导图/x/985/huazhongkeji/2025/832/"}</script>
+</head>
+<body class="page-set">
+<header class="site-head"><div class="inner"><a class="parent-home" href="../../../../../../index.html"><span class="arr">←</span><span class="ptxt">择校首页</span></a><a class="brand" href="../../../../../"><span class="full">控制考研真题思维导图</span><span class="short">真题思维导图</span></a><button class="sbtn" id="kg-search-btn" type="button" aria-label="搜索"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button><nav class="crumbs"><a href="../../../../../x/985/">985 院校</a><span class="sep">›</span><a href="../../../../../x/985/huazhongkeji/">华中科技大学</a><span class="sep">›</span><span>2025 年 832</span></nav><nav class="levelnav" aria-label="层级导航"><a class="lv home" href="../../../../../">首页</a><a class="lv" href="../../../../../x/985/huazhongkeji/">← 华中科技大学</a><a class="lv" href="#q1">第 1 题 →</a></nav><input class="head-inp" id="site-q" type="search" placeholder="搜学校 / 代码 / 年份" aria-label="搜索"></div></header>
+<main class="wrap">
+<div class="titlebar"><img class="hlogo" src="../../../../../assets/logo/huazhongkeji.jpg" alt="华中科技大学校徽" width="52" height="52"><h1>华中科技大学 832 控制原理 2025 年真题思维导图</h1><div class="actions"><button class="btn" data-mode="outline">大纲</button><button class="btn on" data-mode="map">导图</button><button class="btn" id="btn-full">全屏</button></div></div>
+<div class="tagrow"><span class="badge t985">985 院校</span><span class="badge">共 10 题</span></div>
+<p class="sub muted tiny" style="margin:8px 0 0">难度：难　10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了</p>
+<div class="qtabs" id="qtabs"><button class="qt on" data-q="all">整卷</button><button class="qt" data-q="1">1</button><button class="qt" data-q="2">2</button><button class="qt" data-q="3">3</button><button class="qt" data-q="4">4</button><button class="qt" data-q="5">5</button><button class="qt" data-q="6">6</button><button class="qt" data-q="7">7</button><button class="qt" data-q="8">8</button><button class="qt" data-q="9">9</button><button class="qt" data-q="10">10</button></div>
+<div class="cols"><div class="mainpane">
+<div class="mapwrap" id="mapwrap">
+<div class="maptools">
+<button class="btn on" data-depth="1">板块</button>
+<button class="btn" data-depth="2">考点</button>
+<button class="btn" data-depth="99">全部</button>
+<button class="btn" data-zoom="in" title="放大">＋</button>
+<button class="btn" data-zoom="out" title="缩小">－</button>
+<button class="btn" data-fit="1">适应</button>
+<button class="btn" id="btn-exitfs" hidden>退出全屏</button>
+<input id="map-q" type="search" placeholder="图内搜索">
+</div>
+<svg id="svg"><g id="g"></g></svg>
+<div class="map-foot">点击节点展开/折叠　·　滚轮缩放　·　拖拽平移</div>
+</div>
+<section class="content" id="content">
+<article class="qcard" id="q1" data-q="1">
+<h2><span class="no">1</span><span>一、信号流图求传递函数</span><a class="anchorlink" data-q="1" href="#q1" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由信号流图用梅森增益公式求 C(s)/R(s)</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/tf_04/">梅森增益公式与信号流图</a>
+<span class="tiny muted">传递函数</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由信号流图求系统的传递函数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先在流图上把所有回路数出来，再找两两互不接触的回路对，回路越多越要按顺序编号避免漏算</li>
+<li><b>关键一步：</b>特征式是 1 减去单回路之和、加上两两互不接触回路乘积之和，符号交替</li>
+<li><b>关键一步：</b>前向通道要按从输入到输出的方向逐条走完，每条通道自己的余子式只包含与它不接触的那些回路</li>
+<li><b>中间结果：</b>分母是同一个特征式，分子是各条前向通道与其余子式乘积之和，最后可以约分</li>
+<li><b>卡点：</b>漏掉两两互不接触项；或把与前向通道接触的回路写进余子式</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>信号流图适合处理多回路、比较点复杂系统</li><li>特征式 Δ=1-ΣL+ΣLL-ΣLLL+…</li><li>每条前向通路的余子式要剔除与它接触的回路</li><li>不接触回路才会计入高阶乘积项</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由结构图改画信号流图，标出各节点</li><li>找出全部单独回路，求特征式 Δ</li><li>找出全部前向通路 P_k</li><li>对每条通路求余子式 Δ_k</li><li>代入公式求总传输</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由信号流图求系统的传递函数</li><li>由信号流图求 C(s)/R(s)</li><li>结构图先用梅森公式化简再作性能分析</li><li>判断某条回路是否与给定前向通路接触</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>不接触回路找漏或重复计数</li><li>余子式中未剔除与通路接触的回路</li><li>把前向通路的增益写成了回路增益</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="P=\frac{1}{\Delta}\sum_k P_k\Delta_k"></div><div class="formula" data-tex="\Delta=1-\sum L_a+\sum L_aL_b-\sum L_aL_bL_c+\cdots"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q2" data-q="2">
+<h2><span class="no">2</span><span>二、反馈极性未知时的根轨迹增益范围</span><a class="anchorlink" data-q="2" href="#q2" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">开环零极点全在左半平面但反馈极性不明，要分别按负反馈与正反馈列特征方程，取两者稳定域的公共部分</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_06/">广义根轨迹与参数根轨迹</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>反馈极性未知时确定使闭环稳定的根轨迹增益范围</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>极性未知就要把两种情况都算：负反馈的特征方程是一加开环传函，正反馈是一减开环传函</li>
+<li><b>关键一步：</b>展开成多项式后逐项列劳斯表，分别求出各自的稳定增益区间</li>
+<li><b>关键一步：</b>两个区间的公共部分才是「无论极性如何都稳定」的范围，这正是题目要的答案</li>
+<li><b>中间结果：</b>本题展开后是四阶多项式：负反馈时末项为常数加增益，正反馈时为常数减增益</li>
+<li><b>中间结果：</b>劳斯表首列出现两种约束：末项大于零与首列中间项大于零，分别给出增益的上下界</li>
+<li><b>卡点：</b>只按负反馈算；或把正反馈当成负反馈除以负一处理，特征方程的常数项符号弄错</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>可变参数不是开环增益时称为参数根轨迹</li><li>方法是用等效开环传递函数把参数提到标准位置</li><li>正反馈系统或零度根轨迹的相角条件是 0°+360°l</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>把特征方程整理成 1+αG*(s)=0 的形式</li><li>把 α 以外部分视为等效开环传递函数</li><li>按常规根轨迹法则绘制</li><li>注意相角条件是否变成 0°</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>反馈极性未知时确定使闭环稳定的根轨迹增益范围</li><li>以时间常数或其他参数为变量绘制根轨迹</li><li>绘制正反馈系统的零度根轨迹</li><li>比较零度与 180 度根轨迹的差别</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>整理时没有把参数完整地提到分子位置</li><li>零度根轨迹仍沿用 180° 相角条件</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="1+\alpha G^*(s)=0"></div><div class="formula" data-tex="\sum\angle(s-z_i)-\sum\angle(s-p_j)=0^\circ+360^\circ l"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q3" data-q="3">
+<h2><span class="no">3</span><span>三、奈氏判据定稳定增益与幅值裕度</span><a class="anchorlink" data-q="3" href="#q3" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">Ⅰ 型三阶开环系统先由相角条件求穿越负实轴处的频率，再令该点幅值小于 1 得稳定增益范围，最后算幅值裕度</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/st_04/">奈奎斯特判据</a>
+<span class="tiny muted">稳定性分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用奈奎斯特判据确定使系统稳定的开环增益范围</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>开环没有右半平面极点，所以闭环稳定的条件是幅相曲线不包围临界点，</li>
+<li><b>关键一步：</b>穿过负实轴的位置由相角等于负一百八十度定出频率，</li>
+<li><b>关键一步：</b>把该频率代进幅频表达式，令幅值小于 1，就得到增益的上界</li>
+<li><b>关键一步：</b>等价于曲线穿过负实轴的那一点落在临界点右侧</li>
+<li><b>关键一步：</b>两个惯性环节的相角加起来正好九十度，用正切乘积关系可一步解出频率</li>
+<li><b>中间结果：</b>临界频率等于两个时间常数乘积的平方根的倒数</li>
+<li><b>中间结果：</b>临界点的幅值等于增益乘两个时间常数之积再除以两者之和，</li>
+<li><b>中间结果：</b>所以稳定条件是增益小于两者之和除以两者之积</li>
+<li><b>卡点：</b>把穿越频率当成两条渐近线的交点直接取；或忘记 Ⅰ 型系统积分环节贡献的九十度相角</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>闭环稳定 ⇔ Z=N+P，其中 Z 为右半平面闭环极点数</li><li>P 为开环右半平面极点数，须先数清楚</li><li>N 为开环幅相曲线绕 (-1,j0) 点的净包围圈数</li><li>逆时针包围为正，顺时针为负</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>先求开环极点，数出右半平面个数 P</li><li>绘制开环幅相特性曲线（或利用 Bode 图判稳）</li><li>数出曲线对 (-1,j0) 点的包围圈数 N</li><li>由 Z=N+P 判断闭环稳定性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用奈奎斯特判据确定使系统稳定的开环增益范围</li><li>由开环幅相曲线判断闭环稳定性</li><li>求使闭环稳定的开环增益范围</li><li>判断补画虚轴绕行后曲线的包围情况</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>开环含有积分环节时未补画无穷大半径圆弧</li><li>把包围圈数的正负号定义搞反</li><li>没有先数开环右半平面极点数 P</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="Z=N+P"></div><div class="formula" data-tex="N=N_+-N_-"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/fd_05/">稳定裕度</a>
+<span class="tiny muted">频域分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>计算给定增益下的幅值裕度</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>幅值裕度的分贝值等于临界增益与实际增益之比取常用对数再乘二十</li>
+<li><b>关键一步：</b>本题临界增益与实际增益之比恰好等于六，题面给出的六的对数正是为此准备的</li>
+<li><b>关键一步：</b>幅值裕度为正是稳定（最小相位系统），为零是临界稳定</li>
+<li><b>中间结果：</b>时间常数取 0.5 与 1、增益取 0.5 时，</li>
+<li><b>中间结果：</b>临界增益为 3，比值是 6，对应约 15.6 dB</li>
+<li><b>卡点：</b>把幅值裕度定义成实际增益比临界增益（取倒数）；或忘记乘二十</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)</li><li>幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝</li><li>γ&gt;0 且 Kg&gt;1 时闭环稳定（最小相位系统）</li><li>γ 主要影响超调，ωc 主要影响响应速度</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由幅频特性求 |G|=1 对应的穿越频率 ωc</li><li>由相频特性求 ∠G=-180° 对应的频率 ωg</li><li>分别代入公式求相角裕度与幅值裕度</li><li>由裕度符号判断稳定性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>计算给定增益下的幅值裕度</li><li>求系统的相角裕度与幅值裕度</li><li>由裕度要求反求开环增益</li><li>分析增益变化对裕度的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 ωc 与 ωg 两个频率用反</li><li>幅值裕度取倒数未取，导致结论反了</li><li>非最小相位系统仍用同一判据</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\gamma=180^\circ+\angle G(j\omega_c)"></div><div class="formula" data-tex="K_g=-20\lg|G(j\omega_g)|\ \text{dB}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q4" data-q="4">
+<h2><span class="no">4</span><span>四、开环对数幅频特性渐近线的绘制</span><a class="anchorlink" data-q="4" href="#q4" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">开环含一个零点与三个惯性环节，且增益用穿越频率表示，按转折频率逐段改斜率画渐近线</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/fd_03/">开环对数频率特性的绘制</a>
+<span class="tiny muted">频域分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>绘制开环对数幅频特性渐近线</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>最低频段只由积分环节决定，斜率是每十倍频程下降二十分贝，高度由增益决定</li>
+<li><b>关键一步：</b>按转折频率从小到大依次改斜率：经过惯性环节下降二十分贝，经过一阶微分环节上升二十分贝</li>
+<li><b>关键一步：</b>本题增益用另一个频率的平方表示，说明这个频率就是幅值穿越频率，</li>
+<li><b>关键一步：</b>画图时要让曲线正好在那里穿过零分贝线</li>
+<li><b>中间结果：</b>四个转折频率的先后顺序已在题面给出，画完可数一数斜率变化次数是否与环节数一致</li>
+<li><b>卡点：</b>改斜率时做替换而不是累加；或把增益表达式当成独立参数，忘了它与穿越频率的约束关系</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>熟记 lg2≈0.3、lg5≈0.7、20lg2≈6dB</li><li>从低频段开始逐段按各环节转折频率改变斜率</li><li>低频段斜率由系统型别决定，高度由开环增益决定</li><li>每经过一个转折频率斜率就叠加该环节的斜率变化</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>把开环传递函数写成典型环节的标准乘积</li><li>确定系统型别与开环增益，画出最低频段渐近线</li><li>按转折频率从小到大逐段改斜率</li><li>逐点叠加得到幅频与相频曲线</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>绘制开环对数幅频特性渐近线</li><li>绘制开环对数渐近幅频特性</li><li>计算指定频率处的幅值与相角</li><li>由低频段斜率与高度判断型别与增益</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>逐段改斜率时忘记累加而非替换</li><li>低频段起始高度没有乘上型别的 -20v dB/dec</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="L(\omega)=20\lg K-20v\lg\omega+\sum 20\lg|G_i(j\omega)|"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q5" data-q="5">
+<h2><span class="no">5</span><span>五、复合输入下由响应反求系统参数</span><a class="anchorlink" data-q="5" href="#q5" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">有用输入是阶跃、扰动是正弦，输出是二者叠加，用稳态值与最大值两个条件反求 p、q、T、k，再求误差</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/bd_04/">多输入与扰动作用下的传递函数</a>
+<span class="tiny muted">结构图与方框图</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求有用输入与扰动同时作用时的输出</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>用叠加原理分别求两条通道：从有用输入到输出的传函、从扰动到输出的传函</li>
+<li><b>关键一步：</b>两条通道的分母相同，都是同一个特征多项式，只是分子不同，写出后便于比对</li>
+<li><b>关键一步：</b>总输出是两部分之和，不能先把两个输入相加再乘一个传函</li>
+<li><b>中间结果：</b>阶跃分量给出稳态值，正弦分量给出叠加在稳态值上的等幅纹波</li>
+<li><b>卡点：</b>把扰动直接当成输入的一部分；或忘记两条通道的分母相同这一结构特点</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>线性系统可用叠加原理，每次只保留一个输入</li><li>求扰动的传递函数时令参考输入为零</li><li>扰动误差与输入误差分别计算后再叠加</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>令 R(s)=0，求扰动到输出的传递函数</li><li>令 N(s)=0，求输入到输出的传递函数</li><li>按题目要求叠加或单独分析</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求有用输入与扰动同时作用时的输出</li><li>求扰动引起的输出或误差</li><li>分析满足扰动不变性的补偿条件</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>两个输入同时存在时直接叠加却未验证系统的线性性</li><li>求扰动传函时没有把参考输入置零</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\frac{C(s)}{N(s)}=\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ss_04/">扰动作用下的稳态误差</a>
+<span class="tiny muted">稳态误差</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由稳态输出值与响应峰值反求系统参数并求稳态误差</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>阶跃输入的稳态值由直流增益决定，可直接写出一个关于参数的方程</li>
+<li><b>关键一步：</b>题给最大值与稳态值之差就是正弦扰动分量造成的纹波幅值，</li>
+<li><b>关键一步：</b>两个条件联立解出时间常数与增益，再按误差定义求稳态误差</li>
+<li><b>关键一步：</b>这给出频率特性在扰动频率处的一个幅值条件</li>
+<li><b>中间结果：</b>峰值 2.326 与稳态值 2 之比略大于 1，</li>
+<li><b>中间结果：</b>说明纹波幅值不大，据此可判断扰动通道在二弧度每秒附近的幅值衰减很强</li>
+<li><b>卡点：</b>把峰值直接当成稳态值；或只用一个条件就试图解出多个参数</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>扰动误差与输入误差必须分开计算再叠加</li><li>扰动误差取决于扰动作用点到误差点的传递函数</li><li>增大扰动点前的增益可减小扰动误差</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>令参考输入为零，求扰动到误差的传递函数</li><li>代入扰动信号求稳态值</li><li>与输入引起的误差叠加</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由稳态输出值与响应峰值反求系统参数并求稳态误差</li><li>求扰动引起的稳态误差</li><li>比较扰动与输入对误差的不同影响</li><li>分析提高前向增益的作用</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把扰动误差直接当作总误差，遗漏输入分量</li><li>求扰动传函时没有把参考输入置零</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="e_{ssn}=\lim_{s\to0}s\,\Phi_{en}(s)N(s)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q6" data-q="6">
+<h2><span class="no">6</span><span>六、保持裕度不变的串联校正设计</span><a class="anchorlink" data-q="6" href="#q6" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由对数幅频渐近线反求开环传函，再在保持相角裕度与剪切频率不变的前提下把误差降为十分之一</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/fd_04/">由 Bode 图反求传递函数</a>
+<span class="tiny muted">频域分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由开环对数幅频特性渐近线反求传递函数与剪切频率</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>低频段斜率定积分环节个数，低频段高度定开环增益，两者要配套使用</li>
+<li><b>关键一步：</b>每个转折频率处斜率变化二十就对应一个一阶环节，变化方向决定是零点还是极点</li>
+<li><b>关键一步：</b>剪切频率就是幅频曲线与零分贝线的交点频率，读图时注意它落在哪一段</li>
+<li><b>中间结果：</b>把写出的传函代回几个转折频率处验算幅值，可以直接发现增益或环节类型是否读错</li>
+<li><b>卡点：</b>低频段高度与增益之间忘记折算积分环节的斜率；或把上升二十的转折当成极点</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>低频段斜率给出积分环节个数即系统型别</li><li>低频段高度或延长线与 0 dB 交点给出开环增益</li><li>每个转折频率对应一个一阶或二阶环节</li><li>斜率变化 -20 对应惯性环节，+20 对应一阶微分，-40 可能是振荡环节</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>读低频段斜率确定型别 v</li><li>由低频段高度或延长线确定增益 K</li><li>逐个读出转折频率并判断对应环节类型</li><li>结合相频曲线与谐振峰判定二阶环节参数</li><li>写出并验证传递函数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由开环对数幅频特性渐近线反求传递函数与剪切频率</li><li>由给定 Bode 图写出传递函数</li><li>由实验频率特性辨识系统模型</li><li>检验候选传递函数与曲线是否吻合</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把延长线交点误当作增益值而未折算型别</li><li>斜率变化为 -40 时直接写成一阶环节</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="L(\omega)\big|_{\omega=1}=20\lg\frac{K}{\omega^{v}}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/cr_03/">滞后校正</a>
+<span class="tiny muted">系统校正</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>设计串联校正装置，使误差降为原来的十分之一且保持相角裕度和剪切频率不变</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>同时要求「提高低频增益」和「不动中高频的幅相特性」，这正是滞后校正的典型适用场合</li>
+<li><b>关键一步：</b>误差降为十分之一需要低频增益提高十倍，也就是零点增益提高二十分贝，</li>
+<li><b>关键一步：</b>把滞后网络的两个转折频率配置得远离剪切频率：</li>
+<li><b>关键一步：</b>而滞后网络的低频增益恰好是衰减系数的倒数</li>
+<li><b>关键一步：</b>一个远低于它，另一个约在它的十分之一附近，以免吃掉相角裕度</li>
+<li><b>中间结果：</b>设计完成后要重新量一次剪切频率和相角裕度，确认与校正前基本一致，误差确实降下来了</li>
+<li><b>卡点：</b>用超前校正去凑增益，结果剪切频率和相角裕度全变了；</li>
+<li><b>卡点：</b>或两个转折频率离剪切频率太近，相角裕度被吃掉</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>滞后校正利用高频段幅值衰减提高相角裕度</li><li>会使截止频率降低，响应变慢</li><li>转折频率要远低于新的截止频率以免引入过多相位滞后</li><li>可同时提高低频增益改善稳态精度</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定满足相角裕度要求的新截止频率</li><li>由未校正系统在该频率处的幅值确定衰减量</li><li>由衰减量求滞后网络的参数 β</li><li>取转折频率低于新截止频率一个数量级，写出传递函数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>设计串联校正装置，使误差降为原来的十分之一且保持相角裕度和剪切频率不变</li><li>设计串联滞后校正装置</li><li>比较超前与滞后校正的效果差异</li><li>分析滞后校正对响应速度的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把滞后网络的两个转折频率顺序写反</li><li>转折频率取得过高导致相位滞后抵消了增益改善</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G_c(s)=\frac{Ts+1}{\beta Ts+1},\quad \beta&gt;1"></div><div class="formula" data-tex="\frac{1}{T}=(0.1\sim0.2)\omega_c&#x27;"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ss_05/">减小稳态误差的措施</a>
+<span class="tiny muted">稳态误差</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>说明为何能在不影响稳定性的前提下把误差降为十分之一</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>误差大小由低频段增益决定，而相角裕度主要由剪切频率附近的特性决定，两者作用频段不同</li>
+<li><b>关键一步：</b>把增益抬高限制在低频段，就可以只改善精度而几乎不动稳定性</li>
+<li><b>关键一步：</b>这正是滞后校正相对单纯提高增益的优势</li>
+<li><b>中间结果：</b>如果改用直接提高开环增益的办法，低频精度也会改善，但剪切频率会右移、相角裕度会下降</li>
+<li><b>卡点：</b>把提高增益与加校正装置当成等效手段，忽略后者能把作用限制在低频段</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>提高开环增益可减小有差系统的误差，但会削弱稳定性</li><li>增加积分环节可提高型别，代价是相位滞后与超调增大</li><li>采用复合控制或前馈补偿可在不影响稳定性的前提下减小误差</li><li>采用扰动补偿可提高扰动不变性</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>判断误差来源是输入型别不足还是增益太小</li><li>按需选择提高增益、增加积分或加入补偿器</li><li>校验补偿后系统仍然稳定</li><li>重新计算稳态误差确认达标</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>说明为何能在不影响稳定性的前提下把误差降为十分之一</li><li>分析提高开环增益对误差与稳定性的双重影响</li><li>设计前馈补偿器实现给定信号不变性</li><li>说明为何单纯提高增益不可行</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只谈误差减小而不检查稳定性是否被破坏</li><li>把增加积分环节的影响单一化，忽略超调</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="e_{ss}=\frac{1}{1+K_p}R_0,\quad K_p\uparrow\Rightarrow e_{ss}\downarrow"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q7" data-q="7">
+<h2><span class="no">7</span><span>七、最少拍数字控制器设计</span><a class="anchorlink" data-q="7" href="#q7" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">给定对象脉冲传函与采样周期，按单位阶跃输入设计最少拍系统并写出输出与误差序列</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ds_07/">数字控制器与最少拍设计</a>
+<span class="tiny muted">离散控制系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>设计最少拍数字控制器并求输出与误差序列</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先按输入类型定闭环误差脉冲传函：</li>
+<li><b>关键一步：</b>再由数字控制器等于闭环传函除以对象脉冲传函与误差传函的乘积，把已知的 G(z) 代进去化简</li>
+<li><b>关键一步：</b>对象脉冲传函里若含单位圆外零点或纯滞后因子，</li>
+<li><b>关键一步：</b>单位阶跃输入时取误差传函为一减 z 的负一次方，闭环传函即为 z 的负一次方</li>
+<li><b>关键一步：</b>闭环传函必须相应取高阶，否则控制器不可实现或系统不稳</li>
+<li><b>中间结果：</b>写出闭环传函后直接做 z 反变换就得到输出序列，误差序列由误差传函反变换得到</li>
+<li><b>中间结果：</b>单位阶跃输入下最少拍数为拍数等于闭环传函的阶数，之后输出恒等于输入</li>
+<li><b>卡点：</b>不看 G(z) 的零点结构直接套一阶闭环传函；或把数字控制器写成对象脉冲传函的倒数</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>最少拍系统指在典型输入下经过有限拍达到无稳态误差</li><li>设计需要满足可实现性与稳定性约束</li><li>最少拍系统的闭环脉冲传递函数由输入类型确定</li><li>最少拍设计通常导致很大的控制量，需加限制</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定输入类型及对应的误差传函形式</li><li>按无稳态误差要求构造闭环脉冲传递函数</li><li>由 D(z)=Φ(z)/[G(z)(1-Φ(z))] 求数字控制器</li><li>检验可实现性、稳定性与控制量大小</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>设计最少拍数字控制器并求输出与误差序列</li><li>设计最少拍数字控制器</li><li>比较不同输入类型下的最少拍数</li><li>分析最少拍系统存在的问题</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>忽略 D(z) 必须是物理可实现的因果系统</li><li>闭环传函构造时未满足稳定性约束条件</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="D(z)=\frac{\Phi(z)}{G(z)(1-\Phi(z))}"></div><div class="formula" data-tex="\Phi_e(z)=1-\Phi(z)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q8" data-q="8">
+<h2><span class="no">8</span><span>八、二阶线性系统的相平面分析</span><a class="anchorlink" data-q="8" href="#q8" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">一般二阶线性系统求奇点、定类型并画相轨迹，再反推奇点为中心点时的参数条件</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/nl_04/">相平面法</a>
+<span class="tiny muted">非线性系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求二阶线性系统的奇点并判断类型</li>
+<li>反推奇点为中心点时的参数条件</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>奇点由两个微分方程右端同时为零解出，</li>
+<li><b>关键一步：</b>奇点类型由特征方程的根决定：</li>
+<li><b>关键一步：</b>中心点要求特征根为纯虚数，也就是特征方程的一次项系数为零、常数项大于零，</li>
+<li><b>关键一步：</b>系数矩阵行列式不为零时只有原点一个奇点，为零则可能有整条直线上的奇点</li>
+<li><b>关键一步：</b>两个正实根是不稳定节点、两个负实根是稳定节点、共轭复根实部为负是稳定焦点</li>
+<li><b>关键一步：</b>这两个条件合起来就是参数的取值要求</li>
+<li><b>中间结果：</b>特征方程由系数矩阵直接写出：</li>
+<li><b>中间结果：</b>中心点条件可以改写成「对角线元素互为相反数且行列式大于零」</li>
+<li><b>中间结果：</b>二次项系数为一、一次项系数的相反数等于对角线元素之和、常数项等于矩阵行列式</li>
+<li><b>卡点：</b>把奇点类型与稳定性混为一谈；或只令迹为零而忘记还要保证行列式大于零，漏掉鞍点情形</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>相平面以误差及其导数为坐标，适用于一、二阶非线性系统</li><li>相轨迹的斜率由系统微分方程直接给出</li><li>奇点对应系统的平衡状态，奇点类型决定局部行为</li><li>极限环对应相平面上的孤立闭曲线</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出以误差及其导数表示的二阶微分方程</li><li>由等倾线法或解析法求相轨迹斜率</li><li>画出各区域相轨迹并判断奇点类型</li><li>由是否存在闭曲线判断极限环与自振</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求二阶线性系统的奇点并判断类型</li><li><span class="ownmark">本卷考过</span>反推奇点为中心点时的参数条件</li><li>画出给定初始条件下的相轨迹</li><li>判断奇点类型与稳定性</li><li>分析极限环的存在与形态</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>相轨迹斜率公式中分子分母写反</li><li>把相轨迹与根轨迹混淆</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\frac{d\dot{e}}{de}=\frac{\ddot{e}}{\dot{e}}"></div><div class="formula" data-tex="\frac{d\dot{e}}{de}=-\frac{f(e,\dot{e})}{\dot{e}}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q9" data-q="9">
+<h2><span class="no">9</span><span>九、继电器非线性系统的描述函数分析</span><a class="anchorlink" data-q="9" href="#q9" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">含死区的继电器特性配给定的线性部分，判断有无自振并求振幅与频率，再讨论串入微分环节后的影响</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/nl_03/">用描述函数法分析自振</a>
+<span class="tiny muted">非线性系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用描述函数法判断系统是否产生自激振荡并求振幅与频率</li>
+<li>分析串入微分环节对稳定性的影响</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先把非线性环节用描述函数线性化，再把线性部分按结构图化简成一条等效传递函数</li>
+<li><b>关键一步：</b>继电特性的描述函数随振幅增大而减小，</li>
+<li><b>关键一步：</b>负倒描述函数曲线与线性部分奈奎斯特曲线的交点给出振幅与频率，</li>
+<li><b>关键一步：</b>对应的负倒描述函数在负实轴上从零附近向外移动，方向要与横轴刻度对上</li>
+<li><b>关键一步：</b>再按穿越方向判断该周期运动是否稳定</li>
+<li><b>中间结果：</b>本题给出若干平方根的近似值，说明求解交点时会得到含根号的方程，要按题给数据取近似</li>
+<li><b>中间结果：</b>把线性部分化成极点全在左半平面的三阶形式后，可直接看出曲线穿过负实轴的位置</li>
+<li><b>卡点：</b>不化简结构图就把两个环节串起来当线性部分；或只求交点不判断稳定性</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>自振条件为 G(jω)N(A)=-1，即线性部分特性与负倒描述函数曲线相交</li><li>交点给出自振频率 ω 与自振幅值 A</li><li>负倒描述函数曲线上幅值增大的方向决定自振是否稳定</li><li>交点处两条曲线的走向关系决定极限环稳定性</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>求线性部分的频率特性 G(jω)</li><li>求非线性环节的负倒描述函数 -1/N(A) 并确定 A 的增大方向</li><li>在同一复平面上画两条曲线并求交点</li><li>由交点处的走向判断自振是否存在且稳定，读出 ω 与 A</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用描述函数法判断系统是否产生自激振荡并求振幅与频率</li><li><span class="ownmark">本卷考过</span>分析串入微分环节对稳定性的影响</li><li>判断系统是否产生自持振荡</li><li>求自振频率与自振幅值</li><li>分析参数变化对自振的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>画的是 N(A) 而不是负倒描述函数 -1/N(A)</li><li>未标注 A 的增大方向就判断稳定性</li><li>把交点频率当成截止频率</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G(j\omega)N(A)=-1"></div><div class="formula" data-tex="G(j\omega)=-\frac{1}{N(A)}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/nl_06/">非线性系统的稳定性与改善</a>
+<span class="tiny muted">非线性系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>分析串入微分环节后系统稳定性的变化</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把串联环节由常数改成 s，相当于在线性部分里接入一个理想微分环节</li>
+<li><b>关键一步：</b>理想微分使幅值随频率成比例上升、相位超前九十度，整条奈奎斯特曲线会整体逆时针旋转</li>
+<li><b>关键一步：</b>曲线旋转后与负倒描述函数的交点可能消失或位置改变，</li>
+<li><b>关键一步：</b>据此判断自振是被消除、被稳定化还是仍然存在</li>
+<li><b>中间结果：</b>相位超前通常有利于抑制自振，但要同时考虑幅值变化带来的交点位置移动，不能只看相位</li>
+<li><b>卡点：</b>只在原曲线上平移而不重新计算相角；或忽略理想微分对高频噪声的放大这一实际限制</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>非线性系统只有局部稳定性概念，与初始条件有关</li><li>极限环的稳定性可由相轨迹收敛或发散判断</li><li>减小非线性影响可用加大线性部分增益或引入校正</li><li>用描述函数或相平面结果指导参数选择</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>判断系统是否存在极限环并确定其稳定性</li><li>分析非线性环节参数对自振幅值频率的影响</li><li>通过调整线性部分增益或加入校正削弱自振</li><li>重新分析确认自振消除或幅值达标</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>分析串入微分环节后系统稳定性的变化</li><li>提出消除自振的工程措施</li><li>分析增益变化对极限环幅值的影响</li><li>比较不同方案对稳定性与动态性能的利弊</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>仅调整增益而不检查是否引入新的自振点</li><li>把不稳定极限环误判为可观测的自振</li></ul></div></details>
+</div>
+</article>
+<article class="qcard" id="q10" data-q="10">
+<h2><span class="no">10</span><span>十、状态反馈极点配置</span><a class="anchorlink" data-q="10" href="#q10" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由图写状态空间表达式，判断能否用状态反馈任意配置极点，再按给定期望极点设计反馈增益并画状态变量图</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_01/">状态空间表达式的建立</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由系统结构图列写状态空间表达式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>状态变量图里每个积分器对应一个状态变量，积分器前的求和点就写出该状态变量的一阶微分方程</li>
+<li><b>关键一步：</b>把所有积分器输入端的信号写成状态与输入的线性组合，即得状态方程</li>
+<li><b>关键一步：</b>输出方程由输出端与状态变量、输入的连接关系直接写出</li>
+<li><b>中间结果：</b>按积分器从右到左编号可避免漏掉反馈支路，写完后用维数核对矩阵形状</li>
+<li><b>卡点：</b>漏掉某条前馈支路导致输出方程少一项；或状态变量个数与积分器个数不一致</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态方程为一阶微分方程组，输出方程是状态与输入的代数关系</li><li>状态变量的个数等于系统阶数，选取不唯一</li><li>状态空间描述可同时刻画内部状态与外部输出</li><li>可处理多输入多输出系统</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定系统阶数并选取状态变量</li><li>列写各状态变量的一阶微分方程</li><li>写成矩阵形式 x&#x27;=Ax+Bu 与 y=Cx+Du</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由系统结构图列写状态空间表达式</li><li>由物理系统列写状态空间表达式</li><li>判断状态变量选取是否合理</li><li>写出系统的 A、B、C、D 矩阵</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>状态变量个数与系统阶数不匹配</li><li>输出方程中漏掉直接传递项 D</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{x}=Ax+Bu,\quad y=Cx+Du"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_04/">能控性与能观性</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>判断能否通过状态反馈实现闭环极点的任意配置</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>状态反馈能任意配置极点的充要条件是系统完全能控</li>
+<li><b>关键一步：</b>构造能控性矩阵并求秩，秩等于系统阶数才能任意配置</li>
+<li><b>关键一步：</b>若不可控，可先做能控性分解，只对能控子系统配置极点</li>
+<li><b>中间结果：</b>能控性矩阵的列数等于状态维数乘输入维数，秩与状态维数比较即可下结论</li>
+<li><b>卡点：</b>用能观性判断极点配置的可行性；或只算到倒数第二个列就下结论</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>能控性指能否用输入在有限时间内把任意初始状态驱动到原点</li><li>能观性指能否由输出在有限时间内确定初始状态</li><li>用能控性矩阵与能观性矩阵的秩判断</li><li>能控性与能观性经非奇异线性变换保持不变</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>构造能控性矩阵并求秩</li><li>构造能观性矩阵并求秩</li><li>与系统阶数 n 比较得出结论</li><li>不可控或不可观时进一步做结构分解</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>判断能否通过状态反馈实现闭环极点的任意配置</li><li>判断系统的能控性与能观性</li><li>求使系统能观的参数取值</li><li>对不可控系统进行结构分解</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只算到 A^{n-2}B 就下结论</li><li>把能控性判据与能观性判据的矩阵构造搞混</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}B&amp;AB&amp;\cdots&amp;A^{n-1}B\end{bmatrix}=n"></div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}C\\CA\\\vdots\\CA^{n-1}\end{bmatrix}=n"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_05/">状态反馈与极点配置</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>按给定期望极点设计状态反馈增益矩阵</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先写出期望极点对应的特征多项式，共轭复极点要成对展开</li>
+<li><b>关键一步：</b>再求带状态反馈后闭环系统的特征多项式，它是含待定增益的行列式</li>
+<li><b>关键一步：</b>两个多项式逐项比较系数，解出增益矩阵的各个元素</li>
+<li><b>中间结果：</b>二阶系统期望偶极点为负二加减二倍虚数单位时，</li>
+<li><b>中间结果：</b>期望特征多项式是二次的，一次项与常数项各给一个方程</li>
+<li><b>卡点：</b>行列式展开时符号写错；或没有先把状态方程化成能控标准型就套现成公式</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控</li><li>状态反馈不改变系统的零点</li><li>极点配置通过比较期望与实际的闭环特征多项式求解 K</li><li>状态反馈可能改变能观性</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>先验证系统能控</li><li>写出希望配置的极点并求期望特征多项式</li><li>求闭环系统特征多项式 det(sI-A+BK)</li><li>比较系数解出反馈增益阵 K</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>按给定期望极点设计状态反馈增益矩阵</li><li>设计状态反馈使闭环极点位于指定位置</li><li>判断给定极点是否可通过状态反馈配置</li><li>分析状态反馈对系统性能的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>未验证能控性就直接做极点配置</li><li>特征多项式比较系数时符号写反</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="u=-Kx+v"></div><div class="formula" data-tex="\det\left(sI-A+BK\right)=\prod_{i=1}^{n}(s-\lambda_i^*)"></div></div></details>
+</div>
+</article>
+</section></div><aside class="side">
+<div class="card"><h3>本卷考点</h3><div class="kplist"><a class="kplink" href="../../../../../k/tf_04/" title="考点编号 tf_04"><span class="ktag">传递函数</span><span>梅森增益公式与信号流图</span></a><a class="kplink" href="../../../../../k/rl_06/" title="考点编号 rl_06"><span class="ktag">根轨迹法</span><span>广义根轨迹与参数根轨迹</span></a><a class="kplink" href="../../../../../k/st_04/" title="考点编号 st_04"><span class="ktag">稳定性分析</span><span>奈奎斯特判据</span></a><a class="kplink" href="../../../../../k/fd_05/" title="考点编号 fd_05"><span class="ktag">频域分析</span><span>稳定裕度</span></a><a class="kplink" href="../../../../../k/fd_03/" title="考点编号 fd_03"><span class="ktag">频域分析</span><span>开环对数频率特性的绘制</span></a><a class="kplink" href="../../../../../k/bd_04/" title="考点编号 bd_04"><span class="ktag">结构图与方框图</span><span>多输入与扰动作用下的传递函数</span></a><a class="kplink" href="../../../../../k/ss_04/" title="考点编号 ss_04"><span class="ktag">稳态误差</span><span>扰动作用下的稳态误差</span></a><a class="kplink" href="../../../../../k/fd_04/" title="考点编号 fd_04"><span class="ktag">频域分析</span><span>由 Bode 图反求传递函数</span></a><a class="kplink" href="../../../../../k/cr_03/" title="考点编号 cr_03"><span class="ktag">系统校正</span><span>滞后校正</span></a><a class="kplink" href="../../../../../k/ss_05/" title="考点编号 ss_05"><span class="ktag">稳态误差</span><span>减小稳态误差的措施</span></a><a class="kplink" href="../../../../../k/ds_07/" title="考点编号 ds_07"><span class="ktag">离散控制系统</span><span>数字控制器与最少拍设计</span></a><a class="kplink" href="../../../../../k/nl_04/" title="考点编号 nl_04"><span class="ktag">非线性系统</span><span>相平面法</span></a><a class="kplink" href="../../../../../k/nl_03/" title="考点编号 nl_03"><span class="ktag">非线性系统</span><span>用描述函数法分析自振</span></a><a class="kplink" href="../../../../../k/nl_06/" title="考点编号 nl_06"><span class="ktag">非线性系统</span><span>非线性系统的稳定性与改善</span></a><a class="kplink" href="../../../../../k/sp_01/" title="考点编号 sp_01"><span class="ktag">状态空间分析</span><span>状态空间表达式的建立</span></a><a class="kplink" href="../../../../../k/sp_04/" title="考点编号 sp_04"><span class="ktag">状态空间分析</span><span>能控性与能观性</span></a><a class="kplink" href="../../../../../k/sp_05/" title="考点编号 sp_05"><span class="ktag">状态空间分析</span><span>状态反馈与极点配置</span></a></div></div>
+<div class="card"><h3>华中科技大学 其它年份</h3><div class="navlist"><a class="yearchip" href="../../2015/829/">2015·829 <span class="n">8题</span></a><a class="yearchip" href="../../2016/829/">2016·829 <span class="n">10题</span></a><a class="yearchip" href="../../2017/829/">2017·829 <span class="n">7题</span></a><a class="yearchip" href="../../2018/829/">2018·829 <span class="n">8题</span></a><a class="yearchip" href="../../2019/829/">2019·829 <span class="n">12题</span></a><a class="yearchip" href="../../2020/829/">2020·829 <span class="n">8题</span></a><a class="yearchip" href="../../2021/829/">2021·829 <span class="n">11题</span></a><a class="yearchip" href="../../2022/829/">2022·829 <span class="n">10题</span></a><a class="yearchip" href="../../2023/829/">2023·829 <span class="n">10题</span></a><a class="yearchip" href="../../2024/829/">2024·829 <span class="n">10题</span></a></div></div>
+<div class="card"><h3>上下年份</h3><div class="navlist"><a class="yearchip" href="../../2024/829/">← 2024·829</a></div></div>
+</aside></div>
+</main>
+<footer class="site-foot"><div class="inner"><span>导图内容为本站原创整理，欢迎交流指正</span></div></footer>
+<script type="application/json" id="kg-data">{"base":"../../../../../","key":"华中科技大学_832_2025","full":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、…","type":"warn"},{"label":"一、信号流图求传递函数　〔第1题〕","type":"block","children":[{"label":"由信号流图用梅森增益公式求 C(s)/R(s)","type":"idea"},{"label":"梅森增益公式与信号流图","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先在流图上把所有回路数出来，再找两两互不接触的回路对，回路越多越要按顺序编号避免漏算","type":"k1"},{"label":"特征式是 1 减去单回路之和、加上两两互不接触回路乘积之和，符号交替","type":"k1"},{"label":"前向通道要按从输入到输出的方向逐条走完，每条通道自己的余子式只包含与它不接触的那些回路","type":"k1"},{"label":"分母是同一个特征式，分子是各条前向通道与其余子式乘积之和，最后可以约分","type":"k2"},{"label":"漏掉两两互不接触项；或把与前向通道接触的回路写进余子式","type":"k3"}]},{"label":"信号流图适合处理多回路、比较点复杂系统","type":"yd"},{"label":"特征式 Δ=1-ΣL+ΣLL-ΣLLL+…","type":"yd"},{"label":"每条前向通路的余子式要剔除与它接触的回路","type":"yd"},{"label":"不接触回路才会计入高阶乘积项","type":"yd"},{"label":"由结构图改画信号流图，标出各节点","type":"bz"},{"label":"找出全部单独回路，求特征式 Δ","type":"bz"},{"label":"找出全部前向通路 P_k","type":"bz"},{"label":"对每条通路求余子式 Δ_k","type":"bz"},{"label":"代入公式求总传输","type":"bz"},{"label":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k","type":"fm","tex":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k"},{"label":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots","type":"fm","tex":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots"},{"label":"由信号流图求系统的传递函数","type":"kf","own":true},{"label":"由信号流图求 C(s)/R(s)","type":"kf","own":false},{"label":"结构图先用梅森公式化简再作性能分析","type":"kf","own":false},{"label":"判断某条回路是否与给定前向通路接触","type":"kf","own":false},{"label":"不接触回路找漏或重复计数","type":"er","own":false},{"label":"余子式中未剔除与通路接触的回路","type":"er","own":false},{"label":"把前向通路的增益写成了回路增益","type":"er","own":false}]}]},{"label":"二、反馈极性未知时的根轨迹增益范围　〔第2题〕","type":"block","children":[{"label":"开环零极点全在左半平面但反馈极性不明，要分别按负反馈与正反馈列特征方程，取两者稳定域的公共部分","type":"idea"},{"label":"广义根轨迹与参数根轨迹","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"极性未知就要把两种情况都算：负反馈的特征方程是一加开环传函，正反馈是一减开环传函","type":"k1"},{"label":"展开成多项式后逐项列劳斯表，分别求出各自的稳定增益区间","type":"k1"},{"label":"两个区间的公共部分才是「无论极性如何都稳定」的范围，这正是题目要的答案","type":"k1"},{"label":"本题展开后是四阶多项式：负反馈时末项为常数加增益，正反馈时为常数减增益","type":"k2"},{"label":"劳斯表首列出现两种约束：末项大于零与首列中间项大于零，分别给出增益的上下界","type":"k2"},{"label":"只按负反馈算；或把正反馈当成负反馈除以负一处理，特征方程的常数项符号弄错","type":"k3"}]},{"label":"可变参数不是开环增益时称为参数根轨迹","type":"yd"},{"label":"方法是用等效开环传递函数把参数提到标准位置","type":"yd"},{"label":"正反馈系统或零度根轨迹的相角条件是 0°+360°l","type":"yd"},{"label":"把特征方程整理成 1+αG*(s)=0 的形式","type":"bz"},{"label":"把 α 以外部分视为等效开环传递函数","type":"bz"},{"label":"按常规根轨迹法则绘制","type":"bz"},{"label":"注意相角条件是否变成 0°","type":"bz"},{"label":"1+\\alpha G^*(s)=0","type":"fm","tex":"1+\\alpha G^*(s)=0"},{"label":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=0^\\circ+360^\\circ l","type":"fm","tex":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=0^\\circ+360^\\circ l"},{"label":"反馈极性未知时确定使闭环稳定的根轨迹增益范围","type":"kf","own":true},{"label":"以时间常数或其他参数为变量绘制根轨迹","type":"kf","own":false},{"label":"绘制正反馈系统的零度根轨迹","type":"kf","own":false},{"label":"比较零度与 180 度根轨迹的差别","type":"kf","own":false},{"label":"整理时没有把参数完整地提到分子位置","type":"er","own":false},{"label":"零度根轨迹仍沿用 180° 相角条件","type":"er","own":false}]}]},{"label":"三、奈氏判据定稳定增益与幅值裕度　〔第3题〕","type":"block","children":[{"label":"Ⅰ 型三阶开环系统先由相角条件求穿越负实轴处的频率，再令该点幅值小于 1 得稳定增益范围，最后算幅值裕度","type":"idea"},{"label":"奈奎斯特判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"开环没有右半平面极点，所以闭环稳定的条件是幅相曲线不包围临界点，","type":"k1"},{"label":"穿过负实轴的位置由相角等于负一百八十度定出频率，","type":"k1"},{"label":"把该频率代进幅频表达式，令幅值小于 1，就得到增益的上界","type":"k1"},{"label":"等价于曲线穿过负实轴的那一点落在临界点右侧","type":"k1"},{"label":"两个惯性环节的相角加起来正好九十度，用正切乘积关系可一步解出频率","type":"k1"},{"label":"临界频率等于两个时间常数乘积的平方根的倒数","type":"k2"},{"label":"临界点的幅值等于增益乘两个时间常数之积再除以两者之和，","type":"k2"},{"label":"所以稳定条件是增益小于两者之和除以两者之积","type":"k2"},{"label":"把穿越频率当成两条渐近线的交点直接取；或忘记 Ⅰ 型系统积分环节贡献的九十度相角","type":"k3"}]},{"label":"闭环稳定 ⇔ Z=N+P，其中 Z 为右半平面闭环极点数","type":"yd"},{"label":"P 为开环右半平面极点数，须先数清楚","type":"yd"},{"label":"N 为开环幅相曲线绕 (-1,j0) 点的净包围圈数","type":"yd"},{"label":"逆时针包围为正，顺时针为负","type":"yd"},{"label":"先求开环极点，数出右半平面个数 P","type":"bz"},{"label":"绘制开环幅相特性曲线（或利用 Bode 图判稳）","type":"bz"},{"label":"数出曲线对 (-1,j0) 点的包围圈数 N","type":"bz"},{"label":"由 Z=N+P 判断闭环稳定性","type":"bz"},{"label":"Z=N+P","type":"fm","tex":"Z=N+P"},{"label":"N=N_+-N_-","type":"fm","tex":"N=N_+-N_-"},{"label":"用奈奎斯特判据确定使系统稳定的开环增益范围","type":"kf","own":true},{"label":"由开环幅相曲线判断闭环稳定性","type":"kf","own":false},{"label":"求使闭环稳定的开环增益范围","type":"kf","own":false},{"label":"判断补画虚轴绕行后曲线的包围情况","type":"kf","own":false},{"label":"开环含有积分环节时未补画无穷大半径圆弧","type":"er","own":false},{"label":"把包围圈数的正负号定义搞反","type":"er","own":false},{"label":"没有先数开环右半平面极点数 P","type":"er","own":false}]},{"label":"稳定裕度","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"幅值裕度的分贝值等于临界增益与实际增益之比取常用对数再乘二十","type":"k1"},{"label":"本题临界增益与实际增益之比恰好等于六，题面给出的六的对数正是为此准备的","type":"k1"},{"label":"幅值裕度为正是稳定（最小相位系统），为零是临界稳定","type":"k1"},{"label":"时间常数取 0.5 与 1、增益取 0.5 时，","type":"k2"},{"label":"临界增益为 3，比值是 6，对应约 15.6 dB","type":"k2"},{"label":"把幅值裕度定义成实际增益比临界增益（取倒数）；或忘记乘二十","type":"k3"}]},{"label":"相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)","type":"yd"},{"label":"幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝","type":"yd"},{"label":"γ>0 且 Kg>1 时闭环稳定（最小相位系统）","type":"yd"},{"label":"γ 主要影响超调，ωc 主要影响响应速度","type":"yd"},{"label":"由幅频特性求 |G|=1 对应的穿越频率 ωc","type":"bz"},{"label":"由相频特性求 ∠G=-180° 对应的频率 ωg","type":"bz"},{"label":"分别代入公式求相角裕度与幅值裕度","type":"bz"},{"label":"由裕度符号判断稳定性","type":"bz"},{"label":"\\gamma=180^\\circ+\\angle G(j\\omega_c)","type":"fm","tex":"\\gamma=180^\\circ+\\angle G(j\\omega_c)"},{"label":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}","type":"fm","tex":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"},{"label":"计算给定增益下的幅值裕度","type":"kf","own":true},{"label":"求系统的相角裕度与幅值裕度","type":"kf","own":false},{"label":"由裕度要求反求开环增益","type":"kf","own":false},{"label":"分析增益变化对裕度的影响","type":"kf","own":false},{"label":"把 ωc 与 ωg 两个频率用反","type":"er","own":false},{"label":"幅值裕度取倒数未取，导致结论反了","type":"er","own":false},{"label":"非最小相位系统仍用同一判据","type":"er","own":false}]}]},{"label":"四、开环对数幅频特性渐近线的绘制　〔第4题〕","type":"block","children":[{"label":"开环含一个零点与三个惯性环节，且增益用穿越频率表示，按转折频率逐段改斜率画渐近线","type":"idea"},{"label":"开环对数频率特性的绘制","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"最低频段只由积分环节决定，斜率是每十倍频程下降二十分贝，高度由增益决定","type":"k1"},{"label":"按转折频率从小到大依次改斜率：经过惯性环节下降二十分贝，经过一阶微分环节上升二十分贝","type":"k1"},{"label":"本题增益用另一个频率的平方表示，说明这个频率就是幅值穿越频率，","type":"k1"},{"label":"画图时要让曲线正好在那里穿过零分贝线","type":"k1"},{"label":"四个转折频率的先后顺序已在题面给出，画完可数一数斜率变化次数是否与环节数一致","type":"k2"},{"label":"改斜率时做替换而不是累加；或把增益表达式当成独立参数，忘了它与穿越频率的约束关系","type":"k3"}]},{"label":"熟记 lg2≈0.3、lg5≈0.7、20lg2≈6dB","type":"yd"},{"label":"从低频段开始逐段按各环节转折频率改变斜率","type":"yd"},{"label":"低频段斜率由系统型别决定，高度由开环增益决定","type":"yd"},{"label":"每经过一个转折频率斜率就叠加该环节的斜率变化","type":"yd"},{"label":"把开环传递函数写成典型环节的标准乘积","type":"bz"},{"label":"确定系统型别与开环增益，画出最低频段渐近线","type":"bz"},{"label":"按转折频率从小到大逐段改斜率","type":"bz"},{"label":"逐点叠加得到幅频与相频曲线","type":"bz"},{"label":"L(\\omega)=20\\lg K-20v\\lg\\omega+\\sum 20\\lg|G_i(j\\omega)|","type":"fm","tex":"L(\\omega)=20\\lg K-20v\\lg\\omega+\\sum 20\\lg|G_i(j\\omega)|"},{"label":"绘制开环对数幅频特性渐近线","type":"kf","own":true},{"label":"绘制开环对数渐近幅频特性","type":"kf","own":false},{"label":"计算指定频率处的幅值与相角","type":"kf","own":false},{"label":"由低频段斜率与高度判断型别与增益","type":"kf","own":false},{"label":"逐段改斜率时忘记累加而非替换","type":"er","own":false},{"label":"低频段起始高度没有乘上型别的 -20v dB/dec","type":"er","own":false}]}]},{"label":"五、复合输入下由响应反求系统参数　〔第5题〕","type":"block","children":[{"label":"有用输入是阶跃、扰动是正弦，输出是二者叠加，用稳态值与最大值两个条件反求 p、q、T、k，再求误差","type":"idea"},{"label":"多输入与扰动作用下的传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"用叠加原理分别求两条通道：从有用输入到输出的传函、从扰动到输出的传函","type":"k1"},{"label":"两条通道的分母相同，都是同一个特征多项式，只是分子不同，写出后便于比对","type":"k1"},{"label":"总输出是两部分之和，不能先把两个输入相加再乘一个传函","type":"k1"},{"label":"阶跃分量给出稳态值，正弦分量给出叠加在稳态值上的等幅纹波","type":"k2"},{"label":"把扰动直接当成输入的一部分；或忘记两条通道的分母相同这一结构特点","type":"k3"}]},{"label":"线性系统可用叠加原理，每次只保留一个输入","type":"yd"},{"label":"求扰动的传递函数时令参考输入为零","type":"yd"},{"label":"扰动误差与输入误差分别计算后再叠加","type":"yd"},{"label":"令 R(s)=0，求扰动到输出的传递函数","type":"bz"},{"label":"令 N(s)=0，求输入到输出的传递函数","type":"bz"},{"label":"按题目要求叠加或单独分析","type":"bz"},{"label":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}","type":"fm","tex":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}"},{"label":"求有用输入与扰动同时作用时的输出","type":"kf","own":true},{"label":"求扰动引起的输出或误差","type":"kf","own":false},{"label":"分析满足扰动不变性的补偿条件","type":"kf","own":false},{"label":"两个输入同时存在时直接叠加却未验证系统的线性性","type":"er","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":false}]},{"label":"扰动作用下的稳态误差","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"阶跃输入的稳态值由直流增益决定，可直接写出一个关于参数的方程","type":"k1"},{"label":"题给最大值与稳态值之差就是正弦扰动分量造成的纹波幅值，","type":"k1"},{"label":"两个条件联立解出时间常数与增益，再按误差定义求稳态误差","type":"k1"},{"label":"这给出频率特性在扰动频率处的一个幅值条件","type":"k1"},{"label":"峰值 2.326 与稳态值 2 之比略大于 1，","type":"k2"},{"label":"说明纹波幅值不大，据此可判断扰动通道在二弧度每秒附近的幅值衰减很强","type":"k2"},{"label":"把峰值直接当成稳态值；或只用一个条件就试图解出多个参数","type":"k3"}]},{"label":"扰动误差与输入误差必须分开计算再叠加","type":"yd"},{"label":"扰动误差取决于扰动作用点到误差点的传递函数","type":"yd"},{"label":"增大扰动点前的增益可减小扰动误差","type":"yd"},{"label":"令参考输入为零，求扰动到误差的传递函数","type":"bz"},{"label":"代入扰动信号求稳态值","type":"bz"},{"label":"与输入引起的误差叠加","type":"bz"},{"label":"e_{ssn}=\\lim_{s\\to0}s\\,\\Phi_{en}(s)N(s)","type":"fm","tex":"e_{ssn}=\\lim_{s\\to0}s\\,\\Phi_{en}(s)N(s)"},{"label":"由稳态输出值与响应峰值反求系统参数并求稳态误差","type":"kf","own":true},{"label":"求扰动引起的稳态误差","type":"kf","own":false},{"label":"比较扰动与输入对误差的不同影响","type":"kf","own":false},{"label":"分析提高前向增益的作用","type":"kf","own":false},{"label":"把扰动误差直接当作总误差，遗漏输入分量","type":"er","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":false}]}]},{"label":"六、保持裕度不变的串联校正设计　〔第6题〕","type":"block","children":[{"label":"由对数幅频渐近线反求开环传函，再在保持相角裕度与剪切频率不变的前提下把误差降为十分之一","type":"idea"},{"label":"由 Bode 图反求传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"低频段斜率定积分环节个数，低频段高度定开环增益，两者要配套使用","type":"k1"},{"label":"每个转折频率处斜率变化二十就对应一个一阶环节，变化方向决定是零点还是极点","type":"k1"},{"label":"剪切频率就是幅频曲线与零分贝线的交点频率，读图时注意它落在哪一段","type":"k1"},{"label":"把写出的传函代回几个转折频率处验算幅值，可以直接发现增益或环节类型是否读错","type":"k2"},{"label":"低频段高度与增益之间忘记折算积分环节的斜率；或把上升二十的转折当成极点","type":"k3"}]},{"label":"低频段斜率给出积分环节个数即系统型别","type":"yd"},{"label":"低频段高度或延长线与 0 dB 交点给出开环增益","type":"yd"},{"label":"每个转折频率对应一个一阶或二阶环节","type":"yd"},{"label":"斜率变化 -20 对应惯性环节，+20 对应一阶微分，-40 可能是振荡环节","type":"yd"},{"label":"读低频段斜率确定型别 v","type":"bz"},{"label":"由低频段高度或延长线确定增益 K","type":"bz"},{"label":"逐个读出转折频率并判断对应环节类型","type":"bz"},{"label":"结合相频曲线与谐振峰判定二阶环节参数","type":"bz"},{"label":"写出并验证传递函数","type":"bz"},{"label":"L(\\omega)\\big|_{\\omega=1}=20\\lg\\frac{K}{\\omega^{v}}","type":"fm","tex":"L(\\omega)\\big|_{\\omega=1}=20\\lg\\frac{K}{\\omega^{v}}"},{"label":"由开环对数幅频特性渐近线反求传递函数与剪切频率","type":"kf","own":true},{"label":"由给定 Bode 图写出传递函数","type":"kf","own":false},{"label":"由实验频率特性辨识系统模型","type":"kf","own":false},{"label":"检验候选传递函数与曲线是否吻合","type":"kf","own":false},{"label":"把延长线交点误当作增益值而未折算型别","type":"er","own":false},{"label":"斜率变化为 -40 时直接写成一阶环节","type":"er","own":false}]},{"label":"滞后校正","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"同时要求「提高低频增益」和「不动中高频的幅相特性」，这正是滞后校正的典型适用场合","type":"k1"},{"label":"误差降为十分之一需要低频增益提高十倍，也就是零点增益提高二十分贝，","type":"k1"},{"label":"把滞后网络的两个转折频率配置得远离剪切频率：","type":"k1"},{"label":"而滞后网络的低频增益恰好是衰减系数的倒数","type":"k1"},{"label":"一个远低于它，另一个约在它的十分之一附近，以免吃掉相角裕度","type":"k1"},{"label":"设计完成后要重新量一次剪切频率和相角裕度，确认与校正前基本一致，误差确实降下来了","type":"k2"},{"label":"用超前校正去凑增益，结果剪切频率和相角裕度全变了；","type":"k3"},{"label":"或两个转折频率离剪切频率太近，相角裕度被吃掉","type":"k3"}]},{"label":"滞后校正利用高频段幅值衰减提高相角裕度","type":"yd"},{"label":"会使截止频率降低，响应变慢","type":"yd"},{"label":"转折频率要远低于新的截止频率以免引入过多相位滞后","type":"yd"},{"label":"可同时提高低频增益改善稳态精度","type":"yd"},{"label":"确定满足相角裕度要求的新截止频率","type":"bz"},{"label":"由未校正系统在该频率处的幅值确定衰减量","type":"bz"},{"label":"由衰减量求滞后网络的参数 β","type":"bz"},{"label":"取转折频率低于新截止频率一个数量级，写出传递函数","type":"bz"},{"label":"G_c(s)=\\frac{Ts+1}{\\beta Ts+1},\\quad \\beta>1","type":"fm","tex":"G_c(s)=\\frac{Ts+1}{\\beta Ts+1},\\quad \\beta>1"},{"label":"\\frac{1}{T}=(0.1\\sim0.2)\\omega_c'","type":"fm","tex":"\\frac{1}{T}=(0.1\\sim0.2)\\omega_c'"},{"label":"设计串联校正装置，使误差降为原来的十分之一且保持相角裕度和剪切频率不变","type":"kf","own":true},{"label":"设计串联滞后校正装置","type":"kf","own":false},{"label":"比较超前与滞后校正的效果差异","type":"kf","own":false},{"label":"分析滞后校正对响应速度的影响","type":"kf","own":false},{"label":"把滞后网络的两个转折频率顺序写反","type":"er","own":false},{"label":"转折频率取得过高导致相位滞后抵消了增益改善","type":"er","own":false}]},{"label":"减小稳态误差的措施","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"误差大小由低频段增益决定，而相角裕度主要由剪切频率附近的特性决定，两者作用频段不同","type":"k1"},{"label":"把增益抬高限制在低频段，就可以只改善精度而几乎不动稳定性","type":"k1"},{"label":"这正是滞后校正相对单纯提高增益的优势","type":"k1"},{"label":"如果改用直接提高开环增益的办法，低频精度也会改善，但剪切频率会右移、相角裕度会下降","type":"k2"},{"label":"把提高增益与加校正装置当成等效手段，忽略后者能把作用限制在低频段","type":"k3"}]},{"label":"提高开环增益可减小有差系统的误差，但会削弱稳定性","type":"yd"},{"label":"增加积分环节可提高型别，代价是相位滞后与超调增大","type":"yd"},{"label":"采用复合控制或前馈补偿可在不影响稳定性的前提下减小误差","type":"yd"},{"label":"采用扰动补偿可提高扰动不变性","type":"yd"},{"label":"判断误差来源是输入型别不足还是增益太小","type":"bz"},{"label":"按需选择提高增益、增加积分或加入补偿器","type":"bz"},{"label":"校验补偿后系统仍然稳定","type":"bz"},{"label":"重新计算稳态误差确认达标","type":"bz"},{"label":"e_{ss}=\\frac{1}{1+K_p}R_0,\\quad K_p\\uparrow\\Rightarrow e_{ss}\\downarrow","type":"fm","tex":"e_{ss}=\\frac{1}{1+K_p}R_0,\\quad K_p\\uparrow\\Rightarrow e_{ss}\\downarrow"},{"label":"说明为何能在不影响稳定性的前提下把误差降为十分之一","type":"kf","own":true},{"label":"分析提高开环增益对误差与稳定性的双重影响","type":"kf","own":false},{"label":"设计前馈补偿器实现给定信号不变性","type":"kf","own":false},{"label":"说明为何单纯提高增益不可行","type":"kf","own":false},{"label":"只谈误差减小而不检查稳定性是否被破坏","type":"er","own":false},{"label":"把增加积分环节的影响单一化，忽略超调","type":"er","own":false}]}]},{"label":"七、最少拍数字控制器设计　〔第7题〕","type":"block","children":[{"label":"给定对象脉冲传函与采样周期，按单位阶跃输入设计最少拍系统并写出输出与误差序列","type":"idea"},{"label":"数字控制器与最少拍设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先按输入类型定闭环误差脉冲传函：","type":"k1"},{"label":"再由数字控制器等于闭环传函除以对象脉冲传函与误差传函的乘积，把已知的 G(z) 代进去化简","type":"k1"},{"label":"对象脉冲传函里若含单位圆外零点或纯滞后因子，","type":"k1"},{"label":"单位阶跃输入时取误差传函为一减 z 的负一次方，闭环传函即为 z 的负一次方","type":"k1"},{"label":"闭环传函必须相应取高阶，否则控制器不可实现或系统不稳","type":"k1"},{"label":"写出闭环传函后直接做 z 反变换就得到输出序列，误差序列由误差传函反变换得到","type":"k2"},{"label":"单位阶跃输入下最少拍数为拍数等于闭环传函的阶数，之后输出恒等于输入","type":"k2"},{"label":"不看 G(z) 的零点结构直接套一阶闭环传函；或把数字控制器写成对象脉冲传函的倒数","type":"k3"}]},{"label":"最少拍系统指在典型输入下经过有限拍达到无稳态误差","type":"yd"},{"label":"设计需要满足可实现性与稳定性约束","type":"yd"},{"label":"最少拍系统的闭环脉冲传递函数由输入类型确定","type":"yd"},{"label":"最少拍设计通常导致很大的控制量，需加限制","type":"yd"},{"label":"确定输入类型及对应的误差传函形式","type":"bz"},{"label":"按无稳态误差要求构造闭环脉冲传递函数","type":"bz"},{"label":"由 D(z)=Φ(z)/[G(z)(1-Φ(z))] 求数字控制器","type":"bz"},{"label":"检验可实现性、稳定性与控制量大小","type":"bz"},{"label":"D(z)=\\frac{\\Phi(z)}{G(z)(1-\\Phi(z))}","type":"fm","tex":"D(z)=\\frac{\\Phi(z)}{G(z)(1-\\Phi(z))}"},{"label":"\\Phi_e(z)=1-\\Phi(z)","type":"fm","tex":"\\Phi_e(z)=1-\\Phi(z)"},{"label":"设计最少拍数字控制器并求输出与误差序列","type":"kf","own":true},{"label":"设计最少拍数字控制器","type":"kf","own":false},{"label":"比较不同输入类型下的最少拍数","type":"kf","own":false},{"label":"分析最少拍系统存在的问题","type":"kf","own":false},{"label":"忽略 D(z) 必须是物理可实现的因果系统","type":"er","own":false},{"label":"闭环传函构造时未满足稳定性约束条件","type":"er","own":false}]}]},{"label":"八、二阶线性系统的相平面分析　〔第8题〕","type":"block","children":[{"label":"一般二阶线性系统求奇点、定类型并画相轨迹，再反推奇点为中心点时的参数条件","type":"idea"},{"label":"相平面法","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"奇点由两个微分方程右端同时为零解出，","type":"k1"},{"label":"奇点类型由特征方程的根决定：","type":"k1"},{"label":"中心点要求特征根为纯虚数，也就是特征方程的一次项系数为零、常数项大于零，","type":"k1"},{"label":"系数矩阵行列式不为零时只有原点一个奇点，为零则可能有整条直线上的奇点","type":"k1"},{"label":"两个正实根是不稳定节点、两个负实根是稳定节点、共轭复根实部为负是稳定焦点","type":"k1"},{"label":"这两个条件合起来就是参数的取值要求","type":"k1"},{"label":"特征方程由系数矩阵直接写出：","type":"k2"},{"label":"中心点条件可以改写成「对角线元素互为相反数且行列式大于零」","type":"k2"},{"label":"二次项系数为一、一次项系数的相反数等于对角线元素之和、常数项等于矩阵行列式","type":"k2"},{"label":"把奇点类型与稳定性混为一谈；或只令迹为零而忘记还要保证行列式大于零，漏掉鞍点情形","type":"k3"}]},{"label":"相平面以误差及其导数为坐标，适用于一、二阶非线性系统","type":"yd"},{"label":"相轨迹的斜率由系统微分方程直接给出","type":"yd"},{"label":"奇点对应系统的平衡状态，奇点类型决定局部行为","type":"yd"},{"label":"极限环对应相平面上的孤立闭曲线","type":"yd"},{"label":"写出以误差及其导数表示的二阶微分方程","type":"bz"},{"label":"由等倾线法或解析法求相轨迹斜率","type":"bz"},{"label":"画出各区域相轨迹并判断奇点类型","type":"bz"},{"label":"由是否存在闭曲线判断极限环与自振","type":"bz"},{"label":"\\frac{d\\dot{e}}{de}=\\frac{\\ddot{e}}{\\dot{e}}","type":"fm","tex":"\\frac{d\\dot{e}}{de}=\\frac{\\ddot{e}}{\\dot{e}}"},{"label":"\\frac{d\\dot{e}}{de}=-\\frac{f(e,\\dot{e})}{\\dot{e}}","type":"fm","tex":"\\frac{d\\dot{e}}{de}=-\\frac{f(e,\\dot{e})}{\\dot{e}}"},{"label":"求二阶线性系统的奇点并判断类型","type":"kf","own":true},{"label":"反推奇点为中心点时的参数条件","type":"kf","own":true},{"label":"画出给定初始条件下的相轨迹","type":"kf","own":false},{"label":"判断奇点类型与稳定性","type":"kf","own":false},{"label":"分析极限环的存在与形态","type":"kf","own":false},{"label":"相轨迹斜率公式中分子分母写反","type":"er","own":false},{"label":"把相轨迹与根轨迹混淆","type":"er","own":false}]}]},{"label":"九、继电器非线性系统的描述函数分析　〔第9题〕","type":"block","children":[{"label":"含死区的继电器特性配给定的线性部分，判断有无自振并求振幅与频率，再讨论串入微分环节后的影响","type":"idea"},{"label":"用描述函数法分析自振","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先把非线性环节用描述函数线性化，再把线性部分按结构图化简成一条等效传递函数","type":"k1"},{"label":"继电特性的描述函数随振幅增大而减小，","type":"k1"},{"label":"负倒描述函数曲线与线性部分奈奎斯特曲线的交点给出振幅与频率，","type":"k1"},{"label":"对应的负倒描述函数在负实轴上从零附近向外移动，方向要与横轴刻度对上","type":"k1"},{"label":"再按穿越方向判断该周期运动是否稳定","type":"k1"},{"label":"本题给出若干平方根的近似值，说明求解交点时会得到含根号的方程，要按题给数据取近似","type":"k2"},{"label":"把线性部分化成极点全在左半平面的三阶形式后，可直接看出曲线穿过负实轴的位置","type":"k2"},{"label":"不化简结构图就把两个环节串起来当线性部分；或只求交点不判断稳定性","type":"k3"}]},{"label":"自振条件为 G(jω)N(A)=-1，即线性部分特性与负倒描述函数曲线相交","type":"yd"},{"label":"交点给出自振频率 ω 与自振幅值 A","type":"yd"},{"label":"负倒描述函数曲线上幅值增大的方向决定自振是否稳定","type":"yd"},{"label":"交点处两条曲线的走向关系决定极限环稳定性","type":"yd"},{"label":"求线性部分的频率特性 G(jω)","type":"bz"},{"label":"求非线性环节的负倒描述函数 -1/N(A) 并确定 A 的增大方向","type":"bz"},{"label":"在同一复平面上画两条曲线并求交点","type":"bz"},{"label":"由交点处的走向判断自振是否存在且稳定，读出 ω 与 A","type":"bz"},{"label":"G(j\\omega)N(A)=-1","type":"fm","tex":"G(j\\omega)N(A)=-1"},{"label":"G(j\\omega)=-\\frac{1}{N(A)}","type":"fm","tex":"G(j\\omega)=-\\frac{1}{N(A)}"},{"label":"用描述函数法判断系统是否产生自激振荡并求振幅与频率","type":"kf","own":true},{"label":"分析串入微分环节对稳定性的影响","type":"kf","own":true},{"label":"判断系统是否产生自持振荡","type":"kf","own":false},{"label":"求自振频率与自振幅值","type":"kf","own":false},{"label":"分析参数变化对自振的影响","type":"kf","own":false},{"label":"画的是 N(A) 而不是负倒描述函数 -1/N(A)","type":"er","own":false},{"label":"未标注 A 的增大方向就判断稳定性","type":"er","own":false},{"label":"把交点频率当成截止频率","type":"er","own":false}]},{"label":"非线性系统的稳定性与改善","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把串联环节由常数改成 s，相当于在线性部分里接入一个理想微分环节","type":"k1"},{"label":"理想微分使幅值随频率成比例上升、相位超前九十度，整条奈奎斯特曲线会整体逆时针旋转","type":"k1"},{"label":"曲线旋转后与负倒描述函数的交点可能消失或位置改变，","type":"k1"},{"label":"据此判断自振是被消除、被稳定化还是仍然存在","type":"k1"},{"label":"相位超前通常有利于抑制自振，但要同时考虑幅值变化带来的交点位置移动，不能只看相位","type":"k2"},{"label":"只在原曲线上平移而不重新计算相角；或忽略理想微分对高频噪声的放大这一实际限制","type":"k3"}]},{"label":"非线性系统只有局部稳定性概念，与初始条件有关","type":"yd"},{"label":"极限环的稳定性可由相轨迹收敛或发散判断","type":"yd"},{"label":"减小非线性影响可用加大线性部分增益或引入校正","type":"yd"},{"label":"用描述函数或相平面结果指导参数选择","type":"yd"},{"label":"判断系统是否存在极限环并确定其稳定性","type":"bz"},{"label":"分析非线性环节参数对自振幅值频率的影响","type":"bz"},{"label":"通过调整线性部分增益或加入校正削弱自振","type":"bz"},{"label":"重新分析确认自振消除或幅值达标","type":"bz"},{"label":"分析串入微分环节后系统稳定性的变化","type":"kf","own":true},{"label":"提出消除自振的工程措施","type":"kf","own":false},{"label":"分析增益变化对极限环幅值的影响","type":"kf","own":false},{"label":"比较不同方案对稳定性与动态性能的利弊","type":"kf","own":false},{"label":"仅调整增益而不检查是否引入新的自振点","type":"er","own":false},{"label":"把不稳定极限环误判为可观测的自振","type":"er","own":false}]}]},{"label":"十、状态反馈极点配置　〔第10题〕","type":"block","children":[{"label":"由图写状态空间表达式，判断能否用状态反馈任意配置极点，再按给定期望极点设计反馈增益并画状态变量图","type":"idea"},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"状态变量图里每个积分器对应一个状态变量，积分器前的求和点就写出该状态变量的一阶微分方程","type":"k1"},{"label":"把所有积分器输入端的信号写成状态与输入的线性组合，即得状态方程","type":"k1"},{"label":"输出方程由输出端与状态变量、输入的连接关系直接写出","type":"k1"},{"label":"按积分器从右到左编号可避免漏掉反馈支路，写完后用维数核对矩阵形状","type":"k2"},{"label":"漏掉某条前馈支路导致输出方程少一项；或状态变量个数与积分器个数不一致","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"由系统结构图列写状态空间表达式","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"状态反馈能任意配置极点的充要条件是系统完全能控","type":"k1"},{"label":"构造能控性矩阵并求秩，秩等于系统阶数才能任意配置","type":"k1"},{"label":"若不可控，可先做能控性分解，只对能控子系统配置极点","type":"k1"},{"label":"能控性矩阵的列数等于状态维数乘输入维数，秩与状态维数比较即可下结论","type":"k2"},{"label":"用能观性判断极点配置的可行性；或只算到倒数第二个列就下结论","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"判断能否通过状态反馈实现闭环极点的任意配置","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]},{"label":"状态反馈与极点配置","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先写出期望极点对应的特征多项式，共轭复极点要成对展开","type":"k1"},{"label":"再求带状态反馈后闭环系统的特征多项式，它是含待定增益的行列式","type":"k1"},{"label":"两个多项式逐项比较系数，解出增益矩阵的各个元素","type":"k1"},{"label":"二阶系统期望偶极点为负二加减二倍虚数单位时，","type":"k2"},{"label":"期望特征多项式是二次的，一次项与常数项各给一个方程","type":"k2"},{"label":"行列式展开时符号写错；或没有先把状态方程化成能控标准型就套现成公式","type":"k3"}]},{"label":"状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控","type":"yd"},{"label":"状态反馈不改变系统的零点","type":"yd"},{"label":"极点配置通过比较期望与实际的闭环特征多项式求解 K","type":"yd"},{"label":"状态反馈可能改变能观性","type":"yd"},{"label":"先验证系统能控","type":"bz"},{"label":"写出希望配置的极点并求期望特征多项式","type":"bz"},{"label":"求闭环系统特征多项式 det(sI-A+BK)","type":"bz"},{"label":"比较系数解出反馈增益阵 K","type":"bz"},{"label":"u=-Kx+v","type":"fm","tex":"u=-Kx+v"},{"label":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)","type":"fm","tex":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)"},{"label":"按给定期望极点设计状态反馈增益矩阵","type":"kf","own":true},{"label":"设计状态反馈使闭环极点位于指定位置","type":"kf","own":false},{"label":"判断给定极点是否可通过状态反馈配置","type":"kf","own":false},{"label":"分析状态反馈对系统性能的影响","type":"kf","own":false},{"label":"未验证能控性就直接做极点配置","type":"er","own":false},{"label":"特征多项式比较系数时符号写反","type":"er","own":false}]}]}]},"qs":[{"no":"1","tree":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、由稳态值与正弦纹波反求参数、保持裕度不变把误差降十倍、最少拍设计","type":"warn"},{"label":"一、信号流图求传递函数　〔第1题〕","type":"block","children":[{"label":"由信号流图用梅森增益公式求 C(s)/R(s)","type":"idea"},{"label":"梅森增益公式与信号流图","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先在流图上把所有回路数出来，再找两两互不接触的回路对，回路越多越要按顺序编号避免漏算","type":"k1"},{"label":"特征式是 1 减去单回路之和、加上两两互不接触回路乘积之和，符号交替","type":"k1"},{"label":"前向通道要按从输入到输出的方向逐条走完，每条通道自己的余子式只包含与它不接触的那些回路","type":"k1"},{"label":"分母是同一个特征式，分子是各条前向通道与其余子式乘积之和，最后可以约分","type":"k2"},{"label":"漏掉两两互不接触项；或把与前向通道接触的回路写进余子式","type":"k3"}]},{"label":"信号流图适合处理多回路、比较点复杂系统","type":"yd"},{"label":"特征式 Δ=1-ΣL+ΣLL-ΣLLL+…","type":"yd"},{"label":"每条前向通路的余子式要剔除与它接触的回路","type":"yd"},{"label":"不接触回路才会计入高阶乘积项","type":"yd"},{"label":"由结构图改画信号流图，标出各节点","type":"bz"},{"label":"找出全部单独回路，求特征式 Δ","type":"bz"},{"label":"找出全部前向通路 P_k","type":"bz"},{"label":"对每条通路求余子式 Δ_k","type":"bz"},{"label":"代入公式求总传输","type":"bz"},{"label":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k","type":"fm","tex":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k"},{"label":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots","type":"fm","tex":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots"},{"label":"由信号流图求系统的传递函数","type":"kf","own":true},{"label":"由信号流图求 C(s)/R(s)","type":"kf","own":false},{"label":"结构图先用梅森公式化简再作性能分析","type":"kf","own":false},{"label":"判断某条回路是否与给定前向通路接触","type":"kf","own":false},{"label":"不接触回路找漏或重复计数","type":"er","own":false},{"label":"余子式中未剔除与通路接触的回路","type":"er","own":false},{"label":"把前向通路的增益写成了回路增益","type":"er","own":false}]}]}]}},{"no":"2","tree":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、由稳态值与正弦纹波反求参数、保持裕度不变把误差降十倍、最少拍设计","type":"warn"},{"label":"二、反馈极性未知时的根轨迹增益范围　〔第2题〕","type":"block","children":[{"label":"开环零极点全在左半平面但反馈极性不明，要分别按负反馈与正反馈列特征方程，取两者稳定域的公共部分","type":"idea"},{"label":"广义根轨迹与参数根轨迹","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"极性未知就要把两种情况都算：负反馈的特征方程是一加开环传函，正反馈是一减开环传函","type":"k1"},{"label":"展开成多项式后逐项列劳斯表，分别求出各自的稳定增益区间","type":"k1"},{"label":"两个区间的公共部分才是「无论极性如何都稳定」的范围，这正是题目要的答案","type":"k1"},{"label":"本题展开后是四阶多项式：负反馈时末项为常数加增益，正反馈时为常数减增益","type":"k2"},{"label":"劳斯表首列出现两种约束：末项大于零与首列中间项大于零，分别给出增益的上下界","type":"k2"},{"label":"只按负反馈算；或把正反馈当成负反馈除以负一处理，特征方程的常数项符号弄错","type":"k3"}]},{"label":"可变参数不是开环增益时称为参数根轨迹","type":"yd"},{"label":"方法是用等效开环传递函数把参数提到标准位置","type":"yd"},{"label":"正反馈系统或零度根轨迹的相角条件是 0°+360°l","type":"yd"},{"label":"把特征方程整理成 1+αG*(s)=0 的形式","type":"bz"},{"label":"把 α 以外部分视为等效开环传递函数","type":"bz"},{"label":"按常规根轨迹法则绘制","type":"bz"},{"label":"注意相角条件是否变成 0°","type":"bz"},{"label":"1+\\alpha G^*(s)=0","type":"fm","tex":"1+\\alpha G^*(s)=0"},{"label":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=0^\\circ+360^\\circ l","type":"fm","tex":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=0^\\circ+360^\\circ l"},{"label":"反馈极性未知时确定使闭环稳定的根轨迹增益范围","type":"kf","own":true},{"label":"以时间常数或其他参数为变量绘制根轨迹","type":"kf","own":false},{"label":"绘制正反馈系统的零度根轨迹","type":"kf","own":false},{"label":"比较零度与 180 度根轨迹的差别","type":"kf","own":false},{"label":"整理时没有把参数完整地提到分子位置","type":"er","own":false},{"label":"零度根轨迹仍沿用 180° 相角条件","type":"er","own":false}]}]}]}},{"no":"3","tree":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、由稳态值与正弦纹波反求参数、保持裕度不变把误差降十倍、最少拍设计","type":"warn"},{"label":"三、奈氏判据定稳定增益与幅值裕度　〔第3题〕","type":"block","children":[{"label":"Ⅰ 型三阶开环系统先由相角条件求穿越负实轴处的频率，再令该点幅值小于 1 得稳定增益范围，最后算幅值裕度","type":"idea"},{"label":"奈奎斯特判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"开环没有右半平面极点，所以闭环稳定的条件是幅相曲线不包围临界点，","type":"k1"},{"label":"穿过负实轴的位置由相角等于负一百八十度定出频率，","type":"k1"},{"label":"把该频率代进幅频表达式，令幅值小于 1，就得到增益的上界","type":"k1"},{"label":"等价于曲线穿过负实轴的那一点落在临界点右侧","type":"k1"},{"label":"两个惯性环节的相角加起来正好九十度，用正切乘积关系可一步解出频率","type":"k1"},{"label":"临界频率等于两个时间常数乘积的平方根的倒数","type":"k2"},{"label":"临界点的幅值等于增益乘两个时间常数之积再除以两者之和，","type":"k2"},{"label":"所以稳定条件是增益小于两者之和除以两者之积","type":"k2"},{"label":"把穿越频率当成两条渐近线的交点直接取；或忘记 Ⅰ 型系统积分环节贡献的九十度相角","type":"k3"}]},{"label":"闭环稳定 ⇔ Z=N+P，其中 Z 为右半平面闭环极点数","type":"yd"},{"label":"P 为开环右半平面极点数，须先数清楚","type":"yd"},{"label":"N 为开环幅相曲线绕 (-1,j0) 点的净包围圈数","type":"yd"},{"label":"逆时针包围为正，顺时针为负","type":"yd"},{"label":"先求开环极点，数出右半平面个数 P","type":"bz"},{"label":"绘制开环幅相特性曲线（或利用 Bode 图判稳）","type":"bz"},{"label":"数出曲线对 (-1,j0) 点的包围圈数 N","type":"bz"},{"label":"由 Z=N+P 判断闭环稳定性","type":"bz"},{"label":"Z=N+P","type":"fm","tex":"Z=N+P"},{"label":"N=N_+-N_-","type":"fm","tex":"N=N_+-N_-"},{"label":"用奈奎斯特判据确定使系统稳定的开环增益范围","type":"kf","own":true},{"label":"由开环幅相曲线判断闭环稳定性","type":"kf","own":false},{"label":"求使闭环稳定的开环增益范围","type":"kf","own":false},{"label":"判断补画虚轴绕行后曲线的包围情况","type":"kf","own":false},{"label":"开环含有积分环节时未补画无穷大半径圆弧","type":"er","own":false},{"label":"把包围圈数的正负号定义搞反","type":"er","own":false},{"label":"没有先数开环右半平面极点数 P","type":"er","own":false}]},{"label":"稳定裕度","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"幅值裕度的分贝值等于临界增益与实际增益之比取常用对数再乘二十","type":"k1"},{"label":"本题临界增益与实际增益之比恰好等于六，题面给出的六的对数正是为此准备的","type":"k1"},{"label":"幅值裕度为正是稳定（最小相位系统），为零是临界稳定","type":"k1"},{"label":"时间常数取 0.5 与 1、增益取 0.5 时，","type":"k2"},{"label":"临界增益为 3，比值是 6，对应约 15.6 dB","type":"k2"},{"label":"把幅值裕度定义成实际增益比临界增益（取倒数）；或忘记乘二十","type":"k3"}]},{"label":"相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)","type":"yd"},{"label":"幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝","type":"yd"},{"label":"γ>0 且 Kg>1 时闭环稳定（最小相位系统）","type":"yd"},{"label":"γ 主要影响超调，ωc 主要影响响应速度","type":"yd"},{"label":"由幅频特性求 |G|=1 对应的穿越频率 ωc","type":"bz"},{"label":"由相频特性求 ∠G=-180° 对应的频率 ωg","type":"bz"},{"label":"分别代入公式求相角裕度与幅值裕度","type":"bz"},{"label":"由裕度符号判断稳定性","type":"bz"},{"label":"\\gamma=180^\\circ+\\angle G(j\\omega_c)","type":"fm","tex":"\\gamma=180^\\circ+\\angle G(j\\omega_c)"},{"label":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}","type":"fm","tex":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"},{"label":"计算给定增益下的幅值裕度","type":"kf","own":true},{"label":"求系统的相角裕度与幅值裕度","type":"kf","own":false},{"label":"由裕度要求反求开环增益","type":"kf","own":false},{"label":"分析增益变化对裕度的影响","type":"kf","own":false},{"label":"把 ωc 与 ωg 两个频率用反","type":"er","own":false},{"label":"幅值裕度取倒数未取，导致结论反了","type":"er","own":false},{"label":"非最小相位系统仍用同一判据","type":"er","own":false}]}]}]}},{"no":"4","tree":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、由稳态值与正弦纹波反求参数、保持裕度不变把误差降十倍、最少拍设计","type":"warn"},{"label":"四、开环对数幅频特性渐近线的绘制　〔第4题〕","type":"block","children":[{"label":"开环含一个零点与三个惯性环节，且增益用穿越频率表示，按转折频率逐段改斜率画渐近线","type":"idea"},{"label":"开环对数频率特性的绘制","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"最低频段只由积分环节决定，斜率是每十倍频程下降二十分贝，高度由增益决定","type":"k1"},{"label":"按转折频率从小到大依次改斜率：经过惯性环节下降二十分贝，经过一阶微分环节上升二十分贝","type":"k1"},{"label":"本题增益用另一个频率的平方表示，说明这个频率就是幅值穿越频率，","type":"k1"},{"label":"画图时要让曲线正好在那里穿过零分贝线","type":"k1"},{"label":"四个转折频率的先后顺序已在题面给出，画完可数一数斜率变化次数是否与环节数一致","type":"k2"},{"label":"改斜率时做替换而不是累加；或把增益表达式当成独立参数，忘了它与穿越频率的约束关系","type":"k3"}]},{"label":"熟记 lg2≈0.3、lg5≈0.7、20lg2≈6dB","type":"yd"},{"label":"从低频段开始逐段按各环节转折频率改变斜率","type":"yd"},{"label":"低频段斜率由系统型别决定，高度由开环增益决定","type":"yd"},{"label":"每经过一个转折频率斜率就叠加该环节的斜率变化","type":"yd"},{"label":"把开环传递函数写成典型环节的标准乘积","type":"bz"},{"label":"确定系统型别与开环增益，画出最低频段渐近线","type":"bz"},{"label":"按转折频率从小到大逐段改斜率","type":"bz"},{"label":"逐点叠加得到幅频与相频曲线","type":"bz"},{"label":"L(\\omega)=20\\lg K-20v\\lg\\omega+\\sum 20\\lg|G_i(j\\omega)|","type":"fm","tex":"L(\\omega)=20\\lg K-20v\\lg\\omega+\\sum 20\\lg|G_i(j\\omega)|"},{"label":"绘制开环对数幅频特性渐近线","type":"kf","own":true},{"label":"绘制开环对数渐近幅频特性","type":"kf","own":false},{"label":"计算指定频率处的幅值与相角","type":"kf","own":false},{"label":"由低频段斜率与高度判断型别与增益","type":"kf","own":false},{"label":"逐段改斜率时忘记累加而非替换","type":"er","own":false},{"label":"低频段起始高度没有乘上型别的 -20v dB/dec","type":"er","own":false}]}]}]}},{"no":"5","tree":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、由稳态值与正弦纹波反求参数、保持裕度不变把误差降十倍、最少拍设计","type":"warn"},{"label":"五、复合输入下由响应反求系统参数　〔第5题〕","type":"block","children":[{"label":"有用输入是阶跃、扰动是正弦，输出是二者叠加，用稳态值与最大值两个条件反求 p、q、T、k，再求误差","type":"idea"},{"label":"多输入与扰动作用下的传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"用叠加原理分别求两条通道：从有用输入到输出的传函、从扰动到输出的传函","type":"k1"},{"label":"两条通道的分母相同，都是同一个特征多项式，只是分子不同，写出后便于比对","type":"k1"},{"label":"总输出是两部分之和，不能先把两个输入相加再乘一个传函","type":"k1"},{"label":"阶跃分量给出稳态值，正弦分量给出叠加在稳态值上的等幅纹波","type":"k2"},{"label":"把扰动直接当成输入的一部分；或忘记两条通道的分母相同这一结构特点","type":"k3"}]},{"label":"线性系统可用叠加原理，每次只保留一个输入","type":"yd"},{"label":"求扰动的传递函数时令参考输入为零","type":"yd"},{"label":"扰动误差与输入误差分别计算后再叠加","type":"yd"},{"label":"令 R(s)=0，求扰动到输出的传递函数","type":"bz"},{"label":"令 N(s)=0，求输入到输出的传递函数","type":"bz"},{"label":"按题目要求叠加或单独分析","type":"bz"},{"label":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}","type":"fm","tex":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}"},{"label":"求有用输入与扰动同时作用时的输出","type":"kf","own":true},{"label":"求扰动引起的输出或误差","type":"kf","own":false},{"label":"分析满足扰动不变性的补偿条件","type":"kf","own":false},{"label":"两个输入同时存在时直接叠加却未验证系统的线性性","type":"er","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":false}]},{"label":"扰动作用下的稳态误差","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"阶跃输入的稳态值由直流增益决定，可直接写出一个关于参数的方程","type":"k1"},{"label":"题给最大值与稳态值之差就是正弦扰动分量造成的纹波幅值，","type":"k1"},{"label":"两个条件联立解出时间常数与增益，再按误差定义求稳态误差","type":"k1"},{"label":"这给出频率特性在扰动频率处的一个幅值条件","type":"k1"},{"label":"峰值 2.326 与稳态值 2 之比略大于 1，","type":"k2"},{"label":"说明纹波幅值不大，据此可判断扰动通道在二弧度每秒附近的幅值衰减很强","type":"k2"},{"label":"把峰值直接当成稳态值；或只用一个条件就试图解出多个参数","type":"k3"}]},{"label":"扰动误差与输入误差必须分开计算再叠加","type":"yd"},{"label":"扰动误差取决于扰动作用点到误差点的传递函数","type":"yd"},{"label":"增大扰动点前的增益可减小扰动误差","type":"yd"},{"label":"令参考输入为零，求扰动到误差的传递函数","type":"bz"},{"label":"代入扰动信号求稳态值","type":"bz"},{"label":"与输入引起的误差叠加","type":"bz"},{"label":"e_{ssn}=\\lim_{s\\to0}s\\,\\Phi_{en}(s)N(s)","type":"fm","tex":"e_{ssn}=\\lim_{s\\to0}s\\,\\Phi_{en}(s)N(s)"},{"label":"由稳态输出值与响应峰值反求系统参数并求稳态误差","type":"kf","own":true},{"label":"求扰动引起的稳态误差","type":"kf","own":false},{"label":"比较扰动与输入对误差的不同影响","type":"kf","own":false},{"label":"分析提高前向增益的作用","type":"kf","own":false},{"label":"把扰动误差直接当作总误差，遗漏输入分量","type":"er","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":false}]}]}]}},{"no":"6","tree":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、由稳态值与正弦纹波反求参数、保持裕度不变把误差降十倍、最少拍设计","type":"warn"},{"label":"六、保持裕度不变的串联校正设计　〔第6题〕","type":"block","children":[{"label":"由对数幅频渐近线反求开环传函，再在保持相角裕度与剪切频率不变的前提下把误差降为十分之一","type":"idea"},{"label":"由 Bode 图反求传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"低频段斜率定积分环节个数，低频段高度定开环增益，两者要配套使用","type":"k1"},{"label":"每个转折频率处斜率变化二十就对应一个一阶环节，变化方向决定是零点还是极点","type":"k1"},{"label":"剪切频率就是幅频曲线与零分贝线的交点频率，读图时注意它落在哪一段","type":"k1"},{"label":"把写出的传函代回几个转折频率处验算幅值，可以直接发现增益或环节类型是否读错","type":"k2"},{"label":"低频段高度与增益之间忘记折算积分环节的斜率；或把上升二十的转折当成极点","type":"k3"}]},{"label":"低频段斜率给出积分环节个数即系统型别","type":"yd"},{"label":"低频段高度或延长线与 0 dB 交点给出开环增益","type":"yd"},{"label":"每个转折频率对应一个一阶或二阶环节","type":"yd"},{"label":"斜率变化 -20 对应惯性环节，+20 对应一阶微分，-40 可能是振荡环节","type":"yd"},{"label":"读低频段斜率确定型别 v","type":"bz"},{"label":"由低频段高度或延长线确定增益 K","type":"bz"},{"label":"逐个读出转折频率并判断对应环节类型","type":"bz"},{"label":"结合相频曲线与谐振峰判定二阶环节参数","type":"bz"},{"label":"写出并验证传递函数","type":"bz"},{"label":"L(\\omega)\\big|_{\\omega=1}=20\\lg\\frac{K}{\\omega^{v}}","type":"fm","tex":"L(\\omega)\\big|_{\\omega=1}=20\\lg\\frac{K}{\\omega^{v}}"},{"label":"由开环对数幅频特性渐近线反求传递函数与剪切频率","type":"kf","own":true},{"label":"由给定 Bode 图写出传递函数","type":"kf","own":false},{"label":"由实验频率特性辨识系统模型","type":"kf","own":false},{"label":"检验候选传递函数与曲线是否吻合","type":"kf","own":false},{"label":"把延长线交点误当作增益值而未折算型别","type":"er","own":false},{"label":"斜率变化为 -40 时直接写成一阶环节","type":"er","own":false}]},{"label":"滞后校正","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"同时要求「提高低频增益」和「不动中高频的幅相特性」，这正是滞后校正的典型适用场合","type":"k1"},{"label":"误差降为十分之一需要低频增益提高十倍，也就是零点增益提高二十分贝，","type":"k1"},{"label":"把滞后网络的两个转折频率配置得远离剪切频率：","type":"k1"},{"label":"而滞后网络的低频增益恰好是衰减系数的倒数","type":"k1"},{"label":"一个远低于它，另一个约在它的十分之一附近，以免吃掉相角裕度","type":"k1"},{"label":"设计完成后要重新量一次剪切频率和相角裕度，确认与校正前基本一致，误差确实降下来了","type":"k2"},{"label":"用超前校正去凑增益，结果剪切频率和相角裕度全变了；","type":"k3"},{"label":"或两个转折频率离剪切频率太近，相角裕度被吃掉","type":"k3"}]},{"label":"滞后校正利用高频段幅值衰减提高相角裕度","type":"yd"},{"label":"会使截止频率降低，响应变慢","type":"yd"},{"label":"转折频率要远低于新的截止频率以免引入过多相位滞后","type":"yd"},{"label":"可同时提高低频增益改善稳态精度","type":"yd"},{"label":"确定满足相角裕度要求的新截止频率","type":"bz"},{"label":"由未校正系统在该频率处的幅值确定衰减量","type":"bz"},{"label":"由衰减量求滞后网络的参数 β","type":"bz"},{"label":"取转折频率低于新截止频率一个数量级，写出传递函数","type":"bz"},{"label":"G_c(s)=\\frac{Ts+1}{\\beta Ts+1},\\quad \\beta>1","type":"fm","tex":"G_c(s)=\\frac{Ts+1}{\\beta Ts+1},\\quad \\beta>1"},{"label":"\\frac{1}{T}=(0.1\\sim0.2)\\omega_c'","type":"fm","tex":"\\frac{1}{T}=(0.1\\sim0.2)\\omega_c'"},{"label":"设计串联校正装置，使误差降为原来的十分之一且保持相角裕度和剪切频率不变","type":"kf","own":true},{"label":"设计串联滞后校正装置","type":"kf","own":false},{"label":"比较超前与滞后校正的效果差异","type":"kf","own":false},{"label":"分析滞后校正对响应速度的影响","type":"kf","own":false},{"label":"把滞后网络的两个转折频率顺序写反","type":"er","own":false},{"label":"转折频率取得过高导致相位滞后抵消了增益改善","type":"er","own":false}]},{"label":"减小稳态误差的措施","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"误差大小由低频段增益决定，而相角裕度主要由剪切频率附近的特性决定，两者作用频段不同","type":"k1"},{"label":"把增益抬高限制在低频段，就可以只改善精度而几乎不动稳定性","type":"k1"},{"label":"这正是滞后校正相对单纯提高增益的优势","type":"k1"},{"label":"如果改用直接提高开环增益的办法，低频精度也会改善，但剪切频率会右移、相角裕度会下降","type":"k2"},{"label":"把提高增益与加校正装置当成等效手段，忽略后者能把作用限制在低频段","type":"k3"}]},{"label":"提高开环增益可减小有差系统的误差，但会削弱稳定性","type":"yd"},{"label":"增加积分环节可提高型别，代价是相位滞后与超调增大","type":"yd"},{"label":"采用复合控制或前馈补偿可在不影响稳定性的前提下减小误差","type":"yd"},{"label":"采用扰动补偿可提高扰动不变性","type":"yd"},{"label":"判断误差来源是输入型别不足还是增益太小","type":"bz"},{"label":"按需选择提高增益、增加积分或加入补偿器","type":"bz"},{"label":"校验补偿后系统仍然稳定","type":"bz"},{"label":"重新计算稳态误差确认达标","type":"bz"},{"label":"e_{ss}=\\frac{1}{1+K_p}R_0,\\quad K_p\\uparrow\\Rightarrow e_{ss}\\downarrow","type":"fm","tex":"e_{ss}=\\frac{1}{1+K_p}R_0,\\quad K_p\\uparrow\\Rightarrow e_{ss}\\downarrow"},{"label":"说明为何能在不影响稳定性的前提下把误差降为十分之一","type":"kf","own":true},{"label":"分析提高开环增益对误差与稳定性的双重影响","type":"kf","own":false},{"label":"设计前馈补偿器实现给定信号不变性","type":"kf","own":false},{"label":"说明为何单纯提高增益不可行","type":"kf","own":false},{"label":"只谈误差减小而不检查稳定性是否被破坏","type":"er","own":false},{"label":"把增加积分环节的影响单一化，忽略超调","type":"er","own":false}]}]}]}},{"no":"7","tree":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、由稳态值与正弦纹波反求参数、保持裕度不变把误差降十倍、最少拍设计","type":"warn"},{"label":"七、最少拍数字控制器设计　〔第7题〕","type":"block","children":[{"label":"给定对象脉冲传函与采样周期，按单位阶跃输入设计最少拍系统并写出输出与误差序列","type":"idea"},{"label":"数字控制器与最少拍设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先按输入类型定闭环误差脉冲传函：","type":"k1"},{"label":"再由数字控制器等于闭环传函除以对象脉冲传函与误差传函的乘积，把已知的 G(z) 代进去化简","type":"k1"},{"label":"对象脉冲传函里若含单位圆外零点或纯滞后因子，","type":"k1"},{"label":"单位阶跃输入时取误差传函为一减 z 的负一次方，闭环传函即为 z 的负一次方","type":"k1"},{"label":"闭环传函必须相应取高阶，否则控制器不可实现或系统不稳","type":"k1"},{"label":"写出闭环传函后直接做 z 反变换就得到输出序列，误差序列由误差传函反变换得到","type":"k2"},{"label":"单位阶跃输入下最少拍数为拍数等于闭环传函的阶数，之后输出恒等于输入","type":"k2"},{"label":"不看 G(z) 的零点结构直接套一阶闭环传函；或把数字控制器写成对象脉冲传函的倒数","type":"k3"}]},{"label":"最少拍系统指在典型输入下经过有限拍达到无稳态误差","type":"yd"},{"label":"设计需要满足可实现性与稳定性约束","type":"yd"},{"label":"最少拍系统的闭环脉冲传递函数由输入类型确定","type":"yd"},{"label":"最少拍设计通常导致很大的控制量，需加限制","type":"yd"},{"label":"确定输入类型及对应的误差传函形式","type":"bz"},{"label":"按无稳态误差要求构造闭环脉冲传递函数","type":"bz"},{"label":"由 D(z)=Φ(z)/[G(z)(1-Φ(z))] 求数字控制器","type":"bz"},{"label":"检验可实现性、稳定性与控制量大小","type":"bz"},{"label":"D(z)=\\frac{\\Phi(z)}{G(z)(1-\\Phi(z))}","type":"fm","tex":"D(z)=\\frac{\\Phi(z)}{G(z)(1-\\Phi(z))}"},{"label":"\\Phi_e(z)=1-\\Phi(z)","type":"fm","tex":"\\Phi_e(z)=1-\\Phi(z)"},{"label":"设计最少拍数字控制器并求输出与误差序列","type":"kf","own":true},{"label":"设计最少拍数字控制器","type":"kf","own":false},{"label":"比较不同输入类型下的最少拍数","type":"kf","own":false},{"label":"分析最少拍系统存在的问题","type":"kf","own":false},{"label":"忽略 D(z) 必须是物理可实现的因果系统","type":"er","own":false},{"label":"闭环传函构造时未满足稳定性约束条件","type":"er","own":false}]}]}]}},{"no":"8","tree":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、由稳态值与正弦纹波反求参数、保持裕度不变把误差降十倍、最少拍设计","type":"warn"},{"label":"八、二阶线性系统的相平面分析　〔第8题〕","type":"block","children":[{"label":"一般二阶线性系统求奇点、定类型并画相轨迹，再反推奇点为中心点时的参数条件","type":"idea"},{"label":"相平面法","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"奇点由两个微分方程右端同时为零解出，","type":"k1"},{"label":"奇点类型由特征方程的根决定：","type":"k1"},{"label":"中心点要求特征根为纯虚数，也就是特征方程的一次项系数为零、常数项大于零，","type":"k1"},{"label":"系数矩阵行列式不为零时只有原点一个奇点，为零则可能有整条直线上的奇点","type":"k1"},{"label":"两个正实根是不稳定节点、两个负实根是稳定节点、共轭复根实部为负是稳定焦点","type":"k1"},{"label":"这两个条件合起来就是参数的取值要求","type":"k1"},{"label":"特征方程由系数矩阵直接写出：","type":"k2"},{"label":"中心点条件可以改写成「对角线元素互为相反数且行列式大于零」","type":"k2"},{"label":"二次项系数为一、一次项系数的相反数等于对角线元素之和、常数项等于矩阵行列式","type":"k2"},{"label":"把奇点类型与稳定性混为一谈；或只令迹为零而忘记还要保证行列式大于零，漏掉鞍点情形","type":"k3"}]},{"label":"相平面以误差及其导数为坐标，适用于一、二阶非线性系统","type":"yd"},{"label":"相轨迹的斜率由系统微分方程直接给出","type":"yd"},{"label":"奇点对应系统的平衡状态，奇点类型决定局部行为","type":"yd"},{"label":"极限环对应相平面上的孤立闭曲线","type":"yd"},{"label":"写出以误差及其导数表示的二阶微分方程","type":"bz"},{"label":"由等倾线法或解析法求相轨迹斜率","type":"bz"},{"label":"画出各区域相轨迹并判断奇点类型","type":"bz"},{"label":"由是否存在闭曲线判断极限环与自振","type":"bz"},{"label":"\\frac{d\\dot{e}}{de}=\\frac{\\ddot{e}}{\\dot{e}}","type":"fm","tex":"\\frac{d\\dot{e}}{de}=\\frac{\\ddot{e}}{\\dot{e}}"},{"label":"\\frac{d\\dot{e}}{de}=-\\frac{f(e,\\dot{e})}{\\dot{e}}","type":"fm","tex":"\\frac{d\\dot{e}}{de}=-\\frac{f(e,\\dot{e})}{\\dot{e}}"},{"label":"求二阶线性系统的奇点并判断类型","type":"kf","own":true},{"label":"反推奇点为中心点时的参数条件","type":"kf","own":true},{"label":"画出给定初始条件下的相轨迹","type":"kf","own":false},{"label":"判断奇点类型与稳定性","type":"kf","own":false},{"label":"分析极限环的存在与形态","type":"kf","own":false},{"label":"相轨迹斜率公式中分子分母写反","type":"er","own":false},{"label":"把相轨迹与根轨迹混淆","type":"er","own":false}]}]}]}},{"no":"9","tree":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、由稳态值与正弦纹波反求参数、保持裕度不变把误差降十倍、最少拍设计","type":"warn"},{"label":"九、继电器非线性系统的描述函数分析　〔第9题〕","type":"block","children":[{"label":"含死区的继电器特性配给定的线性部分，判断有无自振并求振幅与频率，再讨论串入微分环节后的影响","type":"idea"},{"label":"用描述函数法分析自振","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先把非线性环节用描述函数线性化，再把线性部分按结构图化简成一条等效传递函数","type":"k1"},{"label":"继电特性的描述函数随振幅增大而减小，","type":"k1"},{"label":"负倒描述函数曲线与线性部分奈奎斯特曲线的交点给出振幅与频率，","type":"k1"},{"label":"对应的负倒描述函数在负实轴上从零附近向外移动，方向要与横轴刻度对上","type":"k1"},{"label":"再按穿越方向判断该周期运动是否稳定","type":"k1"},{"label":"本题给出若干平方根的近似值，说明求解交点时会得到含根号的方程，要按题给数据取近似","type":"k2"},{"label":"把线性部分化成极点全在左半平面的三阶形式后，可直接看出曲线穿过负实轴的位置","type":"k2"},{"label":"不化简结构图就把两个环节串起来当线性部分；或只求交点不判断稳定性","type":"k3"}]},{"label":"自振条件为 G(jω)N(A)=-1，即线性部分特性与负倒描述函数曲线相交","type":"yd"},{"label":"交点给出自振频率 ω 与自振幅值 A","type":"yd"},{"label":"负倒描述函数曲线上幅值增大的方向决定自振是否稳定","type":"yd"},{"label":"交点处两条曲线的走向关系决定极限环稳定性","type":"yd"},{"label":"求线性部分的频率特性 G(jω)","type":"bz"},{"label":"求非线性环节的负倒描述函数 -1/N(A) 并确定 A 的增大方向","type":"bz"},{"label":"在同一复平面上画两条曲线并求交点","type":"bz"},{"label":"由交点处的走向判断自振是否存在且稳定，读出 ω 与 A","type":"bz"},{"label":"G(j\\omega)N(A)=-1","type":"fm","tex":"G(j\\omega)N(A)=-1"},{"label":"G(j\\omega)=-\\frac{1}{N(A)}","type":"fm","tex":"G(j\\omega)=-\\frac{1}{N(A)}"},{"label":"用描述函数法判断系统是否产生自激振荡并求振幅与频率","type":"kf","own":true},{"label":"分析串入微分环节对稳定性的影响","type":"kf","own":true},{"label":"判断系统是否产生自持振荡","type":"kf","own":false},{"label":"求自振频率与自振幅值","type":"kf","own":false},{"label":"分析参数变化对自振的影响","type":"kf","own":false},{"label":"画的是 N(A) 而不是负倒描述函数 -1/N(A)","type":"er","own":false},{"label":"未标注 A 的增大方向就判断稳定性","type":"er","own":false},{"label":"把交点频率当成截止频率","type":"er","own":false}]},{"label":"非线性系统的稳定性与改善","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把串联环节由常数改成 s，相当于在线性部分里接入一个理想微分环节","type":"k1"},{"label":"理想微分使幅值随频率成比例上升、相位超前九十度，整条奈奎斯特曲线会整体逆时针旋转","type":"k1"},{"label":"曲线旋转后与负倒描述函数的交点可能消失或位置改变，","type":"k1"},{"label":"据此判断自振是被消除、被稳定化还是仍然存在","type":"k1"},{"label":"相位超前通常有利于抑制自振，但要同时考虑幅值变化带来的交点位置移动，不能只看相位","type":"k2"},{"label":"只在原曲线上平移而不重新计算相角；或忽略理想微分对高频噪声的放大这一实际限制","type":"k3"}]},{"label":"非线性系统只有局部稳定性概念，与初始条件有关","type":"yd"},{"label":"极限环的稳定性可由相轨迹收敛或发散判断","type":"yd"},{"label":"减小非线性影响可用加大线性部分增益或引入校正","type":"yd"},{"label":"用描述函数或相平面结果指导参数选择","type":"yd"},{"label":"判断系统是否存在极限环并确定其稳定性","type":"bz"},{"label":"分析非线性环节参数对自振幅值频率的影响","type":"bz"},{"label":"通过调整线性部分增益或加入校正削弱自振","type":"bz"},{"label":"重新分析确认自振消除或幅值达标","type":"bz"},{"label":"分析串入微分环节后系统稳定性的变化","type":"kf","own":true},{"label":"提出消除自振的工程措施","type":"kf","own":false},{"label":"分析增益变化对极限环幅值的影响","type":"kf","own":false},{"label":"比较不同方案对稳定性与动态性能的利弊","type":"kf","own":false},{"label":"仅调整增益而不检查是否引入新的自振点","type":"er","own":false},{"label":"把不稳定极限环误判为可观测的自振","type":"er","own":false}]}]}]}},{"no":"10","tree":{"label":"华中科技大学 832","type":"root","sub":"2025 · 控制原理","children":[{"label":"难度：难　特点：10 题 150 分；信号流图、含未知极性的根轨迹、奈氏判据与幅值裕度、对数幅频渐近线、复合输入参数辨识、滞后校正、最少拍、相平面、继电器描述函数、状态反馈极点配置各一题，几乎每个大类都点到了　重点：反馈极性未知时的稳定域、幅值裕度的对数计算、由稳态值与正弦纹波反求参数、保持裕度不变把误差降十倍、最少拍设计","type":"warn"},{"label":"十、状态反馈极点配置　〔第10题〕","type":"block","children":[{"label":"由图写状态空间表达式，判断能否用状态反馈任意配置极点，再按给定期望极点设计反馈增益并画状态变量图","type":"idea"},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"状态变量图里每个积分器对应一个状态变量，积分器前的求和点就写出该状态变量的一阶微分方程","type":"k1"},{"label":"把所有积分器输入端的信号写成状态与输入的线性组合，即得状态方程","type":"k1"},{"label":"输出方程由输出端与状态变量、输入的连接关系直接写出","type":"k1"},{"label":"按积分器从右到左编号可避免漏掉反馈支路，写完后用维数核对矩阵形状","type":"k2"},{"label":"漏掉某条前馈支路导致输出方程少一项；或状态变量个数与积分器个数不一致","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"由系统结构图列写状态空间表达式","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"状态反馈能任意配置极点的充要条件是系统完全能控","type":"k1"},{"label":"构造能控性矩阵并求秩，秩等于系统阶数才能任意配置","type":"k1"},{"label":"若不可控，可先做能控性分解，只对能控子系统配置极点","type":"k1"},{"label":"能控性矩阵的列数等于状态维数乘输入维数，秩与状态维数比较即可下结论","type":"k2"},{"label":"用能观性判断极点配置的可行性；或只算到倒数第二个列就下结论","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"判断能否通过状态反馈实现闭环极点的任意配置","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]},{"label":"状态反馈与极点配置","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先写出期望极点对应的特征多项式，共轭复极点要成对展开","type":"k1"},{"label":"再求带状态反馈后闭环系统的特征多项式，它是含待定增益的行列式","type":"k1"},{"label":"两个多项式逐项比较系数，解出增益矩阵的各个元素","type":"k1"},{"label":"二阶系统期望偶极点为负二加减二倍虚数单位时，","type":"k2"},{"label":"期望特征多项式是二次的，一次项与常数项各给一个方程","type":"k2"},{"label":"行列式展开时符号写错；或没有先把状态方程化成能控标准型就套现成公式","type":"k3"}]},{"label":"状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控","type":"yd"},{"label":"状态反馈不改变系统的零点","type":"yd"},{"label":"极点配置通过比较期望与实际的闭环特征多项式求解 K","type":"yd"},{"label":"状态反馈可能改变能观性","type":"yd"},{"label":"先验证系统能控","type":"bz"},{"label":"写出希望配置的极点并求期望特征多项式","type":"bz"},{"label":"求闭环系统特征多项式 det(sI-A+BK)","type":"bz"},{"label":"比较系数解出反馈增益阵 K","type":"bz"},{"label":"u=-Kx+v","type":"fm","tex":"u=-Kx+v"},{"label":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)","type":"fm","tex":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)"},{"label":"按给定期望极点设计状态反馈增益矩阵","type":"kf","own":true},{"label":"设计状态反馈使闭环极点位于指定位置","type":"kf","own":false},{"label":"判断给定极点是否可通过状态反馈配置","type":"kf","own":false},{"label":"分析状态反馈对系统性能的影响","type":"kf","own":false},{"label":"未验证能控性就直接做极点配置","type":"er","own":false},{"label":"特征多项式比较系数时符号写反","type":"er","own":false}]}]}]}}]}</script>
+<script src="../../../../../assets/d3.min.js"></script>
+<script src="../../../../../assets/kg.js"></script>
+</body></html>

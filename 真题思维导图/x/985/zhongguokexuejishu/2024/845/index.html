@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国科学技术大学 845 控制原理 2024 年真题思维导图</title>
+<meta name="description" content="中国科学技术大学 2024 年 845 控制原理 考研真题思维导图：共 6 个大题，逐题思路、考点与易错整理。第1题（一、卡车单轮悬架系统建模）；第2题（二、三种方法分析稳定性与 Z-N 整定）；第3题（三、Bode 图法设计 P、I、PI 控制器）；第4题（四、串联系统的状态空间、状态响应与能控能观）；第5题（五、状态反馈与观测器设计）；第6题（六、两道理论证明）">
+<link rel="canonical" href="http://127.0.0.1:8768/真题思维导图/x/985/zhongguokexuejishu/2024/845/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中国科学技术大学 845 控制原理 2024 年真题思维导图">
+<meta property="og:description" content="中国科学技术大学 2024 年 845 控制原理 考研真题思维导图：共 6 个大题，逐题思路、考点与易错整理。第1题（一、卡车单轮悬架系统建模）；第2题（二、三种方法分析稳定性与 Z-N 整定）；第3题（三、Bode 图法设计 P、I、PI 控制器）；第4题（四、串联系统的状态空间、状态响应与能控能观）；第5题（五、状态反馈与观测器设计）；第6题（六、两道理论证明）">
+<meta name="theme-color" content="#1f4e79">
+<link rel="stylesheet" href="../../../../../assets/kg.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "中国科学技术大学 845 控制原理 2024 年真题思维导图", "inLanguage": "zh-CN", "about": ["PID 控制器与参数整定", "劳斯判据", "机械系统建模", "状态反馈与极点配置", "状态空间表达式的建立", "状态观测器设计", "状态转移矩阵", "稳定裕度", "能控性与能观性"], "educationalLevel": "985 院校", "url": "http://127.0.0.1:8768/真题思维导图/x/985/zhongguokexuejishu/2024/845/"}</script>
+</head>
+<body class="page-set">
+<header class="site-head"><div class="inner"><a class="parent-home" href="../../../../../../index.html"><span class="arr">←</span><span class="ptxt">择校首页</span></a><a class="brand" href="../../../../../"><span class="full">控制考研真题思维导图</span><span class="short">真题思维导图</span></a><button class="sbtn" id="kg-search-btn" type="button" aria-label="搜索"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button><nav class="crumbs"><a href="../../../../../x/985/">985 院校</a><span class="sep">›</span><a href="../../../../../x/985/zhongguokexuejishu/">中国科学技术大学</a><span class="sep">›</span><span>2024 年</span></nav><nav class="levelnav" aria-label="层级导航"><a class="lv home" href="../../../../../">首页</a><a class="lv" href="../../../../../x/985/zhongguokexuejishu/">← 中国科学技术大学</a><a class="lv" href="#q1">第 1 题 →</a></nav><input class="head-inp" id="site-q" type="search" placeholder="搜学校 / 代码 / 年份" aria-label="搜索"></div></header>
+<main class="wrap">
+<div class="titlebar"><img class="hlogo" src="../../../../../assets/logo/zhongguokexuejishu.jpg" alt="中国科学技术大学校徽" width="52" height="52"><h1>中国科学技术大学 845 控制原理 2024 年真题思维导图</h1><div class="actions"><button class="btn" data-mode="outline">大纲</button><button class="btn on" data-mode="map">导图</button><button class="btn" id="btn-full">全屏</button></div></div>
+<div class="tagrow"><span class="badge t985">985 院校</span><span class="badge">共 6 题</span></div>
+<p class="sub muted tiny" style="margin:8px 0 0">难度：难　6 题；前三题是经典控制（卡车单轮悬架机械系统建模、三阶系统三种方法判稳与 Z-N 整定、Bode 图法设计 P 与 I 与 PI 控制器），后三题全是状态空间：串联系统的状态响应与能控能观、状态反馈与观测器、两道理论证明，现代控制权重很大</p>
+<div class="qtabs" id="qtabs"><button class="qt on" data-q="all">整卷</button><button class="qt" data-q="1">1</button><button class="qt" data-q="2">2</button><button class="qt" data-q="3">3</button><button class="qt" data-q="4">4</button><button class="qt" data-q="5">5</button><button class="qt" data-q="6">6</button></div>
+<div class="cols"><div class="mainpane">
+<div class="mapwrap" id="mapwrap">
+<div class="maptools">
+<button class="btn on" data-depth="1">板块</button>
+<button class="btn" data-depth="2">考点</button>
+<button class="btn" data-depth="99">全部</button>
+<button class="btn" data-zoom="in" title="放大">＋</button>
+<button class="btn" data-zoom="out" title="缩小">－</button>
+<button class="btn" data-fit="1">适应</button>
+<button class="btn" id="btn-exitfs" hidden>退出全屏</button>
+<input id="map-q" type="search" placeholder="图内搜索">
+</div>
+<svg id="svg"><g id="g"></g></svg>
+<div class="map-foot">点击节点展开/折叠　·　滚轮缩放　·　拖拽平移</div>
+</div>
+<section class="content" id="content">
+<article class="qcard" id="q1" data-q="1">
+<h2><span class="no">1</span><span>一、卡车单轮悬架系统建模</span><a class="anchorlink" data-q="1" href="#q1" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">对车轮与车身分别受力分析列机械系统运动方程，拉氏变换后消去中间变量，求 Y1(s)/X(s) 与 Y2(s)/X(s) 两个传递函数</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/md_01/">机械系统建模</a>
+<span class="tiny muted">建模与机电系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>对弹簧-质量-阻尼悬架系统列运动方程并求 Y1(s)/X(s) 与 Y2(s)/X(s)</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>分别对车身质量与车轮质量列牛顿第二定律，弹簧力按相对位移写</li>
+<li><b>关键一步：</b>阻尼力按相对速度写，且同时作用在两个质块上、方向相反</li>
+<li><b>关键一步：</b>拉氏变换后得到两个代数方程再消去中间变量</li>
+<li><b>中间结果：</b>两个方程含车身质量、车轮质量、两个刚度、一个阻尼与三个位移</li>
+<li><b>中间结果：</b>两式相除可先得到两个输出的比值再回代</li>
+<li><b>卡点：</b>多质量系统漏掉相互作用力的反作用项</li>
+<li><b>卡点：</b>把阻尼力当成只与单一变量有关</li>
+<li><b>卡点：</b>悬架结构以图 1 给出，具体连接关系需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>依据牛顿第二定律或达朗贝尔原理列方程</li><li>三种基本元件：质量 m、粘性阻尼 f、弹簧 k</li><li>同一方向取正，反向取负，逐项列出合力</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>选定正方向并作受力分析</li><li>分别写出质量、阻尼、弹簧对应的力</li><li>按 F=ma 列写运动方程</li><li>取拉氏变换整理成传递函数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>对弹簧-质量-阻尼悬架系统列运动方程并求 Y1(s)/X(s) 与 Y2(s)/X(s)</li><li>弹簧-质量-阻尼系统求位移对力的传递函数</li><li>两质量块经弹簧阻尼连接的系统建模</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>阻尼力与弹簧力的正负方向取反</li><li>多质量系统漏掉相互作用力的反作用项</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="m\ddot{x}+f\dot{x}+kx=F(t)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q2" data-q="2">
+<h2><span class="no">2</span><span>二、三种方法分析稳定性与 Z-N 整定</span><a class="anchorlink" data-q="2" href="#q2" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">三阶惯性环节串联单位反馈：先用劳斯、根轨迹、奈奎斯特三种方法判稳并求稳定域，再用 P、PI、PID 与闭环 Z-N 临界比例度法整定参数</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/st_01/">劳斯判据</a>
+<span class="tiny muted">稳定性分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用三种不同方法分析三阶系统的闭环稳定性并求稳定范围</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>劳斯法：展开三阶特征方程，令首列全为正列稳定域</li>
+<li><b>关键一步：</b>根轨迹法：三个极点都在左半平面，由与虚轴交点定临界增益</li>
+<li><b>关键一步：</b>奈奎斯特法：令虚部为零求穿越频率，再令实部等于负一求临界增益</li>
+<li><b>中间结果：</b>特征方程为三次多项式，一次项系数与常数项含增益 k</li>
+<li><b>中间结果：</b>三种方法应给出同一个临界增益</li>
+<li><b>卡点：</b>只把各项系数为正当充要条件</li>
+<li><b>卡点：</b>根轨迹法没有求虚轴交点就下结论</li>
+<li><b>卡点：</b>奈奎斯特法不数右半平面极点数就直接判</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>特征方程各项系数全为正只是必要条件，不充分</li><li>劳斯表首列元素全部同号 ⇔ 系统稳定</li><li>首列符号变化次数等于右半平面闭环极点数</li><li>首列出现 0 时需用 ε 法或乘辅助多项式处理</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出闭环特征方程并整理成降幂排列</li><li>若某次幂系数缺项，该项补零</li><li>列劳斯表：前两行为系数，之后各行按交叉相减</li><li>检查首列符号：全同号则稳定，有变号则数出个数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用三种不同方法分析三阶系统的闭环稳定性并求稳定范围</li><li>判断给定系统的稳定性</li><li>指出右半平面闭环极点的个数</li><li>求使系统稳定的参数范围</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>系数有缺项时不补零，直接套用判据</li><li>首列出现 0 后仍按常规继续算，未用 ε 法</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="1+G(s)H(s)=0"></div><div class="formula" data-tex="a_ns^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0=0"></div><div class="formula" data-tex="b_1=\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/cr_07/">PID 控制器与参数整定</a>
+<span class="tiny muted">系统校正</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用闭环齐格勒-尼科尔斯法分别整定 P、PI、PID 参数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先由劳斯或奈奎斯特法求临界比例增益与临界振荡周期</li>
+<li><b>关键一步：</b>振荡周期由临界角频率按 2π 换算，不能直接用角频率</li>
+<li><b>关键一步：</b>再按 P、PI、PID 三组不同系数公式算各控制器参数</li>
+<li><b>中间结果：</b>临界角频率处特征方程有一对纯虚根</li>
+<li><b>中间结果：</b>三种控制器都以同一临界增益和临界周期为基准</li>
+<li><b>卡点：</b>把临界周期与临界角频率直接用反了</li>
+<li><b>卡点：</b>把公式里的积分时间当积分增益直接填</li>
+<li><b>卡点：</b>把 Z-N 开环反应曲线法公式套到闭环临界比例度法上</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>比例项提高快速性但存在稳态误差</li><li>积分项消除稳态误差但降低稳定性、增大超调</li><li>微分项提供超前相位改善动态性能但对噪声敏感</li><li>PD 相当于超前校正，PI 相当于滞后校正</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>按误差类型选择需要引入的环节</li><li>先调比例再调积分最后调微分</li><li>用稳定裕度或性能指标校验并微调</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用闭环齐格勒-尼科尔斯法分别整定 P、PI、PID 参数</li><li>设计 PID 控制器满足给定指标</li><li>分析各参数变化对系统性能的影响</li><li>说明微分项对噪声的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 PI 的相位影响说成超前</li><li>积分增益过大导致系统振荡甚至不稳定</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G_c(s)=K_p+\frac{K_i}{s}+K_ds"></div><div class="formula" data-tex="G_c(s)=K_p\left(1+\frac{1}{T_is}+T_ds\right)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q3" data-q="3">
+<h2><span class="no">3</span><span>三、Bode 图法设计 P、I、PI 控制器</span><a class="anchorlink" data-q="3" href="#q3" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">被控对象为两个一阶环节之积：指标要求相角裕度不低于 60 度、阶跃稳态误差不超过百分之五、带宽尽量大；分别设计 P、I、PI 三类控制器并比较闭环零点配置</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/fd_05/">稳定裕度</a>
+<span class="tiny muted">频域分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用 Bode 图法设计比例控制器并分析能否同时满足相角裕度与稳态误差指标</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>由稳态误差要求先反求开环增益下限</li>
+<li><b>关键一步：</b>再由相角裕度要求幅值为 1 处的相角条件反求增益上限</li>
+<li><b>关键一步：</b>两个方向对增益的要求若矛盾，指标就无法同时满足</li>
+<li><b>中间结果：</b>零型系统阶跃误差由 1 除以 1 加位置误差系数给出</li>
+<li><b>中间结果：</b>相角裕度条件先定截止频率，再由幅值条件给出对应增益</li>
+<li><b>卡点：</b>只看幅值条件不看相角条件</li>
+<li><b>卡点：</b>把增益上下限求反，未分辨哪个是矛盾点</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)</li><li>幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝</li><li>γ&gt;0 且 Kg&gt;1 时闭环稳定（最小相位系统）</li><li>γ 主要影响超调，ωc 主要影响响应速度</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由幅频特性求 |G|=1 对应的穿越频率 ωc</li><li>由相频特性求 ∠G=-180° 对应的频率 ωg</li><li>分别代入公式求相角裕度与幅值裕度</li><li>由裕度符号判断稳定性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用 Bode 图法设计比例控制器并分析能否同时满足相角裕度与稳态误差指标</li><li>求系统的相角裕度与幅值裕度</li><li>由裕度要求反求开环增益</li><li>分析增益变化对裕度的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 ωc 与 ωg 两个频率用反</li><li>幅值裕度取倒数未取，导致结论反了</li><li>非最小相位系统仍用同一判据</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\gamma=180^\circ+\angle G(j\omega_c)"></div><div class="formula" data-tex="K_g=-20\lg|G(j\omega_g)|\ \text{dB}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/fd_05/">稳定裕度</a>
+<span class="tiny muted">频域分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>设计积分控制器并计算校正后的过零频率</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>串联一个积分环节使系统型别提高，阶跃误差变为零</li>
+<li><b>关键一步：</b>按相角裕度条件解出截止频率，再由该处幅值为 1 定增益</li>
+<li><b>关键一步：</b>积分环节带来固定的 −90 度相位，裕度比比例控制更难满足</li>
+<li><b>中间结果：</b>校正后开环为被控对象乘 k 再除以 s</li>
+<li><b>中间结果：</b>相角条件为 180 度减积分与两个惯性环节的相角</li>
+<li><b>卡点：</b>把积分控制器的相位影响漏掉</li>
+<li><b>卡点：</b>型别提高后仍套零型系统误差公式</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)</li><li>幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝</li><li>γ&gt;0 且 Kg&gt;1 时闭环稳定（最小相位系统）</li><li>γ 主要影响超调，ωc 主要影响响应速度</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由幅频特性求 |G|=1 对应的穿越频率 ωc</li><li>由相频特性求 ∠G=-180° 对应的频率 ωg</li><li>分别代入公式求相角裕度与幅值裕度</li><li>由裕度符号判断稳定性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>设计积分控制器并计算校正后的过零频率</li><li>求系统的相角裕度与幅值裕度</li><li>由裕度要求反求开环增益</li><li>分析增益变化对裕度的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 ωc 与 ωg 两个频率用反</li><li>幅值裕度取倒数未取，导致结论反了</li><li>非最小相位系统仍用同一判据</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\gamma=180^\circ+\angle G(j\omega_c)"></div><div class="formula" data-tex="K_g=-20\lg|G(j\omega_g)|\ \text{dB}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/cr_07/">PID 控制器与参数整定</a>
+<span class="tiny muted">系统校正</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>按给定闭环零点位置设计 PI 控制器并比较不同零点位置对截止频率与折衷指标的影响</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>PI 控制器写成 k 乘 1 加 τ 除以 s，闭环零点位置由 τ 直接决定</li>
+<li><b>关键一步：</b>用相角裕度条件解截止频率，再由该处幅值为 1 解 k</li>
+<li><b>关键一步：</b>零点越靠近虚轴，截止频率与稳定裕度越需要折衷</li>
+<li><b>中间结果：</b>校正后开环含一个零点与三个极点</li>
+<li><b>中间结果：</b>闭环零点位置由 τ 给出，闭环分母含 τ 与 k</li>
+<li><b>卡点：</b>把开环零点当成闭环零点</li>
+<li><b>卡点：</b>只算 k 与 τ 两个参数而不解截止频率</li>
+<li><b>卡点：</b>比较两种零点位置时忘记回答需要折衷的指标</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>比例项提高快速性但存在稳态误差</li><li>积分项消除稳态误差但降低稳定性、增大超调</li><li>微分项提供超前相位改善动态性能但对噪声敏感</li><li>PD 相当于超前校正，PI 相当于滞后校正</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>按误差类型选择需要引入的环节</li><li>先调比例再调积分最后调微分</li><li>用稳定裕度或性能指标校验并微调</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>按给定闭环零点位置设计 PI 控制器并比较不同零点位置对截止频率与折衷指标的影响</li><li>设计 PID 控制器满足给定指标</li><li>分析各参数变化对系统性能的影响</li><li>说明微分项对噪声的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把 PI 的相位影响说成超前</li><li>积分增益过大导致系统振荡甚至不稳定</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="G_c(s)=K_p+\frac{K_i}{s}+K_ds"></div><div class="formula" data-tex="G_c(s)=K_p\left(1+\frac{1}{T_is}+T_ds\right)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q4" data-q="4">
+<h2><span class="no">4</span><span>四、串联系统的状态空间、状态响应与能控能观</span><a class="anchorlink" data-q="4" href="#q4" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">两个子系统按 u2 等于 y1 串联成三阶系统：先列状态空间表达式，再求单位阶跃下的状态与输出响应，最后判能控能观并求不可控不可观子系统的特征值</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_01/">状态空间表达式的建立</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由两个子系统的串联关系列写三阶系统的状态空间表达式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把串联条件 u2 等于 y1 代入子系统方程，消去中间变量</li>
+<li><b>关键一步：</b>整理成状态导数等于 A 乘状态加 B 乘输入的标准形式</li>
+<li><b>关键一步：</b>状态按三个状态变量排列，输出取第二个子系统的输出</li>
+<li><b>中间结果：</b>A 为三阶方阵，第三行出现由前一个子系统输出引入的耦合项</li>
+<li><b>中间结果：</b>B 只有第二行非零，C 只对第三个状态取值</li>
+<li><b>卡点：</b>状态变量个数与系统阶数不匹配</li>
+<li><b>卡点：</b>输出方程漏掉直接传递项或把输出状态取错</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态方程为一阶微分方程组，输出方程是状态与输入的代数关系</li><li>状态变量的个数等于系统阶数，选取不唯一</li><li>状态空间描述可同时刻画内部状态与外部输出</li><li>可处理多输入多输出系统</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>确定系统阶数并选取状态变量</li><li>列写各状态变量的一阶微分方程</li><li>写成矩阵形式 x&#x27;=Ax+Bu 与 y=Cx+Du</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由两个子系统的串联关系列写三阶系统的状态空间表达式</li><li>由物理系统列写状态空间表达式</li><li>判断状态变量选取是否合理</li><li>写出系统的 A、B、C、D 矩阵</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>状态变量个数与系统阶数不匹配</li><li>输出方程中漏掉直接传递项 D</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{x}=Ax+Bu,\quad y=Cx+Du"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_03/">状态转移矩阵</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求给定初态下单位阶跃输入的状态响应与输出响应</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先求状态转移矩阵，注意特征值有重根时要用含 t 的形式</li>
+<li><b>关键一步：</b>状态响应等于零输入项加零状态卷积项</li>
+<li><b>关键一步：</b>最后按输出方程取出所需的那一个分量</li>
+<li><b>中间结果：</b>状态矩阵的特征值含一个二重根，转移矩阵中出现含 t 的项</li>
+<li><b>中间结果：</b>零输入项由转移矩阵乘初态得到，零状态项对输入矩阵做卷积</li>
+<li><b>卡点：</b>特征值有重根时仍套互异公式，丢掉含 t 的项</li>
+<li><b>卡点：</b>卷积积分变量代换写错</li>
+<li><b>卡点：</b>把初态代入后忘记再乘转移矩阵</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态转移矩阵 e^{At} 描述零输入下状态随时间的演化</li><li>可从 (sI-A)^{-1} 求拉氏反变换得到</li><li>满足 e^{A\cdot0}=I 且可逆</li><li>含输入时用卷积积分写出全响应</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>计算 (sI-A)^{-1}</li><li>求拉氏反变换得到 e^{At}</li><li>代入全响应公式求状态与输出</li><li>用初值条件校验结果</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求给定初态下单位阶跃输入的状态响应与输出响应</li><li>求状态转移矩阵</li><li>求给定初始条件下的状态与输出响应</li><li>用性质验证转移矩阵是否正确</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>矩阵求逆时忘记检查行列式是否为零</li><li>卷积积分中变量代换写错</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="e^{At}=L^{-1}\left[(sI-A)^{-1}\right]"></div><div class="formula" data-tex="x(t)=e^{At}x(0)+\int_0^t e^{A(t-\tau)}Bu(\tau)\,d\tau"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_04/">能控性与能观性</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>分析三个系统的能控性与能观性并求不可控不可观子系统的特征值</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>分别构造能控性矩阵与能观性矩阵，看秩是否等于维数</li>
+<li><b>关键一步：</b>用 PBH 判据逐特征值检查，找出不能控或不能观的那一个</li>
+<li><b>关键一步：</b>按秩亏对应的特征值写出不可控、不可观子系统的特征值</li>
+<li><b>中间结果：</b>能控性矩阵由 B、AB、A 的平方乘 B 组成</li>
+<li><b>中间结果：</b>能观性矩阵由 C、CA、CA 的平方组成</li>
+<li><b>中间结果：</b>某个特征值处矩阵降秩，即为不可控不可观的模态</li>
+<li><b>卡点：</b>只算到 A 的 n 减 2 次幂就下结论</li>
+<li><b>卡点：</b>把能控性矩阵与能观性矩阵的构造顺序搞混</li>
+<li><b>卡点：</b>求出的特征值没有回到子系统维数上核对</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>能控性指能否用输入在有限时间内把任意初始状态驱动到原点</li><li>能观性指能否由输出在有限时间内确定初始状态</li><li>用能控性矩阵与能观性矩阵的秩判断</li><li>能控性与能观性经非奇异线性变换保持不变</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>构造能控性矩阵并求秩</li><li>构造能观性矩阵并求秩</li><li>与系统阶数 n 比较得出结论</li><li>不可控或不可观时进一步做结构分解</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>分析三个系统的能控性与能观性并求不可控不可观子系统的特征值</li><li>判断系统的能控性与能观性</li><li>求使系统能观的参数取值</li><li>对不可控系统进行结构分解</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只算到 A^{n-2}B 就下结论</li><li>把能控性判据与能观性判据的矩阵构造搞混</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}B&amp;AB&amp;\cdots&amp;A^{n-1}B\end{bmatrix}=n"></div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}C\\CA\\\vdots\\CA^{n-1}\end{bmatrix}=n"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q5" data-q="5">
+<h2><span class="no">5</span><span>五、状态反馈与观测器设计</span><a class="anchorlink" data-q="5" href="#q5" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">能观标准型二阶系统：先设计状态反馈使零初态阶跃输出满足给定一阶形式，再设计指定极点的状态观测器，最后给出观测状态反馈后的闭环传递函数</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_05/">状态反馈与极点配置</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>设计状态反馈使零初态单位阶跃输出响应满足给定形式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>由期望输出响应反推期望的闭环极点位置</li>
+<li><b>关键一步：</b>状态反馈不改变系统零点，只能配置极点</li>
+<li><b>关键一步：</b>验证能控性后比较期望与闭环特征多项式逐项求反馈增益</li>
+<li><b>中间结果：</b>期望输出为一阶形式，对应一对闭环极点</li>
+<li><b>中间结果：</b>能控性矩阵满秩才可任意配置极点</li>
+<li><b>卡点：</b>未验证能控性就直接配置极点</li>
+<li><b>卡点：</b>比较特征多项式系数时符号写反</li>
+<li><b>卡点：</b>把系统零点也当成可通过状态反馈配置的量</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控</li><li>状态反馈不改变系统的零点</li><li>极点配置通过比较期望与实际的闭环特征多项式求解 K</li><li>状态反馈可能改变能观性</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>先验证系统能控</li><li>写出希望配置的极点并求期望特征多项式</li><li>求闭环系统特征多项式 det(sI-A+BK)</li><li>比较系数解出反馈增益阵 K</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>设计状态反馈使零初态单位阶跃输出响应满足给定形式</li><li>设计状态反馈使闭环极点位于指定位置</li><li>判断给定极点是否可通过状态反馈配置</li><li>分析状态反馈对系统性能的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>未验证能控性就直接做极点配置</li><li>特征多项式比较系数时符号写反</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="u=-Kx+v"></div><div class="formula" data-tex="\det\left(sI-A+BK\right)=\prod_{i=1}^{n}(s-\lambda_i^*)"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_06/">状态观测器设计</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>设计极点位于指定位置的（全维）状态观测器</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先验证系统能观，能观才可任意配置观测器极点</li>
+<li><b>关键一步：</b>设观测器增益阵，写出误差动态矩阵的特征多项式</li>
+<li><b>关键一步：</b>与期望极点对应的特征多项式逐项比较求观测器增益</li>
+<li><b>中间结果：</b>期望极点为共轭复根，期望特征多项式为二次</li>
+<li><b>中间结果：</b>误差动态特征多项式含两个待求的增益分量</li>
+<li><b>卡点：</b>把观测器增益阵套成状态反馈增益阵的形式</li>
+<li><b>卡点：</b>忽略能观性验证</li>
+<li><b>卡点：</b>共轭极点展开特征多项式时实部虚部符号写错</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态观测器用输出与输入重构状态，前提是系统能观</li><li>极点配置法与龙伯格观测器是两种常用形式</li><li>观测器误差动态由 A-LC 的特征值决定</li><li>观测器极点通常取得比系统极点快若干倍</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>验证系统能观性</li><li>写出观测器方程并求误差动态矩阵</li><li>按期望特征多项式比较系数求出 L</li><li>校验观测器收敛速度是否合适</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>设计极点位于指定位置的（全维）状态观测器</li><li>设计全维状态观测器</li><li>由期望观测器极点求反馈增益阵 L</li><li>分析观测器与状态反馈组合后的系统极点</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把观测器增益阵写成了状态反馈增益阵的形式</li><li>忽略观测器极点过快会放大噪声</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{\hat{x}}=A\hat{x}+Bu+L(y-C\hat{x})"></div><div class="formula" data-tex="\det\left(sI-A+LC\right)=\prod_{i=1}^{n}(s-\lambda_i^{*})"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_06/">状态观测器设计</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>给出用观测状态实现状态反馈后的闭环系统传递函数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>用观测状态代替真实状态去实现状态反馈</li>
+<li><b>关键一步：</b>按分离原理，观测器极点不影响由状态反馈决定的闭环极点</li>
+<li><b>关键一步：</b>据此写出闭环传递函数，分子零点保持不变</li>
+<li><b>中间结果：</b>闭环传递函数的极点只由状态反馈增益决定</li>
+<li><b>中间结果：</b>传递函数由原有零点与配置后的极点组成</li>
+<li><b>卡点：</b>把观测器极点也当成闭环传递函数的极点</li>
+<li><b>卡点：</b>忽略分子零点不随状态反馈改变</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态观测器用输出与输入重构状态，前提是系统能观</li><li>极点配置法与龙伯格观测器是两种常用形式</li><li>观测器误差动态由 A-LC 的特征值决定</li><li>观测器极点通常取得比系统极点快若干倍</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>验证系统能观性</li><li>写出观测器方程并求误差动态矩阵</li><li>按期望特征多项式比较系数求出 L</li><li>校验观测器收敛速度是否合适</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>给出用观测状态实现状态反馈后的闭环系统传递函数</li><li>设计全维状态观测器</li><li>由期望观测器极点求反馈增益阵 L</li><li>分析观测器与状态反馈组合后的系统极点</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>把观测器增益阵写成了状态反馈增益阵的形式</li><li>忽略观测器极点过快会放大噪声</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\dot{\hat{x}}=A\hat{x}+Bu+L(y-C\hat{x})"></div><div class="formula" data-tex="\det\left(sI-A+LC\right)=\prod_{i=1}^{n}(s-\lambda_i^{*})"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q6" data-q="6">
+<h2><span class="no">6</span><span>六、两道理论证明</span><a class="anchorlink" data-q="6" href="#q6" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">两道证明：状态反馈不改变传递函数零点，以及能观性格拉姆矩阵可逆时可由零输入响应反求初始状态</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_05/">状态反馈与极点配置</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>证明能控单输入单输出系统的状态反馈不改变传递函数的零点，并说明系统不能控时结论是否成立</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>在能控标准型下写出传递函数与状态反馈后的闭环特征多项式</li>
+<li><b>关键一步：</b>状态反馈只改变分母多项式的系数，分子系数不变</li>
+<li><b>关键一步：</b>不能控时存在零极点对消与解耦零点，结论不再成立</li>
+<li><b>中间结果：</b>能控标准型下状态反馈把友矩阵末行的系数改变</li>
+<li><b>中间结果：</b>分子多项式系数由输出矩阵决定，与反馈增益无关</li>
+<li><b>卡点：</b>只做一般性论述而不写能控标准型</li>
+<li><b>卡点：</b>不能控时直接沿用能控情形的结论</li>
+<li><b>卡点：</b>把解耦零点与不变零点混为一谈</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控</li><li>状态反馈不改变系统的零点</li><li>极点配置通过比较期望与实际的闭环特征多项式求解 K</li><li>状态反馈可能改变能观性</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>先验证系统能控</li><li>写出希望配置的极点并求期望特征多项式</li><li>求闭环系统特征多项式 det(sI-A+BK)</li><li>比较系数解出反馈增益阵 K</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>证明能控单输入单输出系统的状态反馈不改变传递函数的零点，并说明系统不能控时结论是否成立</li><li>设计状态反馈使闭环极点位于指定位置</li><li>判断给定极点是否可通过状态反馈配置</li><li>分析状态反馈对系统性能的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>未验证能控性就直接做极点配置</li><li>特征多项式比较系数时符号写反</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="u=-Kx+v"></div><div class="formula" data-tex="\det\left(sI-A+BK\right)=\prod_{i=1}^{n}(s-\lambda_i^*)"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/sp_04/">能控性与能观性</a>
+<span class="tiny muted">状态空间分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>证明能观性格拉姆矩阵可逆时可由零输入响应反求初始状态</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先说明题目所给矩阵就是能观性格拉姆矩阵</li>
+<li><b>关键一步：</b>用对偶原理把它对应到对偶系统的能控性格拉姆矩阵</li>
+<li><b>关键一步：</b>可逆等价于系统能观，再对零输入响应做加权积分反解初态</li>
+<li><b>中间结果：</b>零输入响应等于输出矩阵乘状态转移矩阵再乘初态</li>
+<li><b>中间结果：</b>两端左乘转移矩阵的转置再积分可把初态分离出来</li>
+<li><b>卡点：</b>只说矩阵可逆不说它与系统能观等价</li>
+<li><b>卡点：</b>积分时被积矩阵与向量的次序写错</li>
+<li><b>卡点：</b>未说明对偶系统与原系统的能控能观对应关系</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>能控性指能否用输入在有限时间内把任意初始状态驱动到原点</li><li>能观性指能否由输出在有限时间内确定初始状态</li><li>用能控性矩阵与能观性矩阵的秩判断</li><li>能控性与能观性经非奇异线性变换保持不变</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>构造能控性矩阵并求秩</li><li>构造能观性矩阵并求秩</li><li>与系统阶数 n 比较得出结论</li><li>不可控或不可观时进一步做结构分解</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>证明能观性格拉姆矩阵可逆时可由零输入响应反求初始状态</li><li>判断系统的能控性与能观性</li><li>求使系统能观的参数取值</li><li>对不可控系统进行结构分解</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li>只算到 A^{n-2}B 就下结论</li><li>把能控性判据与能观性判据的矩阵构造搞混</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}B&amp;AB&amp;\cdots&amp;A^{n-1}B\end{bmatrix}=n"></div><div class="formula" data-tex="\operatorname{rank}\begin{bmatrix}C\\CA\\\vdots\\CA^{n-1}\end{bmatrix}=n"></div></div></details>
+</div>
+</article>
+</section></div><aside class="side">
+<div class="card"><h3>本卷考点</h3><div class="kplist"><a class="kplink" href="../../../../../k/md_01/" title="考点编号 md_01"><span class="ktag">建模与机电系统</span><span>机械系统建模</span></a><a class="kplink" href="../../../../../k/st_01/" title="考点编号 st_01"><span class="ktag">稳定性分析</span><span>劳斯判据</span></a><a class="kplink" href="../../../../../k/cr_07/" title="考点编号 cr_07"><span class="ktag">系统校正</span><span>PID 控制器与参数整定</span></a><a class="kplink" href="../../../../../k/fd_05/" title="考点编号 fd_05"><span class="ktag">频域分析</span><span>稳定裕度</span></a><a class="kplink" href="../../../../../k/sp_01/" title="考点编号 sp_01"><span class="ktag">状态空间分析</span><span>状态空间表达式的建立</span></a><a class="kplink" href="../../../../../k/sp_03/" title="考点编号 sp_03"><span class="ktag">状态空间分析</span><span>状态转移矩阵</span></a><a class="kplink" href="../../../../../k/sp_04/" title="考点编号 sp_04"><span class="ktag">状态空间分析</span><span>能控性与能观性</span></a><a class="kplink" href="../../../../../k/sp_05/" title="考点编号 sp_05"><span class="ktag">状态空间分析</span><span>状态反馈与极点配置</span></a><a class="kplink" href="../../../../../k/sp_06/" title="考点编号 sp_06"><span class="ktag">状态空间分析</span><span>状态观测器设计</span></a></div></div>
+<div class="card"><h3>中国科学技术大学 其它年份</h3><div class="navlist"><a class="yearchip" href="../../2015/845/">2015 <span class="n">7题</span></a><a class="yearchip" href="../../2016/845/">2016 <span class="n">7题</span></a><a class="yearchip" href="../../2017/845/">2017 <span class="n">7题</span></a><a class="yearchip" href="../../2018/845/">2018 <span class="n">7题</span></a><a class="yearchip" href="../../2019/845/">2019 <span class="n">7题</span></a><a class="yearchip" href="../../2020/845/">2020 <span class="n">7题</span></a><a class="yearchip" href="../../2021/845/">2021 <span class="n">7题</span></a><a class="yearchip" href="../../2022/845/">2022 <span class="n">7题</span></a><a class="yearchip" href="../../2023/845/">2023 <span class="n">6题</span></a><a class="yearchip" href="../../2025/845/">2025 <span class="n">6题</span></a></div></div>
+<div class="card"><h3>上下年份</h3><div class="navlist"><a class="yearchip" href="../../2023/845/">← 2023</a><a class="yearchip" href="../../2025/845/">2025 →</a></div></div>
+</aside></div>
+</main>
+<footer class="site-foot"><div class="inner"><span>导图内容为本站原创整理，欢迎交流指正</span></div></footer>
+<script type="application/json" id="kg-data">{"base":"../../../../../","key":"中国科学技术大学_845_2024","full":{"label":"中国科学技术大学 845","type":"root","sub":"2024 · 控制原理","children":[{"label":"难度：难　特点：6 题；前三题是经典控制（卡车单轮悬架机械系统建模、三阶系统三种方法判稳与 Z-N 整定、Bode 图法设计 P 与 I 与 PI 控制器），后三题全是状态空间：串联系统的状态响应与能控能观、状态反馈与观测器、两道理论证明，现代控制权重很大　重…","type":"warn"},{"label":"一、卡车单轮悬架系统建模　〔第1题〕","type":"block","children":[{"label":"对车轮与车身分别受力分析列机械系统运动方程，拉氏变换后消去中间变量，求 Y1(s)/X(s) 与 Y2(s)/X(s) 两个传递函数","type":"idea"},{"label":"机械系统建模","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"分别对车身质量与车轮质量列牛顿第二定律，弹簧力按相对位移写","type":"k1"},{"label":"阻尼力按相对速度写，且同时作用在两个质块上、方向相反","type":"k1"},{"label":"拉氏变换后得到两个代数方程再消去中间变量","type":"k1"},{"label":"两个方程含车身质量、车轮质量、两个刚度、一个阻尼与三个位移","type":"k2"},{"label":"两式相除可先得到两个输出的比值再回代","type":"k2"},{"label":"多质量系统漏掉相互作用力的反作用项","type":"k3"},{"label":"把阻尼力当成只与单一变量有关","type":"k3"},{"label":"悬架结构以图 1 给出，具体连接关系需回原卷核对图","type":"k3"}]},{"label":"依据牛顿第二定律或达朗贝尔原理列方程","type":"yd"},{"label":"三种基本元件：质量 m、粘性阻尼 f、弹簧 k","type":"yd"},{"label":"同一方向取正，反向取负，逐项列出合力","type":"yd"},{"label":"选定正方向并作受力分析","type":"bz"},{"label":"分别写出质量、阻尼、弹簧对应的力","type":"bz"},{"label":"按 F=ma 列写运动方程","type":"bz"},{"label":"取拉氏变换整理成传递函数","type":"bz"},{"label":"m\\ddot{x}+f\\dot{x}+kx=F(t)","type":"fm","tex":"m\\ddot{x}+f\\dot{x}+kx=F(t)"},{"label":"对弹簧-质量-阻尼悬架系统列运动方程并求 Y1(s)/X(s) 与 Y2(s)/X(s)","type":"kf","own":true},{"label":"弹簧-质量-阻尼系统求位移对力的传递函数","type":"kf","own":false},{"label":"两质量块经弹簧阻尼连接的系统建模","type":"kf","own":false},{"label":"阻尼力与弹簧力的正负方向取反","type":"er","own":false},{"label":"多质量系统漏掉相互作用力的反作用项","type":"er","own":false}]}]},{"label":"二、三种方法分析稳定性与 Z-N 整定　〔第2题〕","type":"block","children":[{"label":"三阶惯性环节串联单位反馈：先用劳斯、根轨迹、奈奎斯特三种方法判稳并求稳定域，再用 P、PI、PID 与闭环 Z-N 临界比例度法整定参数","type":"idea"},{"label":"劳斯判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"劳斯法：展开三阶特征方程，令首列全为正列稳定域","type":"k1"},{"label":"根轨迹法：三个极点都在左半平面，由与虚轴交点定临界增益","type":"k1"},{"label":"奈奎斯特法：令虚部为零求穿越频率，再令实部等于负一求临界增益","type":"k1"},{"label":"特征方程为三次多项式，一次项系数与常数项含增益 k","type":"k2"},{"label":"三种方法应给出同一个临界增益","type":"k2"},{"label":"只把各项系数为正当充要条件","type":"k3"},{"label":"根轨迹法没有求虚轴交点就下结论","type":"k3"},{"label":"奈奎斯特法不数右半平面极点数就直接判","type":"k3"}]},{"label":"特征方程各项系数全为正只是必要条件，不充分","type":"yd"},{"label":"劳斯表首列元素全部同号 ⇔ 系统稳定","type":"yd"},{"label":"首列符号变化次数等于右半平面闭环极点数","type":"yd"},{"label":"首列出现 0 时需用 ε 法或乘辅助多项式处理","type":"yd"},{"label":"写出闭环特征方程并整理成降幂排列","type":"bz"},{"label":"若某次幂系数缺项，该项补零","type":"bz"},{"label":"列劳斯表：前两行为系数，之后各行按交叉相减","type":"bz"},{"label":"检查首列符号：全同号则稳定，有变号则数出个数","type":"bz"},{"label":"1+G(s)H(s)=0","type":"fm","tex":"1+G(s)H(s)=0"},{"label":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0","type":"fm","tex":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0"},{"label":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}","type":"fm","tex":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"},{"label":"用三种不同方法分析三阶系统的闭环稳定性并求稳定范围","type":"kf","own":true},{"label":"判断给定系统的稳定性","type":"kf","own":false},{"label":"指出右半平面闭环极点的个数","type":"kf","own":false},{"label":"求使系统稳定的参数范围","type":"kf","own":false},{"label":"系数有缺项时不补零，直接套用判据","type":"er","own":false},{"label":"首列出现 0 后仍按常规继续算，未用 ε 法","type":"er","own":false}]},{"label":"PID 控制器与参数整定","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先由劳斯或奈奎斯特法求临界比例增益与临界振荡周期","type":"k1"},{"label":"振荡周期由临界角频率按 2π 换算，不能直接用角频率","type":"k1"},{"label":"再按 P、PI、PID 三组不同系数公式算各控制器参数","type":"k1"},{"label":"临界角频率处特征方程有一对纯虚根","type":"k2"},{"label":"三种控制器都以同一临界增益和临界周期为基准","type":"k2"},{"label":"把临界周期与临界角频率直接用反了","type":"k3"},{"label":"把公式里的积分时间当积分增益直接填","type":"k3"},{"label":"把 Z-N 开环反应曲线法公式套到闭环临界比例度法上","type":"k3"}]},{"label":"比例项提高快速性但存在稳态误差","type":"yd"},{"label":"积分项消除稳态误差但降低稳定性、增大超调","type":"yd"},{"label":"微分项提供超前相位改善动态性能但对噪声敏感","type":"yd"},{"label":"PD 相当于超前校正，PI 相当于滞后校正","type":"yd"},{"label":"按误差类型选择需要引入的环节","type":"bz"},{"label":"先调比例再调积分最后调微分","type":"bz"},{"label":"用稳定裕度或性能指标校验并微调","type":"bz"},{"label":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds","type":"fm","tex":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds"},{"label":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)","type":"fm","tex":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)"},{"label":"用闭环齐格勒-尼科尔斯法分别整定 P、PI、PID 参数","type":"kf","own":true},{"label":"设计 PID 控制器满足给定指标","type":"kf","own":false},{"label":"分析各参数变化对系统性能的影响","type":"kf","own":false},{"label":"说明微分项对噪声的影响","type":"kf","own":false},{"label":"把 PI 的相位影响说成超前","type":"er","own":false},{"label":"积分增益过大导致系统振荡甚至不稳定","type":"er","own":false}]}]},{"label":"三、Bode 图法设计 P、I、PI 控制器　〔第3题〕","type":"block","children":[{"label":"被控对象为两个一阶环节之积：指标要求相角裕度不低于 60 度、阶跃稳态误差不超过百分之五、带宽尽量大；分别设计 P、I、PI 三类控制器并比较闭环零点配置","type":"idea"},{"label":"稳定裕度","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由稳态误差要求先反求开环增益下限","type":"k1"},{"label":"再由相角裕度要求幅值为 1 处的相角条件反求增益上限","type":"k1"},{"label":"两个方向对增益的要求若矛盾，指标就无法同时满足","type":"k1"},{"label":"零型系统阶跃误差由 1 除以 1 加位置误差系数给出","type":"k2"},{"label":"相角裕度条件先定截止频率，再由幅值条件给出对应增益","type":"k2"},{"label":"只看幅值条件不看相角条件","type":"k3"},{"label":"把增益上下限求反，未分辨哪个是矛盾点","type":"k3"}]},{"label":"相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)","type":"yd"},{"label":"幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝","type":"yd"},{"label":"γ>0 且 Kg>1 时闭环稳定（最小相位系统）","type":"yd"},{"label":"γ 主要影响超调，ωc 主要影响响应速度","type":"yd"},{"label":"由幅频特性求 |G|=1 对应的穿越频率 ωc","type":"bz"},{"label":"由相频特性求 ∠G=-180° 对应的频率 ωg","type":"bz"},{"label":"分别代入公式求相角裕度与幅值裕度","type":"bz"},{"label":"由裕度符号判断稳定性","type":"bz"},{"label":"\\gamma=180^\\circ+\\angle G(j\\omega_c)","type":"fm","tex":"\\gamma=180^\\circ+\\angle G(j\\omega_c)"},{"label":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}","type":"fm","tex":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"},{"label":"用 Bode 图法设计比例控制器并分析能否同时满足相角裕度与稳态误差指标","type":"kf","own":true},{"label":"求系统的相角裕度与幅值裕度","type":"kf","own":false},{"label":"由裕度要求反求开环增益","type":"kf","own":false},{"label":"分析增益变化对裕度的影响","type":"kf","own":false},{"label":"把 ωc 与 ωg 两个频率用反","type":"er","own":false},{"label":"幅值裕度取倒数未取，导致结论反了","type":"er","own":false},{"label":"非最小相位系统仍用同一判据","type":"er","own":false}]},{"label":"稳定裕度","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"串联一个积分环节使系统型别提高，阶跃误差变为零","type":"k1"},{"label":"按相角裕度条件解出截止频率，再由该处幅值为 1 定增益","type":"k1"},{"label":"积分环节带来固定的 −90 度相位，裕度比比例控制更难满足","type":"k1"},{"label":"校正后开环为被控对象乘 k 再除以 s","type":"k2"},{"label":"相角条件为 180 度减积分与两个惯性环节的相角","type":"k2"},{"label":"把积分控制器的相位影响漏掉","type":"k3"},{"label":"型别提高后仍套零型系统误差公式","type":"k3"}]},{"label":"相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)","type":"yd"},{"label":"幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝","type":"yd"},{"label":"γ>0 且 Kg>1 时闭环稳定（最小相位系统）","type":"yd"},{"label":"γ 主要影响超调，ωc 主要影响响应速度","type":"yd"},{"label":"由幅频特性求 |G|=1 对应的穿越频率 ωc","type":"bz"},{"label":"由相频特性求 ∠G=-180° 对应的频率 ωg","type":"bz"},{"label":"分别代入公式求相角裕度与幅值裕度","type":"bz"},{"label":"由裕度符号判断稳定性","type":"bz"},{"label":"\\gamma=180^\\circ+\\angle G(j\\omega_c)","type":"fm","tex":"\\gamma=180^\\circ+\\angle G(j\\omega_c)"},{"label":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}","type":"fm","tex":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"},{"label":"设计积分控制器并计算校正后的过零频率","type":"kf","own":true},{"label":"求系统的相角裕度与幅值裕度","type":"kf","own":false},{"label":"由裕度要求反求开环增益","type":"kf","own":false},{"label":"分析增益变化对裕度的影响","type":"kf","own":false},{"label":"把 ωc 与 ωg 两个频率用反","type":"er","own":false},{"label":"幅值裕度取倒数未取，导致结论反了","type":"er","own":false},{"label":"非最小相位系统仍用同一判据","type":"er","own":false}]},{"label":"PID 控制器与参数整定","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"PI 控制器写成 k 乘 1 加 τ 除以 s，闭环零点位置由 τ 直接决定","type":"k1"},{"label":"用相角裕度条件解截止频率，再由该处幅值为 1 解 k","type":"k1"},{"label":"零点越靠近虚轴，截止频率与稳定裕度越需要折衷","type":"k1"},{"label":"校正后开环含一个零点与三个极点","type":"k2"},{"label":"闭环零点位置由 τ 给出，闭环分母含 τ 与 k","type":"k2"},{"label":"把开环零点当成闭环零点","type":"k3"},{"label":"只算 k 与 τ 两个参数而不解截止频率","type":"k3"},{"label":"比较两种零点位置时忘记回答需要折衷的指标","type":"k3"}]},{"label":"比例项提高快速性但存在稳态误差","type":"yd"},{"label":"积分项消除稳态误差但降低稳定性、增大超调","type":"yd"},{"label":"微分项提供超前相位改善动态性能但对噪声敏感","type":"yd"},{"label":"PD 相当于超前校正，PI 相当于滞后校正","type":"yd"},{"label":"按误差类型选择需要引入的环节","type":"bz"},{"label":"先调比例再调积分最后调微分","type":"bz"},{"label":"用稳定裕度或性能指标校验并微调","type":"bz"},{"label":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds","type":"fm","tex":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds"},{"label":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)","type":"fm","tex":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)"},{"label":"按给定闭环零点位置设计 PI 控制器并比较不同零点位置对截止频率与折衷指标的影响","type":"kf","own":true},{"label":"设计 PID 控制器满足给定指标","type":"kf","own":false},{"label":"分析各参数变化对系统性能的影响","type":"kf","own":false},{"label":"说明微分项对噪声的影响","type":"kf","own":false},{"label":"把 PI 的相位影响说成超前","type":"er","own":false},{"label":"积分增益过大导致系统振荡甚至不稳定","type":"er","own":false}]}]},{"label":"四、串联系统的状态空间、状态响应与能控能观　〔第4题〕","type":"block","children":[{"label":"两个子系统按 u2 等于 y1 串联成三阶系统：先列状态空间表达式，再求单位阶跃下的状态与输出响应，最后判能控能观并求不可控不可观子系统的特征值","type":"idea"},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把串联条件 u2 等于 y1 代入子系统方程，消去中间变量","type":"k1"},{"label":"整理成状态导数等于 A 乘状态加 B 乘输入的标准形式","type":"k1"},{"label":"状态按三个状态变量排列，输出取第二个子系统的输出","type":"k1"},{"label":"A 为三阶方阵，第三行出现由前一个子系统输出引入的耦合项","type":"k2"},{"label":"B 只有第二行非零，C 只对第三个状态取值","type":"k2"},{"label":"状态变量个数与系统阶数不匹配","type":"k3"},{"label":"输出方程漏掉直接传递项或把输出状态取错","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"由两个子系统的串联关系列写三阶系统的状态空间表达式","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]},{"label":"状态转移矩阵","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先求状态转移矩阵，注意特征值有重根时要用含 t 的形式","type":"k1"},{"label":"状态响应等于零输入项加零状态卷积项","type":"k1"},{"label":"最后按输出方程取出所需的那一个分量","type":"k1"},{"label":"状态矩阵的特征值含一个二重根，转移矩阵中出现含 t 的项","type":"k2"},{"label":"零输入项由转移矩阵乘初态得到，零状态项对输入矩阵做卷积","type":"k2"},{"label":"特征值有重根时仍套互异公式，丢掉含 t 的项","type":"k3"},{"label":"卷积积分变量代换写错","type":"k3"},{"label":"把初态代入后忘记再乘转移矩阵","type":"k3"}]},{"label":"状态转移矩阵 e^{At} 描述零输入下状态随时间的演化","type":"yd"},{"label":"可从 (sI-A)^{-1} 求拉氏反变换得到","type":"yd"},{"label":"满足 e^{A\\cdot0}=I 且可逆","type":"yd"},{"label":"含输入时用卷积积分写出全响应","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"求拉氏反变换得到 e^{At}","type":"bz"},{"label":"代入全响应公式求状态与输出","type":"bz"},{"label":"用初值条件校验结果","type":"bz"},{"label":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]","type":"fm","tex":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]"},{"label":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau","type":"fm","tex":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau"},{"label":"求给定初态下单位阶跃输入的状态响应与输出响应","type":"kf","own":true},{"label":"求状态转移矩阵","type":"kf","own":false},{"label":"求给定初始条件下的状态与输出响应","type":"kf","own":false},{"label":"用性质验证转移矩阵是否正确","type":"kf","own":false},{"label":"矩阵求逆时忘记检查行列式是否为零","type":"er","own":false},{"label":"卷积积分中变量代换写错","type":"er","own":false}]},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"分别构造能控性矩阵与能观性矩阵，看秩是否等于维数","type":"k1"},{"label":"用 PBH 判据逐特征值检查，找出不能控或不能观的那一个","type":"k1"},{"label":"按秩亏对应的特征值写出不可控、不可观子系统的特征值","type":"k1"},{"label":"能控性矩阵由 B、AB、A 的平方乘 B 组成","type":"k2"},{"label":"能观性矩阵由 C、CA、CA 的平方组成","type":"k2"},{"label":"某个特征值处矩阵降秩，即为不可控不可观的模态","type":"k2"},{"label":"只算到 A 的 n 减 2 次幂就下结论","type":"k3"},{"label":"把能控性矩阵与能观性矩阵的构造顺序搞混","type":"k3"},{"label":"求出的特征值没有回到子系统维数上核对","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"分析三个系统的能控性与能观性并求不可控不可观子系统的特征值","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]}]},{"label":"五、状态反馈与观测器设计　〔第5题〕","type":"block","children":[{"label":"能观标准型二阶系统：先设计状态反馈使零初态阶跃输出满足给定一阶形式，再设计指定极点的状态观测器，最后给出观测状态反馈后的闭环传递函数","type":"idea"},{"label":"状态反馈与极点配置","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由期望输出响应反推期望的闭环极点位置","type":"k1"},{"label":"状态反馈不改变系统零点，只能配置极点","type":"k1"},{"label":"验证能控性后比较期望与闭环特征多项式逐项求反馈增益","type":"k1"},{"label":"期望输出为一阶形式，对应一对闭环极点","type":"k2"},{"label":"能控性矩阵满秩才可任意配置极点","type":"k2"},{"label":"未验证能控性就直接配置极点","type":"k3"},{"label":"比较特征多项式系数时符号写反","type":"k3"},{"label":"把系统零点也当成可通过状态反馈配置的量","type":"k3"}]},{"label":"状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控","type":"yd"},{"label":"状态反馈不改变系统的零点","type":"yd"},{"label":"极点配置通过比较期望与实际的闭环特征多项式求解 K","type":"yd"},{"label":"状态反馈可能改变能观性","type":"yd"},{"label":"先验证系统能控","type":"bz"},{"label":"写出希望配置的极点并求期望特征多项式","type":"bz"},{"label":"求闭环系统特征多项式 det(sI-A+BK)","type":"bz"},{"label":"比较系数解出反馈增益阵 K","type":"bz"},{"label":"u=-Kx+v","type":"fm","tex":"u=-Kx+v"},{"label":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)","type":"fm","tex":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)"},{"label":"设计状态反馈使零初态单位阶跃输出响应满足给定形式","type":"kf","own":true},{"label":"设计状态反馈使闭环极点位于指定位置","type":"kf","own":false},{"label":"判断给定极点是否可通过状态反馈配置","type":"kf","own":false},{"label":"分析状态反馈对系统性能的影响","type":"kf","own":false},{"label":"未验证能控性就直接做极点配置","type":"er","own":false},{"label":"特征多项式比较系数时符号写反","type":"er","own":false}]},{"label":"状态观测器设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先验证系统能观，能观才可任意配置观测器极点","type":"k1"},{"label":"设观测器增益阵，写出误差动态矩阵的特征多项式","type":"k1"},{"label":"与期望极点对应的特征多项式逐项比较求观测器增益","type":"k1"},{"label":"期望极点为共轭复根，期望特征多项式为二次","type":"k2"},{"label":"误差动态特征多项式含两个待求的增益分量","type":"k2"},{"label":"把观测器增益阵套成状态反馈增益阵的形式","type":"k3"},{"label":"忽略能观性验证","type":"k3"},{"label":"共轭极点展开特征多项式时实部虚部符号写错","type":"k3"}]},{"label":"状态观测器用输出与输入重构状态，前提是系统能观","type":"yd"},{"label":"极点配置法与龙伯格观测器是两种常用形式","type":"yd"},{"label":"观测器误差动态由 A-LC 的特征值决定","type":"yd"},{"label":"观测器极点通常取得比系统极点快若干倍","type":"yd"},{"label":"验证系统能观性","type":"bz"},{"label":"写出观测器方程并求误差动态矩阵","type":"bz"},{"label":"按期望特征多项式比较系数求出 L","type":"bz"},{"label":"校验观测器收敛速度是否合适","type":"bz"},{"label":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})","type":"fm","tex":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})"},{"label":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})","type":"fm","tex":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})"},{"label":"设计极点位于指定位置的（全维）状态观测器","type":"kf","own":true},{"label":"设计全维状态观测器","type":"kf","own":false},{"label":"由期望观测器极点求反馈增益阵 L","type":"kf","own":false},{"label":"分析观测器与状态反馈组合后的系统极点","type":"kf","own":false},{"label":"把观测器增益阵写成了状态反馈增益阵的形式","type":"er","own":false},{"label":"忽略观测器极点过快会放大噪声","type":"er","own":false}]},{"label":"状态观测器设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"用观测状态代替真实状态去实现状态反馈","type":"k1"},{"label":"按分离原理，观测器极点不影响由状态反馈决定的闭环极点","type":"k1"},{"label":"据此写出闭环传递函数，分子零点保持不变","type":"k1"},{"label":"闭环传递函数的极点只由状态反馈增益决定","type":"k2"},{"label":"传递函数由原有零点与配置后的极点组成","type":"k2"},{"label":"把观测器极点也当成闭环传递函数的极点","type":"k3"},{"label":"忽略分子零点不随状态反馈改变","type":"k3"}]},{"label":"状态观测器用输出与输入重构状态，前提是系统能观","type":"yd"},{"label":"极点配置法与龙伯格观测器是两种常用形式","type":"yd"},{"label":"观测器误差动态由 A-LC 的特征值决定","type":"yd"},{"label":"观测器极点通常取得比系统极点快若干倍","type":"yd"},{"label":"验证系统能观性","type":"bz"},{"label":"写出观测器方程并求误差动态矩阵","type":"bz"},{"label":"按期望特征多项式比较系数求出 L","type":"bz"},{"label":"校验观测器收敛速度是否合适","type":"bz"},{"label":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})","type":"fm","tex":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})"},{"label":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})","type":"fm","tex":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})"},{"label":"给出用观测状态实现状态反馈后的闭环系统传递函数","type":"kf","own":true},{"label":"设计全维状态观测器","type":"kf","own":false},{"label":"由期望观测器极点求反馈增益阵 L","type":"kf","own":false},{"label":"分析观测器与状态反馈组合后的系统极点","type":"kf","own":false},{"label":"把观测器增益阵写成了状态反馈增益阵的形式","type":"er","own":false},{"label":"忽略观测器极点过快会放大噪声","type":"er","own":false}]}]},{"label":"六、两道理论证明　〔第6题〕","type":"block","children":[{"label":"两道证明：状态反馈不改变传递函数零点，以及能观性格拉姆矩阵可逆时可由零输入响应反求初始状态","type":"idea"},{"label":"状态反馈与极点配置","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"在能控标准型下写出传递函数与状态反馈后的闭环特征多项式","type":"k1"},{"label":"状态反馈只改变分母多项式的系数，分子系数不变","type":"k1"},{"label":"不能控时存在零极点对消与解耦零点，结论不再成立","type":"k1"},{"label":"能控标准型下状态反馈把友矩阵末行的系数改变","type":"k2"},{"label":"分子多项式系数由输出矩阵决定，与反馈增益无关","type":"k2"},{"label":"只做一般性论述而不写能控标准型","type":"k3"},{"label":"不能控时直接沿用能控情形的结论","type":"k3"},{"label":"把解耦零点与不变零点混为一谈","type":"k3"}]},{"label":"状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控","type":"yd"},{"label":"状态反馈不改变系统的零点","type":"yd"},{"label":"极点配置通过比较期望与实际的闭环特征多项式求解 K","type":"yd"},{"label":"状态反馈可能改变能观性","type":"yd"},{"label":"先验证系统能控","type":"bz"},{"label":"写出希望配置的极点并求期望特征多项式","type":"bz"},{"label":"求闭环系统特征多项式 det(sI-A+BK)","type":"bz"},{"label":"比较系数解出反馈增益阵 K","type":"bz"},{"label":"u=-Kx+v","type":"fm","tex":"u=-Kx+v"},{"label":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)","type":"fm","tex":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)"},{"label":"证明能控单输入单输出系统的状态反馈不改变传递函数的零点，并说明系统不能控时结论是否成立","type":"kf","own":true},{"label":"设计状态反馈使闭环极点位于指定位置","type":"kf","own":false},{"label":"判断给定极点是否可通过状态反馈配置","type":"kf","own":false},{"label":"分析状态反馈对系统性能的影响","type":"kf","own":false},{"label":"未验证能控性就直接做极点配置","type":"er","own":false},{"label":"特征多项式比较系数时符号写反","type":"er","own":false}]},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先说明题目所给矩阵就是能观性格拉姆矩阵","type":"k1"},{"label":"用对偶原理把它对应到对偶系统的能控性格拉姆矩阵","type":"k1"},{"label":"可逆等价于系统能观，再对零输入响应做加权积分反解初态","type":"k1"},{"label":"零输入响应等于输出矩阵乘状态转移矩阵再乘初态","type":"k2"},{"label":"两端左乘转移矩阵的转置再积分可把初态分离出来","type":"k2"},{"label":"只说矩阵可逆不说它与系统能观等价","type":"k3"},{"label":"积分时被积矩阵与向量的次序写错","type":"k3"},{"label":"未说明对偶系统与原系统的能控能观对应关系","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"证明能观性格拉姆矩阵可逆时可由零输入响应反求初始状态","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]}]}]},"qs":[{"no":"1","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2024 · 控制原理","children":[{"label":"难度：难　特点：6 题；前三题是经典控制（卡车单轮悬架机械系统建模、三阶系统三种方法判稳与 Z-N 整定、Bode 图法设计 P 与 I 与 PI 控制器），后三题全是状态空间：串联系统的状态响应与能控能观、状态反馈与观测器、两道理论证明，现代控制权重很大　重点：卡车悬架机械系统建模、三种方法分析稳定性与 Z-N 整定、Bode 图法设计 P、I、PI 控制器、状态空间方程与状态响应、能控性与能观性判别、状态反馈与观测器设计、状态反馈不改变零点的证明","type":"warn"},{"label":"一、卡车单轮悬架系统建模　〔第1题〕","type":"block","children":[{"label":"对车轮与车身分别受力分析列机械系统运动方程，拉氏变换后消去中间变量，求 Y1(s)/X(s) 与 Y2(s)/X(s) 两个传递函数","type":"idea"},{"label":"机械系统建模","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"分别对车身质量与车轮质量列牛顿第二定律，弹簧力按相对位移写","type":"k1"},{"label":"阻尼力按相对速度写，且同时作用在两个质块上、方向相反","type":"k1"},{"label":"拉氏变换后得到两个代数方程再消去中间变量","type":"k1"},{"label":"两个方程含车身质量、车轮质量、两个刚度、一个阻尼与三个位移","type":"k2"},{"label":"两式相除可先得到两个输出的比值再回代","type":"k2"},{"label":"多质量系统漏掉相互作用力的反作用项","type":"k3"},{"label":"把阻尼力当成只与单一变量有关","type":"k3"},{"label":"悬架结构以图 1 给出，具体连接关系需回原卷核对图","type":"k3"}]},{"label":"依据牛顿第二定律或达朗贝尔原理列方程","type":"yd"},{"label":"三种基本元件：质量 m、粘性阻尼 f、弹簧 k","type":"yd"},{"label":"同一方向取正，反向取负，逐项列出合力","type":"yd"},{"label":"选定正方向并作受力分析","type":"bz"},{"label":"分别写出质量、阻尼、弹簧对应的力","type":"bz"},{"label":"按 F=ma 列写运动方程","type":"bz"},{"label":"取拉氏变换整理成传递函数","type":"bz"},{"label":"m\\ddot{x}+f\\dot{x}+kx=F(t)","type":"fm","tex":"m\\ddot{x}+f\\dot{x}+kx=F(t)"},{"label":"对弹簧-质量-阻尼悬架系统列运动方程并求 Y1(s)/X(s) 与 Y2(s)/X(s)","type":"kf","own":true},{"label":"弹簧-质量-阻尼系统求位移对力的传递函数","type":"kf","own":false},{"label":"两质量块经弹簧阻尼连接的系统建模","type":"kf","own":false},{"label":"阻尼力与弹簧力的正负方向取反","type":"er","own":false},{"label":"多质量系统漏掉相互作用力的反作用项","type":"er","own":false}]}]}]}},{"no":"2","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2024 · 控制原理","children":[{"label":"难度：难　特点：6 题；前三题是经典控制（卡车单轮悬架机械系统建模、三阶系统三种方法判稳与 Z-N 整定、Bode 图法设计 P 与 I 与 PI 控制器），后三题全是状态空间：串联系统的状态响应与能控能观、状态反馈与观测器、两道理论证明，现代控制权重很大　重点：卡车悬架机械系统建模、三种方法分析稳定性与 Z-N 整定、Bode 图法设计 P、I、PI 控制器、状态空间方程与状态响应、能控性与能观性判别、状态反馈与观测器设计、状态反馈不改变零点的证明","type":"warn"},{"label":"二、三种方法分析稳定性与 Z-N 整定　〔第2题〕","type":"block","children":[{"label":"三阶惯性环节串联单位反馈：先用劳斯、根轨迹、奈奎斯特三种方法判稳并求稳定域，再用 P、PI、PID 与闭环 Z-N 临界比例度法整定参数","type":"idea"},{"label":"劳斯判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"劳斯法：展开三阶特征方程，令首列全为正列稳定域","type":"k1"},{"label":"根轨迹法：三个极点都在左半平面，由与虚轴交点定临界增益","type":"k1"},{"label":"奈奎斯特法：令虚部为零求穿越频率，再令实部等于负一求临界增益","type":"k1"},{"label":"特征方程为三次多项式，一次项系数与常数项含增益 k","type":"k2"},{"label":"三种方法应给出同一个临界增益","type":"k2"},{"label":"只把各项系数为正当充要条件","type":"k3"},{"label":"根轨迹法没有求虚轴交点就下结论","type":"k3"},{"label":"奈奎斯特法不数右半平面极点数就直接判","type":"k3"}]},{"label":"特征方程各项系数全为正只是必要条件，不充分","type":"yd"},{"label":"劳斯表首列元素全部同号 ⇔ 系统稳定","type":"yd"},{"label":"首列符号变化次数等于右半平面闭环极点数","type":"yd"},{"label":"首列出现 0 时需用 ε 法或乘辅助多项式处理","type":"yd"},{"label":"写出闭环特征方程并整理成降幂排列","type":"bz"},{"label":"若某次幂系数缺项，该项补零","type":"bz"},{"label":"列劳斯表：前两行为系数，之后各行按交叉相减","type":"bz"},{"label":"检查首列符号：全同号则稳定，有变号则数出个数","type":"bz"},{"label":"1+G(s)H(s)=0","type":"fm","tex":"1+G(s)H(s)=0"},{"label":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0","type":"fm","tex":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0"},{"label":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}","type":"fm","tex":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"},{"label":"用三种不同方法分析三阶系统的闭环稳定性并求稳定范围","type":"kf","own":true},{"label":"判断给定系统的稳定性","type":"kf","own":false},{"label":"指出右半平面闭环极点的个数","type":"kf","own":false},{"label":"求使系统稳定的参数范围","type":"kf","own":false},{"label":"系数有缺项时不补零，直接套用判据","type":"er","own":false},{"label":"首列出现 0 后仍按常规继续算，未用 ε 法","type":"er","own":false}]},{"label":"PID 控制器与参数整定","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先由劳斯或奈奎斯特法求临界比例增益与临界振荡周期","type":"k1"},{"label":"振荡周期由临界角频率按 2π 换算，不能直接用角频率","type":"k1"},{"label":"再按 P、PI、PID 三组不同系数公式算各控制器参数","type":"k1"},{"label":"临界角频率处特征方程有一对纯虚根","type":"k2"},{"label":"三种控制器都以同一临界增益和临界周期为基准","type":"k2"},{"label":"把临界周期与临界角频率直接用反了","type":"k3"},{"label":"把公式里的积分时间当积分增益直接填","type":"k3"},{"label":"把 Z-N 开环反应曲线法公式套到闭环临界比例度法上","type":"k3"}]},{"label":"比例项提高快速性但存在稳态误差","type":"yd"},{"label":"积分项消除稳态误差但降低稳定性、增大超调","type":"yd"},{"label":"微分项提供超前相位改善动态性能但对噪声敏感","type":"yd"},{"label":"PD 相当于超前校正，PI 相当于滞后校正","type":"yd"},{"label":"按误差类型选择需要引入的环节","type":"bz"},{"label":"先调比例再调积分最后调微分","type":"bz"},{"label":"用稳定裕度或性能指标校验并微调","type":"bz"},{"label":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds","type":"fm","tex":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds"},{"label":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)","type":"fm","tex":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)"},{"label":"用闭环齐格勒-尼科尔斯法分别整定 P、PI、PID 参数","type":"kf","own":true},{"label":"设计 PID 控制器满足给定指标","type":"kf","own":false},{"label":"分析各参数变化对系统性能的影响","type":"kf","own":false},{"label":"说明微分项对噪声的影响","type":"kf","own":false},{"label":"把 PI 的相位影响说成超前","type":"er","own":false},{"label":"积分增益过大导致系统振荡甚至不稳定","type":"er","own":false}]}]}]}},{"no":"3","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2024 · 控制原理","children":[{"label":"难度：难　特点：6 题；前三题是经典控制（卡车单轮悬架机械系统建模、三阶系统三种方法判稳与 Z-N 整定、Bode 图法设计 P 与 I 与 PI 控制器），后三题全是状态空间：串联系统的状态响应与能控能观、状态反馈与观测器、两道理论证明，现代控制权重很大　重点：卡车悬架机械系统建模、三种方法分析稳定性与 Z-N 整定、Bode 图法设计 P、I、PI 控制器、状态空间方程与状态响应、能控性与能观性判别、状态反馈与观测器设计、状态反馈不改变零点的证明","type":"warn"},{"label":"三、Bode 图法设计 P、I、PI 控制器　〔第3题〕","type":"block","children":[{"label":"被控对象为两个一阶环节之积：指标要求相角裕度不低于 60 度、阶跃稳态误差不超过百分之五、带宽尽量大；分别设计 P、I、PI 三类控制器并比较闭环零点配置","type":"idea"},{"label":"稳定裕度","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由稳态误差要求先反求开环增益下限","type":"k1"},{"label":"再由相角裕度要求幅值为 1 处的相角条件反求增益上限","type":"k1"},{"label":"两个方向对增益的要求若矛盾，指标就无法同时满足","type":"k1"},{"label":"零型系统阶跃误差由 1 除以 1 加位置误差系数给出","type":"k2"},{"label":"相角裕度条件先定截止频率，再由幅值条件给出对应增益","type":"k2"},{"label":"只看幅值条件不看相角条件","type":"k3"},{"label":"把增益上下限求反，未分辨哪个是矛盾点","type":"k3"}]},{"label":"相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)","type":"yd"},{"label":"幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝","type":"yd"},{"label":"γ>0 且 Kg>1 时闭环稳定（最小相位系统）","type":"yd"},{"label":"γ 主要影响超调，ωc 主要影响响应速度","type":"yd"},{"label":"由幅频特性求 |G|=1 对应的穿越频率 ωc","type":"bz"},{"label":"由相频特性求 ∠G=-180° 对应的频率 ωg","type":"bz"},{"label":"分别代入公式求相角裕度与幅值裕度","type":"bz"},{"label":"由裕度符号判断稳定性","type":"bz"},{"label":"\\gamma=180^\\circ+\\angle G(j\\omega_c)","type":"fm","tex":"\\gamma=180^\\circ+\\angle G(j\\omega_c)"},{"label":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}","type":"fm","tex":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"},{"label":"用 Bode 图法设计比例控制器并分析能否同时满足相角裕度与稳态误差指标","type":"kf","own":true},{"label":"求系统的相角裕度与幅值裕度","type":"kf","own":false},{"label":"由裕度要求反求开环增益","type":"kf","own":false},{"label":"分析增益变化对裕度的影响","type":"kf","own":false},{"label":"把 ωc 与 ωg 两个频率用反","type":"er","own":false},{"label":"幅值裕度取倒数未取，导致结论反了","type":"er","own":false},{"label":"非最小相位系统仍用同一判据","type":"er","own":false}]},{"label":"稳定裕度","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"串联一个积分环节使系统型别提高，阶跃误差变为零","type":"k1"},{"label":"按相角裕度条件解出截止频率，再由该处幅值为 1 定增益","type":"k1"},{"label":"积分环节带来固定的 −90 度相位，裕度比比例控制更难满足","type":"k1"},{"label":"校正后开环为被控对象乘 k 再除以 s","type":"k2"},{"label":"相角条件为 180 度减积分与两个惯性环节的相角","type":"k2"},{"label":"把积分控制器的相位影响漏掉","type":"k3"},{"label":"型别提高后仍套零型系统误差公式","type":"k3"}]},{"label":"相角裕度 γ 在幅值穿越频率 ωc 处定义，γ=180°+∠G(jωc)","type":"yd"},{"label":"幅值裕度 Kg 在相位穿越频率 ωg 处定义，单位可为分贝","type":"yd"},{"label":"γ>0 且 Kg>1 时闭环稳定（最小相位系统）","type":"yd"},{"label":"γ 主要影响超调，ωc 主要影响响应速度","type":"yd"},{"label":"由幅频特性求 |G|=1 对应的穿越频率 ωc","type":"bz"},{"label":"由相频特性求 ∠G=-180° 对应的频率 ωg","type":"bz"},{"label":"分别代入公式求相角裕度与幅值裕度","type":"bz"},{"label":"由裕度符号判断稳定性","type":"bz"},{"label":"\\gamma=180^\\circ+\\angle G(j\\omega_c)","type":"fm","tex":"\\gamma=180^\\circ+\\angle G(j\\omega_c)"},{"label":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}","type":"fm","tex":"K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"},{"label":"设计积分控制器并计算校正后的过零频率","type":"kf","own":true},{"label":"求系统的相角裕度与幅值裕度","type":"kf","own":false},{"label":"由裕度要求反求开环增益","type":"kf","own":false},{"label":"分析增益变化对裕度的影响","type":"kf","own":false},{"label":"把 ωc 与 ωg 两个频率用反","type":"er","own":false},{"label":"幅值裕度取倒数未取，导致结论反了","type":"er","own":false},{"label":"非最小相位系统仍用同一判据","type":"er","own":false}]},{"label":"PID 控制器与参数整定","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"PI 控制器写成 k 乘 1 加 τ 除以 s，闭环零点位置由 τ 直接决定","type":"k1"},{"label":"用相角裕度条件解截止频率，再由该处幅值为 1 解 k","type":"k1"},{"label":"零点越靠近虚轴，截止频率与稳定裕度越需要折衷","type":"k1"},{"label":"校正后开环含一个零点与三个极点","type":"k2"},{"label":"闭环零点位置由 τ 给出，闭环分母含 τ 与 k","type":"k2"},{"label":"把开环零点当成闭环零点","type":"k3"},{"label":"只算 k 与 τ 两个参数而不解截止频率","type":"k3"},{"label":"比较两种零点位置时忘记回答需要折衷的指标","type":"k3"}]},{"label":"比例项提高快速性但存在稳态误差","type":"yd"},{"label":"积分项消除稳态误差但降低稳定性、增大超调","type":"yd"},{"label":"微分项提供超前相位改善动态性能但对噪声敏感","type":"yd"},{"label":"PD 相当于超前校正，PI 相当于滞后校正","type":"yd"},{"label":"按误差类型选择需要引入的环节","type":"bz"},{"label":"先调比例再调积分最后调微分","type":"bz"},{"label":"用稳定裕度或性能指标校验并微调","type":"bz"},{"label":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds","type":"fm","tex":"G_c(s)=K_p+\\frac{K_i}{s}+K_ds"},{"label":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)","type":"fm","tex":"G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)"},{"label":"按给定闭环零点位置设计 PI 控制器并比较不同零点位置对截止频率与折衷指标的影响","type":"kf","own":true},{"label":"设计 PID 控制器满足给定指标","type":"kf","own":false},{"label":"分析各参数变化对系统性能的影响","type":"kf","own":false},{"label":"说明微分项对噪声的影响","type":"kf","own":false},{"label":"把 PI 的相位影响说成超前","type":"er","own":false},{"label":"积分增益过大导致系统振荡甚至不稳定","type":"er","own":false}]}]}]}},{"no":"4","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2024 · 控制原理","children":[{"label":"难度：难　特点：6 题；前三题是经典控制（卡车单轮悬架机械系统建模、三阶系统三种方法判稳与 Z-N 整定、Bode 图法设计 P 与 I 与 PI 控制器），后三题全是状态空间：串联系统的状态响应与能控能观、状态反馈与观测器、两道理论证明，现代控制权重很大　重点：卡车悬架机械系统建模、三种方法分析稳定性与 Z-N 整定、Bode 图法设计 P、I、PI 控制器、状态空间方程与状态响应、能控性与能观性判别、状态反馈与观测器设计、状态反馈不改变零点的证明","type":"warn"},{"label":"四、串联系统的状态空间、状态响应与能控能观　〔第4题〕","type":"block","children":[{"label":"两个子系统按 u2 等于 y1 串联成三阶系统：先列状态空间表达式，再求单位阶跃下的状态与输出响应，最后判能控能观并求不可控不可观子系统的特征值","type":"idea"},{"label":"状态空间表达式的建立","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把串联条件 u2 等于 y1 代入子系统方程，消去中间变量","type":"k1"},{"label":"整理成状态导数等于 A 乘状态加 B 乘输入的标准形式","type":"k1"},{"label":"状态按三个状态变量排列，输出取第二个子系统的输出","type":"k1"},{"label":"A 为三阶方阵，第三行出现由前一个子系统输出引入的耦合项","type":"k2"},{"label":"B 只有第二行非零，C 只对第三个状态取值","type":"k2"},{"label":"状态变量个数与系统阶数不匹配","type":"k3"},{"label":"输出方程漏掉直接传递项或把输出状态取错","type":"k3"}]},{"label":"状态方程为一阶微分方程组，输出方程是状态与输入的代数关系","type":"yd"},{"label":"状态变量的个数等于系统阶数，选取不唯一","type":"yd"},{"label":"状态空间描述可同时刻画内部状态与外部输出","type":"yd"},{"label":"可处理多输入多输出系统","type":"yd"},{"label":"确定系统阶数并选取状态变量","type":"bz"},{"label":"列写各状态变量的一阶微分方程","type":"bz"},{"label":"写成矩阵形式 x'=Ax+Bu 与 y=Cx+Du","type":"bz"},{"label":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du","type":"fm","tex":"\\dot{x}=Ax+Bu,\\quad y=Cx+Du"},{"label":"由两个子系统的串联关系列写三阶系统的状态空间表达式","type":"kf","own":true},{"label":"由物理系统列写状态空间表达式","type":"kf","own":false},{"label":"判断状态变量选取是否合理","type":"kf","own":false},{"label":"写出系统的 A、B、C、D 矩阵","type":"kf","own":false},{"label":"状态变量个数与系统阶数不匹配","type":"er","own":false},{"label":"输出方程中漏掉直接传递项 D","type":"er","own":false}]},{"label":"状态转移矩阵","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先求状态转移矩阵，注意特征值有重根时要用含 t 的形式","type":"k1"},{"label":"状态响应等于零输入项加零状态卷积项","type":"k1"},{"label":"最后按输出方程取出所需的那一个分量","type":"k1"},{"label":"状态矩阵的特征值含一个二重根，转移矩阵中出现含 t 的项","type":"k2"},{"label":"零输入项由转移矩阵乘初态得到，零状态项对输入矩阵做卷积","type":"k2"},{"label":"特征值有重根时仍套互异公式，丢掉含 t 的项","type":"k3"},{"label":"卷积积分变量代换写错","type":"k3"},{"label":"把初态代入后忘记再乘转移矩阵","type":"k3"}]},{"label":"状态转移矩阵 e^{At} 描述零输入下状态随时间的演化","type":"yd"},{"label":"可从 (sI-A)^{-1} 求拉氏反变换得到","type":"yd"},{"label":"满足 e^{A\\cdot0}=I 且可逆","type":"yd"},{"label":"含输入时用卷积积分写出全响应","type":"yd"},{"label":"计算 (sI-A)^{-1}","type":"bz"},{"label":"求拉氏反变换得到 e^{At}","type":"bz"},{"label":"代入全响应公式求状态与输出","type":"bz"},{"label":"用初值条件校验结果","type":"bz"},{"label":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]","type":"fm","tex":"e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]"},{"label":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau","type":"fm","tex":"x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau"},{"label":"求给定初态下单位阶跃输入的状态响应与输出响应","type":"kf","own":true},{"label":"求状态转移矩阵","type":"kf","own":false},{"label":"求给定初始条件下的状态与输出响应","type":"kf","own":false},{"label":"用性质验证转移矩阵是否正确","type":"kf","own":false},{"label":"矩阵求逆时忘记检查行列式是否为零","type":"er","own":false},{"label":"卷积积分中变量代换写错","type":"er","own":false}]},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"分别构造能控性矩阵与能观性矩阵，看秩是否等于维数","type":"k1"},{"label":"用 PBH 判据逐特征值检查，找出不能控或不能观的那一个","type":"k1"},{"label":"按秩亏对应的特征值写出不可控、不可观子系统的特征值","type":"k1"},{"label":"能控性矩阵由 B、AB、A 的平方乘 B 组成","type":"k2"},{"label":"能观性矩阵由 C、CA、CA 的平方组成","type":"k2"},{"label":"某个特征值处矩阵降秩，即为不可控不可观的模态","type":"k2"},{"label":"只算到 A 的 n 减 2 次幂就下结论","type":"k3"},{"label":"把能控性矩阵与能观性矩阵的构造顺序搞混","type":"k3"},{"label":"求出的特征值没有回到子系统维数上核对","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"分析三个系统的能控性与能观性并求不可控不可观子系统的特征值","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]}]}]}},{"no":"5","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2024 · 控制原理","children":[{"label":"难度：难　特点：6 题；前三题是经典控制（卡车单轮悬架机械系统建模、三阶系统三种方法判稳与 Z-N 整定、Bode 图法设计 P 与 I 与 PI 控制器），后三题全是状态空间：串联系统的状态响应与能控能观、状态反馈与观测器、两道理论证明，现代控制权重很大　重点：卡车悬架机械系统建模、三种方法分析稳定性与 Z-N 整定、Bode 图法设计 P、I、PI 控制器、状态空间方程与状态响应、能控性与能观性判别、状态反馈与观测器设计、状态反馈不改变零点的证明","type":"warn"},{"label":"五、状态反馈与观测器设计　〔第5题〕","type":"block","children":[{"label":"能观标准型二阶系统：先设计状态反馈使零初态阶跃输出满足给定一阶形式，再设计指定极点的状态观测器，最后给出观测状态反馈后的闭环传递函数","type":"idea"},{"label":"状态反馈与极点配置","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"由期望输出响应反推期望的闭环极点位置","type":"k1"},{"label":"状态反馈不改变系统零点，只能配置极点","type":"k1"},{"label":"验证能控性后比较期望与闭环特征多项式逐项求反馈增益","type":"k1"},{"label":"期望输出为一阶形式，对应一对闭环极点","type":"k2"},{"label":"能控性矩阵满秩才可任意配置极点","type":"k2"},{"label":"未验证能控性就直接配置极点","type":"k3"},{"label":"比较特征多项式系数时符号写反","type":"k3"},{"label":"把系统零点也当成可通过状态反馈配置的量","type":"k3"}]},{"label":"状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控","type":"yd"},{"label":"状态反馈不改变系统的零点","type":"yd"},{"label":"极点配置通过比较期望与实际的闭环特征多项式求解 K","type":"yd"},{"label":"状态反馈可能改变能观性","type":"yd"},{"label":"先验证系统能控","type":"bz"},{"label":"写出希望配置的极点并求期望特征多项式","type":"bz"},{"label":"求闭环系统特征多项式 det(sI-A+BK)","type":"bz"},{"label":"比较系数解出反馈增益阵 K","type":"bz"},{"label":"u=-Kx+v","type":"fm","tex":"u=-Kx+v"},{"label":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)","type":"fm","tex":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)"},{"label":"设计状态反馈使零初态单位阶跃输出响应满足给定形式","type":"kf","own":true},{"label":"设计状态反馈使闭环极点位于指定位置","type":"kf","own":false},{"label":"判断给定极点是否可通过状态反馈配置","type":"kf","own":false},{"label":"分析状态反馈对系统性能的影响","type":"kf","own":false},{"label":"未验证能控性就直接做极点配置","type":"er","own":false},{"label":"特征多项式比较系数时符号写反","type":"er","own":false}]},{"label":"状态观测器设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先验证系统能观，能观才可任意配置观测器极点","type":"k1"},{"label":"设观测器增益阵，写出误差动态矩阵的特征多项式","type":"k1"},{"label":"与期望极点对应的特征多项式逐项比较求观测器增益","type":"k1"},{"label":"期望极点为共轭复根，期望特征多项式为二次","type":"k2"},{"label":"误差动态特征多项式含两个待求的增益分量","type":"k2"},{"label":"把观测器增益阵套成状态反馈增益阵的形式","type":"k3"},{"label":"忽略能观性验证","type":"k3"},{"label":"共轭极点展开特征多项式时实部虚部符号写错","type":"k3"}]},{"label":"状态观测器用输出与输入重构状态，前提是系统能观","type":"yd"},{"label":"极点配置法与龙伯格观测器是两种常用形式","type":"yd"},{"label":"观测器误差动态由 A-LC 的特征值决定","type":"yd"},{"label":"观测器极点通常取得比系统极点快若干倍","type":"yd"},{"label":"验证系统能观性","type":"bz"},{"label":"写出观测器方程并求误差动态矩阵","type":"bz"},{"label":"按期望特征多项式比较系数求出 L","type":"bz"},{"label":"校验观测器收敛速度是否合适","type":"bz"},{"label":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})","type":"fm","tex":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})"},{"label":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})","type":"fm","tex":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})"},{"label":"设计极点位于指定位置的（全维）状态观测器","type":"kf","own":true},{"label":"设计全维状态观测器","type":"kf","own":false},{"label":"由期望观测器极点求反馈增益阵 L","type":"kf","own":false},{"label":"分析观测器与状态反馈组合后的系统极点","type":"kf","own":false},{"label":"把观测器增益阵写成了状态反馈增益阵的形式","type":"er","own":false},{"label":"忽略观测器极点过快会放大噪声","type":"er","own":false}]},{"label":"状态观测器设计","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"用观测状态代替真实状态去实现状态反馈","type":"k1"},{"label":"按分离原理，观测器极点不影响由状态反馈决定的闭环极点","type":"k1"},{"label":"据此写出闭环传递函数，分子零点保持不变","type":"k1"},{"label":"闭环传递函数的极点只由状态反馈增益决定","type":"k2"},{"label":"传递函数由原有零点与配置后的极点组成","type":"k2"},{"label":"把观测器极点也当成闭环传递函数的极点","type":"k3"},{"label":"忽略分子零点不随状态反馈改变","type":"k3"}]},{"label":"状态观测器用输出与输入重构状态，前提是系统能观","type":"yd"},{"label":"极点配置法与龙伯格观测器是两种常用形式","type":"yd"},{"label":"观测器误差动态由 A-LC 的特征值决定","type":"yd"},{"label":"观测器极点通常取得比系统极点快若干倍","type":"yd"},{"label":"验证系统能观性","type":"bz"},{"label":"写出观测器方程并求误差动态矩阵","type":"bz"},{"label":"按期望特征多项式比较系数求出 L","type":"bz"},{"label":"校验观测器收敛速度是否合适","type":"bz"},{"label":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})","type":"fm","tex":"\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})"},{"label":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})","type":"fm","tex":"\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})"},{"label":"给出用观测状态实现状态反馈后的闭环系统传递函数","type":"kf","own":true},{"label":"设计全维状态观测器","type":"kf","own":false},{"label":"由期望观测器极点求反馈增益阵 L","type":"kf","own":false},{"label":"分析观测器与状态反馈组合后的系统极点","type":"kf","own":false},{"label":"把观测器增益阵写成了状态反馈增益阵的形式","type":"er","own":false},{"label":"忽略观测器极点过快会放大噪声","type":"er","own":false}]}]}]}},{"no":"6","tree":{"label":"中国科学技术大学 845","type":"root","sub":"2024 · 控制原理","children":[{"label":"难度：难　特点：6 题；前三题是经典控制（卡车单轮悬架机械系统建模、三阶系统三种方法判稳与 Z-N 整定、Bode 图法设计 P 与 I 与 PI 控制器），后三题全是状态空间：串联系统的状态响应与能控能观、状态反馈与观测器、两道理论证明，现代控制权重很大　重点：卡车悬架机械系统建模、三种方法分析稳定性与 Z-N 整定、Bode 图法设计 P、I、PI 控制器、状态空间方程与状态响应、能控性与能观性判别、状态反馈与观测器设计、状态反馈不改变零点的证明","type":"warn"},{"label":"六、两道理论证明　〔第6题〕","type":"block","children":[{"label":"两道证明：状态反馈不改变传递函数零点，以及能观性格拉姆矩阵可逆时可由零输入响应反求初始状态","type":"idea"},{"label":"状态反馈与极点配置","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"在能控标准型下写出传递函数与状态反馈后的闭环特征多项式","type":"k1"},{"label":"状态反馈只改变分母多项式的系数，分子系数不变","type":"k1"},{"label":"不能控时存在零极点对消与解耦零点，结论不再成立","type":"k1"},{"label":"能控标准型下状态反馈把友矩阵末行的系数改变","type":"k2"},{"label":"分子多项式系数由输出矩阵决定，与反馈增益无关","type":"k2"},{"label":"只做一般性论述而不写能控标准型","type":"k3"},{"label":"不能控时直接沿用能控情形的结论","type":"k3"},{"label":"把解耦零点与不变零点混为一谈","type":"k3"}]},{"label":"状态反馈 u=-Kx+v 可任意配置闭环极点，前提是系统完全能控","type":"yd"},{"label":"状态反馈不改变系统的零点","type":"yd"},{"label":"极点配置通过比较期望与实际的闭环特征多项式求解 K","type":"yd"},{"label":"状态反馈可能改变能观性","type":"yd"},{"label":"先验证系统能控","type":"bz"},{"label":"写出希望配置的极点并求期望特征多项式","type":"bz"},{"label":"求闭环系统特征多项式 det(sI-A+BK)","type":"bz"},{"label":"比较系数解出反馈增益阵 K","type":"bz"},{"label":"u=-Kx+v","type":"fm","tex":"u=-Kx+v"},{"label":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)","type":"fm","tex":"\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)"},{"label":"证明能控单输入单输出系统的状态反馈不改变传递函数的零点，并说明系统不能控时结论是否成立","type":"kf","own":true},{"label":"设计状态反馈使闭环极点位于指定位置","type":"kf","own":false},{"label":"判断给定极点是否可通过状态反馈配置","type":"kf","own":false},{"label":"分析状态反馈对系统性能的影响","type":"kf","own":false},{"label":"未验证能控性就直接做极点配置","type":"er","own":false},{"label":"特征多项式比较系数时符号写反","type":"er","own":false}]},{"label":"能控性与能观性","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先说明题目所给矩阵就是能观性格拉姆矩阵","type":"k1"},{"label":"用对偶原理把它对应到对偶系统的能控性格拉姆矩阵","type":"k1"},{"label":"可逆等价于系统能观，再对零输入响应做加权积分反解初态","type":"k1"},{"label":"零输入响应等于输出矩阵乘状态转移矩阵再乘初态","type":"k2"},{"label":"两端左乘转移矩阵的转置再积分可把初态分离出来","type":"k2"},{"label":"只说矩阵可逆不说它与系统能观等价","type":"k3"},{"label":"积分时被积矩阵与向量的次序写错","type":"k3"},{"label":"未说明对偶系统与原系统的能控能观对应关系","type":"k3"}]},{"label":"能控性指能否用输入在有限时间内把任意初始状态驱动到原点","type":"yd"},{"label":"能观性指能否由输出在有限时间内确定初始状态","type":"yd"},{"label":"用能控性矩阵与能观性矩阵的秩判断","type":"yd"},{"label":"能控性与能观性经非奇异线性变换保持不变","type":"yd"},{"label":"构造能控性矩阵并求秩","type":"bz"},{"label":"构造能观性矩阵并求秩","type":"bz"},{"label":"与系统阶数 n 比较得出结论","type":"bz"},{"label":"不可控或不可观时进一步做结构分解","type":"bz"},{"label":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"},{"label":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n","type":"fm","tex":"\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"},{"label":"证明能观性格拉姆矩阵可逆时可由零输入响应反求初始状态","type":"kf","own":true},{"label":"判断系统的能控性与能观性","type":"kf","own":false},{"label":"求使系统能观的参数取值","type":"kf","own":false},{"label":"对不可控系统进行结构分解","type":"kf","own":false},{"label":"只算到 A^{n-2}B 就下结论","type":"er","own":false},{"label":"把能控性判据与能观性判据的矩阵构造搞混","type":"er","own":false}]}]}]}}]}</script>
+<script src="../../../../../assets/d3.min.js"></script>
+<script src="../../../../../assets/kg.js"></script>
+</body></html>

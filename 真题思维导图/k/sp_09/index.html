@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>状态反馈解耦 · 考点历年考法（7 套卷 / 7 处题）</title>
+<meta name="description" content="状态反馈解耦（状态空间分析）：该考点在 2015–2025 年的控制类考研真题中，共出现于 7 套卷的 7 处题目，覆盖 4 所院校；此处汇总历年考法与常见易错。">
+<link rel="canonical" href="http://127.0.0.1:8768/真题思维导图/k/sp_09/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="状态反馈解耦 · 考点历年考法（7 套卷 / 7 处题）">
+<meta property="og:description" content="状态反馈解耦（状态空间分析）：该考点在 2015–2025 年的控制类考研真题中，共出现于 7 套卷的 7 处题目，覆盖 4 所院校；此处汇总历年考法与常见易错。">
+<meta name="theme-color" content="#1f4e79">
+<link rel="stylesheet" href="../../assets/kg.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "状态反馈解耦", "inDefinedTermSet": "状态空间分析", "description": "解耦的目标是让每个输出只被对应的一个输入控制，闭环传递函数矩阵成为对角阵；用输入变换加状态反馈控制律 u 等于负 Kx 加 Fv 实现解耦；解耦矩阵由各通道输出的相对阶与输入矩阵组成，非奇异时才能解耦；解耦后闭环传函矩阵的对角元由配置的极点决定，非对角元为零"}</script>
+</head>
+<body class="">
+<header class="site-head"><div class="inner"><a class="parent-home" href="../../../index.html"><span class="arr">←</span><span class="ptxt">择校首页</span></a><a class="brand" href="../../"><span class="full">控制考研真题思维导图</span><span class="short">真题思维导图</span></a><button class="sbtn" id="kg-search-btn" type="button" aria-label="搜索"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button><nav class="crumbs"><a href="../../">首页</a><span class="sep">›</span><a href="../../k/">考点索引</a><span class="sep">›</span><span>状态反馈解耦</span></nav><nav class="levelnav" aria-label="层级导航"><a class="lv home" href="../../">首页</a><a class="lv" href="../../k/">← 考点索引</a><span class="lv off">下一级 →</span></nav><input class="head-inp" id="site-q" type="search" placeholder="搜学校 / 代码 / 年份" aria-label="搜索"></div></header>
+<main class="wrap"><div class="kphead"><h1>状态反馈解耦</h1><div class="tagrow"><span class="badge">状态空间分析</span><span class="badge">7 套卷出现</span><span class="badge">4 所院校</span><span class="badge">2015–2025</span></div></div>
+<div class="cols"><section class="content"><div class="card"><h3>要点</h3><ul class="" style="margin:0;padding-left:20px"><li>解耦的目标是让每个输出只被对应的一个输入控制，闭环传递函数矩阵成为对角阵</li><li>用输入变换加状态反馈控制律 u 等于负 Kx 加 Fv 实现解耦</li><li>解耦矩阵由各通道输出的相对阶与输入矩阵组成，非奇异时才能解耦</li><li>解耦后闭环传函矩阵的对角元由配置的极点决定，非对角元为零</li></ul></div><div class="card"><h3>步骤</h3><ul class="" style="margin:0;padding-left:20px"><li>逐个求各输出的相对阶，即输出导数中首次出现输入的阶数减一</li><li>用各通道的相对阶对应的行组成解耦矩阵，并检查其是否非奇异</li><li>由解耦矩阵的逆求出输入变换矩阵，再由各通道系数求出状态反馈矩阵</li><li>写出闭环传递函数矩阵，校验是否已对角化并满足期望极点</li></ul></div><div class="card"><h3>公式</h3><div class="formula" data-tex="u=-Kx+Fv"></div><div class="formula" data-tex="E=\begin{bmatrix}c_1A^{d_1}B\\c_2A^{d_2}B\end{bmatrix}"></div><div class="formula" data-tex="G_c(s)=\mathrm{diag}\left(\frac{1}{s^{d_1+1}},\cdots,\frac{1}{s^{d_m+1}}\right)"></div></div><div class="card"><h3>通用考法</h3><ul class="" style="margin:0;padding-left:20px"><li>证明系统能通过输入变换与状态反馈实现解耦</li><li>求解耦矩阵与状态反馈阵并写出闭环传递函数矩阵</li><li>分析解耦后各通道的极点是否可任意配置</li></ul></div><div class="card"><h3>常见易错</h3><ul class="" style="margin:0;padding-left:20px"><li>相对阶取成输出导数首次出现输入的阶数本身，差一阶</li><li>解耦矩阵奇异时仍硬求解，忽略解耦条件不满足</li></ul></div><div class="card"><h3>历年考法（7）</h3><div class="tablescroll"><table class="katable"><thead><tr><th>年份</th><th>院校</th><th>题</th><th>分值</th></tr></thead><tbody><tr><td class="y">2025</td><td><a href="../../x/985/nanjing/2025/865/#q8">南京大学</a></td><td>8　八、状态反馈解耦</td><td class="y">—</td></tr><tr><td class="y">2025</td><td><a href="../../x/985/huananligong/2025/814/#q6">华南理工大学</a></td><td>6　六、双输入质点系统的解耦与轨迹跟踪</td><td class="y">—</td></tr><tr><td class="y">2024</td><td><a href="../../x/211/dalianhaishi/2024/804/#q1">大连海事大学</a></td><td>1　一、填空题（15空）</td><td class="y">45</td></tr><tr><td class="y">2023</td><td><a href="../../x/985/tianjin/2023/812/#q1">天津大学</a></td><td>1、2、3、4、5、6　一、简答：稳定域、主导极点与标准型</td><td class="y">—</td></tr><tr><td class="y">2022</td><td><a href="../../x/985/tianjin/2022/812/#q7">天津大学</a></td><td>七　七、前馈加状态反馈解耦</td><td class="y">—</td></tr><tr><td class="y">2021</td><td><a href="../../x/985/tianjin/2021/812/#q7">天津大学</a></td><td>七　七、状态反馈积分解耦</td><td class="y">—</td></tr><tr><td class="y">2015</td><td><a href="../../x/985/tianjin/2015/812/#q6">天津大学</a></td><td>六　六、能控能观判别与积分型解耦</td><td class="y">—</td></tr></tbody></table></div></div></section></div>
+</main>
+<footer class="site-foot"><div class="inner"><span>导图内容为本站原创整理，欢迎交流指正</span></div></footer>
+<script src="../../assets/d3.min.js"></script>
+<script src="../../assets/kg.js"></script>
+</body></html>

@@ -1,0 +1,34 @@
+[Unit]
+Description=Kaoyan school selection API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=kaoyan
+Group=www-data
+WorkingDirectory=/var/www/kaoyan-site
+EnvironmentFile=/etc/kaoyan/kaoyan.env
+ExecStart=/var/www/kaoyan-site/.venv/bin/uvicorn api_app:app --host 127.0.0.1 --port 8000 --workers 1 --proxy-headers --forwarded-allow-ips=127.0.0.1
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=20
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectHome=true
+ProtectSystem=strict
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+LockPersonality=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+SystemCallArchitectures=native
+ReadWritePaths=/var/lib/kaoyan
+
+[Install]
+WantedBy=multi-user.target

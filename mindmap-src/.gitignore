@@ -1,0 +1,25 @@
+# 生成产物（可由源码 + JSON 重新生成，不入库）
+网站原型/
+思维导图_交互/
+思维导图_PDF/
+_导出/
+_截图/
+_试作*/
+思维导图_v6/*.svg
+思维导图_v6/*.dot
+思维导图_v6/_备份旧产物/
+*.pdf
+*.zip
+*.tgz
+# 本地工具与临时文件
+_工作台/_tmp*
+_工作台/_bak*
+_工作台/*.log
+__pycache__/
+*.pyc
+venv*/
+node_modules/
+mineru_full/
+mineru_out/
+_自测产物/
+_det*/

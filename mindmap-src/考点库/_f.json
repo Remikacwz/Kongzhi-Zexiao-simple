@@ -1,0 +1,857 @@
+[
+ {
+  "id": "tf_01",
+  "name": "传递函数的定义与基本性质",
+  "tex": "G(s)=\\frac{C(s)}{R(s)}=\\frac{b_m s^m+\\cdots+b_1 s+b_0}{a_n s^n+\\cdots+a_1 s+a_0}"
+ },
+ {
+  "id": "tf_02",
+  "name": "由电路或机械系统求传递函数",
+  "tex": "Z_R=R,\\quad Z_L=Ls,\\quad Z_C=\\frac{1}{Cs}"
+ },
+ {
+  "id": "tf_02",
+  "name": "由电路或机械系统求传递函数",
+  "tex": "m\\ddot{x}+f\\dot{x}+kx=F(t)"
+ },
+ {
+  "id": "tf_03",
+  "name": "典型环节及其特性",
+  "tex": "G(s)=\\frac{1}{Ts+1},\\quad G(s)=\\frac{\\omega_n^2}{s^2+2\\xi\\omega_n s+\\omega_n^2}"
+ },
+ {
+  "id": "tf_03",
+  "name": "典型环节及其特性",
+  "tex": "G(s)=e^{-\\tau s}"
+ },
+ {
+  "id": "tf_04",
+  "name": "梅森增益公式与信号流图",
+  "tex": "P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k"
+ },
+ {
+  "id": "tf_04",
+  "name": "梅森增益公式与信号流图",
+  "tex": "\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots"
+ },
+ {
+  "id": "tf_05",
+  "name": "零极点分布与响应模态",
+  "tex": "c(t)=\\sum_k A_k e^{p_k t},\\quad e^{-\\sigma t}\\cos(\\omega t+\\varphi)"
+ },
+ {
+  "id": "tf_06",
+  "name": "由响应曲线反求传递函数",
+  "tex": "\\sigma\\%=e^{-\\pi\\xi/\\sqrt{1-\\xi^2}}\\times 100\\%"
+ },
+ {
+  "id": "tf_06",
+  "name": "由响应曲线反求传递函数",
+  "tex": "t_p=\\frac{\\pi}{\\omega_n\\sqrt{1-\\xi^2}}"
+ },
+ {
+  "id": "bd_01",
+  "name": "串联、并联与反馈等效",
+  "tex": "G_{串}=G_1G_2,\\quad G_{并}=G_1\\pm G_2,\\quad \\Phi(s)=\\frac{G(s)}{1\\pm G(s)H(s)}"
+ },
+ {
+  "id": "bd_04",
+  "name": "多输入与扰动作用下的传递函数",
+  "tex": "\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}"
+ },
+ {
+  "id": "md_01",
+  "name": "机械系统建模",
+  "tex": "m\\ddot{x}+f\\dot{x}+kx=F(t)"
+ },
+ {
+  "id": "md_02",
+  "name": "电路网络与有源网络建模",
+  "tex": "\\frac{U_o(s)}{U_i(s)}=-\\frac{Z_f(s)}{Z_i(s)}"
+ },
+ {
+  "id": "md_03",
+  "name": "直流电机等机电系统",
+  "tex": "E_a=C_e\\Phi n,\\quad T_e=C_m\\Phi I_a"
+ },
+ {
+  "id": "md_03",
+  "name": "直流电机等机电系统",
+  "tex": "\\frac{\\Omega(s)}{U_a(s)}=\\frac{C_m}{L_aJs^2+(L_af+R_aJ)s+R_af+C_eC_m}"
+ },
+ {
+  "id": "md_04",
+  "name": "非线性模型的线性化",
+  "tex": "\\Delta y=\\left.\\frac{\\partial f}{\\partial x}\\right|_{x_0}\\Delta x"
+ },
+ {
+  "id": "st_01",
+  "name": "劳斯判据",
+  "tex": "1+G(s)H(s)=0"
+ },
+ {
+  "id": "st_01",
+  "name": "劳斯判据",
+  "tex": "a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0"
+ },
+ {
+  "id": "st_01",
+  "name": "劳斯判据",
+  "tex": "b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"
+ },
+ {
+  "id": "st_02",
+  "name": "参数稳定域的确定",
+  "tex": "b_1>0,\\quad c_1>0,\\quad \\cdots"
+ },
+ {
+  "id": "st_03",
+  "name": "赫尔维茨判据",
+  "tex": "D_1=a_{n-1}>0,\\quad D_2=\\begin{vmatrix}a_{n-1}&a_{n-3}\\\\a_n&a_{n-2}\\end{vmatrix}>0"
+ },
+ {
+  "id": "st_04",
+  "name": "奈奎斯特判据",
+  "tex": "Z=N+P"
+ },
+ {
+  "id": "st_04",
+  "name": "奈奎斯特判据",
+  "tex": "N=N_+-N_-"
+ },
+ {
+  "id": "st_05",
+  "name": "含纯延迟环节的系统稳定性",
+  "tex": "G(s)=G_0(s)e^{-\\tau s},\\quad \\angle G=-\\tau\\omega+\\angle G_0"
+ },
+ {
+  "id": "td_01",
+  "name": "一阶系统的单位阶跃响应",
+  "tex": "c(t)=1-e^{-t/T}"
+ },
+ {
+  "id": "td_01",
+  "name": "一阶系统的单位阶跃响应",
+  "tex": "t_s=3T\\ (5\\%),\\quad t_s=4T\\ (2\\%)"
+ },
+ {
+  "id": "td_02",
+  "name": "二阶系统标准形式与阻尼比",
+  "tex": "\\Phi(s)=\\frac{\\omega_n^2}{s^2+2\\xi\\omega_n s+\\omega_n^2}"
+ },
+ {
+  "id": "td_02",
+  "name": "二阶系统标准形式与阻尼比",
+  "tex": "s_{1,2}=-\\xi\\omega_n\\pm j\\omega_n\\sqrt{1-\\xi^2}"
+ },
+ {
+  "id": "td_02",
+  "name": "二阶系统标准形式与阻尼比",
+  "tex": "\\beta=\\arccos\\xi"
+ },
+ {
+  "id": "td_03",
+  "name": "欠阻尼动态性能指标",
+  "tex": "\\sigma\\%=e^{-\\pi\\xi/\\sqrt{1-\\xi^2}}\\times 100\\%"
+ },
+ {
+  "id": "td_03",
+  "name": "欠阻尼动态性能指标",
+  "tex": "t_p=\\frac{\\pi}{\\omega_n\\sqrt{1-\\xi^2}}"
+ },
+ {
+  "id": "td_03",
+  "name": "欠阻尼动态性能指标",
+  "tex": "t_s\\approx\\frac{3.5}{\\xi\\omega_n}\\ (5\\%),\\quad t_s\\approx\\frac{4.4}{\\xi\\omega_n}\\ (2\\%)"
+ },
+ {
+  "id": "td_03",
+  "name": "欠阻尼动态性能指标",
+  "tex": "t_r=\\frac{\\pi-\\beta}{\\omega_n\\sqrt{1-\\xi^2}}"
+ },
+ {
+  "id": "td_04",
+  "name": "高阶系统的降阶与主导极点",
+  "tex": "\\sigma\\%=\\sigma\\%_0\\cdot\\sqrt{1+\\left(\\frac{1}{z_r}\\right)^2}"
+ },
+ {
+  "id": "td_05",
+  "name": "由性能指标要求反求参数",
+  "tex": "\\xi\\ge\\xi_{min},\\quad \\xi\\omega_n\\ge\\frac{3.5}{t_s}"
+ },
+ {
+  "id": "ss_01",
+  "name": "误差定义与误差传递函数",
+  "tex": "E(s)=\\frac{1}{1+G(s)H(s)}R(s)"
+ },
+ {
+  "id": "ss_01",
+  "name": "误差定义与误差传递函数",
+  "tex": "E(s)=R(s)-C(s)"
+ },
+ {
+  "id": "ss_02",
+  "name": "系统型别与静态误差系数",
+  "tex": "K_p=\\lim_{s\\to0}G(s)H(s)"
+ },
+ {
+  "id": "ss_02",
+  "name": "系统型别与静态误差系数",
+  "tex": "K_v=\\lim_{s\\to0}sG(s)H(s)"
+ },
+ {
+  "id": "ss_02",
+  "name": "系统型别与静态误差系数",
+  "tex": "K_a=\\lim_{s\\to0}s^2G(s)H(s)"
+ },
+ {
+  "id": "ss_03",
+  "name": "典型输入下的稳态误差计算",
+  "tex": "e_{ss}=\\lim_{s\\to0}sE(s)"
+ },
+ {
+  "id": "ss_03",
+  "name": "典型输入下的稳态误差计算",
+  "tex": "e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}"
+ },
+ {
+  "id": "ss_04",
+  "name": "扰动作用下的稳态误差",
+  "tex": "e_{ssn}=\\lim_{s\\to0}s\\,\\Phi_{en}(s)N(s)"
+ },
+ {
+  "id": "ss_05",
+  "name": "减小稳态误差的措施",
+  "tex": "e_{ss}=\\frac{1}{1+K_p}R_0,\\quad K_p\\uparrow\\Rightarrow e_{ss}\\downarrow"
+ },
+ {
+  "id": "rl_01",
+  "name": "根轨迹的基本概念与幅相条件",
+  "tex": "1+KG_0(s)=0"
+ },
+ {
+  "id": "rl_01",
+  "name": "根轨迹的基本概念与幅相条件",
+  "tex": "\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=180^\\circ+360^\\circ l"
+ },
+ {
+  "id": "rl_01",
+  "name": "根轨迹的基本概念与幅相条件",
+  "tex": "\\frac{\\prod|s-p_j|}{\\prod|s-z_i|}=K"
+ },
+ {
+  "id": "rl_02",
+  "name": "根轨迹的绘制法则",
+  "tex": "\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}"
+ },
+ {
+  "id": "rl_02",
+  "name": "根轨迹的绘制法则",
+  "tex": "\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}"
+ },
+ {
+  "id": "rl_03",
+  "name": "分离点与会合点",
+  "tex": "\\frac{dK}{ds}=0"
+ },
+ {
+  "id": "rl_03",
+  "name": "分离点与会合点",
+  "tex": "\\sum_j\\frac{1}{d-p_j}=\\sum_i\\frac{1}{d-z_i}"
+ },
+ {
+  "id": "rl_04",
+  "name": "出射角与入射角",
+  "tex": "\\theta_p=180^\\circ+\\sum_i\\angle(p-z_i)-\\sum_{j\\ne p}\\angle(p-p_j)"
+ },
+ {
+  "id": "rl_05",
+  "name": "与虚轴的交点及临界参数",
+  "tex": "1+KG_0(j\\omega)=0"
+ },
+ {
+  "id": "rl_05",
+  "name": "与虚轴的交点及临界参数",
+  "tex": "\\operatorname{Re}[\\cdot]=0,\\quad \\operatorname{Im}[\\cdot]=0"
+ },
+ {
+  "id": "rl_06",
+  "name": "广义根轨迹与参数根轨迹",
+  "tex": "1+\\alpha G^*(s)=0"
+ },
+ {
+  "id": "rl_06",
+  "name": "广义根轨迹与参数根轨迹",
+  "tex": "\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=0^\\circ+360^\\circ l"
+ },
+ {
+  "id": "rl_07",
+  "name": "由根轨迹分析性能与确定参数",
+  "tex": "\\xi=\\cos\\beta,\\quad \\omega_n=|s|"
+ },
+ {
+  "id": "fd_01",
+  "name": "频率特性的物理意义与求法",
+  "tex": "G(j\\omega)=G(s)\\big|_{s=j\\omega}=|G(j\\omega)|e^{j\\varphi(\\omega)}"
+ },
+ {
+  "id": "fd_02",
+  "name": "典型环节的对数频率特性",
+  "tex": "L(\\omega)=20\\lg|G(j\\omega)|"
+ },
+ {
+  "id": "fd_02",
+  "name": "典型环节的对数频率特性",
+  "tex": "L_{惯性}=-20\\lg\\sqrt{1+(\\omega T)^2}"
+ },
+ {
+  "id": "fd_03",
+  "name": "开环对数频率特性的绘制",
+  "tex": "L(\\omega)=20\\lg K-20v\\lg\\omega+\\sum 20\\lg|G_i(j\\omega)|"
+ },
+ {
+  "id": "fd_04",
+  "name": "由 Bode 图反求传递函数",
+  "tex": "L(\\omega)\\big|_{\\omega=1}=20\\lg\\frac{K}{\\omega^{v}}"
+ },
+ {
+  "id": "fd_05",
+  "name": "稳定裕度",
+  "tex": "\\gamma=180^\\circ+\\angle G(j\\omega_c)"
+ },
+ {
+  "id": "fd_05",
+  "name": "稳定裕度",
+  "tex": "K_g=-20\\lg|G(j\\omega_g)|\\ \\text{dB}"
+ },
+ {
+  "id": "fd_06",
+  "name": "闭环频率特性与性能指标",
+  "tex": "M_r=\\frac{1}{2\\xi\\sqrt{1-\\xi^2}},\\quad \\omega_r=\\omega_n\\sqrt{1-2\\xi^2}"
+ },
+ {
+  "id": "fd_06",
+  "name": "闭环频率特性与性能指标",
+  "tex": "\\omega_b=\\omega_n\\sqrt{(1-2\\xi^2)+\\sqrt{(1-2\\xi^2)^2+1}}"
+ },
+ {
+  "id": "cr_01",
+  "name": "校正的基本概念与性能指标",
+  "tex": "\\gamma\\geq\\gamma_{要求},\\quad \\omega_c\\ \\text{按响应速度确定}"
+ },
+ {
+  "id": "cr_02",
+  "name": "超前校正",
+  "tex": "G_c(s)=\\frac{\\alpha Ts+1}{Ts+1},\\quad \\alpha>1"
+ },
+ {
+  "id": "cr_02",
+  "name": "超前校正",
+  "tex": "\\varphi_m=\\arcsin\\frac{\\alpha-1}{\\alpha+1}"
+ },
+ {
+  "id": "cr_02",
+  "name": "超前校正",
+  "tex": "\\omega_m=\\frac{1}{T\\sqrt{\\alpha}}"
+ },
+ {
+  "id": "cr_03",
+  "name": "滞后校正",
+  "tex": "G_c(s)=\\frac{Ts+1}{\\beta Ts+1},\\quad \\beta>1"
+ },
+ {
+  "id": "cr_03",
+  "name": "滞后校正",
+  "tex": "\\frac{1}{T}=(0.1\\sim0.2)\\omega_c'"
+ },
+ {
+  "id": "cr_04",
+  "name": "滞后-超前校正",
+  "tex": "G_c(s)=\\frac{(\\alpha T_1s+1)(T_2s+1)}{(T_1s+1)(\\beta T_2s+1)}"
+ },
+ {
+  "id": "cr_05",
+  "name": "期望特性法与综合法",
+  "tex": "L_c(\\omega)=L_{期望}(\\omega)-L_0(\\omega)"
+ },
+ {
+  "id": "cr_06",
+  "name": "反馈校正与复合控制",
+  "tex": "G_{等效}=\\frac{G_1(s)}{1+G_1(s)H_c(s)}"
+ },
+ {
+  "id": "cr_06",
+  "name": "反馈校正与复合控制",
+  "tex": "G_r(s)=\\frac{1}{G_1(s)}\\ (\\text{完全不变性条件})"
+ },
+ {
+  "id": "cr_07",
+  "name": "PID 控制器与参数整定",
+  "tex": "G_c(s)=K_p+\\frac{K_i}{s}+K_ds"
+ },
+ {
+  "id": "cr_07",
+  "name": "PID 控制器与参数整定",
+  "tex": "G_c(s)=K_p\\left(1+\\frac{1}{T_is}+T_ds\\right)"
+ },
+ {
+  "id": "nl_02",
+  "name": "描述函数法基础",
+  "tex": "N(A)=\\frac{Y_1}{A}e^{j\\varphi_1}"
+ },
+ {
+  "id": "nl_02",
+  "name": "描述函数法基础",
+  "tex": "N(A)=\\frac{1}{\\pi A}\\int_0^{2\\pi}y(t)\\sin\\omega t\\,d(\\omega t)"
+ },
+ {
+  "id": "nl_03",
+  "name": "用描述函数法分析自振",
+  "tex": "G(j\\omega)N(A)=-1"
+ },
+ {
+  "id": "nl_03",
+  "name": "用描述函数法分析自振",
+  "tex": "G(j\\omega)=-\\frac{1}{N(A)}"
+ },
+ {
+  "id": "nl_04",
+  "name": "相平面法",
+  "tex": "\\frac{d\\dot{e}}{de}=\\frac{\\ddot{e}}{\\dot{e}}"
+ },
+ {
+  "id": "nl_04",
+  "name": "相平面法",
+  "tex": "\\frac{d\\dot{e}}{de}=-\\frac{f(e,\\dot{e})}{\\dot{e}}"
+ },
+ {
+  "id": "nl_05",
+  "name": "典型非线性特性及其影响",
+  "tex": "N(A)=\\frac{2K}{\\pi}\\left(\\arcsin\\frac{a}{A}+\\frac{a}{A}\\sqrt{1-\\left(\\frac{a}{A}\\right)^2}\\right)\\ (\\text{饱和})"
+ },
+ {
+  "id": "ds_01",
+  "name": "采样过程与香农采样定理",
+  "tex": "\\omega_s=\\frac{2\\pi}{T}\\geq 2\\omega_{max}"
+ },
+ {
+  "id": "ds_01",
+  "name": "采样过程与香农采样定理",
+  "tex": "G_h(s)=\\frac{1-e^{-Ts}}{s}"
+ },
+ {
+  "id": "ds_02",
+  "name": "z 变换与 z 反变换",
+  "tex": "z=e^{Ts}"
+ },
+ {
+  "id": "ds_02",
+  "name": "z 变换与 z 反变换",
+  "tex": "Z\\left[\\frac{1}{s+a}\\right]=\\frac{z}{z-e^{-aT}}"
+ },
+ {
+  "id": "ds_02",
+  "name": "z 变换与 z 反变换",
+  "tex": "Z\\left[\\frac{1}{s}\\right]=\\frac{z}{z-1}"
+ },
+ {
+  "id": "ds_03",
+  "name": "脉冲传递函数",
+  "tex": "G(z)=\\frac{C(z)}{R(z)}=Z[G_h(s)G_0(s)]"
+ },
+ {
+  "id": "ds_03",
+  "name": "脉冲传递函数",
+  "tex": "\\Phi(z)=\\frac{G(z)}{1+G(z)H(z)}"
+ },
+ {
+  "id": "ds_04",
+  "name": "离散系统稳定性分析",
+  "tex": "|z_i|<1"
+ },
+ {
+  "id": "ds_04",
+  "name": "离散系统稳定性分析",
+  "tex": "z=\\frac{1+w}{1-w}\\quad (w\\ \\text{变换})"
+ },
+ {
+  "id": "ds_05",
+  "name": "离散系统的稳态误差",
+  "tex": "e_{ss}=\\lim_{z\\to1}(1-z^{-1})E(z)"
+ },
+ {
+  "id": "ds_05",
+  "name": "离散系统的稳态误差",
+  "tex": "K_p=\\lim_{z\\to1}G(z)H(z)"
+ },
+ {
+  "id": "ds_06",
+  "name": "离散系统的动态性能与极点分布",
+  "tex": "z_i=|z_i|e^{j\\angle z_i},\\quad \\sigma=\\frac{\\ln|z_i|}{T}"
+ },
+ {
+  "id": "ds_06",
+  "name": "离散系统的动态性能与极点分布",
+  "tex": "\\omega=\\frac{\\angle z_i}{T}"
+ },
+ {
+  "id": "ds_07",
+  "name": "数字控制器与最少拍设计",
+  "tex": "D(z)=\\frac{\\Phi(z)}{G(z)(1-\\Phi(z))}"
+ },
+ {
+  "id": "ds_07",
+  "name": "数字控制器与最少拍设计",
+  "tex": "\\Phi_e(z)=1-\\Phi(z)"
+ },
+ {
+  "id": "ds_08",
+  "name": "连续系统的离散化",
+  "tex": "x((k+1)T)=Gx(kT)+Hu(kT)"
+ },
+ {
+  "id": "ds_08",
+  "name": "连续系统的离散化",
+  "tex": "G=e^{AT},\\quad H=\\int_{0}^{T}e^{A\tau}B\\,d\tau"
+ },
+ {
+  "id": "sp_01",
+  "name": "状态空间表达式的建立",
+  "tex": "\\dot{x}=Ax+Bu,\\quad y=Cx+Du"
+ },
+ {
+  "id": "sp_02",
+  "name": "由传递函数写状态空间表达式",
+  "tex": "A=\\begin{bmatrix}0&1&\\cdots&0\\\\\\vdots&&\\ddots&\\vdots\\\\0&0&\\cdots&1\\\\-a_0&-a_1&\\cdots&-a_{n-1}\\end{bmatrix},\\quad B=\\begin{bmatrix}0\\\\\\vdots\\\\0\\\\1\\end{bmatrix}"
+ },
+ {
+  "id": "sp_03",
+  "name": "状态转移矩阵",
+  "tex": "e^{At}=L^{-1}\\left[(sI-A)^{-1}\\right]"
+ },
+ {
+  "id": "sp_03",
+  "name": "状态转移矩阵",
+  "tex": "x(t)=e^{At}x(0)+\\int_0^t e^{A(t-\\tau)}Bu(\\tau)\\,d\\tau"
+ },
+ {
+  "id": "sp_04",
+  "name": "能控性与能观性",
+  "tex": "\\operatorname{rank}\\begin{bmatrix}B&AB&\\cdots&A^{n-1}B\\end{bmatrix}=n"
+ },
+ {
+  "id": "sp_04",
+  "name": "能控性与能观性",
+  "tex": "\\operatorname{rank}\\begin{bmatrix}C\\\\CA\\\\\\vdots\\\\CA^{n-1}\\end{bmatrix}=n"
+ },
+ {
+  "id": "sp_05",
+  "name": "状态反馈与极点配置",
+  "tex": "u=-Kx+v"
+ },
+ {
+  "id": "sp_05",
+  "name": "状态反馈与极点配置",
+  "tex": "\\det\\left(sI-A+BK\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^*)"
+ },
+ {
+  "id": "sp_06",
+  "name": "状态观测器设计",
+  "tex": "\\dot{\\hat{x}}=A\\hat{x}+Bu+L(y-C\\hat{x})"
+ },
+ {
+  "id": "sp_06",
+  "name": "状态观测器设计",
+  "tex": "\\det\\left(sI-A+LC\\right)=\\prod_{i=1}^{n}(s-\\lambda_i^{*})"
+ },
+ {
+  "id": "sp_07",
+  "name": "李雅普诺夫稳定性分析",
+  "tex": "A^TP+PA=-Q,\\quad Q=Q^T>0"
+ },
+ {
+  "id": "sp_07",
+  "name": "李雅普诺夫稳定性分析",
+  "tex": "V(x)=x^TPx>0,\\quad \\dot{V}(x)<0"
+ },
+ {
+  "id": "sp_08",
+  "name": "状态空间与传递函数的关系",
+  "tex": "G(s)=C(sI-A)^{-1}B+D"
+ },
+ {
+  "id": "sp_09",
+  "name": "状态反馈解耦",
+  "tex": "u=-Kx+Fv"
+ },
+ {
+  "id": "sp_09",
+  "name": "状态反馈解耦",
+  "tex": "E=\\begin{bmatrix}c_1A^{d_1}B\\\\c_2A^{d_2}B\\end{bmatrix}"
+ },
+ {
+  "id": "sp_09",
+  "name": "状态反馈解耦",
+  "tex": "G_c(s)=\\mathrm{diag}\\left(\\frac{1}{s^{d_1+1}},\\cdots,\\frac{1}{s^{d_m+1}}\\right)"
+ },
+ {
+  "id": "ed_01",
+  "name": "直流调速系统的调速指标",
+  "tex": "D=\\frac{n_{max}}{n_{min}}"
+ },
+ {
+  "id": "ed_01",
+  "name": "直流调速系统的调速指标",
+  "tex": "s=\\frac{\\Delta n}{n_0}"
+ },
+ {
+  "id": "ed_01",
+  "name": "直流调速系统的调速指标",
+  "tex": "\\Delta n=\\frac{n_N\\,s}{D\\,(1-s)}"
+ },
+ {
+  "id": "ed_02",
+  "name": "开环调速系统的机械特性",
+  "tex": "n=\\frac{U_{d0}-I_dR_\\Sigma}{C_e\\Phi}"
+ },
+ {
+  "id": "ed_02",
+  "name": "开环调速系统的机械特性",
+  "tex": "E_a=C_e\\Phi n"
+ },
+ {
+  "id": "ed_03",
+  "name": "转速负反馈单闭环调速系统",
+  "tex": "n=\\frac{U_n^*-I_dR_\\Sigma/(K_pK_s)}{C_e(1+K)}"
+ },
+ {
+  "id": "ed_03",
+  "name": "转速负反馈单闭环调速系统",
+  "tex": "K=K_pK_s\\alpha/C_e"
+ },
+ {
+  "id": "ed_03",
+  "name": "转速负反馈单闭环调速系统",
+  "tex": "\\Delta n_{闭环}=\\frac{\\Delta n_{开环}}{1+K}"
+ },
+ {
+  "id": "ed_04",
+  "name": "单闭环调速系统的动态结构图与稳定性",
+  "tex": "G_{cf}(s)=\\frac{K}{(T_ls+1)(T_ms+1)}"
+ },
+ {
+  "id": "ed_05",
+  "name": "转速电流双闭环调速系统",
+  "tex": "U_i^*=K_i\\,I_d"
+ },
+ {
+  "id": "ed_05",
+  "name": "转速电流双闭环调速系统",
+  "tex": "U_n^*=K_n\\,n"
+ },
+ {
+  "id": "ed_05",
+  "name": "转速电流双闭环调速系统",
+  "tex": "G_{ACR}(s)=K_p\\left(1+\\frac{1}{T_is}\\right)"
+ },
+ {
+  "id": "ed_06",
+  "name": "双闭环系统的起动过程",
+  "tex": "I_{dm}=\\lambda I_N"
+ },
+ {
+  "id": "ed_06",
+  "name": "双闭环系统的起动过程",
+  "tex": "\\frac{dn}{dt}=\\frac{I_{dm}R_\\Sigma}{C_eT_m}"
+ },
+ {
+  "id": "ed_07",
+  "name": "调节器的工程设计方法",
+  "tex": "K_T=0.5,\\quad \\sigma_i\\leqslant 5\\%"
+ },
+ {
+  "id": "ed_07",
+  "name": "调节器的工程设计方法",
+  "tex": "G_{ACR}(s)=K_p\\left(1+\\frac{1}{T_is}\\right)"
+ },
+ {
+  "id": "pc_02",
+  "name": "被控对象的动态特性",
+  "tex": "W_0(s)=\\frac{K}{Ts+1}e^{-\\tau s}"
+ },
+ {
+  "id": "pc_02",
+  "name": "被控对象的动态特性",
+  "tex": "K=\\frac{\\Delta y}{\\Delta x}"
+ },
+ {
+  "id": "pc_05",
+  "name": "前馈与比值控制",
+  "tex": "W_B(s)=-\\frac{W_d(s)}{W_0(s)}"
+ },
+ {
+  "id": "pc_05",
+  "name": "前馈与比值控制",
+  "tex": "K=\\frac{F_2}{F_1}"
+ },
+ {
+  "id": "pc_06",
+  "name": "测温仪表与热电偶冷端补偿",
+  "tex": "E(T,T_0)=E(T,0)-E(T_0,0)"
+ },
+ {
+  "id": "pc_06",
+  "name": "测温仪表与热电偶冷端补偿",
+  "tex": "E(T_1,0)-E(T_2,0)=E_A-E_B"
+ },
+ {
+  "id": "oc_01",
+  "name": "泛函极值与变分法",
+  "tex": "J=\\int_{t_0}^{t_f} L(x,\\dot{x},t)\\,dt"
+ },
+ {
+  "id": "oc_01",
+  "name": "泛函极值与变分法",
+  "tex": "\\frac{\\partial L}{\\partial x}-\\frac{d}{dt}\\left(\\frac{\\partial L}{\\partial \\dot{x}}\\right)=0"
+ },
+ {
+  "id": "oc_01",
+  "name": "泛函极值与变分法",
+  "tex": "L-\\dot{x}\\frac{\\partial L}{\\partial \\dot{x}}=C"
+ },
+ {
+  "id": "oc_02",
+  "name": "最优控制的极大值原理",
+  "tex": "H=L(x,u,t)+\\lambda^{T}f(x,u,t)"
+ },
+ {
+  "id": "oc_02",
+  "name": "最优控制的极大值原理",
+  "tex": "\\dot{\\lambda}=-\\frac{\\partial H}{\\partial x}"
+ },
+ {
+  "id": "oc_02",
+  "name": "最优控制的极大值原理",
+  "tex": "\\lambda(t_f)=0\\quad(\\text{终端自由})"
+ },
+ {
+  "id": "oc_03",
+  "name": "线性二次型最优控制",
+  "tex": "J=\\int_{0}^{\\infty}\\left(x^{T}Qx+u^{T}Ru\\right)dt"
+ },
+ {
+  "id": "oc_03",
+  "name": "线性二次型最优控制",
+  "tex": "A^{T}P+PA-PBR^{-1}B^{T}P+Q=0"
+ },
+ {
+  "id": "oc_03",
+  "name": "线性二次型最优控制",
+  "tex": "u^{*}=-R^{-1}B^{T}Px"
+ },
+ {
+  "id": "oc_04",
+  "name": "动态规划与离散最优控制",
+  "tex": "J=\\phi\\left[x(N)\\right]+\\sum_{k=0}^{N-1}L\\left[x(k),u(k)\\right]"
+ },
+ {
+  "id": "oc_04",
+  "name": "动态规划与离散最优控制",
+  "tex": "J_k^{*}=x^{T}(k)P_kx(k),\\quad u^{*}(k)=-\\left(R+B^{T}P_{k+1}B\\right)^{-1}B^{T}P_{k+1}Ax(k)"
+ },
+ {
+  "id": "oc_04",
+  "name": "动态规划与离散最优控制",
+  "tex": "P_k=Q+A^{T}P_{k+1}A-A^{T}P_{k+1}B\\left(R+B^{T}P_{k+1}B\\right)^{-1}B^{T}P_{k+1}A"
+ },
+ {
+  "id": "dl_01",
+  "name": "逻辑代数与卡诺图化简",
+  "tex": "F=\\sum m(\\cdot)+\\sum d(\\cdot)"
+ },
+ {
+  "id": "dl_01",
+  "name": "逻辑代数与卡诺图化简",
+  "tex": "A\\bar{B}+AB=A"
+ },
+ {
+  "id": "dl_02",
+  "name": "组合逻辑电路设计",
+  "tex": "S=A\\oplus B\\oplus C_i,\\quad C_o=AB+AC_i+BC_i"
+ },
+ {
+  "id": "dl_02",
+  "name": "组合逻辑电路设计",
+  "tex": "Y=\\sum m_i\\cdot D_i"
+ },
+ {
+  "id": "dl_03",
+  "name": "触发器与波形分析",
+  "tex": "Q^{n+1}=J\\bar{Q}^{n}+\\bar{K}Q^{n}"
+ },
+ {
+  "id": "dl_03",
+  "name": "触发器与波形分析",
+  "tex": "Q^{n+1}=D"
+ },
+ {
+  "id": "dl_04",
+  "name": "时序逻辑与计数器",
+  "tex": "Q^{n+1}=f\\left(Q^{n},X\\right)"
+ },
+ {
+  "id": "dl_04",
+  "name": "时序逻辑与计数器",
+  "tex": "N=2^{n}\\quad(\\text{n 位二进制})"
+ },
+ {
+  "id": "dl_05",
+  "name": "脉冲波形产生与整形",
+  "tex": "T=0.69\\left(R_1+2R_2\\right)C"
+ },
+ {
+  "id": "dl_05",
+  "name": "脉冲波形产生与整形",
+  "tex": "t_w=1.1RC"
+ },
+ {
+  "id": "dl_06",
+  "name": "数模与模数转换器",
+  "tex": "\\Delta=\\frac{U_{FS}}{2^{n}-1}"
+ },
+ {
+  "id": "dl_06",
+  "name": "数模与模数转换器",
+  "tex": "\\varepsilon\\le\\frac{1}{2}\\Delta"
+ },
+ {
+  "id": "bc_02",
+  "name": "典型输入信号",
+  "tex": "L\\left[\\delta(t)\\right]=1"
+ },
+ {
+  "id": "bc_02",
+  "name": "典型输入信号",
+  "tex": "L\\left[1(t)\\right]=\\frac{1}{s},\\quad L\\left[t\\right]=\\frac{1}{s^{2}}"
+ },
+ {
+  "id": "bc_03",
+  "name": "线性微分方程的时域求解与全响应",
+  "tex": "y(t)=y_{zi}(t)+y_{zs}(t)"
+ },
+ {
+  "id": "bc_03",
+  "name": "线性微分方程的时域求解与全响应",
+  "tex": "\\left(s^{2}+a_1s+a_0\\right)Y(s)=b_1s+b_0+B\\left(s\\right)"
+ },
+ {
+  "id": "bc_04",
+  "name": "信号采样与频谱的基本概念",
+  "tex": "X_s(j\\omega)=\\frac{1}{T}\\sum_{k=-\\infty}^{+\\infty}X\\left[j(\\omega-k\\omega_s)\\right]"
+ },
+ {
+  "id": "bc_04",
+  "name": "信号采样与频谱的基本概念",
+  "tex": "\\omega_s=\\frac{2\\pi}{T}\\ge 2\\omega_{max}"
+ }
+]

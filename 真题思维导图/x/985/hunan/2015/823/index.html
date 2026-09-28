@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>湖南大学 823 自动控制理论（含现控） 2015 年真题思维导图</title>
+<meta name="description" content="湖南大学 2015 年 823 自动控制理论（含现控） 考研真题思维导图：共 8 个大题，逐题思路、考点与易错整理。第一题（结构图求给定与扰动传函）；第二题（斜坡误差与扰动误差的控制器设计）；第三题（三阶系统极点分布与响应）；第四题（两系统根轨迹绘制与稳定性比较）；第五题（导弹角度系统控制器设计）；第六题（由奈氏判据判断系统稳定性）">
+<link rel="canonical" href="http://127.0.0.1:8768/真题思维导图/x/985/hunan/2015/823/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="湖南大学 823 自动控制理论（含现控） 2015 年真题思维导图">
+<meta property="og:description" content="湖南大学 2015 年 823 自动控制理论（含现控） 考研真题思维导图：共 8 个大题，逐题思路、考点与易错整理。第一题（结构图求给定与扰动传函）；第二题（斜坡误差与扰动误差的控制器设计）；第三题（三阶系统极点分布与响应）；第四题（两系统根轨迹绘制与稳定性比较）；第五题（导弹角度系统控制器设计）；第六题（由奈氏判据判断系统稳定性）">
+<meta name="theme-color" content="#1f4e79">
+<link rel="stylesheet" href="../../../../../assets/kg.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "湖南大学 823 自动控制理论（含现控） 2015 年真题思维导图", "inLanguage": "zh-CN", "about": ["与虚轴的交点及临界参数", "典型输入下的稳态误差计算", "劳斯判据", "多输入与扰动作用下的传递函数", "奈奎斯特判据", "广义根轨迹与参数根轨迹", "扰动作用下的稳态误差", "根轨迹的绘制法则", "梅森增益公式与信号流图", "由性能指标要求反求参数"], "educationalLevel": "985 院校", "url": "http://127.0.0.1:8768/真题思维导图/x/985/hunan/2015/823/"}</script>
+</head>
+<body class="page-set">
+<header class="site-head"><div class="inner"><a class="parent-home" href="../../../../../../index.html"><span class="arr">←</span><span class="ptxt">择校首页</span></a><a class="brand" href="../../../../../"><span class="full">控制考研真题思维导图</span><span class="short">真题思维导图</span></a><button class="sbtn" id="kg-search-btn" type="button" aria-label="搜索"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button><nav class="crumbs"><a href="../../../../../x/985/">985 院校</a><span class="sep">›</span><a href="../../../../../x/985/hunan/">湖南大学</a><span class="sep">›</span><span>2015 年</span></nav><nav class="levelnav" aria-label="层级导航"><a class="lv home" href="../../../../../">首页</a><a class="lv" href="../../../../../x/985/hunan/">← 湖南大学</a><a class="lv" href="#q1">第 1 题 →</a></nav><input class="head-inp" id="site-q" type="search" placeholder="搜学校 / 代码 / 年份" aria-label="搜索"></div></header>
+<main class="wrap">
+<div class="titlebar"><img class="hlogo" src="../../../../../assets/logo/hunan.jpg" alt="湖南大学校徽" width="52" height="52"><h1>湖南大学 823 自动控制理论（含现控） 2015 年真题思维导图</h1><div class="actions"><button class="btn" data-mode="outline">大纲</button><button class="btn on" data-mode="map">导图</button><button class="btn" id="btn-full">全屏</button></div></div>
+<div class="tagrow"><span class="badge t985">985 院校</span><span class="badge">共 8 题</span></div>
+<p class="sub muted tiny" style="margin:8px 0 0">难度：中等　八道大题覆盖结构图多输入传函、控制器设计与扰动不变性、三阶极点分布与响应、两系统根轨迹比较、含右半平面极点对象的控制器设计、奈氏判据、以 a 为参数的根轨迹、离散系统稳定性与斜坡误差</p>
+<div class="qtabs" id="qtabs"><button class="qt on" data-q="all">整卷</button><button class="qt" data-q="1">一</button><button class="qt" data-q="2">二</button><button class="qt" data-q="3">三</button><button class="qt" data-q="4">四</button><button class="qt" data-q="5">五</button><button class="qt" data-q="6">六</button><button class="qt" data-q="7">七</button><button class="qt" data-q="8">八</button></div>
+<div class="cols"><div class="mainpane">
+<div class="mapwrap" id="mapwrap">
+<div class="maptools">
+<button class="btn on" data-depth="1">板块</button>
+<button class="btn" data-depth="2">考点</button>
+<button class="btn" data-depth="99">全部</button>
+<button class="btn" data-zoom="in" title="放大">＋</button>
+<button class="btn" data-zoom="out" title="缩小">－</button>
+<button class="btn" data-fit="1">适应</button>
+<button class="btn" id="btn-exitfs" hidden>退出全屏</button>
+<input id="map-q" type="search" placeholder="图内搜索">
+</div>
+<svg id="svg"><g id="g"></g></svg>
+<div class="map-foot">点击节点展开/折叠　·　滚轮缩放　·　拖拽平移</div>
+</div>
+<section class="content" id="content">
+<article class="qcard" id="q1" data-q="1">
+<h2><span class="no">一</span><span>结构图求给定与扰动传函</span><a class="anchorlink" data-q="1" href="#q1" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由结构图分别令一路输入为零，用梅森公式求两条通道的输出传函</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/tf_04/">梅森增益公式与信号流图</a>
+<span class="tiny muted">传递函数</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由多回路结构图用梅森公式求闭环传函</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先数出全部单独回路并判断哪些互不接触</li>
+<li><b>中间结果：</b>两条通道的分子由各自前向通路与余子式组成</li>
+<li><b>卡点：</b>回路与前向通路的接法需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>信号流图适合处理多回路、比较点复杂系统</li><li>特征式 Δ=1-ΣL+ΣLL-ΣLLL+…</li><li>每条前向通路的余子式要剔除与它接触的回路</li><li>不接触回路才会计入高阶乘积项</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>由结构图改画信号流图，标出各节点</li><li>找出全部单独回路，求特征式 Δ</li><li>找出全部前向通路 P_k</li><li>对每条通路求余子式 Δ_k</li><li>代入公式求总传输</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由多回路结构图用梅森公式求闭环传函</li><li>由信号流图求 C(s)/R(s)</li><li>结构图先用梅森公式化简再作性能分析</li><li>判断某条回路是否与给定前向通路接触</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>余子式中未剔除与通路接触的回路</li><li>不接触回路找漏或重复计数</li><li>余子式中未剔除与通路接触的回路</li><li>把前向通路的增益写成了回路增益</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="P=\frac{1}{\Delta}\sum_k P_k\Delta_k"></div><div class="formula" data-tex="\Delta=1-\sum L_a+\sum L_aL_b-\sum L_aL_bL_c+\cdots"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/bd_04/">多输入与扰动作用下的传递函数</a>
+<span class="tiny muted">结构图与方框图</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>分别求给定输入与扰动作用下的输出传函</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>每次只保留一路输入，其余输入置零</li>
+<li><b>中间结果：</b>两条通道共用同一个特征式</li>
+<li><b>卡点：</b>扰动注入点的接入位置需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>线性系统可用叠加原理，每次只保留一个输入</li><li>求扰动的传递函数时令参考输入为零</li><li>扰动误差与输入误差分别计算后再叠加</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>令 R(s)=0，求扰动到输出的传递函数</li><li>令 N(s)=0，求输入到输出的传递函数</li><li>按题目要求叠加或单独分析</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>分别求给定输入与扰动作用下的输出传函</li><li>求扰动引起的输出或误差</li><li>分析满足扰动不变性的补偿条件</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>求扰动传函时没有把参考输入置零</li><li>两个输入同时存在时直接叠加却未验证系统的线性性</li><li>求扰动传函时没有把参考输入置零</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\frac{C(s)}{N(s)}=\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q2" data-q="2">
+<h2><span class="no">二</span><span>斜坡误差与扰动误差的控制器设计</span><a class="anchorlink" data-q="2" href="#q2" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由结构图写误差传函，用终值定理把斜坡误差与阶跃扰动误差要求化为控制器参数条件</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ss_03/">典型输入下的稳态误差计算</a>
+<span class="tiny muted">稳态误差</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由单位斜坡输入的稳态误差要求反求比例增益</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先由开环型别写出速度误差系数与增益的关系</li>
+<li><b>中间结果：</b>误差要求化为关于比例增益的一个等式</li>
+<li><b>卡点：</b>控制器与误差信号的接法需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>稳态误差由系统型别与输入类型共同决定</li><li>0 型对阶跃有差、Ⅰ型对斜坡有差、Ⅱ型对加速度有差</li><li>低型别系统对高阶输入的误差为无穷大</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>判断系统型别并联立稳定性检查</li><li>写出输入信号的拉氏变换</li><li>用终值定理求 e_ss，或直接查表</li><li>必要时按叠加原理分别计算各分量</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由单位斜坡输入的稳态误差要求反求比例增益</li><li>求给定输入下的稳态误差</li><li>由稳态误差要求反求开环增益</li><li>比较不同型别系统的跟踪能力</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>未判稳就使用终值定理</li><li>未判稳就使用终值定理</li><li>输入为组合信号时漏掉某一分量</li><li>Ⅰ型系统求阶跃误差时误代入速度误差公式</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="e_{ss}=\lim_{s\to0}sE(s)"></div><div class="formula" data-tex="e_{ss}=\frac{R_0}{1+K_p},\quad e_{ss}=\frac{v_0}{K_v},\quad e_{ss}=\frac{a_0}{K_a}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ss_04/">扰动作用下的稳态误差</a>
+<span class="tiny muted">稳态误差</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>设计控制器使阶跃扰动下的稳态误差为零</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>令参考输入为零，单独写扰动到误差的传函</li>
+<li><b>中间结果：</b>按扰动不变性原理给出控制器应含的环节</li>
+<li><b>卡点：</b>扰动注入点与控制器位置需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>扰动误差与输入误差必须分开计算再叠加</li><li>扰动误差取决于扰动作用点到误差点的传递函数</li><li>增大扰动点前的增益可减小扰动误差</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>令参考输入为零，求扰动到误差的传递函数</li><li>代入扰动信号求稳态值</li><li>与输入引起的误差叠加</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>设计控制器使阶跃扰动下的稳态误差为零</li><li>求扰动引起的稳态误差</li><li>比较扰动与输入对误差的不同影响</li><li>分析提高前向增益的作用</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>把扰动误差直接当作总误差，遗漏输入分量</li><li>把扰动误差直接当作总误差，遗漏输入分量</li><li>求扰动传函时没有把参考输入置零</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="e_{ssn}=\lim_{s\to0}s\,\Phi_{en}(s)N(s)"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q3" data-q="3">
+<h2><span class="no">三</span><span>三阶系统极点分布与响应</span><a class="anchorlink" data-q="3" href="#q3" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由极点分布写闭环传函并分解部分分式，分析主导极点的作用，再给仿真语句</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/tf_05/">零极点分布与响应模态</a>
+<span class="tiny muted">传递函数</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由极点分布写出单位阶跃响应的大致形式</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把闭环传函按极点做部分分式展开再取拉氏反变换</li>
+<li><b>中间结果：</b>响应由各极点对应指数或衰减振荡项叠加</li>
+<li><b>卡点：</b>极点坐标需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>极点决定响应由哪些模态组成，零点决定各模态的权重</li><li>左半平面极点对应衰减，右半平面对应发散，虚轴对应等幅振荡</li><li>离虚轴最近的极点为主导极点，主导响应的形状</li><li>共轭复极点产生振荡，实极点产生单调分量</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>求特征方程得到全部闭环极点</li><li>按实数/共轭复数分类，写出对应模态</li><li>找出主导极点对，近似为低阶系统</li><li>结合零点判断各模态权重大小</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由极点分布写出单位阶跃响应的大致形式</li><li>由极点分布写出响应的大致形式</li><li>判断系统是单调还是振荡、是否收敛</li><li>用主导极点概念把高阶系统近似为二阶系统</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>只看极点分布就断定振荡，忽略零点引起的模态权重为零</li><li>只看极点分布就断定振荡，忽略零点引起的模态权重为零</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="c(t)=\sum_k A_k e^{p_k t},\quad e^{-\sigma t}\cos(\omega t+\varphi)"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/td_04/">高阶系统的降阶与主导极点</a>
+<span class="tiny muted">时域响应与动态性能</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由极点位置判断主导极点并说明对响应的影响</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>比较各极点到虚轴的距离判断哪一对起主导作用</li>
+<li><b>中间结果：</b>靠近虚轴的极点对应衰减较慢的模态</li>
+<li><b>卡点：</b>主导极点最终要由留数大小判定</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>离虚轴最近的极点起主导作用，其余极点对应快速衰减分量</li><li>闭环零点会增大超调、缩短峰值时间</li><li>极点实部相差 5 倍以上时可按主导极点降阶</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>求出全部闭环极点并按距虚轴远近排序</li><li>用主导极点对近似为二阶系统</li><li>用零点修正式修正超调量与峰值时间</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由极点位置判断主导极点并说明对响应的影响</li><li>把高阶系统近似为二阶系统并估算性能指标</li><li>判断附加闭环零点对超调量的影响</li><li>说明某极点能否忽略的理由</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>只看极点距离而不管该极点的留数大小</li><li>忽略零点对超调量的放大作用</li><li>只看极点距离而不管该极点的留数大小</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\sigma\%=\sigma\%_0\cdot\sqrt{1+\left(\frac{1}{z_r}\right)^2}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q4" data-q="4">
+<h2><span class="no">四</span><span>两系统根轨迹绘制与稳定性比较</span><a class="anchorlink" data-q="4" href="#q4" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由两组开环零极点分布分别按法则画概略根轨迹，再比较穿越虚轴时的临界增益</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_02/">根轨迹的绘制法则</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由开环零极点分布绘制概略根轨迹</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先标出零极点再按右侧零极点个数判断实轴根轨迹段</li>
+<li><b>中间结果：</b>渐近线条数与夹角由极点数减零点数确定</li>
+<li><b>卡点：</b>两组零极点的分布需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>起于开环极点、终于开环零点（无穷远零点），分支数等于极点数 n</li><li>实轴上某段右侧的零极点总数为奇数时，该段属于根轨迹</li><li>渐近线条数为 n-m，交点在实轴上，与实轴夹角等分 360°</li><li>根轨迹关于实轴对称</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>标出全部开环零极点并判断实轴上的根轨迹段</li><li>计算渐近线交点与夹角</li><li>求出分离点、出射角、与虚轴交点</li><li>按对称性连接各段并标出对应 K 值</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由开环零极点分布绘制概略根轨迹</li><li>按法则绘制根轨迹草图</li><li>指出渐近线条数与夹角</li><li>判断某段实轴是否属于根轨迹</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>实轴段判据中的零极点个数算错</li><li>实轴段判据中的零极点个数算错</li><li>渐近线夹角公式中的 2k+1 写成 2k</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\sigma_a=\frac{\sum p_j-\sum z_i}{n-m}"></div><div class="formula" data-tex="\varphi_a=\frac{(2k+1)180^\circ}{n-m}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_05/">与虚轴的交点及临界参数</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由根轨迹与虚轴的关系比较两系统的稳定性</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>比较两条根轨迹穿越虚轴时对应的临界增益</li>
+<li><b>中间结果：</b>穿越方向决定稳定增益区间是否为空</li>
+<li><b>卡点：</b>根轨迹形状需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>根轨迹与虚轴的交点对应系统临界稳定</li><li>可用劳斯判据令首列为零，或令 s=jω 代入特征方程求解</li><li>交点处的 K 是使系统稳定的临界增益</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>把 s=jω 代入闭环特征方程</li><li>令实部与虚部分别为零，得到两个方程</li><li>联立解出 ω 与 K</li><li>结合实轴段信息确定根轨迹穿越方向</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由根轨迹与虚轴的关系比较两系统的稳定性</li><li>求根轨迹与虚轴的交点及临界增益</li><li>确定系统稳定时 K 的取值范围</li><li>判断根轨迹穿越虚轴的方向</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>只代一个频率值就下结论</li><li>只代一个 ω 就下结论，漏掉另一组交点</li><li>得到 K 后没有回到原题核对参数定义</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="1+KG_0(j\omega)=0"></div><div class="formula" data-tex="\operatorname{Re}[\cdot]=0,\quad \operatorname{Im}[\cdot]=0"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q5" data-q="5">
+<h2><span class="no">五</span><span>导弹角度系统控制器设计</span><a class="anchorlink" data-q="5" href="#q5" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由含右半平面极点的对象列特征方程，分别用比例控制器、带零点控制器与 PD 控制器设计</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/st_01/">劳斯判据</a>
+<span class="tiny muted">稳定性分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用劳斯判据判断比例控制器能否使系统稳定</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>写出闭环特征方程后用劳斯表判断首列是否变号</li>
+<li><b>中间结果：</b>比例控制下首列出现变号说明不能稳定</li>
+<li><b>卡点：</b>控制器接入位置需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>特征方程各项系数全为正只是必要条件，不充分</li><li>劳斯表首列元素全部同号 ⇔ 系统稳定</li><li>首列符号变化次数等于右半平面闭环极点数</li><li>首列出现 0 时需用 ε 法或乘辅助多项式处理</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出闭环特征方程并整理成降幂排列</li><li>若某次幂系数缺项，该项补零</li><li>列劳斯表：前两行为系数，之后各行按交叉相减</li><li>检查首列符号：全同号则稳定，有变号则数出个数</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用劳斯判据判断比例控制器能否使系统稳定</li><li>判断给定系统的稳定性</li><li>指出右半平面闭环极点的个数</li><li>求使系统稳定的参数范围</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>系数有缺项时不补零，直接套用判据</li><li>系数有缺项时不补零，直接套用判据</li><li>首列出现 0 后仍按常规继续算，未用 ε 法</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="1+G(s)H(s)=0"></div><div class="formula" data-tex="a_ns^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0=0"></div><div class="formula" data-tex="b_1=\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_08/">附加开环零极点的影响</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>分析控制器引入的零点与对象右半平面极点对消的实际稳定性</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把控制器零点并入开环后重新判断实轴段与渐近线</li>
+<li><b>中间结果：</b>约分后传函看着稳定，被约掉的右半平面模态仍存在</li>
+<li><b>卡点：</b>要说明对消后是否真正实际稳定而非表面稳定</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>增加开环零点使根轨迹左移，改善稳定性</li><li>增加开环极点使根轨迹右移，恶化稳定性</li><li>附加零点会改变分离点位置与渐近线走向</li><li>增加极点还可能是系统结构不稳定</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>对比增加前后零极点分布</li><li>重新判断实轴段与渐近线</li><li>分析根轨迹整体移动方向</li><li>据此说明对稳定性和动态性能的影响</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>分析控制器引入的零点与对象右半平面极点对消的实际稳定性</li><li>说明附加零点对根轨迹形状的影响</li><li>判断增加极点后系统是否仍稳定</li><li>分析为何某系统需要引入零点</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>把附加零点的影响与附加极点的影响搞反</li><li>只讨论渐近线是否左移右移，忽略分离点变化</li><li>把附加零点的影响与附加极点的影响搞反</li></ul></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/td_05/">由性能指标要求反求参数</a>
+<span class="tiny muted">时域响应与动态性能</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由阻尼比与调节时间要求反求 PD 控制器参数</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把调节时间要求化为阻尼比乘自然频率的定值</li>
+<li><b>中间结果：</b>由标准二阶系数关系联立解出两个控制器参数</li>
+<li><b>卡点：</b>阻尼比与阻尼角之间要用余弦关系换算</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>超调量要求给出 ξ 的下界，调节时间要求给出 ξωn 的下界</li><li>多个指标同时给出时需求参数可同时满足的公共区域</li><li>指标之间往往相互制约，需权衡取舍</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>把每个指标要求翻译成对 ξ 或 ωn 的不等式</li><li>在参数平面上画出各不等式的可行域</li><li>取交集并选取合适的参数值</li><li>回代验证全部指标是否满足</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由阻尼比与调节时间要求反求 PD 控制器参数</li><li>由超调量和调节时间要求设计开环增益与阻尼</li><li>求满足指标要求的参数取值范围</li><li>判断给定指标组合是否可实现</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>只满足单项指标就下结论，未做交叉验证</li><li>只满足单项指标就下结论，未做交叉验证</li><li>把 ξ 的可行域方向取反</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\xi\ge\xi_{min},\quad \xi\omega_n\ge\frac{3.5}{t_s}"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q6" data-q="6">
+<h2><span class="no">六</span><span>由奈氏判据判断系统稳定性</span><a class="anchorlink" data-q="6" href="#q6" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由开环传函写幅相表达式，先数右半平面极点数再按包围关系判稳</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/st_04/">奈奎斯特判据</a>
+<span class="tiny muted">稳定性分析</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>用奈奎斯特判据判断含右半平面极点的系统稳定性</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先确定开环右半平面极点个数与幅相曲线包围情况</li>
+<li><b>中间结果：</b>由包围圈数与右半平面极点数关系算出闭环右半平面极点数</li>
+<li><b>卡点：</b>曲线与负实轴交点随增益变化，要按增益分段讨论</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>闭环稳定 ⇔ Z=N+P，其中 Z 为右半平面闭环极点数</li><li>P 为开环右半平面极点数，须先数清楚</li><li>N 为开环幅相曲线绕 (-1,j0) 点的净包围圈数</li><li>逆时针包围为正，顺时针为负</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>先求开环极点，数出右半平面个数 P</li><li>绘制开环幅相特性曲线（或利用 Bode 图判稳）</li><li>数出曲线对 (-1,j0) 点的包围圈数 N</li><li>由 Z=N+P 判断闭环稳定性</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>用奈奎斯特判据判断含右半平面极点的系统稳定性</li><li>由开环幅相曲线判断闭环稳定性</li><li>求使闭环稳定的开环增益范围</li><li>判断补画虚轴绕行后曲线的包围情况</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>没有先数开环右半平面极点数</li><li>开环含有积分环节时未补画无穷大半径圆弧</li><li>把包围圈数的正负号定义搞反</li><li>没有先数开环右半平面极点数 P</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="Z=N+P"></div><div class="formula" data-tex="N=N_+-N_-"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q7" data-q="7">
+<h2><span class="no">七</span><span>以参数 a 为变量的根轨迹</span><a class="anchorlink" data-q="7" href="#q7" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">把特征方程整理成以 a 为参数的形式，按广义根轨迹法则绘制，再由给定闭环极点反求参数</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_06/">广义根轨迹与参数根轨迹</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>以时间常数或其他参数为变量绘制参数根轨迹</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把含参数项提到分子，写成等效开环传函形式</li>
+<li><b>中间结果：</b>等效开环的极点由不含参数项的特征方程给出</li>
+<li><b>卡点：</b>等效开环的零极点位置要重新数</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>可变参数不是开环增益时称为参数根轨迹</li><li>方法是用等效开环传递函数把参数提到标准位置</li><li>正反馈系统或零度根轨迹的相角条件是 0°+360°l</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>把特征方程整理成 1+αG*(s)=0 的形式</li><li>把 α 以外部分视为等效开环传递函数</li><li>按常规根轨迹法则绘制</li><li>注意相角条件是否变成 0°</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>以时间常数或其他参数为变量绘制参数根轨迹</li><li>以时间常数或其他参数为变量绘制根轨迹</li><li>绘制正反馈系统的零度根轨迹</li><li>比较零度与 180 度根轨迹的差别</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>整理时没有把参数完整地提到分子位置</li><li>整理时没有把参数完整地提到分子位置</li><li>零度根轨迹仍沿用 180° 相角条件</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="1+\alpha G^*(s)=0"></div><div class="formula" data-tex="\sum\angle(s-z_i)-\sum\angle(s-p_j)=0^\circ+360^\circ l"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/rl_07/">由根轨迹分析性能与确定参数</a>
+<span class="tiny muted">根轨迹法</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>由给定闭环极点反求两个参数取值</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>把给定闭环极点代入特征方程并令实部虚部分别为零</li>
+<li><b>中间结果：</b>由实部虚部两个方程联立解出两个参数</li>
+<li><b>卡点：</b>给定的是共轭极点，只需代入其中一个</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>闭环极点位置直接决定 ξ、ωn 与动态指标</li><li>等阻尼线是从原点出发的射线，等 ωn 线是以原点为心的圆</li><li>给定阻尼比要求时，极点落在等阻尼线上</li><li>增益增大一般使系统响应加快但振荡加剧</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>在 s 平面上画出等阻尼线或等 ωn 圆</li><li>求其与根轨迹的交点</li><li>由幅值条件求出交点对应的参数</li><li>由极点位置估算动态性能</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>由给定闭环极点反求两个参数取值</li><li>求满足给定阻尼比的参数值</li><li>由闭环极点位置估算超调量与调节时间</li><li>分析提高增益对性能的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>把等阻尼线画成了垂直线</li><li>把等阻尼线画成了垂直线</li><li>由极点位置估指标时忽略零点的作用</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="\xi=\cos\beta,\quad \omega_n=|s|"></div></div></details>
+</div>
+</article>
+<article class="qcard" id="q8" data-q="8">
+<h2><span class="no">八</span><span>离散系统稳定性与斜坡稳态误差</span><a class="anchorlink" data-q="8" href="#q8" title="单独看这一题">#</a></h2>
+<div class="kv">
+<div class="k">思路</div><ul>
+<li class="idea">由框图写开环脉冲传函，求闭环特征根判断稳定性，再用终值定理求斜坡输入下的稳态误差</li>
+</ul>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ds_04/">离散系统稳定性分析</a>
+<span class="tiny muted">离散控制系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>判断离散系统稳定性并求使系统稳定的参数范围</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>写出闭环特征方程并令特征根的模小于一</li>
+<li><b>中间结果：</b>稳定范围由特征根落在单位圆内约束</li>
+<li><b>卡点：</b>采样开关与保持器的位置需回原卷核对图</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>闭环脉冲传函的极点全部位于 z 平面单位圆内则稳定</li><li>可直接求解特征根，也可用朱里判据或 w 变换后套劳斯判据</li><li>w 变换把单位圆内映射到左半平面</li><li>采样周期增大会使稳定性变差</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>写出闭环脉冲传递函数的特征方程</li><li>选择方法：求根、朱里判据或 w 变换后用劳斯判据</li><li>对含参数的系统求使稳定成立的参数范围</li><li>必要时分析采样周期对稳定域的影响</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>判断离散系统稳定性并求使系统稳定的参数范围</li><li>判断离散系统是否稳定</li><li>求使系统稳定的采样周期或增益范围</li><li>用 w 变换后套用劳斯判据</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>把稳定条件写成实部小于零而不是模小于 1</li><li>把稳定条件写成实部小于零而不是模小于 1</li><li>w 变换公式记错导致映射关系颠倒</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="|z_i|&lt;1"></div><div class="formula" data-tex="z=\frac{1+w}{1-w}\quad (w\ \text{变换})"></div></div></details>
+</div>
+<div class="kpbox">
+<div class="kptitle">
+<a href="../../../../../k/ds_05/">离散系统的稳态误差</a>
+<span class="tiny muted">离散控制系统</span>
+</div>
+<div class="kpb"><div class="lab">本卷考法</div><ul>
+<li>求离散系统在斜坡输入下的稳态误差</li>
+</ul></div>
+<div class="kpb"><div class="lab">本卷实例</div><ul>
+<li><b>关键一步：</b>先判稳，再由误差脉冲传函与输入的 z 变换用终值定理</li>
+<li><b>中间结果：</b>由速度误差系数在 z 域的定义求斜坡误差</li>
+<li><b>卡点：</b>采样周期要代入脉冲传函</li>
+</ul></div>
+<details class="kpdetail" open><summary>考点详解（要点 / 步骤 / 公式 / 考法 / 易错）</summary><div class="kpsec"><div class="lab">要点</div><ul><li>误差由输入类型与开环脉冲传函中 z=1 处极点的个数决定</li><li>型别由 G(z)H(z) 中 z=1 处极点的重数确定</li><li>用终值定理求稳态误差，前提是系统稳定</li><li>采样周期也影响稳态误差大小</li></ul></div><div class="kpsec"><div class="lab">步骤</div><ul><li>求误差脉冲传递函数</li><li>数出 z=1 处极点重数确定型别</li><li>查表或用终值定理求稳态误差</li><li>分析采样周期变化对误差的影响</li></ul></div><div class="kpsec"><div class="lab">通用考法</div><ul><li><span class="ownmark">本卷考过</span>求离散系统在斜坡输入下的稳态误差</li><li>求离散系统在典型输入下的稳态误差</li><li>由稳态误差要求反求开环增益</li><li>分析采样周期对稳态精度的影响</li></ul></div><div class="kpsec"><div class="lab">常见易错</div><ul><li><span class="ownmark">本卷考过</span>直接用 s 域静态误差系数公式处理离散系统</li><li>直接用 s 域静态误差系数公式处理离散系统</li><li>未判稳就用终值定理</li></ul></div><div class="kpsec"><div class="lab">公式</div><div class="formula" data-tex="e_{ss}=\lim_{z\to1}(1-z^{-1})E(z)"></div><div class="formula" data-tex="K_p=\lim_{z\to1}G(z)H(z)"></div></div></details>
+</div>
+</article>
+</section></div><aside class="side">
+<div class="card"><h3>本卷考点</h3><div class="kplist"><a class="kplink" href="../../../../../k/tf_04/" title="考点编号 tf_04"><span class="ktag">传递函数</span><span>梅森增益公式与信号流图</span></a><a class="kplink" href="../../../../../k/bd_04/" title="考点编号 bd_04"><span class="ktag">结构图与方框图</span><span>多输入与扰动作用下的传递函数</span></a><a class="kplink" href="../../../../../k/ss_03/" title="考点编号 ss_03"><span class="ktag">稳态误差</span><span>典型输入下的稳态误差计算</span></a><a class="kplink" href="../../../../../k/ss_04/" title="考点编号 ss_04"><span class="ktag">稳态误差</span><span>扰动作用下的稳态误差</span></a><a class="kplink" href="../../../../../k/tf_05/" title="考点编号 tf_05"><span class="ktag">传递函数</span><span>零极点分布与响应模态</span></a><a class="kplink" href="../../../../../k/td_04/" title="考点编号 td_04"><span class="ktag">时域响应与动态性能</span><span>高阶系统的降阶与主导极点</span></a><a class="kplink" href="../../../../../k/rl_02/" title="考点编号 rl_02"><span class="ktag">根轨迹法</span><span>根轨迹的绘制法则</span></a><a class="kplink" href="../../../../../k/rl_05/" title="考点编号 rl_05"><span class="ktag">根轨迹法</span><span>与虚轴的交点及临界参数</span></a><a class="kplink" href="../../../../../k/st_01/" title="考点编号 st_01"><span class="ktag">稳定性分析</span><span>劳斯判据</span></a><a class="kplink" href="../../../../../k/rl_08/" title="考点编号 rl_08"><span class="ktag">根轨迹法</span><span>附加开环零极点的影响</span></a><a class="kplink" href="../../../../../k/td_05/" title="考点编号 td_05"><span class="ktag">时域响应与动态性能</span><span>由性能指标要求反求参数</span></a><a class="kplink" href="../../../../../k/st_04/" title="考点编号 st_04"><span class="ktag">稳定性分析</span><span>奈奎斯特判据</span></a><a class="kplink" href="../../../../../k/rl_06/" title="考点编号 rl_06"><span class="ktag">根轨迹法</span><span>广义根轨迹与参数根轨迹</span></a><a class="kplink" href="../../../../../k/rl_07/" title="考点编号 rl_07"><span class="ktag">根轨迹法</span><span>由根轨迹分析性能与确定参数</span></a><a class="kplink" href="../../../../../k/ds_04/" title="考点编号 ds_04"><span class="ktag">离散控制系统</span><span>离散系统稳定性分析</span></a><a class="kplink" href="../../../../../k/ds_05/" title="考点编号 ds_05"><span class="ktag">离散控制系统</span><span>离散系统的稳态误差</span></a></div></div>
+<div class="card"><h3>湖南大学 其它年份</h3><div class="navlist"><a class="yearchip" href="../../2016/823/">2016 <span class="n">8题</span></a><a class="yearchip" href="../../2017/823/">2017 <span class="n">7题</span></a><a class="yearchip" href="../../2018/823/">2018 <span class="n">7题</span></a><a class="yearchip" href="../../2020/823/">2020 <span class="n">7题</span></a><a class="yearchip" href="../../2023/823/">2023 <span class="n">7题</span></a><a class="yearchip" href="../../2024/823/">2024 <span class="n">7题</span></a><a class="yearchip" href="../../2025/823/">2025 <span class="n">7题</span></a></div></div>
+<div class="card"><h3>上下年份</h3><div class="navlist"><a class="yearchip" href="../../2016/823/">2016 →</a></div></div>
+</aside></div>
+</main>
+<footer class="site-foot"><div class="inner"><span>导图内容为本站原创整理，欢迎交流指正</span></div></footer>
+<script type="application/json" id="kg-data">{"base":"../../../../../","key":"湖南大学_823_2015","full":{"label":"湖南大学 823","type":"root","sub":"2015 · 自动控制理论（含现控）","children":[{"label":"难度：中等　特点：八道大题覆盖结构图多输入传函、控制器设计与扰动不变性、三阶极点分布与响应、两系统根轨迹比较、含右半平面极点对象的控制器设计、奈氏判据、以 a 为参数的根轨迹、离散系统稳定性与斜坡误差　重点：结构图多输入与扰动传函、含右半平面极点对象的控制器设…","type":"warn"},{"label":"结构图求给定与扰动传函　〔第一题〕","type":"block","children":[{"label":"由结构图分别令一路输入为零，用梅森公式求两条通道的输出传函","type":"idea"},{"label":"梅森增益公式与信号流图","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先数出全部单独回路并判断哪些互不接触","type":"k1"},{"label":"两条通道的分子由各自前向通路与余子式组成","type":"k2"},{"label":"回路与前向通路的接法需回原卷核对图","type":"k3"}]},{"label":"信号流图适合处理多回路、比较点复杂系统","type":"yd"},{"label":"特征式 Δ=1-ΣL+ΣLL-ΣLLL+…","type":"yd"},{"label":"每条前向通路的余子式要剔除与它接触的回路","type":"yd"},{"label":"不接触回路才会计入高阶乘积项","type":"yd"},{"label":"由结构图改画信号流图，标出各节点","type":"bz"},{"label":"找出全部单独回路，求特征式 Δ","type":"bz"},{"label":"找出全部前向通路 P_k","type":"bz"},{"label":"对每条通路求余子式 Δ_k","type":"bz"},{"label":"代入公式求总传输","type":"bz"},{"label":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k","type":"fm","tex":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k"},{"label":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots","type":"fm","tex":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots"},{"label":"由多回路结构图用梅森公式求闭环传函","type":"kf","own":true},{"label":"由信号流图求 C(s)/R(s)","type":"kf","own":false},{"label":"结构图先用梅森公式化简再作性能分析","type":"kf","own":false},{"label":"判断某条回路是否与给定前向通路接触","type":"kf","own":false},{"label":"余子式中未剔除与通路接触的回路","type":"er","own":true},{"label":"不接触回路找漏或重复计数","type":"er","own":false},{"label":"余子式中未剔除与通路接触的回路","type":"er","own":false},{"label":"把前向通路的增益写成了回路增益","type":"er","own":false}]},{"label":"多输入与扰动作用下的传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"每次只保留一路输入，其余输入置零","type":"k1"},{"label":"两条通道共用同一个特征式","type":"k2"},{"label":"扰动注入点的接入位置需回原卷核对图","type":"k3"}]},{"label":"线性系统可用叠加原理，每次只保留一个输入","type":"yd"},{"label":"求扰动的传递函数时令参考输入为零","type":"yd"},{"label":"扰动误差与输入误差分别计算后再叠加","type":"yd"},{"label":"令 R(s)=0，求扰动到输出的传递函数","type":"bz"},{"label":"令 N(s)=0，求输入到输出的传递函数","type":"bz"},{"label":"按题目要求叠加或单独分析","type":"bz"},{"label":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}","type":"fm","tex":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}"},{"label":"分别求给定输入与扰动作用下的输出传函","type":"kf","own":true},{"label":"求扰动引起的输出或误差","type":"kf","own":false},{"label":"分析满足扰动不变性的补偿条件","type":"kf","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":true},{"label":"两个输入同时存在时直接叠加却未验证系统的线性性","type":"er","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":false}]}]},{"label":"斜坡误差与扰动误差的控制器设计　〔第二题〕","type":"block","children":[{"label":"由结构图写误差传函，用终值定理把斜坡误差与阶跃扰动误差要求化为控制器参数条件","type":"idea"},{"label":"典型输入下的稳态误差计算","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先由开环型别写出速度误差系数与增益的关系","type":"k1"},{"label":"误差要求化为关于比例增益的一个等式","type":"k2"},{"label":"控制器与误差信号的接法需回原卷核对图","type":"k3"}]},{"label":"稳态误差由系统型别与输入类型共同决定","type":"yd"},{"label":"0 型对阶跃有差、Ⅰ型对斜坡有差、Ⅱ型对加速度有差","type":"yd"},{"label":"低型别系统对高阶输入的误差为无穷大","type":"yd"},{"label":"判断系统型别并联立稳定性检查","type":"bz"},{"label":"写出输入信号的拉氏变换","type":"bz"},{"label":"用终值定理求 e_ss，或直接查表","type":"bz"},{"label":"必要时按叠加原理分别计算各分量","type":"bz"},{"label":"e_{ss}=\\lim_{s\\to0}sE(s)","type":"fm","tex":"e_{ss}=\\lim_{s\\to0}sE(s)"},{"label":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}","type":"fm","tex":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}"},{"label":"由单位斜坡输入的稳态误差要求反求比例增益","type":"kf","own":true},{"label":"求给定输入下的稳态误差","type":"kf","own":false},{"label":"由稳态误差要求反求开环增益","type":"kf","own":false},{"label":"比较不同型别系统的跟踪能力","type":"kf","own":false},{"label":"未判稳就使用终值定理","type":"er","own":true},{"label":"未判稳就使用终值定理","type":"er","own":false},{"label":"输入为组合信号时漏掉某一分量","type":"er","own":false},{"label":"Ⅰ型系统求阶跃误差时误代入速度误差公式","type":"er","own":false}]},{"label":"扰动作用下的稳态误差","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"令参考输入为零，单独写扰动到误差的传函","type":"k1"},{"label":"按扰动不变性原理给出控制器应含的环节","type":"k2"},{"label":"扰动注入点与控制器位置需回原卷核对图","type":"k3"}]},{"label":"扰动误差与输入误差必须分开计算再叠加","type":"yd"},{"label":"扰动误差取决于扰动作用点到误差点的传递函数","type":"yd"},{"label":"增大扰动点前的增益可减小扰动误差","type":"yd"},{"label":"令参考输入为零，求扰动到误差的传递函数","type":"bz"},{"label":"代入扰动信号求稳态值","type":"bz"},{"label":"与输入引起的误差叠加","type":"bz"},{"label":"e_{ssn}=\\lim_{s\\to0}s\\,\\Phi_{en}(s)N(s)","type":"fm","tex":"e_{ssn}=\\lim_{s\\to0}s\\,\\Phi_{en}(s)N(s)"},{"label":"设计控制器使阶跃扰动下的稳态误差为零","type":"kf","own":true},{"label":"求扰动引起的稳态误差","type":"kf","own":false},{"label":"比较扰动与输入对误差的不同影响","type":"kf","own":false},{"label":"分析提高前向增益的作用","type":"kf","own":false},{"label":"把扰动误差直接当作总误差，遗漏输入分量","type":"er","own":true},{"label":"把扰动误差直接当作总误差，遗漏输入分量","type":"er","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":false}]}]},{"label":"三阶系统极点分布与响应　〔第三题〕","type":"block","children":[{"label":"由极点分布写闭环传函并分解部分分式，分析主导极点的作用，再给仿真语句","type":"idea"},{"label":"零极点分布与响应模态","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把闭环传函按极点做部分分式展开再取拉氏反变换","type":"k1"},{"label":"响应由各极点对应指数或衰减振荡项叠加","type":"k2"},{"label":"极点坐标需回原卷核对图","type":"k3"}]},{"label":"极点决定响应由哪些模态组成，零点决定各模态的权重","type":"yd"},{"label":"左半平面极点对应衰减，右半平面对应发散，虚轴对应等幅振荡","type":"yd"},{"label":"离虚轴最近的极点为主导极点，主导响应的形状","type":"yd"},{"label":"共轭复极点产生振荡，实极点产生单调分量","type":"yd"},{"label":"求特征方程得到全部闭环极点","type":"bz"},{"label":"按实数/共轭复数分类，写出对应模态","type":"bz"},{"label":"找出主导极点对，近似为低阶系统","type":"bz"},{"label":"结合零点判断各模态权重大小","type":"bz"},{"label":"c(t)=\\sum_k A_k e^{p_k t},\\quad e^{-\\sigma t}\\cos(\\omega t+\\varphi)","type":"fm","tex":"c(t)=\\sum_k A_k e^{p_k t},\\quad e^{-\\sigma t}\\cos(\\omega t+\\varphi)"},{"label":"由极点分布写出单位阶跃响应的大致形式","type":"kf","own":true},{"label":"由极点分布写出响应的大致形式","type":"kf","own":false},{"label":"判断系统是单调还是振荡、是否收敛","type":"kf","own":false},{"label":"用主导极点概念把高阶系统近似为二阶系统","type":"kf","own":false},{"label":"只看极点分布就断定振荡，忽略零点引起的模态权重为零","type":"er","own":true},{"label":"只看极点分布就断定振荡，忽略零点引起的模态权重为零","type":"er","own":false}]},{"label":"高阶系统的降阶与主导极点","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"比较各极点到虚轴的距离判断哪一对起主导作用","type":"k1"},{"label":"靠近虚轴的极点对应衰减较慢的模态","type":"k2"},{"label":"主导极点最终要由留数大小判定","type":"k3"}]},{"label":"离虚轴最近的极点起主导作用，其余极点对应快速衰减分量","type":"yd"},{"label":"闭环零点会增大超调、缩短峰值时间","type":"yd"},{"label":"极点实部相差 5 倍以上时可按主导极点降阶","type":"yd"},{"label":"求出全部闭环极点并按距虚轴远近排序","type":"bz"},{"label":"用主导极点对近似为二阶系统","type":"bz"},{"label":"用零点修正式修正超调量与峰值时间","type":"bz"},{"label":"\\sigma\\%=\\sigma\\%_0\\cdot\\sqrt{1+\\left(\\frac{1}{z_r}\\right)^2}","type":"fm","tex":"\\sigma\\%=\\sigma\\%_0\\cdot\\sqrt{1+\\left(\\frac{1}{z_r}\\right)^2}"},{"label":"由极点位置判断主导极点并说明对响应的影响","type":"kf","own":true},{"label":"把高阶系统近似为二阶系统并估算性能指标","type":"kf","own":false},{"label":"判断附加闭环零点对超调量的影响","type":"kf","own":false},{"label":"说明某极点能否忽略的理由","type":"kf","own":false},{"label":"只看极点距离而不管该极点的留数大小","type":"er","own":true},{"label":"忽略零点对超调量的放大作用","type":"er","own":false},{"label":"只看极点距离而不管该极点的留数大小","type":"er","own":false}]}]},{"label":"两系统根轨迹绘制与稳定性比较　〔第四题〕","type":"block","children":[{"label":"由两组开环零极点分布分别按法则画概略根轨迹，再比较穿越虚轴时的临界增益","type":"idea"},{"label":"根轨迹的绘制法则","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先标出零极点再按右侧零极点个数判断实轴根轨迹段","type":"k1"},{"label":"渐近线条数与夹角由极点数减零点数确定","type":"k2"},{"label":"两组零极点的分布需回原卷核对图","type":"k3"}]},{"label":"起于开环极点、终于开环零点（无穷远零点），分支数等于极点数 n","type":"yd"},{"label":"实轴上某段右侧的零极点总数为奇数时，该段属于根轨迹","type":"yd"},{"label":"渐近线条数为 n-m，交点在实轴上，与实轴夹角等分 360°","type":"yd"},{"label":"根轨迹关于实轴对称","type":"yd"},{"label":"标出全部开环零极点并判断实轴上的根轨迹段","type":"bz"},{"label":"计算渐近线交点与夹角","type":"bz"},{"label":"求出分离点、出射角、与虚轴交点","type":"bz"},{"label":"按对称性连接各段并标出对应 K 值","type":"bz"},{"label":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}","type":"fm","tex":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}"},{"label":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}","type":"fm","tex":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}"},{"label":"由开环零极点分布绘制概略根轨迹","type":"kf","own":true},{"label":"按法则绘制根轨迹草图","type":"kf","own":false},{"label":"指出渐近线条数与夹角","type":"kf","own":false},{"label":"判断某段实轴是否属于根轨迹","type":"kf","own":false},{"label":"实轴段判据中的零极点个数算错","type":"er","own":true},{"label":"实轴段判据中的零极点个数算错","type":"er","own":false},{"label":"渐近线夹角公式中的 2k+1 写成 2k","type":"er","own":false}]},{"label":"与虚轴的交点及临界参数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"比较两条根轨迹穿越虚轴时对应的临界增益","type":"k1"},{"label":"穿越方向决定稳定增益区间是否为空","type":"k2"},{"label":"根轨迹形状需回原卷核对图","type":"k3"}]},{"label":"根轨迹与虚轴的交点对应系统临界稳定","type":"yd"},{"label":"可用劳斯判据令首列为零，或令 s=jω 代入特征方程求解","type":"yd"},{"label":"交点处的 K 是使系统稳定的临界增益","type":"yd"},{"label":"把 s=jω 代入闭环特征方程","type":"bz"},{"label":"令实部与虚部分别为零，得到两个方程","type":"bz"},{"label":"联立解出 ω 与 K","type":"bz"},{"label":"结合实轴段信息确定根轨迹穿越方向","type":"bz"},{"label":"1+KG_0(j\\omega)=0","type":"fm","tex":"1+KG_0(j\\omega)=0"},{"label":"\\operatorname{Re}[\\cdot]=0,\\quad \\operatorname{Im}[\\cdot]=0","type":"fm","tex":"\\operatorname{Re}[\\cdot]=0,\\quad \\operatorname{Im}[\\cdot]=0"},{"label":"由根轨迹与虚轴的关系比较两系统的稳定性","type":"kf","own":true},{"label":"求根轨迹与虚轴的交点及临界增益","type":"kf","own":false},{"label":"确定系统稳定时 K 的取值范围","type":"kf","own":false},{"label":"判断根轨迹穿越虚轴的方向","type":"kf","own":false},{"label":"只代一个频率值就下结论","type":"er","own":true},{"label":"只代一个 ω 就下结论，漏掉另一组交点","type":"er","own":false},{"label":"得到 K 后没有回到原题核对参数定义","type":"er","own":false}]}]},{"label":"导弹角度系统控制器设计　〔第五题〕","type":"block","children":[{"label":"由含右半平面极点的对象列特征方程，分别用比例控制器、带零点控制器与 PD 控制器设计","type":"idea"},{"label":"劳斯判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"写出闭环特征方程后用劳斯表判断首列是否变号","type":"k1"},{"label":"比例控制下首列出现变号说明不能稳定","type":"k2"},{"label":"控制器接入位置需回原卷核对图","type":"k3"}]},{"label":"特征方程各项系数全为正只是必要条件，不充分","type":"yd"},{"label":"劳斯表首列元素全部同号 ⇔ 系统稳定","type":"yd"},{"label":"首列符号变化次数等于右半平面闭环极点数","type":"yd"},{"label":"首列出现 0 时需用 ε 法或乘辅助多项式处理","type":"yd"},{"label":"写出闭环特征方程并整理成降幂排列","type":"bz"},{"label":"若某次幂系数缺项，该项补零","type":"bz"},{"label":"列劳斯表：前两行为系数，之后各行按交叉相减","type":"bz"},{"label":"检查首列符号：全同号则稳定，有变号则数出个数","type":"bz"},{"label":"1+G(s)H(s)=0","type":"fm","tex":"1+G(s)H(s)=0"},{"label":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0","type":"fm","tex":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0"},{"label":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}","type":"fm","tex":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"},{"label":"用劳斯判据判断比例控制器能否使系统稳定","type":"kf","own":true},{"label":"判断给定系统的稳定性","type":"kf","own":false},{"label":"指出右半平面闭环极点的个数","type":"kf","own":false},{"label":"求使系统稳定的参数范围","type":"kf","own":false},{"label":"系数有缺项时不补零，直接套用判据","type":"er","own":true},{"label":"系数有缺项时不补零，直接套用判据","type":"er","own":false},{"label":"首列出现 0 后仍按常规继续算，未用 ε 法","type":"er","own":false}]},{"label":"附加开环零极点的影响","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把控制器零点并入开环后重新判断实轴段与渐近线","type":"k1"},{"label":"约分后传函看着稳定，被约掉的右半平面模态仍存在","type":"k2"},{"label":"要说明对消后是否真正实际稳定而非表面稳定","type":"k3"}]},{"label":"增加开环零点使根轨迹左移，改善稳定性","type":"yd"},{"label":"增加开环极点使根轨迹右移，恶化稳定性","type":"yd"},{"label":"附加零点会改变分离点位置与渐近线走向","type":"yd"},{"label":"增加极点还可能是系统结构不稳定","type":"yd"},{"label":"对比增加前后零极点分布","type":"bz"},{"label":"重新判断实轴段与渐近线","type":"bz"},{"label":"分析根轨迹整体移动方向","type":"bz"},{"label":"据此说明对稳定性和动态性能的影响","type":"bz"},{"label":"分析控制器引入的零点与对象右半平面极点对消的实际稳定性","type":"kf","own":true},{"label":"说明附加零点对根轨迹形状的影响","type":"kf","own":false},{"label":"判断增加极点后系统是否仍稳定","type":"kf","own":false},{"label":"分析为何某系统需要引入零点","type":"kf","own":false},{"label":"把附加零点的影响与附加极点的影响搞反","type":"er","own":true},{"label":"只讨论渐近线是否左移右移，忽略分离点变化","type":"er","own":false},{"label":"把附加零点的影响与附加极点的影响搞反","type":"er","own":false}]},{"label":"由性能指标要求反求参数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把调节时间要求化为阻尼比乘自然频率的定值","type":"k1"},{"label":"由标准二阶系数关系联立解出两个控制器参数","type":"k2"},{"label":"阻尼比与阻尼角之间要用余弦关系换算","type":"k3"}]},{"label":"超调量要求给出 ξ 的下界，调节时间要求给出 ξωn 的下界","type":"yd"},{"label":"多个指标同时给出时需求参数可同时满足的公共区域","type":"yd"},{"label":"指标之间往往相互制约，需权衡取舍","type":"yd"},{"label":"把每个指标要求翻译成对 ξ 或 ωn 的不等式","type":"bz"},{"label":"在参数平面上画出各不等式的可行域","type":"bz"},{"label":"取交集并选取合适的参数值","type":"bz"},{"label":"回代验证全部指标是否满足","type":"bz"},{"label":"\\xi\\ge\\xi_{min},\\quad \\xi\\omega_n\\ge\\frac{3.5}{t_s}","type":"fm","tex":"\\xi\\ge\\xi_{min},\\quad \\xi\\omega_n\\ge\\frac{3.5}{t_s}"},{"label":"由阻尼比与调节时间要求反求 PD 控制器参数","type":"kf","own":true},{"label":"由超调量和调节时间要求设计开环增益与阻尼","type":"kf","own":false},{"label":"求满足指标要求的参数取值范围","type":"kf","own":false},{"label":"判断给定指标组合是否可实现","type":"kf","own":false},{"label":"只满足单项指标就下结论，未做交叉验证","type":"er","own":true},{"label":"只满足单项指标就下结论，未做交叉验证","type":"er","own":false},{"label":"把 ξ 的可行域方向取反","type":"er","own":false}]}]},{"label":"由奈氏判据判断系统稳定性　〔第六题〕","type":"block","children":[{"label":"由开环传函写幅相表达式，先数右半平面极点数再按包围关系判稳","type":"idea"},{"label":"奈奎斯特判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先确定开环右半平面极点个数与幅相曲线包围情况","type":"k1"},{"label":"由包围圈数与右半平面极点数关系算出闭环右半平面极点数","type":"k2"},{"label":"曲线与负实轴交点随增益变化，要按增益分段讨论","type":"k3"}]},{"label":"闭环稳定 ⇔ Z=N+P，其中 Z 为右半平面闭环极点数","type":"yd"},{"label":"P 为开环右半平面极点数，须先数清楚","type":"yd"},{"label":"N 为开环幅相曲线绕 (-1,j0) 点的净包围圈数","type":"yd"},{"label":"逆时针包围为正，顺时针为负","type":"yd"},{"label":"先求开环极点，数出右半平面个数 P","type":"bz"},{"label":"绘制开环幅相特性曲线（或利用 Bode 图判稳）","type":"bz"},{"label":"数出曲线对 (-1,j0) 点的包围圈数 N","type":"bz"},{"label":"由 Z=N+P 判断闭环稳定性","type":"bz"},{"label":"Z=N+P","type":"fm","tex":"Z=N+P"},{"label":"N=N_+-N_-","type":"fm","tex":"N=N_+-N_-"},{"label":"用奈奎斯特判据判断含右半平面极点的系统稳定性","type":"kf","own":true},{"label":"由开环幅相曲线判断闭环稳定性","type":"kf","own":false},{"label":"求使闭环稳定的开环增益范围","type":"kf","own":false},{"label":"判断补画虚轴绕行后曲线的包围情况","type":"kf","own":false},{"label":"没有先数开环右半平面极点数","type":"er","own":true},{"label":"开环含有积分环节时未补画无穷大半径圆弧","type":"er","own":false},{"label":"把包围圈数的正负号定义搞反","type":"er","own":false},{"label":"没有先数开环右半平面极点数 P","type":"er","own":false}]}]},{"label":"以参数 a 为变量的根轨迹　〔第七题〕","type":"block","children":[{"label":"把特征方程整理成以 a 为参数的形式，按广义根轨迹法则绘制，再由给定闭环极点反求参数","type":"idea"},{"label":"广义根轨迹与参数根轨迹","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把含参数项提到分子，写成等效开环传函形式","type":"k1"},{"label":"等效开环的极点由不含参数项的特征方程给出","type":"k2"},{"label":"等效开环的零极点位置要重新数","type":"k3"}]},{"label":"可变参数不是开环增益时称为参数根轨迹","type":"yd"},{"label":"方法是用等效开环传递函数把参数提到标准位置","type":"yd"},{"label":"正反馈系统或零度根轨迹的相角条件是 0°+360°l","type":"yd"},{"label":"把特征方程整理成 1+αG*(s)=0 的形式","type":"bz"},{"label":"把 α 以外部分视为等效开环传递函数","type":"bz"},{"label":"按常规根轨迹法则绘制","type":"bz"},{"label":"注意相角条件是否变成 0°","type":"bz"},{"label":"1+\\alpha G^*(s)=0","type":"fm","tex":"1+\\alpha G^*(s)=0"},{"label":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=0^\\circ+360^\\circ l","type":"fm","tex":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=0^\\circ+360^\\circ l"},{"label":"以时间常数或其他参数为变量绘制参数根轨迹","type":"kf","own":true},{"label":"以时间常数或其他参数为变量绘制根轨迹","type":"kf","own":false},{"label":"绘制正反馈系统的零度根轨迹","type":"kf","own":false},{"label":"比较零度与 180 度根轨迹的差别","type":"kf","own":false},{"label":"整理时没有把参数完整地提到分子位置","type":"er","own":true},{"label":"整理时没有把参数完整地提到分子位置","type":"er","own":false},{"label":"零度根轨迹仍沿用 180° 相角条件","type":"er","own":false}]},{"label":"由根轨迹分析性能与确定参数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把给定闭环极点代入特征方程并令实部虚部分别为零","type":"k1"},{"label":"由实部虚部两个方程联立解出两个参数","type":"k2"},{"label":"给定的是共轭极点，只需代入其中一个","type":"k3"}]},{"label":"闭环极点位置直接决定 ξ、ωn 与动态指标","type":"yd"},{"label":"等阻尼线是从原点出发的射线，等 ωn 线是以原点为心的圆","type":"yd"},{"label":"给定阻尼比要求时，极点落在等阻尼线上","type":"yd"},{"label":"增益增大一般使系统响应加快但振荡加剧","type":"yd"},{"label":"在 s 平面上画出等阻尼线或等 ωn 圆","type":"bz"},{"label":"求其与根轨迹的交点","type":"bz"},{"label":"由幅值条件求出交点对应的参数","type":"bz"},{"label":"由极点位置估算动态性能","type":"bz"},{"label":"\\xi=\\cos\\beta,\\quad \\omega_n=|s|","type":"fm","tex":"\\xi=\\cos\\beta,\\quad \\omega_n=|s|"},{"label":"由给定闭环极点反求两个参数取值","type":"kf","own":true},{"label":"求满足给定阻尼比的参数值","type":"kf","own":false},{"label":"由闭环极点位置估算超调量与调节时间","type":"kf","own":false},{"label":"分析提高增益对性能的影响","type":"kf","own":false},{"label":"把等阻尼线画成了垂直线","type":"er","own":true},{"label":"把等阻尼线画成了垂直线","type":"er","own":false},{"label":"由极点位置估指标时忽略零点的作用","type":"er","own":false}]}]},{"label":"离散系统稳定性与斜坡稳态误差　〔第八题〕","type":"block","children":[{"label":"由框图写开环脉冲传函，求闭环特征根判断稳定性，再用终值定理求斜坡输入下的稳态误差","type":"idea"},{"label":"离散系统稳定性分析","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"写出闭环特征方程并令特征根的模小于一","type":"k1"},{"label":"稳定范围由特征根落在单位圆内约束","type":"k2"},{"label":"采样开关与保持器的位置需回原卷核对图","type":"k3"}]},{"label":"闭环脉冲传函的极点全部位于 z 平面单位圆内则稳定","type":"yd"},{"label":"可直接求解特征根，也可用朱里判据或 w 变换后套劳斯判据","type":"yd"},{"label":"w 变换把单位圆内映射到左半平面","type":"yd"},{"label":"采样周期增大会使稳定性变差","type":"yd"},{"label":"写出闭环脉冲传递函数的特征方程","type":"bz"},{"label":"选择方法：求根、朱里判据或 w 变换后用劳斯判据","type":"bz"},{"label":"对含参数的系统求使稳定成立的参数范围","type":"bz"},{"label":"必要时分析采样周期对稳定域的影响","type":"bz"},{"label":"|z_i|<1","type":"fm","tex":"|z_i|<1"},{"label":"z=\\frac{1+w}{1-w}\\quad (w\\ \\text{变换})","type":"fm","tex":"z=\\frac{1+w}{1-w}\\quad (w\\ \\text{变换})"},{"label":"判断离散系统稳定性并求使系统稳定的参数范围","type":"kf","own":true},{"label":"判断离散系统是否稳定","type":"kf","own":false},{"label":"求使系统稳定的采样周期或增益范围","type":"kf","own":false},{"label":"用 w 变换后套用劳斯判据","type":"kf","own":false},{"label":"把稳定条件写成实部小于零而不是模小于 1","type":"er","own":true},{"label":"把稳定条件写成实部小于零而不是模小于 1","type":"er","own":false},{"label":"w 变换公式记错导致映射关系颠倒","type":"er","own":false}]},{"label":"离散系统的稳态误差","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先判稳，再由误差脉冲传函与输入的 z 变换用终值定理","type":"k1"},{"label":"由速度误差系数在 z 域的定义求斜坡误差","type":"k2"},{"label":"采样周期要代入脉冲传函","type":"k3"}]},{"label":"误差由输入类型与开环脉冲传函中 z=1 处极点的个数决定","type":"yd"},{"label":"型别由 G(z)H(z) 中 z=1 处极点的重数确定","type":"yd"},{"label":"用终值定理求稳态误差，前提是系统稳定","type":"yd"},{"label":"采样周期也影响稳态误差大小","type":"yd"},{"label":"求误差脉冲传递函数","type":"bz"},{"label":"数出 z=1 处极点重数确定型别","type":"bz"},{"label":"查表或用终值定理求稳态误差","type":"bz"},{"label":"分析采样周期变化对误差的影响","type":"bz"},{"label":"e_{ss}=\\lim_{z\\to1}(1-z^{-1})E(z)","type":"fm","tex":"e_{ss}=\\lim_{z\\to1}(1-z^{-1})E(z)"},{"label":"K_p=\\lim_{z\\to1}G(z)H(z)","type":"fm","tex":"K_p=\\lim_{z\\to1}G(z)H(z)"},{"label":"求离散系统在斜坡输入下的稳态误差","type":"kf","own":true},{"label":"求离散系统在典型输入下的稳态误差","type":"kf","own":false},{"label":"由稳态误差要求反求开环增益","type":"kf","own":false},{"label":"分析采样周期对稳态精度的影响","type":"kf","own":false},{"label":"直接用 s 域静态误差系数公式处理离散系统","type":"er","own":true},{"label":"直接用 s 域静态误差系数公式处理离散系统","type":"er","own":false},{"label":"未判稳就用终值定理","type":"er","own":false}]}]}]},"qs":[{"no":"一","tree":{"label":"湖南大学 823","type":"root","sub":"2015 · 自动控制理论（含现控）","children":[{"label":"难度：中等　特点：八道大题覆盖结构图多输入传函、控制器设计与扰动不变性、三阶极点分布与响应、两系统根轨迹比较、含右半平面极点对象的控制器设计、奈氏判据、以 a 为参数的根轨迹、离散系统稳定性与斜坡误差　重点：结构图多输入与扰动传函、含右半平面极点对象的控制器设计、以参数为变量的根轨迹、离散系统稳定性与斜坡误差","type":"warn"},{"label":"结构图求给定与扰动传函　〔第一题〕","type":"block","children":[{"label":"由结构图分别令一路输入为零，用梅森公式求两条通道的输出传函","type":"idea"},{"label":"梅森增益公式与信号流图","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先数出全部单独回路并判断哪些互不接触","type":"k1"},{"label":"两条通道的分子由各自前向通路与余子式组成","type":"k2"},{"label":"回路与前向通路的接法需回原卷核对图","type":"k3"}]},{"label":"信号流图适合处理多回路、比较点复杂系统","type":"yd"},{"label":"特征式 Δ=1-ΣL+ΣLL-ΣLLL+…","type":"yd"},{"label":"每条前向通路的余子式要剔除与它接触的回路","type":"yd"},{"label":"不接触回路才会计入高阶乘积项","type":"yd"},{"label":"由结构图改画信号流图，标出各节点","type":"bz"},{"label":"找出全部单独回路，求特征式 Δ","type":"bz"},{"label":"找出全部前向通路 P_k","type":"bz"},{"label":"对每条通路求余子式 Δ_k","type":"bz"},{"label":"代入公式求总传输","type":"bz"},{"label":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k","type":"fm","tex":"P=\\frac{1}{\\Delta}\\sum_k P_k\\Delta_k"},{"label":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots","type":"fm","tex":"\\Delta=1-\\sum L_a+\\sum L_aL_b-\\sum L_aL_bL_c+\\cdots"},{"label":"由多回路结构图用梅森公式求闭环传函","type":"kf","own":true},{"label":"由信号流图求 C(s)/R(s)","type":"kf","own":false},{"label":"结构图先用梅森公式化简再作性能分析","type":"kf","own":false},{"label":"判断某条回路是否与给定前向通路接触","type":"kf","own":false},{"label":"余子式中未剔除与通路接触的回路","type":"er","own":true},{"label":"不接触回路找漏或重复计数","type":"er","own":false},{"label":"余子式中未剔除与通路接触的回路","type":"er","own":false},{"label":"把前向通路的增益写成了回路增益","type":"er","own":false}]},{"label":"多输入与扰动作用下的传递函数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"每次只保留一路输入，其余输入置零","type":"k1"},{"label":"两条通道共用同一个特征式","type":"k2"},{"label":"扰动注入点的接入位置需回原卷核对图","type":"k3"}]},{"label":"线性系统可用叠加原理，每次只保留一个输入","type":"yd"},{"label":"求扰动的传递函数时令参考输入为零","type":"yd"},{"label":"扰动误差与输入误差分别计算后再叠加","type":"yd"},{"label":"令 R(s)=0，求扰动到输出的传递函数","type":"bz"},{"label":"令 N(s)=0，求输入到输出的传递函数","type":"bz"},{"label":"按题目要求叠加或单独分析","type":"bz"},{"label":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}","type":"fm","tex":"\\frac{C(s)}{N(s)}=\\frac{G_2(s)}{1+G_1(s)G_2(s)H(s)}"},{"label":"分别求给定输入与扰动作用下的输出传函","type":"kf","own":true},{"label":"求扰动引起的输出或误差","type":"kf","own":false},{"label":"分析满足扰动不变性的补偿条件","type":"kf","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":true},{"label":"两个输入同时存在时直接叠加却未验证系统的线性性","type":"er","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":false}]}]}]}},{"no":"二","tree":{"label":"湖南大学 823","type":"root","sub":"2015 · 自动控制理论（含现控）","children":[{"label":"难度：中等　特点：八道大题覆盖结构图多输入传函、控制器设计与扰动不变性、三阶极点分布与响应、两系统根轨迹比较、含右半平面极点对象的控制器设计、奈氏判据、以 a 为参数的根轨迹、离散系统稳定性与斜坡误差　重点：结构图多输入与扰动传函、含右半平面极点对象的控制器设计、以参数为变量的根轨迹、离散系统稳定性与斜坡误差","type":"warn"},{"label":"斜坡误差与扰动误差的控制器设计　〔第二题〕","type":"block","children":[{"label":"由结构图写误差传函，用终值定理把斜坡误差与阶跃扰动误差要求化为控制器参数条件","type":"idea"},{"label":"典型输入下的稳态误差计算","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先由开环型别写出速度误差系数与增益的关系","type":"k1"},{"label":"误差要求化为关于比例增益的一个等式","type":"k2"},{"label":"控制器与误差信号的接法需回原卷核对图","type":"k3"}]},{"label":"稳态误差由系统型别与输入类型共同决定","type":"yd"},{"label":"0 型对阶跃有差、Ⅰ型对斜坡有差、Ⅱ型对加速度有差","type":"yd"},{"label":"低型别系统对高阶输入的误差为无穷大","type":"yd"},{"label":"判断系统型别并联立稳定性检查","type":"bz"},{"label":"写出输入信号的拉氏变换","type":"bz"},{"label":"用终值定理求 e_ss，或直接查表","type":"bz"},{"label":"必要时按叠加原理分别计算各分量","type":"bz"},{"label":"e_{ss}=\\lim_{s\\to0}sE(s)","type":"fm","tex":"e_{ss}=\\lim_{s\\to0}sE(s)"},{"label":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}","type":"fm","tex":"e_{ss}=\\frac{R_0}{1+K_p},\\quad e_{ss}=\\frac{v_0}{K_v},\\quad e_{ss}=\\frac{a_0}{K_a}"},{"label":"由单位斜坡输入的稳态误差要求反求比例增益","type":"kf","own":true},{"label":"求给定输入下的稳态误差","type":"kf","own":false},{"label":"由稳态误差要求反求开环增益","type":"kf","own":false},{"label":"比较不同型别系统的跟踪能力","type":"kf","own":false},{"label":"未判稳就使用终值定理","type":"er","own":true},{"label":"未判稳就使用终值定理","type":"er","own":false},{"label":"输入为组合信号时漏掉某一分量","type":"er","own":false},{"label":"Ⅰ型系统求阶跃误差时误代入速度误差公式","type":"er","own":false}]},{"label":"扰动作用下的稳态误差","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"令参考输入为零，单独写扰动到误差的传函","type":"k1"},{"label":"按扰动不变性原理给出控制器应含的环节","type":"k2"},{"label":"扰动注入点与控制器位置需回原卷核对图","type":"k3"}]},{"label":"扰动误差与输入误差必须分开计算再叠加","type":"yd"},{"label":"扰动误差取决于扰动作用点到误差点的传递函数","type":"yd"},{"label":"增大扰动点前的增益可减小扰动误差","type":"yd"},{"label":"令参考输入为零，求扰动到误差的传递函数","type":"bz"},{"label":"代入扰动信号求稳态值","type":"bz"},{"label":"与输入引起的误差叠加","type":"bz"},{"label":"e_{ssn}=\\lim_{s\\to0}s\\,\\Phi_{en}(s)N(s)","type":"fm","tex":"e_{ssn}=\\lim_{s\\to0}s\\,\\Phi_{en}(s)N(s)"},{"label":"设计控制器使阶跃扰动下的稳态误差为零","type":"kf","own":true},{"label":"求扰动引起的稳态误差","type":"kf","own":false},{"label":"比较扰动与输入对误差的不同影响","type":"kf","own":false},{"label":"分析提高前向增益的作用","type":"kf","own":false},{"label":"把扰动误差直接当作总误差，遗漏输入分量","type":"er","own":true},{"label":"把扰动误差直接当作总误差，遗漏输入分量","type":"er","own":false},{"label":"求扰动传函时没有把参考输入置零","type":"er","own":false}]}]}]}},{"no":"三","tree":{"label":"湖南大学 823","type":"root","sub":"2015 · 自动控制理论（含现控）","children":[{"label":"难度：中等　特点：八道大题覆盖结构图多输入传函、控制器设计与扰动不变性、三阶极点分布与响应、两系统根轨迹比较、含右半平面极点对象的控制器设计、奈氏判据、以 a 为参数的根轨迹、离散系统稳定性与斜坡误差　重点：结构图多输入与扰动传函、含右半平面极点对象的控制器设计、以参数为变量的根轨迹、离散系统稳定性与斜坡误差","type":"warn"},{"label":"三阶系统极点分布与响应　〔第三题〕","type":"block","children":[{"label":"由极点分布写闭环传函并分解部分分式，分析主导极点的作用，再给仿真语句","type":"idea"},{"label":"零极点分布与响应模态","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把闭环传函按极点做部分分式展开再取拉氏反变换","type":"k1"},{"label":"响应由各极点对应指数或衰减振荡项叠加","type":"k2"},{"label":"极点坐标需回原卷核对图","type":"k3"}]},{"label":"极点决定响应由哪些模态组成，零点决定各模态的权重","type":"yd"},{"label":"左半平面极点对应衰减，右半平面对应发散，虚轴对应等幅振荡","type":"yd"},{"label":"离虚轴最近的极点为主导极点，主导响应的形状","type":"yd"},{"label":"共轭复极点产生振荡，实极点产生单调分量","type":"yd"},{"label":"求特征方程得到全部闭环极点","type":"bz"},{"label":"按实数/共轭复数分类，写出对应模态","type":"bz"},{"label":"找出主导极点对，近似为低阶系统","type":"bz"},{"label":"结合零点判断各模态权重大小","type":"bz"},{"label":"c(t)=\\sum_k A_k e^{p_k t},\\quad e^{-\\sigma t}\\cos(\\omega t+\\varphi)","type":"fm","tex":"c(t)=\\sum_k A_k e^{p_k t},\\quad e^{-\\sigma t}\\cos(\\omega t+\\varphi)"},{"label":"由极点分布写出单位阶跃响应的大致形式","type":"kf","own":true},{"label":"由极点分布写出响应的大致形式","type":"kf","own":false},{"label":"判断系统是单调还是振荡、是否收敛","type":"kf","own":false},{"label":"用主导极点概念把高阶系统近似为二阶系统","type":"kf","own":false},{"label":"只看极点分布就断定振荡，忽略零点引起的模态权重为零","type":"er","own":true},{"label":"只看极点分布就断定振荡，忽略零点引起的模态权重为零","type":"er","own":false}]},{"label":"高阶系统的降阶与主导极点","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"比较各极点到虚轴的距离判断哪一对起主导作用","type":"k1"},{"label":"靠近虚轴的极点对应衰减较慢的模态","type":"k2"},{"label":"主导极点最终要由留数大小判定","type":"k3"}]},{"label":"离虚轴最近的极点起主导作用，其余极点对应快速衰减分量","type":"yd"},{"label":"闭环零点会增大超调、缩短峰值时间","type":"yd"},{"label":"极点实部相差 5 倍以上时可按主导极点降阶","type":"yd"},{"label":"求出全部闭环极点并按距虚轴远近排序","type":"bz"},{"label":"用主导极点对近似为二阶系统","type":"bz"},{"label":"用零点修正式修正超调量与峰值时间","type":"bz"},{"label":"\\sigma\\%=\\sigma\\%_0\\cdot\\sqrt{1+\\left(\\frac{1}{z_r}\\right)^2}","type":"fm","tex":"\\sigma\\%=\\sigma\\%_0\\cdot\\sqrt{1+\\left(\\frac{1}{z_r}\\right)^2}"},{"label":"由极点位置判断主导极点并说明对响应的影响","type":"kf","own":true},{"label":"把高阶系统近似为二阶系统并估算性能指标","type":"kf","own":false},{"label":"判断附加闭环零点对超调量的影响","type":"kf","own":false},{"label":"说明某极点能否忽略的理由","type":"kf","own":false},{"label":"只看极点距离而不管该极点的留数大小","type":"er","own":true},{"label":"忽略零点对超调量的放大作用","type":"er","own":false},{"label":"只看极点距离而不管该极点的留数大小","type":"er","own":false}]}]}]}},{"no":"四","tree":{"label":"湖南大学 823","type":"root","sub":"2015 · 自动控制理论（含现控）","children":[{"label":"难度：中等　特点：八道大题覆盖结构图多输入传函、控制器设计与扰动不变性、三阶极点分布与响应、两系统根轨迹比较、含右半平面极点对象的控制器设计、奈氏判据、以 a 为参数的根轨迹、离散系统稳定性与斜坡误差　重点：结构图多输入与扰动传函、含右半平面极点对象的控制器设计、以参数为变量的根轨迹、离散系统稳定性与斜坡误差","type":"warn"},{"label":"两系统根轨迹绘制与稳定性比较　〔第四题〕","type":"block","children":[{"label":"由两组开环零极点分布分别按法则画概略根轨迹，再比较穿越虚轴时的临界增益","type":"idea"},{"label":"根轨迹的绘制法则","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先标出零极点再按右侧零极点个数判断实轴根轨迹段","type":"k1"},{"label":"渐近线条数与夹角由极点数减零点数确定","type":"k2"},{"label":"两组零极点的分布需回原卷核对图","type":"k3"}]},{"label":"起于开环极点、终于开环零点（无穷远零点），分支数等于极点数 n","type":"yd"},{"label":"实轴上某段右侧的零极点总数为奇数时，该段属于根轨迹","type":"yd"},{"label":"渐近线条数为 n-m，交点在实轴上，与实轴夹角等分 360°","type":"yd"},{"label":"根轨迹关于实轴对称","type":"yd"},{"label":"标出全部开环零极点并判断实轴上的根轨迹段","type":"bz"},{"label":"计算渐近线交点与夹角","type":"bz"},{"label":"求出分离点、出射角、与虚轴交点","type":"bz"},{"label":"按对称性连接各段并标出对应 K 值","type":"bz"},{"label":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}","type":"fm","tex":"\\sigma_a=\\frac{\\sum p_j-\\sum z_i}{n-m}"},{"label":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}","type":"fm","tex":"\\varphi_a=\\frac{(2k+1)180^\\circ}{n-m}"},{"label":"由开环零极点分布绘制概略根轨迹","type":"kf","own":true},{"label":"按法则绘制根轨迹草图","type":"kf","own":false},{"label":"指出渐近线条数与夹角","type":"kf","own":false},{"label":"判断某段实轴是否属于根轨迹","type":"kf","own":false},{"label":"实轴段判据中的零极点个数算错","type":"er","own":true},{"label":"实轴段判据中的零极点个数算错","type":"er","own":false},{"label":"渐近线夹角公式中的 2k+1 写成 2k","type":"er","own":false}]},{"label":"与虚轴的交点及临界参数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"比较两条根轨迹穿越虚轴时对应的临界增益","type":"k1"},{"label":"穿越方向决定稳定增益区间是否为空","type":"k2"},{"label":"根轨迹形状需回原卷核对图","type":"k3"}]},{"label":"根轨迹与虚轴的交点对应系统临界稳定","type":"yd"},{"label":"可用劳斯判据令首列为零，或令 s=jω 代入特征方程求解","type":"yd"},{"label":"交点处的 K 是使系统稳定的临界增益","type":"yd"},{"label":"把 s=jω 代入闭环特征方程","type":"bz"},{"label":"令实部与虚部分别为零，得到两个方程","type":"bz"},{"label":"联立解出 ω 与 K","type":"bz"},{"label":"结合实轴段信息确定根轨迹穿越方向","type":"bz"},{"label":"1+KG_0(j\\omega)=0","type":"fm","tex":"1+KG_0(j\\omega)=0"},{"label":"\\operatorname{Re}[\\cdot]=0,\\quad \\operatorname{Im}[\\cdot]=0","type":"fm","tex":"\\operatorname{Re}[\\cdot]=0,\\quad \\operatorname{Im}[\\cdot]=0"},{"label":"由根轨迹与虚轴的关系比较两系统的稳定性","type":"kf","own":true},{"label":"求根轨迹与虚轴的交点及临界增益","type":"kf","own":false},{"label":"确定系统稳定时 K 的取值范围","type":"kf","own":false},{"label":"判断根轨迹穿越虚轴的方向","type":"kf","own":false},{"label":"只代一个频率值就下结论","type":"er","own":true},{"label":"只代一个 ω 就下结论，漏掉另一组交点","type":"er","own":false},{"label":"得到 K 后没有回到原题核对参数定义","type":"er","own":false}]}]}]}},{"no":"五","tree":{"label":"湖南大学 823","type":"root","sub":"2015 · 自动控制理论（含现控）","children":[{"label":"难度：中等　特点：八道大题覆盖结构图多输入传函、控制器设计与扰动不变性、三阶极点分布与响应、两系统根轨迹比较、含右半平面极点对象的控制器设计、奈氏判据、以 a 为参数的根轨迹、离散系统稳定性与斜坡误差　重点：结构图多输入与扰动传函、含右半平面极点对象的控制器设计、以参数为变量的根轨迹、离散系统稳定性与斜坡误差","type":"warn"},{"label":"导弹角度系统控制器设计　〔第五题〕","type":"block","children":[{"label":"由含右半平面极点的对象列特征方程，分别用比例控制器、带零点控制器与 PD 控制器设计","type":"idea"},{"label":"劳斯判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"写出闭环特征方程后用劳斯表判断首列是否变号","type":"k1"},{"label":"比例控制下首列出现变号说明不能稳定","type":"k2"},{"label":"控制器接入位置需回原卷核对图","type":"k3"}]},{"label":"特征方程各项系数全为正只是必要条件，不充分","type":"yd"},{"label":"劳斯表首列元素全部同号 ⇔ 系统稳定","type":"yd"},{"label":"首列符号变化次数等于右半平面闭环极点数","type":"yd"},{"label":"首列出现 0 时需用 ε 法或乘辅助多项式处理","type":"yd"},{"label":"写出闭环特征方程并整理成降幂排列","type":"bz"},{"label":"若某次幂系数缺项，该项补零","type":"bz"},{"label":"列劳斯表：前两行为系数，之后各行按交叉相减","type":"bz"},{"label":"检查首列符号：全同号则稳定，有变号则数出个数","type":"bz"},{"label":"1+G(s)H(s)=0","type":"fm","tex":"1+G(s)H(s)=0"},{"label":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0","type":"fm","tex":"a_ns^n+a_{n-1}s^{n-1}+\\cdots+a_1s+a_0=0"},{"label":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}","type":"fm","tex":"b_1=\\frac{a_{n-1}a_{n-2}-a_na_{n-3}}{a_{n-1}}"},{"label":"用劳斯判据判断比例控制器能否使系统稳定","type":"kf","own":true},{"label":"判断给定系统的稳定性","type":"kf","own":false},{"label":"指出右半平面闭环极点的个数","type":"kf","own":false},{"label":"求使系统稳定的参数范围","type":"kf","own":false},{"label":"系数有缺项时不补零，直接套用判据","type":"er","own":true},{"label":"系数有缺项时不补零，直接套用判据","type":"er","own":false},{"label":"首列出现 0 后仍按常规继续算，未用 ε 法","type":"er","own":false}]},{"label":"附加开环零极点的影响","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把控制器零点并入开环后重新判断实轴段与渐近线","type":"k1"},{"label":"约分后传函看着稳定，被约掉的右半平面模态仍存在","type":"k2"},{"label":"要说明对消后是否真正实际稳定而非表面稳定","type":"k3"}]},{"label":"增加开环零点使根轨迹左移，改善稳定性","type":"yd"},{"label":"增加开环极点使根轨迹右移，恶化稳定性","type":"yd"},{"label":"附加零点会改变分离点位置与渐近线走向","type":"yd"},{"label":"增加极点还可能是系统结构不稳定","type":"yd"},{"label":"对比增加前后零极点分布","type":"bz"},{"label":"重新判断实轴段与渐近线","type":"bz"},{"label":"分析根轨迹整体移动方向","type":"bz"},{"label":"据此说明对稳定性和动态性能的影响","type":"bz"},{"label":"分析控制器引入的零点与对象右半平面极点对消的实际稳定性","type":"kf","own":true},{"label":"说明附加零点对根轨迹形状的影响","type":"kf","own":false},{"label":"判断增加极点后系统是否仍稳定","type":"kf","own":false},{"label":"分析为何某系统需要引入零点","type":"kf","own":false},{"label":"把附加零点的影响与附加极点的影响搞反","type":"er","own":true},{"label":"只讨论渐近线是否左移右移，忽略分离点变化","type":"er","own":false},{"label":"把附加零点的影响与附加极点的影响搞反","type":"er","own":false}]},{"label":"由性能指标要求反求参数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把调节时间要求化为阻尼比乘自然频率的定值","type":"k1"},{"label":"由标准二阶系数关系联立解出两个控制器参数","type":"k2"},{"label":"阻尼比与阻尼角之间要用余弦关系换算","type":"k3"}]},{"label":"超调量要求给出 ξ 的下界，调节时间要求给出 ξωn 的下界","type":"yd"},{"label":"多个指标同时给出时需求参数可同时满足的公共区域","type":"yd"},{"label":"指标之间往往相互制约，需权衡取舍","type":"yd"},{"label":"把每个指标要求翻译成对 ξ 或 ωn 的不等式","type":"bz"},{"label":"在参数平面上画出各不等式的可行域","type":"bz"},{"label":"取交集并选取合适的参数值","type":"bz"},{"label":"回代验证全部指标是否满足","type":"bz"},{"label":"\\xi\\ge\\xi_{min},\\quad \\xi\\omega_n\\ge\\frac{3.5}{t_s}","type":"fm","tex":"\\xi\\ge\\xi_{min},\\quad \\xi\\omega_n\\ge\\frac{3.5}{t_s}"},{"label":"由阻尼比与调节时间要求反求 PD 控制器参数","type":"kf","own":true},{"label":"由超调量和调节时间要求设计开环增益与阻尼","type":"kf","own":false},{"label":"求满足指标要求的参数取值范围","type":"kf","own":false},{"label":"判断给定指标组合是否可实现","type":"kf","own":false},{"label":"只满足单项指标就下结论，未做交叉验证","type":"er","own":true},{"label":"只满足单项指标就下结论，未做交叉验证","type":"er","own":false},{"label":"把 ξ 的可行域方向取反","type":"er","own":false}]}]}]}},{"no":"六","tree":{"label":"湖南大学 823","type":"root","sub":"2015 · 自动控制理论（含现控）","children":[{"label":"难度：中等　特点：八道大题覆盖结构图多输入传函、控制器设计与扰动不变性、三阶极点分布与响应、两系统根轨迹比较、含右半平面极点对象的控制器设计、奈氏判据、以 a 为参数的根轨迹、离散系统稳定性与斜坡误差　重点：结构图多输入与扰动传函、含右半平面极点对象的控制器设计、以参数为变量的根轨迹、离散系统稳定性与斜坡误差","type":"warn"},{"label":"由奈氏判据判断系统稳定性　〔第六题〕","type":"block","children":[{"label":"由开环传函写幅相表达式，先数右半平面极点数再按包围关系判稳","type":"idea"},{"label":"奈奎斯特判据","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先确定开环右半平面极点个数与幅相曲线包围情况","type":"k1"},{"label":"由包围圈数与右半平面极点数关系算出闭环右半平面极点数","type":"k2"},{"label":"曲线与负实轴交点随增益变化，要按增益分段讨论","type":"k3"}]},{"label":"闭环稳定 ⇔ Z=N+P，其中 Z 为右半平面闭环极点数","type":"yd"},{"label":"P 为开环右半平面极点数，须先数清楚","type":"yd"},{"label":"N 为开环幅相曲线绕 (-1,j0) 点的净包围圈数","type":"yd"},{"label":"逆时针包围为正，顺时针为负","type":"yd"},{"label":"先求开环极点，数出右半平面个数 P","type":"bz"},{"label":"绘制开环幅相特性曲线（或利用 Bode 图判稳）","type":"bz"},{"label":"数出曲线对 (-1,j0) 点的包围圈数 N","type":"bz"},{"label":"由 Z=N+P 判断闭环稳定性","type":"bz"},{"label":"Z=N+P","type":"fm","tex":"Z=N+P"},{"label":"N=N_+-N_-","type":"fm","tex":"N=N_+-N_-"},{"label":"用奈奎斯特判据判断含右半平面极点的系统稳定性","type":"kf","own":true},{"label":"由开环幅相曲线判断闭环稳定性","type":"kf","own":false},{"label":"求使闭环稳定的开环增益范围","type":"kf","own":false},{"label":"判断补画虚轴绕行后曲线的包围情况","type":"kf","own":false},{"label":"没有先数开环右半平面极点数","type":"er","own":true},{"label":"开环含有积分环节时未补画无穷大半径圆弧","type":"er","own":false},{"label":"把包围圈数的正负号定义搞反","type":"er","own":false},{"label":"没有先数开环右半平面极点数 P","type":"er","own":false}]}]}]}},{"no":"七","tree":{"label":"湖南大学 823","type":"root","sub":"2015 · 自动控制理论（含现控）","children":[{"label":"难度：中等　特点：八道大题覆盖结构图多输入传函、控制器设计与扰动不变性、三阶极点分布与响应、两系统根轨迹比较、含右半平面极点对象的控制器设计、奈氏判据、以 a 为参数的根轨迹、离散系统稳定性与斜坡误差　重点：结构图多输入与扰动传函、含右半平面极点对象的控制器设计、以参数为变量的根轨迹、离散系统稳定性与斜坡误差","type":"warn"},{"label":"以参数 a 为变量的根轨迹　〔第七题〕","type":"block","children":[{"label":"把特征方程整理成以 a 为参数的形式，按广义根轨迹法则绘制，再由给定闭环极点反求参数","type":"idea"},{"label":"广义根轨迹与参数根轨迹","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把含参数项提到分子，写成等效开环传函形式","type":"k1"},{"label":"等效开环的极点由不含参数项的特征方程给出","type":"k2"},{"label":"等效开环的零极点位置要重新数","type":"k3"}]},{"label":"可变参数不是开环增益时称为参数根轨迹","type":"yd"},{"label":"方法是用等效开环传递函数把参数提到标准位置","type":"yd"},{"label":"正反馈系统或零度根轨迹的相角条件是 0°+360°l","type":"yd"},{"label":"把特征方程整理成 1+αG*(s)=0 的形式","type":"bz"},{"label":"把 α 以外部分视为等效开环传递函数","type":"bz"},{"label":"按常规根轨迹法则绘制","type":"bz"},{"label":"注意相角条件是否变成 0°","type":"bz"},{"label":"1+\\alpha G^*(s)=0","type":"fm","tex":"1+\\alpha G^*(s)=0"},{"label":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=0^\\circ+360^\\circ l","type":"fm","tex":"\\sum\\angle(s-z_i)-\\sum\\angle(s-p_j)=0^\\circ+360^\\circ l"},{"label":"以时间常数或其他参数为变量绘制参数根轨迹","type":"kf","own":true},{"label":"以时间常数或其他参数为变量绘制根轨迹","type":"kf","own":false},{"label":"绘制正反馈系统的零度根轨迹","type":"kf","own":false},{"label":"比较零度与 180 度根轨迹的差别","type":"kf","own":false},{"label":"整理时没有把参数完整地提到分子位置","type":"er","own":true},{"label":"整理时没有把参数完整地提到分子位置","type":"er","own":false},{"label":"零度根轨迹仍沿用 180° 相角条件","type":"er","own":false}]},{"label":"由根轨迹分析性能与确定参数","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"把给定闭环极点代入特征方程并令实部虚部分别为零","type":"k1"},{"label":"由实部虚部两个方程联立解出两个参数","type":"k2"},{"label":"给定的是共轭极点，只需代入其中一个","type":"k3"}]},{"label":"闭环极点位置直接决定 ξ、ωn 与动态指标","type":"yd"},{"label":"等阻尼线是从原点出发的射线，等 ωn 线是以原点为心的圆","type":"yd"},{"label":"给定阻尼比要求时，极点落在等阻尼线上","type":"yd"},{"label":"增益增大一般使系统响应加快但振荡加剧","type":"yd"},{"label":"在 s 平面上画出等阻尼线或等 ωn 圆","type":"bz"},{"label":"求其与根轨迹的交点","type":"bz"},{"label":"由幅值条件求出交点对应的参数","type":"bz"},{"label":"由极点位置估算动态性能","type":"bz"},{"label":"\\xi=\\cos\\beta,\\quad \\omega_n=|s|","type":"fm","tex":"\\xi=\\cos\\beta,\\quad \\omega_n=|s|"},{"label":"由给定闭环极点反求两个参数取值","type":"kf","own":true},{"label":"求满足给定阻尼比的参数值","type":"kf","own":false},{"label":"由闭环极点位置估算超调量与调节时间","type":"kf","own":false},{"label":"分析提高增益对性能的影响","type":"kf","own":false},{"label":"把等阻尼线画成了垂直线","type":"er","own":true},{"label":"把等阻尼线画成了垂直线","type":"er","own":false},{"label":"由极点位置估指标时忽略零点的作用","type":"er","own":false}]}]}]}},{"no":"八","tree":{"label":"湖南大学 823","type":"root","sub":"2015 · 自动控制理论（含现控）","children":[{"label":"难度：中等　特点：八道大题覆盖结构图多输入传函、控制器设计与扰动不变性、三阶极点分布与响应、两系统根轨迹比较、含右半平面极点对象的控制器设计、奈氏判据、以 a 为参数的根轨迹、离散系统稳定性与斜坡误差　重点：结构图多输入与扰动传函、含右半平面极点对象的控制器设计、以参数为变量的根轨迹、离散系统稳定性与斜坡误差","type":"warn"},{"label":"离散系统稳定性与斜坡稳态误差　〔第八题〕","type":"block","children":[{"label":"由框图写开环脉冲传函，求闭环特征根判断稳定性，再用终值定理求斜坡输入下的稳态误差","type":"idea"},{"label":"离散系统稳定性分析","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"写出闭环特征方程并令特征根的模小于一","type":"k1"},{"label":"稳定范围由特征根落在单位圆内约束","type":"k2"},{"label":"采样开关与保持器的位置需回原卷核对图","type":"k3"}]},{"label":"闭环脉冲传函的极点全部位于 z 平面单位圆内则稳定","type":"yd"},{"label":"可直接求解特征根，也可用朱里判据或 w 变换后套劳斯判据","type":"yd"},{"label":"w 变换把单位圆内映射到左半平面","type":"yd"},{"label":"采样周期增大会使稳定性变差","type":"yd"},{"label":"写出闭环脉冲传递函数的特征方程","type":"bz"},{"label":"选择方法：求根、朱里判据或 w 变换后用劳斯判据","type":"bz"},{"label":"对含参数的系统求使稳定成立的参数范围","type":"bz"},{"label":"必要时分析采样周期对稳定域的影响","type":"bz"},{"label":"|z_i|<1","type":"fm","tex":"|z_i|<1"},{"label":"z=\\frac{1+w}{1-w}\\quad (w\\ \\text{变换})","type":"fm","tex":"z=\\frac{1+w}{1-w}\\quad (w\\ \\text{变换})"},{"label":"判断离散系统稳定性并求使系统稳定的参数范围","type":"kf","own":true},{"label":"判断离散系统是否稳定","type":"kf","own":false},{"label":"求使系统稳定的采样周期或增益范围","type":"kf","own":false},{"label":"用 w 变换后套用劳斯判据","type":"kf","own":false},{"label":"把稳定条件写成实部小于零而不是模小于 1","type":"er","own":true},{"label":"把稳定条件写成实部小于零而不是模小于 1","type":"er","own":false},{"label":"w 变换公式记错导致映射关系颠倒","type":"er","own":false}]},{"label":"离散系统的稳态误差","type":"kp","children":[{"label":"本题实例","type":"ins","children":[{"label":"先判稳，再由误差脉冲传函与输入的 z 变换用终值定理","type":"k1"},{"label":"由速度误差系数在 z 域的定义求斜坡误差","type":"k2"},{"label":"采样周期要代入脉冲传函","type":"k3"}]},{"label":"误差由输入类型与开环脉冲传函中 z=1 处极点的个数决定","type":"yd"},{"label":"型别由 G(z)H(z) 中 z=1 处极点的重数确定","type":"yd"},{"label":"用终值定理求稳态误差，前提是系统稳定","type":"yd"},{"label":"采样周期也影响稳态误差大小","type":"yd"},{"label":"求误差脉冲传递函数","type":"bz"},{"label":"数出 z=1 处极点重数确定型别","type":"bz"},{"label":"查表或用终值定理求稳态误差","type":"bz"},{"label":"分析采样周期变化对误差的影响","type":"bz"},{"label":"e_{ss}=\\lim_{z\\to1}(1-z^{-1})E(z)","type":"fm","tex":"e_{ss}=\\lim_{z\\to1}(1-z^{-1})E(z)"},{"label":"K_p=\\lim_{z\\to1}G(z)H(z)","type":"fm","tex":"K_p=\\lim_{z\\to1}G(z)H(z)"},{"label":"求离散系统在斜坡输入下的稳态误差","type":"kf","own":true},{"label":"求离散系统在典型输入下的稳态误差","type":"kf","own":false},{"label":"由稳态误差要求反求开环增益","type":"kf","own":false},{"label":"分析采样周期对稳态精度的影响","type":"kf","own":false},{"label":"直接用 s 域静态误差系数公式处理离散系统","type":"er","own":true},{"label":"直接用 s 域静态误差系数公式处理离散系统","type":"er","own":false},{"label":"未判稳就用终值定理","type":"er","own":false}]}]}]}}]}</script>
+<script src="../../../../../assets/d3.min.js"></script>
+<script src="../../../../../assets/kg.js"></script>
+</body></html>
