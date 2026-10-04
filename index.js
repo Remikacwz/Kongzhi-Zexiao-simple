@@ -94,12 +94,17 @@ function initFilters(){
 }
 
 // ===================== 热度榜 TOP10 数据（按月份） =====================
-var HEAT_DATA_BY_MONTH = {
-  '202604': [{rank:1, school:'南京理工大学', heat:85.54, tier:'211'}, {rank:2, school:'哈尔滨工程大学', heat:75.33, tier:'211'}, {rank:3, school:'华北电力大学', heat:68.63, tier:'211'}, {rank:4, school:'电子科技大学', heat:66.71, tier:'985'}, {rank:5, school:'北京工业大学', heat:65.51, tier:'211'}, {rank:6, school:'中国科学技术大学', heat:64.17, tier:'985'}, {rank:7, school:'北京科技大学', heat:62.42, tier:'211'}, {rank:8, school:'浙江大学', heat:60.46, tier:'985'}, {rank:9, school:'哈尔滨工业大学', heat:60.26, tier:'985'}, {rank:10, school:'华东理工大学', heat:58.26, tier:'211'}],
-  '202605': [{rank:1, school:'上海大学', heat:86.28, tier:'211'}, {rank:2, school:'上海交通大学', heat:83.43, tier:'985'}, {rank:3, school:'南京理工大学', heat:80.58, tier:'211'}, {rank:4, school:'东南大学', heat:77.14, tier:'985'}, {rank:5, school:'华东理工大学', heat:73.7, tier:'211'}, {rank:6, school:'大连理工大学', heat:72.44, tier:'985'}, {rank:7, school:'安徽大学', heat:67.47, tier:'211'}, {rank:8, school:'浙江大学', heat:66.62, tier:'985'}, {rank:9, school:'北京理工大学', heat:65.78, tier:'985'}, {rank:10, school:'哈尔滨工程大学', heat:63.8, tier:'211'}],
-  '202606': [{rank:1, school:'同济大学', heat:81.96, tier:'985'}, {rank:2, school:'上海大学', heat:76.36, tier:'211'}, {rank:3, school:'西安电子科技大学', heat:72.98, tier:'211'}, {rank:4, school:'华东理工大学', heat:66.71, tier:'211'}, {rank:5, school:'哈尔滨工业大学', heat:66.1, tier:'985'}, {rank:6, school:'上海交通大学', heat:65.7, tier:'985'}, {rank:7, school:'南京理工大学', heat:65.7, tier:'211'}, {rank:8, school:'中国科学技术大学', heat:63.71, tier:'985'}, {rank:9, school:'南京邮电大学', heat:63.14, tier:'双非'}, {rank:10, school:'长安大学', heat:62.73, tier:'211'}],
-  '202607': [{rank:1, school:'华北电力大学', heat:77.2, tier:'211'}, {rank:2, school:'上海大学', heat:77.16, tier:'211'}, {rank:3, school:'哈尔滨工业大学', heat:73.3, tier:'985'}, {rank:4, school:'南京理工大学', heat:71.32, tier:'211'}, {rank:5, school:'中国计量大学', heat:69.65, tier:'双非'}, {rank:6, school:'华东理工大学', heat:66.83, tier:'211'}, {rank:7, school:'天津大学', heat:66.44, tier:'985'}, {rank:8, school:'哈尔滨工程大学', heat:65.43, tier:'211'}, {rank:9, school:'北京邮电大学', heat:63.26, tier:'211'}, {rank:10, school:'中国科学院大学', heat:61.3, tier:'双非'}]
-};
+var HEAT_DATA_BY_MONTH = (function () {
+  var source = window.HEAT_DATA || {};
+  var out = {};
+  Object.keys(source).sort().forEach(function (period) {
+    out[period] = (source[period] || []).slice(0, 10).map(function (item) {
+      return {rank: Number(item.rank), school: item.school, heat: Number(item.heat), tier: item.tier || '双非'};
+    });
+  });
+  if (!Object.keys(out).length) out['202609'] = [];
+  return out;
+})();
 
 // 自动选择最近可用的月份数据
 function getLatestHeatMonth() {

@@ -34,6 +34,14 @@
   }
 
   function fallbackItems(period, scope) {
+    var scoped = window.HEAT_DATA_SCOPED && window.HEAT_DATA_SCOPED[period] && window.HEAT_DATA_SCOPED[period][scope];
+    if (scoped && scoped.length) {
+      return scoped.map(function (item) {
+        return {rank: Number(item.rank), school: item.school, sourceSchool: item.school,
+                heat: Number(item.heat), tier: item.tier || '双非',
+                totalRank: item.totalRank == null ? null : Number(item.totalRank)};
+      });
+    }
     var source = (fallback[period] || []).map(function (item) {
       return {rank: Number(item.rank), school: item.school, sourceSchool: item.school, heat: Number(item.heat), tier: item.tier, totalRank: Number(item.rank)};
     });
@@ -142,7 +150,7 @@
     var subtitle = document.getElementById('heatPageSubtitle');
     if (subtitle) subtitle.textContent = periodLabel(activePeriod, true) + ' · 总榜与分层榜前20名 · 逐月切换看排名趋势';
     var footer = document.getElementById('heatPageFooter');
-    if (footer) footer.textContent = '数据来源：' + periodLabel(activePeriod, true) + '控制类考研热度榜（万人教育/控制考研）';
+    if (footer) footer.textContent = '数据来源：' + periodLabel(activePeriod, true) + '控制类考研热度榜';
   }
 
   window.switchHeatPeriod = function (period) {
